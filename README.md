@@ -2,7 +2,7 @@
 
 ![](.gitbook/assets/group-4-2x.png)
 
-## 1. [Start Here](darcy-devkit/quickstart/)
+## 1. [Start Here](darcy-devkit/quickstart/) with Darcy Devkit
 
 ## 2. [Developer Docs](darcy-devkit/developer-docs/)
 
