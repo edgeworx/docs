@@ -2,16 +2,17 @@
 
 ## Power
 
-* 110V AC
-* what does darcy require for battery pack?
+* 110V AC or 220V AC with a local plug adapter
+* Darcy uses 18 Watts of power to operate
+* 
 
 ## Connectivity
 
-* 802.11ac Wi-Fi that can run on 2.4 GHz or 5-GHz bands
+* 802.11ac WiFi that can run on 2.4 GHz or 5 GHz bands
 
   OR
 
-* Hardwired Ethernet \(suggested for real time video playback\)
+* Hardwired Ethernet
 
 ## Environment
 
