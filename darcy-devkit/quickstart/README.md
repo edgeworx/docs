@@ -21,6 +21,6 @@ description: Get started with AI at the Edge in 15 minutes or less!
 
 ## 3. See Darcy in action
 
-1. Point your web browser to **http://YOUR-DARCY-NAME:3456/live-feed** to see the live feed. Your Darcy name is the device "hostname" and can be found in the welcome email you received.
+1. Point your web browser to `http://YOUR-DARCY-NAME:3456/live-feed` to see the live feed. Your Darcy name is the device "hostname" and can be found in the welcome email you received.
 2. SSH in to your Darcy from anywhere by going to https://cloud.deviceplane.com and signing in with the credentials you were given in your welcome email.
 3. Monitor and manage your Darcy by going to the management URL provided in your welcome email.
