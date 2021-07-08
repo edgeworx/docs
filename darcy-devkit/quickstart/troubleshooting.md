@@ -34,6 +34,7 @@
       <td style="text-align:left">
         <p></p>
         <ul>
+          <li>This is expected when Darcy is connected to WiFi</li>
           <li>Unplug and replug darcy to force reboot</li>
         </ul>
       </td>
@@ -52,7 +53,7 @@
       </td>
       <td style="text-align:left">
         <ul>
-          <li>Contact &quot;<a href="mailto:support@meetdarcy.app">support@meetdarcy.app</a>&quot;</li>
+          <li>Contact &quot;<a href="mailto:support@meetdarcy.com">support@meetdarcy.com</a>&quot;</li>
         </ul>
       </td>
     </tr>
