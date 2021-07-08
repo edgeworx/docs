@@ -11,10 +11,12 @@ description: Get started with AI at the Edge in 15 minutes or less!
 
 ## 2. Get Darcy on your network
 
-1. In your wifi menu, select "**Darcy Setup**" in your available wifi networks
-2. Open your web browser and go to **192.168.50.5:12345**
-3. Input your wifi name or SSD and your wifi credentials \(You can add more than one\) 
-4. Click the Reboot button
+1. If you are using a wired Ethernet connection, just plug the Ethernet cable into Darcy's port. If you are using WiFi, continue to step 2.
+2. In your wifi menu, select "**DarcySetup___**" in your available wifi networks. The blank part will be filled in with a random number.
+3. The password for this network is "**darcysetup123**"
+4. Open your web browser and go to **http://192.168.50.5:12345**
+5. Input your wifi name or SSD and your wifi credentials \(You can add more than one\). Both the WiFi network name and password are case sensitive.
+6. Click the Reboot button
 
 ## 3. See Darcy in action
 
