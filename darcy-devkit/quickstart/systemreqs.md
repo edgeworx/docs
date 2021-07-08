@@ -4,7 +4,7 @@
 
 * 110V AC or 220V AC with a local plug adapter
 * Darcy uses 18 Watts of power to operate
-* 
+* You can run Darcy on a battery or any power source that can provide 5 Volts at 3.5 Amps or can provide 18 Watts through a 110V or 220V inverter
 
 ## Connectivity
 
