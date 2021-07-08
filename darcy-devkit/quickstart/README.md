@@ -7,7 +7,7 @@ description: Get started with AI at the Edge in 15 minutes or less!
 ## 1. Power up Darcy
 
 1. Connect the included power supply to Darcy
-2. Connect to a standard 110V outlet and wait for the light to turn blue. This may take several minutes.
+2. Connect to a standard 110V outlet (or 220V with a local adapter) and wait for the light to turn blue. This may take several minutes.
 
 ## 2. Get Darcy on your network
 
