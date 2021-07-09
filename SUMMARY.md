@@ -2,7 +2,7 @@
 
 * [Welcome To Edgeworx Docs](README.md)
 
-## Darcy DevKit
+## Darcy for Developers <a id="darcy-devkit"></a>
 
 * [Darcy Quick Start Guide](darcy-devkit/quickstart/README.md)
   * [Darcy System Requirements](darcy-devkit/quickstart/systemreqs.md)
