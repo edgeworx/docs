@@ -1,6 +1,12 @@
-# Welcome To Edgeworx Knowhow
+---
+description: 'Knowledge, support and docs for all Edgeworx products and services'
+---
 
-![](.gitbook/assets/edge-gitnook-banner-2x.png)
+# Welcome To Edgeworx Docs
+
+
+
+![](.gitbook/assets/edge-gitnook-banner-2x%20%281%29.png)
 
 ## 1. [Start Here](darcy-devkit/quickstart/) with Darcy Devkit
 

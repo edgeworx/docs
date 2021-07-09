@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome To Edgeworx Knowhow](README.md)
+* [Welcome To Edgeworx Docs](README.md)
 
 ## Darcy DevKit
 
