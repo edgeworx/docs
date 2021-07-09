@@ -16,9 +16,9 @@ description: 'Knowledge base, support and docs for all Edgeworx products and ser
 
 ## Darcy for Covid Solution
 
-### [• Getting started with Darcy for Covid](darcy-for-covid/getting-started-with-darcy-for-covid/)
+#### [• Getting started with Darcy for Covid](darcy-for-covid/getting-started-with-darcy-for-covid/)
 
-### [• Evaluating Darcy for Covid](darcy-for-covid/evaluating-darcy-for-covid/)
+#### [• Evaluating Darcy for Covid](darcy-for-covid/evaluating-darcy-for-covid/)
 
 
 
