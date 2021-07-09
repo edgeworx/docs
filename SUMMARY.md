@@ -21,6 +21,7 @@
   * [Connecting Darcy to your network](darcy-for-covid/getting-started-with-darcy-for-covid/connecting-darcy-to-your-network.md)
   * [Connecting to your Darcy Dashboard](darcy-for-covid/getting-started-with-darcy-for-covid/connecting-to-your-darcy-dashboard.md)
   * [Getting Started using Darcy Pass](darcy-for-covid/getting-started-with-darcy-for-covid/getting-started-using-darcy-pass.md)
+  * [Ensuring Darcy visitors are successful](darcy-for-covid/getting-started-with-darcy-for-covid/ensuring-darcy-visitors-are-successful.md)
   * [Adding people to your org](darcy-for-covid/getting-started-with-darcy-for-covid/adding-people-to-your-org.md)
 * [Evaluating Darcy for Covid](darcy-for-covid/evaluating-darcy-for-covid/README.md)
   * [Darcy for Covid Requirements](darcy-for-covid/evaluating-darcy-for-covid/darcy-for-covid-requirements.md)
