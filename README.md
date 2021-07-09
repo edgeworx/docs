@@ -1,5 +1,5 @@
 ---
-description: 'Knowledge, support and docs for all Edgeworx products and services'
+description: 'Knowledge base, support and docs for all Edgeworx products and services'
 ---
 
 # Welcome To Edgeworx Docs
