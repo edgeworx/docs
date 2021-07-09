@@ -14,3 +14,7 @@
   * [Darcy Terms of use](darcy-devkit/developer-docs/darcy-terms-of-use.md)
 * [Other Helpful Resources](darcy-devkit/helpful-resources.md)
 
+## Darcy For Covid
+
+* [1. Finding a good spot for Darcy](darcy-for-covid/1.-finding-a-good-spot-for-darcy.md)
+

@@ -14,3 +14,5 @@ description: 'Knowledge base, support and docs for all Edgeworx products and ser
 
 ## 3. [More Resources](darcy-devkit/helpful-resources.md)
 
+## Darcy for Covid- Check for fevers, masks and passes
+
