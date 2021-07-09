@@ -6,7 +6,7 @@ description: 'Knowledge base, support and docs for all Edgeworx products and ser
 
 
 
-![](.gitbook/assets/edge-gitnook-banner-2x%20%281%29.png)
+![](.gitbook/assets/edge-gitnook-banner-2x.png)
 
 ## 1. [Start Here](darcy-devkit/quickstart/) with Darcy Devkit
 

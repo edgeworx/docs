@@ -16,5 +16,6 @@
 
 ## Darcy For Covid
 
-* [1. Finding a good spot for Darcy](darcy-for-covid/1.-finding-a-good-spot-for-darcy.md)
+* [Finding a good spot for Darcy](darcy-for-covid/1.-finding-a-good-spot-for-darcy.md)
+* [Connecting Darcy to your network](darcy-for-covid/connecting-darcy-to-your-network.md)
 
