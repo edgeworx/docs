@@ -8,7 +8,7 @@ description: 'Knowledge base, support and docs for all Edgeworx products and ser
 
 ## Darcy for Developers
 
-### 1. [Start Here](darcy-devkit/quickstart/) with Darcy Devkit
+### [1. Start Here with Darcy Devkit](darcy-devkit/quickstart/)
 
 ### 2. [Developer Docs](darcy-devkit/developer-docs/)
 
