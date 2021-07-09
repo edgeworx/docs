@@ -4,7 +4,7 @@
 
 ## Darcy for Developers <a id="darcy-devkit"></a>
 
-* [Darcy Quick Start Guide](darcy-devkit/quickstart/README.md)
+* [Darcy Devkit Quick Start Guide](darcy-devkit/quickstart/README.md)
   * [Darcy System Requirements](darcy-devkit/quickstart/systemreqs.md)
   * [Darcy Field of View Guidelines](darcy-devkit/quickstart/field-of-view-guidelines.md)
   * [Darcy Troubleshooting](darcy-devkit/quickstart/troubleshooting.md)
