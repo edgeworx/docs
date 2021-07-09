@@ -19,5 +19,5 @@
    1. Bring up your Darcy Fast Pass \(QR code\) on your phone or tablet
    2. Show it to Darcy: Stand on the big blue dot and hold your phone out so Darcy can see the QR code
 
-![](../.gitbook/assets/file-n51q4lqczr.jpg)
+![](../../.gitbook/assets/file-n51q4lqczr.jpg)
 
