@@ -19,5 +19,3 @@
 * Dry space \(Devkit is not rated for outdoor use\)
 * 3-30' of working distance \([See field of view guidelines](field-of-view-guidelines.md)\)
 
-
-

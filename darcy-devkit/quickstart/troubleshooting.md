@@ -32,7 +32,6 @@
     <tr>
       <td style="text-align:left">I don&apos;t see Darcy Setup in my available Wifi networks</td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li>This is expected when Darcy is connected to WiFi</li>
           <li>Unplug and replug darcy to force reboot</li>
@@ -42,7 +41,6 @@
     <tr>
       <td style="text-align:left">Darcy keep sending me back to the Wifi setup screen</td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li>Unplug and replug darcy to force reboot</li>
         </ul>
@@ -84,7 +82,6 @@
     <tr>
       <td style="text-align:left">Unable to access ioFog or ECN viewer</td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li>You should have received a &quot;welcome to darcy devkit&quot; email with
             all of you account credentials.</li>

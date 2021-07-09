@@ -1,6 +1,6 @@
 # Welcome To Edgeworx Knowhow
 
-![](.gitbook/assets/group-4-2x.png)
+![](.gitbook/assets/edge-gitnook-banner-2x.png)
 
 ## 1. [Start Here](darcy-devkit/quickstart/) with Darcy Devkit
 
