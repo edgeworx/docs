@@ -16,7 +16,7 @@ description: Get started with AI at the Edge in 15 minutes or less!
 3. Look for "**DarcySetup**_**\_**_" in your list of available wifi networks. The blank part will be filled in with a random number, e.g. "DarcySetup489".
 4. The wifi password for this network is "**`darcysetup123`**"
 5. Open your web browser and go to [`http://192.168.50.5:12345`](http://192.168.50.5:12345)\`\`
-6. Input your wifi network name or SSID and your wifi credentials and click "Connect to Wifi" button \(You can add more than one\). Both the WiFi network name and password are case sensitive.
+6. Input your wifi network name or SSID and your wifi credentials and click "**Connect to Wifi**" button \(You can add more than one\). Both the WiFi network name and password are case sensitive.
 7. Click the Reboot button and wait a few minutes for Darcy to reboot.
 
 ## 3. See Darcy in action
