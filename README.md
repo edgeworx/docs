@@ -10,7 +10,7 @@ description: 'Knowledge base, support and docs for all Edgeworx products and ser
 
 ## Darcy Devkit
 
-> Take Edge AI straight from the lab to the real world
+> Everything you need to build AI at the Edge and bring it into the real world
 
 ### [1. Start Here with Darcy Devkit](darcy-devkit/quickstart/)
 

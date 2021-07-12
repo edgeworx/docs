@@ -4,7 +4,7 @@
 
 ## Darcy for Developers <a id="darcy-devkit"></a>
 
-* [Darcy Devkit Quick Start Guide](darcy-devkit/quickstart/README.md)
+* [Getting Started with Darcy Devkit](darcy-devkit/quickstart/README.md)
   * [Darcy System Requirements](darcy-devkit/quickstart/systemreqs.md)
   * [Darcy Field of View Guidelines](darcy-devkit/quickstart/field-of-view-guidelines.md)
   * [Darcy Troubleshooting](darcy-devkit/quickstart/troubleshooting.md)
@@ -19,7 +19,7 @@
 * [Evaluating Darcy for Covid](darcy-for-covid/evaluating-darcy-for-covid/README.md)
   * [Darcy for Health- FAQs](darcy-for-covid/evaluating-darcy-for-covid/darcy-for-covid-faqs.md)
   * [Darcy for Health- Requirements](darcy-for-covid/evaluating-darcy-for-covid/darcy-for-covid-requirements.md)
-* [Getting Started with Darcy for Covid](darcy-for-covid/getting-started-with-darcy-for-covid/README.md)
+* [Getting Started with Darcy for Health](darcy-for-covid/getting-started-with-darcy-for-covid/README.md)
   * [Finding a good spot for Darcy](darcy-for-covid/getting-started-with-darcy-for-covid/1.-finding-a-good-spot-for-darcy.md)
   * [Connecting Darcy to your network](darcy-for-covid/getting-started-with-darcy-for-covid/connecting-darcy-to-your-network.md)
   * [Connecting to your Darcy Dashboard](darcy-for-covid/getting-started-with-darcy-for-covid/connecting-to-your-darcy-dashboard.md)

@@ -2,7 +2,7 @@
 description: Get started with AI at the Edge in 15 minutes or less!
 ---
 
-# Darcy Devkit Quick Start Guide
+# Getting Started with Darcy Devkit
 
 ## 1. Power up Darcy
 

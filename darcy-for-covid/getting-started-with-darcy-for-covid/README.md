@@ -1,4 +1,4 @@
-# Getting Started with Darcy for Covid
+# Getting Started with Darcy for Health
 
 ### [Finding a good spot for Darcy](1.-finding-a-good-spot-for-darcy.md)
 
