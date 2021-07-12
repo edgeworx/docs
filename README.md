@@ -6,7 +6,7 @@ description: 'Knowledge base, support and docs for all Edgeworx products and ser
 
 ![](.gitbook/assets/ew-banner-2x%20%281%29.png)
 
-![Develop, deploy and manage AI at the Edge](.gitbook/assets/ew-developers-banner-2x%20%281%29.png)
+![Build, deploy and run AI from cloud to edge.](.gitbook/assets/ew-developers-banner-2x%20%281%29.png)
 
 ## Darcy Devkit
 
