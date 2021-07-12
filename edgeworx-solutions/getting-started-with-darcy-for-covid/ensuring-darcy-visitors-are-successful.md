@@ -9,6 +9,7 @@
 
 ## Make your Darcy Pass easy for Darcy to read
 
+* Download the Darcy Pass app from home \(in case reception at your destination is poor\)
 * Bring up your Darcy Pass on your phone before you approach the Darcy kiosk
 * Turn up the brightness on your phone if it is dim
 * Hold your phone so that Darcy can see your phone and your face at the same time
