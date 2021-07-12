@@ -5,6 +5,7 @@
 ## Edgeworx for Developers
 
 * [Getting Started with Darcy Devkit](edgeworx-for-developers/quickstart/README.md)
+  * [Deploying apps and managing nodes](edgeworx-for-developers/quickstart/deploying-apps-and-managing-nodes.md)
   * [Darcy System Requirements](edgeworx-for-developers/quickstart/systemreqs.md)
   * [Darcy Field of View Guidelines](edgeworx-for-developers/quickstart/field-of-view-guidelines.md)
   * [Darcy Troubleshooting](edgeworx-for-developers/quickstart/troubleshooting.md)

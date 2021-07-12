@@ -25,3 +25,11 @@ description: Get started with AI at the Edge in 15 minutes or less!
 2. SSH in to your Darcy from anywhere by going to [https://cloud.deviceplane.com](https://cloud.deviceplane.com) and signing in with the credentials you were given in your welcome email.
 3. Monitor and manage your Darcy by going to the management URL provided in your welcome email.
 
+## What's Next:
+
+* Having difficulties? See [Troubleshooting Guide](troubleshooting.md)
+* [Deploy apps and manage your Devkit\(s\) with ECN viewer](deploying-apps-and-managing-nodes.md)
+* [Learn more about building AI at the Edge](../helpful-resources.md)
+
+
+
