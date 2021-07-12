@@ -17,8 +17,8 @@
 ## Darcy For Covid
 
 * [Evaluating Darcy for Covid](darcy-for-covid/evaluating-darcy-for-covid/README.md)
-  * [Darcy for Covid Requirements](darcy-for-covid/evaluating-darcy-for-covid/darcy-for-covid-requirements.md)
-  * [Darcy for Covid FAQs](darcy-for-covid/evaluating-darcy-for-covid/darcy-for-covid-faqs.md)
+  * [Darcy for Health- FAQs](darcy-for-covid/evaluating-darcy-for-covid/darcy-for-covid-faqs.md)
+  * [Darcy for Health- Requirements](darcy-for-covid/evaluating-darcy-for-covid/darcy-for-covid-requirements.md)
 * [Getting Started with Darcy for Covid](darcy-for-covid/getting-started-with-darcy-for-covid/README.md)
   * [Finding a good spot for Darcy](darcy-for-covid/getting-started-with-darcy-for-covid/1.-finding-a-good-spot-for-darcy.md)
   * [Connecting Darcy to your network](darcy-for-covid/getting-started-with-darcy-for-covid/connecting-darcy-to-your-network.md)

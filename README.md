@@ -32,9 +32,9 @@ Coming Soon!
 
 > Detect fever, face masks and symptoms to keep your business safe
 
-### Why Darcy for Health?
+### 1. Why Darcy for Health?
 
-### [Getting started with Darcy for H](darcy-for-covid/getting-started-with-darcy-for-covid/)ealth
+### 2. [Getting started with Darcy for H](darcy-for-covid/getting-started-with-darcy-for-covid/)ealth
 
 
 

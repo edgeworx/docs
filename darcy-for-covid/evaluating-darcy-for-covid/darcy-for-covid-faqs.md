@@ -1,4 +1,4 @@
-# Darcy for Covid FAQs
+# Darcy for Health- FAQs
 
 ## Why are we taking temperatures, symptoms and checking for masks?
 
