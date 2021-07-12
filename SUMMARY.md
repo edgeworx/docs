@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome To Edgeworx Docs](README.md)
+* [Welcome To Edgeworx Knowledge Base](README.md)
 
 ## Darcy for Developers <a id="darcy-devkit"></a>
 
@@ -16,6 +16,9 @@
 
 ## Darcy For Covid
 
+* [Evaluating Darcy for Covid](darcy-for-covid/evaluating-darcy-for-covid/README.md)
+  * [Darcy for Covid Requirements](darcy-for-covid/evaluating-darcy-for-covid/darcy-for-covid-requirements.md)
+  * [Darcy for Covid FAQs](darcy-for-covid/evaluating-darcy-for-covid/darcy-for-covid-faqs.md)
 * [Getting Started with Darcy for Covid](darcy-for-covid/getting-started-with-darcy-for-covid/README.md)
   * [Finding a good spot for Darcy](darcy-for-covid/getting-started-with-darcy-for-covid/1.-finding-a-good-spot-for-darcy.md)
   * [Connecting Darcy to your network](darcy-for-covid/getting-started-with-darcy-for-covid/connecting-darcy-to-your-network.md)
@@ -23,7 +26,4 @@
   * [Getting Started using Darcy Pass](darcy-for-covid/getting-started-with-darcy-for-covid/getting-started-using-darcy-pass.md)
   * [Ensuring Darcy visitors are successful](darcy-for-covid/getting-started-with-darcy-for-covid/ensuring-darcy-visitors-are-successful.md)
   * [Adding people to your org](darcy-for-covid/getting-started-with-darcy-for-covid/adding-people-to-your-org.md)
-* [Evaluating Darcy for Covid](darcy-for-covid/evaluating-darcy-for-covid/README.md)
-  * [Darcy for Covid Requirements](darcy-for-covid/evaluating-darcy-for-covid/darcy-for-covid-requirements.md)
-  * [Darcy for Covid FAQs](darcy-for-covid/evaluating-darcy-for-covid/darcy-for-covid-faqs.md)
 

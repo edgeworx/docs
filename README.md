@@ -2,11 +2,15 @@
 description: 'Knowledge base, support and docs for all Edgeworx products and services'
 ---
 
-# Welcome To Edgeworx Docs
+# Welcome To Edgeworx Knowledge Base
 
-![](.gitbook/assets/edge-gitnook-banner-2x.png)
+![](.gitbook/assets/ew-banner-2x%20%281%29.png)
 
-## Darcy for Developers
+![Develop, deploy and manage AI at the Edge](.gitbook/assets/ew-developers-banner-2x%20%281%29.png)
+
+## Darcy Devkit
+
+> Take Edge AI straight from the lab to the real world
 
 ### [1. Start Here with Darcy Devkit](darcy-devkit/quickstart/)
 
@@ -14,11 +18,23 @@ description: 'Knowledge base, support and docs for all Edgeworx products and ser
 
 ### 3. [More Resources](darcy-devkit/helpful-resources.md)
 
-## Darcy for Covid Solution
+## Edgeworx Cloud
 
-#### [• Getting started with Darcy for Covid](darcy-for-covid/getting-started-with-darcy-for-covid/)
+> Deploy and manage all of your nodes at the Edge
 
-#### [• Evaluating Darcy for Covid](darcy-for-covid/evaluating-darcy-for-covid/)
+Coming Soon!
+
+### 
+
+![Leverage Artificial Intelligence at the Edge for health, transportation, education and more](.gitbook/assets/ew-solutions-banner-2x.png)
+
+## Darcy for Health Solution
+
+> Detect fever, face masks and symptoms to keep your business safe
+
+### Why Darcy for Health?
+
+### [Getting started with Darcy for H](darcy-for-covid/getting-started-with-darcy-for-covid/)ealth
 
 
 
