@@ -12,11 +12,11 @@ description: 'Knowledge base, support and docs for all Edgeworx products and ser
 
 > Everything you need to build AI at the Edge and bring it into the real world
 
-### [1. Start Here with Darcy Devkit](darcy-devkit/quickstart/)
+### [1. Start Here with Darcy Devkit](edgeworx-for-developers/quickstart/)
 
-### 2. [Developer Docs](darcy-devkit/developer-docs/)
+### 2. [Developer Docs](edgeworx-for-developers/developer-docs/)
 
-### 3. [More Resources](darcy-devkit/helpful-resources.md)
+### 3. [More Resources](edgeworx-for-developers/helpful-resources.md)
 
 ## Edgeworx Cloud
 
@@ -32,9 +32,9 @@ Coming Soon!
 
 > Detect fever, face masks and symptoms to keep your business safe
 
-### [1. Why Darcy for Health?](darcy-for-covid/evaluating-darcy-for-covid/darcy-for-covid-faqs.md)
+### [1. Why Darcy for Health?](edgeworx-solutions/evaluating-darcy-for-covid/darcy-for-covid-faqs.md)
 
-### [2. Getting started with Darcy for Health](darcy-for-covid/getting-started-with-darcy-for-covid/)
+### [2. Getting started with Darcy for Health](edgeworx-solutions/getting-started-with-darcy-for-covid/)
 
 
 
