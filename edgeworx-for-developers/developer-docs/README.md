@@ -4,16 +4,16 @@ To build your own computer vision and edge AI applications with Darcy, you need 
 
 ## What you use to build
 
-* Python 3 (any IDE is suitable)
-* Darcy AI SDK (easily imported Python library)
-* Docker command line tools (built into your Darcy cam)
-* TensorFlow Lite AI models (optional if you want to add your own AI processing or change Darcy's base AI models)
+* Python 3 \(any IDE is suitable\)
+* Darcy AI SDK \(easily imported Python library\)
+* Docker command line tools \(built into your Darcy cam\)
+* TensorFlow Lite AI models \(optional if you want to add your own AI processing or change Darcy's base AI models\)
 
 ## Preparing your Darcy cam for your own application
 
 * Get the Eclipse ioFog command line tool called **iofogctl**
-* Connect to your Edge Compute Network (ECN) using iofogctl
-* Stop (undeploy) any currently running Darcy applications, such as the Darcy AI SDK demo application that shipped with your Darcy cam
+* Connect to your Edge Compute Network \(ECN\) using iofogctl
+* Stop \(undeploy\) any currently running Darcy applications, such as the Darcy AI SDK demo application that shipped with your Darcy cam
 
 ## Sequence of build steps
 
@@ -27,7 +27,7 @@ To build your own computer vision and edge AI applications with Darcy, you need 
 * Build your Docker container
 * Run your Docker container to test
 * Create your application deployment YAML file
-* Add your Docker container to Docker Hub (optional)
+* Add your Docker container to Docker Hub \(optional\)
 * Use iofogctl to deploy your application
 * Deploy your application to any number of additional Darcy cams you own
 
@@ -37,3 +37,4 @@ To build your own computer vision and edge AI applications with Darcy, you need 
 * [Darcy developer API documentation](apis.md)
 * [Links to helpful developer resources](../helpful-resources.md)
 * [Darcy terms of use for developers](darcy-terms-of-use.md)
+
