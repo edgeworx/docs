@@ -33,6 +33,7 @@ To build your own computer vision and edge AI applications with Darcy, you need 
 
 ## Where To Go Next
 
+* [Dockerfile for Darcy AI applications walkthrough](dockerfile.md)
 * [Darcy AI SDK documentation](ai-sdk.md)
 * [Darcy developer API documentation](apis.md)
 * [Links to helpful developer resources](../helpful-resources.md)
