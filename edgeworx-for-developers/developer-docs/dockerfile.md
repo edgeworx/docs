@@ -53,6 +53,6 @@ The instruction `COPY static/ /src/static/` is copying the contents of the whole
 
 The instruction `COPY my_application.py /src/` copies my application Python3 code file into the container. Because this file is changing the most frequently as I build and test my Darcy AI application, I have put this instruction at the bottom of the  `COPY` section of the Dockerfile. Don't forget to copy your actual Python3 code into the container!
 
-##The ENTRYPOINT instruction
+## The ENTRYPOINT instruction
 
 
