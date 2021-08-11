@@ -10,6 +10,7 @@
   * [Darcy Troubleshooting](edgeworx-for-developers/quickstart/troubleshooting.md)
   * [Deploying apps and managing nodes at the Edge](edgeworx-for-developers/quickstart/deploying-apps-and-managing-nodes.md)
 * [Developer Docs](edgeworx-for-developers/developer-docs/README.md)
+  * [Dockerfile](edgeworx-for-developers/developer-docs/dockerfile.md)
   * [APIs](edgeworx-for-developers/developer-docs/apis.md)
   * [AI SDK](edgeworx-for-developers/developer-docs/ai-sdk.md)
   * [Darcy Terms of use](edgeworx-for-developers/developer-docs/darcy-terms-of-use.md)
