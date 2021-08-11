@@ -21,8 +21,8 @@ When Docker uses a Dockerfile to build a container, it works through each line a
 
 >PRO TIP: Put your most frequently changing lines of your Dockerfile as close to the end as possible, so all of the layers above can stay the same. Your build times and download times will be greatly improved.
 
-Docker needs Dockerfiles to be plain text and needs them to just be called "Dockerfile" with no extension. It's helpful to keep every instruction in a Dockerfile on its own line for clarity.
+Docker needs Dockerfiles to be plain text and needs them to just be called "Dockerfile" with no extension. It's helpful to keep every instruction in a Dockerfile on its own line for clarity, which you can see illustrated in the example above.
 
 ## The FROM instruction
 
-
+Every new container must start from some a base container. The first line in your Dockerfile will be a `FROM` instruction which tells Docker which base container you want to use as your starting point. The instruction format is pretty straightforward. Use the keyword `FROM` followed by the string that uniquely identifies the container image. In the example above, the identifier string is `edgeworx/darcy-ai-sdk-base:1.0.0`.
