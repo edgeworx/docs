@@ -12,5 +12,5 @@ COPY custom_ai_labels.txt /src/
 COPY static/ /src/static/
 COPY my_application.py /src/
 
-ENTRYPOINT \["/bin/bash", "-c", "cd /src/ && python3 ./my_application.py"\]
+ENTRYPOINT ["/bin/bash", "-c", "cd /src/ && python3 ./my_application.py"]
 ```
