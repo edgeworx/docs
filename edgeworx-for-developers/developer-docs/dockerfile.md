@@ -21,4 +21,8 @@ When Docker uses a Dockerfile to build a container, it works through each line a
 
 >PRO TIP: Put your most frequently changing lines of your Dockerfile as close to the end as possible, so all of the layers above can stay the same. Your build times and download times will be greatly improved.
 
+Docker needs Dockerfiles to be plain text and needs them to just be called "Dockerfile" with no extension. It's helpful to keep every instruction in a Dockerfile on its own line for clarity.
+
+## The FROM instruction
+
 
