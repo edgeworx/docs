@@ -35,4 +35,12 @@ Using the instruction `FROM edgeworx/darcy-ai-sdk-base:1.0.0` tells Docker to lo
 
 ## The RUN instruction
 
+Every time Docker sees the `RUN` instruction, it will attempt to run the commands that follow and will make a new container layer if the commands are successful. In the example above, we have `RUN python3 -m pip install darcyai`. This instruction tells Docker to run the command `python3 -m pip install darcyai` which is a standard Python package installation command. The package we want to install is called "darcyai". It is the Python3 SDK for building Darcy AI applications. You must include this `RUN` instruction in your own Dockerfile otherwise you will be missing the Darcy AI SDK package for Python3.
+
+> PRO TIP: We put the `RUN` instruction for installing the "darcyai" package in the example Dockerfile on purpose, instead of including that package in the base container image. This is so you can include the instruction in your own Dockerfile and get updated versions of the Darcy AI SDK when you build new containers. If it were included in the base container image, the Python3 package would never get updated.
+
+You can have as many `RUN` commands as you want. If you want to install additonal Python3 packages, just add another instruction, such as `RUN python3 -m pip install pendulum`. If you want to install Linux packages to use inside your container, use standard commands such as `RUN apt-get install -y unzip` and don't forget the `-y` flag for automatically saying "yes" during the install because you will not be able to manually interact with the installer program when Docker is running it inside the container.
+
+## The COPY instruction
+
 
