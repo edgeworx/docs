@@ -43,4 +43,16 @@ You can have as many `RUN` commands as you want. If you want to install additona
 
 ## The COPY instruction
 
+Use the `COPY` instruction to move local files into your container. Docker interprets the `COPY` instruction starting from the location of the Dockerfile itself. The first part of the instruction is the path to the file or directory that you want to copy. It can be either an absolute path or a relative path. For a relative path, as mentioned, the starting point is the wherever the Dockerfile itself is located. The second part of the instruction is the destination path inside the container.
+
+> PRO TIP: Use a separate `COPY` instruction for each type of file that you are putting in the container, so you have more stable layers. Put the files that are changing the most frequently below the more stable files.
+
+The instructions `COPY custom_ai_model.tflite /src/` and `COPY custom_ai_labels.txt /src/` are telling Docker to copy an AI model and its associated labels file into the container. The files are located in the same directory as the Dockerfile itself. The destination is a directory found at the root inside the container called `/src/`. This means that any reference to the AI model and labels file in my application code should look for these files at `/src/custom_ai_model.tflite` and `/src/custom_ai_labels.txt`.
+
+The instruction `COPY static/ /src/static/` is copying the contents of the whole `static/` directory into a new directory called `static/` under the same `/src/` directory we are already using for other files. This is a great way to copy a set of images or supporting code files that have been grouped into a directory.
+
+The instruction `COPY my_application.py /src/` copies my application Python3 code file into the container. Because this file is changing the most frequently as I build and test my Darcy AI application, I have put this instruction at the bottom of the  `COPY` section of the Dockerfile. Don't forget to copy your actual Python3 code into the container!
+
+##The ENTRYPOINT instruction
+
 
