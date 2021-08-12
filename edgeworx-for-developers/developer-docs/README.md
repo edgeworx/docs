@@ -7,15 +7,19 @@ To build your own computer vision and edge AI applications with Darcy, you need 
 Because the Darcy AI platform handles many of the complexities of computer vision applications on your behalf, there are only a few technologies that you need to use in order to make your own application. Get familiar with the following technologies and then follow the guided steps for building your first Darcy AI app.
 
 ### Python 3
+
 * Python 3 \(any IDE is suitable\)
 
 ### Darcy AI SDK
+
 * Darcy AI SDK \(easily imported Python library\)
 
 ### Docker command line tools
+
 * Docker command line tools \(built into your Darcy cam\)
 
 ### TensorFlow Lite AI models
+
 * TensorFlow Lite AI models \(optional if you want to add your own AI processing or change Darcy's base AI models\)
 
 ## What you use to deploy your application
@@ -23,7 +27,6 @@ Because the Darcy AI platform handles many of the complexities of computer visio
 Once you have built your application, you need to deploy it into one or more Darcy cams or compatible hardware. Become familiar with the following technologies so you can run your applications.
 
 ### Eclipse ioFog
-
 
 ## Preparing your Darcy cam for your own application
 

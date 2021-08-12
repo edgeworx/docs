@@ -2,7 +2,7 @@
 
 In order to run your Darcy AI application on your Darcy cam, you will need to package your code in a Docker container. To package your code, you will run some Docker commands from the command prompt on your Darcy cam. Those commands require a text file called a "Dockerfile" which tells the Docker software how to do the packaging and build your container. A sample Dockerfile is shown below. The discussion that follows will walk you through each of the lines in the Dockerfile and explain the operations so you can make your own.
 
-```
+```text
 FROM edgeworx/darcy-ai-sdk-base:1.0.0
 
 RUN python3 -m pip install darcyai
@@ -19,7 +19,7 @@ ENTRYPOINT ["/bin/bash", "-c", "cd /src/ && python3 ./my_application.py"]
 
 When Docker uses a Dockerfile to build a container, it works through each line and executes the instructions. It goes from top to bottom. For each line, it creates a new "layer" of the container. This means that every container is really a collection of layers. The stored version of a fully packaged container is called an "image", and every image is made of saved layers. Layers get reused whenever possible, which makes it much faster to build containers when not much has changed. This also means that downloading an updated container image is **much** faster if a minimal number of layers have changed.
 
->PRO TIP: Put your most frequently changing lines of your Dockerfile as close to the end as possible, so all of the layers above can stay the same. Your build times and download times will be greatly improved.
+> PRO TIP: Put your most frequently changing lines of your Dockerfile as close to the end as possible, so all of the layers above can stay the same. Your build times and download times will be greatly improved.
 
 Docker needs Dockerfiles to be plain text and needs them to just be called "Dockerfile" with no extension. It's helpful to keep every instruction in a Dockerfile on its own line for clarity, which you can see illustrated in the example above.
 
@@ -51,10 +51,11 @@ The instructions `COPY custom_ai_model.tflite /src/` and `COPY custom_ai_labels.
 
 The instruction `COPY static/ /src/static/` is copying the contents of the whole `static/` directory into a new directory called `static/` under the same `/src/` directory we are already using for other files. This is a great way to copy a set of images or supporting code files that have been grouped into a directory.
 
-The instruction `COPY my_application.py /src/` copies my application Python3 code file into the container. Because this file is changing the most frequently as I build and test my Darcy AI application, I have put this instruction at the bottom of the  `COPY` section of the Dockerfile. Don't forget to copy your actual Python3 code into the container!
+The instruction `COPY my_application.py /src/` copies my application Python3 code file into the container. Because this file is changing the most frequently as I build and test my Darcy AI application, I have put this instruction at the bottom of the `COPY` section of the Dockerfile. Don't forget to copy your actual Python3 code into the container!
 
 ## The ENTRYPOINT instruction
 
 This instruction tells Docker how to "start" the container. It is the command that Docker executes when the container is started up. If the command that is found in the `ENTRYPOINT` instruction finishes running, Docker will close the container. For your Darcy AI application, you want your container to stay alive and continue to operate. If you follow the instruction for building with the Darcy AI SDK, your Python3 code will stay running.
 
 The example instruction above is `ENTRYPOINT ["/bin/bash", "-c", "cd /src/ && python3 ./my_application.py"]` which tells Docker to run the Python3 file called `my_application.py` from within the `/src/` directory. That is the directory where we copied it with the `COPY` instruction above. The first part of the `ENTRYPOINT` instruction is the binary executable that Docker will use to execute the remainder of the command. In our example it is `/bin/bash` and you should not need to change this. It means that Docker will execute our command with the "Bash" shell. The next part is `-c` and it is a flag for the Bash shell that means we should intrepret the next part as a command to be run by Bash. The last part is `cd /src/ && python3 ./my_application.py` and this is a combination command that tells the Bash shell to change to the `/src/` directory and then run the Python file with the Python3 interpreter. This will be the action that Docker completes every time it starts this container. This is exactly what we want because now our Python3 code will be run for us automatically.
+
