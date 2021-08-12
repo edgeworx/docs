@@ -42,6 +42,10 @@ Once you have built your application, you need to deploy it into one or more Dar
 
 ### Eclipse ioFog
 
+Your Darcy cam uses an edge computing platform called Eclipse ioFog to operate and to provide remote management. You can use ioFog to view the status of your Darcy cam and your Darcy AI applications from anywhere. You will use ioFog to deploy and manage Darcy AI applications with a tool called **iofogctl**.
+
+You can learn about Eclipse ioFog here [https://iofog.org](https://iofog.org) and install the iofogctl tool here [https://iofog.org/docs/2/iofogctl/download.html](https://iofog.org/docs/2/iofogctl/download.html).
+
 ## Preparing your Darcy cam for your own application
 
 * Get the Eclipse ioFog command line tool called **iofogctl**
