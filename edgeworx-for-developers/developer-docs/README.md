@@ -20,11 +20,13 @@ You can find the Darcy AI SDK library at [https://pypi.org/project/darcyai/](htt
 
 ### Docker command line tools
 
-* Docker command line tools \(built into your Darcy cam\)
+You will use Docker commands on the Linux command line prompt to build your Darcy AI application containers. The Docker command line tools are already installed in your Darcy cam so you can just follow the instructions here in this documentation. If you want to learn more about Docker and the commands you will be using, you can go here [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/).
 
-### TensorFlow Lite AI models
+### TensorFlow Lite AI models (optional)
 
-* TensorFlow Lite AI models \(optional if you want to add your own AI processing or change Darcy's base AI models\)
+Darcy gives you an immense amount of AI functionality and performance automatically, but you can also optionally add your own AI models and Darcy will make them part of her operation. If you want to add your own AI models or change the AI models that Darcy uses, you will need to produce a TensorFlow Lite \(.tflite) file as your final format to include in your Darcy AI application.
+
+You can learn more about TensorFlow and specifically TensorFlow Lite by starting here [https://www.tensorflow.org/lite](https://www.tensorflow.org/lite).
 
 ## What you use to deploy your application
 
