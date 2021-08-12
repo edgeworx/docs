@@ -28,6 +28,10 @@ Darcy gives you an immense amount of AI functionality and performance automatica
 
 You can learn more about TensorFlow and specifically TensorFlow Lite by starting here [https://www.tensorflow.org/lite](https://www.tensorflow.org/lite).
 
+### DevicePlane remote command line access
+
+To execute the container build steps for your Darcy AI application, you will need a build environment that contains the proper software tools and is capable of producing a container with the correct CPU architecture. Your Darcy cam has everything you need already setup. Use DevicePlane to connect to the command line of your Darcy cam securely from anywhere. You can use the DevicePlane cloud UI to access your Darcy cam immediately using the credentials you were provided. Command line tools for DevicePlane are also available if you prefer. You can learn more about DevicePlane here [https://deviceplane.com/](https://deviceplane.com/) or simply login to the DevicePlane cloud portal with your credentials at [https://cloud.deviceplane.com/login](https://cloud.deviceplane.com/login).
+
 ## What you use to deploy your application
 
 Once you have built your application, you need to deploy it into one or more Darcy cams or compatible hardware. Become familiar with the following technologies so you can run your applications.
