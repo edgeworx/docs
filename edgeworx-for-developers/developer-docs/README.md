@@ -48,7 +48,7 @@ You can learn about Eclipse ioFog here [https://iofog.org](https://iofog.org) an
 
 ## Preparing your Darcy cam for your own application
 
-If your Darcy cam is currently running a demo application or any other application, you will need to remove that application before you can deploy your own. Although your Darcy cam is capable of running many edge applications simultaneously, only one Darcy AI application can be running on a single Darcy cam at a time.
+If your Darcy cam is currently running a demo application or any other application, you will need to remove that application before you can deploy your own. Although your Darcy cam is capable of running many different types of edge applications simultaneously, only one **Darcy AI** edge application can be running on a single Darcy cam at a time.
 
 Follow the steps below to view the list of running applications \(if any\) and undeploy them so your Darcy cam is ready for a new one.
 
