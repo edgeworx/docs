@@ -48,9 +48,34 @@ You can learn about Eclipse ioFog here [https://iofog.org](https://iofog.org) an
 
 ## Preparing your Darcy cam for your own application
 
-* Get the Eclipse ioFog command line tool called **iofogctl**
-* Connect to your Edge Compute Network \(ECN\) using iofogctl
-* Stop \(undeploy\) any currently running Darcy applications, such as the Darcy AI SDK demo application that shipped with your Darcy cam
+If your Darcy cam is currently running a demo application or any other application, you will need to remove that application before you can deploy your own. Although your Darcy cam is capable of running many edge applications simultaneously, only one Darcy AI application can be running on a single Darcy cam at a time.
+
+Follow the steps below to view the list of running applications \(if any\) and undeploy them so your Darcy cam is ready for a new one.
+
+### Get the Eclipse ioFog command line tool called iofogctl
+
+If you have not already installed the **iofogctl** command line tool, install it now. Instructions can be found here [https://iofog.org/docs/2/iofogctl/download.html](https://iofog.org/docs/2/iofogctl/download.html).
+
+This tool is used to manage the edge applications on your Darcy cam. You can use iofogctl to deploy, undeploy, start, stop, configure, and update applications from anywhere. 
+
+### Connect to your Edge Compute Network \(ECN\) using iofogctl
+
+Your Darcy cam shipped with credentials for accessing and managing your edge compute network \(ECN\). Find these credentials so you can use them now. They may have been provided in an email or an insert with your Darcy cam packaging.
+
+Use iofogctl to connect to your ECN. The command looks like the following, except you will need to insert your own values for the placeholders that are in all CAPS.
+
+```
+iofogctl connect --ecn-addr YOUR_ECN_HOST_INFO --name controller --email YOUR_ECN_ACCESS_EMAIL --pass YOUR_ECN_ACCESS_PASSWORD
+```
+After you execute this command, you should see a success message indicating that you are now connected to your ECN. You only need to execute the `iofogctl connect` command once because iofogctl will store your access until you explicitly tell it to disconnect.
+
+### View the status of your Darcy cam on your ECN
+
+sdfdsfsf
+
+### Stop \(undeploy\) any currently running Darcy applications
+
+such as the Darcy AI SDK demo application that shipped with your Darcy cam
 
 ## Sequence of build steps
 
