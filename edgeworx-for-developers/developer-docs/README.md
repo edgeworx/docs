@@ -71,7 +71,34 @@ After you execute this command, you should see a success message indicating that
 
 ### View the status of your Darcy cam on your ECN
 
-sdfdsfsf
+Once you have used iofogctl to connect to your ECN, you can use other iofogctl commands to view information or take actions. The command that displays all of the status information for your ECN is below.
+
+```
+iofogctl get all
+```
+
+Execute this command and you should see output similar to the following.
+
+```
+NAMESPACE
+default
+
+CONTROLLER	STATUS		AGE		UPTIME		VERSION		ADDR				PORT		
+controller	online		-		8d16h		2.0.3		customer.caas.edgeworx.io	51121		
+
+AGENT			STATUS		AGE		UPTIME		VERSION		ADDR			
+customer-darcy-1	RUNNING		82d1h		7d10h		2.0.6		customer-darcy-1	
+
+APPLICATION	RUNNING		MICROSERVICES		
+ai-sdk-1	1/1		darcy-sdk-example-1	
+
+MICROSERVICE		STATUS		AGENT			VOLUMES		PORTS		
+darcy-sdk-example-1	RUNNING		customer-darcy-1	/dev:/dev	3456:3456	
+
+VOLUME		SOURCE		DESTINATION	PERMISSIONS	AGENTS		
+
+ROUTE		SOURCE MSVC	DEST MSVC
+```
 
 ### Stop \(undeploy\) any currently running Darcy applications
 
