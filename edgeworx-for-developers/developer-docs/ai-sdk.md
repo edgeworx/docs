@@ -43,6 +43,88 @@ The `data_processor` parameter is set to `my_data_analyze` which is the name of 
 
 The `frame_processor` parameter is set to `my_frame_handler`. This is the name of a custom function, similar to the `my_data_analyze` function. This function will be called for every frame of video that Darcy processes. The details of how to define and work with the `frame_processor` callback can be found below.
 
+## List of initialization parameters
+
+### data_processor
+
+Required. No default.
+
+### frame_processor
+
+Required. No default.
+
+### do_perception
+
+Optional. Default is True
+
+### use_pi_camera
+
+Optional. Default is True
+
+### video_device
+
+Required. No Default.
+
+### detect_perception_model
+
+Optional. Default is None
+
+### detect_perception_threshold
+
+Optional. Default is None
+
+### detect_perception_labels_file
+
+Optional. Default is None
+
+### classify_perception_model
+
+Optional. Default is None
+
+### classify_perception_mean
+
+Optional. Default is None
+
+### classify_perception_std
+
+Optional. Default is None
+
+### classify_perception_top_k
+
+Optional. Default is None
+
+### classify_perception_threshold
+
+Optional. Default is None
+
+### classify_perception_labels_file
+
+Optional. Default is None
+
+### flask_app
+
+Optional. Default is None
+
+### video_file
+
+Optional. Default is None
+
+### video_width
+
+Optional. Default is 640
+
+### video_height
+
+Optional. Default is 480
+
+### config
+
+Optional. Default is DarcyAIConfig()
+
+### arch
+
+Optional. Default is os.uname().machine
+
 ## The frame_processor callback
 
 ```
