@@ -161,7 +161,36 @@ You should see a command line interface with the prompt `root@customer-darcy-1:/
 
 ### Add your Python code to a folder on your Darcy cam
 
+You will need to create a build folder for your application. Your SSH session is a standard Linux command line session. Use the following command to make a new directory at the root of the file system that you will use to house your code and other files.
 
+```
+mkdir /myapp
+```
+
+Now change to that directory in order to add files using the following command.
+
+```
+cd /myapp
+```
+
+Your prompt should now display `root@customer-darcy-1:/myapp#` indicating that you are currently working in the proper directory.
+
+Add your Python code to a new file that we will call `my_application.py` using the following command.
+
+```
+nano my_application.py
+```
+
+This will open a text editor window using the `nano` editor application. You can use any text editor you would like if you prefer something other than `nano`.
+
+Highlight and copy your Python code and then paste it into the text editor window. Exit the text editor session and save your code by pressing `ctrl-x` and then pressing `y` and then pressing `enter` when you are prompted with the file name, which should be `my_application.py`.
+
+Once you have exited the code editor, you can verify the existence of your Python file using the `ls -lh` command which should display output similar to below.
+
+```
+total 4.0K
+-rw-r--r-- 1 root root 15 Aug 16 19:47 my_application.py
+```
 
 * Add a Dockerfile to your folder
 * Add any additional files you need in your application, such as AI models or images or video files
