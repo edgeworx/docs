@@ -22,9 +22,9 @@ You can find the Darcy AI SDK library at [https://pypi.org/project/darcyai/](htt
 
 You will use Docker commands on the Linux command line prompt to build your Darcy AI application containers. The Docker command line tools are already installed in your Darcy cam so you can just follow the instructions here in this documentation. If you want to learn more about Docker and the commands you will be using, you can go here [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/).
 
-### TensorFlow Lite AI models (optional)
+### TensorFlow Lite AI models \(optional\)
 
-Darcy gives you an immense amount of AI functionality and performance automatically, but you can also optionally add your own AI models and Darcy will make them part of her operation. If you want to add your own AI models or change the AI models that Darcy uses, you will need to produce a TensorFlow Lite \(.tflite) file as your final format to include in your Darcy AI application.
+Darcy gives you an immense amount of AI functionality and performance automatically, but you can also optionally add your own AI models and Darcy will make them part of her operation. If you want to add your own AI models or change the AI models that Darcy uses, you will need to produce a TensorFlow Lite \(.tflite\) file as your final format to include in your Darcy AI application.
 
 You can learn more about TensorFlow and specifically TensorFlow Lite by starting here [https://www.tensorflow.org/lite](https://www.tensorflow.org/lite).
 
@@ -56,7 +56,7 @@ Follow the steps below to view the list of running applications \(if any\) and u
 
 If you have not already installed the **iofogctl** command line tool, install it now. Instructions can be found here [https://iofog.org/docs/2/iofogctl/download.html](https://iofog.org/docs/2/iofogctl/download.html).
 
-This tool is used to manage the edge applications on your Darcy cam. You can use iofogctl to deploy, undeploy, start, stop, configure, and update applications from anywhere. 
+This tool is used to manage the edge applications on your Darcy cam. You can use iofogctl to deploy, undeploy, start, stop, configure, and update applications from anywhere.
 
 ### Connect to your Edge Compute Network \(ECN\) using iofogctl
 
@@ -64,40 +64,41 @@ Your Darcy cam shipped with credentials for accessing and managing your edge com
 
 Use iofogctl to connect to your ECN. The command looks like the following, except you will need to insert your own values for the placeholders that are in all CAPS.
 
-```
+```text
 iofogctl connect --ecn-addr YOUR_ECN_HOST_INFO --name controller --email YOUR_ECN_ACCESS_EMAIL --pass YOUR_ECN_ACCESS_PASSWORD
 ```
+
 After you execute this command, you should see a success message indicating that you are now connected to your ECN. You only need to execute the `iofogctl connect` command once because iofogctl will store your access until you explicitly tell it to disconnect.
 
 ### View the status of your Darcy cam on your ECN
 
 Once you have used iofogctl to connect to your ECN, you can use other iofogctl commands to view information or take actions. The command that displays all of the status information for your ECN is below.
 
-```
+```text
 iofogctl get all
 ```
 
 Execute this command and you should see output similar to the following.
 
-```
+```text
 NAMESPACE
 default
 
-CONTROLLER STATUS		AGE		UPTIME		VERSION		ADDR  		PORT		
-controller online  -  8d16h		2.0.3  customer.caas.edgeworx.io    51121		
+CONTROLLER STATUS        AGE        UPTIME        VERSION        ADDR          PORT        
+controller online  -  8d16h        2.0.3  customer.caas.edgeworx.io    51121        
 
-AGENT			STATUS		AGE		UPTIME		VERSION		ADDR			
-customer-darcy-1	RUNNING		82d1h		7d10h		2.0.6		customer-darcy-1	
+AGENT            STATUS        AGE        UPTIME        VERSION        ADDR            
+customer-darcy-1    RUNNING        82d1h        7d10h        2.0.6        customer-darcy-1    
 
-APPLICATION	RUNNING		MICROSERVICES		
-ai-sdk-1	1/1		darcy-sdk-example-1	
+APPLICATION    RUNNING        MICROSERVICES        
+ai-sdk-1    1/1        darcy-sdk-example-1    
 
-MICROSERVICE		STATUS		AGENT			VOLUMES		PORTS		
-darcy-sdk-example-1	RUNNING		customer-darcy-1	/dev:/dev	3456:3456	
+MICROSERVICE        STATUS        AGENT            VOLUMES        PORTS        
+darcy-sdk-example-1    RUNNING        customer-darcy-1    /dev:/dev    3456:3456    
 
-VOLUME		SOURCE		DESTINATION	PERMISSIONS	AGENTS		
+VOLUME        SOURCE        DESTINATION    PERMISSIONS    AGENTS        
 
-ROUTE		SOURCE MSVC	DEST MSVC
+ROUTE        SOURCE MSVC    DEST MSVC
 ```
 
 Under the section labeled `AGENT` you should see your Darcy cam listed. If you have more than one Darcy cam, they should all be listed here.
@@ -110,7 +111,7 @@ If there are applications listed, find the name of the application for your Darc
 
 Use the name of the application that is currently running on your Darcy cam to tell iofogctl to remove it. Using the example name from above, the command is as follows.
 
-```
+```text
  iofogctl delete application ai-sdk-1
 ```
 
@@ -120,13 +121,13 @@ Your Darcy cam should now have no applications running and should be in the prop
 
 ## Sequence of build steps
 
-For your first experience building a Darcy AI application, it will be helpful to follow these steps. After you have some experience, you will probably find many ways to optimize your build process and make it your own. The steps here are key to completing and deploying an application and will outline all of the important parts for you. Any alternative approaches to accomplishing these steps should also work. 
+For your first experience building a Darcy AI application, it will be helpful to follow these steps. After you have some experience, you will probably find many ways to optimize your build process and make it your own. The steps here are key to completing and deploying an application and will outline all of the important parts for you. Any alternative approaches to accomplishing these steps should also work.
 
 ### Add the Darcy AI SDK to your Python code
 
 Create a new Python script if you do not already have one open. At the top of the file, add the `import` line for the Darcy AI SDK.
 
-```
+```text
 from darcyai import DarcyAI
 ```
 
@@ -136,14 +137,14 @@ This will make the Darcy AI SDK functionality available in your code under an ob
 
 Add `import` statements for any other libraries you intend to use. Here are some recommended imports.
 
-```
+```text
 import cv2
 import numpy
 ```
 
 ### Complete your Python code
 
-Use the Darcy AI SDK documentation here [Darcy AI SDK documentation](ai-sdk.md) and the code examples here [https://github.com/Edgeworx/darcyai/blob/main/src/examples/people_perception.py](https://github.com/Edgeworx/darcyai/blob/main/src/examples/people_perception.py) to complete your Python code. For your first Darcy AI application, it is recommended that you complete all of the build steps with a simple amount of custom code in order to become familiar with the process. You may find it easiest to simply copy the example code at the link above and build your first application with only some modifications.
+Use the Darcy AI SDK documentation here [Darcy AI SDK documentation](ai-sdk.md) and the code examples here [https://github.com/Edgeworx/darcyai/blob/main/src/examples/people\_perception.py](https://github.com/Edgeworx/darcyai/blob/main/src/examples/people_perception.py) to complete your Python code. For your first Darcy AI application, it is recommended that you complete all of the build steps with a simple amount of custom code in order to become familiar with the process. You may find it easiest to simply copy the example code at the link above and build your first application with only some modifications.
 
 Save your Python code file but keep it open. You may find it easiest to copy and paste the code in the next steps.
 
@@ -163,13 +164,13 @@ You should see a command line interface with the prompt `root@customer-darcy-1:/
 
 You will need to create a build folder for your application. Your SSH session is a standard Linux command line session. Use the following command to make a new directory at the root of the file system that you will use to house your code and other files.
 
-```
+```text
 mkdir /myapp
 ```
 
 Now change to that directory in order to add files using the following command.
 
-```
+```text
 cd /myapp
 ```
 
@@ -177,7 +178,7 @@ Your prompt should now display `root@customer-darcy-1:/myapp#` indicating that y
 
 Add your Python code to a new file that we will call `my_application.py` using the following command.
 
-```
+```text
 nano my_application.py
 ```
 
@@ -187,7 +188,7 @@ Highlight and copy your Python code and then paste it into the text editor windo
 
 Once you have exited the code editor, you can verify the existence of your Python file using the `ls -lh` command which should display output similar to below.
 
-```
+```text
 total 4.0K
 -rw-r--r-- 1 root root 15 Aug 16 19:47 my_application.py
 ```
@@ -198,13 +199,13 @@ Now that your Python code is in place, you will add a `Dockerfile` text file to 
 
 Similar to pasting your Python code above, create a new file and open a text editor with the following command.
 
-```
+```text
 nano Dockerfile
 ```
 
 And once you have completed the file, you should now see your Python file and your Dockerfile using the `ls -lh` command.
 
-```
+```text
 total 8.0K
 -rw-r--r-- 1 root root 324 Aug 16 20:01 Dockerfile
 -rw-r--r-- 1 root root  15 Aug 16 19:47 my_application.py
@@ -220,13 +221,13 @@ Now that you have all of your files in place in your build folder, you will use 
 
 Run the following command from within your build folder and don't forget the `.` on the end of the command. That is important because it tells Docker where to find your `Dockerfile` which is in the same directory in this case.
 
-```
+```text
 docker build -t yourname/my-darcy-app:1.0.0 .
 ```
 
 It may take some time for the build process to complete. If there is an error, Docker will do its best to inform you what has gone wrong during the build process. If there are no errors, you will receive a success message and your output should look something like the following.
 
-```
+```text
 Sending build context to Docker daemon  3.072kB
 Step 1/3 : FROM edgeworx/darcy-ai-sdk-base:1.0.0
  ---> 8d27759e5a1c
@@ -252,7 +253,7 @@ Follow the example YAML file guide here [YAML file for Darcy AI applications dep
 
 Now that you have your Darcy AI application container on your Darcy cam and you have your deployment YAML file on your computer, you can use iofogctl to deploy your application and watch it run. Use the following command.
 
-```
+```text
  iofogctl deploy -f  myapplication.yaml
 ```
 

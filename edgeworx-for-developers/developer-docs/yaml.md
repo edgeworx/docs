@@ -1,3 +1,4 @@
-# Darcy AI application YAML file example
+# Example YAML file for deploying a Darcy AI application
 
 more here...
+

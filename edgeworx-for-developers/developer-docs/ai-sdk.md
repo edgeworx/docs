@@ -6,5 +6,3 @@ The SDK is open source and you can find the code here [https://github.com/Edgewo
 
 The library is also hosted on PyPI for easy installation [https://pypi.org/project/darcyai/](https://pypi.org/project/darcyai/).
 
-
-

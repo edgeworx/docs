@@ -13,7 +13,7 @@
   * [Example Dockerfile for building a Darcy AI application](edgeworx-for-developers/developer-docs/dockerfile.md)
   * [Example YAML file for deploying a Darcy AI application](edgeworx-for-developers/developer-docs/yaml.md)
   * [APIs](edgeworx-for-developers/developer-docs/apis.md)
-  * [AI SDK](edgeworx-for-developers/developer-docs/ai-sdk.md)
+  * [Darcy AI SDK documentation](edgeworx-for-developers/developer-docs/ai-sdk.md)
   * [Darcy Terms of use](edgeworx-for-developers/developer-docs/darcy-terms-of-use.md)
 * [Other Helpful Resources](edgeworx-for-developers/helpful-resources.md)
 
