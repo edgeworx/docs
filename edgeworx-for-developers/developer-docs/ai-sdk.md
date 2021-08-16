@@ -31,13 +31,15 @@ You will create an instance of the DarcyAI object and include initialization par
 ```
 if __name__ == "__main__":
     ai = DarcyAI(
-        data_processor=analyze,
-        frame_processor=frame_processor,
+        data_processor=my_data_analyze,
+        frame_processor=my_frame_processor,
         video_device="/dev/video0")
     threading.Thread(target=ai.Start).start()
 ```
 
+In the example above, the `video_device` parameter is set to `/dev/video0` which is the default location of Darcy's visual camera. You should not need to change this unless you are working with a different hardware embodiment of Darcy.
 
+The `data_processor` parameter is set to `my_data_analyze` which is the name of a custom function that is defined in the same Python application.
 
 ## The frame_processor callback
 
