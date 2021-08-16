@@ -39,7 +39,9 @@ if __name__ == "__main__":
 
 In the example above, the `video_device` parameter is set to `/dev/video0` which is the default location of Darcy's visual camera. You should not need to change this unless you are working with a different hardware embodiment of Darcy.
 
-The `data_processor` parameter is set to `my_data_analyze` which is the name of a custom function that is defined in the same Python application.
+The `data_processor` parameter is set to `my_data_analyze` which is the name of a custom function that is defined in the same Python application. You can name this function anything you like, provided that it complies with Python function naming requirements. Your custom function will be called every time that Darcy has performed processing on a person or object and has some results to convey to you. The details of how to define and work with the `data_processor` callback can be found below.
+
+
 
 ## The frame_processor callback
 
