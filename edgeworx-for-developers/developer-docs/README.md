@@ -120,8 +120,27 @@ Your Darcy cam should now have no applications running and should be in the prop
 
 ## Sequence of build steps
 
-* Add the Darcy AI SDK to your Python code
-* Add any other libraries or modules you need such as OpenCV or Numpy
+For your first experience building a Darcy AI application, it will be helpful to follow these steps. After you have some experience, you will probably find many ways to optimize your build process and make it your own. The steps here are key to completing and deploying an application and will outline all of the important parts for you. Any alternative approaches to accomplishing these steps should also work. 
+
+### Add the Darcy AI SDK to your Python code
+
+Create a new Python script if you do not already have one open. At the top of the file, add the `import` line for the Darcy AI SDK.
+
+```
+from darcyai import DarcyAI
+```
+
+This will make the Darcy AI SDK functionality available in your code under an object called `DarcyAI`.
+
+### Add any other libraries or modules you need such as OpenCV or Numpy
+
+Add `import` statements for any other libraries you intend to use. Here are some recommended imports.
+
+```
+import cv2
+import numpy
+```
+
 * Complete your Python code
 * SSH into your Darcy cam
 * Add your Python code to a folder on your Darcy cam
