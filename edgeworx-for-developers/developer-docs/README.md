@@ -244,7 +244,9 @@ You now have a fully built Darcy AI application container image that exists only
 
 ### Create your application deployment YAML file
 
-sdfsd
+You will deploy your application using iofogctl. You will need to create a deployment YAML file that tells iofogctl where to find your Darcy AI application container and which Darcy cam to deploy it into.
+
+Follow the example YAML file guide here [YAML file for Darcy AI applications deployment](yaml.md) to make your YAML file and save it to your current working directory on your computer. You need to know the location of the YAML file so you can tell iofogctl where to read it from. The easiest way to do that is to have the file in your current directory.
 
 ### Use iofogctl to deploy your application
 
@@ -253,6 +255,7 @@ dasfds
 ## Where To Go Next
 
 * [Dockerfile for Darcy AI applications walkthrough](dockerfile.md)
+* [YAML file for Darcy AI applications deployment](yaml.md)
 * [Darcy AI SDK documentation](ai-sdk.md)
 * [Darcy developer API documentation](apis.md)
 * [Links to helpful developer resources](../helpful-resources.md)
