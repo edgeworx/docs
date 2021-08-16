@@ -250,7 +250,15 @@ Follow the example YAML file guide here [YAML file for Darcy AI applications dep
 
 ### Use iofogctl to deploy your application
 
-dasfds
+Now that you have your Darcy AI application container on your Darcy cam and you have your deployment YAML file on your computer, you can use iofogctl to deploy your application and watch it run. Use the following command.
+
+```
+ iofogctl deploy -f  myapplication.yaml
+```
+
+It may take a few seconds for the command to finish. When it is complete, you should see a success message indicating that the application has been deployed.
+
+You can view the status of your Darcy AI application using the `iofogctl get all` command, which should list your application under the `APPLICATION` section along with its status. When the status changes to `RUNNING` you can interact with your Darcy AI application.
 
 ## Where To Go Next
 
