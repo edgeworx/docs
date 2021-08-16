@@ -16,9 +16,22 @@ from darcyai import DarcyAI
 
 Now the SDK will be available as an object called `DarcyAI` in your script.
 
+You will also need to import the `threading` library in order to operate your Darcy AI application because you will run Darcy on her own thread.
+
+```
+import threading
+```
+
 ## Initializing the library
 
-
+```
+if __name__ == "__main__":
+    ai = DarcyAI(
+        data_processor=analyze,
+        frame_processor=frame_processor,
+        video_device="/dev/video0")
+    threading.Thread(target=ai.Start).start()
+```
 
 ## The frame_processor callback
 
