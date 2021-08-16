@@ -35,4 +35,23 @@ if __name__ == "__main__":
 
 ## The frame_processor callback
 
+```
+def frame_processor(frame_number, frame, detected_objects):
+    frame_clone = frame.copy()
+    for object in detected_objects:
+        frame_clone = draw_object_rectangle_on_frame(frame_clone, object)
+
+    return frame_clone
+```
+
 ## The data_processor callback
+
+```
+def analyze(frame_number, objects):
+    return
+    for object in objects:
+        if object.body["has_face"]:
+            print("{}: {}".format(object.object_id, object.body["face_position"]))
+        else:
+            print("{}: No face".format(object.object_id))
+```
