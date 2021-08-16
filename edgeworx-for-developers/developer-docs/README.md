@@ -192,14 +192,31 @@ total 4.0K
 -rw-r--r-- 1 root root 15 Aug 16 19:47 my_application.py
 ```
 
-* Add a Dockerfile to your folder
-* Add any additional files you need in your application, such as AI models or images or video files
+### Add a Dockerfile to your folder
+
+Now that your Python code is in place, you will add a `Dockerfile` text file to the folder. You can follow the guide here [Dockerfile for Darcy AI applications walkthrough](dockerfile.md) if you have not yet created your `Dockerfile` or just copy and paste your own content if you have prepared it already.
+
+Similar to pasting your Python code above, create a new file and open a text editor with the following command.
+
+```
+nano Dockerfile
+```
+
+And once you have completed the file, you should now see your Python file and your Dockerfile using the `ls -lh` command.
+
+```
+total 8.0K
+-rw-r--r-- 1 root root 324 Aug 16 20:01 Dockerfile
+-rw-r--r-- 1 root root  15 Aug 16 19:47 my_application.py
+```
+
+### Add any additional files you need in your application, such as AI models or images or video files
+
+
+
 * Build your Docker container
-* Run your Docker container to test
 * Create your application deployment YAML file
-* Add your Docker container to Docker Hub \(optional\)
 * Use iofogctl to deploy your application
-* Deploy your application to any number of additional Darcy cams you own
 
 ## Where To Go Next
 
