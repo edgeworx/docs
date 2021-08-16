@@ -87,18 +87,18 @@ default
 CONTROLLER    STATUS    AGE    UPTIME    VERSION    ADDR                         PORT        
 controller    online    -      8d16h     2.0.3      customer.caas.edgeworx.io    51121        
 
-AGENT            STATUS        AGE        UPTIME        VERSION        ADDR            
-customer-darcy-1    RUNNING        82d1h        7d10h        2.0.6        customer-darcy-1    
+AGENT               STATUS        AGE        UPTIME    VERSION    ADDR            
+customer-darcy-1    RUNNING       82d1h      7d10h     2.0.6      customer-darcy-1    
 
-APPLICATION    RUNNING        MICROSERVICES        
-ai-sdk-1    1/1        darcy-sdk-example-1    
+APPLICATION    RUNNING    MICROSERVICES        
+ai-sdk-1       1/1        darcy-sdk-example-1    
 
-MICROSERVICE        STATUS        AGENT            VOLUMES        PORTS        
-darcy-sdk-example-1    RUNNING        customer-darcy-1    /dev:/dev    3456:3456    
+MICROSERVICE            STATUS        AGENT                VOLUMES        PORTS        
+darcy-sdk-example-1     RUNNING       customer-darcy-1     /dev:/dev      3456:3456    
 
-VOLUME        SOURCE        DESTINATION    PERMISSIONS    AGENTS        
+VOLUME    SOURCE    DESTINATION    PERMISSIONS    AGENTS        
 
-ROUTE        SOURCE MSVC    DEST MSVC
+ROUTE    SOURCE MSVC    DEST MSVC
 ```
 
 Under the section labeled `AGENT` you should see your Darcy cam listed. If you have more than one Darcy cam, they should all be listed here.
