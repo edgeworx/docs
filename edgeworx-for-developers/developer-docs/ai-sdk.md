@@ -24,6 +24,10 @@ import threading
 
 ## Initializing the library
 
+At the bottom of your Python script, add the code to launch Darcy as her own thread from the main thread.
+
+You will create an instance of the DarcyAI object and include initialization parameters. The required parameters are shown in the smallest code snippet immediately below. For your Darcy AI application to operate, the SDK will need to know where to find your video camera device and which functions to use as callbacks for the streaming AI and video operations.
+
 ```
 if __name__ == "__main__":
     ai = DarcyAI(
@@ -32,6 +36,8 @@ if __name__ == "__main__":
         video_device="/dev/video0")
     threading.Thread(target=ai.Start).start()
 ```
+
+
 
 ## The frame_processor callback
 
