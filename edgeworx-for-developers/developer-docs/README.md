@@ -83,8 +83,8 @@ Execute this command and you should see output similar to the following.
 NAMESPACE
 default
 
-CONTROLLER	STATUS		AGE		UPTIME		VERSION		ADDR				PORT		
-controller	online		-		8d16h		2.0.3		customer.caas.edgeworx.io	51121		
+CONTROLLER STATUS		AGE		UPTIME		VERSION		ADDR  		PORT		
+controller online  -  8d16h		2.0.3  customer.caas.edgeworx.io    51121		
 
 AGENT			STATUS		AGE		UPTIME		VERSION		ADDR			
 customer-darcy-1	RUNNING		82d1h		7d10h		2.0.6		customer-darcy-1	
