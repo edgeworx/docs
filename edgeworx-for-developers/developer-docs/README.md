@@ -141,9 +141,28 @@ import cv2
 import numpy
 ```
 
-* Complete your Python code
-* SSH into your Darcy cam
-* Add your Python code to a folder on your Darcy cam
+### Complete your Python code
+
+Use the Darcy AI SDK documentation here [Darcy AI SDK documentation](ai-sdk.md) and the code examples here [https://github.com/Edgeworx/darcyai/blob/main/src/examples/people_perception.py](https://github.com/Edgeworx/darcyai/blob/main/src/examples/people_perception.py) to complete your Python code. For your first Darcy AI application, it is recommended that you complete all of the build steps with a simple amount of custom code in order to become familiar with the process. You may find it easiest to simply copy the example code at the link above and build your first application with only some modifications.
+
+Save your Python code file but keep it open. You may find it easiest to copy and paste the code in the next steps.
+
+### SSH into your Darcy cam
+
+You will need to open a command line session on your Darcy cam for the remaining steps. This is because you are going to use your Darcy cam as your container build environment. You can also set up your own build environments, but for your first experience it is easiest to use your Darcy cam because it has everything you need already installed and configured.
+
+To open an command line session, you will connec to your Darcy cam via SSH. The easiest method is to use the SSH web UI offered in the DevicePlane cloud portal. You have received your DevicePlane credentials in either an email or an insert in your Darcy cam packaging. You should be able to find it in the same place as your ECN credentials.
+
+Visit the DevicePlane cloud portal here [https://cloud.deviceplane.com/login](https://cloud.deviceplane.com/login) and log in.
+
+Make sure your Darcy cam is powered on and connected to the internet. Your Darcy cam should be listed in the DevicePlane portal and should show the status `ONLINE`. Click on the name of your Darcy cam. On the next screen, you should see a button toward the upper-right labeled `SSH`. Click on that button to open a new browser tab with an active SSH session.
+
+You should see a command line interface with the prompt `root@customer-darcy-1:/#` where the name of your Darcy cam is displayed instead of `customer-darcy-1`.
+
+### Add your Python code to a folder on your Darcy cam
+
+
+
 * Add a Dockerfile to your folder
 * Add any additional files you need in your application, such as AI models or images or video files
 * Build your Docker container
