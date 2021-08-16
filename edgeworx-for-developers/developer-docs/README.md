@@ -216,10 +216,39 @@ You do not need to add anything more to your application folder unless you want 
 
 ### Build your Docker container
 
+Now that you have all of your files in place in your build folder, you will use the Docker command line tools to build your Darcy AI application container image. You can use any organization name for your container identifier string at this time, because you will not need to upload the container image to any repository at this stage.
 
+Run the following command from within your build folder and don't forget the `.` on the end of the command. That is important because it tells Docker where to find your `Dockerfile` which is in the same directory in this case.
 
-* Create your application deployment YAML file
-* Use iofogctl to deploy your application
+```
+docker build -t yourname/my-darcy-app:1.0.0 .
+```
+
+It may take some time for the build process to complete. If there is an error, Docker will do its best to inform you what has gone wrong during the build process. If there are no errors, you will receive a success message and your output should look something like the following.
+
+```
+Sending build context to Docker daemon  3.072kB
+Step 1/3 : FROM edgeworx/darcy-ai-sdk-base:1.0.0
+ ---> 8d27759e5a1c
+Step 2/3 : COPY my_application.py /src/
+ ---> 2651e6edacd1
+Step 3/3 : ENTRYPOINT ["/bin/bash", "-c", "cd /src/ && python3 ./my_application.py"]
+ ---> Running in 970089dfe066
+Removing intermediate container 970089dfe066
+ ---> 81a67adfbd43
+Successfully built 81a67adfbd43
+Successfully tagged yourname/darcy-ai-app:1.0.0
+```
+
+You now have a fully built Darcy AI application container image that exists only on your Darcy cam. The next step is to deploy that application so it will run on your Darcy cam.
+
+### Create your application deployment YAML file
+
+sdfsd
+
+### Use iofogctl to deploy your application
+
+dasfds
 
 ## Where To Go Next
 
