@@ -212,9 +212,12 @@ total 8.0K
 
 ### Add any additional files you need in your application, such as AI models or images or video files
 
+You do not need to add anything more to your application folder unless you want to provide additional AI models or static files such as images or video. If you do have additional files to include in your application container, add them now to the same directory at `/myapp` and make sure they are properly copied using instructions in your `Dockerfile`.
+
+### Build your Docker container
 
 
-* Build your Docker container
+
 * Create your application deployment YAML file
 * Use iofogctl to deploy your application
 
