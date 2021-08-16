@@ -100,9 +100,23 @@ VOLUME		SOURCE		DESTINATION	PERMISSIONS	AGENTS
 ROUTE		SOURCE MSVC	DEST MSVC
 ```
 
+Under the section labeled `AGENT` you should see your Darcy cam listed. If you have more than one Darcy cam, they should all be listed here.
+
+You can find the list of all deployed edge applications listed under the `APPLICATION` section. If there are no listed applications, you do not need to perform the next step. There are currently no deployed applications on your Darcy cam and you can go ahead and proceed to building and deploying your own Darcy AI application below.
+
+If there are applications listed, find the name of the application for your Darcy cam. In the example above, it is `ai-sdk-1`. You will use this name to tell iofogctl to undeploy the application in the next step.
+
 ### Stop \(undeploy\) any currently running Darcy applications
 
-such as the Darcy AI SDK demo application that shipped with your Darcy cam
+Use the name of the application that is currently running on your Darcy cam to tell iofogctl to remove it. Using the example name from above, the command is as follows.
+
+```
+ iofogctl delete application ai-sdk-1
+```
+
+The command should complete with a success message. If your Darcy cam is currently running, it should stop running the application you just removed within a minute or two if not much sooner. If your Darcy cam is not currently running, it will receive the instructions to remove the application the next time it is running.
+
+Your Darcy cam should now have no applications running and should be in the proper condition for deploying a new Darcy AI application. You can verify the absence of any applications by using the `iofogctl get all` command that you used previously.
 
 ## Sequence of build steps
 
