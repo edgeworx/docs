@@ -28,13 +28,13 @@ Darcy gives you an immense amount of AI functionality and performance automatica
 
 You can learn more about TensorFlow and specifically TensorFlow Lite by starting here [https://www.tensorflow.org/lite](https://www.tensorflow.org/lite).
 
-### DevicePlane remote command line access
+### Deviceplane remote command line access
 
 To execute the container build steps for your Darcy AI application, you will need a build environment that contains the proper software tools and is capable of producing a container with the correct CPU architecture. Your Darcy cam has everything you need already setup.
 
-Use DevicePlane to connect to the command line of your Darcy cam securely from anywhere. You can use the DevicePlane cloud UI to access your Darcy cam immediately using the credentials you were provided. Command line tools for DevicePlane are also available if you prefer.
+Use Deviceplane to connect to the command line of your Darcy cam securely from anywhere. You can use the Deviceplane cloud UI to access your Darcy cam immediately using the credentials you were provided. Command line tools for Deviceplane are also available if you prefer.
 
-You can learn more about DevicePlane here [https://deviceplane.com/](https://deviceplane.com/) or simply login to the DevicePlane cloud portal with your credentials at [https://cloud.deviceplane.com/login](https://cloud.deviceplane.com/login).
+You can learn more about Deviceplane here [https://deviceplane.com/](https://deviceplane.com/) or simply login to the Deviceplane cloud portal with your credentials at [https://cloud.deviceplane.com/login](https://cloud.deviceplane.com/login).
 
 ## What you use to deploy your application
 
@@ -152,11 +152,11 @@ Save your Python code file but keep it open. You may find it easiest to copy and
 
 You will need to open a command line session on your Darcy cam for the remaining steps. This is because you are going to use your Darcy cam as your container build environment. You can also set up your own build environments, but for your first experience it is easiest to use your Darcy cam because it has everything you need already installed and configured.
 
-To open an command line session, you will connec to your Darcy cam via SSH. The easiest method is to use the SSH web UI offered in the DevicePlane cloud portal. You have received your DevicePlane credentials in either an email or an insert in your Darcy cam packaging. You should be able to find it in the same place as your ECN credentials.
+To open an command line session, you will connec to your Darcy cam via SSH. The easiest method is to use the SSH web UI offered in the Deviceplane cloud portal. You have received your Deviceplane credentials in either an email or an insert in your Darcy cam packaging. You should be able to find it in the same place as your ECN credentials.
 
-Visit the DevicePlane cloud portal here [https://cloud.deviceplane.com/login](https://cloud.deviceplane.com/login) and log in.
+Visit the Deviceplane cloud portal here [https://cloud.deviceplane.com/login](https://cloud.deviceplane.com/login) and log in.
 
-Make sure your Darcy cam is powered on and connected to the internet. Your Darcy cam should be listed in the DevicePlane portal and should show the status `ONLINE`. Click on the name of your Darcy cam. On the next screen, you should see a button toward the upper-right labeled `SSH`. Click on that button to open a new browser tab with an active SSH session.
+Make sure your Darcy cam is powered on and connected to the internet. Your Darcy cam should be listed in the Deviceplane portal and should show the status `ONLINE`. Click on the name of your Darcy cam. On the next screen, you should see a button toward the upper-right labeled `SSH`. Click on that button to open a new browser tab with an active SSH session.
 
 You should see a command line interface with the prompt `root@customer-darcy-1:/#` where the name of your Darcy cam is displayed instead of `customer-darcy-1`.
 
