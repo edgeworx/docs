@@ -144,7 +144,9 @@ import numpy
 
 ### Complete your Python code
 
-Use the Darcy AI SDK documentation here [Darcy AI SDK documentation](ai-sdk.md) and the code examples here [https://github.com/Edgeworx/darcyai/blob/main/src/examples/people\_perception.py](https://github.com/Edgeworx/darcyai/blob/main/src/examples/people_perception.py) to complete your Python code. For your first Darcy AI application, it is recommended that you complete all of the build steps with a simple amount of custom code in order to become familiar with the process. You may find it easiest to simply copy the example code at the link above and build your first application with only some modifications.
+Use the code example here [https://github.com/Edgeworx/darcyai/blob/main/src/examples/people\_perception.py](https://github.com/Edgeworx/darcyai/blob/main/src/examples/people_perception.py) to complete your Python code. For your first Darcy AI application, it is recommended that you complete all of the build steps by simply copying the example code at the link above. Once you have built a successfully running Darcy AI application and deployed it, then you can go further by modifying the code or writing your own.
+
+You can explore the Darcy AI SDK documentation here [Darcy AI SDK documentation](ai-sdk.md) when you are ready to go beyond this first sample application.
 
 Save your Python code file but keep it open. You may find it easiest to copy and paste the code in the next steps.
 
@@ -260,6 +262,8 @@ Now that you have your Darcy AI application container on your Darcy cam and you 
 It may take a few seconds for the command to finish. When it is complete, you should see a success message indicating that the application has been deployed.
 
 You can view the status of your Darcy AI application using the `iofogctl get all` command, which should list your application under the `APPLICATION` section along with its status. When the status changes to `RUNNING` you can interact with your Darcy AI application.
+
+The sample application that you built with the example code includes a web UI that shows Darcy's video stream with some AI annotations on the video. You can view it by opening a web browser and going to [http://YOUR-DARCY-CAM:3456](http://YOUR-DARCY-CAM:3456). You will need to replace `YOUR-DARCY-CAM` with the actual name of your Darcy cam that you see in your ECN listing. Congratulations! Step in front of Darcy's vision or point her at another person to see her understand face positions!
 
 ## Where To Go Next
 
