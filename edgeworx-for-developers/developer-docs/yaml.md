@@ -1,6 +1,6 @@
 # Example YAML file for deploying a Darcy AI application
 
-more here...
+When you deploy edge applications using iofogctl, you use a YAML file to tell it what to deploy and where to deploy it. A YAML file is just a text file with the proper formatting. It is similar to a JSON file, a CSV file, or an XML file. A sample YAML file is below for you to copy and edit. A walkthrough of all the sections is available below the code, including notes about what parts you will need to modify to deploy your own application.
 
 ```
 kind: Application
@@ -26,3 +26,11 @@ spec:
             containerDestination: "/dev"
             accessMode: "rw"
 ```
+
+## kind
+
+## apiVersion
+
+## metadata
+
+## spec
