@@ -6,8 +6,6 @@ description: 'Knowledge base, support and docs for all Edgeworx products and sol
 
 ![](.gitbook/assets/ew-banner-2x%20%281%29.png)
 
-![Build, deploy and run AI from cloud to edge.](.gitbook/assets/ew-developers-banner-2x%20%281%29.png)
-
 ## Edgeworx Cloud
 
 > Deploy and manage all of your nodes at the Edge
