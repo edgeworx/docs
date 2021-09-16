@@ -8,7 +8,7 @@ description: 'Knowledge base, support and docs for all Edgeworx products and sol
 
 ## Edgeworx Cloud
 
-> Deploy and manage all of your nodes at the Edge
+> Develop, deploy and manage nodes at the Edge
 
 Coming Soon!
 
