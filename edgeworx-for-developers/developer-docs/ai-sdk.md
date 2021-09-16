@@ -10,7 +10,7 @@ The library is also hosted on PyPI for easy installation [https://pypi.org/proje
 
 You can import the Darcy AI SDK into your Python script just like other common libraries as follows.
 
-```
+```text
 from darcyai import DarcyAI
 ```
 
@@ -18,7 +18,7 @@ Now the SDK will be available as an object called `DarcyAI` in your script.
 
 You will also need to import the `threading` library in order to operate your Darcy AI application because you will run Darcy on her own thread.
 
-```
+```text
 import threading
 ```
 
@@ -28,7 +28,7 @@ At the bottom of your Python script, add the code to launch Darcy as her own thr
 
 You will create an instance of the DarcyAI object and include initialization parameters. The required parameters are shown in the smallest code snippet immediately below. For your Darcy AI application to operate, the SDK will need to know where to find your video camera device and which functions to use as callbacks for the streaming AI and video operations.
 
-```
+```text
 if __name__ == "__main__":
     ai = DarcyAI(
         data_processor=my_data_analyze,
@@ -45,89 +45,89 @@ The `frame_processor` parameter is set to `my_frame_handler`. This is the name o
 
 ## List of initialization parameters
 
-### data_processor
+### data\_processor
 
 Required. No default.
 
-### frame_processor
+### frame\_processor
 
 Required. No default.
 
-### do_perception
+### do\_perception
 
 Optional. Default is True
 
-### use_pi_camera
+### use\_pi\_camera
 
 Optional. Default is True
 
-### video_device
+### video\_device
 
 Required. No Default.
 
-### detect_perception_model
+### detect\_perception\_model
 
 Optional. Default is None
 
-### detect_perception_threshold
+### detect\_perception\_threshold
 
 Optional. Default is None
 
-### detect_perception_labels_file
+### detect\_perception\_labels\_file
 
 Optional. Default is None
 
-### classify_perception_model
+### classify\_perception\_model
 
 Optional. Default is None
 
-### classify_perception_mean
+### classify\_perception\_mean
 
 Optional. Default is None
 
-### classify_perception_std
+### classify\_perception\_std
 
 Optional. Default is None
 
-### classify_perception_top_k
+### classify\_perception\_top\_k
 
 Optional. Default is None
 
-### classify_perception_threshold
+### classify\_perception\_threshold
 
 Optional. Default is None
 
-### classify_perception_labels_file
+### classify\_perception\_labels\_file
 
 Optional. Default is None
 
-### flask_app
+### flask\_app
 
 Optional. Default is None
 
-### video_file
+### video\_file
 
 Optional. Default is None
 
-### video_width
+### video\_width
 
 Optional. Default is 640
 
-### video_height
+### video\_height
 
 Optional. Default is 480
 
 ### config
 
-Optional. Default is DarcyAIConfig()
+Optional. Default is DarcyAIConfig\(\)
 
 ### arch
 
-Optional. Default is os.uname().machine
+Optional. Default is os.uname\(\).machine
 
-## The frame_processor callback
+## The frame\_processor callback
 
-```
+```text
 def frame_processor(frame_number, frame, detected_objects):
     frame_clone = frame.copy()
     for object in detected_objects:
@@ -136,9 +136,9 @@ def frame_processor(frame_number, frame, detected_objects):
     return frame_clone
 ```
 
-## The data_processor callback
+## The data\_processor callback
 
-```
+```text
 def analyze(frame_number, objects):
     return
     for object in objects:
@@ -147,3 +147,4 @@ def analyze(frame_number, objects):
         else:
             print("{}: No face".format(object.object_id))
 ```
+

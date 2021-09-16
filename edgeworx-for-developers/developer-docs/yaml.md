@@ -2,7 +2,7 @@
 
 When you deploy edge applications using iofogctl, you use a YAML file to tell it what to deploy and where to deploy it. A YAML file is just a text file with the proper formatting. It is similar to a JSON file, a CSV file, or an XML file. A sample YAML file is below for you to copy and edit. A walkthrough of all the sections is available below the code, including notes about what parts you will need to modify to deploy your own application.
 
-```
+```text
 kind: Application
 apiVersion: iofog.org/v2
 metadata:
@@ -66,3 +66,4 @@ The `container` section allows you to specify details about how to run the Docke
 The `ports` sub-specification allows you to set up network ports that open connections into the microservice and therefore opens ports to your Darcy AI application. In the example above, port `3456` is opened. That's the port you can use to view the video stream web UI. You should leave the port information the way it is shown in the example.
 
 The `volumes` sub-specification allows you to connect folders \(also called directories\) on the root host operating system into the microservice. Usually you should do this to either provide access to a particular system resource, such as a microphone or a camera, or to provide access to a data storage location, such as a folder for saving images. In the example above, the `/dev` directory is connected into the microservice with read and write privileges, designated by `rw`. You should leave the volume information the way it is shown in the example.
+
