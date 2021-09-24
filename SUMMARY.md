@@ -18,7 +18,7 @@
 
 ## Darcy AI SDK
 
-* [Documentation](darcy-ai-sdk/documentation.md)
+* [AI SDK Docs](darcy-ai-sdk/documentation.md)
 * [Example Dockerfile](darcy-ai-sdk/example-dockerfile.md)
 * [Example YAML](darcy-ai-sdk/example-yaml.md)
 
