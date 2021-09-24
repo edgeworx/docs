@@ -13,7 +13,5 @@ description: 'Knowledge base, support and docs for all Edgeworx products and sol
 | › [How to: Add Node](edgeworx-cloud/howto-add-node.md) | › [Feild of View Guidelines](darcy/field-of-view-guidelines.md) | › [Example YAML](darcy-ai-sdk/example-yaml.md) |
 | › [How to: Build Apps](edgeworx-cloud/howto-build-apps.md) | › [Troubleshooting](darcy/troubleshooting-darcy.md) |  |
 
->
-
 
 
