@@ -16,7 +16,7 @@ As you build your Darcy AI applications, you will move your Python3 code files i
 
 To program a Darcy AI application, you will use the Darcy AI SDK, which is a Python library available on the PyPI package hosting system. PyPI allows Python developers to install packages very easily using simple commands. You will use these commands to install the Darcy AI SDK when building your application containers. You can also install and use any other Python packages you want.
 
-You can find the Darcy AI SDK library at [https://pypi.org/project/darcyai/](https://pypi.org/project/darcyai/). The detailed documentation for using the library is here on this site at [Darcy AI SDK documentation](ai-sdk.md).
+You can find the Darcy AI SDK library at [https://pypi.org/project/darcyai/](https://pypi.org/project/darcyai/). The detailed documentation for using the library is here on this site at [Darcy AI SDK documentation]().
 
 ### Docker command line tools
 
@@ -146,7 +146,7 @@ import numpy
 
 Use the code example here [https://github.com/Edgeworx/darcyai/blob/main/src/examples/people\_perception.py](https://github.com/Edgeworx/darcyai/blob/main/src/examples/people_perception.py) to complete your Python code. For your first Darcy AI application, it is recommended that you complete all of the build steps by simply copying the example code at the link above. Once you have built a successfully running Darcy AI application and deployed it, then you can go further by modifying the code or writing your own.
 
-You can explore the Darcy AI SDK documentation here [Darcy AI SDK documentation](ai-sdk.md) when you are ready to go beyond this first sample application.
+You can explore the Darcy AI SDK documentation here [Darcy AI SDK documentation]() when you are ready to go beyond this first sample application.
 
 Save your Python code file but keep it open. You may find it easiest to copy and paste the code in the next steps.
 
@@ -197,7 +197,7 @@ total 4.0K
 
 ### Add a Dockerfile to your folder
 
-Now that your Python code is in place, you will add a `Dockerfile` text file to the folder. You can follow the guide here [Dockerfile for Darcy AI applications walkthrough](dockerfile.md) if you have not yet created your `Dockerfile` or just copy and paste your own content if you have prepared it already.
+Now that your Python code is in place, you will add a `Dockerfile` text file to the folder. You can follow the guide here [Dockerfile for Darcy AI applications walkthrough]() if you have not yet created your `Dockerfile` or just copy and paste your own content if you have prepared it already.
 
 Similar to pasting your Python code above, create a new file and open a text editor with the following command.
 
@@ -249,7 +249,7 @@ You now have a fully built Darcy AI application container image that exists only
 
 You will deploy your application using iofogctl. You will need to create a deployment YAML file that tells iofogctl where to find your Darcy AI application container and which Darcy cam to deploy it into.
 
-Follow the example YAML file guide here [YAML file for Darcy AI applications deployment](yaml.md) to make your YAML file and save it to your current working directory on your computer. You need to know the location of the YAML file so you can tell iofogctl where to read it from. The easiest way to do that is to have the file in your current directory.
+Follow the example YAML file guide here [YAML file for Darcy AI applications deployment]() to make your YAML file and save it to your current working directory on your computer. You need to know the location of the YAML file so you can tell iofogctl where to read it from. The easiest way to do that is to have the file in your current directory.
 
 ### Use iofogctl to deploy your application
 
@@ -267,10 +267,10 @@ The sample application that you built with the example code includes a web UI th
 
 ## Where To Go Next
 
-* [Dockerfile for Darcy AI applications walkthrough](dockerfile.md)
-* [YAML file for Darcy AI applications deployment](yaml.md)
-* [Darcy AI SDK documentation](ai-sdk.md)
-* [Darcy developer API documentation](apis.md)
-* [Links to helpful developer resources](../helpful-resources.md)
-* [Darcy terms of use for developers](darcy-terms-of-use.md)
+* [Dockerfile for Darcy AI applications walkthrough]()
+* [YAML file for Darcy AI applications deployment]()
+* [Darcy AI SDK documentation]()
+* [Darcy developer API documentation]()
+* [Links to helpful developer resources]()
+* [Darcy terms of use for developers](../darcy-terms-of-use.md)
 
