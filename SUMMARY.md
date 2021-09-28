@@ -31,4 +31,5 @@
 ---
 
 * [Darcy Terms of use](darcy-terms-of-use.md)
+* [Contact Us](contact-us.md)
 
