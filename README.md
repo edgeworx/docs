@@ -8,8 +8,8 @@ description: 'Knowledge base, support and docs for all Edgeworx products and sol
 
 |   |
 | :--- |
-| › [Get Started: Edgeworx Cloud](edgeworx-cloud/get-started-ec.md) |
-| › [Get Started edgectl](edgeworx-cloud/get-started-edgectl.md) |
+| › [Get Started with Edgeworx Cloud](edgeworx-cloud/get-started-ec.md) |
+| › [Get Started with edgectl](edgeworx-cloud/get-started-edgectl.md) |
 | › [How to: Add Node](edgeworx-cloud/howto-add-node.md) |
 | › [How to: Build Apps](edgeworx-cloud/howto-build-apps.md) |
 
