@@ -21,3 +21,4 @@ Paste the command that you copied in step 2 into the terminal. Hit enter. If an 
 Return to the Edgeworx Cloud Portal project view.
 
 Hit the refresh button on the panel on the left of the view. This should show your newly installed node.
+
