@@ -91,25 +91,25 @@ We can use the `edgectl defaults` command to set a default organization and proj
 
 We can use the `list` command to see our available organizations:
 
-```
+```text
 edgectl org list
 ```
 
 This will produce `json` output. We can use the `uuid` field from the json output in the following command in order to set our default organization:
 
-```
+```text
 edgectl defaults set org b828800a-6b34-4414-b884-2bbcd47a0950
 ```
 
 Similarly, we can list available projects:
 
-```
+```text
 edgectl project list
 ```
 
 And set the default project using the `uuid` field:
 
-```
+```text
 edgectl defaults set project fe495002-c276-499f-910e-f8914f147e22
 ```
 
@@ -119,13 +119,13 @@ In Edgeworx Cloud, nodes are edge devices that run Edgeworx Agents.
 
 If we list nodes in our default organization and project, we will notice that we have no nodes:
 
-```
+```text
 edgectl node list
 ```
 
 In order to deploy nodes, we must get the node installation script:
 
-```
+```text
 edgectl project node-install-script
 ```
 
@@ -134,3 +134,4 @@ This will output `json` containing a command within a `data` field. We can use t
 ## Deploy an Application
 
 ...
+
