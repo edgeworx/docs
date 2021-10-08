@@ -2,10 +2,6 @@
 
 In order to start running workloads in an Edgeworx Cloud project, you must add nodes to your project. This section explain how nodes can be added to projects.
 
-{% hint style="info" %}
-TBD-Add node compatibility list
-{% endhint %}
-
 ## 1. Get the Node Installation Script
 
 Log into Cloud Portal and reach the project view.
