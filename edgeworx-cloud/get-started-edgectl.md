@@ -44,11 +44,12 @@ We can use the following commands to install edgectl on `RPM` based distribution
 
 ```
 curl -s https://packagecloud.io/install/repositories/edgeworx/edgectl/script.rpm.sh | sudo bash
+sudo yum install edgectl -y
 ```
 
 ## Windows
 
-Windows support is coming in th near future. Watch this space!
+Windows support is coming in the near future. Watch this space!
 
 # Use edgectl
 
@@ -83,5 +84,3 @@ edgectl org         (Manage orgs)
 edgectl project     (Manage projects)
 edgectl registry    (Manage registries)
 ```
-
-
