@@ -20,6 +20,7 @@ Getting started with AI at the edge has never been easier. Using Edgeworx Cloud 
       <td style="text-align:left">
         <p></p>
         <ul>
+          <li>Get your node on the Edge in a few minutes</li>
           <li>Run and iterate AI models at the Edge</li>
           <li>Go from the lab to the real world, no code changes</li>
           <li>Monitor and manage Edge devices anywhere</li>
@@ -36,6 +37,4 @@ Getting started with AI at the edge has never been easier. Using Edgeworx Cloud 
 ### \*\*\*\*[**3. Deploy the demo app**](get-started-deploy-app.md#deploy-the-demo-app-using-the-portal)\*\*\*\*
 
 ### \*\*\*\*[**4. Create and upload your own app**](../applications-doc/)\*\*\*\*
-
-## \*\*\*\*
 
