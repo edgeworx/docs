@@ -1,12 +1,12 @@
 # Add Node
 
-In order to start running workloads in an Edgeworx Cloud project, we must add nodes to that project. This section explain how nodes can be added to projects.
+In order to start running workloads in an Edgeworx Cloud project, you must add nodes to your project. This section explain how nodes can be added to projects.
 
 ## 1. Get the Node Installation Script
 
 Log into Cloud Portal and reach the project view.
 
-Click the `+` button located in the panel on the left of the view. This will bring up a prompt which shows the command that must be run on a host for it to become a node in the Edgeworx Cloud project.
+Click the `+ ADD NODE` button located in the panel on the left of the view. This will bring up a prompt which shows the command that must be run on a host for it to become a node in the Edgeworx Cloud project.
 
 Click the `COPY` button in the install script prompt.
 

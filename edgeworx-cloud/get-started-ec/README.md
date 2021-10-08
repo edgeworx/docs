@@ -8,7 +8,7 @@
 
 ## [**Get Started with Edgeworx Cloud Here**](http://cloud.edgeworx.io)\*\*\*\*
 
-![](../../.gitbook/assets/image%20%283%29.png)
+![](../../.gitbook/assets/image%20%283%29%20%281%29.png)
 
 Add Nodes
 
