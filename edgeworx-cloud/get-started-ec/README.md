@@ -14,7 +14,9 @@ description: Coming soon
 
 ![](../../.gitbook/assets/image%20%283%29.png)
 
-How to create account
+Add Nodes
 
-Orgs and projects \(add, remove, etc\)
+Deploy a demo app
+
+Edgectl
 
