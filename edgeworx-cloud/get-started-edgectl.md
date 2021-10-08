@@ -65,9 +65,7 @@ To initiate the login procedure, run:
 edgectl login
 ```
 
-This will bring up an authentication view in a web browser. Use this view to select your authentication method and provide the required credentials.
-
-### Get Familiar
+## Get Familiar
 
 Lets get familiar with edgectl. We can observe the main use cases by running the top-level help command:
 
@@ -75,7 +73,7 @@ Lets get familiar with edgectl. We can observe the main use cases by running the
 edgectl --help
 ```
 
-We can run `--help` against any of the commands that return from the above command. For the remainder of this tutorial, we will focus on the following commands:
+We can run the flag `--help` against any of the commands that return from the above command. For the remainder of this tutorial, we will focus on the following commands:
 
 ```text
 edgectl account     (Manage accounts)
@@ -87,3 +85,52 @@ edgectl project     (Manage projects)
 edgectl registry    (Manage registries)
 ```
 
+## Configure Default Org and Project
+
+We can use the `edgectl defaults` command to set a default organization and project. This allows us to use many commands without having to provide the the `--org` and `--project` flags.
+
+We can use the `list` command to see our available organizations:
+
+```
+edgectl org list
+```
+
+This will produce `json` output. We can use the `uuid` field from the json output in the following command in order to set our default organization:
+
+```
+edgectl defaults set org b828800a-6b34-4414-b884-2bbcd47a0950
+```
+
+Similarly, we can list available projects:
+
+```
+edgectl project list
+```
+
+And set the default project using the `uuid` field:
+
+```
+edgectl defaults set project fe495002-c276-499f-910e-f8914f147e22
+```
+
+## Deploy a Node
+
+In Edgeworx Cloud, nodes are edge devices that run Edgeworx Agents.
+
+If we list nodes in our default organization and project, we will notice that we have no nodes:
+
+```
+edgectl node list
+```
+
+In order to deploy nodes, we must get the node installation script:
+
+```
+edgectl project node-install-script
+```
+
+This will output `json` containing a command within a `data` field. We can use this command on our edge devices to install Edgeworx Agent and connect to our Edgeworx Cloud Project. This command can be used any number of times on different devices to grow the respective project's node pool.
+
+## Deploy an Application
+
+...
