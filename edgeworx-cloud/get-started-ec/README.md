@@ -30,7 +30,7 @@ Getting started with AI at the edge has never been easier. Using Edgeworx Cloud 
   </tbody>
 </table>
 
-### \*\*\*\*[**1. Create your account on Edgeworx Portal**](http://cloud.edgeworx.io)\*\*\*\*
+### \*\*\*\*[**1. Create your account on Edgeworx Cloud Portal**](http://cloud.edgeworx.io)\*\*\*\*
 
 ### \*\*\*\*[**2. Add your first Edge node**](get-started-add-node.md)\*\*\*\*
 
