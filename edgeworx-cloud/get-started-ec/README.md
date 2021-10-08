@@ -18,7 +18,3 @@ How to create account
 
 Orgs and projects \(add, remove, etc\)
 
-Adding nodes
-
-Building apps
-
