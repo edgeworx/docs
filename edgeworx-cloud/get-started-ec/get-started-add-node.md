@@ -1,4 +1,4 @@
-# How to: Add Node
+# Add Node
 
 In order to start running workloads in an Edgeworx Cloud project, we must add nodes to that project. This section explain how nodes can be added to projects.
 

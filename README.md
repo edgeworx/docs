@@ -10,7 +10,7 @@ description: 'Knowledge base, support and docs for all Edgeworx products and sol
 | :--- |
 | › [Get Started with Edgeworx Cloud](edgeworx-cloud/get-started-ec/) |
 | › [Get Started with edgectl](edgeworx-cloud/get-started-edgectl.md) |
-| › [How to: Add Node](edgeworx-cloud/get-started-ec/howto-add-node.md) |
+| › [How to: Add Node](edgeworx-cloud/get-started-ec/get-started-add-node.md) |
 | › [How to: Build Apps]() |
 
 

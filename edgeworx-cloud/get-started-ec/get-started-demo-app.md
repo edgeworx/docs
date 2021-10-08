@@ -1,2 +1,2 @@
-# How to: Deploy a demo app
+# Deploy a demo app
 
