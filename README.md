@@ -10,8 +10,9 @@ description: 'Knowledge base, support and docs for all Edgeworx products and sol
 | :--- |
 | › [Get Started with Edgeworx Cloud](edgeworx-cloud/get-started-ec/) |
 | › [Get Started with edgectl](edgeworx-cloud/get-started-edgectl.md) |
-| › [How to: Add Node](edgeworx-cloud/get-started-ec/get-started-add-node.md) |
-| › [Application YAML](edgeworx-cloud/applications-doc/app-doc-yaml.md#file-example) |
+| [› Applications](edgeworx-cloud/applications-doc/) |
+| [› Access Tokens](edgeworx-cloud/access-tokens.md) |
+| [› Key Concepts](edgeworx-cloud/key-concepts.md) |
 
 
 
