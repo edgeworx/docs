@@ -22,9 +22,9 @@ Edgectl supports Mac, Linux, and Windows.
 
 ### MacOS
 
-On Mac, we can us `brew` to install edgectl:
+On Mac, we can use [brew](https://brew.sh) to install _edgectl_:
 
-```text
+```bash
 brew install Edgeworx/edgectl/edgectl
 ```
 
@@ -32,7 +32,7 @@ brew install Edgeworx/edgectl/edgectl
 
 #### Debian
 
-On Debian distributions, we can use `apt` to install edgectl.
+On Debian distributions, we can use `apt` to install _edgectl_.
 
 ```text
 curl -s https://packagecloud.io/install/repositories/edgeworx/edgectl/script.deb.sh | sudo bash
@@ -42,7 +42,7 @@ sudo apt-get install edgectl -y
 
 #### RPM
 
-We can use the following commands to install edgectl on `RPM` based distributions.
+We can use the following commands to install _edgectl_ on `RPM` based distributions.
 
 ```text
 curl -s https://packagecloud.io/install/repositories/edgeworx/edgectl/script.rpm.sh | sudo bash
