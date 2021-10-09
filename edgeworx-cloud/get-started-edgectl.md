@@ -59,10 +59,12 @@ Now we are ready to use edgectl to login and start managing our Edgeworx Cloud r
 
 ### Login
 
-To initiate the login procedure, run:
+_edgectl_ requires an _Access Token_. You can get one via: `edgectl login`, which will open a web browser on `cloud.edgeworx.io`. After authentication, _edgectl_ will receive the account's master _Personal Access Token,_ and will be logged in.
 
-```text
-edgectl login
+If it's preferred to now use a web browser \(e.g. SSH'd into a box\), you can also login by providing either a _Personal Access Token_ or _Project Access Token_ from `cloud.edgeworx.io`. For _Personal Access Token_, click `Access Tokens` in the upper-right account menu. For _Project Acccess Token_, click the settings \(gear\) icon on the project page. Once you have the _Access Token_, you can execute:
+
+```bash
+$ edgectl login --token xyz
 ```
 
 ## Get Familiar
