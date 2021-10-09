@@ -46,7 +46,7 @@ A _project_ is a container for a set of nodes \(edge devices\), which you can SS
 
 You can create multiple projects inside an org \(limited by your plan\).
 
-As described in the \[Access Token\]\(\#Access Token\) section, a project is automatically issued a project _master token_, which can be rotated, but not deleted. You can also generate additional _Project Access Tokens_ if desired.
+As described in the [Access Token](access-tokens.md) section, a project is automatically issued a project _master token_, which can be rotated, but not deleted. You can also generate additional _Project Access Tokens_ if desired.
 
 
 
