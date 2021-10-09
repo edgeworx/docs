@@ -20,13 +20,19 @@ Cloud API is the REST API for Edgeworx Cloud. Cloud Portal and edgectl both comm
 
 edgectl is the CLI for Edgeworx Cloud. See [Get Started: edgectl](get-started-edgectl.md) for more.
 
-#### Account and Organization
+#### Account & Org
 
-To sign-up for an account, visit [cloud.edgeworx.io](https://cloud.edgeworx.io). The user must provide an email address, and must also select a unique username.
+To sign-up for an _account_, visit [cloud.edgeworx.io](https://cloud.edgeworx.io). The user must provide an email address, and must also select a unique _username_.
 
-An _Organization_ \(or simply, _Org_\) is typically created for a corporate entity. For example, `Acme, Inc.` may create an org `acme`. An org is the container for projects.
+An _Org_ \(i.e. _Organization\)_ is typically created for a corporate entity. For example, `Acme, Inc.` may create an org `acme`. An _org_ is the container for projects.
 
 On creating a new account, a new _Personal Org_ is automatically created for that account. Thus if the account username is `alice`, a new org `alice` is also created, and so Alice's projects will live under her `alice` org.
+
+#### Access Token
+
+Cloud API access is secured by the use of an _Access Token_, which comes in two flavors, _Personal Access Token_ and _Project Access Token_. A _Personal Access Token_ \(effectively an _Account Access Token_\) works at the _account_ level: it typically grants all access that the account has. As one might expect, a _Project Access Token_ works at the project level: this token only works for the project it was issued for.
+
+For both _Personal_ and _Project Access Token_, a _master_ token is automatically issued, which can be rotated, but not revoked or deleted. And for both token types, additional tokens can be generated, for circumstances when it's unwise to share the _master_ token \(e.g. for CI pipelines, scripts, etc.\).
 
 #### Project
 
