@@ -64,7 +64,7 @@ _edgectl_ requires an _Access Token_. You can get one via: `edgectl login`, whic
 If it's preferred to now use a web browser \(e.g. SSH'd into a box\), you can also login by providing either a _Personal Access Token_ or _Project Access Token_ from `cloud.edgeworx.io`. For _Personal Access Token_, click `Access Tokens` in the upper-right account menu. For _Project Acccess Token_, click the settings \(gear\) icon on the project page. Once you have the _Access Token_, you can execute:
 
 ```bash
-$ edgectl login --token xyz
+edgectl login --token xyz
 ```
 
 ## Get Familiar
