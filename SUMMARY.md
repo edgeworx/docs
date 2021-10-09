@@ -12,7 +12,7 @@
 * [Applications](edgeworx-cloud/applications-doc/README.md)
   * [YAML reference](edgeworx-cloud/applications-doc/app-doc-yaml.md)
   * [Advanced: Templating](edgeworx-cloud/applications-doc/app-doc-advanced-templating.md)
-* [Access tokens](edgeworx-cloud/access-tokens.md)
+* [Access Tokens](edgeworx-cloud/access-tokens.md)
 * [Key Concepts](edgeworx-cloud/key-concepts.md)
 
 ---

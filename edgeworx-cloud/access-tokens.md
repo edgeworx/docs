@@ -1,4 +1,4 @@
-# Access tokens
+# Access Tokens
 
 Edgeworx Cloud supports basic HTTP authentication through access tokens.
 
@@ -24,8 +24,8 @@ window.fetch(
 * As a login option in edgectl or for a specific command
 
 ```text
-$> edgectl login --token <access_token>
-$> edgectl --token <access_token> account get <your_email>
+$ edgectl login --token <access_token>
+$ edgectl --token <access_token> account get <your_email>
 ```
 
 ### Personal Access Token
