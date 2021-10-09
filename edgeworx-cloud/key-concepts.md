@@ -26,6 +26,8 @@ To sign-up for an _account_, visit [cloud.edgeworx.io](https://cloud.edgeworx.io
 
 An _Org_ \(i.e. _Organization\)_ is typically created for a corporate entity. For example, `Acme, Inc.` may create an org `acme`. An _org_ is the container for projects.
 
+> BETA: The Edgeworx Cloud BETA release does not currently support managing corporate orgs.
+
 On creating a new account, a new _Personal Org_ is automatically created for that account. Thus if the account username is `alice`, a new org `alice` is also created, and so Alice's projects will live under her `alice` org.
 
 #### Access Token
@@ -34,9 +36,13 @@ Cloud API access is secured by the use of an _Access Token_, which comes in two 
 
 For both _Personal_ and _Project Access Token_, a _master_ token is automatically issued, which can be rotated, but not revoked or deleted. And for both token types, additional tokens can be generated, for circumstances when it's unwise to share the _master_ token \(e.g. for CI pipelines, scripts, etc.\).
 
+In Cloud Portal, you can view the list of _Personal Access Tokens_ from the _Access Tokens_ link in the Account drop-down. For _Project Access Tokens_, you can 
+
+You can use an _Access Token_ to make REST calls to Cloud API, or to login to _edgectl_ via `edgectl login --token xyz`.
+
 #### Project
 
-A project contains nodes and applications.
+A _project_ contains nodes and applications. You will typically register multiple nodes to your project \(via the project's _node install script_\), and you may deploy [iofog](https://iofog.org) applications to those nodes.
 
 
 
