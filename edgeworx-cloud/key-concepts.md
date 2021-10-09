@@ -34,7 +34,7 @@ On creating a new account, a new _Personal Org_ is automatically created for tha
 
 Cloud API access is secured by the use of an _Access Token_, which comes in two flavors, _Personal Access Token_ and _Project Access Token_. A _Personal Access Token_ \(effectively an _Account Access Token_\) works at the _account_ level: it typically grants all access that the account has. As one might expect, a _Project Access Token_ works at the project level: this token only works for the project it was issued for.
 
-For both _Personal_ and _Project Access Token_, a _master_ token is automatically issued, which can be rotated, but not revoked or deleted. And for both token types, additional tokens can be generated, for circumstances when it's unwise to share the _master_ token \(e.g. for CI pipelines, scripts, etc.\).
+For both _Personal_ and _Project Access Token_, a _master_ token is automatically issued, which can be rotated, but or deleted. And for both token types, additional tokens can be generated, for circumstances when it's unwise to share the _master_ token \(e.g. for CI pipelines, scripts, etc.\).
 
 In Cloud Portal, you can view the list of _Personal Access Tokens_ from the _Access Tokens_ link in the Account drop-down. For _Project Access Tokens_, you can 
 
@@ -42,7 +42,11 @@ You can use an _Access Token_ to make REST calls to Cloud API, or to login to _e
 
 #### Project
 
-A _project_ contains nodes and applications. You will typically register multiple nodes to your project \(via the project's _node install script_\), and you may deploy [iofog](https://iofog.org) applications to those nodes.
+A _project_ is a container for a set of nodes \(edge devices\), which you can SSH into, or deploy iofog applications to.
+
+You can create multiple projects inside an org \(limited by your plan\).
+
+As described in the \[Access Token\]\(\#Access Token\) section, a project is automatically issued a project _master token_, which can be rotated, but not deleted. You can also generate additional _Project Access Tokens_ if desired.
 
 
 
