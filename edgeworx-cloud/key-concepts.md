@@ -77,11 +77,13 @@ Installing Edgeworx Agent
 
 You can access the _node install script_ via the `Add Node` button in _Cloud Portal_, or by executing `edgectl project node-install-script`.
 
-
-
 #### Application
 
 An _app_ or _application_ means an [ioFog](https://iofog.org/docs/2/developing-microservices/overview.html) application. That is to say, it is a set of _microservices_ running on a set of _nodes_ in a _project_. You can add an _app_ to a _project_ via _Cloud Portal_, or via `edgectl app deploy`.
+
+#### Microservice
+
+A _microservice_ \(often shortened to _msvc_\) is an individual container running as part of an ioFog _app_ on a set of _nodes_ in a _project_.
 
 
 
