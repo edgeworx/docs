@@ -1,5 +1,5 @@
 ---
-description: Architectural overview of Edgeworx Cloud concepts
+description: Overview of Edgeworx Cloud concepts.
 ---
 
 # Key Concepts
@@ -84,6 +84,4 @@ An _app_ or _application_ means an [ioFog](https://iofog.org/docs/2/developing-m
 #### Microservice
 
 A _microservice_ \(often shortened to _msvc_\) is an individual container running as part of an ioFog _app_ on a set of _nodes_ in a _project_.
-
-
 
