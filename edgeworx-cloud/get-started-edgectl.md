@@ -1,7 +1,5 @@
 # Get Started: edgectl
 
-## Get Started: edgectl
-
 Edgectl is Edgeworx Cloud's command line interface \(CLI\). It can be used to manage Edgeworx Cloud accounts, organizations, projects, nodes, and applications.
 
 In this section we will show you how to use edgectl to get started with your first project and deploy some live microservices to the edge!
