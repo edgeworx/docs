@@ -117,7 +117,13 @@ edgectl defaults set project fe495002-c276-499f-910e-f8914f147e22
 
 ## Deploy a Node
 
-In Edgeworx Cloud, nodes are edge devices that run Edgeworx Agents.
+In Edgeworx Cloud, nodes are edge devices that run Edgeworx Agents. Ultimately, we want to deploy applications to these nodes to put them to work!
+
+To see all available commands pertaining to edge nodes, we can run the following:
+
+```text
+edgectl node --help
+```
 
 If we list nodes in our default organization and project, we will notice that we have no nodes:
 
@@ -135,5 +141,10 @@ This will output `json` containing a command within a `data` field. We can use t
 
 ## Deploy an Application
 
-...
+Once we have edge nodes in our project, we can deploy applications to run on those nodes.
 
+To see all available commands pertaining to edge applications, we can run the following:
+
+```text
+edgectl app --help
+```
