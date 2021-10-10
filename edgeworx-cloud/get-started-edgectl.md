@@ -137,6 +137,14 @@ edgectl project node-install-script
 
 This will output `json` containing a command within a `data` field. We can use this command on our edge devices to install Edgeworx Agent and connect to our Edgeworx Cloud Project. This command can be used any number of times on different devices to grow the respective project's node pool.
 
+We can also get a human-readable version of the installation script by running the following:
+
+```text
+edgectl project node-install-script --show-script --text
+```
+
+This is helpful if we wish to review or debug the installation procedure.
+
 ## Deploy an Application
 
 Once we have edge nodes in our project, we can deploy applications to run on those nodes.
@@ -146,3 +154,13 @@ To see all available commands pertaining to edge applications, we can run the fo
 ```text
 edgectl app --help
 ```
+
+To deploy edge applications, we use the `deploy` subcommand. We can run the following to learn how it works:
+
+```text
+edgectl app deploy --help
+```
+
+The `app deploy` command requires a path to a `YAML` file to be specified. This `YAML` file defines everything about our edge application that is required to deploy it.
+
+The following section will go into detail about application `YAML` files.
