@@ -1,6 +1,6 @@
 # Deploy an App
 
-Applications are groups of microservices bundled to work together. Apps are defined using YAML files and can be deployed and updated by uploading those YAML files through the Edgeworx Cloud Portal UI or through edgectl CLI.
+Applications are groups of microservices bundled to work together. Apps are defined using YAML files and can be deployed and updated by uploading those YAML files through the Edgeworx Cloud Portal UI or through [edgectl CLI](../get-started-edgectl.md).
 
 ## Deploy the demo app using the portal
 
@@ -8,7 +8,7 @@ Applications are groups of microservices bundled to work together. Apps are defi
 
 The Heart Rate Demo App provided with the Edgeworx Portal simulates a wearable device transmitting a person's heartbeat at the Edge. The Wearable sends heart rate data over bluetooth to a data collector microservice located on Node 1. The Data collector microservice then communicates with another microservice running a web server on Node 2 to display the heart rate data on a graph.
 
-![](<../../.gitbook/assets/image (6) (1).png>)
+![](<../../.gitbook/assets/image (8).png>)
 
 ### Deploying the Heart Rate Demo App
 
