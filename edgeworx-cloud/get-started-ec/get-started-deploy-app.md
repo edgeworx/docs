@@ -12,7 +12,7 @@ The Heart Rate Demo App provided with the Edgeworx Portal simulates a wearable d
 
 ### Deploying the Heart Rate Demo App
 
-Using the Edgeworx Cloud Portal, you can deploy the demo with just a couple of clicks. 
+Using the Edgeworx Cloud Portal, you can deploy the demo app with just a couple of clicks. 
 
 1. Go to the portal project page (make sure you have [added at least 1 node](get-started-add-node.md))
 2. Select `Apps`
@@ -21,17 +21,17 @@ Using the Edgeworx Cloud Portal, you can deploy the demo with just a couple of c
 
 
 
-![](<../../.gitbook/assets/image (6) (1) (1).png>)
+![Edgeworx Cloud Portal: "Add App" modal](<../../.gitbook/assets/image (6) (1) (1).png>)
 
 {% hint style="info" %}
-Although this demo app works best with two nodes, you can deploy the app with only one node and run alls parts on the same device. The demo app YAML will automatically detect if you have one or two nodes.
+Although this demo app works best with two nodes, you can deploy the app with only one node and run all microservices on the same device. The demo app YAML will automatically detect if you have one or two nodes.
 {% endhint %}
 
 {% hint style="info" %}
 If you wish to know more about the demo app before deploying it, you can inspect its YAML definition by clicking on the curly brace in the modal
 {% endhint %}
 
-![](<../../.gitbook/assets/image (7).png>)
+![Edgeworx Cloud Portal: Demo App YAML](<../../.gitbook/assets/image (7).png>)
 
 ## Deploy a custom app using the portal
 
@@ -41,21 +41,21 @@ If you wish to know more about the demo app before deploying it, you can inspect
 4. Drag n Drop a YAML file into the box
 5. Et Voila!
 
-![](<../../.gitbook/assets/image (4).png>)
+![Edgeworx Cloud Portal: "Add App" modal](<../../.gitbook/assets/image (4).png>)
 
-## View an app details
+## View app details
 
-You can now click on your app in the list of application to see its details.
+Click on your app in the list of application to see its details.
 
-![](<../../.gitbook/assets/image (6).png>)
+![Edgeworx CLoud Portal: "App Detail" page](<../../.gitbook/assets/image (6).png>)
 
-The application details page contains informations about its microservices, its routes, the nodes involved in running the microservices and its YAML definition.
+The application details page contains informations about its microservices, routes, the nodes involved in running the microservices and its YAML definition.
 
-Feel free to play around editing the YAML.\
+Edgeworx Cloud Portal allows you to edit your app YAML right in the browser.\
 \
 More informations about the Application YAML files can be found [here](../applications-doc/app-doc-yaml.md)
 
-## Deploy apps using edgectl
-
-See [Getting Started: edgctl](get-started-deploy-app.md#undefined)
+{% hint style="info" %}
+Everything shown above using Edgeworx Cloud Portal can also be achieved using our CLI, edgectl. See [Getting Started: edgectl](../get-started-edgectl.md)
+{% endhint %}
 
