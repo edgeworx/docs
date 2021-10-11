@@ -2,8 +2,6 @@
 
 Applications are groups of microservices bundled to work together. Apps are defined using YAML files and can be deployed and updated by uploading those YAML files through the Edgeworx Cloud Portal UI or through edgectl CLI.
 
-![](<../../.gitbook/assets/image (9).png>)
-
 ## Deploy the demo app using the portal
 
 ### About the "Heart Rate Demo App"
@@ -21,17 +19,19 @@ Using the Edgeworx Cloud Portal, you can deploy the demo with just a couple of c
 3. Click on `+ DEPLOY APP`
 4. Click on `DEPLOY DEMO APP`
 
-![](<../../.gitbook/assets/image (8).png>)
 
-If you wish to know more about the demo app before deploying it, you can inspect its YAML definition by clicking on the curly brace in the modal
-
-![](<../../.gitbook/assets/image (7).png>)
 
 ![](<../../.gitbook/assets/image (6) (1) (1).png>)
 
 {% hint style="info" %}
 Although this demo app works best with two nodes, you can deploy the app with only one node and run alls parts on the same device. The demo app YAML will automatically detect if you have one or two nodes.
 {% endhint %}
+
+{% hint style="info" %}
+If you wish to know more about the demo app before deploying it, you can inspect its YAML definition by clicking on the curly brace in the modal
+{% endhint %}
+
+![](<../../.gitbook/assets/image (7).png>)
 
 ## Deploy a custom app using the portal
 
@@ -47,10 +47,6 @@ Although this demo app works best with two nodes, you can deploy the app with on
 
 You can now click on your app in the list of application to see its details.
 
-## Deploy apps using edgectl
-
-See [Getting Started: edgctl](get-started-deploy-app.md#undefined)
-
 ![](<../../.gitbook/assets/image (6).png>)
 
 The application details page contains informations about its microservices, its routes, the nodes involved in running the microservices and its YAML definition.
@@ -58,4 +54,8 @@ The application details page contains informations about its microservices, its 
 Feel free to play around editing the YAML.\
 \
 More informations about the Application YAML files can be found [here](../applications-doc/app-doc-yaml.md)
+
+## Deploy apps using edgectl
+
+See [Getting Started: edgctl](get-started-deploy-app.md#undefined)
 
