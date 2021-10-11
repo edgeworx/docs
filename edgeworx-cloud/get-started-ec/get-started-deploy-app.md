@@ -40,3 +40,7 @@ Feel free to play around editing the YAML.\
 \
 More informations about the Application YAML files can be found [here](../applications-doc/app-doc-yaml.md)
 
+## Deploy apps using edgectl
+
+See [Getting Started: edgctl](get-started-deploy-app.md#undefined)
+
