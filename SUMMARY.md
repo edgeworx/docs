@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome To Edgeworx Knowledge Base](README.md)
+* [Welcome](README.md)
 
 ## Edgeworx Cloud
 
@@ -15,7 +15,6 @@
 * [Access Tokens](edgeworx-cloud/access-tokens.md)
 * [Key Concepts](edgeworx-cloud/key-concepts.md)
 
----
+***
 
 * [Contact Us](contact-us.md)
-
