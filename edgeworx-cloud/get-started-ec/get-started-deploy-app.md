@@ -8,18 +8,18 @@ Applications are groups of microservices bundled to work together. Apps are defi
 
 The Heart Rate Demo App provided with the Edgeworx Portal simulates a wearable device transmitting a person's heartbeat at the Edge. The Wearable sends heart rate data over bluetooth to a data collector microservice located on Node 1. The Data collector microservice then communicates with another microservice running a web server on Node 2 to display the heart rate data on a graph.
 
-![](<../../.gitbook/assets/image (4).png>)
+![](<../../.gitbook/assets/image (6).png>)
 
 ### Deploying the Heart Rate Demo App
 
 Using the Edgeworx Cloud Portal, you can deploy the demo with just a couple of clicks. 
 
-1. Go to the portal project page (make sure you have added at least 1 node)
+1. Go to the portal project page (make sure you have [added at least 1 node](get-started-add-node.md))
 2. Select `Apps`
 3. Click on `+ DEPLOY APP`
 4. Click on `DEPLOY DEMO APP`
 
-![](<../../.gitbook/assets/image (6).png>)
+![](<../../.gitbook/assets/image (6) (1).png>)
 
 {% hint style="info" %}
 Although this demo app works best with two nodes, you can deploy the app with only one node and run alls parts on the same device. The demo app YAML will automatically detect if you have one or two nodes.
