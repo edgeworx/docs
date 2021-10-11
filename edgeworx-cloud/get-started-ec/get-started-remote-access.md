@@ -6,11 +6,14 @@ Once your node is installed and connected to Edgeworx Cloud, you are able to rem
 
 In the portal, click on any node to access the node's details page.
 
-![Node&apos;s details page](../../.gitbook/assets/image%20%285%29%20%281%29.png)
+![Node's details page](<../../.gitbook/assets/image (5) (1).png>)
 
 From here, click on the `SSH` button. This will open a new tab in your browser, after a small loading time, you'll have access to a terminal on your node
 
-![SSH terminal in portal](../../.gitbook/assets/image%20%282%29.png)
+{% hint style="info" %}
+or SSH into a node directly from the project overview page by clicking the 3 dots to the right of your node and selecting "SSH" from the drop down menu.
+{% endhint %}
+
+![SSH terminal in portal](<../../.gitbook/assets/image (2).png>)
 
 Et voila!
-
