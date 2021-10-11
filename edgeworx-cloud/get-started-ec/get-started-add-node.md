@@ -12,11 +12,11 @@ To add a node to your project, you will be running a command line script. For th
 
 Log into [Edgeworx Cloud](http://cloud.edgeworx.io) and select the project to which you want to add the node. 
 
-![](../../.gitbook/assets/screen-shot-2021-10-08-at-5.59.22-pm.png)
+![Edgeworx Cloud Portal: "Project" page](../../.gitbook/assets/screen-shot-2021-10-08-at-5.59.22-pm.png)
 
 Click the `+ ADD NODE` button located in the panel on the left of the view. This will bring up a modal dialog which shows the one line command that must be run on your host for it to become a node in you edge project.
 
-![](../../.gitbook/assets/screen-shot-2021-10-08-at-9.07.24-pm.png)
+![Edgeworx Cloud Portal: "Add Node" modal](../../.gitbook/assets/screen-shot-2021-10-08-at-9.07.24-pm.png)
 
 Click the `COPY` button to copy the install command to your clipboard.
 
@@ -24,11 +24,11 @@ Click the `COPY` button to copy the install command to your clipboard.
 
 SSH onto your host (or log in via the console) with a user that is in the sudo group.
 
-![](../../.gitbook/assets/screen-shot-2021-10-08-at-9.10.48-pm.png)
+![Example console page](../../.gitbook/assets/screen-shot-2021-10-08-at-9.10.48-pm.png)
 
 Paste the command line that you copied in step 2 into your terminal. Hit enter. The entire install process can take several minutes (depending on the spec of your node and your internet connection speed). 
 
-![](../../.gitbook/assets/screen-shot-2021-10-08-at-9.30.52-pm.png)
+![Example console page](../../.gitbook/assets/screen-shot-2021-10-08-at-9.30.52-pm.png)
 
 If everything works you should see output similar to that above. If an error occurs, check the output or, you can view the install log in `/tmp/ewc_logs.txt` for more clues as to the error.
 
