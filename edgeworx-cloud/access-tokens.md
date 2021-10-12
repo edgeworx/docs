@@ -32,13 +32,13 @@ $ edgectl --token <access_token> account get <your_email>
 
 Personnal Access Tokens have the same priviledge as the user they represent and have a lifecycle connected to the user account.
 
-![](<../.gitbook/assets/image (10).png>)
+![](<../.gitbook/assets/image (10) (1).png>)
 
 ### Project Access Token
 
 Project Access Tokens have full access to the project they represent and have a lifecycle connected to their project. Those are the token used in in the node install script.
 
-![](<../.gitbook/assets/image (11).png>)
+![](<../.gitbook/assets/image (11) (1).png>)
 
 ### Third Party Access Tokens
 

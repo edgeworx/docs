@@ -10,7 +10,7 @@ To deploy an app, you will need an Edgeworx Cloud account with at least one node
 
 The Heart Rate Demo App provided with Edgeworx Cloud simulates a wearable device transmitting a person's heartbeat at the Edge. The Wearable sends heart rate data over bluetooth to a data collector microservice located on Node 1. The Data collector microservice then communicates with another microservice running a web server on Node 2 to display the heart rate data on a graph. 
 
-![](<../../.gitbook/assets/image (8) (1).png>)
+![](<../../.gitbook/assets/image (8) (1) (1).png>)
 
 ## 2. Deploy the Demo App using Edgeworx Cloud
 
@@ -27,7 +27,7 @@ When your app is deployed successfully you will see an "Application Deployed" me
 
 If you are not already seeing the demo app listed, click the "APPS" tab to see all of the apps in your current project. Click the demo app to access the app detail view. 
 
-![Apps View](<../../.gitbook/assets/image (9) (1).png>)
+![Apps View](<../../.gitbook/assets/image (9) (1) (1).png>)
 
 From the app detail view, click the linked text under the "ports" column to navigate to the demo app output
 
