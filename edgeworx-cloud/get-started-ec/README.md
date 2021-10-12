@@ -12,6 +12,8 @@ Enter your unique username and hit `NEXT`.
 
 On the "Welcome" page, choose an auth provider or provide your own email and password.
 
+Edgeworx Cloud uses Auth0 to provide secure account creation and access
+
 ![](<../../.gitbook/assets/image (9).png>)
 
 ![](<../../.gitbook/assets/image (12).png>)
