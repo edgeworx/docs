@@ -4,7 +4,7 @@ Once your node is installed and connected to Edgeworx Cloud, you'll be able to r
 
 ## 1. Prerequisites <a href="prereqs" id="prereqs"></a>
 
-To access your node, you will need an Edgeworx Cloud account with at least one nodeaccessible and `ONLINE` and some knowledge of SSH commands.
+To access your node, you will need an Edgeworx Cloud account with at least one node accessible and `ONLINE` and some knowledge of SSH commands.
 
 ## 2. SSH into your node
 
