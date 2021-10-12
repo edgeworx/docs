@@ -1,14 +1,12 @@
 # Deploy a custom app
 
-
-
 ## 1. Prerequisites
 
-To deploy your custom app, you will need an Edgeworx Cloud account with at least one node accessible and `ONLINE`. You will need a basic understanding of how to structure app YAML for Edgeworx Cloud. 
+To deploy your custom app, you will need an Edgeworx Cloud account with at least one node accessible and `ONLINE`. You will need a basic understanding of [how to structure app YAML](../applications-doc/app-doc-yaml.md) for Edgeworx Cloud. 
 
-## 2. Deploy a custom app using the portal
+## 2. Deploy a custom app using Edgeworx Cloud
 
-1. Go to the portal project page
+1. Go to the Edgeworx Cloud project page
 2. Select `Apps`
 3. Click on `+ DEPLOY APP`
 4. Drag n Drop a YAML file into the box
