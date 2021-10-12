@@ -6,11 +6,7 @@ description: Overview of Edgeworx Cloud concepts.
 
 #### Edgeworx Cloud
 
-_Edgeworx Cloud_ is the platform for managing and monitoring edge devices.
-
-#### Cloud Portal
-
-_Cloud Portal_ is the web-based portal for _Edgeworx Cloud_, at [cloud.edgeworx.io](https://cloud.edgeworx.io).
+_Edgeworx Cloud_ is the platform for managing and monitoring edge devices. Edgeworx Cloud includes a web-based portal at [cloud.edgeworx.io](https://cloud.edgeworx.io).
 
 #### Cloud API
 
