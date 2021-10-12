@@ -1,6 +1,6 @@
 # Add an Edge Node
 
-In order to start deploying applications via Edgeworx Cloud, you must add nodes to your edge project. Nodes can be an edge device such as a [Raspberry Pi ](https://www.raspberrypi.com)or an [NVIDIA Jetson](https://www.nvidia.com/en-us/autonomous-machines/jetson-store/). They can also be VMs in the Cloud or a [Vagrant](https://www.vagrantup.com) image running on your laptop. Basically any type of computer that you want to connect to your Edge project. The list of supported devices and OSs can be [found here](http://www.nohost.com).
+In order to start deploying applications via Edgeworx Cloud, you must add nodes to your edge project. Nodes can be an edge device such as a [Raspberry Pi ](https://www.raspberrypi.com)or an [NVIDIA Jetson](https://www.nvidia.com/en-us/autonomous-machines/jetson-store/). They can also be VMs in the Cloud or a [Vagrant](https://www.vagrantup.com) image running on your laptop. Basically any type of computer that you want to connect to your Edge project. 
 
 ## 1. Prerequisites <a href="prereqs" id="prereqs"></a>
 
@@ -8,28 +8,29 @@ To add a node to your project, you will be running a command line script. For th
 
 ### Supported Hardware
 
-* Raspberry Pi 4
-* Intel NUC (ubuntu)
-* Coral
+* Raspberry Pi 3 & 4 (running Raspbian)
+* Intel NUC (running Ubuntu OS)
+* Google Coral Dev Boards (running Mendel Linux)
 
 ### Supported Operating Systems
 
-* Ubu 18.04+
+* Raspbian Buster
+* Ubuntu 16.04+
 * Debian 10+
 
 {% hint style="info" %}
-If you do not have any of the above hardware, you can create a VM and run the Node installation script.
+If you do not have any of the above hardware, you can create a VM and run the node installation script.
 {% endhint %}
 
 ## 2. Get the Node Installation Script
 
 Log into [Edgeworx Cloud](http://cloud.edgeworx.io) and select the project to which you want to add the node. 
 
-![Edgeworx Cloud Portal: "Project" page](../../.gitbook/assets/screen-shot-2021-10-08-at-5.59.22-pm.png)
+![Edgeworx Cloud: "Project" page](../../.gitbook/assets/screen-shot-2021-10-08-at-5.59.22-pm.png)
 
 Click the `+ ADD NODE` button located in the panel on the left of the view. This will bring up a modal dialog which shows the one line command that must be run on your host for it to become a node in your edge project.
 
-![Edgeworx Cloud Portal: "Add Node" modal](../../.gitbook/assets/screen-shot-2021-10-08-at-9.07.24-pm.png)
+![Edgeworx Cloud: "Add Node" modal](../../.gitbook/assets/screen-shot-2021-10-08-at-9.07.24-pm.png)
 
 Click the `COPY` button to copy the install command to your clipboard.
 
@@ -37,11 +38,11 @@ Click the `COPY` button to copy the install command to your clipboard.
 
 SSH onto your host (or log in via the console) with a user that is in the sudo group.
 
-![Example console page](../../.gitbook/assets/screen-shot-2021-10-08-at-9.10.48-pm.png)
+![Example console install](../../.gitbook/assets/screen-shot-2021-10-08-at-9.10.48-pm.png)
 
 Paste the command line that you copied in step 2 into your terminal. Hit enter. The entire install process can take up to a few minutes (depending on the spec of your node, your internet connection speed and other dependencies). 
 
-![Example console page](../../.gitbook/assets/screen-shot-2021-10-08-at-9.30.52-pm.png)
+![Example install output](../../.gitbook/assets/screen-shot-2021-10-08-at-9.30.52-pm.png)
 
 If everything works you should see output similar to that above.
 
