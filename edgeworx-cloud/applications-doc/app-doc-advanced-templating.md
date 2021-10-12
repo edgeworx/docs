@@ -1,59 +1,34 @@
-# Advanced: Templating
+# Application Templating
 
-Variables, filter and template "queries" can be used as values for any field in your deployment YAMLs.
+Variables, filter and template "queries" can be used as values for any field in your deployment YAMLs. These variables allow you to reference values in your YAML document or any resource preexisting in your Edge Project. This, adding a lot of flexibility in your deployments.
 
-Those variables allow you to reference the same document, or any resource preexisting on your Edgeworx Cloud Project, adding a lot of flexibility in your deployments.
-
-The values are interpolated \(replaced\) when the request is made to ioFog Controller. The variable value is a `snapshot` of the referenced value when the request is made. Any subsequent modification of the underlying value will NOT be repercussed.
+The values are interpolated (replaced) when the request is made to ioFog Controller. The variable value is a `snapshot` of the referenced value when the request is made. Any subsequent modification of the underlying value will NOT be repercussed.
 
 The engine in the background is [liquidjs](https://liquidjs.com/index.html), to see all the capabilities about filters and tags, see the documentation.
 
-### Quick capabilities overview <a id="quick-capabilities-overview"></a>
+### Quick capabilities overview <a href="quick-capabilities-overview" id="quick-capabilities-overview"></a>
 
 * Defining a variable: `{{variable-name}}`
 * Using a filter: `{{"agent-name" | findAgent}}`
 * Assigning a value: `{% assign agent = "agent-name" | findAgent %}`
 * Example: Getting the host value of the agent named `zebra-1`: `{% assign agent = "zebra-1" | findAgent %}{{ agent.host }}`
 
-### ioFog filters and values <a id="iofog-filters-and-values"></a>
+### ioFog filters and values <a href="iofog-filters-and-values" id="iofog-filters-and-values"></a>
 
-#### Filters <a id="filters"></a>
+#### Filters <a href="filters" id="filters"></a>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Name</th>
-      <th style="text-align:left">Description</th>
-      <th style="text-align:left">Usage</th>
-      <th style="text-align:left">Returns</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">findAgent</td>
-      <td style="text-align:left">
-        <p>Lookup an existing ioFog Agent, by name</p>
-        <p>If name is an empty string, all agents are returned</p>
-      </td>
-      <td style="text-align:left">&quot;<code>agent-name</code>&quot; | findAgent</td>
-      <td style="text-align:left">An ioFog Agent, as defined by Controller API</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">findApplication</td>
-      <td style="text-align:left">Lookup an existing ioFog Application, by name</td>
-      <td style="text-align:left">&quot;<code>app-name</code>&quot; | findApplication</td>
-      <td style="text-align:left">An ioFog Applicaiton, as defined by Controller REST API</td>
-    </tr>
-  </tbody>
-</table>
+| Name            | Description                                                                                              | Usage                           | Returns                                                 |
+| --------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------------------------------------- |
+| findAgent       | <p>Lookup an existing ioFog Agent, by name</p><p>If name is an empty string, all agents are returned</p> | "`agent-name`" \| findAgent     | An ioFog Agent, as defined by Controller API            |
+| findApplication | Lookup an existing ioFog Application, by name                                                            | "`app-name`" \| findApplication | An ioFog Applicaiton, as defined by Controller REST API |
 
-#### Values <a id="values"></a>
+#### Values <a href="values" id="values"></a>
 
 * `self`: self is a reserved keyword, it references the current request body.
 
-### Usage example: <a id="usage-example"></a>
+### Usage example: <a href="usage-example" id="usage-example"></a>
 
-```text
+```
 ---
 apiVersion: iofog.org/v2
 kind: Application # What are we deploying
@@ -124,7 +99,7 @@ spec:
 
 with controller API the same configuration looks like:
 
-```text
+```
 {
   "name": "edai-smartbuilding-rules-engine",
   "isSystem": false,
@@ -247,11 +222,11 @@ with controller API the same configuration looks like:
 }
 ```
 
-### Caveats <a id="caveats"></a>
+### Caveats <a href="caveats" id="caveats"></a>
 
 * The algoritmic operator of `liquidjs` or variable assignment have the scope on the processing string.
 
-```text
+```
 ---
 ....
           - key: testaffect
@@ -263,15 +238,14 @@ with controller API the same configuration looks like:
 
 Incorrect:
 
-```text
+```
 ---
 name: { { my-variable } } # This will error, as name are expected to be strings, and the yaml parser will interpret this as an object
 ```
 
 Correct:
 
-```text
+```
 ---
 name: '{{my-variable}}' # This will behave as expected
 ```
-

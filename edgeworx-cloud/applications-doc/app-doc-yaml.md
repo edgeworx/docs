@@ -1,42 +1,48 @@
 # YAML reference
 
-Edgeworx Cloud relies on ioFog as the underlying technology to deploy and manage applications.
+Edgeworx Cloud uses [Eclipse ioFog](https://www.iofog.org) as the underlying technology to deploy and manage applications. Applications are defined using YAML files. In this section you'll find an example application yaml file and description of all fields supported by Edgeworx Cloud.
 
-ioFog Applications are defined using YAML files. In this section you'll find a definition and description of all fields supported by Edgeworx Cloud.
-
-## File example
+## Application YAML Definition 
 
 ```
 apiVersion: iofog.org/v3
-kind: Application # What are we deploying
+kind: Application # What kind are we deploying
 metadata:
   name: health-care-wearable # Application name
 # Specifications of the application
 spec:
   # List of microservices composing your application
   microservices:
-    #  # It uses the microservice YAML schema described below
+    # First micro service is the heart rate monitor
     - name: heart-rate-monitor
       agent:
-        name: horse-1
+        # This is the node to which the micro service will be deployed
+        # See the Application Templating page for more details
+        # You can also replace the value below with a specific node name  
+        name: "{% assign agent = \"\" | findAgent | first %}{{ agent.name }}"
       images:
         arm: edgeworx/healthcare-heart-rate:arm-v1
         x86: edgeworx/healthcare-heart-rate:x86-v1
-        # registry: remote
+        # You are able to specify custom image repositories if needed
+        registry: remote 
       container:
         rootHostAccess: false
         ports: []
+      # Config is passed to your microservice at run time
       config:
+        # For the example, we will generate heart rate information
         test_mode: true
         data_label: Anonymous Person
-        nested_object:
-          key: 42
-          deep_nested:
-            foo: bar
-    # Simple JSON viewer for the heart rate output
+        # Nest as many levels deep as needed
+        # nested_object:
+          # key: 42
+          # deep_nested:
+            # foo: bar
+    # Second micro service is an HTML app that graphs the heart rate data
     - name: heart-rate-viewer
       agent:
-        name: horse-1
+        # You can also replace the value below with a specific node name  
+        name: "{% assign agent = \"\" | findAgent | first %}{{ agent.name }}"
       images:
         arm: edgeworx/healthcare-heart-rate-ui:arm
         x86: edgeworx/healthcare-heart-rate-ui:x86
@@ -46,13 +52,11 @@ spec:
         ports:
           - internal: 80
             external: 5000
-            public: 5001
+            public: 5001 # 
             protocol: tcp
         env:
           - key: BASE_URL
             value: http://localhost:8080/data
-      config:
-        test: 54
   routes:
     # Use this section to configure route between microservices
     # Use microservice name

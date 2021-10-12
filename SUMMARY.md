@@ -16,7 +16,7 @@
 * [Applications](edgeworx-cloud/applications-doc/README.md)
   * [Microservice](edgeworx-cloud/applications-doc/microservice.md)
   * [YAML reference](edgeworx-cloud/applications-doc/app-doc-yaml.md)
-  * [Advanced: Templating](edgeworx-cloud/applications-doc/app-doc-advanced-templating.md)
+  * [Application Templating](edgeworx-cloud/applications-doc/app-doc-advanced-templating.md)
 * [Access Tokens](edgeworx-cloud/access-tokens.md)
 * [Key Concepts](edgeworx-cloud/key-concepts.md)
 
