@@ -1,6 +1,6 @@
 # Get Started: Edgeworx Cloud
 
-## 1. Create your Edgeworx Cloud Account
+## 1. Create your Edgeworx Cloud account
 
 Navigate to [Edgeworx Cloud](http://cloud.edgeworx.io) and click the `Create Account` button on the top right.
 
