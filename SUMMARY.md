@@ -6,7 +6,7 @@
 
 * [Get Started: Edgeworx Cloud](edgeworx-cloud/get-started-ec/README.md)
   * [Add an Edge Node](edgeworx-cloud/get-started-ec/get-started-add-node.md)
-  * [Remotely acces your node](edgeworx-cloud/get-started-ec/get-started-remote-access.md)
+  * [Remotely access your node](edgeworx-cloud/get-started-ec/get-started-remote-access.md)
   * [Deploy the demo app](edgeworx-cloud/get-started-ec/get-started-deploy-app.md)
   * [Deploy a custom app](edgeworx-cloud/get-started-ec/deploy-a-custom-app.md)
 * [Get Started: edgectl](edgeworx-cloud/get-started-edgectl.md)

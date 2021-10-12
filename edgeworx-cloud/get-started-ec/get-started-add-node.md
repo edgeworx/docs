@@ -45,7 +45,9 @@ Paste the command line that you copied in step 2 into your terminal. Hit enter. 
 
 If everything works you should see output similar to that above.
 
+{% hint style="warning" %}
 If you get errors, check the output or you can view the install log in `/tmp/ewc_logs.txt` for more clues as to the error. You could also try running `sudo apt update`.
+{% endhint %}
 
 ## 4. View the node in your Edge project
 
@@ -53,6 +55,8 @@ Switch back to your browser and if you have not, click the `DONE` button in the 
 
 ![](../../.gitbook/assets/screen-shot-2021-10-08-at-9.37.11-pm.png)
 
-If it is not showing, try refreshing the page in your browser, or use the refresh button to reload the list of nodes. If the status is not showing as `ONLINE` try clicking on the node to drill in and see more details, or check the `/tmp/ewc_logs.txt` file on your node for any errors that may have happened during the installation process.
+{% hint style="warning" %}
+If it is not showing, try refreshing the page in your browser, or use the refresh button to reload the list of nodes. If the status is not showing as `ONLINE` try clicking on the node to drill in and see more details or check the `/tmp/ewc_logs.txt` file on your node for any errors that may have happened during the installation process.
+{% endhint %}
 
 You now have an edge node, let's start using it!
