@@ -1,22 +1,20 @@
 # Deploy the demo app
 
-Apps are groups of microservices bundled to work together. They are defined using YAML files and can be deployed and updated by uploading those YAML files through the Edgeworx Cloud Portal UI or through [edgectl CLI](../get-started-edgectl.md).
+Apps are groups of microservices bundled to work together. They are defined using YAML files and can be deployed and updated by uploading those YAML files through Edgeworx Cloud or through [edgectl](../get-started-edgectl.md)
 
 ## 1. Prerequisites
 
-To deploy an app, you will need an Edgeworx Cloud account with at least one node accessible and `ONLINE`. You can deploy the demo app with no experience in YAML but some YAML
+To deploy an app, you will need an Edgeworx Cloud account with at least one node accessible and `ONLINE`. You can deploy the demo app with no experience in YAML or application building.
 
 ### About the "Heart Rate Demo App"
 
-The Heart Rate Demo App provided with the Edgeworx Portal simulates a wearable device transmitting a person's heartbeat at the Edge. The Wearable sends heart rate data over bluetooth to a data collector microservice located on Node 1. The Data collector microservice then communicates with another microservice running a web server on Node 2 to display the heart rate data on a graph. 
+The Heart Rate Demo App provided with Edgeworx Cloud simulates a wearable device transmitting a person's heartbeat at the Edge. The Wearable sends heart rate data over bluetooth to a data collector microservice located on Node 1. The Data collector microservice then communicates with another microservice running a web server on Node 2 to display the heart rate data on a graph. 
 
 ![](<../../.gitbook/assets/image (8) (1).png>)
 
-## 2. Deploy the Demo App using the Portal
+## 2. Deploy the Demo App using Edgeworx Cloud
 
-Using the Edgeworx Cloud Portal, you can deploy the demo app with just a couple of clicks. 
-
-1. Go to the portal project page (make sure you have [added at least 1 node](get-started-add-node.md))
+1. Go to your Edgeworx Cloud project page (make sure you have [added at least 1 node](get-started-add-node.md))
 2. Select `Apps`
 3. Click on `+ DEPLOY APP`
 4. Click on `DEPLOY DEMO APP`
