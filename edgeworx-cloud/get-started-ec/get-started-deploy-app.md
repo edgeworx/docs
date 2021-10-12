@@ -19,13 +19,39 @@ The Heart Rate Demo App provided with Edgeworx Cloud simulates a wearable device
 3. Click on `+ DEPLOY APP`
 4. Click on `DEPLOY DEMO APP`
 
-![Edgeworx Cloud Portal: "Add App" modal](<../../.gitbook/assets/image (6) (1) (1).png>)
+![Add App](<../../.gitbook/assets/image (6) (1) (1).png>)
 
 ## 3. See the results of the demo app
 
 When your app is deployed successfully you will see an "Application Deployed" message in the top right of your screen.
 
-![](<../../.gitbook/assets/image (7).png>)
+If you are not already seeing the demo app listed, click the "APPS" tab to see all of the apps in your current project. Click the demo app to access the app detail view. 
+
+![Apps View](<../../.gitbook/assets/image (9).png>)
+
+From the app detail view, click the linked text under the "ports" column to navigate to the demo app output
+
+![App Detail View](<../../.gitbook/assets/image (7).png>)
+
+MISSING Screenshot: Demo App output view
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 {% hint style="info" %}
 Although this demo app works best with two nodes, you can deploy the app with only one node and run all microservices on the same device. The demo app YAML will automatically detect if you have one or two nodes.
@@ -37,8 +63,3 @@ If you wish to know more about the demo app before deploying it, you can inspect
 
 ![Edgeworx Cloud Portal: Demo App YAML](<../../.gitbook/assets/image (7) (1).png>)
 
-##
-
-Click on your app in the list of application to see its details.
-
-![Edgeworx CLoud Portal: "App Detail" page](<../../.gitbook/assets/image (6).png>)
