@@ -8,6 +8,17 @@ The following sections explain how to add edge nodes to your projects.
 
 To add a node to your project, you will be running a command line script. For this we assume you have `ssh` or console access to your node and are using a common shell, such as `zsh` or `bash`. Additionally, the installation script by default will need to run as `sudo` to register the necessary services to be automatically started after the node is rebooted.
 
+### Supported Hardware
+
+* Raspberry Pi 4
+* Intel NUC (ubuntu)
+* Coral
+
+### Supported Operating Systems
+
+* Ubu 18.04+
+* Debian 10+
+
 ## 2. Get the Node Installation Script
 
 Log into [Edgeworx Cloud](http://cloud.edgeworx.io) and select the project to which you want to add the node. 
