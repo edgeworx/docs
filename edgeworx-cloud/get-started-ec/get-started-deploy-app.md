@@ -1,6 +1,6 @@
-# Deploy the demo app
+# Deploy the Demo App
 
-Apps are groups of microservices bundled to work together. They are defined using YAML files and can be deployed and updated by uploading those YAML files through Edgeworx Cloud or through [edgectl](../get-started-edgectl.md)
+Apps are groups of microservices bundled to work together. They are defined using YAML files and can be deployed and updated by uploading those YAML files through Edgeworx Cloud or through [edgectl](../get-started-edgectl/)
 
 ## 1. Prerequisites
 
@@ -27,7 +27,7 @@ When your app is deployed successfully you will see an "Application Deployed" me
 
 If you are not already seeing the demo app listed, click the "APPS" tab to see all of the apps in your current project. Click the demo app to access the app detail view. 
 
-![Apps View](<../../.gitbook/assets/image (9).png>)
+![Apps View](<../../.gitbook/assets/image (9) (1).png>)
 
 From the app detail view, click the linked text under the "ports" column to navigate to the demo app output
 

@@ -1,6 +1,6 @@
-# Remotely acces your node
+# Remotely Access Your Node
 
-Once your node is installed and connected to Edgeworx Cloud, you'll be able to remotely access it using the Edgeworx Cloud Portal and/or [edgectl](../get-started-edgectl.md).
+Once your node is installed and connected to Edgeworx Cloud, you'll be able to remotely access it using the Edgeworx Cloud Portal and/or [edgectl](../get-started-edgectl/).
 
 ## 1. Prerequisites <a href="prereqs" id="prereqs"></a>
 

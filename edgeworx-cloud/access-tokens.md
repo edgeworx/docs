@@ -6,13 +6,13 @@ Edgeworx Cloud supports basic HTTP authentication through access tokens.
 
 * Inside an url
 
-```text
+```
 https://<access_token>@api.edgeworx.io/v1/...
 ```
 
-* As an HTTP header \(base64 encoded\)
+* As an HTTP header (base64 encoded)
 
-```text
+```
 window.fetch(
     "https://api.dev.edgeworx.io/v1/account/cypress%40edgeworx.io",
     { headers: 
@@ -23,7 +23,7 @@ window.fetch(
 
 * As a login option in edgectl or for a specific command
 
-```text
+```
 $ edgectl login --token <access_token>
 $ edgectl --token <access_token> account get <your_email>
 ```
@@ -32,9 +32,13 @@ $ edgectl --token <access_token> account get <your_email>
 
 Personnal Access Tokens have the same priviledge as the user they represent and have a lifecycle connected to the user account.
 
+![](<../.gitbook/assets/image (10).png>)
+
 ### Project Access Token
 
 Project Access Tokens have full access to the project they represent and have a lifecycle connected to their project. Those are the token used in in the node install script.
+
+![](<../.gitbook/assets/image (11).png>)
 
 ### Third Party Access Tokens
 
@@ -45,4 +49,3 @@ You can create third party access tokens both at a project level and at an accou
 ### Coming soon...
 
 You'll be able to set specific permissions for 3rd party access tokens.
-

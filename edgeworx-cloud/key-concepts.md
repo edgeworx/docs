@@ -18,7 +18,7 @@ _Cloud API_ is the REST API for _Edgeworx Cloud_. _Cloud Portal_ and _edgectl_ b
 
 #### edgectl
 
-edgectl is the CLI for _Edgeworx Cloud_. See [Get Started: edgectl](get-started-edgectl.md) for more.
+edgectl is the CLI for _Edgeworx Cloud_. See [Get Started: edgectl](get-started-edgectl/) for more.
 
 #### Account & Org
 

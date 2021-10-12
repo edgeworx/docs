@@ -1,4 +1,4 @@
-# Deploy a custom app
+# Deploy a Custom App
 
 ## 1. Prerequisites
 
@@ -27,5 +27,5 @@ Edgeworx Cloud Portal allows you to edit your app YAML right in the browser.\
 More informations about the Application YAML files can be found [here](../applications-doc/app-doc-yaml.md)
 
 {% hint style="info" %}
-Everything shown above using Edgeworx Cloud Portal can also be achieved using our CLI, edgectl. See [Getting Started: edgectl](../get-started-edgectl.md)
+Everything shown above using Edgeworx Cloud Portal can also be achieved using our CLI, edgectl. See [Getting Started: edgectl](../get-started-edgectl/)
 {% endhint %}
