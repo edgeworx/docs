@@ -31,6 +31,10 @@ If you are not already seeing the demo app listed, click the "APPS" tab to see a
 
 From the app detail view, click the linked text under the "ports" column to navigate to the demo app output
 
+{% hint style="info" %}
+The "ports" link to the demo app output only works if you are on the same network as your node
+{% endhint %}
+
 ![App Detail View](<../../.gitbook/assets/image (7).png>)
 
 MISSING Screenshot: Demo App output view
