@@ -23,7 +23,7 @@ If you do not have any of the above hardware, you can create a VM and run the No
 
 ## 2. Get the Node Installation Script
 
-Log into [Edgeworx Cloud Portal](http://cloud.edgeworx.io) and select the project to which you want to add the node. 
+Log into [Edgeworx Cloud](http://cloud.edgeworx.io) and select the project to which you want to add the node. 
 
 ![Edgeworx Cloud Portal: "Project" page](../../.gitbook/assets/screen-shot-2021-10-08-at-5.59.22-pm.png)
 
