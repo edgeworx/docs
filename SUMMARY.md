@@ -4,6 +4,7 @@
 
 ## Edgeworx Cloud
 
+* [What is Edgeworx Cloud?](edgeworx-cloud/what-is-edgeworx-cloud.md)
 * [Get Started: Edgeworx Cloud](edgeworx-cloud/get-started-ec/README.md)
   * [Add an Edge Node](edgeworx-cloud/get-started-ec/get-started-add-node.md)
   * [Remotely Access Your Node](edgeworx-cloud/get-started-ec/get-started-remote-access.md)

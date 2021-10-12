@@ -1,18 +1,15 @@
 # Get Started: Edgeworx Cloud
 
-## Build, deploy and run AI from cloud to Edge.
+## 1. Create your Edgeworx Cloud Account
 
-Getting started with AI at the edge has never been easier. Using Edgeworx Cloud and your favorite Edge node ([see our list of supported edge nodes](get-started-add-node.md#prereqs)) you can get your node deployed at the Edge in just a few minutes. Easily protoype in the lab, then deploy it to the real world without having to change any code.
+Navigate to [Edgeworx Cloud](http://cloud.edgeworx.io) and click the `Create Account` button on the top right.
 
-| [1. Create your account on Edgeworx Clo](http://cloud.edgeworx.io)[ud](http://cloud.edgeworx.io)    |
-| --------------------------------------------------------------------------------------------------- |
-| [2. Add your first Edge Node](get-started-add-node.md)                                              |
-| [3. Deploy the demo app](get-started-deploy-app.md#deploy-the-demo-app-using-the-portal)            |
-| [4. Create and upload your own app](get-started-deploy-app.md#deploy-a-custom-app-using-the-portal) |
+Enter your unique username and hit `NEXT`.
 
-![](<../../.gitbook/assets/image (3) (1).png>)
+On the "Welcome" page, choose an auth provider or provide your own email and password.
 
-* Get your node on the Edge in minutes
-* Run and iterate AI models at the Edge
-* Go from the lab to the real world, no code changes
-* Monitor and manage Edge devices anywhere
+## 2. View your Edgeworx Cloud Edge Project
+
+Once your account has been created, Edgeworx Cloud automatically creates your first project. This may take a few minutes. The screen will refresh automatically when complete.
+
+Once your Edge project is created, you will see your project overview page and be able to [add your first node!](get-started-add-node.md)
