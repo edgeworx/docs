@@ -1,6 +1,6 @@
 # Application Templating
 
-Variables, filter and template "queries" can be used as values for any field in your deployment YAMLs. These variables allow you to reference values in your YAML document or any resource preexisting in your Edge Project. This, adding a lot of flexibility in your deployments.
+Variables, filter and template "queries" can be used as values for any field in your deployment YAMLs. These variables allow you to reference values in your YAML document or any resource preexisting in your Edge Project. This can add a lot of flexibility and runtime binding in your deployments files
 
 The values are interpolated (replaced) when the request is made to ioFog Controller. The variable value is a `snapshot` of the referenced value when the request is made. Any subsequent modification of the underlying value will NOT be repercussed.
 
@@ -13,7 +13,7 @@ The engine in the background is [liquidjs](https://liquidjs.com/index.html), to 
 * Assigning a value: `{% assign agent = "agent-name" | findAgent %}`
 * Example: Getting the host value of the agent named `zebra-1`: `{% assign agent = "zebra-1" | findAgent %}{{ agent.host }}`
 
-### ioFog filters and values <a href="iofog-filters-and-values" id="iofog-filters-and-values"></a>
+### Template filters and values <a href="iofog-filters-and-values" id="iofog-filters-and-values"></a>
 
 #### Filters <a href="filters" id="filters"></a>
 
@@ -28,7 +28,7 @@ The engine in the background is [liquidjs](https://liquidjs.com/index.html), to 
 
 ### Usage example: <a href="usage-example" id="usage-example"></a>
 
-```
+```yaml
 ---
 apiVersion: iofog.org/v2
 kind: Application # What are we deploying
@@ -99,7 +99,7 @@ spec:
 
 with controller API the same configuration looks like:
 
-```
+```json
 {
   "name": "edai-smartbuilding-rules-engine",
   "isSystem": false,
@@ -226,7 +226,7 @@ with controller API the same configuration looks like:
 
 * The algoritmic operator of `liquidjs` or variable assignment have the scope on the processing string.
 
-```
+```json
 ---
 ....
           - key: testaffect
@@ -238,14 +238,14 @@ with controller API the same configuration looks like:
 
 Incorrect:
 
-```
+```json5
 ---
 name: { { my-variable } } # This will error, as name are expected to be strings, and the yaml parser will interpret this as an object
 ```
 
 Correct:
 
-```
+```json5
 ---
 name: '{{my-variable}}' # This will behave as expected
 ```
