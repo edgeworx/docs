@@ -1,14 +1,15 @@
-# YAML reference
+# Application YAML Definition
 
-Edgeworx Cloud uses [Eclipse ioFog](https://www.iofog.org) as the underlying technology to deploy and manage applications. Applications are defined using YAML files. In this section you'll find an example application yaml file and description of all fields supported by Edgeworx Cloud.
+Edgeworx Cloud uses [Eclipse ioFog](https://www.iofog.org) under the covers to deploy and manage applications. We directly use the ioFog YAML specifications for defining different resource `Kinds`. Applications are defined using YAML files. In this section you'll find an example application yaml file and description of all fields supported by Edgeworx Cloud.
 
-## Application YAML Definition 
+## Example Demo Application 
 
-```
+```yaml
 apiVersion: iofog.org/v3
 kind: Application # What kind are we deploying
 metadata:
-  name: health-care-wearable # Application name
+  # Application name
+  name: health-care-wearable 
 # Specifications of the application
 spec:
   # List of microservices composing your application
@@ -57,25 +58,25 @@ spec:
         env:
           - key: BASE_URL
             value: http://localhost:8080/data
+  # Application routes define message passing between microservices
   routes:
-    # Use this section to configure route between microservices
     # Use microservice name
     - name: monitor-to-viewer
       from: heart-rate-monitor
       to: heart-rate-viewer
 ```
 
-| Field         | Description                                                                                                                                                                                                                       |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name          | User-defined unique identifier of an Application within an Edgeworx Cloud Project. Must start and end with lowercase alphanumeric character. Can include '-' character.                                                           |
-| microservices | List of Microservices. See Microservice section for more details.                                                                                                                                                                 |
-| routes        | List of Application Routes. `From` and `To` use microservice name as identifiers. The microservices specified must be part of the application. When deploying an application, prefer this method to the microservice route field. |
+| Field         | Description                                                                                                                                                                                                                                                                                                    |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name          | The name of your application. This has to be unique within the namespace of your Edge Project. Must start and end with lowercase alphanumeric character. Can include '-' character.                                                                                                                            |
+| microservices | A list of microservices that make up your application. See the [Microservices](app-doc-yaml.md#microservices) section for more details.                                                                                                                                                                        |
+| routes        | A list of Application Routes. Application routes define message passing between microservices. `From` and `To` use microservice names as identifiers, and must match a microservice defined in the `microservices` section. When deploying an application, prefer this method to the microservice route field. |
 
-### Microservices
+### Microservices <a href="microservices" id="microservices"></a>
 
 Microservices configuration and set up are defined inside the application YAML files.
 
-```
+```yaml
 # Agent on which to deploy the microservice
 agent:
   # Agent name

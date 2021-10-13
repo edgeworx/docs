@@ -15,7 +15,7 @@
   * [Deploy an App](edgeworx-cloud/get-started-edgectl/deploy-an-app.md)
 * [Applications](edgeworx-cloud/applications-doc/README.md)
   * [Microservice](edgeworx-cloud/applications-doc/microservice.md)
-  * [YAML reference](edgeworx-cloud/applications-doc/app-doc-yaml.md)
+  * [Application YAML Definition](edgeworx-cloud/applications-doc/app-doc-yaml.md)
   * [Application Templating](edgeworx-cloud/applications-doc/app-doc-advanced-templating.md)
 * [Access Tokens](edgeworx-cloud/access-tokens.md)
 * [Key Concepts](edgeworx-cloud/key-concepts.md)
