@@ -1,5 +1,5 @@
 ---
-cover: ../.gitbook/assets/Screen Shot 2021-10-14 at 1.12.12 PM.png
+cover: ../.gitbook/assets/Screen Shot 2021-10-14 at 1.23.02 PM.png
 coverY: 0
 ---
 
