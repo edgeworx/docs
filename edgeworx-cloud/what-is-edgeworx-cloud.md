@@ -1,6 +1,6 @@
 ---
 cover: ../.gitbook/assets/Screen Shot 2021-10-14 at 12.57.42 PM.png
-coverY: 0
+coverY: 166.43561208267093
 ---
 
 # What is Edgeworx Cloud?
