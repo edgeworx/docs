@@ -51,7 +51,13 @@ sudo yum install edgectl -y
 
 Windows support is coming in the near future. Watch this space!
 
-## 3. Use edgectl
+##
+
+## 3. Enable edgectl tab completion
+
+It is highly recommended that you enable tab completion, so that `edgectl` can help you complete commands and arguments. The installation process is shell-dependent: `bash`, `zsh`, `fish`, and `powershell` are supported. Execute `edgectl completion --help` for detailed instructions for your shell.
+
+## 4. Use edgectl
 
 Now we are ready to use edgectl to login and start managing our Edgeworx Cloud resources!
 
@@ -59,13 +65,13 @@ Now we are ready to use edgectl to login and start managing our Edgeworx Cloud r
 
 _edgectl_ requires an _Access Token_. You can get one via: `edgectl login`, which will open a web browser on `cloud.edgeworx.io`. After authentication, _edgectl_ will receive the account's master _Personal Access Token,_ and will be logged in.
 
-If it's preferred to now use a web browser (e.g. SSH'd into a box), you can also login by providing either a _Personal Access Token_ or _Project Access Token_ from `cloud.edgeworx.io`. For _Personal Access Token_, click `Access Tokens` in the upper-right account menu. For _Project Acccess Token_, click the settings (gear) icon on the project page. Once you have the _Access Token_, you can execute:
+If a web browser is not available (e.g. SSH'd into a box), you can also login by providing either a _Personal Access Token_ or _Project Access Token_ from `cloud.edgeworx.io`. For _Personal Access Token_, click `Access Tokens` in the upper-right account menu. For _Project Acccess Token_, click the settings (gear) icon on the project page. Once you have the _Access Token_, you can execute:
 
 ```bash
 edgectl login --token xyz
 ```
 
-## 4. Get Familiar
+## 5. Get Familiar
 
 Lets get familiar with edgectl. We can observe the main use cases by running the top-level help command:
 
@@ -85,31 +91,30 @@ edgectl project     (Manage projects)
 edgectl registry    (Manage registries)
 ```
 
-## 5. Configure Default Org and Project
+## 6. Configure Defaults
 
-We can use the `edgectl defaults` command to set a default organization and project. This allows us to use many commands without having to provide the the `--org` and `--project` flags.
+We can use the `edgectl defaults set` command to set a default organization and project. This allows us to use many commands without having to provide the the `--org` and `--project` flags.
 
-We can use the `list` command to see our available organizations:
-
-```
-edgectl org list
-```
-
-This will produce `json` output. We can use the `uuid` field from the json output in the following command in order to set our default organization:
+Let's start by viewing the current defaults:
 
 ```
-edgectl defaults set org b828800a-6b34-4414-b884-2bbcd47a0950
+edgectl defaults list
 ```
 
-Similarly, we can list available projects:
+On first login, the default org is set to your account's personal org. You typically don't want to change the default org, but you probably want to change the default project. First, let's list the available projects in your org:
 
 ```
 edgectl project list
 ```
 
-And set the default project using the `uuid` field:
+And then set the default project (note that there is tab-completion available for the project name).
 
 ```
-edgectl defaults set project fe495002-c276-499f-910e-f8914f147e22
+edgectl defaults set project alice/edge-project-1
 ```
 
+Similarly, you can change other defaults, e.g.
+
+```
+edgectl defaults set format json
+```
