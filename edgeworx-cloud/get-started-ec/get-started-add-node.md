@@ -1,8 +1,8 @@
 # Add an Edge Node
 
-In order to start deploying applications via Edgeworx Cloud, you must add nodes to your edge project. Nodes can be an edge device such as a [Raspberry Pi ](https://www.raspberrypi.com)or an [NVIDIA Jetson](https://www.nvidia.com/en-us/autonomous-machines/jetson-store/). They can also be VMs in the Cloud or a [Vagrant](https://www.vagrantup.com) image running on your laptop. Basically any type of computer that you want to connect to your Edge project. 
+In order to start deploying applications via Edgeworx Cloud, you must add nodes to your edge project. Nodes can be an edge device such as a [Raspberry Pi ](https://www.raspberrypi.com)or an [NVIDIA Jetson](https://www.nvidia.com/en-us/autonomous-machines/jetson-store/). They can also be VMs in the Cloud or a [Vagrant](https://www.vagrantup.com) image running on your laptop. Basically any type of computer that you want to connect to your Edge project.&#x20;
 
-## 1. Prerequisites <a href="prereqs" id="prereqs"></a>
+## 1. Prerequisites <a href="#prereqs" id="prereqs"></a>
 
 To add a node to your project, you will be running a command line script. For this we assume you have `ssh` or console access to your node and are using a common shell, such as `zsh` or `bash`. Additionally, the installation script by default will need to run as `sudo` to register the necessary services to be automatically started after the node is rebooted.
 
@@ -24,7 +24,7 @@ If you do not have any of the above hardware, you can create a VM and run the no
 
 ## 2. Get the Node Installation Script
 
-Log into [Edgeworx Cloud](http://cloud.edgeworx.io) and select the project to which you want to add the node. 
+Log into [Edgeworx Cloud](http://cloud.edgeworx.io) and select the project to which you want to add the node.&#x20;
 
 ![Edgeworx Cloud: "Project" page](../../.gitbook/assets/screen-shot-2021-10-08-at-5.59.22-pm.png)
 
@@ -40,7 +40,7 @@ SSH onto your host (or log in via the console) with a user that is in the sudo g
 
 ![Example console install](../../.gitbook/assets/screen-shot-2021-10-08-at-9.10.48-pm.png)
 
-Paste the command line that you copied in step 2 into your terminal. Hit enter. The entire install process can take up to a few minutes (depending on the spec of your node, your internet connection speed and other dependencies). 
+Paste the command line that you copied in step 2 into your terminal. Hit enter. The entire install process can take up to a few minutes (depending on the spec of your node, your internet connection speed and other dependencies).&#x20;
 
 ![Example install output](../../.gitbook/assets/screen-shot-2021-10-08-at-9.30.52-pm.png)
 
@@ -52,12 +52,20 @@ If you get errors, check the output or you can view the install log in `/tmp/ewc
 
 ## 4. View the node in your Edge project
 
-Switch back to your browser and if you have not, click the `DONE` button in the modal dialog. You should see your new node `ONLINE` in your Nodes list. 
+Switch back to your browser and if you have not, click the `DONE` button in the modal dialog. ULtimately you should see your new node `ONLINE` in your Nodes list.&#x20;
 
 ![](../../.gitbook/assets/screen-shot-2021-10-08-at-9.37.11-pm.png)
 
-{% hint style="warning" %}
-If it is not showing, try refreshing the page in your browser, or use the refresh button to reload the list of nodes. If the status is not showing as `ONLINE` try clicking on the node to drill in and see more details or check the `/tmp/ewc_logs.txt` file on your node for any errors that may have happened during the installation process.
+{% hint style="info" %}
+A node can be in one of these states:
+
+* `INITIALIZING`: The node is briefly in this state when first created.
+* `INSTALLING`: Software is being installed or updated on the node.
+* `ONLINE`: The happy state: Edgeworx Cloud is receiving heartbeats from the node and services are reachable.
+* `DEGRADED`: At least one of the node's services is not behaving as expected.
+* `UNREACHABLE`: This means that Edgeworx Cloud has not received a heartbeat from the node in some time, and all services seem inaccessible. This could happen due to network outages, or if the node has been shut down, frozen, or otherwise disabled.
 {% endhint %}
+
+
 
 You now have an edge node, let's start using it!
