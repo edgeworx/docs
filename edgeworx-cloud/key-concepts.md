@@ -20,7 +20,7 @@ edgectl is the CLI for _Edgeworx Cloud_. See [Get Started: edgectl](get-started-
 
 To sign-up for an _Edgeworx Cloud_ _account_, visit [cloud.edgeworx.io](https://cloud.edgeworx.io). The user must provide an email and  select a unique _username_.
 
-An _Org_ (i.e. _Organization) _is typically created for a corporate entity. For example, `Acme, Inc.` may create an org `acme`. An _org_ is the container for projects.
+An _Org_ (i.e. _Organization)_ is typically created for a corporate entity. For example, `Acme, Inc.` may create an org `acme`. An _org_ is the container for projects.
 
 > BETA: The Edgeworx Cloud BETA release does not currently support managing corporate orgs.
 
@@ -32,7 +32,7 @@ _Cloud API_ access is secured by the use of an _Access Token_, which comes in tw
 
 For both _Personal_ and _Project Access Token_, a _master_ token is automatically issued, which can be rotated, but or deleted. And for both token types, additional tokens can be generated, for circumstances when it's unwise to share the _master_ token (e.g. for CI pipelines, scripts, etc.).
 
-In _Cloud Portal_, you can view the list of _Personal Access Tokens_ from the _Access Tokens_ link in the top-right drop-down. For _Project Access Tokens_, you can 
+In _Cloud Portal_, you can view the list of _Personal Access Tokens_ from the _Access Tokens_ link in the top-right drop-down. For _Project Access Tokens_, you can&#x20;
 
 You can use an _Access Token_ to make REST calls to _Cloud API_, or to login to _edgectl_ via `edgectl login --token xyz`.
 
@@ -52,7 +52,7 @@ To add a _node_ to a _project_, execute the project's _node install script_ dire
 
 You add a _node_ to a _project_ by executing the project's _node install script_ directly on the _node_.
 
-That is to say, you login to the device through your existing mechanism (SSH etc.), and then execute the _node install script_. 
+That is to say, you login to the device through your existing mechanism (SSH etc.), and then execute the _node install script_.&#x20;
 
 ```
 $ ssh alice@mypi

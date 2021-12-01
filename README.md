@@ -1,7 +1,5 @@
 ---
-description: >-
-  This is the Knowledge base, support and docs for all Edgeworx products and
-  solutions
+description: Docs for all Edgeworx products and technologies
 cover: .gitbook/assets/edge-gitnook-banner-2x (1).png
 coverY: 0
 ---

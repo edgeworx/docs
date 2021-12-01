@@ -8,7 +8,7 @@ To deploy an app, you will need an Edgeworx Cloud account with at least one node
 
 ### About the "Heart Rate Demo App"
 
-The Heart Rate Demo App provided with Edgeworx Cloud simulates a wearable device transmitting a person's heartbeat at the Edge. The Wearable sends heart rate data over bluetooth to a data collector microservice located on Node 1. The Data collector microservice then communicates with another microservice running a web server on Node 2 to display the heart rate data on a graph. 
+The Heart Rate Demo App provided with Edgeworx Cloud simulates a wearable device transmitting a person's heartbeat at the Edge. The Wearable sends heart rate data over bluetooth to a data collector microservice located on Node 1. The Data collector microservice then communicates with another microservice running a web server on Node 2 to display the heart rate data on a graph.&#x20;
 
 ![](<../../.gitbook/assets/image (8) (1) (1).png>)
 
@@ -25,37 +25,17 @@ The Heart Rate Demo App provided with Edgeworx Cloud simulates a wearable device
 
 When your app is deployed successfully you will see an "Application Deployed" message in the top right of your screen.
 
-If you are not already seeing the demo app listed, click the "APPS" tab to see all of the apps in your current project. Click the demo app to access the app detail view. 
+If you are not already seeing the demo app listed, click the "APPS" tab to see all of the apps in your current project. Click the demo app to access the app detail view.&#x20;
 
 ![Apps View](<../../.gitbook/assets/image (9) (1) (1).png>)
 
-From the app detail view, click the linked text under the "ports" column to navigate to the demo app output
-
-{% hint style="info" %}
-The "ports" link to the demo app output only works if you are on the same network as your node
-{% endhint %}
+From the app detail view, click the linked text under the "ports" column to navigate to the demo app output.
 
 ![App Detail View](<../../.gitbook/assets/image (7).png>)
 
-MISSING Screenshot: Demo App output view
+You should be brought to the heart rate demo app.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![Heart rate demo app output](../../.gitbook/assets/heartrate-demo-app.png)
 
 {% hint style="info" %}
 Although this demo app works best with two nodes, you can deploy the app with only one node and run all microservices on the same device. The demo app YAML will automatically detect if you have one or two nodes.
