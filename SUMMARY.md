@@ -20,6 +20,7 @@
   * [Application Templating](edgeworx-cloud/applications-doc/app-doc-advanced-templating.md)
 * [Access Tokens](edgeworx-cloud/access-tokens.md)
 * [Key Concepts](edgeworx-cloud/key-concepts.md)
+* [Release Notes](edgeworx-cloud/release-notes.md)
 
 ***
 
