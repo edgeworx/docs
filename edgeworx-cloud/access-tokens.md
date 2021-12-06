@@ -1,6 +1,8 @@
 # Access Tokens
 
-Edgeworx Cloud supports basic HTTP authentication through access tokens.
+Edgeworx Cloud supports basic HTTP authentication through access tokens.\
+\
+Simply pass the token as username in the [HTTP Basic authentication](https://en.wikipedia.org/wiki/Basic\_access\_authentication) header. If you are doing the base64 encoding yourself, don't forget to append a single ":" at the end of your token before encoding.
 
 ## Usage
 
@@ -16,7 +18,7 @@ https://<access_token>@api.edgeworx.io/v1/...
 window.fetch(
     "https://api.dev.edgeworx.io/v1/account/cypress%40edgeworx.io",
     { headers: 
-        { Authorization: "Basic " + window.btoa("<access_token>") } 
+        { Authorization: "Basic " + window.btoa("<access_token>:")} 
     }
 )
 ```
