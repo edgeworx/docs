@@ -22,7 +22,7 @@ Edgeworx Cloud uses Auth0 to provide secure account creation and access
 
 You may need to check your spam folders. The email sender will be "no-reply@auth0user.net"
 
-![Email verified](<../../.gitbook/assets/image (14).png>)
+![Email verified](<../../.gitbook/assets/image (14) (1).png>)
 
 ## 3. View your Edgeworx Cloud Edge Project
 
