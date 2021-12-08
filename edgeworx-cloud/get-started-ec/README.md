@@ -14,7 +14,7 @@ On the "Welcome" page, choose an auth provider or provide your own email and pas
 
 Edgeworx Cloud uses Auth0 to provide secure account creation and access
 
-![Create account-Auth0](<../../.gitbook/assets/image (9).png>)
+![Create account-Auth0](<../../.gitbook/assets/image (9) (1).png>)
 
 ![Verify email](<../../.gitbook/assets/image (12).png>)
 

@@ -27,7 +27,7 @@ When your app is deployed successfully you will see an "Application Deployed" me
 
 If you are not already seeing the demo app listed, click the "APPS" tab to see all of the apps in your current project. Click the demo app to access the app detail view.&#x20;
 
-![Apps View](<../../.gitbook/assets/image (9) (1) (1).png>)
+![Apps View](<../../.gitbook/assets/image (9) (1) (1) (1).png>)
 
 From the app detail view, click the linked text under the "ports" column to navigate to the demo app output.
 
