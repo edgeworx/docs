@@ -4,14 +4,14 @@ Edgeworx Cloud uses [Eclipse ioFog](https://www.iofog.org) under the covers to d
 
 ## Fields
 
-| Field    | Description |
-| -------- | ----------- |
-| s        |             |
-| kind     |             |
-| metadata |             |
-| name     |             |
-|          |             |
-| spec     |             |
+| Field         | Description                                                                                                                                                                         |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| apiVersion    | Specifies the API styling and versioning used by the Application and Microservices                                                                                                  |
+| kind          | Defines what is being deployed, i.e. Application                                                                                                                                    |
+| metadata      | Object including pertinent Application information including Name                                                                                                                   |
+| name          | The name of your application. This has to be unique within the namespace of your Edge Project. Must start and end with lowercase alphanumeric character. Can include '-' character. |
+| spec          | Object containing microservices that compose the application                                                                                                                        |
+| microservices | Object containing microservice information. See the [microservice](app-doc-yaml.md#microservices) section below.                                                                    |
 
 ## Microservices
 
