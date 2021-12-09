@@ -2,6 +2,23 @@
 
 Edgeworx Cloud uses [Eclipse ioFog](https://www.iofog.org) under the covers to deploy and manage applications. We directly use the ioFog YAML specifications for defining different resource `Kinds`. Applications are defined using YAML files. In this section you'll find an example application yaml file and description of all fields supported by Edgeworx Cloud.
 
+## Fields
+
+| Field    | Description |
+| -------- | ----------- |
+| s        |             |
+| kind     |             |
+| metadata |             |
+| name     |             |
+|          |             |
+| spec     |             |
+
+## Microservices
+
+text
+
+## Routes
+
 ## Example Demo Application&#x20;
 
 ```yaml
@@ -74,7 +91,7 @@ spec:
 | microservices | A list of microservices that make up your application. See the [Microservices](app-doc-yaml.md#microservices) section for more details.                                                                                                                                                                        |
 | routes        | A list of Application Routes. Application routes define message passing between microservices. `From` and `To` use microservice names as identifiers, and must match a microservice defined in the `microservices` section. When deploying an application, prefer this method to the microservice route field. |
 
-### Microservices <a href="microservices" id="microservices"></a>
+### Microservices <a href="#microservices" id="microservices"></a>
 
 Microservices configuration and set up are defined inside the application YAML files.
 
