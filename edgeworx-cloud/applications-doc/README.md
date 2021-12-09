@@ -1,12 +1,10 @@
 # Applications
 
-## Overview
-
 Edgeworx connects to your Applications to interact and share data. Applications can be configured in the Edgeworx platform to connect to one or more edge nodes. Apps are defined using YAML files and can be deployed and updated by uploading those YAML files. Edgeworx nodes can be set up to interact with applications, process information, and move data between multiple apps.
 
 ![Application view in the Edgeworx platform](<../../.gitbook/assets/image (9).png>)
 
-## Touchpoints <a href="#touchpoints" id="touchpoints"></a>
+## Application Components <a href="#touchpoints" id="touchpoints"></a>
 
 Edgeworx can connect to virtually any containerized application. We’ve outlined the touchpoints for connecting to an application below.
 
@@ -14,15 +12,13 @@ Edgeworx can connect to virtually any containerized application. We’ve outline
 
 Edgeworx nodes connect directly to your applications' microservices to send, retrieve, and parse data. Many microservices are hosted in Docker or similar containerized services. Microservices a within the Application YAML specification to
 
-&#x20;
-
 More information on connecting to your microservice [here](microservice.md).
 
 ### Integrations <a href="#integrations" id="integrations"></a>
 
 #### Endpoints and Ports <a href="#endpoints-and-ports" id="endpoints-and-ports"></a>
 
-Edgeworx connects to REST API Endpoints and TCP Ports. You can specify the port within the Application YAML.&#x20;
+Edgeworx connects to REST API Endpoints and TCP Ports. You can specify the port within the Application YAML. For more information, please refer to the Public Services page.&#x20;
 
 #### Routing <a href="#routing" id="routing"></a>
 
@@ -41,7 +37,17 @@ routes:
 
 Variables can be defined on application inputs and outputs to be processed alongside Edgeworx nodes and adjacent applications. More information on declaring and using variables can be found here.
 
-&#x20;
+## Creating and Managing Applications
+
+### Creating an Application
+
+Applications can be created within the Edgeworx platform by creating a YAML configuration file linking to your existing containerized application. The steps for creating and deploying a custom application in Edgeworx can be found [here](../get-started-ec/deploy-a-custom-app.md).
+
+### Deploying a Demo App
+
+Edgeworx provides a demo application you can deploy within minutes to see an example of an Application in action. You need one node live in order to deploy the demo app. More information on deploying the app can be found [here](../get-started-ec/get-started-deploy-app.md).
+
+### Managing your Application
 
 \
 Applications can be managed through the [portal](../get-started-ec/get-started-deploy-app.md#deploy-a-custom-app-using-the-portal)  or using [edgectl](../get-started-edgectl/#deploy-an-application)
