@@ -1,32 +1,62 @@
 # Application Templating
 
-Variables, filter and template "queries" can be used as values for any field in your deployment YAMLs. These variables allow you to reference values in your YAML document or any resource preexisting in your Edge Project. This can add a lot of flexibility and runtime binding in your deployments files
+Variables, filter and template "queries" can be used as values for any field in your deployment YAMLs. These variables allow you to reference values in your YAML document or any resource preexisting in your Edge Project. This functionality adds flexibility and runtime binding in your deployments files.
 
-The values are interpolated (replaced) when the request is made to ioFog Controller. The variable value is a `snapshot` of the referenced value when the request is made. Any subsequent modification of the underlying value will NOT be repercussed.
+## Variables and Filters <a href="#quick-capabilities-overview" id="quick-capabilities-overview"></a>
 
-The engine in the background is [liquidjs](https://liquidjs.com/index.html), to see all the capabilities about filters and tags, see the documentation.
+Variables are interpolated (replaced) when the requests are made between applications and nodes. The variable value is a `snapshot` of the referenced value when the request is made. Any subsequent modification of the underlying value will NOT be repercussed.
 
-### Quick capabilities overview <a href="quick-capabilities-overview" id="quick-capabilities-overview"></a>
+Edgeworx's filtering logic sits on top of the LiquidJS engine. Full documentation for LiquidJS can be found [here](https://liquidjs.com/index.html).
+
+### Variables
+
+#### Defining Variables
+
+Variables are defined in YAML by wrapping the variable with double brackets
 
 * Defining a variable: `{{variable-name}}`
-* Using a filter: `{{"agent-name" | findAgent}}`
+
+```yaml
+env:
+  - key: selfname
+    value: '{{ self.name }}'
+```
+
+#### Assigning Values
+
+Values can be assigned to a new text string
+
 * Assigning a value: `{% assign agent = "agent-name" | findAgent %}`
 * Example: Getting the host value of the agent named `zebra-1`: `{% assign agent = "zebra-1" | findAgent %}{{ agent.host }}`
 
-### Template filters and values <a href="iofog-filters-and-values" id="iofog-filters-and-values"></a>
+### Filters
 
-#### Filters <a href="filters" id="filters"></a>
+Filtering is used to display conditionals or alter the display of the text. Filters can be set as conditionals (where a filter may have an "If" statement)
+
+* Using a filter: `{{"agent-name" | findAgent}}`
+
+A list of filters accepted can be found in the LiquidJS documentation [here](https://liquidjs.com/filters/overview.html).
+
+### Template filters and values <a href="#iofog-filters-and-values" id="iofog-filters-and-values"></a>
+
+#### Filters <a href="#filters" id="filters"></a>
 
 | Name            | Description                                                                                              | Usage                           | Returns                                                 |
 | --------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------------------------------------- |
 | findAgent       | <p>Lookup an existing ioFog Agent, by name</p><p>If name is an empty string, all agents are returned</p> | "`agent-name`" \| findAgent     | An ioFog Agent, as defined by Controller API            |
 | findApplication | Lookup an existing ioFog Application, by name                                                            | "`app-name`" \| findApplication | An ioFog Applicaiton, as defined by Controller REST API |
 
-#### Values <a href="values" id="values"></a>
+#### Values <a href="#values" id="values"></a>
 
-* `self`: self is a reserved keyword, it references the current request body.
+**Self**: `self` is a reserved keyword. It references the current request body.
 
-### Usage example: <a href="usage-example" id="usage-example"></a>
+```yaml
+env:
+  - key: selfname
+    value: '{{ self.name | upcase }}'
+```
+
+## Application YAML Example <a href="#usage-example" id="usage-example"></a>
 
 ```yaml
 ---
@@ -222,7 +252,7 @@ with controller API the same configuration looks like:
 }
 ```
 
-### Caveats <a href="caveats" id="caveats"></a>
+### Troubleshooting and Caveats <a href="#caveats" id="caveats"></a>
 
 * The algoritmic operator of `liquidjs` or variable assignment have the scope on the processing string.
 
