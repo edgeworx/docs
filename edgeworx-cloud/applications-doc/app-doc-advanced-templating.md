@@ -37,7 +37,9 @@ Filtering is used to display conditionals or alter the display of the text. Filt
 
 A list of filters accepted can be found in the LiquidJS documentation [here](https://liquidjs.com/filters/overview.html).
 
-### Template filters and values <a href="#iofog-filters-and-values" id="iofog-filters-and-values"></a>
+### Constant filters and keywords <a href="#iofog-filters-and-values" id="iofog-filters-and-values"></a>
+
+This section details filters and values that are pre-defined.
 
 #### Filters <a href="#filters" id="filters"></a>
 
