@@ -1,6 +1,6 @@
 # Get Started: Edgeworx Cloud
 
-## 1. Create your Edgeworx Cloud account
+## Create your Edgeworx Cloud account
 
 Navigate to [Edgeworx Cloud](http://cloud.edgeworx.io) and click the `Create Account` button on the top right.
 
@@ -18,13 +18,13 @@ Edgeworx Cloud uses Auth0 to provide secure account creation and access
 
 ![Verify email](<../../.gitbook/assets/image (12).png>)
 
-## 2. Verify your email
+## Verify your email
 
 You may need to check your spam folders. The email sender will be "no-reply@auth0user.net"
 
 ![Email verified](<../../.gitbook/assets/image (14) (1).png>)
 
-## 3. View your Edgeworx Cloud Edge Project
+## View your Edgeworx Cloud Edge Project
 
 Once your account has been created, Edgeworx Cloud automatically creates your first project. This may take a few minutes. The screen will refresh automatically when complete.
 
