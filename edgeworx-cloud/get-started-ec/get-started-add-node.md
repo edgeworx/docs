@@ -2,7 +2,7 @@
 
 In order to start deploying applications via Edgeworx Cloud, you must add nodes to your edge project. Nodes can be an edge device such as a [Raspberry Pi ](https://www.raspberrypi.com)or an [NVIDIA Jetson](https://www.nvidia.com/en-us/autonomous-machines/jetson-store/). They can also be VMs in the Cloud or a [Vagrant](https://www.vagrantup.com) image running on your laptop. Basically any type of computer that you want to connect to your Edge project.&#x20;
 
-## Prerequisites <a href="#prereqs" id="prereqs"></a>
+## 1. Prerequisites <a href="#prereqs" id="prereqs"></a>
 
 To add a node to your project, you will be running a command line script. For this we assume you have `ssh` or console access to your node and are using a common shell, such as `zsh` or `bash`. Additionally, the installation script by default will need to run as `sudo` to register the necessary services to be automatically started after the node is rebooted.
 
@@ -22,7 +22,7 @@ To add a node to your project, you will be running a command line script. For th
 If you do not have any of the above hardware, you can create a VM and run the node installation script.
 {% endhint %}
 
-## Get the Node Installation Script
+## 2. Get the Node Installation Script
 
 Log into [Edgeworx Cloud](http://cloud.edgeworx.io) and select the project to which you want to add the node.&#x20;
 
@@ -34,7 +34,7 @@ Click the `+ ADD NODE` button located in the panel on the left of the view. This
 
 Click the `COPY` button to copy the install command to your clipboard.
 
-## Run the Node Installation Script
+## 3. Run the Node Installation Script
 
 SSH onto your host (or log in via the console) with a user that is in the sudo group.
 
@@ -50,7 +50,7 @@ If everything works you should see output similar to that above.
 If you get errors, check the output or you can view the install log in `/tmp/ewc_logs.txt` for more clues as to the error. You could also try running `sudo apt update`.
 {% endhint %}
 
-## View the node in your Edge project
+## 4. View the node in your Edge project
 
 Switch back to your browser and if you have not, click the `DONE` button in the modal dialog. ULtimately you should see your new node `ONLINE` in your Nodes list.&#x20;
 
@@ -65,5 +65,7 @@ A node can be in one of these states:
 * `DEGRADED`: At least one of the node's services is not behaving as expected.
 * `UNREACHABLE`: This means that Edgeworx Cloud has not received a heartbeat from the node in some time, and all services seem inaccessible. This could happen due to network outages, or if the node has been shut down, frozen, or otherwise disabled.
 {% endhint %}
+
+
 
 You now have an edge node, let's start using it!
