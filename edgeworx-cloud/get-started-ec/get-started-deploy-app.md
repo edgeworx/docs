@@ -2,7 +2,7 @@
 
 Apps are groups of microservices bundled to work together. They are defined using YAML files and can be deployed and updated by uploading those YAML files through Edgeworx Cloud or through [edgectl](../get-started-edgectl/)
 
-## Prerequisites
+## 1. Prerequisites
 
 To deploy an app, you will need an Edgeworx Cloud account with at least one node accessible and `ONLINE`. You can deploy the demo app with no experience in YAML or application building.
 
@@ -12,7 +12,7 @@ The Heart Rate Demo App provided with Edgeworx Cloud simulates a wearable device
 
 ![](<../../.gitbook/assets/image (8) (1) (1).png>)
 
-## Deploy the Demo App using Edgeworx Cloud
+## 2. Deploy the Demo App using Edgeworx Cloud
 
 1. Go to your Edgeworx Cloud project page (make sure you have [added at least 1 node](get-started-add-node.md))
 2. Select `Apps`
@@ -21,7 +21,7 @@ The Heart Rate Demo App provided with Edgeworx Cloud simulates a wearable device
 
 ![Add App](<../../.gitbook/assets/image (6) (1) (1).png>)
 
-## See the results of the demo app
+## 3. See the results of the demo app
 
 When your app is deployed successfully you will see an "Application Deployed" message in the top right of your screen.
 
