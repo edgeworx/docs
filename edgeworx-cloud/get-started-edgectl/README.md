@@ -4,7 +4,7 @@ Edgectl is Edgeworx Cloud's command line interface (CLI). It can be used to mana
 
 In this section we will show you how to use edgectl to get started with your first project and deploy some live microservices to the edge!
 
-## 1. Create an Edgeworx Cloud Account
+## Create an Edgeworx Cloud Account
 
 Before installing and using edgectl, we must first create an account through [cloud.edgeworx.io](https://cloud.edgeworx.io).
 
@@ -14,7 +14,7 @@ Enter your unique username and hit `NEXT`.
 
 On the "Welcome" page, choose an auth provider or provide your own email and password.
 
-## 2. Install edgectl
+## Install edgectl
 
 Edgectl supports Mac, Linux, and Windows.
 
@@ -53,11 +53,11 @@ Windows support is coming in the near future. Watch this space!
 
 ##
 
-## 3. Enable edgectl tab completion
+## Enable edgectl tab completion
 
 It is highly recommended that you enable tab completion, so that `edgectl` can help you complete commands and arguments. The installation process is shell-dependent: `bash`, `zsh`, `fish`, and `powershell` are supported. Execute `edgectl completion --help` for detailed instructions for your shell.
 
-## 4. Use edgectl
+## Use edgectl
 
 Now we are ready to use edgectl to login and start managing our Edgeworx Cloud resources!
 
@@ -71,7 +71,7 @@ If a web browser is not available (e.g. SSH'd into a box), you can also login by
 edgectl login --token xyz
 ```
 
-## 5. Get Familiar
+## Get Familiar
 
 Lets get familiar with edgectl. We can observe the main use cases by running the top-level help command:
 
@@ -91,7 +91,7 @@ edgectl project     (Manage projects)
 edgectl registry    (Manage registries)
 ```
 
-## 6. Configure Defaults
+## Configure Defaults
 
 We can use the `edgectl defaults set` command to set a default organization and project. This allows us to use many commands without having to provide the the `--org` and `--project` flags.
 
