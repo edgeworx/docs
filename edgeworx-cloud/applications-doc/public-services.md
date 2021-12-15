@@ -6,6 +6,8 @@ When deploying Applications and Microservices, you can specify a `public` config
 
 If `public` is specified, this will open a tunnel that will forward all traffic incoming onto the port exposed by the container.
 
+## Schemes and Protocol
+
 `schemes` allows you to specify the protocols supported by the underlying exposed Microservice. Controller will generate a public URL for each protocol supported.&#x20;
 
 `protocol` lets you decide between `http` and `tcp`. It tells the public port which type of traffic to forward. the default value is `http`. `http` protocol will only work if the schemes are `http` and/or `https`.
@@ -36,6 +38,8 @@ This feature is used by our demo app to expose the UI.
 The public address can be retrieved in the Portal (in the Application details, and/or Microservice details pages). Or using edgectl.
 
 Below is the YAML returned when describing the Microservice/Application
+
+## YAML Example
 
 ```yaml
 ...

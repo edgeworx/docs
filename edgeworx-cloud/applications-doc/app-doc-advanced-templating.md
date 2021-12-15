@@ -27,13 +27,19 @@ env:
 Values can be assigned to a new text string
 
 * Assigning a value: `{% assign agent = "agent-name" | findAgent %}`
-* Example: Getting the host value of the agent named `zebra-1`: `{% assign agent = "zebra-1" | findAgent %}{{ agent.host }}`
+
+```yaml
+env:
+  - key: rulesengineHOST
+    value: '{%  assign curmsvc= self.microservices | where: "name", "msvc-1" | first %}{{ curmsvc | findAgent: agents | map: "host" }}' # get the host where a microservice is running via agent
+```
 
 ### Filters
 
 Filtering is used to display conditionals or alter the display of the text. Filters can be set as conditionals (where a filter may have an "If" statement)
 
 * Using a filter: `{{"agent-name" | findAgent}}`
+* Example: Getting the host value of the agent named `zebra-1`: `{% assign agent = "zebra-1" | findAgent %}{{ agent.host }}`
 
 A list of filters accepted can be found in the LiquidJS documentation [here](https://liquidjs.com/filters/overview.html).
 
