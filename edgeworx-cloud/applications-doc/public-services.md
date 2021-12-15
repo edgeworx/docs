@@ -2,6 +2,8 @@
 
 Public services allow your microservices to securely expose public endpoints without opening ports on your Agents.
 
+## Specifying Public Containers
+
 When deploying Applications and Microservices, you can specify a `public` configuration when configuring the port mappings of your container.
 
 If `public` is specified, this will open a tunnel that will forward all traffic incoming onto the port exposed by the container.
@@ -31,9 +33,7 @@ container:
 
 The example above would be for a Microservice exposing a HTTPS server.
 
-Deploying such a configuration would result in a port being opened on the Controller host, and all incoming tcp traffic would be tunneled to agent-1, port 5000.
-
-This feature is used by our demo app to expose the UI.
+Deploying such a configuration would result in a port being opened on the Controller host, and all incoming tcp traffic would be tunneled to `agent-1`, port 5000.
 
 The public address can be retrieved in the Portal (in the Application details, and/or Microservice details pages). Or using edgectl.
 
