@@ -16,3 +16,22 @@ This release of Edgeworx Cloud consists largely of behind-the-scenes fixes and i
 For users that already have nodes registered with Edgeworx Cloud, it is necesary to re-run your project's _Node Install Script_ directly (via SSH) on each of your existing nodes. In effect, the _Node Install Script_ is performing an upgrade of Edgeworx components on your node. You should have received email communication with detailed steps on how to upgrade the node.&#x20;
 
 For users of `edgectl`, please upgrade to the latest version, for example: `$ brew upgrade edgectl` for macOS.
+
+
+
+### Edgeworx Cloud: Release 2021.12.16 (BETA)
+
+This release of Edgeworx Cloud consists largely of behind-the-scenes fixes and improvements to several Edgeworx Cloud components.
+
+| Component             | Version  |
+| --------------------- | -------- |
+| Edgeworx CloudAPI     | `v1.1.7` |
+| Edgectl               | `v1.1.7` |
+| Edgeworx Cloud Portal | `v1.1.4` |
+
+#### Changes
+
+* Better support for 32-bit Raspbian (Raspberry Pi) systems.
+* Minor UX fixes for Edgeworx Cloud Portal.
+* Several internal backend improvements.
+* CloudPortal: shows correct version of ARM architecture for device.
