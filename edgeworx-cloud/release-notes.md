@@ -1,5 +1,22 @@
 # Release Notes
 
+### Edgeworx Cloud: Release 2021.12.16 (BETA)
+
+This release of Edgeworx Cloud consists largely of behind-the-scenes fixes and improvements to several Edgeworx Cloud components.
+
+| Component             | Version  |
+| --------------------- | -------- |
+| Edgeworx CloudAPI     | `v1.1.7` |
+| Edgectl               | `v1.1.7` |
+| Edgeworx Cloud Portal | `v1.1.4` |
+
+#### Changes
+
+* Better support for 32-bit Raspbian (Raspberry Pi) systems.
+* Minor UX fixes for Edgeworx Cloud Portal.
+* Several internal backend improvements.
+* CloudPortal: shows correct version of ARM architecture for device.
+
 ### Edgeworx Cloud: Release 2021.12.05 (BETA)
 
 This release of Edgeworx Cloud consists largely of behind-the-scenes fixes and improvements to several Edgeworx Cloud components.
@@ -19,19 +36,4 @@ For users of `edgectl`, please upgrade to the latest version, for example: `$ br
 
 
 
-### Edgeworx Cloud: Release 2021.12.16 (BETA)
-
-This release of Edgeworx Cloud consists largely of behind-the-scenes fixes and improvements to several Edgeworx Cloud components.
-
-| Component             | Version  |
-| --------------------- | -------- |
-| Edgeworx CloudAPI     | `v1.1.7` |
-| Edgectl               | `v1.1.7` |
-| Edgeworx Cloud Portal | `v1.1.4` |
-
-#### Changes
-
-* Better support for 32-bit Raspbian (Raspberry Pi) systems.
-* Minor UX fixes for Edgeworx Cloud Portal.
-* Several internal backend improvements.
-* CloudPortal: shows correct version of ARM architecture for device.
+###
