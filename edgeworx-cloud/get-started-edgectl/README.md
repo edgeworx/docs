@@ -23,7 +23,7 @@ Edgectl supports Mac, Linux, and Windows.
 On Mac, we can use [brew](https://brew.sh) to install _edgectl_:
 
 ```bash
-brew install Edgeworx/edgectl/edgectl
+brew install edgeworx/edgectl/edgectl
 ```
 
 ### Linux
