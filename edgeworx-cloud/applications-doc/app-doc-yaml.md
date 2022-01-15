@@ -1,6 +1,6 @@
 # Application YAML Definition
 
-Edgeworx Cloud uses [Eclipse ioFog](https://www.iofog.org) under the covers to deploy and manage applications. We directly use the ioFog YAML specifications for defining different resource `Kinds`. Applications are defined using YAML files. In this section you'll find an example application yaml file and description of all fields supported by Edgeworx Cloud.
+Edgeworx Cloud uses **** [**Eclipse ioFog**](https://www.iofog.org) under the covers to deploy and manage applications. We directly use the ioFog YAML specifications for defining different resource `Kinds`. Applications are defined using YAML files. In this section you'll find an example application yaml file and description of all fields supported by Edgeworx Cloud.
 
 ## Fields
 
@@ -11,29 +11,29 @@ Edgeworx Cloud uses [Eclipse ioFog](https://www.iofog.org) under the covers to d
 | metadata      | Object including pertinent Application information including Name                                                                                                                                                                                                                                              |
 | name          | The name of your application. This has to be unique within the namespace of your Edge Project. Must start and end with lowercase alphanumeric character. Can include '-' character.                                                                                                                            |
 | spec          | Object containing microservices that compose the application                                                                                                                                                                                                                                                   |
-| microservices | Object containing the microservices that make up your application. See the [microservices](app-doc-yaml.md#microservices) section below for more information.                                                                                                                                                  |
+| microservices | Object containing the microservices that make up your application. See the [**microservices**](app-doc-yaml.md#microservices) section below for more information.                                                                                                                                              |
 | routes        | A list of Application Routes. Application routes define message passing between microservices. `From` and `To` use microservice names as identifiers, and must match a microservice defined in the `microservices` section. When deploying an application, prefer this method to the microservice route field. |
 
 ## Microservices
 
 Microservices configuration and set up are defined inside the application YAML files.
 
-| Field                    | Description                                                                                                                                                                                 |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name                     | User-defined unique identifier of an Microservice within an Edgeworx Cloud Project. Must start and end with lowercase alphanumeric character. Can include '-' character.                    |
-| agent                    | Object describing the node the microservice is to be deployed on.                                                                                                                           |
-| agent.name               | Edgeworx Cloud node name                                                                                                                                                                    |
-| images                   | Description of the images to be used by the container running the microservice.                                                                                                             |
-| images.x86               | Image to be used on x86 nodes.                                                                                                                                                              |
-| images.arm               | Image to be used on ARM nodes.                                                                                                                                                              |
-| images.registry          | Either `local`, `remote`, or `registryID`. Remote will pull the image from Dockerhub, local will use the local cache of the node. RegistryID will use the specified registry.               |
-| images.catalogId         | Catalog item ID to be used in lieu and place of the images and the registry. (see [catalog items](http://iofog.staging.edgeworx.io/docs/3/applications/microservice-registry-catalog.html)) |
-| config                   | User-defined arbitrary object to be passed to the microservice runtime as its configuration                                                                                                 |
-| container.rootHostAccess | Set to true if the container needs to be able to access the host. This will also set the network of the container to `host`                                                                 |
-| container.ports          | List of port mapping to be provided to the container running the microservice (See [public services](public-services.md) for a more details explanation of the public section)              |
-| container.volumes        | List of volume mapping to be provided to the container running the microservice                                                                                                             |
-| container.env            | List of environment variables to be provided to the container running the microservice                                                                                                      |
-| container.commands       | List of arguments passed as CMD to the container runtime                                                                                                                                    |
+| Field                    | Description                                                                                                                                                                                     |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name                     | User-defined unique identifier of an Microservice within an Edgeworx Cloud Project. Must start and end with lowercase alphanumeric character. Can include '-' character.                        |
+| agent                    | Object describing the node the microservice is to be deployed on.                                                                                                                               |
+| agent.name               | Edgeworx Cloud node name                                                                                                                                                                        |
+| images                   | Description of the images to be used by the container running the microservice.                                                                                                                 |
+| images.x86               | Image to be used on x86 nodes.                                                                                                                                                                  |
+| images.arm               | Image to be used on ARM nodes.                                                                                                                                                                  |
+| images.registry          | Either `local`, `remote`, or `registryID`. Remote will pull the image from Dockerhub, local will use the local cache of the node. RegistryID will use the specified registry.                   |
+| images.catalogId         | Catalog item ID to be used in lieu and place of the images and the registry. (see [**catalog items**](http://iofog.staging.edgeworx.io/docs/3/applications/microservice-registry-catalog.html)) |
+| config                   | User-defined arbitrary object to be passed to the microservice runtime as its configuration                                                                                                     |
+| container.rootHostAccess | Set to true if the container needs to be able to access the host. This will also set the network of the container to `host`                                                                     |
+| container.ports          | List of port mapping to be provided to the container running the microservice (See [**public services**](public-services.md) for a more details explanation of the public section)              |
+| container.volumes        | List of volume mapping to be provided to the container running the microservice                                                                                                                 |
+| container.env            | List of environment variables to be provided to the container running the microservice                                                                                                          |
+| container.commands       | List of arguments passed as CMD to the container runtime                                                                                                                                        |
 
 ```yaml
 # Agent on which to deploy the microservice

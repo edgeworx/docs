@@ -12,7 +12,7 @@ Edgeworx can connect to virtually any containerized application. We’ve outline
 
 Edgeworx nodes connect directly to your applications' microservices to send, retrieve, and parse data. Many microservices are hosted in Docker or similar containerized services. Microservices a within the Application YAML specification to
 
-More information on connecting to your microservice [here](microservice.md).
+More information on connecting to your microservice **** [**here**](microservice.md)**.**
 
 ### Integrations <a href="#integrations" id="integrations"></a>
 
@@ -31,7 +31,7 @@ routes:
   to: viewer
 ```
 
-&#x20;More information on routing can be found in the [Application Templating](app-doc-advanced-templating.md) page.
+&#x20;More information on routing can be found in the [**Application Templating**](app-doc-advanced-templating.md) page.
 
 ### Variables <a href="#variables" id="variables"></a>
 
@@ -41,14 +41,14 @@ Variables can be defined on application inputs and outputs to be processed along
 
 ### Creating an Application
 
-Applications can be created within the Edgeworx platform by creating a YAML configuration file linking to your existing containerized application. The steps for creating and deploying a custom application in Edgeworx can be found [here](../get-started-ec/deploy-a-custom-app.md).
+Applications can be created within the Edgeworx platform by creating a YAML configuration file linking to your existing containerized application. The steps for creating and deploying a custom application in Edgeworx can be found [**here**](../get-started-ec/deploy-a-custom-app.md).
 
 ### Deploying a Demo App
 
-Edgeworx provides a demo application you can deploy within minutes to see an example of an Application in action. You need one node live in order to deploy the demo app. More information on deploying the app can be found [here](../get-started-ec/get-started-deploy-app.md).
+Edgeworx provides a demo application you can deploy within minutes to see an example of an Application in action. You need one node live in order to deploy the demo app. More information on deploying the app can be found [**here**](../get-started-ec/get-started-deploy-app.md).
 
 ### Managing your Application
 
 \
-Applications can be managed through the [portal](../get-started-ec/get-started-deploy-app.md#deploy-a-custom-app-using-the-portal)  or using [edgectl](../get-started-edgectl/#deploy-an-application)
+Applications can be managed through the [**portal**](../get-started-ec/get-started-deploy-app.md#deploy-a-custom-app-using-the-portal) or using [**edgectl**](../get-started-edgectl/#deploy-an-application)**.**
 

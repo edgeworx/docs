@@ -2,7 +2,7 @@
 
 ## Create your Edgeworx Cloud account
 
-Navigate to [Edgeworx Cloud](http://cloud.edgeworx.io) and click the `Create Account` button on the top right.
+Navigate to [**Edgeworx Cloud**](http://cloud.edgeworx.io) and click the `Create Account` button on the top right.
 
 ![Edgeworx Cloud welcome page](<../../.gitbook/assets/image (11).png>)
 
@@ -30,7 +30,7 @@ Once your account has been created, Edgeworx Cloud automatically creates your fi
 
 ![your project is being created](<../../.gitbook/assets/image (10).png>)
 
-Once your Edge project is created, you will see your project overview page and be able to [add your first node!](get-started-add-node.md)
+Once your Edge project is created, you will see your project overview page and be able to **** [**add your first node!**](get-started-add-node.md)****
 
 ![project overview](<../../.gitbook/assets/image (13).png>)
 

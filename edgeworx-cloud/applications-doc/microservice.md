@@ -14,7 +14,7 @@ Microservices are an architectural style that structures an application as a col
 
 This definition encapsulate the logic we encourage you to use when deploying Edge Applications on your nodes. But we would add a couple of points to really nail the Edgeworx Cloud Application Microservice:
 
-* It is a [docker container](https://www.docker.com/resources/what-container) that runs on your node
+* It is a [**docker container**](https://www.docker.com/resources/what-container) that runs on your node
 * Its life-cycle is managed by your Edgeworx Agent
 * Microservices are leveraged within your Edge Application
 
@@ -31,15 +31,15 @@ The high-level process of creating a new microservice is:
 * Create a project directory
 * Create a `Dockerfile` with your desired configuration
 * Write the microservice app code itself
-* Build the image with [`docker build`](https://docs.docker.com/engine/reference/commandline/build/)
+* Build the image with [**`docker build`**](https://docs.docker.com/engine/reference/commandline/build/)****
 * Deploy your image to a Docker registry (e.g. Docker Hub)
 * (Optional) Add the registered image to your Controller's catalog
 * Deploy the microservice using edgectl
 
 {% hint style="info" %}
-If you're new to containers and Docker, you'll want to check out their official [Getting Started guide](https://docs.docker.com/get-started/) which walks you through the different pieces of putting together a Docker container image.
+If you're new to containers and Docker, you'll want to check out their official [**Getting Started guide**](https://docs.docker.com/get-started/) which walks you through the different pieces of putting together a Docker container image.
 {% endhint %}
 
 ## Connecting Microservices to Edge Application
 
-Once your microservice is deployed on your node, you're ready to connect it to your Application! Check out the [Public Services](public-services.md) for page for configuration steps.
+Once your microservice is deployed on your node, you're ready to connect it to your Application! Check out the [**Public Services**](public-services.md) for page for configuration steps.

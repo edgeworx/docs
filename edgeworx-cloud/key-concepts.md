@@ -6,19 +6,19 @@ description: Overview of Edgeworx Cloud concepts.
 
 #### Edgeworx Cloud
 
-_Edgeworx Cloud_ is the platform for managing and monitoring edge devices. Edgeworx Cloud includes a web-based portal at [cloud.edgeworx.io](https://cloud.edgeworx.io).
+_Edgeworx Cloud_ is the platform for managing and monitoring edge devices. Edgeworx Cloud includes a web-based portal at [**cloud.edgeworx.io**](https://cloud.edgeworx.io).
 
 #### Cloud API
 
-_Cloud API_ is the REST API for _Edgeworx Cloud_. _Cloud Portal_ and _edgectl_ both communicate with Cloud API. You may also build your own applications that interact directly with Cloud API. See the Cloud API [REST documentation](https://api.dev.edgeworx.io/v1/docs).
+_Cloud API_ is the REST API for _Edgeworx Cloud_. _Cloud Portal_ and _edgectl_ both communicate with Cloud API. You may also build your own applications that interact directly with Cloud API. See the Cloud API [**REST documentation**](https://api.dev.edgeworx.io/v1/docs).
 
 #### edgectl
 
-edgectl is the CLI for _Edgeworx Cloud_. See [Get Started: edgectl](get-started-edgectl/) for more.
+edgectl is the CLI for _Edgeworx Cloud_. See [**Get Started: edgectl**](get-started-edgectl/) for more.
 
 #### Account & Org
 
-To sign-up for an _Edgeworx Cloud_ _account_, visit [cloud.edgeworx.io](https://cloud.edgeworx.io). The user must provide an email and  select a unique _username_.
+To sign-up for an _Edgeworx Cloud_ _account_, visit [**cloud.edgeworx.io**](https://cloud.edgeworx.io). The user must provide an email and  select a unique _username_.
 
 An _Org_ (i.e. _Organization)_ is typically created for a corporate entity. For example, `Acme, Inc.` may create an org `acme`. An _org_ is the container for projects.
 
@@ -75,7 +75,7 @@ You can access the _node install script_ via the `Add Node` button in _Cloud Por
 
 #### Application
 
-An _app_ or _application_ means an [ioFog](https://iofog.org/docs/2/developing-microservices/overview.html) application. That is to say, it is a set of _microservices_ running on a set of _nodes_ in a _project_. You can add an _app_ to a _project_ via _Cloud Portal_, or via `edgectl app deploy`.
+An _app_ or _application_ means an [**ioFog**](https://iofog.org/docs/2/developing-microservices/overview.html) application. That is to say, it is a set of _microservices_ running on a set of _nodes_ in a _project_. You can add an _app_ to a _project_ via _Cloud Portal_, or via `edgectl app deploy`.
 
 #### Microservice
 

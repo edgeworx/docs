@@ -6,7 +6,7 @@ In this section we will show you how to use edgectl to get started with your fir
 
 ## Create an Edgeworx Cloud Account
 
-Before installing and using edgectl, we must first create an account through [cloud.edgeworx.io](https://cloud.edgeworx.io).
+Before installing and using edgectl, we must first create an account through [**cloud.edgeworx.io**](https://cloud.edgeworx.io).
 
 Navigate to the portal and click the `Create Account` button on the top right.
 
@@ -20,7 +20,7 @@ Edgectl supports Mac, Linux, and Windows.
 
 ### MacOS
 
-On Mac, we can use [brew](https://brew.sh) to install _edgectl_:
+On Mac, we can use [**brew**](https://brew.sh) to install _edgectl_:
 
 ```bash
 brew install edgeworx/edgectl/edgectl
