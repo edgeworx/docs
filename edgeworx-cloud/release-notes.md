@@ -1,5 +1,18 @@
 # Release Notes
 
+### Edgeworx Cloud: Release 2022.01.20 (BETA)
+
+Security enhancements.
+
+| Component         | Version  |
+| ----------------- | -------- |
+| Edgeworx CloudAPI | `v1.2.0` |
+| Edgectl           | `v1.2.0` |
+
+#### Changes
+
+* Improvements to Edgeworx Cloud internal security mechanisms.
+
 ### Edgeworx Cloud: Release 2021.12.16 (BETA)
 
 This release of Edgeworx Cloud consists largely of behind-the-scenes fixes and improvements to several Edgeworx Cloud components.
