@@ -1,13 +1,13 @@
 # Release Notes
 
-### Edgeworx Cloud: Release 2022.01.27 (BETA)
+### Edgeworx Cloud: Release 2022.01.26 (BETA)
 
 This release of Edgeworx Cloud introduces application microservice container logging, and incorporates internal security enhancements.
 
 | Component         | Version  |
 | ----------------- | -------- |
 | Edgeworx CloudAPI | `v1.3.1` |
-| Edgectl           | `v1.3.1` |
+| Edgectl           | `v1.3.2` |
 
 #### Changes
 

@@ -30,12 +30,28 @@ brew install edgeworx/edgectl/edgectl
 
 #### Debian
 
-On Debian distributions, we can use `apt` to install _edgectl_.
+On Debian distributions, we can use `apt` to install _edgectl_. Note that we need to add the edgectl repository to apt, as seen below.
 
 ```
-curl -s https://packagecloud.io/install/repositories/edgeworx/edgectl/script.deb.sh | sudo bash
-sudo apt-get update -y
+gpg_key_url="https://packagecloud.io/edgeworx/edgectl/gpgkey"
+repo_list_file="sources.list.d/edgeworx_edgectl-any.list"
+apt_trusted_keyring_path="/etc/apt/trusted.gpg.d/edgeworx-edgectl.gpg"
+sudo apt install -qy debian-archive-keyring
+sudo apt install -qy apt-transport-https
+# Import the gpg key
+curl -fsSL "${gpg_key_url}" | sudo gpg --dearmor > ${apt_trusted_keyring_path}
+sudo apt update -qy
+# Repo definition
+echo "deb https://packagecloud.io/edgeworx/edgectl/any/ any main" > "/etc/apt/$repo_list_file"
+echo "deb-src https://packagecloud.io/edgeworx/edgectl/any/ any main" >> "/etc/apt/$repo_list_file"
+
+sudo apt-get update -qy \
+    -o Dir::Etc::sourcelist="$repo_list_file" \
+    -o Dir::Etc::sourceparts="-" \
+    -o APT::Get::List-Cleanup="0"
+
 sudo apt-get install edgectl -y
+
 ```
 
 #### RPM
@@ -43,8 +59,21 @@ sudo apt-get install edgectl -y
 We can use the following commands to install _edgectl_ on `RPM` based distributions.
 
 ```
-curl -s https://packagecloud.io/install/repositories/edgeworx/edgectl/script.rpm.sh | sudo bash
-sudo yum install edgectl -y
+repo_name="edgeworx_edgectl-any"
+repo_file="yum.repos.d/$repo_name.repo"
+echo "[$repo_name]
+name=$repo_name
+baseurl=https://packagecloud.io/edgeworx/edgectl/rpm_any/rpm_any/\$basearch
+repo_gpgcheck=0
+gpgcheck=0
+enabled=1
+gpgkey=https://packagecloud.io/edgeworx/edgectl/gpgkey
+sslverify=1
+sslcacert=/etc/pki/tls/certs/ca-bundle.crt
+metadata_expire=300" > "/etc/$repo_file"
+sudo yum update --disablerepo=* --enablerepo=$repo_name
+sudo yum install --disablerepo=* --enablerepo=$repo_name edgectl -y
+
 ```
 
 ### Windows
