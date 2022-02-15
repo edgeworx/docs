@@ -1,6 +1,6 @@
 # Application YAML Definition
 
-Edgeworx Cloud uses **** [**Eclipse ioFog**](https://www.iofog.org) under the covers to deploy and manage applications. We directly use the ioFog YAML specifications for defining different resource `Kinds`. Applications are defined using YAML files. In this section you'll find an example application yaml file and description of all fields supported by Edgeworx Cloud.
+Darcy Cloud uses **** [**Eclipse ioFog**](https://www.iofog.org) under the covers to deploy and manage applications. We directly use the ioFog YAML specifications for defining different resource `Kinds`. Applications are defined using YAML files. In this section you'll find an example application yaml file and description of all fields supported by Darcy Cloud.
 
 ## Fields
 
@@ -22,7 +22,7 @@ Microservices configuration and set up are defined inside the application YAML f
 | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | name                     | User-defined unique identifier of an Microservice within an Edgeworx Cloud Project. Must start and end with lowercase alphanumeric character. Can include '-' character.                        |
 | agent                    | Object describing the node the microservice is to be deployed on.                                                                                                                               |
-| agent.name               | Edgeworx Cloud node name                                                                                                                                                                        |
+| agent.name               | Darcy Cloud node name                                                                                                                                                                           |
 | images                   | Description of the images to be used by the container running the microservice.                                                                                                                 |
 | images.x86               | Image to be used on x86 nodes.                                                                                                                                                                  |
 | images.arm               | Image to be used on ARM nodes.                                                                                                                                                                  |
