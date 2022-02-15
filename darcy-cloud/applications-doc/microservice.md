@@ -12,7 +12,7 @@ Microservices are an architectural style that structures an application as a col
 * Organized around business capabilities
 * Owned by a small team
 
-This definition encapsulate the logic we encourage you to use when deploying Edge Applications on your nodes. But we would add a couple of points to really nail the Edgeworx Cloud Application Microservice:
+This definition encapsulate the logic we encourage you to use when deploying Edge Applications on your nodes. But we would add a couple of points to really nail the Darcy Cloud Application Microservice:
 
 * It is a [**docker container**](https://www.docker.com/resources/what-container) that runs on your node
 * Its life-cycle is managed by your Edgeworx Agent
