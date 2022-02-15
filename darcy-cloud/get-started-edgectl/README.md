@@ -1,12 +1,12 @@
 # Get Started: edgectl
 
-Edgectl is Edgeworx Cloud's command line interface (CLI). It can be used to manage Edgeworx Cloud accounts, organizations, projects, nodes, and applications.
+Edgectl is Darcy Cloud's command line interface (CLI). It can be used to manage Darcy Cloud accounts, organizations, projects, nodes, and applications.
 
 In this section we will show you how to use edgectl to get started with your first project and deploy some live microservices to the edge!
 
-## Create an Edgeworx Cloud Account
+## Create a Darcy Cloud Account
 
-Before installing and using edgectl, we must first create an account through [**cloud.edgeworx.io**](https://cloud.edgeworx.io).
+Before installing and using edgectl, we must first create an account through **cloud.darcy.ai**.
 
 Navigate to the portal and click the `Create Account` button on the top right.
 
@@ -44,13 +44,13 @@ It is highly recommended that you enable tab completion, so that `edgectl` can h
 
 ## Use edgectl
 
-Now we are ready to use edgectl to login and start managing our Edgeworx Cloud resources!
+Now we are ready to use edgectl to login and start managing our Darcy Cloud resources!
 
 ### Login
 
-_edgectl_ requires an _Access Token_. You can get one via: `edgectl login`, which will open a web browser on `cloud.edgeworx.io`. After authentication, _edgectl_ will receive the account's master _Personal Access Token,_ and will be logged in.
+_edgectl_ requires an _Access Token_. You can get one via: `edgectl login`, which will open a web browser on `cloud.darcy.ai`. After authentication, _edgectl_ will receive the account's master _Personal Access Token,_ and will be logged in.
 
-If a web browser is not available (e.g. SSH'd into a box), you can also login by providing either a _Personal Access Token_ or _Project Access Token_ from `cloud.edgeworx.io`. For _Personal Access Token_, click `Access Tokens` in the upper-right account menu. For _Project Acccess Token_, click the settings (gear) icon on the project page. Once you have the _Access Token_, you can execute:
+If a web browser is not available (e.g. SSH'd into a box), you can also login by providing either a _Personal Access Token_ or _Project Access Token_ from `cloud.darcy.ai`. For _Personal Access Token_, click `Access Tokens` in the upper-right account menu. For _Project Acccess Token_, click the settings (gear) icon on the project page. Once you have the _Access Token_, you can execute:
 
 ```bash
 edgectl login --token xyz

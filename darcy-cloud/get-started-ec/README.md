@@ -1,8 +1,8 @@
-# Get Started: Edgeworx Cloud
+# Get Started: Darcy Cloud
 
-## Create your Edgeworx Cloud account
+## Create your Darcy Cloud account
 
-Navigate to [**Edgeworx Cloud**](http://cloud.edgeworx.io) and click the `Create Account` button on the top right.
+Navigate to **Darcy Cloud** and click the `Create Account` button on the top right.
 
 ![Edgeworx Cloud welcome page](<../../.gitbook/assets/image (11).png>)
 
@@ -12,7 +12,7 @@ Enter your unique username and hit `NEXT`.
 
 On the "Welcome" page, choose an auth provider or provide your own email and password.
 
-Edgeworx Cloud uses Auth0 to provide secure account creation and access
+Darcy Cloud uses Auth0 to provide secure account creation and access
 
 ![Create account-Auth0](<../../.gitbook/assets/image (9) (1).png>)
 
@@ -24,9 +24,9 @@ You may need to check your spam folders. The email sender will be "no-reply@auth
 
 ![Email verified](<../../.gitbook/assets/image (14) (1).png>)
 
-## View your Edgeworx Cloud Edge Project
+## View your Darcy Cloud Edge Project
 
-Once your account has been created, Edgeworx Cloud automatically creates your first project. This may take a few minutes. The screen will refresh automatically when complete.
+Once your account has been created, Darcy Cloud automatically creates your first project. This may take a few minutes. The screen will refresh automatically when complete.
 
 ![your project is being created](<../../.gitbook/assets/image (10).png>)
 

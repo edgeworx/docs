@@ -1,20 +1,20 @@
 # Deploy the Demo App
 
-Apps are groups of microservices bundled to work together. They are defined using YAML files and can be deployed and updated by uploading those YAML files through Edgeworx Cloud or through [**edgectl**](../get-started-edgectl/).
+Apps are groups of microservices bundled to work together. They are defined using YAML files and can be deployed and updated by uploading those YAML files through Darcy Cloud or through [**edgectl**](../get-started-edgectl/).
 
 ## Prerequisites
 
-To deploy an app, you will need an Edgeworx Cloud account with at least one node accessible and `ONLINE`. You can deploy the demo app with no experience in YAML or application building.
+To deploy an app, you will need an Darcy Cloud account with at least one node accessible and `ONLINE`. You can deploy the demo app with no experience in YAML or application building.
 
 ### About the "Heart Rate Demo App"
 
-The Heart Rate Demo App provided with Edgeworx Cloud simulates a wearable device transmitting a person's heartbeat at the Edge. The Wearable sends heart rate data over bluetooth to a data collector microservice located on Node 1. The Data collector microservice then communicates with another microservice running a web server on Node 2 to display the heart rate data on a graph.&#x20;
+The Heart Rate Demo App provided with Darcy Cloud simulates a wearable device transmitting a person's heartbeat at the Edge. The Wearable sends heart rate data over bluetooth to a data collector microservice located on Node 1. The Data collector microservice then communicates with another microservice running a web server on Node 2 to display the heart rate data on a graph.&#x20;
 
 ![](<../../.gitbook/assets/image (8) (1) (1).png>)
 
-## Deploy the Demo App using Edgeworx Cloud
+## Deploy the Demo App using Darcy Cloud
 
-1. Go to your Edgeworx Cloud project page (make sure you have [**added at least 1 node**](get-started-add-node.md))
+1. Go to your Darcy Cloud project page (make sure you have [**added at least 1 node**](get-started-add-node.md))
 2. Select `Apps`
 3. Click on `+ DEPLOY APP`
 4. Click on `DEPLOY DEMO APP`
@@ -57,7 +57,8 @@ spec:
     # Custom micro service that will connect to Scosche heart rate monitor via Bluetooth
     - name: "monitor"
       agent:
-        name: "{% assign agent = \"\" | findAgent | first %}{{ agent.name }}"
+        name: "{% raw %}
+{% assign agent = \"\" | findAgent | first %}{{ agent.name }}"
       images:
         arm: "edgeworx/healthcare-heart-rate:arm-v1"
         x86: "edgeworx/healthcare-heart-rate:x86-v1"
@@ -71,7 +72,8 @@ spec:
     # Simple JSON viewer for the heart rate output
     - name: "viewer"
       agent:
-        name: "{% assign agent = \"\" | findAgent | last %}{{ agent.name }}"
+        name: "{% assign agent = \"\" | findAgent | last %}
+{% endraw %}{{ agent.name }}"
       images:
         arm: "edgeworx/healthcare-heart-rate-ui:arm"
         x86: "edgeworx/healthcare-heart-rate-ui:x86"
@@ -97,5 +99,5 @@ spec:
       name: "monitor-to-viewer"
 ```
 
-![Edgeworx Cloud Portal: Demo App YAML](<../../.gitbook/assets/image (7) (1).png>)
+![Darcy Cloud Portal: Demo App YAML](<../../.gitbook/assets/image (7) (1).png>)
 

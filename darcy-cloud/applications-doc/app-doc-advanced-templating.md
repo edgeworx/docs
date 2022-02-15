@@ -31,7 +31,9 @@ Values can be assigned to a new text string
 ```yaml
 env:
   - key: rulesengineHOST
-    value: '{%  assign curmsvc= self.microservices | where: "name", "msvc-1" | first %}{{ curmsvc | findAgent: agents | map: "host" }}' # get the host where a microservice is running via agent
+    value: '{% raw %}
+{%  assign curmsvc= self.microservices | where: "name", "msvc-1" | first %}
+{% endraw %}{{ curmsvc | findAgent: agents | map: "host" }}' # get the host where a microservice is running via agent
 ```
 
 ### Filters
@@ -124,11 +126,13 @@ spec:
           - key: https_proxy
             value: '{{ self.microservices | where: "name", "rulesengine" | first | map: "env" | first | where: "key" , "http_proxy" | first | map: "value" | first }}' # get the https proxy from rulesengine ms and env http_proxy
           - key: rulesengineHOST
-            value: '{%  assign curmsvc= self.microservices | where: "name", "msvc-1" | first %}{{ curmsvc | findAgent: agents | map: "host" }}' # get the host where a microservice is running via agent
+            value: '{% raw %}
+{%  assign curmsvc= self.microservices | where: "name", "msvc-1" | first %}{{ curmsvc | findAgent: agents | map: "host" }}' # get the host where a microservice is running via agent
           - key: rulesenginePORT
             value: '{{ self.microservices | where: "name", "rulesengine" | first | map: "ports" | first | map: "external" | first }}'
           - key: redisHost # get host and port of a mciroservice
-            value: '{% assign redisApp = "redis-app" | findApplication %}{% assign redismsvc = redisApp.microservices | where: "name", "redistest" | first %}{{ redismsvc | findAgent: agents | map: "host"}}:{{ redismsvc | map: "ports" | first | first |map: "external" | first }}'
+            value: '{% assign redisApp = "redis-app" | findApplication %}{% assign redismsvc = redisApp.microservices | where: "name", "redistest" | first %}
+{% endraw %}{{ redismsvc | findAgent: agents | map: "host"}}:{{ redismsvc | map: "ports" | first | first |map: "external" | first }}'
           - key: edgeResLiveness # Get edge resource endpoint for a specific version
             value: '{{ "com.orange.smart-door" | findEdgeResource: "0.0.1" | map: "interface" | map: "endpoints" | first  | where: "name", "liveness" | first | map: "url" }}'
           - key: edgeResVersion # Get edge resource endpoint
@@ -235,7 +239,8 @@ with controller API the same configuration looks like:
         },
         {
           "key": "rulesengineHOST",
-          "value": "{%  assign curmsvc= self.microservices | where: \"name\", \"msvc-1\" | first %}{{ curmsvc | findAgent: agents | map: \"host\" }}"
+          "value": "{% raw %}
+{%  assign curmsvc= self.microservices | where: \"name\", \"msvc-1\" | first %}{{ curmsvc | findAgent: agents | map: \"host\" }}"
         },
         {
           "key": "rulesenginePORT",
@@ -243,7 +248,8 @@ with controller API the same configuration looks like:
         },
         {
           "key": "redisHost",
-          "value": "{% assign redisApp = \"redis-app\" | findApplication %}{% assign redismsvc = redisApp.microservices | where: \"name\", \"redistest\" | first %}{{ redismsvc | findAgent: agents | map: \"host\"}}:{{ redismsvc | map: \"ports\" | first | first |map: \"external\" | first }}"
+          "value": "{% assign redisApp = \"redis-app\" | findApplication %}{% assign redismsvc = redisApp.microservices | where: \"name\", \"redistest\" | first %}
+{% endraw %}{{ redismsvc | findAgent: agents | map: \"host\"}}:{{ redismsvc | map: \"ports\" | first | first |map: \"external\" | first }}"
         },
         {
           "key": "edgeResLiveness",
@@ -268,7 +274,9 @@ with controller API the same configuration looks like:
 ---
 ....
           - key: testaffect
-            value: "{% assign ms =self.microservices | where: \"name\", \"rulesengine\" | first %}{{ ms.env | where: \"key\" , \"http_proxy\" | first }}"
+            value: "{% raw %}
+{% assign ms =self.microservices | where: \"name\", \"rulesengine\" | first %}
+{% endraw %}{{ ms.env | where: \"key\" , \"http_proxy\" | first }}"
 ....
 ```
 

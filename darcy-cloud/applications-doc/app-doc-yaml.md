@@ -105,7 +105,8 @@ spec:
         # This is the node to which the micro service will be deployed
         # See the Application Templating page for more details
         # You can also replace the value below with a specific node name  
-        name: "{% assign agent = \"\" | findAgent | first %}{{ agent.name }}"
+        name: "{% raw %}
+{% assign agent = \"\" | findAgent | first %}{{ agent.name }}"
       images:
         arm: edgeworx/healthcare-heart-rate:arm-v1
         x86: edgeworx/healthcare-heart-rate:x86-v1
@@ -128,7 +129,8 @@ spec:
     - name: heart-rate-viewer
       agent:
         # You can also replace the value below with a specific node name  
-        name: "{% assign agent = \"\" | findAgent | first %}{{ agent.name }}"
+        name: "{% assign agent = \"\" | findAgent | first %}
+{% endraw %}{{ agent.name }}"
       images:
         arm: edgeworx/healthcare-heart-rate-ui:arm
         x86: edgeworx/healthcare-heart-rate-ui:x86

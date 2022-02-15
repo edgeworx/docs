@@ -1,6 +1,6 @@
 # Add an Edge Node
 
-In order to start deploying applications via Edgeworx Cloud, you must add nodes to your edge project. Nodes can be an edge device such as a [**Raspberry Pi** ](https://www.raspberrypi.com)or an [**NVIDIA Jetson**](https://www.nvidia.com/en-us/autonomous-machines/jetson-store/). They can also be VMs in the Cloud or a **** [**Vagrant**](https://www.vagrantup.com) image running on your laptop. Basically any type of computer that you want to connect to your Edge project.&#x20;
+In order to start deploying applications via Darcy Cloud, you must add nodes to your edge project. Nodes can be an edge device such as a [**Raspberry Pi** ](https://www.raspberrypi.com)or an [**NVIDIA Jetson**](https://www.nvidia.com/en-us/autonomous-machines/jetson-store/). They can also be VMs in the Cloud or a **** [**Vagrant**](https://www.vagrantup.com) image running on your laptop. Basically any type of computer that you want to connect to your Edge project.&#x20;
 
 ## Prerequisites <a href="#prereqs" id="prereqs"></a>
 
@@ -24,13 +24,13 @@ If you do not have any of the above hardware, you can create a VM and run the no
 
 ## Get the Node Installation Script
 
-Log into [**Edgeworx Cloud**](http://cloud.edgeworx.io) **** and select the project to which you want to add the node.&#x20;
+Log into **Darcy Cloud** and select the project to which you want to add the node.&#x20;
 
-![Edgeworx Cloud: "Project" page](../../.gitbook/assets/screen-shot-2021-10-08-at-5.59.22-pm.png)
+![Darcy Cloud: "Project" page](../../.gitbook/assets/screen-shot-2021-10-08-at-5.59.22-pm.png)
 
 Click the `+ ADD NODE` button located in the panel on the left of the view. This will bring up a modal dialog which shows the one line command that must be run on your host for it to become a node in your edge project.
 
-![Edgeworx Cloud: "Add Node" modal](../../.gitbook/assets/screen-shot-2021-10-08-at-9.07.24-pm.png)
+![Darcy Cloud: "Add Node" modal](../../.gitbook/assets/screen-shot-2021-10-08-at-9.07.24-pm.png)
 
 Click the `COPY` button to copy the install command to your clipboard.
 
@@ -61,9 +61,9 @@ A node can be in one of these states:
 
 * `INITIALIZING`: The node is briefly in this state when first created.
 * `INSTALLING`: Software is being installed or updated on the node.
-* `ONLINE`: The happy state: Edgeworx Cloud is receiving heartbeats from the node and services are reachable.
+* `ONLINE`: The happy state: Darcy Cloud is receiving heartbeats from the node and services are reachable.
 * `DEGRADED`: At least one of the node's services is not behaving as expected.
-* `UNREACHABLE`: This means that Edgeworx Cloud has not received a heartbeat from the node in some time, and all services seem inaccessible. This could happen due to network outages, or if the node has been shut down, frozen, or otherwise disabled.
+* `UNREACHABLE`: This means that Darcy Cloud has not received a heartbeat from the node in some time, and all services seem inaccessible. This could happen due to network outages, or if the node has been shut down, frozen, or otherwise disabled.
 {% endhint %}
 
 You now have an edge node, let's start using it!
