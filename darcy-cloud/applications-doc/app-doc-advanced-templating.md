@@ -6,7 +6,7 @@ Variables, filter and template "queries" can be used as values for any field in 
 
 Variables are interpolated (replaced) when the requests are made between applications and nodes. The variable value is a `snapshot` of the referenced value when the request is made. Any subsequent modification of the underlying value will NOT be repercussed.
 
-Edgeworx's filtering logic sits on top of the LiquidJS engine. Full documentation for LiquidJS can be found [**here**](https://liquidjs.com/index.html).
+Darcys filtering logic sits on top of the LiquidJS engine. Full documentation for LiquidJS can be found [**here**](https://liquidjs.com/index.html).
 
 ### Variables
 
