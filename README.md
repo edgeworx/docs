@@ -1,5 +1,5 @@
 ---
-description: Docs for all Darcy products and technologies
+description: Docs for all Edgeworx products and technologies
 cover: .gitbook/assets/edge-gitnook-banner-2x (1).png
 coverY: 0
 ---
