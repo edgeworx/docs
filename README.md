@@ -6,11 +6,11 @@ coverY: 0
 
 # Welcome
 
-| ›[ What is Darcy Cloud](darcy-cloud/what-is-darcy-cloud.md)    |
-| -------------------------------------------------------------- |
-| › [Get Started with Darcy Cloud](darcy-cloud/get-started-ec/)  |
-| › [Get Started with edgectl](darcy-cloud/get-started-edgectl/) |
-| [› Applications](darcy-cloud/applications-doc/)                |
-| [› Access Tokens](darcy-cloud/access-tokens.md)                |
-| [› Key Concepts](darcy-cloud/key-concepts.md)                  |
+| › [What is Edgeworx Cloud?](edgeworx-cloud/what-is-edgeworx-cloud.md) |
+| --------------------------------------------------------------------- |
+| › [Get Started with Edgeworx Cloud](edgeworx-cloud/get-started-ec/)   |
+| › [Get Started with edgectl](edgeworx-cloud/get-started-edgectl/)     |
+| [› Applications](edgeworx-cloud/applications-doc/)                    |
+| [› Access Tokens](edgeworx-cloud/access-tokens.md)                    |
+| [› Key Concepts](edgeworx-cloud/key-concepts.md)                      |
 

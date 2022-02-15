@@ -1,13 +1,8 @@
----
-cover: ../.gitbook/assets/Screen Shot 2021-10-14 at 1.23.02 PM.png
-coverY: 0
----
+# What is Edgeworx Cloud?
 
-# What is Darcy Cloud?
+**Edgeworx Cloud is a tool built on the principle of Infrastructure as Code (IaC) that allows you to manage edge infrastructure and applications. Developers can deploy, orchestrate and operate containerized microservice applications from the cloud to remote heterogenous on-premise servers and edge devices.**&#x20;
 
-**Darcy Cloud is a tool built on the principle of Infrastructure as Code (IaC) that allows you to manage edge infrastructure and applications. Developers can deploy, orchestrate and operate containerized microservice applications from the cloud to remote heterogenous on-premise servers and edge devices.**&#x20;
-
-Your edge can be comprised of anything from a cloud VM, to a mini datacenter to a Raspberry Pi Zero and everything in between. Darcy Cloud makes it easy to deploy and manage across multiple tiers, in different geographies, across diverse networks and behind multiple firewalls.&#x20;
+Your edge can be comprised of anything from a cloud VM, to a mini datacenter to a Raspberry Pi Zero and everything in between. Edgeworx Cloud makes it easy to deploy and manage across multiple tiers, in different geographies, across diverse networks and behind multiple firewalls.&#x20;
 
 Your application can be just a single microservice or can be a sophisticated multi-tier application, consisting of distributed microservices that are securely communicating across a fluid, logical overlay [**virtual application network**](https://netprototalk.com/2019/11/12/virtual-application-networks-for-hybrid-cloud-interconnect/) **** (VAN).
 
@@ -18,9 +13,9 @@ Your application can be just a single microservice or can be a sophisticated mul
 3. **Support any topology** - create multi-cloud, hybrid cloud, multi-tier, edge-to-edge topologies without any VPNs or opening any firewall ports
 4. **Developer familiarity** - feels like the frameworks and tools you already know and love (Docker, Kubernetes, Terraform, GitOps, etc).
 
-Built by developers for developers, we focus on beautifully crafted interfaces (web and cli), thoughtful REST APIs and opinionated (and extensible) YAML specs for software deployment and integration with today’s most popular developer tools and workflows. If you know how to use Terraform or Kubernetes then you'll be immediately at home with Darcy Cloud.&#x20;
+Built by developers for developers, we focus on beautifully crafted interfaces (web and cli), thoughtful REST APIs and opinionated (and extensible) YAML specs for software deployment and integration with today’s most popular developer tools and workflows. If you know how to use Terraform or Kubernetes then you'll be immediately at home with Edgeworx Cloud.&#x20;
 
-![Darcy Cloud UI](<../.gitbook/assets/image (3) (1).png>)
+![Edgeworx Cloud UI](<../.gitbook/assets/image (3) (1).png>)
 
 ### Features
 
