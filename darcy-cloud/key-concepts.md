@@ -4,25 +4,25 @@ description: Overview of Edgeworx Cloud concepts.
 
 # Key Concepts
 
-#### Edgeworx Cloud
+#### Darcy Cloud
 
-_Edgeworx Cloud_ is the platform for managing and monitoring edge devices. Edgeworx Cloud includes a web-based portal at [**cloud.edgeworx.io**](https://cloud.edgeworx.io).
+_Darcy Cloud_ is the platform for managing and monitoring edge devices. Darcy Cloud includes a web-based portal at [**cloud.darcy.ai**](https://cloud.darcy.ai).
 
 #### Cloud API
 
-_Cloud API_ is the REST API for _Edgeworx Cloud_. _Cloud Portal_ and _edgectl_ both communicate with Cloud API. You may also build your own applications that interact directly with Cloud API. See the Cloud API [**REST documentation**](https://api.dev.edgeworx.io/v1/docs).
+_Cloud API_ is the REST API for _Darcy Cloud_. _Cloud Portal_ and _edgectl_ both communicate with Cloud API. You may also build your own applications that interact directly with Cloud API. See the Cloud API [**REST documentation**](https://api.dev.edgeworx.io/v1/docs).
 
 #### edgectl
 
-edgectl is the CLI for _Edgeworx Cloud_. See [**Get Started: edgectl**](get-started-edgectl/) for more.
+edgectl is the CLI for _Darcy Cloud_. See [**Get Started: edgectl**](get-started-edgectl/) for more.
 
 #### Account & Org
 
-To sign-up for an _Edgeworx Cloud_ _account_, visit [**cloud.edgeworx.io**](https://cloud.edgeworx.io). The user must provide an email and  select a unique _username_.
+To sign-up for a Darcy _Cloud_ _account_, visit [**cloud.darcy.ai**](https://cloud.darcy.ai). The user must provide an email and  select a unique _username_.
 
 An _Org_ (i.e. _Organization)_ is typically created for a corporate entity. For example, `Acme, Inc.` may create an org `acme`. An _org_ is the container for projects.
 
-> BETA: The Edgeworx Cloud BETA release does not currently support managing corporate orgs.
+> BETA: The Darcy Cloud BETA release does not currently support managing corporate orgs.
 
 On creating a new account, a new _Personal Org_ is automatically created for that account. Thus if the account username is `alice`, a new org `alice` is also created, and so Alice's projects will live under her `alice` _org_.
 
@@ -32,7 +32,7 @@ _Cloud API_ access is secured by the use of an _Access Token_, which comes in tw
 
 For both _Personal_ and _Project Access Token_, a _master_ token is automatically issued, which can be rotated, but or deleted. And for both token types, additional tokens can be generated, for circumstances when it's unwise to share the _master_ token (e.g. for CI pipelines, scripts, etc.).
 
-In _Cloud Portal_, you can view the list of _Personal Access Tokens_ from the _Access Tokens_ link in the top-right drop-down. For _Project Access Tokens_, you can&#x20;
+In Darcy _Cloud Portal_, you can view the list of _Personal Access Tokens_ from the _Access Tokens_ link in the top-right drop-down. For _Project Access Tokens_, you can&#x20;
 
 You can use an _Access Token_ to make REST calls to _Cloud API_, or to login to _edgectl_ via `edgectl login --token xyz`.
 
