@@ -2,6 +2,10 @@
 
 * [Welcome](README.md)
 
+## Darcy AI SDK
+
+* [Page 2](darcy-ai-sdk/page-2.md)
+
 ## Darcy Cloud
 
 * [What is Darcy Cloud?](darcy-cloud/what-is-darcy-cloud.md)
