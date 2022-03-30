@@ -6,6 +6,20 @@ description: >-
 
 # Release Notes
 
+### Darcy Cloud: Release 2022.03.30 (BETA)
+
+This is the first release of Darcy Cloud, which is the successor to Edgeworx Cloud.&#x20;
+
+| Component          | Version  |
+| ------------------ | -------- |
+| Darcy Cloud API    | `v2.1.0` |
+| Darcy Cloud Portal | `v2.1.0` |
+| Edgectl            | `v2.1.0` |
+
+#### Changes
+
+* Darcy AI explorer app is available which showcase Darcy AI SDK featuring customisable people-centric AI.
+
 ### Darcy Cloud: Release 2022.02.25 (BETA)
 
 This is the first release of Darcy Cloud, which is the successor to Edgeworx Cloud.&#x20;
