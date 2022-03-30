@@ -50,11 +50,11 @@ If everything works you should see output similar to that above.
 
 If you would like to use your own name for the node use the variable `NODE_NAME="your-choice-of-name"` in the node install script. SSH onto your host (or log in via the console) with a user that is in the sudo group.
 
-![](../../.gitbook/assets/2-node-script.png)
+![](<../../.gitbook/assets/Screen Shot 2022-03-31 at 12.13.57 PM.png>)
 
 Paste the command line that you copied in step 2 into your terminal. Hit enter. The entire install process can take up to a few minutes (depending on the spec of your node, your internet connection speed and other dependencies).&#x20;
 
-![](../../.gitbook/assets/2-node-installed.png)
+![](../../.gitbook/assets/2-node-installed-script.png)
 
 If everything works you should see output similar to that above.
 
