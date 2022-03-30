@@ -2,7 +2,11 @@
 
 ## Create your Darcy Cloud account
 
-Navigate to **Darcy Cloud** and click the `Create Account` button on the top right.
+
+
+Navigate to **Darcy Cloud** using  your browser (Chrome, Firefoxand and Safari preferred, any other browsers, your mileage may vary)
+
+Click the `Create Account` button on the top right.
 
 Enter your unique username and hit `NEXT`.
 
