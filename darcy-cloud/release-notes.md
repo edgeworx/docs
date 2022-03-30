@@ -18,7 +18,7 @@ This is the first release of Darcy Cloud, which is the successor to Edgeworx Clo
 
 #### Changes
 
-* Darcy AI explorer app is available which showcase Darcy AI SDK featuring customisable people-centric AI.
+* Darcy AI explorer app is available which showcases Darcy AI SDK featuring customisable people-centric AI.
 
 ### Darcy Cloud: Release 2022.02.25 (BETA)
 
