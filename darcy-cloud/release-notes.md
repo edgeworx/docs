@@ -8,7 +8,7 @@ description: >-
 
 ### Darcy Cloud: Release 2022.03.30 (BETA)
 
-This is largely an internal release, with many upgraded componets.&#x20;
+This irelease incoporates the first version of Darcy AI Explorer.
 
 | Component          | Version  |
 | ------------------ | -------- |
