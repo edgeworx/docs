@@ -4,7 +4,7 @@
 
 
 
-Navigate to **Darcy Cloud** using  your browser (Chrome, Firefoxand and Safari preferred, any other browsers, your mileage may vary)
+Navigate to **Darcy Cloud** using  your browser (Chrome, Firefox and and Safari preferred, any other browsers, your mileage may vary)
 
 Click the `Create Account` button on the top right.
 
