@@ -15,7 +15,7 @@ To add a node to your project, you will be running a command line script. For th
 ### Supported Operating Systems
 
 * Raspbian Buster
-* Ubuntu 16.04+
+* Ubuntu 18.04+
 * Debian 10+
 
 {% hint style="info" %}
@@ -26,7 +26,7 @@ If you do not have any of the above hardware, you can create a VM and run the no
 
 Log into **Darcy Cloud** and select the project to which you want to add the node.&#x20;
 
-![](../../.gitbook/assets/project-screen.png)
+![](../../.gitbook/assets/2done.png)
 
 Click the `+ ADD NODE` button located in the panel on the left of the view. This will bring up a modal dialog which shows the one line command that must be run on your host for it to become a node in your edge project.
 
@@ -46,7 +46,7 @@ Paste the command line that you copied in step 2 into your terminal. Hit enter. 
 
 If everything works you should see output similar to that above.
 
-![](<../../.gitbook/assets/1-node-added (2).png>)
+![](<../../.gitbook/assets/1-node-added (1).png>)
 
 If you would like to use your own name for the node use the variable `NODE_NAME="your-choice-of-name"` in the node install script. SSH onto your host (or log in via the console) with a user that is in the sudo group.
 

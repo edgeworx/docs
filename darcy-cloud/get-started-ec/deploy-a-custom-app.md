@@ -18,7 +18,7 @@ To deploy your custom app, you will need an Darcy Cloud account with at least on
 
 Click on your app in the list of application to see its details.
 
-![Darcy Cloud Portal: "App Detail" page](<../../.gitbook/assets/image (6).png>)
+![](../../.gitbook/assets/18done.png)
 
 The application details page contains informations about its microservices, routes, the nodes involved in running the microservices and its [**YAML definition**](../applications-doc/app-doc-yaml.md).
 
