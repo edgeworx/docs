@@ -8,7 +8,7 @@ description: >-
 
 ### Darcy Cloud: Release 2022.03.30 (BETA)
 
-This is the first release of Darcy Cloud, which is the successor to Edgeworx Cloud.&#x20;
+This is largely an internal release, with many upgraded componets.&#x20;
 
 | Component          | Version  |
 | ------------------ | -------- |
