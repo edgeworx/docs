@@ -14,10 +14,12 @@
   * [Nodes](darcy-cloud/get-started-ec/nodes/README.md)
     * [Add Node via Darcy Cloud](darcy-cloud/get-started-ec/nodes/get-started-add-node.md)
     * [Add Node via EdgeCTL](darcy-cloud/get-started-ec/nodes/add-node-via-edgectl.md)
-    * [Remotely Access Your Node](darcy-cloud/get-started-ec/nodes/get-started-remote-access.md)
-  * [Deploy Simple Demo App](darcy-cloud/get-started-ec/get-started-deploy-app.md)
-  * [Deploy AI Demo App](darcy-cloud/get-started-ec/get-started-deploy-app-1.md)
+  * [Heart Rate Demo Application](darcy-cloud/get-started-ec/heart-rate-demo-application/README.md)
+    * [Remotely Access Your Node](darcy-cloud/get-started-ec/heart-rate-demo-application/get-started-remote-access.md)
+    * [Deploy via Darcy Cloud](darcy-cloud/get-started-ec/heart-rate-demo-application/get-started-deploy-app.md)
+  * [Deploy AI Demo App](darcy-cloud/get-started-ec/get-started-deploy-app.md)
   * [Deploy a Custom App](darcy-cloud/get-started-ec/deploy-a-custom-app.md)
+  * [Deploy Applications via EdgeCTL](darcy-cloud/get-started-ec/deploy-applications-via-edgectl.md)
 * [Get Started: edgectl](darcy-cloud/get-started-edgectl/README.md)
   * [Add an Edge Node](darcy-cloud/get-started-edgectl/add-an-edge-node.md)
   * [Deploy an App](darcy-cloud/get-started-edgectl/deploy-an-app.md)
@@ -31,6 +33,9 @@
 * [Access Tokens](darcy-cloud/access-tokens.md)
 * [Key Concepts](darcy-cloud/key-concepts.md)
 * [Release Notes](darcy-cloud/release-notes.md)
+* [Glossary](darcy-cloud/glossary/README.md)
+  * [YAML: Heart Rate App](darcy-cloud/glossary/yaml-heart-rate-app.md)
+  * [YAML: Darcy AI Explorer App](darcy-cloud/glossary/yaml-darcy-ai-explorer-app.md)
 
 ***
 

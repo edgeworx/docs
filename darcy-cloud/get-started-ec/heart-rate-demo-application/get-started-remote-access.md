@@ -20,4 +20,4 @@ From here, click on the `SSH` button. This will open a new tab in your browser, 
 You can also access the SSH shortcut from the project overview page by clicking the 3 dots to the right of your node and selecting "SSH" from the drop down menu.
 {% endhint %}
 
-Once your node is deployed, you're ready to [**Deploy the Demo App**](../get-started-deploy-app.md).
+Once your node is deployed, you're ready to [**Deploy the Demo App**](get-started-deploy-app.md).

@@ -45,10 +45,10 @@ Applications can be created within the Darcy platform by creating a YAML configu
 
 ### Deploying a Demo App
 
-Darcy provides a demo application you can deploy within minutes to see an example of an Application in action. You need one node live in order to deploy the demo app. More information on deploying the app can be found [**here**](../get-started-ec/get-started-deploy-app.md).
+Darcy provides a demo application you can deploy within minutes to see an example of an Application in action. You need one node live in order to deploy the demo app. More information on deploying the app can be found [**here**](../get-started-ec/heart-rate-demo-application/get-started-deploy-app.md).
 
 ### Managing your Application
 
 \
-Applications can be managed through the [**portal**](../get-started-ec/get-started-deploy-app.md#deploy-a-custom-app-using-the-portal) or using [**edgectl**](../get-started-edgectl/#deploy-an-application)**.**
+Applications can be managed through the [**portal**](../get-started-ec/heart-rate-demo-application/get-started-deploy-app.md#deploy-a-custom-app-using-the-portal) or using [**edgectl**](../get-started-edgectl/#deploy-an-application)**.**
 
