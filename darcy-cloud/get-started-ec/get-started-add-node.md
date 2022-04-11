@@ -26,9 +26,13 @@ If you do not have any of the above hardware, you can create a VM and run the no
 
 Log into **Darcy Cloud** and select the project to which you want to add the node.&#x20;
 
+![](../../.gitbook/assets/add-node.png)
+
 ![](../../.gitbook/assets/2done.png)
 
 Click the `+ ADD NODE` button located in the panel on the left of the view. This will bring up a modal dialog which shows the one line command that must be run on your host for it to become a node in your edge project.
+
+![](../../.gitbook/assets/darcy-install-script.png)
 
 ![](../../.gitbook/assets/add-node-install-script.png)
 
@@ -38,27 +42,45 @@ Click the `COPY` button to copy the install command to your clipboard.
 
 SSH onto your host (or log in via the console) with a user that is in the sudo group.
 
+![](../../.gitbook/assets/node1-installscript.png)
+
 ![](../../.gitbook/assets/1-node-script.png)
 
 Paste the command line that you copied in step 2 into your terminal. Hit enter. The entire install process can take up to a few minutes (depending on the spec of your node, your internet connection speed and other dependencies).&#x20;
+
+![](../../.gitbook/assets/node1-installed.png)
 
 ![](../../.gitbook/assets/1-node-installed.png)
 
 If everything works you should see output similar to that above.
 
+![](../../.gitbook/assets/1st-node-added.png)
+
 ![](<../../.gitbook/assets/1-node-added (1).png>)
 
 If you would like to use your own name for the node use the variable `NODE_NAME="your-choice-of-name"` in the node install script. SSH onto your host (or log in via the console) with a user that is in the sudo group.
+
+If you would like to use your own name for the node use the variable `NODE_NAME="your-choice-of-name"` in the node install script. SSH onto your host (or log in via the console) with a user that is in the sudo group.
+
+![](../../.gitbook/assets/node2-installscript.png)
 
 ![](<../../.gitbook/assets/Screen Shot 2022-03-31 at 12.13.57 PM.png>)
 
 Paste the command line that you copied in step 2 into your terminal. Hit enter. The entire install process can take up to a few minutes (depending on the spec of your node, your internet connection speed and other dependencies).&#x20;
 
+Paste the command line that you copied in step 2 into your terminal. Hit enter. The entire install process can take up to a few minutes (depending on the spec of your node, your internet connection speed and other dependencies).&#x20;
+
+![](../../.gitbook/assets/node2-installed.png)
+
 ![](../../.gitbook/assets/2-node-installed-script.png)
 
 If everything works you should see output similar to that above.
 
+If everything works you should see output similar to that above.
+
 ![](../../.gitbook/assets/2-node-added.png)
+
+![](<../../.gitbook/assets/2-node-added (1).png>)
 
 {% hint style="warning" %}
 If you get errors, check the output or you can view the install log in `/tmp/ewc_logs.txt` for more clues as to the error. You could also try running `sudo apt update`.
