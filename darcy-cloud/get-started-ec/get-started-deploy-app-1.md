@@ -21,7 +21,7 @@ The Darcy AI Explorer is a showcase app for the Darcy AI SDK. Bootstrap your AI 
 
 ## Deploy the Darcy AI Explorer app using Darcy Cloud
 
-1. Go to your Darcy Cloud project page (make sure you have [**added at least 1 node**](get-started-add-node.md))
+1. Go to your Darcy Cloud project page (make sure you have [**added at least 1 node**](nodes/get-started-add-node.md))
 2. Select `Apps`
 3. Click on `+ DEPLOY APP`
 4. Click on `DARCY AI EXPLORER`

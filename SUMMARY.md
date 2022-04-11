@@ -11,8 +11,10 @@
 
 * [What is Darcy Cloud?](darcy-cloud/what-is-darcy-cloud.md)
 * [Get Started: Darcy Cloud](darcy-cloud/get-started-ec/README.md)
-  * [Add an Edge Node](darcy-cloud/get-started-ec/get-started-add-node.md)
-  * [Remotely Access Your Node](darcy-cloud/get-started-ec/get-started-remote-access.md)
+  * [Nodes](darcy-cloud/get-started-ec/nodes/README.md)
+    * [Add Node via Darcy Cloud](darcy-cloud/get-started-ec/nodes/get-started-add-node.md)
+    * [Add Node via EdgeCTL](darcy-cloud/get-started-ec/nodes/add-node-via-edgectl.md)
+    * [Remotely Access Your Node](darcy-cloud/get-started-ec/nodes/get-started-remote-access.md)
   * [Deploy Simple Demo App](darcy-cloud/get-started-ec/get-started-deploy-app.md)
   * [Deploy AI Demo App](darcy-cloud/get-started-ec/get-started-deploy-app-1.md)
   * [Deploy a Custom App](darcy-cloud/get-started-ec/deploy-a-custom-app.md)

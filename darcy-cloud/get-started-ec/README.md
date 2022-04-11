@@ -32,7 +32,7 @@ Once your account has been created, Darcy Cloud automatically creates your first
 
 ![Your Project is Being Created](<../../.gitbook/assets/image (10).png>)
 
-Once your Edge project is created, you will see your project overview page and be able to **** [**add your first node!**](get-started-add-node.md)****
+Once your Edge project is created, you will see your project overview page and be able to **** [**add your first node!**](nodes/get-started-add-node.md)****
 
 ![Project Overview](../../.gitbook/assets/1done.png)
 

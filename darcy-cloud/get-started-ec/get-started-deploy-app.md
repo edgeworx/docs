@@ -14,7 +14,7 @@ The Heart Rate Demo App provided with Darcy Cloud simulates a wearable device tr
 
 ## Deploy the Demo App using Darcy Cloud
 
-1. Go to your Darcy Cloud project page (make sure you have [**added at least 1 node**](get-started-add-node.md))
+1. Go to your Darcy Cloud project page (make sure you have [**added at least 1 node**](nodes/get-started-add-node.md))
 2. Select `Apps`
 3. Click on `+ DEPLOY APP`
 4. Click on `DARCY HEART RATE DEMO`
