@@ -5,7 +5,7 @@
 ## Darcy AI SDK
 
 * [What is Darcy AI?](darcy-ai-sdk/what-is-darcy-ai.md)
-* [Getting started with Darcy AI SDK](darcy-ai-sdk/page-2.md)
+* [Getting started with Darcy AI SDK](darcy-ai-sdk/getting-started-with-darcy-ai-sdk.md)
 
 ## Darcy Cloud
 

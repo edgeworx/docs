@@ -4,37 +4,35 @@
 
 
 
-Navigate to **Darcy Cloud** using  your browser (Chrome, Firefox and and Safari preferred, any other browsers, your mileage may vary)
+Navigate to [**Darcy Cloud**](https://cloud.darcy.ai/welcome) using your browser (Chrome, Firefox, and Safari preferred- other browsers are not thoroughly maintained) and click the `Create Account` button
 
-Click the `Create Account` button on the top right.
+![Darcy Cloud Welcome Page](../../.gitbook/assets/cloud-home.png)
 
-Enter your unique username and hit `NEXT`.
+Enter your unique username and click `NEXT`
 
-![](../../.gitbook/assets/cloud-home.png)
+![Create Account](<../../.gitbook/assets/image (8).png>)
 
-![Create account](<../../.gitbook/assets/image (8).png>)
-
-On the "Welcome" page, choose an auth provider or provide your own email and password.
+On the "Welcome" page, choose an auth provider or provide your own email and password
 
 Darcy Cloud uses Auth0 to provide secure account creation and access
 
-![Create account-Auth0](<../../.gitbook/assets/image (9) (1).png>)
+![Create Account Auth0](<../../.gitbook/assets/image (9) (1).png>)
 
-![Verify email](<../../.gitbook/assets/image (12).png>)
+![Verify Email](<../../.gitbook/assets/image (12).png>)
 
-## Verify your email
+## Verify Your Email
 
 You may need to check your spam folders. The email sender will be "no-reply@auth0user.net"
 
-![Email verified](<../../.gitbook/assets/image (14) (1).png>)
+![Email Verified](<../../.gitbook/assets/image (14) (1).png>)
 
-## View your Darcy Cloud Edge Project
+## View Your Darcy Cloud Edge Project
 
 Once your account has been created, Darcy Cloud automatically creates your first project. This may take a few minutes. The screen will refresh automatically when complete.
 
-![your project is being created](<../../.gitbook/assets/image (10).png>)
+![Your Project is Being Created](<../../.gitbook/assets/image (10).png>)
 
 Once your Edge project is created, you will see your project overview page and be able to **** [**add your first node!**](get-started-add-node.md)****
 
-![](../../.gitbook/assets/1done.png)
+![Project Overview](../../.gitbook/assets/1done.png)
 
