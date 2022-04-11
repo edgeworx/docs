@@ -23,6 +23,8 @@
   * [Application YAML Definition](darcy-cloud/applications-doc/app-doc-yaml.md)
   * [Microservice](darcy-cloud/applications-doc/microservice.md)
   * [Public services](darcy-cloud/applications-doc/public-services.md)
+  * [Registries](darcy-cloud/applications-doc/registries.md)
+  * [Docker to Darcy](darcy-cloud/applications-doc/docker-to-darcy.md)
   * [Application Templating](darcy-cloud/applications-doc/app-doc-advanced-templating.md)
 * [Access Tokens](darcy-cloud/access-tokens.md)
 * [Key Concepts](darcy-cloud/key-concepts.md)
