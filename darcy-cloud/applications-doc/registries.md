@@ -6,21 +6,15 @@ There are 3 options for a registry:
 
 1.  `local`
 
-    ``
-
     When an image registry is set to local, the container image will be pulled from the local cache of the node when initially deploying the microservice to the node
 
 
 2.  `remote`
 
-    ``
-
     When an image registry is set to local, the container image will be pulled from the local cache of the node when initially deploying the microservice to the node
 
 
 3.  `[registry_id]`
-
-    ``
 
     When an image registry is set to a specific registry ID, the container image will be pulled using the registry key when initially deploying the microservice to the node. The registry key must have permission to access the container images
 
