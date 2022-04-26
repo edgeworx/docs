@@ -15,7 +15,7 @@ $ edgectl get node-install-script -t
 curl -s https://ecj_vfsw9wess5kheafxaeaeh2kskkv301e9f0ip@api.darcy.ai/v1/project/b75676cb-ae3f-4808-a992-0811e077d783/node-install-script | sudo bash
 ```
 
-We can use this shell snippet on our edge devices to install Edgeworx Agent and connect to our Darcy Cloud Project. This command can be used any number of times on different devices to grow the respective project's node pool.
+We can use this shell snippet on our edge devices to install Edgeworx Agent and connect to our Darcy Cloud Project. This command can be used any number of times on different devices to grow the respective project's node pool
 
 If you wish view the raw contents of the node install script:
 
@@ -23,7 +23,7 @@ If you wish view the raw contents of the node install script:
 edgectl project node-install-script --show-script --text
 ```
 
-This is helpful if you wish to review or debug the installation procedure.
+This is helpful if you wish to review or debug the installation procedure
 
 #### Example
 
@@ -34,7 +34,7 @@ $ edgectl get node-install-script -t
 curl -s https://ecj_vfsw9wess5kheafxaeaeh2kskkv301e9f0ip@api.darcy.ai/v1/project/b75676cb-ae3f-4808-a992-0811e077d783/node-install-script | sudo bash
 ```
 
-Then SSH into your node (in this case, a Raspberry Pi):
+Then `SSH` into your node (in this case, a Raspberry Pi):
 
 ```
 $ ssh pi@raspberrypi.local
@@ -45,7 +45,7 @@ Last login: Wed Feb 23 19:26:53 2022
 pi@raspberrypi:~ $
 ```
 
-Then paste the node install script shell snippet at the Pi terminal. This installs the necessary Darcy Cloud components, and connects your node to Darcy Cloud..&#x20;
+Then paste the node install script shell snippet at the Pi terminal. This installs the necessary Darcy Cloud components, and connects your node to Darcy Cloud
 
 ```
 pi@raspberrypi:~ $ curl -s https://ecj_vfsw9wess5kheafxaeaeh2kskkv301e9f0ip@api.darcy.ai/v1/project/b75676cb-ae3f-4808-a992-0811e077d783/node-install-script | sudo bash
@@ -98,6 +98,6 @@ Installing Edgeworx Agent
       ✔ To uninstall, execute `sudo /opt/edgeworx/uninstall.sh`
 ```
 
-Note the final two lines: The first line provides a link to view your node in the Darcy Cloud web portal. The final line provides a command to uninstall the software and detach the node from Darcy Cloud.
+Note the final two lines: The first line provides a link to view your node in the Darcy Cloud web portal. The final line provides a command to uninstall the software and detach the node from Darcy Cloud
 
-Now that we have our node connected to Darcy Cloud, we can install an app to that node.
+Now that we have our node connected to Darcy Cloud, we can install an application to that node!

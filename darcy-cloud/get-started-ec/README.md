@@ -22,13 +22,13 @@ Darcy Cloud uses Auth0 to provide secure account creation and access
 
 ## Verify Your Email
 
-You may need to check your spam folders. The email sender will be "no-reply@auth0user.net"
+You may need to check your spam folders. The email sender will be `no-reply@auth0user.net`
 
 ![Email Verified](<../../.gitbook/assets/image (14) (1).png>)
 
 ## View Your Darcy Cloud Edge Project
 
-Once your account has been created, Darcy Cloud automatically creates your first project. This may take a few minutes. The screen will refresh automatically when complete.
+Once your account has been created, Darcy Cloud automatically creates your first project. This may take a few minutes. The screen will refresh automatically when complete
 
 ![Your Project is Being Created](<../../.gitbook/assets/image (10).png>)
 

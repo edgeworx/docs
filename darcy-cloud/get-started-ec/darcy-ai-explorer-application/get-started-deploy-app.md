@@ -1,6 +1,6 @@
-# Deploy via Darcy Cloud
+# Deploy Application
 
-Deploying the demo app from the Darcy Cloud platform is extremely simple. Make sure you have [**added at least 1 node**](../nodes/get-started-add-node.md) to your Darcy Cloud project, then follow the steps below:
+Deploying the Darcy AI Explorer Application from the Darcy Cloud platform is extremely simple. Make sure you have [**added at least 1 node**](../nodes/get-started-add-node.md) to your Darcy Cloud project, then follow the steps below:
 
 1. Go to your Darcy Cloud project page
 2. Select `Apps`

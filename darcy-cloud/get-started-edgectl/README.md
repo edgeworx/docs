@@ -1,22 +1,22 @@
 # Get Started: edgectl
 
-Edgectl is Darcy Cloud's command line interface (CLI). It can be used to manage Darcy Cloud accounts, organizations, projects, nodes, and applications.
+edgectl is Darcy Cloud's command line interface (CLI). It can be used to manage Darcy Cloud accounts, organizations, projects, nodes, and applications
 
 In this section we will show you how to use edgectl to get started with your first project and deploy some live microservices to the edge!
 
 ## Create a Darcy Cloud Account
 
-Before installing and using edgectl, we must first create an account through [**cloud.darcy.ai**](https://cloud.darcy.ai).
+Before installing and using edgectl, we must first create an account through [**cloud.darcy.ai**](https://cloud.darcy.ai)
 
-Navigate to the portal and click the `Create Account` button on the top right.
+Navigate to the portal and click the `Create Account` button on the top right
 
-Enter your unique username and hit `NEXT`.
+Enter your unique username and hit `NEXT`
 
-On the "Welcome" page, choose an auth provider or provide your own email and password.
+On the "Welcome" page, choose an auth provider or provide your own email and password
 
 ## Install edgectl
 
-Edgectl supports Mac, Linux, and Windows.
+edgectl supports Mac, Linux, and Windows
 
 ### MacOS
 
@@ -28,7 +28,7 @@ brew install edgeworx/edgectl/edgectl
 
 ### Linux
 
-On Linux distros, use `get-edgectl.bash`.
+On Linux distros, use `get-edgectl.bash`
 
 ```
 curl https://cloud.darcy.ai/get-edgectl.bash | bash
@@ -40,7 +40,7 @@ Windows support is coming in the near future. Watch this space!
 
 ## Enable edgectl tab completion
 
-It is highly recommended that you enable tab completion, so that `edgectl` can help you complete commands and arguments. The installation process is shell-dependent: `bash`, `zsh`, `fish`, and `powershell` are supported. Execute `edgectl completion --help` for detailed instructions for your shell.
+It is highly recommended that you enable tab completion, so that `edgectl` can help you complete commands and arguments. The installation process is shell-dependent: `bash`, `zsh`, `fish`, and `powershell` are supported. Execute `edgectl completion --help` for detailed instructions for your shell
 
 ## Use edgectl
 
@@ -48,7 +48,7 @@ Now we are ready to use edgectl to login and start managing our Darcy Cloud reso
 
 ### Login
 
-_edgectl_ requires an _Access Token_. You can get one via: `edgectl login`, which will open a web browser on `cloud.darcy.ai`. After authentication, _edgectl_ will receive the account's master _Personal Access Token,_ and will be logged in.
+_edgectl_ requires an _Access Token_. You can get one via: `edgectl login`, which will open a web browser on `cloud.darcy.ai`. After authentication, _edgectl_ will receive the account's master _Personal Access Token,_ and will be logged in
 
 If a web browser is not available (e.g. SSH'd into a box), you can also login by providing either a _Personal Access Token_ or _Project Access Token_ from `cloud.darcy.ai`. For _Personal Access Token_, click `Access Tokens` in the upper-right account menu. For _Project Acccess Token_, click the settings (gear) icon on the project page. Once you have the _Access Token_, you can execute:
 
@@ -123,7 +123,7 @@ Available Commands:
 
 ## Configure Defaults
 
-After your first `edgectl login`, an initial org and project likely exist. We can use the `edgectl set default` command to set a default org and project. This allows us to use many commands without having to provide the the `--org` and `--project` flags.
+After your first `edgectl login`, an initial org and project likely exist. We can use the `edgectl set default` command to set a default org and project. This allows us to use many commands without having to provide the the `--org` and `--project` flags
 
 Let's start by viewing the current defaults:
 
@@ -137,7 +137,7 @@ On first login, the default org is set to your account's personal org. You typic
 edgectl get projects
 ```
 
-And then set the default project (note that there is tab-completion available for the project name).
+And then set the default project (note that there is tab-completion available for the project name)
 
 ```
 edgectl set default project alice/edge-project-1
@@ -148,3 +148,4 @@ Similarly, you can change other defaults, e.g.
 ```
 edgectl set default format json
 ```
+

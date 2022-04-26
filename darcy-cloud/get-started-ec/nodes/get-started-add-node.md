@@ -1,4 +1,4 @@
-# Add Node via Darcy Cloud
+# Add Node
 
 Once we have a compatible edge device set up, we can connect that device as a node to a Darcy Cloud project via the platform
 
@@ -46,17 +46,17 @@ If everything works you should see output similar to that above
 
 ![](../../../.gitbook/assets/node2-installscript.png)
 
-Paste the command line that you copied in step 2 into your terminal. Hit enter. The entire install process can take up to a few minutes (depending on the spec of your node, your internet connection speed and other dependencies).&#x20;
+Paste the command line that you copied in step 2 into your terminal. Hit enter. The entire install process can take up to a few minutes (depending on the spec of your node, your internet connection speed and other dependencies)
 
 ## View the Node in Your Edge Project
 
-Switch back to your browser and if you have not, click the `DONE` button in the modal dialog. You should see your new node `ONLINE` in your Nodes list. If you do not see your node online, check our Troubleshooting page for more information.
+Switch back to your browser and if you have not, click the `DONE` button in the modal dialog. You should see your new node `ONLINE` in your Nodes list. If you do not see your node online, check our Troubleshooting page for more information
 
 ![](../../../.gitbook/assets/node2-installed.png)
 
 ![Active Node](<../../../.gitbook/assets/1-node-added (1).png>)
 
-If everything works you should see output similar to that above.
+If everything works you should see output similar to that above
 
 ![](../../../.gitbook/assets/2-node-added.png)
 

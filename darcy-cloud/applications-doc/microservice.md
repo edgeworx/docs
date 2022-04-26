@@ -2,7 +2,7 @@
 
 ## What are microservices?
 
-Microservices are a specialization of a service-oriented architecture (SOA), flexible, independently deployable software.
+Microservices are a specialization of a service-oriented architecture (SOA), flexible, independently deployable software
 
 Microservices are an architectural style that structures an application as a collection of loosely coupled services, which implement business capabilities. The microservice architecture enables the continuous delivery and deployment of large, complex applications by naturally dividing it into smaller pieces. Key characteristics of microservices:
 
@@ -34,7 +34,7 @@ The high-level process of creating a new microservice is:
 * Build the image with [**`docker build`**](https://docs.docker.com/engine/reference/commandline/build/)****
 * Deploy your image to a Docker registry (e.g. Docker Hub)
 * (Optional) Add the registered image to your Controller's catalog
-* Deploy the microservice using edgectl
+* Deploy the microservice using [**edgectl**](../get-started-edgectl/)****
 
 {% hint style="info" %}
 If you're new to containers and Docker, you'll want to check out their official [**Getting Started guide**](https://docs.docker.com/get-started/) which walks you through the different pieces of putting together a Docker container image.
@@ -42,4 +42,4 @@ If you're new to containers and Docker, you'll want to check out their official 
 
 ## Connecting Microservices to Edge Application
 
-Once your microservice is deployed on your node, you're ready to connect it to your Application! Check out the [**Public Services**](public-services.md) for page for configuration steps.
+Once your microservice is deployed on your node, you're ready to connect it to your Application! Check out the [**Public Services**](public-services.md) section for configuration steps

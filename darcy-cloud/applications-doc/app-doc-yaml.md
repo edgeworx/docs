@@ -2,7 +2,7 @@
 
 Darcy Cloud uses **** [**Eclipse ioFog**](https://www.iofog.org) under the covers to deploy and manage applications, and all Darcy applications are deployed to edge node(s) via a YAML configuration file
 
-We directly use the ioFog YAML specifications for defining different resource `Kinds`. For application deployments, the `Kind` in the YAML file will always be `Application`. In this section you'll find an example application yaml file and description of all fields supported by Darcy Cloud
+We directly use the ioFog YAML specifications for defining different resource `Kinds`. For application deployments, the `Kind` in the YAML file will always be `Application`. In this section, you'll find an example application YAML file and description of all fields supported by Darcy Cloud
 
 ## Fields
 
@@ -106,5 +106,5 @@ spec:
 ```
 
 {% hint style="info" %}
-For more YAML examples you can check the Glossay section of the documentation
+For more YAML examples you can check the [**Glossary**](../glossary/) **** section of the documentation
 {% endhint %}

@@ -1,12 +1,12 @@
 # Application Templating
 
-Variables, filter and template "queries" can be used as values for any field in your deployment YAMLs. These variables allow you to reference values in your YAML document or any resource preexisting in your Edge Project. This functionality adds flexibility and runtime binding in your deployments files.
+Variables, filter and template "queries" can be used as values for any field in your deployment YAMLs. These variables allow you to reference values in your YAML document or any resource preexisting in your Edge Project. This functionality adds flexibility and runtime binding in your deployments files
 
 ## Variables and Filters <a href="#quick-capabilities-overview" id="quick-capabilities-overview"></a>
 
-Variables are interpolated (replaced) when the requests are made between applications and nodes. The variable value is a `snapshot` of the referenced value when the request is made. Any subsequent modification of the underlying value will NOT be repercussed.
+Variables are interpolated (replaced) when the requests are made between applications and nodes. The variable value is a `snapshot` of the referenced value when the request is made. Any subsequent modification of the underlying value will NOT be persisted
 
-Darcys filtering logic sits on top of the LiquidJS engine. Full documentation for LiquidJS can be found [**here**](https://liquidjs.com/index.html).
+Darcys filtering logic sits on top of the LiquidJS engine. Full documentation for LiquidJS can be found [**here**](https://liquidjs.com/index.html)
 
 ### Variables
 
@@ -43,11 +43,11 @@ Filtering is used to display conditionals or alter the display of the text. Filt
 * Using a filter: `{{"agent-name" | findAgent}}`
 * Example: Getting the host value of the agent named `zebra-1`: `{% assign agent = "zebra-1" | findAgent %}{{ agent.host }}`
 
-A list of filters accepted can be found in the LiquidJS documentation [**here**](https://liquidjs.com/filters/overview.html).
+A list of filters accepted can be found in the LiquidJS documentation [**here**](https://liquidjs.com/filters/overview.html)
 
 ### Constant filters and keywords <a href="#iofog-filters-and-values" id="iofog-filters-and-values"></a>
 
-This section details filters and values that are pre-defined.
+This section details filters and values that are pre-defined
 
 #### Filters <a href="#filters" id="filters"></a>
 
@@ -58,7 +58,7 @@ This section details filters and values that are pre-defined.
 
 #### Values <a href="#values" id="values"></a>
 
-**Self**: `self` is a reserved keyword. It references the current request body.
+**Self**: `self` is a reserved keyword. It references the current request body
 
 ```yaml
 env:
@@ -268,7 +268,7 @@ with controller API the same configuration looks like:
 
 ### Troubleshooting and Caveats <a href="#caveats" id="caveats"></a>
 
-* The algoritmic operator of `liquidjs` or variable assignment have the scope on the processing string.
+* The algorithmic operator of `liquidjs` or variable assignment have the scope on the processing string
 
 ```json
 ---

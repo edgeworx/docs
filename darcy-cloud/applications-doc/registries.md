@@ -24,7 +24,7 @@ Darcy Cloud registries are a clean, convenient way to give Darcy Cloud applicati
 
 Before adding a microservice with private container images (or with images not on Dockerhub) to a node in the [**Darcy Cloud**](https://www.darcy.ai) it is necessary to register a key with permissions to access the microservice container images to a projects Darcy Cloud registry so that the microservice will be able to pull the container images upon being deployed
 
-Each registry is pre-configured with 2 entries. The first entry is for a `remote` registry (the `remote` registry selection is just an alias for the value `1`), and the second entry is for a `local` registry (the `local` registry selection is just an alias for the value `2`). Additional entries to the registry can be created directly in ioFog as shown [**here**](http://iofog.staging.edgeworx.io/docs/3/applications/microservice-registry-catalog.html), or they can be managed and created more simply using EdgeCTL directly
+Each registry is pre-configured with 2 entries. The first entry is for a `remote` registry (the `remote` registry selection is just an alias for the value `1`), and the second entry is for a `local` registry (the `local` registry selection is just an alias for the value `2`). Additional entries to the registry can be created directly in ioFog as shown [**here**](http://iofog.staging.edgeworx.io/docs/3/applications/microservice-registry-catalog.html), or they can be managed and created more simply using [**edgectl**](../get-started-edgectl/) directly
 
 ## View Current Registry Content
 
@@ -66,11 +66,11 @@ By default, this will return a JSON list where the first entry is the remote sel
 | id           | The unique identifier for each application in the registry                                  |
 | url          | The URL of the registered application                                                       |
 | isPublic     | Indicates whether the registry is public or private. False by default                       |
-| isSecure     | ?                                                                                           |
+| isSecure     | <p>Indicates whether</p><p> the registry requires authentication.</p>                       |
 | certificate  | The certificate of the registry                                                             |
 | requiresCert | Indicates whether a certificate is required or not to use the application. False by default |
-| username     | Darcy Cloud username used to register the application                                       |
-| email        | Darcy Cloud password used to register the application                                       |
+| username     | If authentication is required, the username to use.                                         |
+| email        | If authentication is required, the associated email.                                        |
 
 ## Creating New Entries
 
@@ -80,7 +80,7 @@ To create a new entry in the registry, use the following command:
 edgectl registry create
 ```
 
-Use the `--help` command to see all of the available fields to be set when creating a new registry. If the `--project` field is empty, the the default project is used (if one is set).
+Use the `--help` command to see all of the available fields to be set when creating a new registry. If the `--project` field is empty, the the default project is used (if one is set)
 
 ## Create a Registry Entry Using Google Cloud
 

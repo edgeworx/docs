@@ -8,7 +8,9 @@ To deploy an app, use `edgectl deploy app`. We can run the following to learn ho
 edgectl deploy app --help
 ```
 
-The `deploy app` command requires a path to a `YAML` file to be specified. This `YAML` file defines everything about our edge application that is required to deploy it. For example:
+The `deploy app` command requires a path to a `YAML` file to be specified. The YAML files for demo applications can be retrieved from Darcy Cloud or from the [**Glossary**](../glossary/) **** section **** of this documentation
+
+The`YAML` file defines everything about our edge application that is required to deploy it. For example:
 
 ```
 edgectl deploy app ./edgeworx-heart-rate.yaml
@@ -77,4 +79,4 @@ $ $ edgectl logs edgeworx-heart-rate/monitor --tail 5
 
 > Note that you can use the typical logs arguments, such as `--tail 100` or `--follow`.
 
-The following section will go into detail about application `YAML` files.
+The following section will go into detail about application `YAML` files
