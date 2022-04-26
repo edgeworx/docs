@@ -1,4 +1,4 @@
-# YAML: Darcy AI Explorer App
+# YAML: Darcy AI Explorer Application
 
 ```yaml
 kind: Application

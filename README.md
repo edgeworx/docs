@@ -13,5 +13,4 @@ description: Docs for all Darcy products and technologies
 | [› Applications](darcy-cloud/applications-doc/)                                          |
 | [› Access Tokens](darcy-cloud/access-tokens.md)                                          |
 | [› Key Concepts](darcy-cloud/key-concepts.md)                                            |
-|                                                                                          |
 

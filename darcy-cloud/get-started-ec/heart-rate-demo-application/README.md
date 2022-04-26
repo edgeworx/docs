@@ -17,7 +17,7 @@ Although this application works best with two nodes, you can deploy it with only
 {% endhint %}
 
 {% hint style="info" %}
-If you wish to know more about the application before deploying it, you can inspect its [**YAML definition**](../../glossary/yaml-heart-rate-application.md) by clicking on the curly brace in the modal on Darcy Cloud
+If you wish to know more about the application before deploying it, you can inspect its [**YAML definition**](../../glossary/yaml-heart-rate-app.md) by clicking on the curly brace in the modal on Darcy Cloud
 {% endhint %}
 
 ![ Application YAML Definition](../../../.gitbook/assets/3b76e231-64c8-4988-bbee-f9b2a447a2ec.png)

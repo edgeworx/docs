@@ -1,4 +1,4 @@
-# YAML: Heart Rate App
+# YAML: Heart Rate Application
 
 ```yaml
 kind: Application
