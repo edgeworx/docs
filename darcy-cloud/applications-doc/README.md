@@ -2,7 +2,7 @@
 
 Darcy connects to your applications to interact and share data. Applications can be configured in the Darcy Cloud platform to connect to one or more edge nodes. Apps are defined using YAML files, and can be deployed and updated by uploading those YAML files. Darcy nodes can be set up to interact with applications, process information, and move data between multiple apps
 
-![Application view in the Darcy Cloud platform](<../../.gitbook/assets/image (9).png>)
+![Application view in the Darcy Cloud platform](<../../.gitbook/assets/image (12).png>)
 
 ## Application Components <a href="#touchpoints" id="touchpoints"></a>
 
@@ -39,14 +39,14 @@ Variables can be defined on application inputs and outputs to be processed along
 
 ### Creating an Application
 
-Applications can be created within the Darcy platform by creating a YAML configuration file linking to your existing containerized application. The steps for creating and deploying a custom application in Darcy can be found [**here**](../get-started-ec/deploy-a-custom-app.md)
+Applications can be created within the Darcy platform by creating a YAML configuration file linking to your existing containerized application. The steps for creating and deploying a custom application in Darcy can be found [**here**](../get-started-ec/deploy-a-custom-application.md)
 
 ### Deploying a Demo Application
 
-Darcy provides a demo application you can deploy within minutes to see an example of an Application in action. You need one node live in order to deploy the demo app. More information on deploying the app can be found [**here**](../get-started-ec/darcy-ai-explorer-demo-application/get-started-deploy-app.md)
+Darcy provides a demo application you can deploy within minutes to see an example of an Application in action. You need one node live in order to deploy the demo app. More information on deploying the app can be found [**here**](../get-started-ec/heart-rate-application/get-started-deploy-app.md)
 
 ### Managing your Application
 
 \
-Applications can be managed through the [**portal**](../get-started-ec/darcy-ai-explorer-demo-application/get-started-deploy-app.md#deploy-a-custom-app-using-the-portal) or using [**edgectl**](../get-started-edgectl/#deploy-an-application)
+Applications can be managed through the [**portal**](../get-started-ec/heart-rate-application/get-started-deploy-app.md#deploy-a-custom-app-using-the-portal) or using [**edgectl**](../get-started-edgectl/#deploy-an-application)
 
