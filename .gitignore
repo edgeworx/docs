@@ -1,2 +1,7 @@
-/docs.iml
+node_modules
+public
+resources
+.netlify
+.hugo_build.lock
+*.iml
 .DS_Store
