@@ -1,4 +1,16 @@
-# What is Darcy Cloud?
+---
+title: "What is Darcy Cloud?"
+date: 2020-10-06T08:49:31+00:00
+lastmod: 2020-10-06T08:49:31+00:00
+draft: false
+images: []
+weight: 10000
+toc: true
+menu:
+  docs:
+    parent: "cloud"
+---
+
 
 **Darcy Cloud is a tool built on the principle of Infrastructure as Code (IaC) that allows you to manage edge infrastructure and applications. Developers can deploy, orchestrate and operate containerized microservice applications from the cloud to remote heterogenous on-premise servers and edge devices**
 

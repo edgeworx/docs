@@ -16,6 +16,12 @@
   identifier = "ai"
   url = "/docs/ai/"
 
+[[docs]]
+  name = "Cloud"
+  weight = 50
+  identifier = "cloud"
+  url = "/docs/cloud/"
+
 # [[docs]]
 #   name = "Lorem"
 #   weight = 70
