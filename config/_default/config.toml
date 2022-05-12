@@ -1,4 +1,4 @@
-baseurl = "https://darcydocs.netlify.app/"
+baseurl = "https://docs4.darcy.ai/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
@@ -9,6 +9,7 @@ languageCode = "en-US"
 paginate = 7
 rssLimit = 10
 
+# FIXME: get rid of ignoreErrors when site is deployed
 ignoreErrors = ["image-not-found"]
 
 # Multilingual
