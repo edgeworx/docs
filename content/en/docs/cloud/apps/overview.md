@@ -9,7 +9,7 @@ toc: true
 weight: 100
 menu:
   docs:
-    parent: "apps"
+    parent: apps
 ---
 
 Darcy connects to your applications to interact and share data. Applications can be configured in the Darcy Cloud platform to connect to one or more edge nodes. Apps are defined using YAML files, and can be deployed and updated by uploading those YAML files. Darcy nodes can be set up to interact with applications, process information, and move data between multiple apps

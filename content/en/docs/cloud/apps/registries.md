@@ -7,9 +7,7 @@ draft: false
 images: []
 toc: true
 weight: 400
-menu:
-  docs:
-    parent: "apps"
+
 ---
 
 When configuring an Darcy Cloud application YAML file, it is necessary to specify the registry of each microservice container image. The field for this specification is `spec.microservices.image.registry`, and the registry tells the node the microservice is being deployed to how to access the image container

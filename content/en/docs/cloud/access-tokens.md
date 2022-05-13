@@ -8,7 +8,6 @@ menu:
     parent: "cloud"
 ---
 
-# Access Tokens
 
 Darcy Cloud supports basic HTTP authentication through access tokens\
 \
