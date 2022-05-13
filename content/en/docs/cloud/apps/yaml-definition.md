@@ -1,6 +1,17 @@
-# Application YAML Definition
+---
+title : "App YAML Definition"
+lead: ""
+date: 2020-10-06T08:48:23+00:00
+draft: false
+images: []
+toc: true
+weight: 200
+menu:
+  docs:
+    parent: "apps"
+---
 
-Darcy Cloud uses **** [**Eclipse ioFog**](https://www.iofog.org) under the covers to deploy and manage applications, and all Darcy applications are deployed to edge node(s) via a YAML configuration file
+Darcy Cloud uses [Eclipse ioFog](https://www.iofog.org) under the covers to deploy and manage applications, and all Darcy applications are deployed to edge node(s) via a YAML configuration file
 
 We directly use the ioFog YAML specifications for defining different resource `Kinds`. For application deployments, the `Kind` in the YAML file will always be `Application`. In this section, you'll find an example application YAML file and description of all fields supported by Darcy Cloud
 
@@ -67,7 +78,7 @@ Because it is necessary to change the code in the actual images in order to util
 apiVersion: iofog.org/v3
 kind: Application
 metadata:
-  name: my-application-name 
+  name: my-application-name
 spec:
   microservices:
     agent:
@@ -75,7 +86,7 @@ spec:
     images:
       x86: edgeworx/healthcare-heart-rate:x86-v1
       arm: edgeworx/healthcare-heart-rate:arm-v1
-      registry: remote 
+      registry: remote
     config:
       data_label: test_mode=false_cross_agent_microservice_routing_aug_27
       test_mode: trueYaml
@@ -95,7 +106,7 @@ spec:
           protocol: http
           public: 14341
       commands:
-        # This will result in the container being started as 
+        # This will result in the container being started as
         # `docker run <image> <options> dbhost localhost:27017`
         - 'dbhost'
         - 'localhost:27017'

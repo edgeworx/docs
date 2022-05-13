@@ -1,4 +1,15 @@
-# Docker to Darcy
+---
+title : "Docker to Darcy"
+lead: ""
+date: 2020-10-06T08:48:23+00:00
+draft: false
+images: []
+toc: true
+weight: 500
+menu:
+  docs:
+    parent: "apps"
+---
 
 There are several possible [**docker run**](https://docs.docker.com/engine/reference/commandline/run/) **** command line options that can be used when spinning up a Docker container. The following docker run commands can be directly mapped from a `docker run` command to a Darcy Cloud YAML configuration file:
 
@@ -24,7 +35,7 @@ docker run <image> -v /path/to/mount/directory:/path/to/destination/in/container
 container:
   # Microservice container volume mapping list on the agent
   volumes:
-    # This will create a volume mapping between the agent '/tmp/msvc' volume 
+    # This will create a volume mapping between the agent '/tmp/msvc' volume
     # and the microservice container '/data' volume
     - hostDestination: /tmp/msvc
       containerDestination: /data
@@ -50,7 +61,7 @@ docker run <image> ---env BASE_URL=http://localhost:8080/data
 container:
   # Microservice container environment variable list on the agent
   env:
-    # This will create an environment variable inside the microservice container 
+    # This will create an environment variable inside the microservice container
     # with the key 'BASE_URL' and the value 'http://localhost:8080/data'
     - key: BASE_URL
       value: http://localhost:8080/data
@@ -72,7 +83,7 @@ docker run <image> -p 5000:80
 container:
   # Microservice container port mapping list on the agent
   ports:
-    # This will create a mapping between the port 80 of the microservice 
+    # This will create a mapping between the port 80 of the microservice
     # container and the port 5000 of the agent that runs over TCP
     - internal: 80
       external: 5000

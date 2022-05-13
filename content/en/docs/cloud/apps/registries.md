@@ -1,4 +1,16 @@
-# Registries
+---
+title : "Registry"
+description: "Registry"
+lead: ""
+date: 2020-10-06T08:48:23+00:00
+draft: false
+images: []
+toc: true
+weight: 400
+menu:
+  docs:
+    parent: "apps"
+---
 
 When configuring an Darcy Cloud application YAML file, it is necessary to specify the registry of each microservice container image. The field for this specification is `spec.microservices.image.registry`, and the registry tells the node the microservice is being deployed to how to access the image container
 
@@ -93,7 +105,7 @@ edgectl registry create --url "gcr.io" --username "_json_key" --password "$(cat 
 This will print out the information about the newly created entry in the registry:
 
 ```
-ID  URL     USERNAME   EMAIL                                        PUBLIC  
+ID  URL     USERNAME   EMAIL                                        PUBLIC
 3   gcr.io  _json_key  s3g9gxfxpixcelledgeproject1@api.edgeworx.io  False
 ```
 

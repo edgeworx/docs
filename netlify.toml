@@ -25,7 +25,8 @@
   package = "netlify-plugin-submit-sitemap"
 
 	[plugins.inputs]
-    baseUrl = "https://darcydocs.netlify.app/"
+#    baseUrl = "https://darcydocs.netlify.app/"
+    baseUrl = "http://localhost:1313/"
     sitemapPath = "/sitemap.xml"
     ignorePeriod = 0
     providers = [

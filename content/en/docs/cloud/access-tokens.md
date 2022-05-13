@@ -2,7 +2,7 @@
 title: "Access Tokens"
 date: 2020-10-06T08:49:31+00:00
 draft: false
-weight: 200
+weight: 630
 menu:
   docs:
     parent: "cloud"
