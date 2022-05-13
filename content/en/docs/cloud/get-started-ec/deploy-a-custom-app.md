@@ -1,3 +1,10 @@
+---
+title: Deploy a custom app
+date: 2020-10-06T08:49:31+00:00
+draft: false
+weight: 300
+---
+
 # Deploy a Custom Application
 
 ## Prerequisites

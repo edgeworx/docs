@@ -1,3 +1,9 @@
+---
+title: Nodes
+date: 2020-10-06T08:49:31+00:00
+draft: false
+weight: 100
+---
 # Nodes
 
 We have previously defined the device edge as being the final point of contact for data from the cloud to the end user. An edge node is a physical device with a Linux or equivalent operating system that can serve data to an end user from the edge

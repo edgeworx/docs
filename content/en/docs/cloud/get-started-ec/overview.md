@@ -1,4 +1,9 @@
-# Get Started: Darcy Cloud
+---
+title: "Overview"
+date: 2020-10-06T08:49:31+00:00
+draft: false
+weight: 100
+---
 
 ## Create your Darcy Cloud account
 
@@ -30,6 +35,6 @@ Once your account has been created, Darcy Cloud automatically creates your first
 
 ![Your Project is Being Created](<../../assets/image (15).png>)
 
-Once your Edge project is created, you will see your project overview page and be able to **** [**add your first node!**](nodes/get-started-add-node.md)****
+Once your Edge project is created, you will see your project overview page and be able to [add your first node!](nodes/get-started-add-node.md)
 
 ![Project Overview](../../assets/1done.png)

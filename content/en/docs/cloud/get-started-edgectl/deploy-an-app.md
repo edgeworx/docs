@@ -1,3 +1,9 @@
+---
+title: Deploy an App
+date: 2020-10-06T08:49:31+00:00
+draft: false
+weight: 300
+---
 # Deploy an App
 
 Once we have an edge node in our project, we can deploy applications to run on those nodes.

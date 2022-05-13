@@ -1,3 +1,9 @@
+---
+title: Remotely access your Node
+date: 2020-10-06T08:49:31+00:00
+draft: false
+weight: 200
+---
 # Remotely Access Your Node
 
 Once your node is installed and connected to Darcy Cloud, you'll be able to remotely access it using the Darcy Cloud portal and/or [**edgectl**](../../get-started-edgectl/)
