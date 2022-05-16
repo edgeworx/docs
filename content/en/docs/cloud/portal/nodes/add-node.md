@@ -1,4 +1,10 @@
-# Add Node
+---
+title: Add Node
+date: 2020-10-06T08:49:31+00:00
+draft: false
+weight: 200
+---
+
 
 Once we have a compatible edge device set up, we can connect that device as a node to a Darcy Cloud project via the platform
 

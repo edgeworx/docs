@@ -1,6 +1,6 @@
 ---
-title : "App"
-description: "App"
+title : "Apps"
+description: "Apps"
 lead: ""
 date: 2020-10-06T08:48:23+00:00
 draft: false
@@ -9,4 +9,3 @@ toc: true
 weight: 1000
 ---
 
-# Here is some content

@@ -1,14 +1,14 @@
-[[docs]]
-  name = "Prologue"
-  weight = 10
-  identifier = "prologue"
-  url = "/docs/prologue/"
-
-[[docs]]
-  name = "Help"
-  weight = 60
-  identifier = "help"
-  url = "/docs/help/"
+#[[docs]]
+#  name = "Prologue"
+#  weight = 10
+#  identifier = "prologue"
+#  url = "/docs/prologue/"
+#
+#[[docs]]
+#  name = "Help"
+#  weight = 60
+#  identifier = "help"
+#  url = "/docs/help/"
 
 [[docs]]
   name = "AI"
@@ -28,53 +28,68 @@
 #   identifier = "lorem"
 #   url = "/docs/lorem/"
 
-[[guide]]
-  name = "Lorem"
-  weight = 10
-  identifier = "lorem"
-  url = "/guide/lorem/"
-
-[[tutorial]]
-  name = "Lorem"
-  weight = 10
-  identifier = "lorem"
-  url = "/tutorial/lorem/"
+#[[guide]]
+#  name = "Lorem"
+#  weight = 10
+#  identifier = "lorem"
+#  url = "/guide/lorem/"
+#
+#[[tutorial]]
+#  name = "Lorem"
+#  weight = 10
+#  identifier = "lorem"
+#  url = "/tutorial/lorem/"
 
 [[main]]
-  name = "Docs"
-  url = "/docs/prologue/introduction/"
+  name = "Darcy Cloud"
+  url = "/docs/cloud/"
 # url = "/docs/1.0/prologue/introduction/"
   weight = 10
+
+
+[[main]]
+  name = "Darcy AI"
+  url = "/docs/ai/"
+  # url = "/docs/1.0/prologue/introduction/"
+  weight = 11
+
+
+[[main]]
+  name = "Forums"
+  url = "https://discuss.darcy.ai"
+  weight = 12
+
+
 
 # [[main]]
 #   name = "Tutorial"
 #   url = "/tutorial/lorem/ipsum/"
 #   weight = 15
 
-[[main]]
-  name = "Blog"
-  url = "/blog/"
-  weight = 20
+#[[main]]
+#  name = "Blog"
+#  url = "/blog/"
+#  weight = 20
 
-[[main]]
-  name = "Get Started"
-  weight = 30
-  identifier = "get-started"
-  url = "/docs/prologue/introduction/"
-
-[[main]]
-  name = "Quick Start"
-  weight = 40
-  identifier = "quick-start"
-  url = "/docs/prologue/quick-start/"
-  parent = "get-started"
-
-[[main]]
-  name = "Tutorial"
-  weight = 50
-  identifier = "tutorial"
-  url = "https://getdoks.org/tutorial/introduction/"
-  parent = "get-started"
+#[[main]]
+#  name = "Get Started"
+#  weight = 30
+#  identifier = "get-started"
+#  url = "/docs/prologue/introduction/"
+#
+#[[main]]
+#  name = "Quick Start"
+#  weight = 40
+#  identifier = "quick-start"
+#  url = "/docs/prologue/quick-start/"
+#  parent = "get-started"
+#
+#[[main]]
+#  name = "Tutorial"
+#  weight = 50
+#  identifier = "tutorial"
+#  url = "https://getdoks.org/tutorial/introduction/"
+#  parent = "get-started"
 
 [[social]]
   name = "GitHub"
