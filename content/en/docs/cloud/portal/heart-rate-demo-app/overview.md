@@ -1,4 +1,11 @@
-# Heart Rate Application
+---
+title: "Heart Rate Demo App"
+date: 2020-10-06T08:49:15+00:00
+draft: false
+images: []
+weight: 100
+---
+
 
 Apps are groups of microservices bundled to work together. They are defined using YAML files and can be deployed and updated by uploading those YAML files through Darcy Cloud or through [**edgectl**](../../get-started-edgectl/). An app can consist of an arbitrary number of interacting or standalone microservices that are deployed on a single or an arbitrary number of nodes
 

@@ -11,6 +11,12 @@
 #  url = "/docs/help/"
 
 [[docs]]
+  name = "Docs Main"
+  weight = 60
+  identifier = "docs-main"
+  url = "/docs/"
+
+[[docs]]
   name = "AI"
   weight = 60
   identifier = "ai"
@@ -22,11 +28,11 @@
   identifier = "cloud"
   url = "/docs/cloud/"
 
-# [[docs]]
-#   name = "Lorem"
-#   weight = 70
-#   identifier = "lorem"
-#   url = "/docs/lorem/"
+ [[docs]]
+   name = "Lorem"
+   weight = 70
+   identifier = "lorem"
+   url = "/docs/lorem/"
 
 #[[guide]]
 #  name = "Lorem"
@@ -51,13 +57,18 @@
   name = "Darcy AI"
   url = "/docs/ai/"
   # url = "/docs/1.0/prologue/introduction/"
-  weight = 11
+  weight = 20
+
+[[main]]
+  name = "Changelog"
+  url = "/docs/changelog"
+  weight = 30
 
 
 [[main]]
   name = "Forums"
   url = "https://discuss.darcy.ai"
-  weight = 12
+  weight = 30
 
 
 

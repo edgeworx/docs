@@ -1,4 +1,10 @@
-# YAML: Darcy AI Explorer Application
+---
+title: "App YAML: Darcy AI Explorer"
+date: 2020-10-06T08:49:15+00:00
+draft: false
+images: []
+weight: 300
+---
 
 ```yaml
 kind: Application
