@@ -7,9 +7,6 @@ draft: false
 images: []
 toc: true
 weight: 300
-menu:
-  docs:
-    parent: "apps"
 ---
 
 Public services allow your microservices to securely expose public endpoints without opening ports on your agents

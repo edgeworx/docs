@@ -7,9 +7,6 @@ draft: false
 images: []
 toc: true
 weight: 600
-menu:
-  docs:
-    parent: "apps"
 ---
 
 Variables, filter and template "queries" can be used as values for any field in your deployment YAMLs. These variables allow you to reference values in your YAML document or any resource preexisting in your Edge Project. This functionality adds flexibility and runtime binding in your deployments files

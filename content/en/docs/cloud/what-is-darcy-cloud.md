@@ -5,9 +5,7 @@ draft: false
 images: []
 weight: 610
 toc: true
-menu:
-  docs:
-    parent: "cloud"
+
 ---
 
 

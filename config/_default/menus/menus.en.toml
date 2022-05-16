@@ -46,18 +46,25 @@
 #  identifier = "lorem"
 #  url = "/tutorial/lorem/"
 
-[[main]]
-  name = "Darcy Cloud"
-  url = "/docs/cloud/"
-# url = "/docs/1.0/prologue/introduction/"
-  weight = 10
-
 
 [[main]]
-  name = "Darcy AI"
-  url = "/docs/ai/"
-  # url = "/docs/1.0/prologue/introduction/"
-  weight = 20
+  name = "Docs"
+  url = "/docs"
+  identifier = "docs"
+  weight = 5
+
+#[[main]]
+#  name = "Darcy Cloud"
+#  url = "/docs/cloud/"
+## url = "/docs/1.0/prologue/introduction/"
+#  weight = 10
+#
+#
+#[[main]]
+#  name = "Darcy AI"
+#  url = "/docs/ai/"
+#  # url = "/docs/1.0/prologue/introduction/"
+#  weight = 20
 
 [[main]]
   name = "Changelog"

@@ -7,9 +7,6 @@ draft: false
 images: []
 toc: true
 weight: 200
-menu:
-  docs:
-    parent: "apps"
 ---
 
 ## What are microservices?

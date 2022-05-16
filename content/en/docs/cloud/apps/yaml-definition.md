@@ -5,9 +5,6 @@ draft: false
 images: []
 toc: true
 weight: 200
-menu:
-  docs:
-    parent: "apps"
 ---
 
 Darcy Cloud uses [Eclipse ioFog](https://www.iofog.org) under the covers to deploy and manage applications, and all Darcy applications are deployed to edge node(s) via a YAML configuration file
