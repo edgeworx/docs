@@ -1,28 +1,30 @@
 ---
 title: Remotely Access Your Node
-date: 2020-10-06T08:49:31+00:00
-draft: false
 weight: 300
 ---
 
-Once your node is installed and connected to Darcy Cloud, you'll be able to remotely access it using the Darcy Cloud portal and/or [edgectl](../../get-started-edgectl/)
+Once your node is installed and connected to Darcy Cloud, you'll be able to remotely access it using
+the Darcy Cloud portal and/or [edgectl](../../get-started-edgectl/).
 
-## Prerequisites <a href="#prereqs" id="prereqs"></a>
+## Prerequisites
 
-To access your node, you will need an Darcy Cloud account with at least one node accessible and `ONLINE` and some knowledge of `SSH` commands
+To access your node, you will need an Darcy Cloud account with at least one node accessible
+and `ONLINE` and some knowledge of `SSH` commands.
 
 ## SSH into Your Node
 
-In the portal, click on any node to access the node's details page
+In the portal, click on any node to access the node's detail page.
 
-From here, click on the `SSH` button. This will open a new tab in your browser, after a small loading time, you'll have access to a terminal on your node
+![Node Detail Page](/images/7done.png)
 
-![Node Detail Page](../../../assets/7done.png)
+From here, click on the `SSH` button. This will open a new tab in your browser, after a small
+loading time, you'll have access to a terminal on your node.
 
-![SSH Terminal Page](<../../../assets/Screen Shot 2022-04-08 at 1.36.50 PM.png>)
+![SSH Terminal Page](</images/Screen Shot 2022-04-08 at 1.36.50 PM.png>)
 
-{% hint style="info" %}
-You can also access the SSH shortcut from the project overview page by clicking the 3 dots to the right of your node and selecting `SSH` from the drop down menu
-{% endhint %}
+{% hint style="info" %} You can also access the SSH shortcut from the project overview page by
+clicking the 3 dots to the right of your node and selecting `SSH` from the drop down menu {% endhint
+%}
 
-Once your node is deployed, you're ready to deploy the [Heart Rate Demo Application](../heart-rate-application/#about-the-heart-rate-demo-app)****
+Once your node is deployed, you're ready to deploy
+the [Heart Rate Demo Application](../heart-rate-application/#about-the-heart-rate-demo-app).

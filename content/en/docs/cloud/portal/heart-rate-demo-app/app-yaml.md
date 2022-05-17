@@ -1,7 +1,7 @@
 ---
 title: "App YAML: Heart Rate Demo"
-date: 2020-10-06T08:49:15+00:00
 weight: 300
+toc: false
 ---
 
 ```yaml
