@@ -5,7 +5,7 @@ draft: false
 weight: 200
 ---
 
-Deploying the Heart Rate Application from the Darcy Cloud platform is extremely simple. Make sure you have [**added at least 1 node**](../nodes/get-started-add-node.md) to your Darcy Cloud project, then follow the steps below:
+Deploying the Heart Rate Application from the Darcy Cloud platform is extremely simple. Make sure you have /images/added at least 1 node](../nodes/get-started-add-node.md) to your Darcy Cloud project, then follow the steps below:
 
 1. Go to your Darcy Cloud project page
 2. Select `Apps`

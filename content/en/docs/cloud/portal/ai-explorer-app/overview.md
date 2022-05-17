@@ -5,7 +5,7 @@ draft: false
 weight: 100
 ---
 
-Apps are groups of microservices bundled to work together. They are defined using YAML files and can be deployed and updated by uploading those YAML files through Darcy Cloud or through [**edgectl**](../../get-started-edgectl/). An app can consist of an arbitrary number of interacting or standalone microservices that are deployed on a single or an arbitrary number of nodes
+Apps are groups of microservices bundled to work together. They are defined using YAML files and can be deployed and updated by uploading those YAML files through Darcy Cloud or through /images/edgectl](../../get-started-edgectl/). An app can consist of an arbitrary number of interacting or standalone microservices that are deployed on a single or an arbitrary number of nodes
 
 ## Prerequisites
 

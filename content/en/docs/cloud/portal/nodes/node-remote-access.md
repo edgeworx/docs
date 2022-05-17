@@ -5,7 +5,7 @@ draft: false
 weight: 300
 ---
 
-Once your node is installed and connected to Darcy Cloud, you'll be able to remotely access it using the Darcy Cloud portal and/or [**edgectl**](../../get-started-edgectl/)
+Once your node is installed and connected to Darcy Cloud, you'll be able to remotely access it using the Darcy Cloud portal and/or /images/edgectl](../../get-started-edgectl/)
 
 ## Prerequisites <a href="#prereqs" id="prereqs"></a>
 
@@ -25,4 +25,4 @@ From here, click on the `SSH` button. This will open a new tab in your browser, 
 You can also access the SSH shortcut from the project overview page by clicking the 3 dots to the right of your node and selecting `SSH` from the drop down menu
 {% endhint %}
 
-Once your node is deployed, you're ready to deploy the [**Heart Rate Demo Application**](../heart-rate-application/#about-the-heart-rate-demo-app)****
+Once your node is deployed, you're ready to deploy the /images/Heart Rate Demo Application](../heart-rate-application/#about-the-heart-rate-demo-app)****

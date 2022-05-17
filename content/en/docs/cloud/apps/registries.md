@@ -30,9 +30,9 @@ There are 3 options for a registry:
 
 Darcy Cloud registries are a clean, convenient way to give Darcy Cloud applications access to private Docker images or other containers that are being deployed to the Darcy Cloud
 
-Before adding a microservice with private container images (or with images not on Dockerhub) to a node in the [**Darcy Cloud**](https://www.darcy.ai) it is necessary to register a key with permissions to access the microservice container images to a projects Darcy Cloud registry so that the microservice will be able to pull the container images upon being deployed
+Before adding a microservice with private container images (or with images not on Dockerhub) to a node in the /images/Darcy Cloud](https://www.darcy.ai) it is necessary to register a key with permissions to access the microservice container images to a projects Darcy Cloud registry so that the microservice will be able to pull the container images upon being deployed
 
-Each registry is pre-configured with 2 entries. The first entry is for a `remote` registry (the `remote` registry selection is just an alias for the value `1`), and the second entry is for a `local` registry (the `local` registry selection is just an alias for the value `2`). Additional entries to the registry can be created directly in ioFog as shown [**here**](http://iofog.staging.edgeworx.io/docs/3/applications/microservice-registry-catalog.html), or they can be managed and created more simply using [**edgectl**](../get-started-edgectl/) directly
+Each registry is pre-configured with 2 entries. The first entry is for a `remote` registry (the `remote` registry selection is just an alias for the value `1`), and the second entry is for a `local` registry (the `local` registry selection is just an alias for the value `2`). Additional entries to the registry can be created directly in ioFog as shown /images/here](http://iofog.staging.edgeworx.io/docs/3/applications/microservice-registry-catalog.html), or they can be managed and created more simply using /images/edgectl](../get-started-edgectl/) directly
 
 ## View Current Registry Content
 
@@ -92,7 +92,7 @@ Use the `--help` command to see all of the available fields to be set when creat
 
 ## Create a Registry Entry Using Google Cloud
 
-A simple way to give permissions to the Darcy Cloud to deploy applications is to create a Google Service Account key that has permissions to access the applications containers (whether they be on Dockerhub or elsewhere). A service account can be created by following the tutorial [**here**](https://cloud.google.com/container-registry/docs/advanced-authentication#json-key)****
+A simple way to give permissions to the Darcy Cloud to deploy applications is to create a Google Service Account key that has permissions to access the applications containers (whether they be on Dockerhub or elsewhere). A service account can be created by following the tutorial /images/here](https://cloud.google.com/container-registry/docs/advanced-authentication#json-key)****
 
 Once a JSON key that has access to the desired containers is created, it can be added to the Darcy Cloud registry as shown below:
 

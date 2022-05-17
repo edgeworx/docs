@@ -11,7 +11,7 @@ In this section we will show you how to use edgectl to get started with your fir
 
 ## Create a Darcy Cloud Account
 
-Before installing and using edgectl, we must first create an account through [**cloud.darcy.ai**](https://cloud.darcy.ai)
+Before installing and using edgectl, we must first create an account through /images/cloud.darcy.ai](https://cloud.darcy.ai)
 
 Navigate to the portal and click the `Create Account` button on the top right
 
@@ -25,7 +25,7 @@ edgectl supports Mac, Linux, and Windows
 
 ### MacOS
 
-On Mac, we can use [**brew**](https://brew.sh) to install _edgectl_:
+On Mac, we can use /images/brew](https://brew.sh) to install _edgectl_:
 
 ```bash
 brew install edgeworx/edgectl/edgectl

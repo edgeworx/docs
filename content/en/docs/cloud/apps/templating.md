@@ -15,7 +15,7 @@ Variables, filter and template "queries" can be used as values for any field in 
 
 Variables are interpolated (replaced) when the requests are made between applications and nodes. The variable value is a `snapshot` of the referenced value when the request is made. Any subsequent modification of the underlying value will NOT be persisted
 
-Darcys filtering logic sits on top of the LiquidJS engine. Full documentation for LiquidJS can be found [**here**](https://liquidjs.com/index.html)
+Darcys filtering logic sits on top of the LiquidJS engine. Full documentation for LiquidJS can be found /images/here](https://liquidjs.com/index.html)
 
 ### Variables
 
@@ -52,7 +52,7 @@ Filtering is used to display conditionals or alter the display of the text. Filt
 * Using a filter: `{{"agent-name" | findAgent}}`
 * Example: Getting the host value of the agent named `zebra-1`: `{% assign agent = "zebra-1" | findAgent %}{{ agent.host }}`
 
-A list of filters accepted can be found in the LiquidJS documentation [**here**](https://liquidjs.com/filters/overview.html)
+A list of filters accepted can be found in the LiquidJS documentation /images/here](https://liquidjs.com/filters/overview.html)
 
 ### Constant filters and keywords <a href="#iofog-filters-and-values" id="iofog-filters-and-values"></a>
 
