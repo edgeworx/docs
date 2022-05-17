@@ -44,7 +44,7 @@ The example above would be for a microservice exposing a HTTPS server
 
 Deploying such a configuration would result in a port being opened on the Controller host, and all incoming tcp traffic would be tunneled to `agent-1`, port 5000
 
-The public address can be retrieved in the Portal (in the Application details, and/or microservice details pages), or by using /images/edgectl](../get-started-edgectl/)****
+The public address can be retrieved in the Portal (in the Application details, and/or microservice details pages), or by using [edgectl](../get-started-edgectl/)****
 
 Below is the YAML returned when describing the microservice/application
 

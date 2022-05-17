@@ -7,7 +7,7 @@ weight: 100
 ---
 
 
-Apps are groups of microservices bundled to work together. They are defined using YAML files and can be deployed and updated by uploading those YAML files through Darcy Cloud or through /images/edgectl](../../get-started-edgectl/). An app can consist of an arbitrary number of interacting or standalone microservices that are deployed on a single or an arbitrary number of nodes
+Apps are groups of microservices bundled to work together. They are defined using YAML files and can be deployed and updated by uploading those YAML files through Darcy Cloud or through [edgectl](../../get-started-edgectl/). An app can consist of an arbitrary number of interacting or standalone microservices that are deployed on a single or an arbitrary number of nodes
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ Although this application works best with two nodes, you can deploy it with only
 {% endhint %}
 
 {% hint style="info" %}
-If you wish to know more about the application before deploying it, you can inspect its /images/YAML definition](../../glossary/yaml-heart-rate-application.md) by clicking on the curly brace in the modal on Darcy Cloud
+If you wish to know more about the application before deploying it, you can inspect its [YAML definition](../../glossary/yaml-heart-rate-application.md) by clicking on the curly brace in the modal on Darcy Cloud
 {% endhint %}
 
 ![ Application YAML Definition](../../../assets/3b76e231-64c8-4988-bbee-f9b2a447a2ec.png)

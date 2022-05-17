@@ -10,7 +10,7 @@ Once we have a compatible edge device set up, we can connect that device as a no
 
 ## Get the Node Installation Script
 
-Log into /images/Darcy Cloud](https://cloud.darcy.ai/welcome) **** and select the project to which you want to add the node
+Log into [Darcy Cloud](https://cloud.darcy.ai/welcome) **** and select the project to which you want to add the node
 
 ![](../../../assets/add-node.png)
 

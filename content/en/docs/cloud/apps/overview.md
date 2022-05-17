@@ -19,13 +19,13 @@ Darcy can connect to virtually any containerized application. We’ve outlined t
 
 ### Microservices <a href="#microservices" id="microservices"></a>
 
-Darcy nodes connect directly to your applications' microservices to send, retrieve, and parse data. Many microservices are hosted in Docker or similar containerized service. More information on connecting to your microservice can be found in the /images/Microservices](./#microservices) section
+Darcy nodes connect directly to your applications' microservices to send, retrieve, and parse data. Many microservices are hosted in Docker or similar containerized service. More information on connecting to your microservice can be found in the [Microservices](./#microservices) section
 
 ### Integrations <a href="#integrations" id="integrations"></a>
 
 #### Endpoints and Ports <a href="#endpoints-and-ports" id="endpoints-and-ports"></a>
 
-Darcy connects to REST API Endpoints and TCP Ports. You can specify the port within the Application YAML. For more information, please refer to the /images/Public Services](public-services.md) section
+Darcy connects to REST API Endpoints and TCP Ports. You can specify the port within the Application YAML. For more information, please refer to the [Public Services](public-services.md) section
 
 #### Routing <a href="#routing" id="routing"></a>
 
@@ -42,19 +42,19 @@ routes:
 
 ### Variables <a href="#variables" id="variables"></a>
 
-Variables can be defined on application inputs and outputs to be processed alongside Darcy nodes and adjacent applications. More information on declaring and using variables can be found in the /images/Application Templating](app-doc-advanced-templating.md) section
+Variables can be defined on application inputs and outputs to be processed alongside Darcy nodes and adjacent applications. More information on declaring and using variables can be found in the [Application Templating](app-doc-advanced-templating.md) section
 
 ## Creating and Managing Applications
 
 ### Creating an Application
 
-Applications can be created within the Darcy platform by creating a YAML configuration file linking to your existing containerized application. The steps for creating and deploying a custom application in Darcy can be found /images/here](../get-started-ec/deploy-a-custom-application.md)
+Applications can be created within the Darcy platform by creating a YAML configuration file linking to your existing containerized application. The steps for creating and deploying a custom application in Darcy can be found [here](../get-started-ec/deploy-a-custom-application.md)
 
 ### Deploying a Demo Application
 
-Darcy provides a demo application you can deploy within minutes to see an example of an Application in action. You need one node live in order to deploy the demo app. More information on deploying the app can be found /images/here](../get-started-ec/heart-rate-application/get-started-deploy-app.md)
+Darcy provides a demo application you can deploy within minutes to see an example of an Application in action. You need one node live in order to deploy the demo app. More information on deploying the app can be found [here](../get-started-ec/heart-rate-application/get-started-deploy-app.md)
 
 ### Managing your Application
 
 \
-Applications can be managed through the /images/portal](../get-started-ec/heart-rate-application/get-started-deploy-app.md#deploy-a-custom-app-using-the-portal) or using /images/edgectl](../get-started-edgectl/#deploy-an-application)
+Applications can be managed through the [portal](../get-started-ec/heart-rate-application/get-started-deploy-app.md#deploy-a-custom-app-using-the-portal) or using [edgectl](../get-started-edgectl/#deploy-an-application)

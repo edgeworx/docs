@@ -36,7 +36,7 @@ tools and workflows. If you know how to use Terraform or kubernetes then you'll 
 ### Features
 
 * **Edge Native Abstractions**: Edge Native implementations for agents, agent runtime, volumes, message routes and
-  applications `Kinds`. All driven by Kubernetes inspired `kind` /images/specifications](applications-doc/app-doc-yaml.md)
+  applications `Kinds`. All driven by Kubernetes inspired `kind` [specifications](applications-doc/app-doc-yaml.md)
 * **Edge Control Plane**: manage all aspects of your edge deployment from the Cloud (provisioning, deployment,
   orchestration, resources, monitoring, updates, etc.)
 * **Edge Projects**: logically group, secure and manage edge nodes and applications&#x20;
@@ -47,15 +47,15 @@ tools and workflows. If you know how to use Terraform or kubernetes then you'll 
 * **Heterogenous hardware**: provision to any x86 or ARM based edge node that has a relatively modern Linux kernel that
   supports containerization
 * **REST API driven**: manage your account, organization, projects, nodes and applications via a REST client. Check out
-  the OpenAPI /images/specification here](https://api.darcy.ai/v1/docs)
+  the OpenAPI [specification here](https://api.darcy.ai/v1/docs)
 * **CLI access**: Full API access via`edgectl` for the power of the command line in your terminal, or scripted into
   your other tools. Supports autocompletion in most shells, text or JSON output
 * **Keyless ssh access**: securely access your remote servers and devices without the headache of VPNs and SSH keys via
   the web UI or via `edgectl`
 * **Access Tokens**: create account wide or project based access tokens to allow fine grained access via edgectl or
   other tooling to your projects and applications
-* **Templating language**: use liquid.js syntax in your /images/Application](applications-doc/) definitions to support
-  powerful /images/application templating](applications-doc/app-doc-advanced-templating.md) at deployment time
+* **Templating language**: use liquid.js syntax in your [Application](applications-doc/) definitions to support
+  powerful [application templating](applications-doc/app-doc-advanced-templating.md) at deployment time
 * **Application orchestration**: deploy applications to one or many nodes via the UI, cli or API using directed
   deployment or deployment time scripting
 * **Public Services**: expose any container that offers a tcp or http service to the rest of your VAN, without

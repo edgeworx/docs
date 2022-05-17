@@ -14,7 +14,7 @@ To deploy an app, use `edgectl deploy app`. We can run the following to learn ho
 edgectl deploy app --help
 ```
 
-The `deploy app` command requires a path to a `YAML` file to be specified. The YAML files for demo applications can be retrieved from Darcy Cloud or from the /images/Glossary](../glossary/) **** section**** of this documentation
+The `deploy app` command requires a path to a `YAML` file to be specified. The YAML files for demo applications can be retrieved from Darcy Cloud or from the [Glossary](../glossary/) **** section**** of this documentation
 
 The`YAML` file defines everything about our edge application that is required to deploy it. For example:
 

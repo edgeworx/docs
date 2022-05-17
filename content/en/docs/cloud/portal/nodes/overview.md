@@ -1,19 +1,26 @@
 ---
-title: Overview
-date: 2020-10-06T08:49:31+00:00
-draft: false
-weight: 100
+title: Overview weight: 100
 ---
 
-We have previously defined the device edge as being the final point of contact for data from the cloud to the end user. An edge node is a physical device with a Linux or equivalent operating system that can serve data to an end user from the edge
+We have previously defined the device edge as being the final point of contact for data from the
+cloud to the end user. An edge node is a physical device with a Linux or equivalent operating system
+that can serve data to an end user from the edge
 
-In order to start deploying applications via Darcy Cloud, you must add nodes to your edge project. Nodes can be an edge device such as a [Raspberry Pi](https://www.raspberrypi.com)or an /images/NVIDIA Jetson](https://www.nvidia.com/en-us/autonomous-machines/jetson-store/)**.** They can also be VMs in the Cloud or a /images/Vagrant](https://www.vagrantup.com) image running on your laptop. Nodes can essentially be any type of computer that you want to connect to your edge project
+In order to start deploying applications via Darcy Cloud, you must add nodes to your edge project.
+Nodes can be an edge device such as a [Raspberry Pi](https://www.raspberrypi.com)or
+an [NVIDIA Jetson](https://www.nvidia.com/en-us/autonomous-machines/jetson-store/). They can
+also be VMs in the Cloud or a [Vagrant](https://www.vagrantup.com) image running on your laptop.
+Nodes can essentially be any type of computer that you want to connect to your edge project
 
-In Darcy Cloud, nodes are edge devices that run Darcy Agents. Ultimately, we want to deploy applications to these nodes to put them to work!
+In Darcy Cloud, nodes are edge devices that run Darcy Agents. Ultimately, we want to deploy
+applications to these nodes to put them to work!
 
 ## Prerequisites
 
-To add a node to your project, you will be running a command line script. For this we assume you have ssh or console access to your node and are using a common shell, such as zsh or bash. Additionally, the installation script by default will need to run as sudo to register the necessary services to be automatically started after the node is rebooted
+To add a node to your project, you will be running a command line script. For this we assume you
+have ssh or console access to your node and are using a common shell, such as zsh or bash.
+Additionally, the installation script by default will need to run as sudo to register the necessary
+services to be automatically started after the node is rebooted
 
 ### Supported Hardware
 
@@ -27,15 +34,15 @@ To add a node to your project, you will be running a command line script. For th
 * Ubuntu 16.04+
 * Debian 10+
 
-{% hint style="warning" %}
-If you do not have any of the above hardware, you can create a VM and run the node installation script.
-{% endhint %}
+{% hint style="warning" %} If you do not have any of the above hardware, you can create a VM and run
+the node installation script. {% endhint %}
 
 ## Node States
 
 A node can be in one of these states after setup:
 
-| **State**    | **Description**                                                                                                                                                                                                                     |
+| **State**    | **
+Description**                                                                                                                                                                                                                     |
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | INITIALIZING | The node is briefly in this state when first created                                                                                                                                                                                |
 | INSTALLING   | Software is being installed or updated on the node                                                                                                                                                                                  |
