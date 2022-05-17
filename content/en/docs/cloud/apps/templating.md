@@ -63,10 +63,10 @@ This section details filters and values that are pre-defined.
 
 #### Filters
 
-| Name            | Description                                                                                              | Usage                           | Returns                                                 |
-| --------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------------------------------------- |
-| findAgent       | <p>Lookup an existing ioFog Agent, by name</p><p>If name is an empty string, all agents are returned</p> | "`agent-name`" \| findAgent     | An ioFog Agent, as defined by Controller API            |
-| findApplication | Lookup an existing ioFog Application, by name                                                            | "`app-name`" \| findApplication | An ioFog Applicaiton, as defined by Controller REST API |
+| Name            | Description                                                                                   | Usage                           | Returns                                                 |
+| --------------- |-----------------------------------------------------------------------------------------------| ------------------------------- | ------------------------------------------------------- |
+| `findAgent`       | Lookup an existing ioFog Agent, by name. If name is an empty string, all agents are returned. | "`agent-name`" \| findAgent     | An ioFog Agent, as defined by Controller API            |
+| `findApplication` | Lookup an existing ioFog Application, by name                                                 | "`app-name`" \| findApplication | An ioFog Applicaiton, as defined by Controller REST API |
 
 #### Values
 
