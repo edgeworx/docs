@@ -30,54 +30,48 @@ Built by developers for developers, we focus on beautifully crafted interfaces (
 opinionated (and extensible) YAML specs for software deployment and integration with today’s most popular developer
 tools and workflows. If you know how to use Terraform or kubernetes then you'll be immediately at home with Darcy Cloud.
 
-# Wubble2
+![Projects Overview](/images/portal-projects-overivew-luckyspin.jpg)
 
-![test](https://www.gitbook.com/cdn-cgi/image/height=40,fit=contain,dpr=2,format=auto/https%3A%2F%2F3569338001-files.gitbook.io%2F~%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252Ftpur7krLdHep1917s54Q%252Flogo%252FmBtVFCrvpNbwaSi5JfhP%252Fheader-darcy-docs-digi.png%3Falt%3Dmedia%26token%3Db1ecf1aa-ad69-44b2-8001-edcd9d28ca33)
-
-![My image](/images/portal-projects-overivew-luckyspin.jpg)
-
-# flink
-![My image2](/doks.png)
 
 ### Features
 
-* **Edge Native Abstractions** - Edge Native implementations for agents, agent runtime, volumes, message routes and
+* **Edge Native Abstractions**: Edge Native implementations for agents, agent runtime, volumes, message routes and
   applications `Kinds`. All driven by Kubernetes inspired `kind` [**specifications**](applications-doc/app-doc-yaml.md)
-* **Edge Control Plane** - manage all aspects of your edge deployment from the Cloud (provisioning, deployment,
+* **Edge Control Plane**: manage all aspects of your edge deployment from the Cloud (provisioning, deployment,
   orchestration, resources, monitoring, updates, etc.)
-* **Edge Projects** - logically group, secure and manage edge nodes and applications&#x20;
-* **Simplified provisioning** - a single, sharable, per project 1-line install command that handles all the downloading,
+* **Edge Projects**: logically group, secure and manage edge nodes and applications&#x20;
+* **Simplified provisioning**: a single, sharable, per project 1-line install command that handles all the downloading,
   provisioning, validation and registering for each of your edge projects
-* **Virtual Application Networks** - create multi-cloud, hybrid cloud, multi-tier, edge-to-edge topologies without any
+* **Virtual Application Networks**: create multi-cloud, hybrid cloud, multi-tier, edge-to-edge topologies without any
   VPNs or opening any firewall ports
-* **Heterogenous hardware** - provision to any x86 or ARM based edge node that has a relatively modern Linux kernel that
+* **Heterogenous hardware**: provision to any x86 or ARM based edge node that has a relatively modern Linux kernel that
   supports containerization
-* **REST API driven** - manage your account, organization, projects, nodes and applications via a REST client. Check out
+* **REST API driven**: manage your account, organization, projects, nodes and applications via a REST client. Check out
   the OpenAPI [**specification here**](https://api.darcy.ai/v1/docs)
-* **CLI access** - Full API access via`edgectl` for the power of the command line in your terminal, or scripted into
+* **CLI access**: Full API access via`edgectl` for the power of the command line in your terminal, or scripted into
   your other tools. Supports autocompletion in most shells, text or JSON output
-* **Keyless ssh access** - securely access your remote servers and devices without the headache of VPNs and SSH keys via
+* **Keyless ssh access**: securely access your remote servers and devices without the headache of VPNs and SSH keys via
   the web UI or via `edgectl`
-* **Access Tokens** - create account wide or project based access tokens to allow fine grained access via edgectl or
+* **Access Tokens**: create account wide or project based access tokens to allow fine grained access via edgectl or
   other tooling to your projects and applications
-* **Templating language** - use liquid.js syntax in your [**Application**](applications-doc/) definitions to support
+* **Templating language**: use liquid.js syntax in your [**Application**](applications-doc/) definitions to support
   powerful [**application templating**](applications-doc/app-doc-advanced-templating.md) at deployment time
-* **Application orchestration** - deploy applications to one or many nodes via the UI, cli or API using directed
+* **Application orchestration**: deploy applications to one or many nodes via the UI, cli or API using directed
   deployment or deployment time scripting
-* **Public Services** - expose any container that offers a tcp or http service to the rest of your VAN, without
+* **Public Services**: expose any container that offers a tcp or http service to the rest of your VAN, without
   requiring any ports or firewalls to be open&#x20;
-* **Resource monitoring** - get visibility into the resource usage and performance of your edge nodes (e.g. CPU, Mem
+* **Resource monitoring**: get visibility into the resource usage and performance of your edge nodes (e.g. CPU, Mem
   usage, etc)
-* **Container lifecycle management** - fine grained visibility into the progress and state of microservice images that
+* **Container lifecycle management**: fine grained visibility into the progress and state of microservice images that
   are deployed to edge nodes. Automatic clean up and pruning of redundant or old containers&#x20;
-* **Application lifecycle management** - manage the entire app lifecycle from development to deployment, updating,
+* **Application lifecycle management**: manage the entire app lifecycle from development to deployment, updating,
   deleting, scaling&#x20;
-* **Drag and drop deployment** - drag application YAML specifications into the rich user interface for easy application
+* **Drag and drop deployment**: drag application YAML specifications into the rich user interface for easy application
   deployment
-* **Tool integration** - create specific project access tokens (PATs) for your existing tools to enable secure
+* **Tool integration**: create specific project access tokens (PATs) for your existing tools to enable secure
   automation and access from your CI/CD system, or your Ops Dashboard, for example
-* **Public and private image registries** - use public registries such as DockerHub or configure your own private repos
+* **Public and private image registries**: use public registries such as DockerHub or configure your own private repos
   on a per project basis&#x20;
-* **Messaging Routing** - define message data flow routes between your microservices in your YAML application spec
-* **Life deployment updates** - edit and update application deployment specs in the web UI to reconfigure, scale or
+* **Messaging Routing**: define message data flow routes between your microservices in your YAML application spec
+* **Life deployment updates**: edit and update application deployment specs in the web UI to reconfigure, scale or
   change your applications without having to redeploy
