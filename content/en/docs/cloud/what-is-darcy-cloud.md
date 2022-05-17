@@ -30,8 +30,14 @@ Built by developers for developers, we focus on beautifully crafted interfaces (
 opinionated (and extensible) YAML specs for software deployment and integration with today’s most popular developer
 tools and workflows. If you know how to use Terraform or kubernetes then you'll be immediately at home with Darcy Cloud.
 
+# Wubble2
 
-![](<../assets/Darcy Cloud Project-tny (1).jpg>)
+![test](https://www.gitbook.com/cdn-cgi/image/height=40,fit=contain,dpr=2,format=auto/https%3A%2F%2F3569338001-files.gitbook.io%2F~%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252Ftpur7krLdHep1917s54Q%252Flogo%252FmBtVFCrvpNbwaSi5JfhP%252Fheader-darcy-docs-digi.png%3Falt%3Dmedia%26token%3Db1ecf1aa-ad69-44b2-8001-edcd9d28ca33)
+
+![My image](/images/portal-projects-overivew-luckyspin.jpg)
+
+# flink
+![My image2](/doks.png)
 
 ### Features
 

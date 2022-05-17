@@ -1,1 +1,2 @@
-canonifyURLs = false
+# FIXME: change this to docs.darcy.ai before launch
+baseurl = "https://docs4.darcy.ai/"
