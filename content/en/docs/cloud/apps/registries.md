@@ -1,38 +1,47 @@
 ---
-title : "Registry"
-description: "Registry"
-lead: ""
-date: 2020-10-06T08:48:23+00:00
-draft: false
-images: []
-toc: true
+title : "Registries"
 weight: 400
-
 ---
 
-When configuring an Darcy Cloud application YAML file, it is necessary to specify the registry of each microservice container image. The field for this specification is `spec.microservices.image.registry`, and the registry tells the node the microservice is being deployed to how to access the image container
+When configuring an Darcy Cloud application YAML file, it is necessary to specify the registry of
+each microservice container image. The field for this specification
+is `spec.microservices.image.registry`, and the registry tells the node the microservice is being
+deployed to how to access the image container.
 
 There are 3 options for a registry:
 
 1. `local`
 
-    When an image registry is set to local, the container image will be pulled from the local cache of the node when initially deploying the microservice to the node
+   When an image registry is set to local, the container image will be pulled from the local cache
+   of the node when initially deploying the microservice to the node.
 
 2. `remote`
 
-    When an image registry is set to local, the container image will be pulled from the local cache of the node when initially deploying the microservice to the node
+   When an image registry is set to local, the container image will be pulled from the local cache
+   of the node when initially deploying the microservice to the node.
 
 3. `[registry_id]`
 
-    When an image registry is set to a specific registry ID, the container image will be pulled using the registry key when initially deploying the microservice to the node. The registry key must have permission to access the container images
+   When an image registry is set to a specific registry ID, the container image will be pulled using
+   the registry key when initially deploying the microservice to the node. The registry key must
+   have permission to access the container images.
 
 ## What is a Darcy Cloud Registry?
 
-Darcy Cloud registries are a clean, convenient way to give Darcy Cloud applications access to private Docker images or other containers that are being deployed to the Darcy Cloud
+Darcy Cloud registries are a clean, convenient way to give Darcy Cloud applications access to
+private Docker images or other containers that are being deployed to the Darcy Cloud.
 
-Before adding a microservice with private container images (or with images not on Dockerhub) to a node in the [Darcy Cloud](https://www.darcy.ai) it is necessary to register a key with permissions to access the microservice container images to a projects Darcy Cloud registry so that the microservice will be able to pull the container images upon being deployed
+Before adding a microservice with private container images (or with images not on Dockerhub) to a
+node in the [Darcy Cloud](https://www.darcy.ai) it is necessary to register a key with permissions
+to access the microservice container images to a projects Darcy Cloud registry so that the
+microservice will be able to pull the container images upon being deployed.
 
-Each registry is pre-configured with 2 entries. The first entry is for a `remote` registry (the `remote` registry selection is just an alias for the value `1`), and the second entry is for a `local` registry (the `local` registry selection is just an alias for the value `2`). Additional entries to the registry can be created directly in ioFog as shown [here](http://iofog.staging.edgeworx.io/docs/3/applications/microservice-registry-catalog.html), or they can be managed and created more simply using [edgectl](../get-started-edgectl/) directly
+Each registry is pre-configured with 2 entries. The first entry is for a `remote` registry (
+the `remote` registry selection is just an alias for the value `1`), and the second entry is for
+a `local` registry (the `local` registry selection is just an alias for the value `2`). Additional
+entries to the registry can be created directly in ioFog as
+shown [here](http://iofog.staging.edgeworx.io/docs/3/applications/microservice-registry-catalog.html)
+, or they can be managed and created more simply using [edgectl](../get-started-edgectl/) directly.
 
 ## View Current Registry Content
 
@@ -42,7 +51,8 @@ To see your current registry contents on your node(s), use the following command
 edgectl registry list
 ```
 
-By default, this will return a JSON list where the first entry is the remote selection and the second entry is the local selection:
+By default, this will return a JSON list where the first entry is the remote selection and the
+second entry is the local selection:
 
 ```
 [
@@ -69,16 +79,16 @@ By default, this will return a JSON list where the first entry is the remote sel
 ]
 ```
 
-| **Field**    | **Description**                                                                             |
-| ------------ | ------------------------------------------------------------------------------------------- |
-| id           | The unique identifier for each application in the registry                                  |
-| url          | The URL of the registered application                                                       |
-| isPublic     | Indicates whether the registry is public or private. False by default                       |
-| isSecure     | <p>Indicates whether</p><p> the registry requires authentication.</p>                       |
-| certificate  | The certificate of the registry                                                             |
+| Field    | Description                                                                             |
+| -------- | --------------------------------------------------------------------------------------- |
+| id       | The unique identifier for each application in the registry                              |
+| url      | The URL of the registered application                                                   |
+| isPublic | Indicates whether the registry is public or private. False by default                   |
+| isSecure | <p>Indicates whether</p><p> the registry requires authentication.</p>                   |
+| certificate | The certificate of the registry                                                         |
 | requiresCert | Indicates whether a certificate is required or not to use the application. False by default |
-| username     | If authentication is required, the username to use.                                         |
-| email        | If authentication is required, the associated email.                                        |
+| username | If authentication is required, the username to use.                                     |
+| email    | If authentication is required, the associated email.                                    |
 
 ## Creating New Entries
 
@@ -88,13 +98,18 @@ To create a new entry in the registry, use the following command:
 edgectl registry create
 ```
 
-Use the `--help` command to see all of the available fields to be set when creating a new registry. If the `--project` field is empty, the the default project is used (if one is set)
+Use the `--help` command to see all of the available fields to be set when creating a new registry.
+If the `--project` field is empty, the the default project is used (if one is set).
 
 ## Create a Registry Entry Using Google Cloud
 
-A simple way to give permissions to the Darcy Cloud to deploy applications is to create a Google Service Account key that has permissions to access the applications containers (whether they be on Dockerhub or elsewhere). A service account can be created by following the tutorial [here](https://cloud.google.com/container-registry/docs/advanced-authentication#json-key)****
+A simple way to give permissions to the Darcy Cloud to deploy applications is to create a Google
+Service Account key that has permissions to access the applications containers (whether they be on
+Dockerhub or elsewhere). A service account can be created by following the
+tutorial [here](https://cloud.google.com/container-registry/docs/advanced-authentication#json-key).
 
-Once a JSON key that has access to the desired containers is created, it can be added to the Darcy Cloud registry as shown below:
+Once a JSON key that has access to the desired containers is created, it can be added to the Darcy
+Cloud registry as shown below:
 
 ```
 edgectl registry create --url "gcr.io" --username "_json_key" --password "$(cat /path/to/json_key_file.json)"
@@ -107,11 +122,14 @@ ID  URL     USERNAME   EMAIL                                        PUBLIC
 3   gcr.io  _json_key  s3g9gxfxpixcelledgeproject1@api.edgeworx.io  False
 ```
 
-If you want to check all of the settings on the entry, you can run `edgectl registry list` again and verify that everything is set correctly
+If you want to check all of the settings on the entry, you can run `edgectl registry list` again and
+verify that everything is set correctly.
 
 ## Registry Example
 
-To use the registry to deploy an example, just add the `registry` keyword with the registry `id` to the `images` section of the `microservice` definition in the YAML file of the application being deployed to a node
+To use the registry to deploy an example, just add the `registry` keyword with the registry `id` to
+the `images` section of the `microservice` definition in the YAML file of the application being
+deployed to a node.
 
 ```
 kind: Application

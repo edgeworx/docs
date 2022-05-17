@@ -1,9 +1,8 @@
 ---
-title: Deploy an App
-date: 2020-10-06T08:49:31+00:00
-draft: false
+title: "Deploy an App"
 weight: 300
 ---
+
 # Deploy an App
 
 Once we have an edge node in our project, we can deploy applications to run on those nodes.
@@ -14,9 +13,12 @@ To deploy an app, use `edgectl deploy app`. We can run the following to learn ho
 edgectl deploy app --help
 ```
 
-The `deploy app` command requires a path to a `YAML` file to be specified. The YAML files for demo applications can be retrieved from Darcy Cloud or from the [Glossary](../glossary/) **** section**** of this documentation
+The `deploy app` command requires a path to a `YAML` file to be specified. The YAML files for demo
+applications can be retrieved from Darcy Cloud or from the [Glossary](../glossary/) **** section****
+of this documentation.
 
-The`YAML` file defines everything about our edge application that is required to deploy it. For example:
+The`YAML` file defines everything about our edge application that is required to deploy it. For
+example:
 
 ```
 edgectl deploy app ./edgeworx-heart-rate.yaml
@@ -34,7 +36,8 @@ NAME                 DESCRIPTION  STATUS
 edgeworx-heart-rate               running
 ```
 
-If you need more detail on an app, use the `--json` flag, e.g. `edgectl get app edgeworx-heart-rate --json`: (output abbreviated for clarity):
+If you need more detail on an app, use the `--json` flag,
+e.g. `edgectl get app edgeworx-heart-rate --json`: (output abbreviated for clarity):
 
 ```json
 {
@@ -55,7 +58,8 @@ If you need more detail on an app, use the `--json` flag, e.g. `edgectl get app 
 
 ```
 
-Note that an app consists of one or more microservices (containers). Use `edgectl get microservices`:
+Note that an app consists of one or more microservices (containers).
+Use `edgectl get microservices`:
 
 ```
 $ edgectl get microservices --app edgeworx-heart-rate
@@ -72,7 +76,9 @@ edgectl get microservice --app edgeworx-heart-rate monitor
 
 #### Container Logs
 
-You can use the `edgectl logs` command to view the container logs for a microservice. This is effectively equivalent to executing `docker logs CONTAINER_ID`. The `logs` command takes one argument, `APP_NAME/MICROSERVICE_NAME`. For example:
+You can use the `edgectl logs` command to view the container logs for a microservice. This is
+effectively equivalent to executing `docker logs CONTAINER_ID`. The `logs` command takes one
+argument, `APP_NAME/MICROSERVICE_NAME`. For example:
 
 ```
 $ $ edgectl logs edgeworx-heart-rate/monitor --tail 5
@@ -85,4 +91,4 @@ $ $ edgectl logs edgeworx-heart-rate/monitor --tail 5
 
 > Note that you can use the typical logs arguments, such as `--tail 100` or `--follow`.
 
-The following section will go into detail about application `YAML` files
+The following section will go into detail about application `YAML` files.

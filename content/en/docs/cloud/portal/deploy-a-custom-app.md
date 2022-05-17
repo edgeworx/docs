@@ -1,15 +1,13 @@
 ---
-title: Deploy a custom app
-date: 2020-10-06T08:49:31+00:00
-draft: false
+title: "Deploy a custom app"
 weight: 300
 ---
 
-# Deploy a Custom Application
-
 ## Prerequisites
 
-To deploy your custom app, you will need an Darcy Cloud account with at least one node accessible and `ONLINE`. You will need a basic understanding of [how to structure app YAML](../applications-doc/app-doc-yaml.md) for Darcy Cloud
+To deploy your custom app, you will need an Darcy Cloud account with at least one node accessible
+and `ONLINE`. You will need a basic understanding
+of [how to structure app YAML](../applications-doc/app-doc-yaml.md) for Darcy Cloud.
 
 ## Deploy a Custom Application via Darcy Cloud
 
@@ -19,18 +17,20 @@ To deploy your custom app, you will need an Darcy Cloud account with at least on
 4. Drag n Drop a [YAML file](../applications-doc/app-doc-yaml.md) into the box
 5. Et Voila!
 
-![Application Deployment Page](../../assets/cloud-deploy-demo.png)
+![Application Deployment Page](/images/cloud-deploy-demo.png)
 
 ## View your Application Details
 
-Click on your app in the list of application to see its details
+Click on your app in the list of application to see its details.
 
-![Application Detail View](../../assets/18done.png)
+![Application Detail View](/images/18done.png)
 
-The application details page contains informations about its microservices, routes, the nodes involved in running the microservices and its [YAML definition](../applications-doc/app-doc-yaml.md)
+The application details page contains informations about its microservices, routes, the nodes
+involved in running the microservices and its [YAML definition](../applications-doc/app-doc-yaml.md).
 
-Darcy Cloud Portal allows you to edit your app YAML right in the browser. More information about the Application YAML files can be found [here](../applications-doc/app-doc-yaml.md)
+Darcy Cloud Portal allows you to edit your app YAML right in the browser. More information about the
+Application YAML files can be found [here](../applications-doc/app-doc-yaml.md).
 
-{% hint style="info" %}
-Everything shown above using Darcy Cloud Portal can also be achieved using our CLI, edgectl. See [Getting Started: edgectl](../get-started-edgectl/)
+{% hint style="info" %} Everything shown above using Darcy Cloud Portal can also be achieved using
+our CLI, edgectl. See [Getting Started: edgectl](../get-started-edgectl/)
 {% endhint %}

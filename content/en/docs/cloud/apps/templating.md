@@ -1,27 +1,27 @@
 ---
 title : "App Templating"
-description: "App Templating"
-lead: ""
-date: 2020-10-06T08:48:23+00:00
-draft: false
-images: []
-toc: true
 weight: 600
 ---
 
-Variables, filter and template "queries" can be used as values for any field in your deployment YAMLs. These variables allow you to reference values in your YAML document or any resource preexisting in your Edge Project. This functionality adds flexibility and runtime binding in your deployments files
+Variables, filter and template "queries" can be used as values for any field in your deployment
+YAMLs. These variables allow you to reference values in your YAML document or any resource
+preexisting in your Edge Project. This functionality adds flexibility and runtime binding in your
+deployments files.
 
-## Variables and Filters <a href="#quick-capabilities-overview" id="quick-capabilities-overview"></a>
+## Variables and Filters
 
-Variables are interpolated (replaced) when the requests are made between applications and nodes. The variable value is a `snapshot` of the referenced value when the request is made. Any subsequent modification of the underlying value will NOT be persisted
+Variables are interpolated (replaced) when the requests are made between applications and nodes. The
+variable value is a `snapshot` of the referenced value when the request is made. Any subsequent
+modification of the underlying value will NOT be persisted.
 
-Darcys filtering logic sits on top of the LiquidJS engine. Full documentation for LiquidJS can be found [here](https://liquidjs.com/index.html)
+Darcy's filtering logic sits on top of the LiquidJS engine. Full documentation for LiquidJS can be
+found [here](https://liquidjs.com/index.html).
 
 ### Variables
 
 #### Defining Variables
 
-Variables are defined in YAML by wrapping the variable with double brackets
+Variables are defined in YAML by wrapping the variable with double brackets.
 
 * Defining a variable: `{{variable-name}}`
 
@@ -33,7 +33,7 @@ env:
 
 #### Assigning Values
 
-Values can be assigned to a new text string
+Values can be assigned to a new text string.
 
 * Assigning a value: `{% assign agent = "agent-name" | findAgent %}`
 
@@ -47,27 +47,30 @@ env:
 
 ### Filters
 
-Filtering is used to display conditionals or alter the display of the text. Filters can be set as conditionals (where a filter may have an "If" statement)
+Filtering is used to display conditionals or alter the display of the text. Filters can be set as
+conditionals (where a filter may have an "If" statement).
 
 * Using a filter: `{{"agent-name" | findAgent}}`
-* Example: Getting the host value of the agent named `zebra-1`: `{% assign agent = "zebra-1" | findAgent %}{{ agent.host }}`
+* Example: Getting the host value of the agent
+  named `zebra-1`: `{% assign agent = "zebra-1" | findAgent %}{{ agent.host }}`
 
-A list of filters accepted can be found in the LiquidJS documentation [here](https://liquidjs.com/filters/overview.html)
+A list of filters accepted can be found in the LiquidJS
+documentation [here](https://liquidjs.com/filters/overview.html).
 
-### Constant filters and keywords <a href="#iofog-filters-and-values" id="iofog-filters-and-values"></a>
+### Constant filters and keywords
 
-This section details filters and values that are pre-defined
+This section details filters and values that are pre-defined.
 
-#### Filters <a href="#filters" id="filters"></a>
+#### Filters
 
 | Name            | Description                                                                                              | Usage                           | Returns                                                 |
 | --------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------------------------------------- |
 | findAgent       | <p>Lookup an existing ioFog Agent, by name</p><p>If name is an empty string, all agents are returned</p> | "`agent-name`" \| findAgent     | An ioFog Agent, as defined by Controller API            |
 | findApplication | Lookup an existing ioFog Application, by name                                                            | "`app-name`" \| findApplication | An ioFog Applicaiton, as defined by Controller REST API |
 
-#### Values <a href="#values" id="values"></a>
+#### Values
 
-**Self**: `self` is a reserved keyword. It references the current request body
+**Self**: `self` is a reserved keyword. It references the current request body.
 
 ```yaml
 env:
@@ -75,7 +78,7 @@ env:
     value: '{{ self.name | upcase }}'
 ```
 
-## Application YAML Example <a href="#usage-example" id="usage-example"></a>
+## Application YAML Example
 
 ```yaml
 ---
@@ -95,10 +98,10 @@ spec:
         x86: nodered/node-red:latest
         arm: nodered/node-red:latest
         registry: remote
-      config: {}
+      config: { }
       container:
         rootHostAccess: false
-        volumes: []
+        volumes: [ ]
         ports:
           - internal: 1881
             external: 1882
@@ -118,10 +121,10 @@ spec:
         x86: XXX/img1
         arm: XXX/img2
         registry: remote
-      config: {}
+      config: { }
       container:
         rootHostAccess: false
-        volumes: []
+        volumes: [ ]
         ports:
           - internal: 1883
             external: 1884
@@ -148,7 +151,7 @@ spec:
             value: '{{ "com.orange.smart-door" | findEdgeResource            | map: "interface" | map: "endpoints" | first  | where: "name", "version" | first | map: "url" }}'
 ```
 
-with controller API the same configuration looks like:
+With controller API the same configuration looks like:
 
 ```json
 {
@@ -249,7 +252,16 @@ with controller API the same configuration looks like:
         {
           "key": "rulesengineHOST",
           "value": "{% raw %}
-{%  assign curmsvc= self.microservices | where: \"name\", \"msvc-1\" | first %}{{ curmsvc | findAgent: agents | map: \"host\" }}"
+        {
+          %
+        assign
+        curmsvc=
+        self.microservices
+        |
+        where
+        :
+        \
+        "name\", \"msvc-1\" | first %}{{ curmsvc | findAgent: agents | map: \"host\" }}"
         },
         {
           "key": "rulesenginePORT",
@@ -258,7 +270,20 @@ with controller API the same configuration looks like:
         {
           "key": "redisHost",
           "value": "{% assign redisApp = \"redis-app\" | findApplication %}{% assign redismsvc = redisApp.microservices | where: \"name\", \"redistest\" | first %}
-{% endraw %}{{ redismsvc | findAgent: agents | map: \"host\"}}:{{ redismsvc | map: \"ports\" | first | first |map: \"external\" | first }}"
+        {
+          %
+        endraw
+        %
+      }
+        {
+        {
+          redismsvc
+          |
+          findAgent: agents
+          |
+          map:
+          \
+          "host\"}}:{{ redismsvc | map: \"ports\" | first | first |map: \"external\" | first }}"
         },
         {
           "key": "edgeResLiveness",
@@ -275,27 +300,30 @@ with controller API the same configuration looks like:
 }
 ```
 
-### Troubleshooting and Caveats <a href="#caveats" id="caveats"></a>
+### Troubleshooting and Caveats
 
-* The algorithmic operator of `liquidjs` or variable assignment have the scope on the processing string
+* The algorithmic operator of `liquidjs` or variable assignment have the scope on the processing
+  string.
 
 ```json
 ---
 ....
-          - key: testaffect
-            value: "{% raw %}
+- key: testaffect
+value: "{% raw %}
 {% assign ms =self.microservices | where: \"name\", \"rulesengine\" | first %}
-{% endraw %}{{ ms.env | where: \"key\" , \"http_proxy\" | first }}"
+{% endraw %}{{
+ms.env | where: \"key\" , \"http_proxy\" | first }}"
 ....
 ```
 
-* Make sure to define the template parametric expressions as `string`, otherwise the YAML parser will interpret them as Object, and you will encounter multiple type of errors
+* Make sure to define the template parametric expressions as `string`, otherwise the YAML parser
+  will interpret them as Object, and you will encounter multiple type of errors
 
 Incorrect:
 
 ```json5
 ---
-name: { { my-variable } } # This will error, as name are expected to be strings, and the yaml parser will interpret this as an object
+name: {{my-variable}} # This will error, as name are expected to be strings, and the yaml parser will interpret this as an object
 ```
 
 Correct:

@@ -1,15 +1,14 @@
 ---
 title : "App YAML Definition"
-date: 2020-10-06T08:48:23+00:00
-draft: false
-images: []
-toc: true
 weight: 200
 ---
 
-Darcy Cloud uses [Eclipse ioFog](https://www.iofog.org) under the covers to deploy and manage applications, and all Darcy applications are deployed to edge node(s) via a YAML configuration file
+Darcy Cloud uses [Eclipse ioFog](https://www.iofog.org) under the covers to deploy and manage
+applications, and all Darcy applications are deployed to edge node(s) via a YAML configuration file.
 
-We directly use the ioFog YAML specifications for defining different resource `Kinds`. For application deployments, the `Kind` in the YAML file will always be `Application`. In this section, you'll find an example application YAML file and description of all fields supported by Darcy Cloud
+We directly use the ioFog YAML specifications for defining different resource `Kinds`. For
+application deployments, the `Kind` in the YAML file will always be `Application`. In this section,
+you'll find an example application YAML file and description of all fields supported by Darcy Cloud.
 
 ## Fields
 
@@ -25,7 +24,10 @@ We directly use the ioFog YAML specifications for defining different resource `K
 
 ## Microservices
 
-Microservices are the core components of the Darcy Cloud application. Microservices configuration and set up are defined inside the application YAML files. Darcy Cloud allows for several microservices to be configured within the same YAML file, and these microservices can be assigned to any of the available nodes in the project
+Microservices are the core components of the Darcy Cloud application. Microservices configuration
+and set up are defined inside the application YAML files. Darcy Cloud allows for several
+microservices to be configured within the same YAML file, and these microservices can be assigned to
+any of the available nodes in the project.
 
 | Field                                  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -56,11 +58,16 @@ Microservices are the core components of the Darcy Cloud application. Microservi
 
 ## Routes
 
-Application routes define message passing between microservices. Routing in Darcy Cloud applications is special in that it allows for an end to end encrypted, secure way for microservices to communicate with each other through the cloud
+Application routes define message passing between microservices. Routing in Darcy Cloud applications
+is special in that it allows for an end-to-end encrypted, secure way for microservices to
+communicate with each other through the cloud.
 
-Darcy Cloud provides an API to publish data to and to read data from so that a specific applications microservices can communicate with each other through generic “service” microservices run in the background by the Darcy Cloud control plane
+Darcy Cloud provides an API to publish data to and to read data from so that a specific applications
+microservices can communicate with each other through generic “service” microservices run in the
+background by the Darcy Cloud control plane.
 
-Because it is necessary to change the code in the actual images in order to utilize routing, likely routing will not be implemented when moving an existing cloud project to the Darcy Cloud&#x20;
+Because it is necessary to change the code in the actual images in order to utilize routing, likely
+routing will not be implemented when moving an existing cloud project to the Darcy Cloud.
 
 | Field       | Description                                                                                                                                                                                                         |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -112,6 +119,5 @@ spec:
       to: heart-rate-viewer
 ```
 
-{% hint style="info" %}
-For more YAML examples you can check the [Glossary](../glossary/) **** section of the documentation
-{% endhint %}
+{% hint style="info" %} For more YAML examples you can check the [Glossary](../glossary/) ****
+section of the documentation {% endhint %}

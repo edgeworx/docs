@@ -1,5 +1,5 @@
 ---
-title: Add Node
+title: "Add Node"
 weight: 200
 ---
 

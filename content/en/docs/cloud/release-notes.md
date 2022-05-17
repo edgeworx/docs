@@ -1,10 +1,7 @@
 ---
 title: "Release Notes"
-draft: false
 weight: 700
-toc: true
 ---
-
 
 ### Darcy Cloud: Release 2022.03.30 (BETA)
 
@@ -18,11 +15,12 @@ This release incorporates the first version of Darcy AI Explorer.
 
 #### Changes
 
-* Darcy AI explorer app is available which showcases Darcy AI SDK featuring customisable people-centric AI.
+* Darcy AI explorer app is available which showcases Darcy AI SDK featuring customisable
+  people-centric AI.
 
 ### Darcy Cloud: Release 2022.02.25 (BETA)
 
-This is the first release of Darcy Cloud, which is the successor to Edgeworx Cloud.&#x20;
+This is the first release of Darcy Cloud, which is the successor to Edgeworx Cloud.
 
 | Component          | Version  |
 | ------------------ | -------- |
@@ -32,13 +30,19 @@ This is the first release of Darcy Cloud, which is the successor to Edgeworx Clo
 
 #### Changes
 
-* Edgeworx Cloud is is now Darcy Cloud.
-* `edgectl` has switched its entire command structure, from `noun-verb` to `verb-noun`. We are doing this based on user feedback from customers who are more familiar with the Kubernetes `kubectcl get X` style of CLI. For example, instead of `edgectl account get`, use `edgectl get account`. For more detail, see edgectl **** [docs](get-started-edgectl/deploy-an-app.md)**.**
-  * Note that if you are using `edgectl` in scripts or such, and you pull the latest version, you must update your scripts to use the new syntax.
+* Edgeworx Cloud is now Darcy Cloud.
+* `edgectl` has switched its entire command structure, from `noun-verb` to `verb-noun`. We are doing
+  this based on user feedback from customers who are more familiar with the
+  Kubernetes `kubectcl get X` style of CLI. For example, instead of `edgectl account get`,
+  use `edgectl get account`. For more detail, see
+  edgectl **** [docs](get-started-edgectl/deploy-an-app.md)**.**
+  * Note that if you are using `edgectl` in scripts or such, and you pull the latest version, you
+    must update your scripts to use the new syntax.
 
 ### Edgeworx Cloud: Release 2022.01.26 (BETA)
 
-This release of Edgeworx Cloud introduces application microservice container logging, and incorporates internal security enhancements.
+This release of Edgeworx Cloud introduces application microservice container logging, and
+incorporates internal security enhancements.
 
 | Component         | Version  |
 | ----------------- | -------- |
@@ -47,7 +51,9 @@ This release of Edgeworx Cloud introduces application microservice container log
 
 #### Changes
 
-* `edgectl` can retrieve the the container logs for application microservices running on edge nodes. For example: `edgectl logs myapp/myservice` . See `edgectl logs --help` for usage, or the edgectl **** [docs](get-started-edgectl/deploy-an-app.md)**.**
+* `edgectl` can retrieve the the container logs for application microservices running on edge nodes.
+  For example: `edgectl logs myapp/myservice` . See `edgectl logs --help` for usage, or the
+  edgectl **** [docs](get-started-edgectl/deploy-an-app.md)**.**
 * Internal security enhancements.
 
 ### Edgeworx Cloud: Release 2022.01.20 (BETA)
@@ -65,7 +71,8 @@ Security enhancements.
 
 ### Edgeworx Cloud: Release 2021.12.16 (BETA)
 
-This release of Edgeworx Cloud consists largely of behind-the-scenes fixes and improvements to several Edgeworx Cloud components.
+This release of Edgeworx Cloud consists largely of behind-the-scenes fixes and improvements to
+several Edgeworx Cloud components.
 
 | Component             | Version  |
 | --------------------- | -------- |
@@ -82,7 +89,8 @@ This release of Edgeworx Cloud consists largely of behind-the-scenes fixes and i
 
 ### Edgeworx Cloud: Release 2021.12.05 (BETA)
 
-This release of Edgeworx Cloud consists largely of behind-the-scenes fixes and improvements to several Edgeworx Cloud components.
+This release of Edgeworx Cloud consists largely of behind-the-scenes fixes and improvements to
+several Edgeworx Cloud components.
 
 | Component             | Version  |
 | --------------------- | -------- |
@@ -93,8 +101,10 @@ This release of Edgeworx Cloud consists largely of behind-the-scenes fixes and i
 
 #### Action Required
 
-For users that already have nodes registered with Edgeworx Cloud, it is necesary to re-run your project's _Node Install Script_ directly (via SSH) on each of your existing nodes. In effect, the _Node Install Script_ is performing an upgrade of Edgeworx components on your node. You should have received email communication with detailed steps on how to upgrade the node.&#x20;
+For users that already have nodes registered with Edgeworx Cloud, it is necesary to re-run your
+project's _Node Install Script_ directly (via SSH) on each of your existing nodes. In effect, the _
+Node Install Script_ is performing an upgrade of Edgeworx components on your node. You should have
+received email communication with detailed steps on how to upgrade the node.
 
-For users of `edgectl`, please upgrade to the latest version, for example: `$ brew upgrade edgectl` for macOS.
-
-###
+For users of `edgectl`, please upgrade to the latest version, for example: `$ brew upgrade edgectl`
+for macOS.
