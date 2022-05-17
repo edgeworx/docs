@@ -1,11 +1,7 @@
 ---
 title: "Key Concepts"
-description: "Overview of Darcy Cloud concepts."
-date: 2020-10-06T08:49:31+00:00
-draft: false
-weight: 620
+weight: 600
 toc: true
-
 ---
 
 #### Darcy Cloud
