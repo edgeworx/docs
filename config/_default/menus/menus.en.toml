@@ -1,20 +1,33 @@
 #[[docs]]
-#  name = "Prologue"
+#  name = "Darcy Cloud"
 #  weight = 10
-#  identifier = "prologue"
-#  url = "/docs/prologue/"
+#  identifier = "docs-cloud"
+#  url = "/docs/cloud/what-is-darcy-cloud/"
 #
 #[[docs]]
-#  name = "Help"
-#  weight = 60
-#  identifier = "help"
-#  url = "/docs/help/"
+#  name = "Darcy AI"
+#  weight = 20
+#  identifier = "docs-ai"
+#  url = "/docs/ai/what-is-darcy-ai/"
+
+
+
+
+[[docs]]
+  name = "Docs Root"
+  weight = 60
+  identifier = "docs-root"
+  url = "/docs/"
+
 
 #[[docs]]
-#  name = "Docs Main"
-#  weight = 60
-#  identifier = "docs-main"
-#  url = "/docs/"
+#  identifier = "docs-ai-sdk"
+#  name = "AI SDK"
+#  url = "https://darcyai.github.io/darcyai-sdk/"
+#  weight = -10000
+#  parent = "docs-ai"
+
+
 #
 #[[docs]]
 #  name = "AI"
@@ -47,17 +60,32 @@
 #  url = "/tutorial/lorem/"
 
 
-[[main]]
-  name = "Docs"
-  url = "/docs"
-  identifier = "docs-root"
-  weight = 5
+#[[main]]
+#  name = "Docs"
+#  url = "/docs"
+#  identifier = "docs-root"
+#  weight = 5
 
-[[docs]]
-  name = "AI SDK"
-  url = "https://darcyai.github.io/darcyai-sdk/"
+[[main]]
+  name = "Darcy Cloud"
+  weight = 10
+  identifier = "main-cloud"
+  url = "/docs/cloud/what-is-darcy-cloud/"
+
+[[main]]
+  name = "Darcy AI"
   weight = 20
-#  parent = "docs"
+  identifier = "main-ai"
+  url = "/docs/ai/what-is-darcy-ai/"
+
+[[main]]
+  name = "Darcy Cam"
+  weight = 30
+  identifier = "main-cam"
+  url = "/docs/ai/what-is-darcy-ai/"
+
+
+
 
 #[[main]]
 #  name = "Darcy Cloud"
@@ -79,14 +107,16 @@
 
 
 [[main]]
-  name = "Forums"
-  url = "https://discuss.darcy.ai"
-  weight = 30
-
-[[main]]
-  name = "Cloud Portal"
+  name = "Login to Cloud Portal"
   url = "https://cloud.darcy.ai"
   weight = 40
+
+[[main]]
+  name = "Discuss (Forums)"
+  url = "https://discuss.darcy.ai"
+  weight = 50
+
+
 
 
 

@@ -1,6 +1,9 @@
 ---
 title: "Getting started with Darcy AI SDK"
-weight: 200
+menu:
+  docs:
+    parent: "docs-ai"
+    weight: 300
 ---
 
 
