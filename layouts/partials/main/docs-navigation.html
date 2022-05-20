@@ -22,9 +22,9 @@
     {{ $parent := .GetPage ".." }}
     {{ range $i, $item := $parent.Pages }}
       {{ if and (gt $i 0) (eq $item.RelPermalink $currentPage.RelPermalink) }}
-        {{ $sib := index $parent.Pages (sub $i 1) }}
-        {{ $nextLink = $sib.RelPermalink }}
-        {{ $nextTitle = $sib.Title }}
+        {{ $aunt := index $parent.Pages (sub $i 1) }}
+        {{ $nextLink = $aunt.RelPermalink }}
+        {{ $nextTitle = $aunt.Title }}
         {{ $nextArrow = "&#8598;" }} {{/* The northwest arrow */}}
        {{ end }}
     {{ end }}
