@@ -35,7 +35,7 @@ services to be automatically started after the node is rebooted.
 * Ubuntu 16.04+
 * Debian 10+
 
-{{<alert type="warning">}}
+{{<alert style="warning">}}
   If you do not have any of the above hardware, you can create a VM and run
   the node installation script.
 {{</alert>}}

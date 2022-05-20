@@ -1,13 +1,13 @@
-{{ $ctx := .Get "type" }}
-{{ if not $ctx }} {{ $ctx = "info" }} {{ end}}
+{{ $style := .Get "style" }}
+{{ if not $style }} {{ $style = "info" }} {{ end}}
 
 {{ $icon := "💡" }}
-{{ if eq $ctx "success" }} {{ $icon = "✅" }} {{end}}
-{{ if eq $ctx "warning" }} {{ $icon = "⚠️" }} {{end}}
-{{ if eq $ctx "danger" }} {{ $icon = "⛔" }} {{end}}
+{{ if eq $style "success" }} {{ $icon = "✅" }} {{end}}
+{{ if eq $style "warning" }} {{ $icon = "⚠️" }} {{end}}
+{{ if eq $style "danger" }} {{ $icon = "⛔" }} {{end}}
 
 
-<div class="alert alert-{{$ctx}} alert-doks d-flex" role="alert">
+<div class="alert alert-{{$style}} d-flex" role="alert">
   <div class="flex-shrink-1 alert-icon">{{ $icon }} </div>
   {{ with .Get "text"}}
     <div class="w-100">{{ . | safeHTML }} </div>

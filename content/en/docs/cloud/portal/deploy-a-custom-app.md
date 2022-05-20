@@ -31,6 +31,6 @@ involved in running the microservices and its [YAML definition](../applications-
 Darcy Cloud Portal allows you to edit your app YAML right in the browser. More information about the
 Application YAML files can be found [here](../applications-doc/app-doc-yaml.md).
 
-{{< alert >}} Everything shown above using Darcy Cloud Portal can also be achieved using
+{{<alert>}} Everything shown above using Darcy Cloud Portal can also be achieved using
 our CLI, edgectl. See [Getting Started: edgectl](../get-started-edgectl/)
-{{< /alert >}}
+{{</alert>}}

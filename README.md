@@ -158,22 +158,12 @@ Support this project by becoming a backer. Your avatar will show up here.
 
 [![Backers](https://opencollective.com/doks/tiers/backer.svg)](https://opencollective.com/doks)
 
+## Contributing
 
-## Examples:
 
-```markdown
-{{< alert icon="👉" >}}
-  If you would like to use `a specific` name for your node, use the
-  variable `NODE_NAME="your-choice-of-name"` in the node install script
-  like in the example below.
-{{< /alert >}}
-```
+### Content
 
-```markdown
-{{< alert icon="💡" text="You can change the commands in the scripts section of `./package.json`." />}}
-```
-
-### Alerts
+#### Alerts
 
 You can use the `alert` [shortcode](https://gohugo.io/content-management/shortcodes/) to generate
 [Bootstrap-style alerts](https://getbootstrap.com/docs/4.0/components/alerts/).
@@ -184,10 +174,10 @@ You can use the `alert` [shortcode](https://gohugo.io/content-management/shortco
 {{</alert>}}
 ```
 
-The default type is `info`... you can also explicitly set a type (`success`, `info`, `warning`, `danger`).
+The default alert type is `info`... you can also explicitly set a type (`success`, `info`, `warning`, `danger`).
 
 ```markdown
-{{<alert type="warning">}}
+{{<alert style="warning">}}
   If you do not have any of the above hardware, you can create a VM and run
   the node installation script.
 {{</alert>}}

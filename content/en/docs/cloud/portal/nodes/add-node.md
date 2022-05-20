@@ -33,11 +33,11 @@ speed, and other dependencies).
 ![](/images/node1-installed.png)
 
 
-{{< alert >}}
+{{<alert>}}
   If you would like to choose a specific name for your node, use the
   variable `NODE_NAME="your-choice-of-name"` in the _node install script_
   as in the example below.
-{{< /alert >}}
+{{</alert>}}
 
 
 ## View the Node in Your Darcy Cloud Project
