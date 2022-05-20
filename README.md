@@ -172,3 +172,23 @@ Support this project by becoming a backer. Your avatar will show up here.
 ```markdown
 {{< alert icon="💡" text="You can change the commands in the scripts section of `./package.json`." />}}
 ```
+
+### Alerts
+
+You can use the `alert` [shortcode](https://gohugo.io/content-management/shortcodes/) to generate
+[Bootstrap-style alerts](https://getbootstrap.com/docs/4.0/components/alerts/).
+
+```markdown
+{{<alert>}}
+  Here's the info you're looking for!
+{{</alert>}}
+```
+
+The default type is `info`... you can also explicitly set a type (`success`, `info`, `warning`, `danger`).
+
+```markdown
+{{<alert type="warning">}}
+  If you do not have any of the above hardware, you can create a VM and run
+  the node installation script.
+{{</alert>}}
+```

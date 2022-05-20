@@ -23,12 +23,12 @@ heart rate data on a graph.
 
 ![Microservice Interaction Diagram](/images/14565bf8-4100-48da-841a-6e3cf0dbd395.png)
 
-{% hint style="info" %} Although this application works best with two nodes, you can deploy it with
+{{< alert >}} Although this application works best with two nodes, you can deploy it with
 only one node and run all microservices on the same device. The YAML will automatically detect if
-you have one or two nodes. {% endhint %}
+you have one or two nodes. {{< /alert >}}
 
-{% hint style="info" %} If you wish to know more about the application before deploying it, you can
+{{< alert >}} If you wish to know more about the application before deploying it, you can
 inspect its [YAML definition](./app-yaml.md) by clicking on the
-curly brace in the modal on Darcy Cloud. {% endhint %}
+curly brace in the modal on Darcy Cloud. {{< /alert >}}
 
 ![App YAML Definition](/images/3b76e231-64c8-4988-bbee-f9b2a447a2ec.png)

@@ -52,9 +52,9 @@ The high-level process of creating a new microservice is:
 * Deploy the microservice using [edgectl](../get-started-edgectl/)
 
 
-{% hint style="info" %} If you're new to containers and Docker, you'll want to check out their
+{{< alert >}} If you're new to containers and Docker, you'll want to check out their
 official [Getting Started guide](https://docs.docker.com/get-started/) which walks you through the
-different pieces of putting together a Docker container image. {% endhint %}
+different pieces of putting together a Docker container image. {{< /alert >}}
 
 ## Connecting Microservices to Edge Application
 

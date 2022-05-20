@@ -119,5 +119,5 @@ spec:
       to: heart-rate-viewer
 ```
 
-{% hint style="info" %} For more YAML examples you can check the [Glossary](../glossary/) ****
-section of the documentation {% endhint %}
+{{< alert >}} For more YAML examples you can check the [Glossary](../glossary/) ****
+section of the documentation {{< /alert >}}
