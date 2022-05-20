@@ -4,6 +4,8 @@ menu:
   docs:
     parent: "docs-ai"
     weight: 300
+weight: 300
+section_weight: 300
 ---
 
 

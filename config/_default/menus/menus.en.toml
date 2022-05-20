@@ -1,23 +1,23 @@
-#[[docs]]
-#  name = "Darcy Cloud"
-#  weight = 10
-#  identifier = "docs-cloud"
-#  url = "/docs/cloud/what-is-darcy-cloud/"
-#
-#[[docs]]
-#  name = "Darcy AI"
-#  weight = 20
-#  identifier = "docs-ai"
-#  url = "/docs/ai/what-is-darcy-ai/"
-
-
-
+[[docs]]
+  name = "Darcy Cloud"
+  weight = 10
+  identifier = "docs-cloud"
+  url = "/docs/cloud/what-is-darcy-cloud/"
 
 [[docs]]
-  name = "Docs Root"
-  weight = 60
-  identifier = "docs-root"
-  url = "/docs/"
+  name = "Darcy AI"
+  weight = 20
+  identifier = "docs-ai"
+  url = "/docs/ai/what-is-darcy-ai/"
+
+
+
+
+#[[docs]]
+#  name = "Docs Root"
+#  weight = 60
+#  identifier = "docs-root"
+#  url = "/docs/"
 
 
 #[[docs]]

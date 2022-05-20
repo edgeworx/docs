@@ -4,7 +4,8 @@ toc: false
 
 menu:
   docs:
-    parent: "docs-root"
-    identifier: "docs-ai"
-    weight: 2000
+    parent: "docs-ai"
+    weight: 100
+weight: 100
+section_weight: 100
 ---

@@ -1,24 +1,15 @@
 {{ if or .Prev .Next -}}
 	<div class="docs-navigation d-flex justify-content-between">
+    {{ with .Next }}
+    <p>got next</p>
+    <a title="Next page in {{ .Section }}" href="{{ .Permalink }}">Next</a>
+    {{ end }}
+
+    {{ with .Prev }}
+    <a title="Previous page in {{ .Section }}" href="{{ .Permalink }}">Previous</a>
+    {{ end }}
+
 	<!-- https://www.feliciano.tech/blog/custom-sort-hugo-single-pages/ -->
-	{{ $pages := where site.RegularPages "Section" .Section -}}
-	{{ with $pages.Next . -}}
-		<a href="{{ .RelPermalink }}">
-			<div class="card my-1">
-				<div class="card-body py-2">
-					&larr; {{ .Title }}
-				</div>
-			</div>
-		</a>
-	{{ end -}}
-	{{ with $pages.Prev . -}}
-		<a class="ms-auto" href="{{ .RelPermalink }}">
-			<div class="card my-1">
-				<div class="card-body py-2">
-					{{ .Title }} &rarr;
-				</div>
-			</div>
-		</a>
-	{{ end -}}
+
 	</div>
 {{ end -}}
