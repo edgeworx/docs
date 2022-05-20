@@ -1,50 +1,42 @@
-{{ if or .Prev .Next -}}
-	<div class="docs-navigation d-flex justify-content-between">
-
-
-    <br />
-    {{ with .Next -}}
-    <a href="{{ .RelPermalink }}">
-      <div class="card my-1">
-        <div class="card-body py-2">
-          &larr; <kb>.Next:</kb> {{ .Title }}
-        </div>
-      </div>
-    </a>
-    {{ end -}}
-    {{ with .Prev -}}
-    <a class="ms-auto" href="{{ .RelPermalink }}">
-      <div class="card my-1">
-        <div class="card-body py-2">
-          <kb>.Prev:</kb> {{ .Title }} &rarr;
-        </div>
-      </div>
-    </a>
-    {{ end -}}
-
-    </div>
-
-
+{{ $currentSection := .CurrentSection }}
+{{ $next := newScratch }}
 <div class="docs-navigation d-flex justify-content-between">
-	<!-- https://www.feliciano.tech/blog/custom-sort-hugo-single-pages/ -->
-    {{ $pages := where site.RegularPages "Section" .CurrentSection -}}
-    {{ with $pages.Next . -}}
-    <a href="{{ .RelPermalink }}">
+  <!--
+    CAUTION: due to the funky way that hugo weights work, "Next"
+    and "Previous" are opposite to what you'd expect! -->
+  {{ if .NextInSection }}
+  <h3>wubble</h3>
+  {{ $next.Set "link" .NextInSection.RelPermalink }}
+  <a href="{{ .NextInSection.RelPermalink }}">
+    <div class="card my-1">
+      <div class="card-body py-2">
+        &larr; {{ .NextInSection.Title }}
+      </div>
+    </div>
+  </a>
+  {{ else if .IsSection }}
+    <h1>Section start</h1>
+    <!-- section start -->
+  {{ else }}
+    <!-- This is the first non-section page (page 1) of the section -->
+    <a href="{{ $currentSection.RelPermalink }}">
       <div class="card my-1">
         <div class="card-body py-2">
-          &larr; {{ .Title }}
+          &larr; {{ $currentSection.Title }}
         </div>
       </div>
     </a>
-    {{ end -}}
-    {{ with $pages.Prev . -}}
-    <a class="ms-auto" href="{{ .RelPermalink }}">
-      <div class="card my-1">
-        <div class="card-body py-2">
-          {{ .Title }} &rarr;
-        </div>
+  {{ end }}
+
+  <h2>next link: {{ $next.Get "link" }}</h2>
+
+  {{ if .PrevInSection  -}}
+  <a class="ms-auto" href="{{ .PrevInSection.RelPermalink }}">
+    <div class="card my-1">
+      <div class="card-body py-2">
+        {{ .PrevInSection.Title }} &rarr;
       </div>
-    </a>
-    {{ end -}}
-	</div>
-{{ end -}}
+    </div>
+  </a>
+  {{ end -}}
+</div>
