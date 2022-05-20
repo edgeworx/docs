@@ -1,22 +1,148 @@
 {{ define "main" }}
-<div class="row justify-content-center">
-  <div class="col-md-12 col-lg-10 col-xl-8">
-    <article>
-      <h1 class="text-center">{{ if eq .CurrentSection .FirstSection }}{{ .Section | humanize }}{{ else }}{{ .Title }}{{ end }}</h1>
-      <div class="text-center">{{ .Content }}</div>
-			<div class="card-list">
-				{{ $currentSection := .CurrentSection }}
-				{{ range where .Site.RegularPages.ByTitle "Section" .Section }}
-					{{ if in (.RelPermalink | string) $currentSection.RelPermalink }}
-						<div class="card my-3">
-							<div class="card-body">
-								<a class="stretched-link" href="{{ .RelPermalink }}">{{ .Params.title | title }} &rarr;</a>
-							</div>
-						</div>
-					{{ end }}
-				{{ end }}
-			</div>
-    </article>
+{{ $currentSection := .CurrentSection }}
+<pre>
+  .IsSection: {{ .IsSection }}
+  .IsNode: {{ .IsNode }}
+  .IsPage: {{ .IsPage }}
+  .FirstSection: {{ .FirstSection }}
+  .CurrentSection: {{ .CurrentSection }}
+  .CurrentSection.Name: {{ .CurrentSection.Name }}
+  .CurrentSection.RelPermalink: {{ .CurrentSection.RelPermalink }}
+  .Section: {{ .Section }}
+  .Chapter: {{ .Params.chapter }}
+  .X: {{ printf "%#v" .CurrentSection.Name }}
+  .PrevInSection: {{if .PrevInSection}}{{.PrevInSection.Permalink}}{{end}}
+  .NextInSection: {{if .NextInSection}}{{.NextInSection.Permalink}}{{end}}
+  .RelPermalink: {{ .RelPermalink }}
+</pre>
+<pre>
+  {{ printf "%#v" .Page }}
+</pre>
+{{- $pages := ($.Site.GetPage "section" .CurrentSection.Name ).Pages.ByParam "chapter" }}
+<pre>
+  $pages: {{ printf "%#v" $pages }}
+</pre>
+{{- $.Scratch.Set "curPosition" 0 }}
+{{- $.Scratch.Set "index" 0 }}
+{{- range $pages }}
+{{- if eq $ . }}
+{{- $.Scratch.Set "curPosition" ($.Scratch.Get "index") }}
+{{- end }}
+{{- $.Scratch.Add "index" 1 }}
+{{- end }}
+{{- $next := (index $pages (add ($.Scratch.Get "curPosition") 1)) }}
+{{- $prev := (index $pages (sub ($.Scratch.Get "curPosition") 1)) }}
+
+<pre>
+  next: {{ $next }}
+  prev: {{ $prev }}
+</pre>
+
+<div class="docs-navigation d-flex justify-content-between">
+  <!--
+    CAUTION: due to the funky way that hugo weights work, "Next"
+    and "Previous" are opposite to what you'd expect! -->
+  {{ if .NextInSection }}
+  <h3>next</h3>
+  <a href="{{ .NextInSection.RelPermalink }}">
+    <div class="card my-1">
+      <div class="card-body py-2">
+        Next: &larr; {{ .NextInSection.Title }}
+      </div>
+    </div>
+  </a>
+  {{ else }}
+  {{/* No previous page provided, but it could be _index.md */}}
+  {{ if eq .RelPermalink $currentSection.RelPermalink }}
+  <h3>section start</h3>
+  {{ else }}
+  <a href="{{ $currentSection.RelPermalink }}">
+    <div class="card my-1">
+      <div class="card-body py-2">
+        &larr; {{ $currentSection.Title }}
+      </div>
+    </div>
+  </a>
+  {{ end }}
+  {{ end -}}
+  {{ if .PrevInSection  -}}
+  <a class="ms-auto" href="{{ .PrevInSection.RelPermalink }}">
+    <div class="card my-1">
+      <div class="card-body py-2">
+        {{ .PrevInSection.Title }} &rarr;
+      </div>
+    </div>
+  </a>
+  {{ end -}}
+</div>
+
+
+
+{{ $currentSection := .CurrentSection }}
+{{ range where .Site.Pages.ByTitle "Section" .Section }}
+{{ if .InSection $currentSection }}
+<h1>yup: <code>{{ .Title }}</code> {{ .RelPermalink }}</h1>
+{{ end }}
+{{ if in (.RelPermalink | string) $currentSection.RelPermalink }}
+<div class="card my-3">
+  <div class="card-body">
+    <a class="stretched-link" href="{{ .RelPermalink }}">{{ .Params.title | title }} {{ .RelPermalink }}&rarr;</a>
   </div>
+</div>
+{{ end }}
+{{ end }}
+
+
+
+<div class="row flex-xl-nowrap">
+  <div class="col-lg-5 col-xl-4 docs-sidebar d-none d-lg-block">
+    <nav {{ if eq .Site.Params.menu.section.collapsibleSidebar false }}id="sidebar-default" {{ end }}class="docs-links" aria-label="Main navigation">
+      {{ partial "sidebar/docs-menu.html" . }}
+    </nav>
+  </div>
+  {{ if ne .Params.toc false -}}
+  <nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
+    {{ partial "sidebar/docs-toc.html" . }}
+  </nav>
+  {{ end -}}
+  {{ if .Params.toc -}}
+  <main class="docs-content col-lg-11 col-xl{{ if eq .Site.Params.options.fullWidth false }}-9{{ end }}">
+    {{ else -}}
+    <main class="docs-content col-lg-11 col-xl-9 mx-xl-auto">
+      {{ end -}}
+      {{ if .Site.Params.options.breadCrumb -}}
+      <!-- https://discourse.gohugo.io/t/breadcrumb-navigation-for-highly-nested-content/27359/6 -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          {{ partial "main/breadcrumb" . -}}
+          <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+        </ol>
+      </nav>
+      {{ end }}
+      <h1>{{ .Title }}</h1>
+      <p class="lead">{{ .Params.lead | safeHTML }}</p>
+      {{ if ne .Params.toc false -}}
+      <nav class="d-xl-none" aria-label="Quaternary navigation">
+        {{ partial "sidebar/docs-toc.html" . }}
+      </nav>
+      {{ end -}}
+      {{ .Content }}
+      <div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
+        {{ if .Site.Params.lastMod -}}
+        {{ partial "main/last-modified.html" . }}
+        {{ end -}}
+        {{ if .Site.Params.editPage -}}
+        {{ partial "main/edit-page.html" . }}
+        {{ end -}}
+      </div>
+      {{ partial "main/docs-navigation.html" . }}
+      <!--
+      {{ if not .Site.Params.options.collapsibleSidebar -}}
+        {{ partial "main/docs-navigation.html" . }}
+      {{ else -}}
+        <div class="my-n3"></div>
+      {{ end -}}
+      -->
+    </main>
 </div>
 {{ end }}

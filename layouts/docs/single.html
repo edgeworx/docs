@@ -1,51 +1,52 @@
 {{ define "main" }}
+{{ $currentSection := .CurrentSection }}
 <pre>
-
+  .IsSection: {{ .IsSection }}
+  .IsNode: {{ .IsNode }}
+  .IsPage: {{ .IsPage }}
   .FirstSection: {{ .FirstSection }}
   .CurrentSection: {{ .CurrentSection }}
   .CurrentSection.Name: {{ .CurrentSection.Name }}
+  .CurrentSection.RelPermalink: {{ .CurrentSection.RelPermalink }}
   .Section: {{ .Section }}
   .Chapter: {{ .Params.chapter }}
   .X: {{ printf "%#v" .CurrentSection.Name }}
-  .PrevInSection: {{if .PrevInSection}}{{.PrevInSection.Permalink}}{{end}}<br>
-  .NextInSection {{if .NextInSection}}{{.NextInSection.Permalink}}{{end}}
+  .PrevInSection: {{if .PrevInSection}}{{.PrevInSection.Permalink}}{{end}}
+  .NextInSection: {{if .NextInSection}}{{.NextInSection.Permalink}}{{end}}
+  .RelPermalink: {{ .RelPermalink }}
 </pre>
 <pre>
   {{ printf "%#v" .Page }}
 </pre>
-{{- $pages := ($.Site.GetPage "section" .CurrentSection.Name ).Pages.ByParam "chapter" }}
-<pre>
-  $pages: {{ printf "%#v" $pages }}
-</pre>
-{{- $.Scratch.Set "curPosition" 0 }}
-{{- $.Scratch.Set "index" 0 }}
-{{- range $pages }}
-  {{- if eq $ . }}
-    {{- $.Scratch.Set "curPosition" ($.Scratch.Get "index") }}
-  {{- end }}
-  {{- $.Scratch.Add "index" 1 }}
-{{- end }}
-{{- $next := (index $pages (add ($.Scratch.Get "curPosition") 1)) }}
-{{- $prev := (index $pages (sub ($.Scratch.Get "curPosition") 1)) }}
 
-<pre>
-  next: {{ $next }}
-  prev: {{ $prev }}
-</pre>
 
 <div class="docs-navigation d-flex justify-content-between">
+<!--
+  CAUTION: due to the funky way that hugo weights work, "Next"
+  and "Previous" are opposite to what you'd expect! -->
   {{ if .NextInSection }}
-    <h3>next</h3>
     <a href="{{ .NextInSection.RelPermalink }}">
       <div class="card my-1">
         <div class="card-body py-2">
-          &larr; {{ .NextInSection.Title }}
+         Next: &larr; {{ .NextInSection.Title }}
         </div>
       </div>
     </a>
+  {{ else }}
+    {{/* No previous page provided, but it could be _index.md */}}
+    {{ if eq .RelPermalink $currentSection.RelPermalink }}
+      <!-- section start -->
+    {{ else }}
+      <a href="{{ $currentSection.RelPermalink }}">
+        <div class="card my-1">
+          <div class="card-body py-2">
+             &larr; {{ $currentSection.Title }}
+          </div>
+        </div>
+      </a>
+    {{ end }}
   {{ end -}}
   {{ if .PrevInSection  -}}
-    <h3>prev</h3>
     <a class="ms-auto" href="{{ .PrevInSection.RelPermalink }}">
       <div class="card my-1">
         <div class="card-body py-2">
