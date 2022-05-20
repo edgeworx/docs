@@ -1,5 +1,14 @@
-<div class="alert alert-{{ with .Get "context" }}{{.}}{{ else }}doks{{ end }} d-flex" role="alert">
-  <div class="flex-shrink-1 alert-icon">{{ with .Get "icon" }}{{.}} {{ end }}</div>
+{{ $ctx := .Get "context" }}
+{{ if not $ctx }} {{ $ctx = "info" }} {{ end}}
+
+{{ $icon := "💡" }}
+{{ if eq $ctx "success" }} {{ $icon = "✅" }} {{end}}
+{{ if eq $ctx "warning" }} {{ $icon = "⚠️" }} {{end}}
+{{ if eq $ctx "danger" }} {{ $icon = "⛔" }} {{end}}
+
+
+<div class="alert alert-{{$ctx}} alert-doks d-flex" role="alert">
+  <div class="flex-shrink-1 alert-icon">{{ $icon }} </div>
   {{ with .Get "text"}}
     <div class="w-100">{{ . | safeHTML }} </div>
   {{ else }}
