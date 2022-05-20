@@ -28,8 +28,6 @@
         {{ $nextArrow = "&#8598;" }} {{/* The northwest arrow */}}
        {{ end }}
     {{ end }}
-
-
   {{ else }}
     <!-- This is the first non-section page (page 1) of the section -->
     {{ $nextLink = $currentSection.RelPermalink }}
@@ -53,7 +51,7 @@
 
   {{ $prevLink := "" }}
   {{ $prevTitle := "" }}
-  {{ $prevArrow := "&#8599;" }} {{/* The northeast arrow */}}
+  {{ $prevArrow := "&rarr;" }} {{/* The northeast arrow */}}
 
   {{ if .PrevInSection -}}
     {{ $prevLink = .PrevInSection.RelPermalink }}
@@ -69,11 +67,18 @@
     {{/*
       Probably at the end of a section, and we need to go up a level.
     */}}
-
-    {{ $prevLink = "../" }}
-    {{ $prevTitle = "Up" }}
-
-
+    {{ $parent := .GetPage ".." }}
+    {{ range $i, $item := $parent.Pages }}
+      {{ if (eq $item.RelPermalink $currentSection.RelPermalink) }}
+        {{ $sibIndex := add $i 1}}
+        {{ if lt $sibIndex (len $parent.Pages) }}
+          {{ $sib := index $parent.Pages $sibIndex }}
+          {{ $prevLink = $sib.RelPermalink }}
+          {{ $prevTitle = $sib.Title }}
+          {{ $prevArrow = "&#8599;" }} {{/* The northeast arrow */}}
+        {{ end }}
+      {{  end }}
+    {{ end }}
   {{ end -}}
 
   {{ with $prevLink }}
