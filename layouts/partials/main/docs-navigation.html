@@ -2,83 +2,102 @@
 {{ $sectionPages := .CurrentSection.Pages}}
 {{ $currentPage := . -}}
 {{ $isIndex := eq .RelPermalink $currentSection.RelPermalink }}
+{{ $pageIndex := -1 }}
 
-{{ $nextLink := "" }}
-{{ $nextTitle := "" }}
-{{ $nextArrow := "&larr;" }}
+{{ $prevIndex := -1}}
+{{ $prevLink := "" }}
+{{ $prevTitle := "" }}
+{{ $prevArrow := "&larr;" }}
 
 {{ $nextIndex := -1 }}
+{{ $nextLink := "" }}
+{{ $nextTitle := "" }}
+{{ $nextArrow := "&rarr;" }}
 
-{{ $prev2Link := "" }}
-{{ $prev2Title := "" }}
-{{ $prev2Arrow := "&larr;" }}
-{{ $prev2Index := -1}}
-{{ $next2Index := -1}}
-{{ $pageIndex := -1 }}
 
 {{ if $isIndex }}
   {{ if gt (len $currentSection.Pages) 1 }}
-    {{ $next2Index = 1 }}
+    {{ $nextIndex = 1 }}
   {{ end}}
 {{ else }}
   {{ range $i, $item := $currentSection.Pages }}
     {{ if eq $currentPage.RelPermalink $item.RelPermalink }}
       {{ $pageIndex = $i }}
-      {{ $prev2Index = sub $i 1 }}
-      {{ if lt $i (len $currentSection.Pages) }}
-        {{ $next2Index = add $i 1}}
+      {{ $prevIndex = sub $i 1 }}
+      {{ if lt $pageIndex (sub (len $currentSection.Pages) 1) }}
+        {{ $nextIndex = add $pageIndex 1}}
       {{ end }}
     {{ end }}
   {{end -}}
 {{ end }}
 
-<pre>$pageIndex: {{ $pageIndex }}
-  $prev2Index: {{ $prev2Index }}
-$next2Index: {{ $next2Index }}</pre>
 
-
-<div class="docs-navigation d-flex justify-content-between">
-
-{{ if lt $prev2Index 0}}
+{{ if lt $prevIndex 0}}
   {{ if eq $pageIndex 0}}
-    {{ $prev2Link = $currentSection.RelPermalink }}
-    {{ $prev2Title = $currentSection.Title }}
+    {{ $prevLink = $currentSection.RelPermalink }}
+    {{ $prevTitle = $currentSection.Title }}
   {{ else }}
   {{ $parent := .GetPage ".." }}
     {{ range $i, $item := $parent.Pages }}
       {{ if and (gt $i 0) (eq $item.RelPermalink $currentPage.RelPermalink) }}
         {{ $aunt := index $parent.Pages (sub $i 1) }}
-        {{ $prev2Link = $aunt.RelPermalink }}
-        {{ $prev2Title = $aunt.Title }}
+        {{ $prevLink = $aunt.RelPermalink }}
+        {{ $prevTitle = $aunt.Title }}
         {{ if not $isIndex }}
-          {{ $prev2Arrow = "&#8598;" }} {{/* The northwest arrow */}}
+          {{ $prevArrow = "&#8598;" }} {{/* The northwest arrow */}}
         {{ end }}
       {{ end }}
     {{ end }}
   {{ end }}
 {{ else }}
-  {{ $prev := index $currentSection.Pages $prev2Index}}
-  {{ $prev2Link = $prev.RelPermalink }}
-  {{ $prev2Title = $prev.Title }}
+  {{ $prev := index $currentSection.Pages $prevIndex}}
+  {{ $prevLink = $prev.RelPermalink }}
+  {{ $prevTitle = $prev.Title }}
+{{ end }}
+
+{{ if ge $nextIndex 0}}
+  {{ $next := index $currentSection.Pages $nextIndex}}
+  {{ $nextLink = $next.RelPermalink }}
+  {{ $nextTitle = $next.Title }}
+{{ else }}
+  {{ $parent := .GetPage ".." }}
+  {{ range $i, $item := $parent.Pages }}
+    {{ if (eq $item.RelPermalink $currentSection.RelPermalink) }}
+      {{ $auntIndex := add $i 1}}
+      {{ if lt $auntIndex (len $parent.Pages) }}
+        {{ $aunt := index $parent.Pages $auntIndex }}
+        {{ $nextLink = $aunt.RelPermalink }}
+        {{ $nextTitle = $aunt.Title }}
+        {{ $nextArrow = "&#8599;" }} {{/* The northeast arrow */}}
+      {{ end }}
+    {{ end }}
+  {{ end }}
 {{ end }}
 
 
+{{ with (or $prevLink $nextLink)}}
+  <div class="docs-navigation d-flex justify-content-between">
 
+    {{ with $prevLink }}
+      <a href="{{ $prevLink }}">
+        <div class="card my-1">
+          <div class="card-body py-2">
+            {{ $prevArrow | safeHTML}} {{ $prevTitle }}
+          </div>
+        </div>
+      </a>
+    {{ end -}}
 
-  {{ with $prev2Link }}
-    <a href="{{ $prev2Link }}">
+    {{ with $nextLink }}
+    <a class="ms-auto" href="{{ $nextLink }}">
       <div class="card my-1">
         <div class="card-body py-2">
-          {{ $prev2Arrow | safeHTML}} {{ $prev2Title }}
+          {{ $nextTitle }} {{ $nextArrow | safeHTML}}
         </div>
       </div>
     </a>
-  {{ end -}}
+    {{ end -}}
 
+  </div>
+{{ end}}
 
-  {{/*
-    Now, onto the "previous" section, which is really the NEXT section.
-  */}}
-
-
-</div>
