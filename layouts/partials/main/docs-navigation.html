@@ -1,44 +1,75 @@
 {{ $currentSection := .CurrentSection }}
+{{ $sectionPages := .CurrentSection.Pages}}
 {{ $currentPage := . -}}
+{{ $isIndex := eq .RelPermalink $currentSection.RelPermalink }}
 
 {{ $nextLink := "" }}
 {{ $nextTitle := "" }}
 {{ $nextArrow := "&larr;" }}
 
-<div class="docs-navigation d-flex justify-content-between">
-  <!--
-    CAUTION: due to the funky way that hugo weights work, "Next"
-    and "Previous" are opposite to what you'd expect!
-    Yeah, I know, it's crazy. -->
-  {{ if .NextInSection }}
-    {{ $nextLink = .NextInSection.RelPermalink }}
-    {{ $nextTitle = .NextInSection.Title }}
-  {{ else if .IsSection }}
-    {{/*
-      We're on a Section page (_index.md), so we need to go up to the
-      previous level to find the next item.
-    */}}
+{{ $nextIndex := -1 }}
 
-    {{ $parent := .GetPage ".." }}
+{{ $prev2Link := "" }}
+{{ $prev2Title := "" }}
+{{ $prev2Arrow := "&larr;" }}
+{{ $prev2Index := -1}}
+{{ $next2Index := -1}}
+{{ $pageIndex := -1 }}
+
+{{ if $isIndex }}
+  {{ if gt (len $currentSection.Pages) 1 }}
+    {{ $next2Index = 1 }}
+  {{ end}}
+{{ else }}
+  {{ range $i, $item := $currentSection.Pages }}
+    {{ if eq $currentPage.RelPermalink $item.RelPermalink }}
+      {{ $pageIndex = $i }}
+      {{ $prev2Index = sub $i 1 }}
+      {{ if lt $i (len $currentSection.Pages) }}
+        {{ $next2Index = add $i 1}}
+      {{ end }}
+    {{ end }}
+  {{end -}}
+{{ end }}
+
+<pre>$pageIndex: {{ $pageIndex }}
+  $prev2Index: {{ $prev2Index }}
+$next2Index: {{ $next2Index }}</pre>
+
+
+<div class="docs-navigation d-flex justify-content-between">
+
+{{ if lt $prev2Index 0}}
+  {{ if eq $pageIndex 0}}
+    {{ $prev2Link = $currentSection.RelPermalink }}
+    {{ $prev2Title = $currentSection.Title }}
+  {{ else }}
+  {{ $parent := .GetPage ".." }}
     {{ range $i, $item := $parent.Pages }}
       {{ if and (gt $i 0) (eq $item.RelPermalink $currentPage.RelPermalink) }}
         {{ $aunt := index $parent.Pages (sub $i 1) }}
-        {{ $nextLink = $aunt.RelPermalink }}
-        {{ $nextTitle = $aunt.Title }}
-        {{ $nextArrow = "&#8598;" }} {{/* The northwest arrow */}}
-       {{ end }}
+        {{ $prev2Link = $aunt.RelPermalink }}
+        {{ $prev2Title = $aunt.Title }}
+        {{ if not $isIndex }}
+          {{ $prev2Arrow = "&#8598;" }} {{/* The northwest arrow */}}
+        {{ end }}
+      {{ end }}
     {{ end }}
-  {{ else }}
-    <!-- This is the first non-section page (page 1) of the section -->
-    {{ $nextLink = $currentSection.RelPermalink }}
-    {{ $nextTitle = $currentSection.Title }}
   {{ end }}
+{{ else }}
+  {{ $prev := index $currentSection.Pages $prev2Index}}
+  {{ $prev2Link = $prev.RelPermalink }}
+  {{ $prev2Title = $prev.Title }}
+{{ end }}
 
-  {{ with $nextLink }}
-    <a href="{{ $nextLink }}">
+
+
+
+  {{ with $prev2Link }}
+    <a href="{{ $prev2Link }}">
       <div class="card my-1">
         <div class="card-body py-2">
-          {{ $nextArrow | safeHTML}} {{ $nextTitle }}
+          {{ $prev2Arrow | safeHTML}} {{ $prev2Title }}
         </div>
       </div>
     </a>
@@ -49,46 +80,5 @@
     Now, onto the "previous" section, which is really the NEXT section.
   */}}
 
-  {{ $prevLink := "" }}
-  {{ $prevTitle := "" }}
-  {{ $prevArrow := "&rarr;" }} {{/* The northeast arrow */}}
-
-  {{ if .PrevInSection -}}
-    {{ $prevLink = .PrevInSection.RelPermalink }}
-    {{ $prevTitle = .PrevInSection.Title }}
-  {{ else if and .IsSection (gt (len .Pages) 0)}}
-    {{/*
-      Probably on the _index.md section/page?
-    */}}
-    {{ $p := (index .Pages 0) }}
-    {{ $prevLink = $p.RelPermalink }}
-    {{ $prevTitle = $p.Title }}
-  {{ else }}
-    {{/*
-      Probably at the end of a section, and we need to go up a level.
-    */}}
-    {{ $parent := .GetPage ".." }}
-    {{ range $i, $item := $parent.Pages }}
-      {{ if (eq $item.RelPermalink $currentSection.RelPermalink) }}
-        {{ $sibIndex := add $i 1}}
-        {{ if lt $sibIndex (len $parent.Pages) }}
-          {{ $sib := index $parent.Pages $sibIndex }}
-          {{ $prevLink = $sib.RelPermalink }}
-          {{ $prevTitle = $sib.Title }}
-          {{ $prevArrow = "&#8599;" }} {{/* The northeast arrow */}}
-        {{ end }}
-      {{  end }}
-    {{ end }}
-  {{ end -}}
-
-  {{ with $prevLink }}
-    <a class="ms-auto" href="{{ $prevLink }}">
-      <div class="card my-1">
-        <div class="card-body py-2">
-          {{ $prevTitle }} {{ $prevArrow | safeHTML}}
-        </div>
-      </div>
-    </a>
-  {{ end -}}
 
 </div>
