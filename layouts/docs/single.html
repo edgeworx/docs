@@ -1,13 +1,79 @@
 {{ define "main" }}
 <pre>
+
+  .FirstSection: {{ .FirstSection }}
   .CurrentSection: {{ .CurrentSection }}
+  .CurrentSection.Name: {{ .CurrentSection.Name }}
   .Section: {{ .Section }}
+  .Chapter: {{ .Params.chapter }}
+  .X: {{ printf "%#v" .CurrentSection.Name }}
+  .PrevInSection: {{if .PrevInSection}}{{.PrevInSection.Permalink}}{{end}}<br>
+  .NextInSection {{if .NextInSection}}{{.NextInSection.Permalink}}{{end}}
 </pre>
 <pre>
   {{ printf "%#v" .Page }}
-
-
 </pre>
+{{- $pages := ($.Site.GetPage "section" .CurrentSection.Name ).Pages.ByParam "chapter" }}
+<pre>
+  $pages: {{ printf "%#v" $pages }}
+</pre>
+{{- $.Scratch.Set "curPosition" 0 }}
+{{- $.Scratch.Set "index" 0 }}
+{{- range $pages }}
+  {{- if eq $ . }}
+    {{- $.Scratch.Set "curPosition" ($.Scratch.Get "index") }}
+  {{- end }}
+  {{- $.Scratch.Add "index" 1 }}
+{{- end }}
+{{- $next := (index $pages (add ($.Scratch.Get "curPosition") 1)) }}
+{{- $prev := (index $pages (sub ($.Scratch.Get "curPosition") 1)) }}
+
+<pre>
+  next: {{ $next }}
+  prev: {{ $prev }}
+</pre>
+
+<div class="docs-navigation d-flex justify-content-between">
+  {{ if .NextInSection }}
+    <h3>next</h3>
+    <a href="{{ .NextInSection.RelPermalink }}">
+      <div class="card my-1">
+        <div class="card-body py-2">
+          &larr; {{ .NextInSection.Title }}
+        </div>
+      </div>
+    </a>
+  {{ end -}}
+  {{ if .PrevInSection  -}}
+    <h3>prev</h3>
+    <a class="ms-auto" href="{{ .PrevInSection.RelPermalink }}">
+      <div class="card my-1">
+        <div class="card-body py-2">
+          {{ .PrevInSection.Title }} &rarr;
+        </div>
+      </div>
+    </a>
+  {{ end -}}
+</div>
+
+
+
+{{ $currentSection := .CurrentSection }}
+{{ range where .Site.Pages.ByTitle "Section" .Section }}
+  {{ if .InSection $currentSection }}
+    <h1>yup: <code>{{ .Title }}</code> {{ .RelPermalink }}</h1>
+  {{ end }}
+{{ if in (.RelPermalink | string) $currentSection.RelPermalink }}
+<div class="card my-3">
+  <div class="card-body">
+    <a class="stretched-link" href="{{ .RelPermalink }}">{{ .Params.title | title }} {{ .RelPermalink }}&rarr;</a>
+  </div>
+</div>
+{{ end }}
+{{ end }}
+
+
+
 	<div class="row flex-xl-nowrap">
 		<div class="col-lg-5 col-xl-4 docs-sidebar d-none d-lg-block">
 			<nav {{ if eq .Site.Params.menu.section.collapsibleSidebar false }}id="sidebar-default" {{ end }}class="docs-links" aria-label="Main navigation">

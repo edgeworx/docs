@@ -1,4 +1,5 @@
 ---
-title : "Get Started: edgectl"
+title : "Get Started: edgectl INDEX"
 weight: 30
 ---
+Some content here

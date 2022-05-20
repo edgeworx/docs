@@ -1,5 +1,7 @@
 ---
 title: "Deploy an App"
+weight: 60
+chapter: 3
 ---
 
 # Deploy an App
