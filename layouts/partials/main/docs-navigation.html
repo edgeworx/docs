@@ -47,23 +47,40 @@
   {{ end -}}
 
 
+  {{/*
+    Now, onto the "previous" section, which is really the NEXT section.
+  */}}
+
   {{ $prevLink := "" }}
   {{ $prevTitle := "" }}
+  {{ $prevArrow := "&#8599;" }} {{/* The northeast arrow */}}
 
   {{ if .PrevInSection -}}
     {{ $prevLink = .PrevInSection.RelPermalink }}
     {{ $prevTitle = .PrevInSection.Title }}
+  {{ else if and .IsSection (gt (len .Pages) 0)}}
+    {{/*
+      Probably on the _index.md section/page?
+    */}}
+    {{ $p := (index .Pages 0) }}
+    {{ $prevLink = $p.RelPermalink }}
+    {{ $prevTitle = $p.Title }}
   {{ else }}
-    <!-- probably on the index page? -->
-  {{ $prevLink = "/" }}
-  {{ $prevTitle = "on index" }}
+    {{/*
+      Probably at the end of a section, and we need to go up a level.
+    */}}
+
+    {{ $prevLink = "../" }}
+    {{ $prevTitle = "Up" }}
+
+
   {{ end -}}
 
   {{ with $prevLink }}
     <a class="ms-auto" href="{{ $prevLink }}">
       <div class="card my-1">
         <div class="card-body py-2">
-          {{ $prevTitle }} &rarr;
+          {{ $prevTitle }} {{ $prevArrow | safeHTML}}
         </div>
       </div>
     </a>
