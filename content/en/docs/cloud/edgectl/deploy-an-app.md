@@ -1,10 +1,8 @@
 ---
 title: "Deploy an App"
 weight: 60
-chapter: 3
+toc: false
 ---
-
-# Deploy an App
 
 Once we have an edge node in our project, we can deploy applications to run on those nodes.
 
@@ -15,7 +13,7 @@ edgectl deploy app --help
 ```
 
 The `deploy app` command requires a path to a `YAML` file to be specified. The YAML files for demo
-applications can be retrieved from Darcy Cloud or from the [Glossary](../glossary/) **** section****
+applications can be retrieved from Darcy Cloud Portal or from the [Glossary](../glossary/) section
 of this documentation.
 
 The`YAML` file defines everything about our edge application that is required to deploy it. For

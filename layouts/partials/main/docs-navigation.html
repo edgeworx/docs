@@ -1,42 +1,51 @@
 {{ $currentSection := .CurrentSection }}
-{{ $next := newScratch }}
+
+{{ $nextLink := "" }}
+{{ $nextTitle := "" }}
+
 <div class="docs-navigation d-flex justify-content-between">
   <!--
     CAUTION: due to the funky way that hugo weights work, "Next"
     and "Previous" are opposite to what you'd expect! -->
   {{ if .NextInSection }}
-  <h3>wubble</h3>
-  {{ $next.Set "link" .NextInSection.RelPermalink }}
-  <a href="{{ .NextInSection.RelPermalink }}">
-    <div class="card my-1">
-      <div class="card-body py-2">
-        &larr; {{ .NextInSection.Title }}
-      </div>
-    </div>
-  </a>
+    {{ $nextLink = .NextInSection.RelPermalink }}
+    {{ $nextTitle = .NextInSection.Title }}
   {{ else if .IsSection }}
     <h1>Section start</h1>
     <!-- section start -->
   {{ else }}
     <!-- This is the first non-section page (page 1) of the section -->
-    <a href="{{ $currentSection.RelPermalink }}">
+    {{ $nextLink = $currentSection.RelPermalink }}
+    {{ $nextTitle = $currentSection.Title }}
+  {{ end }}
+
+  {{ with $nextLink }}
+    <a href="{{ $nextLink }}">
       <div class="card my-1">
         <div class="card-body py-2">
-          &larr; {{ $currentSection.Title }}
+          &larr; {{ $nextTitle }}
         </div>
       </div>
     </a>
-  {{ end }}
-
-  <h2>next link: {{ $next.Get "link" }}</h2>
-
-  {{ if .PrevInSection  -}}
-  <a class="ms-auto" href="{{ .PrevInSection.RelPermalink }}">
-    <div class="card my-1">
-      <div class="card-body py-2">
-        {{ .PrevInSection.Title }} &rarr;
-      </div>
-    </div>
-  </a>
   {{ end -}}
+
+
+  {{ $prevLink := "" }}
+  {{ $prevTitle := "" }}
+
+  {{ if .PrevInSection -}}
+    {{ $prevLink = .PrevInSection.RelPermalink }}
+    {{ $prevTitle = .PrevInSection.Title }}
+  {{ end -}}
+
+  {{ with $prevLink }}
+    <a class="ms-auto" href="{{ $prevLink }}">
+      <div class="card my-1">
+        <div class="card-body py-2">
+          {{ $prevTitle }} &rarr;
+        </div>
+      </div>
+    </a>
+  {{ end -}}
+
 </div>
