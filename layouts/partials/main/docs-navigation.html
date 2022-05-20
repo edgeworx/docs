@@ -4,11 +4,13 @@
 
 {{ $nextLink := "" }}
 {{ $nextTitle := "" }}
+{{ $nextArrow := "&larr;" }}
 
 <div class="docs-navigation d-flex justify-content-between">
   <!--
     CAUTION: due to the funky way that hugo weights work, "Next"
-    and "Previous" are opposite to what you'd expect! -->
+    and "Previous" are opposite to what you'd expect!
+    Yeah, I know, it's crazy. -->
   {{ if .NextInSection }}
     {{ $nextLink = .NextInSection.RelPermalink }}
     {{ $nextTitle = .NextInSection.Title }}
@@ -24,7 +26,8 @@
         {{ $sib := index $parent.Pages (sub $i 1) }}
         {{ $nextLink = $sib.RelPermalink }}
         {{ $nextTitle = $sib.Title }}
-  {{ end }}
+        {{ $nextArrow = "&#8598;" }} {{/* The northwest arrow */}}
+       {{ end }}
     {{ end }}
 
 
@@ -38,7 +41,7 @@
     <a href="{{ $nextLink }}">
       <div class="card my-1">
         <div class="card-body py-2">
-          &larr; {{ $nextTitle }}
+          {{ $nextArrow | safeHTML}} {{ $nextTitle }}
         </div>
       </div>
     </a>

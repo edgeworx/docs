@@ -1,62 +1,43 @@
 {{ define "main" }}
 {{ $currentSection := .CurrentSection }}
-<pre>
-  .Title {{ .Title }}
-  .Weight {{ .Weight }}
-  .Kind {{ .Kind }}
 
-  {{ $parent := .GetPage ".." }}
-  parent.Kind: {{ $parent.Kind }}
-  parent.RelPermalink:{{ $parent.RelPermalink }}
-  parent.Weight: {{ $parent.Weight }}
-  parent.Title: {{ $parent.Title }}
+<!--<pre>-->
+<!--  .Title {{ .Title }}-->
+<!--  .Weight {{ .Weight }}-->
+<!--  .Kind {{ .Kind }}-->
 
-      {{ range $parent.Pages }}
-      {{.Weight}}  |  {{.RelPermalink}}  |  {{.Title}}
-    {{end}}
+<!--  {{ $parent := .GetPage ".." }}-->
+<!--  parent.Kind: {{ $parent.Kind }}-->
+<!--  parent.RelPermalink:{{ $parent.RelPermalink }}-->
+<!--  parent.Weight: {{ $parent.Weight }}-->
+<!--  parent.Title: {{ $parent.Title }}-->
 
+<!--  -&#45;&#45;-->
+<!--  {{ range $parent.Pages }}-->
+<!--  {{.Weight}}  |  {{.RelPermalink}}  |  {{.Title}}-->
+<!--  {{end}}-->
+<!--  -&#45;&#45;-->
 
-  .Site.Pages.Next: {{ .Site.Pages.Next . }}
-  .Site.Pages.Prev .: {{ .Site.Pages.Prev . }}
-
-
-  .IsSection: {{ .IsSection }}
-  .IsNode: {{ .IsNode }}
-  .IsPage: {{ .IsPage }}
-  .FirstSection: {{ .FirstSection }}
-  .CurrentSection: {{ .CurrentSection }}
-  .CurrentSection.Name: {{ .CurrentSection.Name }}
-  .CurrentSection.RelPermalink: {{ .CurrentSection.RelPermalink }}
-  .Section: {{ .Section }}
-  .Chapter: {{ .Params.chapter }}
-  .X: {{ printf "%#v" .CurrentSection.Name }}
-  .PrevInSection: {{if .PrevInSection}}{{.PrevInSection.Permalink}}{{end}}
-  .NextInSection: {{if .NextInSection}}{{.NextInSection.Permalink}}{{end}}
-  .RelPermalink: {{ .RelPermalink }}
-  .Prev {{ .Prev }}
-  .Next {{ .Next }}
-
-  .Page:  {{ printf "%#v" .Page }}
-</pre>
+<!--  .Site.Pages.Next: {{ .Site.Pages.Next . }}-->
+<!--  .Site.Pages.Prev .: {{ .Site.Pages.Prev . }}-->
 
 
-
-
-
-
-<!--{{ range where .Site.Pages.ByTitle "Section" .Section }}-->
-<!--{{ if .InSection $currentSection }}-->
-<!--<h1>yup: <code>{{ .Title }}</code> {{ .RelPermalink }}</h1>-->
-<!--{{ end }}-->
-<!--{{ if in (.RelPermalink | string) $currentSection.RelPermalink }}-->
-<!--<div class="card my-3">-->
-<!--  <div class="card-body">-->
-<!--    <a class="stretched-link" href="{{ .RelPermalink }}">{{ .Params.title | title }} {{ .RelPermalink }}&rarr;</a>-->
-<!--  </div>-->
-<!--</div>-->
-<!--{{ end }}-->
-<!--{{ end }}-->
-
+<!--  .IsSection: {{ .IsSection }}-->
+<!--  .IsNode: {{ .IsNode }}-->
+<!--  .IsPage: {{ .IsPage }}-->
+<!--  .FirstSection: {{ .FirstSection }}-->
+<!--  .CurrentSection: {{ .CurrentSection }}-->
+<!--  .CurrentSection.Name: {{ .CurrentSection.Name }}-->
+<!--  .CurrentSection.RelPermalink: {{ .CurrentSection.RelPermalink }}-->
+<!--  .Section: {{ .Section }}-->
+<!--  .Chapter: {{ .Params.chapter }}-->
+<!--  .X: {{ printf "%#v" .CurrentSection.Name }}-->
+<!--  .PrevInSection: {{if .PrevInSection}}{{.PrevInSection.Permalink}}{{end}}-->
+<!--  .NextInSection: {{if .NextInSection}}{{.NextInSection.Permalink}}{{end}}-->
+<!--  .RelPermalink: {{ .RelPermalink }}-->
+<!--  .Prev {{ .Prev }}-->
+<!--  .Next {{ .Next }}-->
+<!--</pre>-->
 
 
 <div class="row flex-xl-nowrap">
