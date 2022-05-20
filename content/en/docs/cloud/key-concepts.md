@@ -1,6 +1,6 @@
 ---
 title: "Key Concepts"
-weight: 600
+weight: 11
 ---
 
 #### Darcy Cloud

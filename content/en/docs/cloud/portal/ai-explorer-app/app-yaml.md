@@ -1,6 +1,5 @@
 ---
 title: "App YAML: Darcy AI Explorer"
-weight: 300
 ---
 
 ```yaml

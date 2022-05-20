@@ -1,6 +1,6 @@
 ---
 title: "Access Tokens"
-weight: 500
+weight: 50
 ---
 Darcy Cloud supports basic HTTP authentication through access tokens.
 

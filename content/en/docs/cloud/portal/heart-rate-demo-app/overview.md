@@ -1,6 +1,5 @@
 ---
 title: "Heart Rate Demo App"
-weight: 100
 ---
 Apps are groups of microservices bundled to work together. They are defined using YAML files and can
 be deployed and updated by uploading those YAML files through Darcy Cloud or

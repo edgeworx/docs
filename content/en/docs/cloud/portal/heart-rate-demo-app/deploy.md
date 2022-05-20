@@ -1,6 +1,5 @@
 ---
 title: "Deploy App"
-weight: 200
 toc: true
 ---
 

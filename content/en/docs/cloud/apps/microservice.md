@@ -1,6 +1,5 @@
 ---
 title : "Microservice"
-weight: 200
 ---
 
 ## What are microservices?

@@ -1,5 +1,5 @@
 ---
 title : "Get Started: Cloud Portal"
 toc: true
-weight: 200
+weight: 20
 ---

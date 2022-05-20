@@ -1,6 +1,5 @@
 ---
 title : "App Templating"
-weight: 600
 ---
 
 Variables, filter and template "queries" can be used as values for any field in your deployment

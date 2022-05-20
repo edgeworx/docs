@@ -1,6 +1,5 @@
 ---
 title: "Get Started: edgectl"
-weight: 100
 ---
 
 edgectl is Darcy Cloud's command line interface (CLI). It can be used to manage Darcy Cloud

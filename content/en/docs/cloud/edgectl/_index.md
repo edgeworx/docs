@@ -1,4 +1,4 @@
 ---
 title : "Get Started: edgectl"
-weight: 300
+weight: 30
 ---

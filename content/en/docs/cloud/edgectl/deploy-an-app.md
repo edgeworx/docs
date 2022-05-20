@@ -1,6 +1,5 @@
 ---
 title: "Deploy an App"
-weight: 300
 ---
 
 # Deploy an App

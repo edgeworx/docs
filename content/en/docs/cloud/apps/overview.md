@@ -1,6 +1,5 @@
 ---
 title : "App Overview"
-weight: 100
 ---
 
 Darcy connects to your applications to interact and share data. Applications can be configured in

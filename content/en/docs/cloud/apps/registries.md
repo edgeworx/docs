@@ -1,6 +1,5 @@
 ---
 title : "Registries"
-weight: 400
 ---
 
 When configuring an Darcy Cloud application YAML file, it is necessary to specify the registry of
