@@ -16,8 +16,8 @@
 
 
 {{ if $isIndex }}
-  {{ if gt (len $currentSection.Pages) 1 }}
-    {{ $nextIndex = 1 }}
+  {{ if ge (len $currentSection.Pages) 1 }}
+    {{ $nextIndex = 0 }}
   {{ end}}
 {{ else }}
   {{ range $i, $item := $currentSection.Pages }}
@@ -31,13 +31,19 @@
   {{end -}}
 {{ end }}
 
+<!--<pre>-->
+<!--  $pageIndex: {{$pageIndex}}-->
+<!--  $prevIndex: {{$prevIndex}}-->
+<!--  $nextIndex: {{$nextIndex}}-->
+<!--</pre>-->
 
 {{ if lt $prevIndex 0}}
   {{ if eq $pageIndex 0}}
     {{ $prevLink = $currentSection.RelPermalink }}
     {{ $prevTitle = $currentSection.Title }}
   {{ else }}
-  {{ $parent := .GetPage ".." }}
+    {{ $parent := .GetPage ".." }}
+
     {{ range $i, $item := $parent.Pages }}
       {{ if and (gt $i 0) (eq $item.RelPermalink $currentPage.RelPermalink) }}
         {{ $aunt := index $parent.Pages (sub $i 1) }}
@@ -47,6 +53,12 @@
           {{ $prevArrow = "&#8598;" }} {{/* The northwest arrow */}}
         {{ end }}
       {{ end }}
+    {{ end }}
+
+    {{ if and (not $prevLink) (ne $parent.Kind "home") }}
+      {{ $prevLink = $parent.RelPermalink }}
+      {{ $prevTitle = $parent.Title }}
+      {{ $prevArrow = "&#8598;" }} {{/* The northwest arrow */}}
     {{ end }}
   {{ end }}
 {{ else }}
@@ -69,6 +81,19 @@
         {{ $nextLink = $aunt.RelPermalink }}
         {{ $nextTitle = $aunt.Title }}
         {{ $nextArrow = "&#8599;" }} {{/* The northeast arrow */}}
+      {{ else }}
+        {{ $grandparent := .GetPage "../.." }}
+        {{ range $i, $item := $grandparent.Pages }}
+          {{ if (eq $item.RelPermalink $parent.RelPermalink) }}
+            {{ $grandauntIndex := add $i 1}}
+            {{ if lt $grandauntIndex (len $grandparent.Pages) }}
+              {{ $grandaunt := index $grandparent.Pages $grandauntIndex }}
+              {{ $nextLink = $grandaunt.RelPermalink }}
+              {{ $nextTitle = $grandaunt.Title }}
+              {{ $nextArrow = "&#8599;" }} {{/* The northeast arrow */}}
+            {{ end }}
+          {{ end }}
+        {{ end }}
       {{ end }}
     {{ end }}
   {{ end }}
