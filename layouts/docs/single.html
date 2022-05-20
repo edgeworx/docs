@@ -39,28 +39,7 @@
   .Page:  {{ printf "%#v" .Page }}
 </pre>
 
-{{ if and .IsSection (not .Content) -}}
-  <!-- This is a section (_index.md), and there's no content: display the list view -->
-  <div class="row justify-content-center">
-    <div class="col-md-12 col-lg-10 col-xl-8">
-      <article>
-        <h1 class="text-center">{{ if eq .CurrentSection .FirstSection }}{{ .Section | humanize }}{{ else }}{{ .Title }}{{ end }}</h1>
-        <div class="text-center">{{ .Content }}</div>
-        <div class="card-list">
-          {{ range where .Site.RegularPages.ByTitle "Section" .Section }}
-            {{ if in (.RelPermalink | string) $currentSection.RelPermalink }}
-            <div class="card my-3">
-              <div class="card-body">
-                <a class="stretched-link" href="{{ .RelPermalink }}">{{ .Params.title | title }} &rarr;</a>
-              </div>
-            </div>
-            {{ end }}
-          {{ end }}
-        </div>
-      </article>
-    </div>
-  </div>
-{{ else }}
+
 
 
 
@@ -112,7 +91,22 @@
         {{ partial "sidebar/docs-toc.html" . }}
       </nav>
       {{ end -}}
-      {{ .Content }}
+      {{ if .Content }}
+        {{ .Content }}
+      {{ else if .IsSection }}
+        <article>
+          <div class="text-center">{{ .Content }}</div>
+          <div class="card-list">
+            {{ range .Pages }}
+            <div class="card my-3">
+              <div class="card-body">
+                <a class="stretched-link" href="{{ .RelPermalink }}">{{ .Params.title }} &rarr;</a>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        </article>
+      {{ end -}}
       <div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
         {{ if .Site.Params.lastMod -}}
         {{ partial "main/last-modified.html" . }}
@@ -131,7 +125,6 @@
       -->
     </main>
 </div>
-{{ end }}
 
 
 
