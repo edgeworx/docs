@@ -25,7 +25,7 @@ edgectl deploy app ./edgeworx-heart-rate.yaml
 
 You can use `edgectl` commands to view details of the app.
 
-```bash
+```shell
 $ edgectl get apps
 NAME                 DESCRIPTION  STATUS
 edgeworx-heart-rate               running

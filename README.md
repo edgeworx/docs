@@ -96,7 +96,7 @@ Doks is available as a child theme and a starter theme.
 - Intended for minor customizations
 - [Easily update npm packages](https://getdoks.org/docs/help/how-to-update/) — __including__ [Doks](https://www.npmjs.com/package/@hyas/doks)
 
-```bash
+```shell
 git clone https://github.com/h-enk/doks-child-theme.git my-doks-site && cd my-doks-site
 ```
 
@@ -106,7 +106,7 @@ git clone https://github.com/h-enk/doks-child-theme.git my-doks-site && cd my-do
 - Intended for major customizations
 - [Easily update npm packages](https://getdoks.org/docs/help/how-to-update/)
 
-```bash
+```shell
 git clone https://github.com/h-enk/doks.git my-doks-site && cd my-doks-site
 ```
 
@@ -119,13 +119,13 @@ Not sure which one is for you? Pick the child theme.
 
 ### 2. Install dependencies
 
-```bash
+```shell
 npm install
 ```
 
 ### 3. Start development server
 
-```bash
+```shell
 npm run start
 ```
 
