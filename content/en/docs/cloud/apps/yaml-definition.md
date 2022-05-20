@@ -1,5 +1,6 @@
 ---
 title : "App YAML Definition"
+weight: 70
 ---
 
 Darcy Cloud uses [Eclipse ioFog](https://www.iofog.org) under the covers to deploy and manage

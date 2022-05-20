@@ -1,5 +1,6 @@
 ---
 title: "Deploy a custom app"
+weight: 50
 ---
 
 ## Prerequisites

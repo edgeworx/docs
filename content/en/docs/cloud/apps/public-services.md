@@ -1,5 +1,6 @@
 ---
 title : "Public Services"
+weight: 80
 ---
 
 Public services allow your microservices to securely expose public endpoints without opening ports

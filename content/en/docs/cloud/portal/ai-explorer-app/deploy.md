@@ -1,5 +1,6 @@
 ---
 title: "Deploy App"
+weight: 90
 ---
 
 Deploying the Heart Rate Demo app from the Darcy Cloud platform is simple. Make sure

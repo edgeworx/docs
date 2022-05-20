@@ -1,6 +1,5 @@
 {{ $currentSection := .CurrentSection }}
 {{ $currentPage := . -}}
-{{ $parentSection := relref . ".." }}
 
 {{ $nextLink := "" }}
 {{ $nextTitle := "" }}
@@ -54,6 +53,10 @@
   {{ if .PrevInSection -}}
     {{ $prevLink = .PrevInSection.RelPermalink }}
     {{ $prevTitle = .PrevInSection.Title }}
+  {{ else }}
+    <!-- probably on the index page? -->
+  {{ $prevLink = "/" }}
+  {{ $prevTitle = "on index" }}
   {{ end -}}
 
   {{ with $prevLink }}

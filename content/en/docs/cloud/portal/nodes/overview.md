@@ -1,5 +1,6 @@
 ---
 title: "Overview"
+weight: 50
 ---
 
 We have previously defined the device edge as being the final point of contact for data from the

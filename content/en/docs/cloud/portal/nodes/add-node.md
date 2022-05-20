@@ -1,5 +1,6 @@
 ---
 title: "Add Node"
+weight: 60
 ---
 
 Once we have a compatible edge device set up, we can connect that device as a node to a Darcy Cloud

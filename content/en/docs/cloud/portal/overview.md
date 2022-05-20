@@ -1,5 +1,6 @@
 ---
 title: "Get Started: Cloud Portal"
+weight: 30
 ---
 
 ## Create your Darcy Cloud account

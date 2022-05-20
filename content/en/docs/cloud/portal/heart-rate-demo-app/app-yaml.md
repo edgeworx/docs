@@ -1,6 +1,7 @@
 ---
 title: "App YAML: Heart Rate Demo"
 toc: false
+weight: 90
 ---
 
 ```yaml
