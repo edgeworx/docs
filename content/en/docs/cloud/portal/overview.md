@@ -1,5 +1,5 @@
 ---
-title: "Get Started: Cloud Portal"
+title: "Overview"
 weight: 30
 ---
 
