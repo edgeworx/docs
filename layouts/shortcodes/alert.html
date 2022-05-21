@@ -2,9 +2,16 @@
 {{ if not $style }} {{ $style = "info" }} {{ end}}
 
 {{ $icon := "💡" }}
-{{ if eq $style "success" }} {{ $icon = "✅" }} {{end}}
-{{ if eq $style "warning" }} {{ $icon = "⚠️" }} {{end}}
-{{ if eq $style "danger" }} {{ $icon = "⛔" }} {{end}}
+{{ with .Get "icon" }}
+  {{ $icon = .}}
+{{ else }}
+  {{ if eq $style "success" }} {{ $icon = "✅" }} {{end}}
+  {{ if eq $style "warning" }} {{ $icon = "⚠️" }} {{end}}
+  {{ if eq $style "danger" }} {{ $icon = "⛔" }} {{end}}
+  {{ if eq $style "info" }} {{ $icon = "💡" }} {{end}}
+{{ end }}
+
+
 
 
 <div class="alert alert-{{$style}} d-flex" role="alert">
