@@ -12,7 +12,7 @@ Why are we doing this? What use cases does it support? What is the expected outc
 
 ## Checks
 
-- [ ] Read [Create a Pull Request](https://getdoks.org/docs/contributing/how-to-contribute/#create-a-pull-request)
+- [ ] Create a Pull Request (follow the [GitHub flow](https://guides.github.com/introduction/flow/)) and [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/))
 - [ ] Supports all screen sizes (if relevant)
 - [ ] Supports both light and dark mode (if relevant)
 - [ ] Passes `npm run test`
