@@ -45,11 +45,11 @@ If you find issues with the content, you can either:
 The site is generated using Hugo, based off the Doks theme. Start with
 the [Hugo docs](https://gohugo.io/getting-started/) and then the [Doks theme docs](https://getdoks.org/docs/overview/introduction/).
 
-Content is stored in the [`/content` dir](/content).
+Content is stored in [`/content`](/content).
 
 ### Templates
 
-The `/layouts` dir contains the templates for rendering. The most interesting parts are:
+The [`/layouts`](/layouts) dir contains the templates for rendering. The most interesting parts are:
 
 - `/layouts/_default`: the core template files
 - `/layouts/partials`: templates for partial (e.g. footer, header, sidebar etc)
