@@ -13,7 +13,6 @@ node.
 
 ![Add Node](/images/add-node.png)
 
-
 Click the `+ ADD NODE` button. This will bring up a modal dialog which shows the one line command
 that must be run on your host for it to become a node in your edge project.
 
@@ -32,13 +31,11 @@ speed, and other dependencies).
 
 ![Install Node](/images/node1-installed.png)
 
-
 {{<alert>}}
   If you would like to choose a specific name for your node, use the
   variable `DARCY_NODE_NAME="your-choice-of-name"` in the _node install script_
   as in the example below.
 {{</alert>}}
-
 
 ## View the Node in Your Darcy Cloud Project
 
