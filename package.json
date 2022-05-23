@@ -25,7 +25,7 @@
     "lint:styles": "stylelint \"assets/scss/**/*.{css,sass,scss,sss,less}\"",
     "lint:markdown": "markdownlint-cli2 \"*.md\" \"content/**/*.md\"",
     "lint:markdown-fix": "markdownlint-cli2-fix \"*.md\" \"content/**/*.md\"",
-    "lint:links": "exec-bin node_modules/.bin/blc --ordered --recursive http://localhost:1313",
+    "lint:links:prod": "exec-bin node_modules/.bin/blc --ordered --recursive https://docs4.darcy.ai",
     "server": "exec-bin node_modules/.bin/hugo/hugo server",
     "test": "npm run -s lint",
     "env": "env",
