@@ -1,6 +1,8 @@
 ---
 title : "Public Services"
 weight: 80
+aliases:
+  - /public-services-yo
 ---
 
 Public services allow your microservices to securely expose public endpoints without opening ports
