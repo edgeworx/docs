@@ -38,6 +38,6 @@ take a few minutes. The screen will refresh automatically when complete.
 ![Your Project is Being Created](</images/image (15).png>)
 
 Once your Edge project is created, you will see your project overview page and be able
-to [add your first node!](nodes/get-started-add-node.md).
+to [add your first node!](/docs/cloud/portal/nodes).
 
 ![Project Overview](/images/1done.png).

@@ -35,7 +35,7 @@ This is the first release of Darcy Cloud, which is the successor to Edgeworx Clo
   this based on user feedback from customers who are more familiar with the
   Kubernetes `kubectcl get X` style of CLI. For example, instead of `edgectl account get`,
   use `edgectl get account`. For more detail, see
-  edgectl **** [docs](get-started-edgectl/deploy-an-app.md)**.**
+  edgectl [docs](/docs/cloud/edgectl/deploy-an-app).
   * Note that if you are using `edgectl` in scripts or such, and you pull the latest version, you
     must update your scripts to use the new syntax.
 
@@ -51,9 +51,8 @@ incorporates internal security enhancements.
 
 #### Changes
 
-* `edgectl` can retrieve the the container logs for application microservices running on edge nodes.
-  For example: `edgectl logs myapp/myservice` . See `edgectl logs --help` for usage, or the
-  edgectl **** [docs](get-started-edgectl/deploy-an-app.md)**.**
+* `edgectl` can retrieve the container logs for application microservices running on edge nodes.
+  For example: `edgectl logs myapp/myservice` . See `edgectl logs --help` for usage.
 * Internal security enhancements.
 
 ### Edgeworx Cloud: Release 2022.01.20 (BETA)

@@ -25,7 +25,7 @@
     "lint:styles": "stylelint \"assets/scss/**/*.{css,sass,scss,sss,less}\"",
     "lint:markdown": "markdownlint-cli2 \"*.md\" \"content/**/*.md\"",
     "lint:markdown-fix": "markdownlint-cli2-fix \"*.md\" \"content/**/*.md\"",
-    "lint:links": "npm run build:preview && ./node_modules/.bin/linkinator -r ./public",
+    "lint:links": "./node_modules/.bin/linkinator -r --verbosity info http://localhost:1313",
     "server": "exec-bin node_modules/.bin/hugo/hugo server",
     "test": "npm run -s lint",
     "env": "env",

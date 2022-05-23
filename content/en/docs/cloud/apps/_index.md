@@ -19,14 +19,14 @@ connecting to an application below.
 
 Darcy nodes connect directly to your applications' microservices to send, retrieve, and parse data.
 Many microservices are hosted in Docker or similar containerized service. More information on
-connecting to your microservice can be found in the [Microservices](./#microservices) section.
+connecting to your microservice can be found in the [Microservices](./microservices) section.
 
 ### Integrations
 
 #### Endpoints and Ports
 
 Darcy connects to REST API Endpoints and TCP Ports. You can specify the port within the Application
-YAML. For more information, please refer to the [Public Services](public-services.md) section.
+YAML. For more information, please refer to the [Public Services](./public-services) section.
 
 #### Routing
 
@@ -42,13 +42,13 @@ routes:
 ```
 
 More information on routing can be found in
-the [Application YAML Definition](app-doc-yaml.md#fields) section.
+the [Application YAML Definition](./yaml-definition) section.
 
 ### Variables
 
 Variables can be defined on application inputs and outputs to be processed alongside Darcy nodes and
 adjacent applications. More information on declaring and using variables can be found in
-the [Application Templating](app-doc-advanced-templating.md) section.
+the [Application Templating](./templating) section.
 
 ## Creating and Managing Applications
 
@@ -56,7 +56,7 @@ the [Application Templating](app-doc-advanced-templating.md) section.
 
 Applications can be created within the Darcy platform by creating a YAML configuration file linking
 to your existing containerized application. The steps for creating and deploying a custom
-application in Darcy can be found [here](../get-started-ec/deploy-a-custom-application.md).
+application in Darcy can be found [here](../deploy-a-custom-app).
 
 ### Deploying a Demo Application
 

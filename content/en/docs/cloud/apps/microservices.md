@@ -6,7 +6,7 @@ weight: 60
 ## What are microservices?
 
 Microservices are a specialization of a service-oriented architecture (SOA), flexible, independently
-deployable software
+deployable software.
 
 Microservices are an architectural style that structures an application as a collection of loosely
 coupled services, which implement business capabilities. The microservice architecture enables the
@@ -31,7 +31,7 @@ Microservice:
 
 Your microservices can do anything a Docker container can do, from interacting with the physical
 hardware to hosting a web server. That means most off-the-shelf frameworks and libraries in your
-favorite language work too!
+favorite language work too.
 
 But because most Edge Compute Networks contain multiple, sometimes even hundreds or thousands, of
 nodes running in a distributed fashion, ioFog provides an SDK library you can use to ease the burden
@@ -58,4 +58,4 @@ different pieces of putting together a Docker container image. {{</alert>}}
 ## Connecting Microservices to Edge Application
 
 Once your microservice is deployed on your node, you're ready to connect it to your Application!
-Check out the [Public Services](public-services.md) section for configuration steps
+Check out the [Public Services](./public-services) section for configuration steps.
