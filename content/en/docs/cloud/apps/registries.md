@@ -47,14 +47,14 @@ shown [here](http://iofog.staging.edgeworx.io/docs/3/applications/microservice-r
 
 To see your current registry contents on your node(s), use the following command:
 
-```
+```shell
 edgectl registry list
 ```
 
 By default, this will return a JSON list where the first entry is the remote selection and the
 second entry is the local selection:
 
-```
+```json
 [
   {
     "id": 1,
@@ -94,7 +94,7 @@ second entry is the local selection:
 
 To create a new entry in the registry, use the following command:
 
-```
+```shell
 edgectl registry create
 ```
 
@@ -111,13 +111,13 @@ tutorial [here](https://cloud.google.com/container-registry/docs/advanced-authen
 Once a JSON key that has access to the desired containers is created, it can be added to the Darcy
 Cloud registry as shown below:
 
-```
+```shell
 edgectl registry create --url "gcr.io" --username "_json_key" --password "$(cat /path/to/json_key_file.json)"
 ```
 
 This will print out the information about the newly created entry in the registry:
 
-```
+```text
 ID  URL     USERNAME   EMAIL                                        PUBLIC
 3   gcr.io  _json_key  s3g9gxfxpixcelledgeproject1@api.edgeworx.io  False
 ```
@@ -131,7 +131,7 @@ To use the registry to deploy an example, just add the `registry` keyword with t
 the `images` section of the `microservice` definition in the YAML file of the application being
 deployed to a node.
 
-```
+```yaml
 kind: Application
 apiVersion: iofog.org/v3
 metadata:
