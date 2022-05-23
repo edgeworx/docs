@@ -11,13 +11,13 @@ project via the platform.
 Log into [Darcy Cloud](https://cloud.darcy.ai) and select the project to which you want to add the
 node.
 
-![](/images/add-node.png)
+![Add Node](/images/add-node.png)
 
 
 Click the `+ ADD NODE` button. This will bring up a modal dialog which shows the one line command
 that must be run on your host for it to become a node in your edge project.
 
-![](/images/darcy-install-script.png)
+![Register Node Script](/images/darcy-install-script.png)
 
 Click the `COPY` button to copy the install command to your clipboard.
 
@@ -30,12 +30,12 @@ The entire install
 process can take up to a few minutes (depending on the spec of your node, your internet connection
 speed, and other dependencies).
 
-![](/images/node1-installed.png)
+![Install Node](/images/node1-installed.png)
 
 
 {{<alert>}}
   If you would like to choose a specific name for your node, use the
-  variable `NODE_NAME="your-choice-of-name"` in the _node install script_
+  variable `DARCY_NODE_NAME="your-choice-of-name"` in the _node install script_
   as in the example below.
 {{</alert>}}
 
@@ -46,7 +46,6 @@ Switch back to your browser and if you have not done so yet, click the `DONE` bu
 should see your new node `ONLINE` in your Nodes list. If you do not see your node online, check our
 Troubleshooting page for more information.
 
-![](/images/1st-node-added.png)
-
+![Node Added](/images/1st-node-added.png)
 
 You now have an edge node, let's start using it!
