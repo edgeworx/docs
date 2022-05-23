@@ -119,3 +119,21 @@ The default alert style is `info`, but you can explicitly set a style (`success`
   the node installation script.
 {{</alert>}}
 ```
+
+### Links
+
+When referring to other content (markdown files), use the [Hugo ref shortcode](https://gohugo.io/content-management/cross-references/)
+instead of a traditional markdown link. For example, if you're in `/docs/cloud/a.md` and you want to refer
+to `/docs/cloud/b.md`, use this:
+
+```markdown
+I am talking about [the b thing]({{<ref "b.md">}}).
+```
+
+Yes, it's more long-winded than the traditional markdown (`[the b thing](b.md)`), but the shortcode
+mechanism causes Hugo to verify the link, and Hugo will fail if it cannot resolve the referenced document.
+This is a significant benefit.
+
+If you are linking outside the current dir:
+- If you're linking to a file below the current dir, typically use a relative path, e.g. `[the below thing]({{<ref "./c/d.md">}})`.
+- If you're linking to a file above the current dir, typically use absolute an absolute path, e.g. `[the above thing]({{<ref "/docs/cloud/e/f.md">}})`
