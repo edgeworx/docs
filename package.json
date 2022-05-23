@@ -25,7 +25,8 @@
     "lint:styles": "stylelint \"assets/scss/**/*.{css,sass,scss,sss,less}\"",
     "lint:markdown": "markdownlint-cli2 \"*.md\" \"content/**/*.md\"",
     "lint:markdown-fix": "markdownlint-cli2-fix \"*.md\" \"content/**/*.md\"",
-    "lint:links": "./node_modules/.bin/linkinator -r --verbosity info http://localhost:1313",
+    "lint:links": "./node_modules/.bin/linkinator -r --verbosity error http://localhost:1313/",
+    "lint:links2": "./node_modules/.bin/blc -ro  http://localhost:1313/index.html",
     "server": "exec-bin node_modules/.bin/hugo/hugo server",
     "test": "npm run -s lint",
     "env": "env",
@@ -66,6 +67,7 @@
     "hugo": "0.96.0"
   },
   "dependencies": {
+    "broken-link-checker": "^0.7.8",
     "linkinator": "^3.1.0"
   }
 }

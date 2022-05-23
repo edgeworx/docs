@@ -19,7 +19,7 @@ connecting to an application below.
 
 Darcy nodes connect directly to your applications' microservices to send, retrieve, and parse data.
 Many microservices are hosted in Docker or similar containerized service. More information on
-connecting to your microservice can be found in the [Microservices](./microservices) section.
+connecting to your microservice can be found in the [Microservices](microservices) section.
 
 ### Integrations
 

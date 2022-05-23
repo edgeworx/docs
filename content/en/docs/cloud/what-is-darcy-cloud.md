@@ -56,7 +56,7 @@ Terraform or kubernetes then you'll be immediately at home with Darcy Cloud.
   VPNs and SSH keys via the web UI or via `edgectl`
 * **Access Tokens**: create account wide or project based access tokens to allow fine grained access
   via edgectl or other tooling to your projects and applications
-* **Templating language**: use liquid.js syntax in your [Application](/docs/cloud/apps) definitions
+* **Templating language**: use liquid.js syntax in your [Application](/docs/cloud/apps/) definitions
   to support powerful [application templating](/docs/cloud/apps/templating) at
   deployment time
 * **Application orchestration**: deploy applications to one or many nodes via the UI, cli or API
