@@ -8,15 +8,15 @@ applications to these nodes to put them to work.
 
 If we list nodes in our default organization and project, we will notice that we have no nodes:
 
-```
+```shell
 edgectl get nodes
 ```
 
 In order to deploy nodes, we must get the node install script. You can use this command to get a
 shell snippet that you can execute on the node:
 
-```
-$ edgectl get node-install-script -t
+```shell
+$ edgectl get node-register-script -t
 curl -s https://ecj_vfsw9wess5kheafxaeaeh2kskkv301e9f0ip@api.darcy.ai/v1/project/b75676cb-ae3f-4808-a992-0811e077d783/node-install-script | sudo bash
 ```
 
@@ -26,7 +26,7 @@ respective project's node pool.
 
 If you wish view the raw contents of the node install script:
 
-```
+```shell
 edgectl project node-install-script --show-script --text
 ```
 
@@ -36,14 +36,14 @@ This is helpful if you wish to review or debug the installation procedure.
 
 First, get the node-install-script shell snippet, and copy it to the clipboard:
 
-```
+```shell
 $ edgectl get node-install-script -t
 curl -s https://ecj_vfsw9wess5kheafxaeaeh2kskkv301e9f0ip@api.darcy.ai/v1/project/b75676cb-ae3f-4808-a992-0811e077d783/node-install-script | sudo bash
 ```
 
 Then `SSH` into your node (in this case, a Raspberry Pi):
 
-```
+```shell
 $ ssh pi@raspberrypi.local
 pi@raspberrypi.local's password: ********
 Linux raspberrypi 5.10.94-v8+ #1518 SMP PREEMPT Thu Jan 27 14:55:19 GMT 2022 aarch64
@@ -55,7 +55,7 @@ pi@raspberrypi:~ $
 Then paste the node install script shell snippet at the Pi terminal. This installs the necessary
 Darcy Cloud components, and connects your node to Darcy Cloud.
 
-```
+```shell
 pi@raspberrypi:~ $ curl -s https://ecj_vfsw9wess5kheafxaeaeh2kskkv301e9f0ip@api.darcy.ai/v1/project/b75676cb-ae3f-4808-a992-0811e077d783/node-install-script | sudo bash
 Installing Edgeworx Agent
 １ Initializing

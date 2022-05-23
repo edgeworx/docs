@@ -72,11 +72,11 @@ edgectl login --token xyz
 Let's get familiar with _edgectl_. We can observe the main use cases by running the top-level help
 command:
 
-```
+```shell
 edgectl --help
 ```
 
-This produces help out similar to:
+This produces help output similar to:
 
 ```text
 Available Commands:

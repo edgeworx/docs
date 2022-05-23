@@ -72,7 +72,7 @@ To add a _node_ to a _project_, execute the project's _node install script_ dire
 You add a _node_ to a _project_ by executing the project's _node install script_ directly on the
 _node_.
 
-```
+```shell
 $ ssh alice@mypi
 # You are logged into mypi
 
