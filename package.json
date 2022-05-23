@@ -25,6 +25,7 @@
     "lint:styles": "stylelint \"assets/scss/**/*.{css,sass,scss,sss,less}\"",
     "lint:markdown": "markdownlint-cli2 \"*.md\" \"content/**/*.md\"",
     "lint:markdown-fix": "markdownlint-cli2-fix \"*.md\" \"content/**/*.md\"",
+    "lint:links": "exec-bin node_modules/.bin/blc --ordered --recursive http://localhost:1313",
     "server": "exec-bin node_modules/.bin/hugo/hugo server",
     "test": "npm run -s lint",
     "env": "env",
@@ -63,5 +64,8 @@
   },
   "otherDependencies": {
     "hugo": "0.96.0"
+  },
+  "dependencies": {
+    "broken-link-checker": "^0.7.8"
   }
 }
