@@ -40,12 +40,12 @@ If you find issues with the content, you can:
 - Ask a question or open a discussion in [GitHub Discussions](https://github.com/darcyai/docs/discussions)
 - Open a [GitHub issue](https://github.com/darcyai/docs/issues/new/choose)
 - Submit a [Pull Request](https://github.com/darcyai/docs/pulls). If submitting a PR:
-  - [ ] Verify that your changes build locally. Passes:
+  - Verify that your changes build locally. Passes:
     - `npm run test`
     - `npm run build:preview` followed by `npm run lint`
-  - [ ] Create a Pull Request (follow the [GitHub flow](https://guides.github.com/introduction/flow/)) and [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/))
-  - [ ] Supports all screen sizes (if relevant)
-  - [ ] Supports both light and dark mode (if relevant)
+  - Create a [Pull Request](https://github.com/darcyai/docs/pulls) (follow the [GitHub flow](https://guides.github.com/introduction/flow/)) and [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/))
+  - Supports all screen sizes (if relevant)
+  - Supports both light and dark mode (if relevant)
 
 ## Development
 
