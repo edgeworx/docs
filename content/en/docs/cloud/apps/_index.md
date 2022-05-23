@@ -69,4 +69,3 @@ app can be found [here](../get-started-ec/heart-rate-application/get-started-dep
 Applications can be managed through
 the [portal](../get-started-ec/heart-rate-application/get-started-deploy-app.md#deploy-a-custom-app-using-the-portal)
 or using [edgectl](../get-started-edgectl/#deploy-an-application).
-

@@ -13,13 +13,13 @@ your token before encoding.
 
 * Inside a URL:
 
-```
+```text
 https://<access_token>@api.darcy.io/v1/...
 ```
 
 * As an HTTP header (base64 encoded)
 
-```
+```text
 window.fetch(
     "https://api.darcy.io/v1/account/cypress%40edgeworx.io",
     { headers:
@@ -30,7 +30,7 @@ window.fetch(
 
 * As a login option in edgectl or for a specific command
 
-```
+```shell
 edgectl login --token <access_token>
 edgectl --token <access_token> account get <your_email>
 ```
