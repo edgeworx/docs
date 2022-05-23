@@ -94,11 +94,14 @@ files should have a weight greater than the weight of `_index.md`.
 
 ### Images & other assets
 
-To reference an image from markdown, add the image to the `/static/images` dir. For example,
-add `/static/images/my-image.png`. Then reference the image in markdown using `![My Image](/images/my-image.png)`.
+To reference an image from markdown, add the image to the [`/static/images`](/static/images) dir. For example,
+add `/static/images/my-image.png`, then reference the image in markdown using `![My Image](/images/my-image.png)`.
 
 You can do the same for other files, e.g. add `/static/pdfs/my.pdf` and reference in markdown
 with `![My PDF](/pdfs/my.pdf)`.
+
+> NOTE: Use descriptive file names for uploaded images. *DO NOT* upload a file
+> named `screen-shot-2021-10-08-at-5.59.22-pm.png`; instead upload `portal-projects-overview.png`.
 
 ### Alerts
 
