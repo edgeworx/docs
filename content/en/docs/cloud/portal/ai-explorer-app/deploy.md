@@ -4,7 +4,7 @@ weight: 90
 ---
 
 Deploying the Heart Rate Demo app from the Darcy Cloud platform is simple. Make sure
-you have [added at least 1 node](../nodes/get-started-add-node.md) to your Darcy Cloud project, then
+you have [added at least 1 node]({{<ref "../nodes/add-node.md">}}) to your Darcy Cloud project, then
 follow the steps below:
 
 1. Go to your Darcy Cloud project page
