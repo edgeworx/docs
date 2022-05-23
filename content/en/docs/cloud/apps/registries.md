@@ -32,7 +32,7 @@ Darcy Cloud registries are a clean, convenient way to give Darcy Cloud applicati
 private Docker images or other containers that are being deployed to the Darcy Cloud.
 
 Before adding a microservice with private container images (or with images not on Dockerhub) to a
-node in the [Darcy Cloud](https://www.darcy.ai) it is necessary to register a key with permissions
+node in [Darcy Cloud]({{<ref "/docs/cloud">}}) it is necessary to register a key with permissions
 to access the microservice container images to a projects Darcy Cloud registry so that the
 microservice will be able to pull the container images upon being deployed.
 
@@ -41,7 +41,7 @@ the `remote` registry selection is just an alias for the value `1`), and the sec
 a `local` registry (the `local` registry selection is just an alias for the value `2`). Additional
 entries to the registry can be created directly in ioFog as
 shown [here](http://iofog.staging.edgeworx.io/docs/3/applications/microservice-registry-catalog.html)
-, or they can be managed and created more simply using [edgectl](../get-started-edgectl/) directly.
+, or they can be managed and created more simply using [edgectl]({{<ref "/docs/cloud/edgectl/">}}) directly.
 
 ## View Current Registry Content
 
@@ -144,8 +144,8 @@ spec:
 {% assign agent = \"\" | findAgent | first %}
 {% endraw %}{{ agent.name }}"
       images:
-        arm: "gcr.io/focal-freedom/my-private-image:latest"
-        x86: "gcr.io/focal-freedom/my-private-image:latest"
+        arm: "gcr.io/my-org/my-private-image:latest"
+        x86: "gcr.io/my-org/my-private-image:latest"
         registry: 3 # Use the private registry ID here
       container:
         rootHostAccess: false
