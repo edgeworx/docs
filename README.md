@@ -62,6 +62,36 @@ supports both normal and "dark" mode, so be sure to also update `/assets/scss/co
 
 ## Content
 
+### Markdown
+
+Content is generated from markdown files stored under [`/content`](/content).
+
+Markdown files must have [front matter](https://gohugo.io/content-management/front-matter/), which
+is basically metadata. For example:
+
+```markdown
+
+---
+title : "About Darcy Cloud"
+weight: 100
+---
+
+CONTENT GOES HERE
+```
+
+Every content directory must have an `_index.md` file (which is basically the equivalent
+of an `index.html`).
+
+### Ordering (weight)
+
+The order in which pages appear is determined by the `weight` value in the page's front matter.
+For a sub-directory, its order amongst its siblings is determined by the `weight` value in
+the front matter of the `_index.md` in the sub-directory.
+
+Within a directory, the `_index.md` file should have the smallest weight. The other markdown
+files should have a weight greater than the weight of `_index.md`.
+
+
 ### Images & other assets
 
 To reference an image from markdown, add the image to the `/static/images` dir. For example,
