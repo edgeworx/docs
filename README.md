@@ -7,7 +7,7 @@ Here you can contribute to the Darcy Docs Site, which lives at [docs.darcy.ai](h
 The docs site is generated from markdown files stored in `/content` by the [Hugo](https://gohugo.io)
 site generator. The Hugo theme is a fork of [Doks](https://getdoks.org).
 
-When changes are merged to the `master` branch, a CI pipeline kicks off, which publishes the
+When changes are merged to the `master` branch, a CI [pipeline](https://github.com/darcyai/docs/actions) kicks off, which publishes the
 content to [Netlify](https://www.netlify.com).
 
 
@@ -35,10 +35,17 @@ content to [Netlify](https://www.netlify.com).
 
 ## Contributing
 
-If you find issues with the content, you can either:
+If you find issues with the content, you can:
 
-- Submit a Pull Request, or
+- Ask a question or open a discussion in [GitHub Discussions](https://github.com/darcyai/docs/discussions)
 - Open a [GitHub issue](https://github.com/darcyai/docs/issues/new/choose)
+- Submit a [Pull Request](https://github.com/darcyai/docs/pulls). If submitting a PR:
+  - [ ] Verify that your changes build locally. Passes:
+    - `npm run test`
+    - `npm run build:preview` followed by `npm run lint`
+  - [ ] Create a Pull Request (follow the [GitHub flow](https://guides.github.com/introduction/flow/)) and [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/))
+  - [ ] Supports all screen sizes (if relevant)
+  - [ ] Supports both light and dark mode (if relevant)
 
 ## Development
 
