@@ -3,7 +3,7 @@ title: "What is Darcy Cloud?"
 weight: 10
 ---
 
-Darcy Cloud is a platform built on the principle of Infrastructure as Code (IaC) that allows you to
+Darcy Cloud xxxis a platform built on the principle of Infrastructure as Code (IaC) that allows you to
 manage edge infrastructure and applications. Developers can deploy, orchestrate and operate
 containerized microservice applications from the cloud to remote heterogeneous on-premise servers
 and edge devices.
