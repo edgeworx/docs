@@ -1,3 +1,75 @@
+
+.darcyai {
+  &.login-link {
+    color: $edgeneutral-5;
+    text-transform: uppercase;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 0px;
+  }
+
+  &.home-link {
+    color: $edgeneutral-5;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+
+  &.dev-link {
+    text-align: center;
+    letter-spacing: 0px;
+    font-weight: 600;
+    color: $edgeneutral-5;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .darcyai {
+    &.login-link {
+      color: $primary;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+
+    &.menu-container {
+      display: grid;
+      grid-auto-flow: column;
+      gap: 48px;
+    }
+
+    &.home-link {
+      color: $primary;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+
+    &.dev-link {
+      text-align: center;
+      color: #ffffff;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.offcanvas-header {
+  background: $edgeneutral-5 0% 0% no-repeat padding-box;
+  height: 89px;
+}
+
 .banner .nav li {
   @extend .nav-item;
 }
@@ -28,8 +100,8 @@
 
 .navbar {
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.95);
-  border-bottom: 1px solid $gray-200;
+  background: $edgeneutral-5 0% 0% no-repeat padding-box;
+  height: 89px;
 
   /*
   margin-top: 4px;
@@ -97,7 +169,8 @@ button#doks-versions {
 }
 
 .offcanvas .nav-link {
-  color: $body-color;
+  color: $edgeneutral-2;
+  text-transform: uppercase;
 }
 
 .doks-subnavbar {

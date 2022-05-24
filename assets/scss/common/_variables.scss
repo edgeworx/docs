@@ -24,7 +24,20 @@ $blue-300: #8ed6fb;
 $pink-100: #fcfaff;
 $pink-500: #d32e9d;
 
-$primary: $purple;
+// Darcy colors
+
+$edgeneutral-0: #ffffff;
+$edgeneutral-1: #E3E8F1;
+$edgeneutral-2: #A9B2BC;
+$edgeneutral-3: #0A415E;
+$edgeneutral-4: #012D44;
+$edgeneutral-5: #002131;
+$darcy-blue: #5AC8FA;
+$darcy-red: #FD575D;
+$darcy-green: #1BC0A9;
+$darcy-gold: #EDAC40;
+
+$primary: $darcy-blue;
 
 $color-btn-bg: $pink-500;
 $color-btn-border: darken($pink-500, 5%);
@@ -64,7 +77,7 @@ $navbar-light-toggler-icon-bg: none;
 // Settings for the `<body>` element.
 
 $body-bg:                   $white;
-$body-color:                $black;
+$body-color:                $edgeneutral-5;
 
 // Links
 //
@@ -106,7 +119,7 @@ $border-color:                $gray-200;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      "Jost", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-sans-serif:      "Gilroy", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-monospace:       sfmono-regular, menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base:            $font-family-sans-serif;
 // stylelint-enable value-keyword-case
@@ -188,3 +201,6 @@ $dropdown-config: (
 );
 
 $input-btn-focus-width:       0;
+
+$btn-close-color: #ffffff;
+$btn-close-opacity: 1;
