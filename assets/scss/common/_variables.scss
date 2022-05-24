@@ -26,16 +26,16 @@ $pink-500: #d32e9d;
 
 // Darcy colors
 
-$edgeneutral-0: #ffffff;
-$edgeneutral-1: #E3E8F1;
-$edgeneutral-2: #A9B2BC;
-$edgeneutral-3: #0A415E;
-$edgeneutral-4: #012D44;
+$edgeneutral-0: #fff;
+$edgeneutral-1: #e3e8f1;
+$edgeneutral-2: #a9b2bC;
+$edgeneutral-3: #0a415e;
+$edgeneutral-4: #012d44;
 $edgeneutral-5: #002131;
-$darcy-blue: #5AC8FA;
-$darcy-red: #FD575D;
-$darcy-green: #1BC0A9;
-$darcy-gold: #EDAC40;
+$darcy-blue: #5ac8fa;
+$darcy-red: #fd575d;
+$darcy-green: #1bc0a9;
+$darcy-gold: #edac40;
 
 $primary: $darcy-blue;
 
@@ -200,7 +200,8 @@ $dropdown-config: (
   highlight-type: underline
 );
 
+
 $input-btn-focus-width:       0;
 
-$btn-close-color: #ffffff;
+$btn-close-color: #fff;
 $btn-close-opacity: 1;

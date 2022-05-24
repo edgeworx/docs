@@ -1,31 +1,31 @@
-
 .darcyai {
   &.login-link {
     color: $edgeneutral-5;
     text-transform: uppercase;
-    letter-spacing: var(--unnamed-character-spacing-0);
     text-align: left;
     font-weight: 600;
-    letter-spacing: 0px;
+    letter-spacing: 0;
   }
 
   &.home-link {
     color: $edgeneutral-5;
     text-align: center;
     font-weight: 600;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     text-transform: uppercase;
+
     &:hover {
-      color: #ffffff;
+      color: #fff;
     }
   }
 
   &.dev-link {
     text-align: center;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     font-weight: 600;
     color: $edgeneutral-5;
     text-transform: uppercase;
+
     &:hover {
       text-decoration: underline;
     }
@@ -36,8 +36,9 @@
   .darcyai {
     &.login-link {
       color: $primary;
+
       &:hover {
-        color: #ffffff;
+        color: #fff;
       }
     }
 
@@ -49,15 +50,17 @@
 
     &.home-link {
       color: $primary;
+
       &:hover {
-        color: #ffffff;
+        color: #fff;
       }
     }
 
     &.dev-link {
       text-align: center;
-      color: #ffffff;
+      color: #fff;
       text-decoration: underline;
+      
       &:hover {
         text-decoration: underline;
       }
