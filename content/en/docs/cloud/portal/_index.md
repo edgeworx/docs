@@ -4,7 +4,7 @@ toc: true
 weight: 20
 ---
 
-## Create your Darcy Cloud account
+## Create your Darcy Cloud account2
 
 Navigate to [Darcy Cloud](https://cloud.darcy.ai/welcome) using your browser (Chrome, Firefox,
 and Safari preferred- other browsers are not thoroughly maintained) and click the `Create Account`
