@@ -5,3 +5,4 @@ resources
 .hugo_build.lock
 *.iml
 .DS_Store
+/scratch/
