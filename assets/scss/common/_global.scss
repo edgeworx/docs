@@ -1,3 +1,42 @@
+// Darcy AI
+h1 {
+  font-size: 3.1rem;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+h2 {
+  line-height: 1.5;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+h3 {
+  line-height: 30px;
+  font-size: 1.4375em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  background-color: transparent;
+  color: $primary;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .contributors .content,
 .blog .content,
 .page .content,

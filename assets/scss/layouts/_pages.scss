@@ -19,6 +19,14 @@ h4:hover a {
   text-decoration: none;
 }
 
+a.no-style {
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .card-list {
   margin-top: 2.25rem;
 }
