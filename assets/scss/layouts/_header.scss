@@ -1,18 +1,15 @@
 .darcyai {
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: left;
+
   &.login-link {
     color: $edgeneutral-5;
-    text-transform: uppercase;
-    text-align: left;
-    font-weight: 600;
-    letter-spacing: 0;
   }
 
   &.home-link {
     color: $edgeneutral-5;
-    text-align: center;
-    font-weight: 600;
-    letter-spacing: 0;
-    text-transform: uppercase;
 
     &:hover {
       color: #fff;
@@ -20,11 +17,7 @@
   }
 
   &.dev-link {
-    text-align: center;
-    letter-spacing: 0;
-    font-weight: 600;
     color: $edgeneutral-5;
-    text-transform: uppercase;
 
     &:hover {
       text-decoration: underline;
@@ -34,8 +27,10 @@
 
 @include media-breakpoint-up(md) {
   .darcyai {
+    font-size: 1rem;
+
     &.login-link {
-      color: $primary;
+      color: $primary-dark;
 
       &:hover {
         color: #fff;
@@ -45,11 +40,11 @@
     &.menu-container {
       display: grid;
       grid-auto-flow: column;
-      gap: 48px;
+      gap: 32px;
     }
 
     &.home-link {
-      color: $primary;
+      color: $primary-dark;
 
       &:hover {
         color: #fff;
@@ -57,7 +52,6 @@
     }
 
     &.dev-link {
-      text-align: center;
       color: #fff;
       text-decoration: underline;
 
@@ -70,7 +64,7 @@
 
 .offcanvas-header {
   background: $edgeneutral-5 0% 0% no-repeat padding-box;
-  height: 89px;
+  height: 64px;
 }
 
 .banner .nav li {
@@ -87,6 +81,10 @@
 
 .navbar-brand {
   font-weight: $headings-font-weight;
+
+  & img {
+    width: 100px;
+  }
 }
 
 /*
@@ -104,7 +102,7 @@
 .navbar {
   z-index: 1000;
   background: $edgeneutral-5 0% 0% no-repeat padding-box;
-  height: 89px;
+  height: 64px;
 
   /*
   margin-top: 4px;

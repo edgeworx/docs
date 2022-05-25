@@ -1,39 +1,44 @@
 <!-- Auto collapsible section menu -->
-<ul class="list-unstyled collapsible-sidebar">
+<ul class="mt-4 darcy-list btn-toggle-nav list-unstyled collapsible-sidebar darcy-list">
   {{ $currentPage := . -}}
   {{ $section := $currentPage.Section -}}
 
   {{ range (where .Site.Sections "Section" "in" $section) }}
     {{ range .Sections.ByWeight }}
       {{ $active := in $currentPage.RelPermalink .RelPermalink }}
-      <li class="mb-1">
-        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#section-{{ md5 .Title }}" aria-expanded="{{ if $active }}true{{ else }}false{{ end }}"></button><a href="{{ .RelPermalink }}" class="branch-link">{{ .Title }}</a>
+      {{ $current := eq $currentPage.RelPermalink .RelPermalink }}
+      <li class="darcy-list-item">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#section-{{ md5 .Title }}" aria-expanded="{{ if $active }}true{{ else }}false{{ end }}"></button><a href="{{ .RelPermalink }}" class="branch-link{{ if $active }} active{{ end }}{{ if $current }} current{{ end }} no-style">{{ .Title }}</a>
         <div class="collapse{{ if $active }} show{{ end }}" id="section-{{ md5 .Title }}">
-          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <ul class="btn-toggle-nav list-unstyled fw-normal small darcy-list">
             {{ range .Pages }}
               {{ if .IsNode }}
                 {{ $active := in $currentPage.RelPermalink .RelPermalink }}
-                <li class="my-1 ms-3">
-                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#section-{{ md5 .Title }}" aria-expanded="{{ if $active }}true{{ else }}false{{ end }}"></button><a href="{{ .RelPermalink }}" class="branch-link">{{ .Title }}</a>
+                {{ $current := eq $currentPage.RelPermalink .RelPermalink }}
+                <li class="darcy-list-item nested">
+                  <button class="btn btn-toggle nested align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#section-{{ md5 .Title }}" aria-expanded="{{ if $active }}true{{ else }}false{{ end }}"></button><a href="{{ .RelPermalink }}" class="branch-link{{ if $active }} active{{ end }}{{ if $current }} current{{ end }} no-style">{{ .Title }}</a>
                   <div class="collapse{{ if $active }} show{{ end }}" id="section-{{ md5 .Title }}">
-                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal small darcy-list">
                       {{ range .Pages }}
                         {{ if .IsNode }}
                           {{ $active := in $currentPage.RelPermalink .RelPermalink }}
-                          <li class="my-1 ms-3">
-                            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#section-{{ md5 .Title }}" aria-expanded="{{ if $active }}true{{ else }}false{{ end }}"></button><a href="{{ .RelPermalink }}" class="branch-link">{{ .Title }}</a>
+                          {{ $current := eq $currentPage.RelPermalink .RelPermalink }}
+                          <li class="darcy-list-item nested">
+                            <button class="btn btn-toggle nested align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#section-{{ md5 .Title }}" aria-expanded="{{ if $active }}true{{ else }}false{{ end }}"></button><a href="{{ .RelPermalink }}" class="branch-link{{ if $active }} active{{ end }}{{ if $current }} current{{ end }} no-style">{{ .Title }}</a>
                             <div class="collapse{{ if $active }} show{{ end }}" id="section-{{ md5 .Title }}">
-                              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                              <ul class="btn-toggle-nav list-unstyled fw-normal small darcy-list">
                                 {{ range .Pages }}
                                   {{ $active := in $currentPage.RelPermalink .RelPermalink }}
-                                  <li><a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
+                                  {{ $current := eq $currentPage.RelPermalink .RelPermalink }}
+                                  <li class="darcy-list-item nested"><a class="docs-link rounded{{ if $active }} active{{ end }}{{ if $current }} current{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
                                 {{ end }}
                               </ul>
                             </div>
                           </li>
                         {{ else }}
                           {{ $active := in $currentPage.RelPermalink .RelPermalink }}
-                          <li><a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
+                          {{ $current := eq $currentPage.RelPermalink .RelPermalink }}
+                          <li class="darcy-list-item nested"><a class="docs-link rounded{{ if $active }} active{{ end }}{{ if $current }} current{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
                         {{ end }}
                       {{ end }}
                     </ul>
@@ -41,7 +46,8 @@
                 </li>
               {{ else }}
                 {{ $active := in $currentPage.RelPermalink .RelPermalink }}
-                <li><a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
+                {{ $current := eq $currentPage.RelPermalink .RelPermalink }}
+                <li class="darcy-list-item"><a class="docs-link rounded{{ if $active }} active{{ end }}{{ if $current }} current{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
               {{ end }}
             {{ end }}
           </ul>
