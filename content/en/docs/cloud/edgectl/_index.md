@@ -1,6 +1,8 @@
 ---
 title : "Get Started: edgectl"
 weight: 30
+aliases:
+  - /darcy/darcy-cloud/get-started-edgectl
 ---
 
 _edgectl_ is Darcy Cloud's command line interface (CLI). It can be used to manage Darcy Cloud

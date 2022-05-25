@@ -1,7 +1,8 @@
 ---
 title: "Get started with Darcy AI SDK"
 weight: 20
-alias: "/docs/ai/getting-started-with-darcy-ai-sdk"
+aliases:
+  - /darcy/darcy-ai/getting-started-with-darcy-ai-sdk
 ---
 
 

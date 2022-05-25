@@ -1,6 +1,8 @@
 ---
 title: "Key Concepts"
 weight: 11
+aliases:
+  - /darcy/darcy-cloud/key-concepts
 ---
 
 ### Darcy Cloud

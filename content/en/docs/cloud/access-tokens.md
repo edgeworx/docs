@@ -1,6 +1,8 @@
 ---
 title: "Access Tokens"
 weight: 50
+aliases:
+  - /darcy/darcy-cloud/access-tokens
 ---
 Darcy Cloud supports basic HTTP authentication through access tokens.
 

@@ -2,6 +2,8 @@
 title : "Get Started: Cloud Portal"
 toc: true
 weight: 20
+aliases:
+  - /darcy/darcy-cloud/get-started-ec
 ---
 
 ## Create your Darcy Cloud account

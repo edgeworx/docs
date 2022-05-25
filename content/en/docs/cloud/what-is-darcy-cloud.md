@@ -1,6 +1,8 @@
 ---
 title: "What is Darcy Cloud?"
 weight: 10
+aliases:
+  - /darcy/darcy-cloud/what-is-darcy-cloud
 ---
 
 Darcy Cloud is a platform built on the principle of Infrastructure as Code (IaC) that allows you to
