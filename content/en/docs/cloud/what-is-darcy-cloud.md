@@ -16,8 +16,7 @@ different geographies, across diverse networks and behind multiple firewalls.
 
 Your application can be just a single microservice or can be a sophisticated multi-tier application,
 consisting of distributed microservices that are securely communicating across a fluid, logical
-overlay [virtual application network](https://netprototalk.com/2019/11/12/virtual-application-networks-for-hybrid-cloud-interconnect/) (
-VAN).
+overlay [virtual application network](https://netprototalk.com/2019/11/12/virtual-application-networks-for-hybrid-cloud-interconnect/) (VAN).
 
 ### Core Goals
 
