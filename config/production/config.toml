@@ -1,5 +1,4 @@
-# FIXME: change this to docs.darcy.ai before launch
-baseurl = "https://docs4.darcy.ai/"
+baseurl = "https://docs.darcy.ai/"
 
 [params]
   googleAnalytics = "UA-126987794-12"
