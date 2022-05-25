@@ -1,2 +1,6 @@
 # FIXME: change this to docs.darcy.ai before launch
 baseurl = "https://docs4.darcy.ai/"
+
+[params]
+  googleAnalytics = "UA-126987794-12"
+  segmentAnalytics = "1Ov0ZtkFrwvUYaLM5AqlpEJahF2rwuHB"
