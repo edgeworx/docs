@@ -1,6 +1,8 @@
 ---
 title : "Darcy AI Explorer App"
 weight: 70
+aliases:
+  - /darcy/darcy-cloud/get-started-ec/darcy-ai-explorer-application
 ---
 
 Apps are groups of microservices bundled to work together. They are defined using YAML files and can

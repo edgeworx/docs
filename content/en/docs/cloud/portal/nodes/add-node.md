@@ -1,6 +1,8 @@
 ---
 title: "Add Node"
 weight: 60
+aliases:
+  - /darcy/darcy-cloud/get-started-ec/nodes/get-started-add-node
 ---
 
 Once we have a compatible edge device set up, we can connect that device as a node to a Darcy Cloud

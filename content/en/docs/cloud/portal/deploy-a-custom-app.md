@@ -1,6 +1,8 @@
 ---
 title: "Deploy a custom app"
 weight: 50
+aliases:
+  - /darcy-cloud/get-started-ec/deploy-a-custom-application
 ---
 
 ## Prerequisites

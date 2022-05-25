@@ -1,6 +1,8 @@
 ---
 title: "Release Notes"
 weight: 70
+aliases:
+  - /darcy-cloud/release-notes
 ---
 
 ### Darcy Cloud: Release 2022.03.30 (BETA)

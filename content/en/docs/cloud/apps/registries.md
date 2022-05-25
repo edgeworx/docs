@@ -1,6 +1,8 @@
 ---
 title : "Registries"
 weight: 90
+aliases:
+  - /darcy/darcy-cloud/applications-doc/registries
 ---
 
 When configuring an Darcy Cloud application YAML file, it is necessary to specify the registry of

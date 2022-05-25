@@ -1,6 +1,8 @@
 ---
 title : "Nodes"
 weight: 40
+aliases:
+  - /darcy/darcy-cloud/get-started-ec/nodes
 ---
 
 We have previously defined the device edge as being the final point of contact for data from the

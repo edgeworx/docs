@@ -1,6 +1,8 @@
 ---
 title : "Microservices"
 weight: 60
+aliases:
+  - /darcy/darcy-cloud/applications-doc/microservice
 ---
 
 ## What are microservices?

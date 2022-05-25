@@ -2,6 +2,8 @@
 title: "Deploy an App"
 weight: 60
 toc: false
+aliases:
+  - /darcy/darcy-cloud/get-started-edgectl/deploy-an-app
 ---
 
 Once we have an edge node in our project, we can deploy applications to run on those nodes.

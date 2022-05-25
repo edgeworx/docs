@@ -1,6 +1,8 @@
 ---
 title: "Add an Edge Node"
 weight: 50
+aliases:
+  - /darcy/darcy-cloud/get-started-edgectl/add-an-edge-node
 ---
 
 In Darcy Cloud, nodes are edge devices that run Edgeworx Agents. Ultimately, we want to deploy

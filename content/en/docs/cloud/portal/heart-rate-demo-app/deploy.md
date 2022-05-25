@@ -1,6 +1,8 @@
 ---
 title: "Deploy App"
 weight: 80
+aliases:
+  - /darcy/darcy-cloud/get-started-ec/heart-rate-application/get-started-deploy-app
 ---
 
 Deploying the Heart Rate Application from the Darcy Cloud platform is extremely simple. Make sure
