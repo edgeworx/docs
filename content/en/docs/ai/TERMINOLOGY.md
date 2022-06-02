@@ -1,5 +1,5 @@
 ---
-title: "Darcy AI platform terminology guide 2"
+title: "Darcy AI platform terminology guide"
 weight: 1000
 ---
 Before you begin building with the Darcy AI SDK or testing its functionality, you need to understand the terminology and basic architecture. This document will give you an understanding quickly.

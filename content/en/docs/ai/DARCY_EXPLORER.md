@@ -1,6 +1,7 @@
 ---
 title: "Building your Darcy AI application"
 weight: 130
+link_title: "Build"
 ---
 # Darcy AI Explorer Guide
 
