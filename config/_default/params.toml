@@ -23,9 +23,9 @@ twitterCreator = "@edgeworxio"
 # schemaType = "Person"
 schemaType = "Organization"
 schemaName = "Darcy AI"
-schemaAuthor = "Henk Verlinde"
+schemaAuthor = "Edgeworx, Inc."
 schemaAuthorTwitter = "https://twitter.com/edgeworxio"
-schemaAuthorLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
+schemaAuthorLinkedIn = "https://www.linkedin.com/company/edgeworx-inc"
 schemaAuthorGitHub = "https://github.com/darcyai"
 schemaLocale = "en-US"
 schemaLogo = "logo-doks.png"
@@ -37,7 +37,7 @@ schemaImageHeight = 640
 schemaTwitter = "https://twitter.com/edgeworxio"
 schemaLinkedIn = ""
 schemaGitHub = "https://github.com/darcyai/docs"
-schemaSection = "blog"
+#schemaSection = "blog"
 
 ## Sitelinks Search Box
 siteLinksSearchBox = false
@@ -63,7 +63,7 @@ copyRight = "Copyright (c) 2022 Edgeworx Inc."
 alert = false
 alertDismissable = true
 # alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\" target=\"_blank\" rel=\"noopener\">Check out Doks v0.2</a>"
-alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\">Check out Doks v0.2</a>"
+#alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\">Check out Doks v0.2</a>"
 
 # Edit Page
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
