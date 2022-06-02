@@ -54,6 +54,11 @@ the [Hugo docs](https://gohugo.io/getting-started/) and then the [Doks theme doc
 
 Content is stored in [`/content`](/content).
 
+### Staging branch
+
+If you merge changes to branch `staging`, those changes will show up at [https://staging--darcydocs.netlify.app](https://staging--darcydocs.netlify.app).
+
+
 ### Templates
 
 The [`/layouts`](/layouts) dir contains the templates for rendering. The most interesting parts are:
@@ -66,6 +71,16 @@ The [`/layouts`](/layouts) dir contains the templates for rendering. The most in
 
 Styling is controlled via the SCSS files in `/assets/scss`. Note that the theme
 supports both normal and "dark" mode, so be sure to also update `/assets/scss/common/_dark.scss`.
+
+## Branches
+
+If you merge a change to `master`, this will trigger the build pipeline, and ultimately result in
+your changes being published to prod (meaning [https://docs.darcy.ai](https://docs.darcy.ai)).
+
+We've also enabled a `staging` branch. If you merge a change to the `staging` branch, this will also
+trigger a pipeline, and your changes will be visible at [https://staging--darcydocs.netlify.app](https://staging--darcydocs.netlify.app).
+
+Obviously, that `staging` branch needs to be merged to `master` for that content to take effect on the live site.
 
 ## Content
 
