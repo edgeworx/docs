@@ -3,17 +3,27 @@ title: "Building your Darcy AI application"
 weight: 130
 linkTitle: "Build"
 ---
-It’s easy to build a Darcy AI application but how do you get started? Here’s an example application that introduces all of the main concepts you will need for building your own application. Start by following along!
+It’s easy to build a Darcy AI application but how do you get started? Here’s an example application
+that introduces all of the main concepts you will need for building your own application. Start by
+following along!
 
 ## What you will accomplish
 
-This guide will walk you through the creation of a simple yet powerful Darcy AI application. Many of the impressive features of Darcy AI are used here in this simple demo app so you can immediately gain experience working with those features. By the end of this guide you will have built and run your first Darcy AI application in your favorite IDE. After you have successfully accomplished everything in this guide, you should be able to modify the code to customize the application or begin building your own Darcy AI application with a similar structure and level of complexity.
+This guide will walk you through the creation of a simple yet powerful Darcy AI application. Many of
+the impressive features of Darcy AI are used here in this simple demo app so you can immediately
+gain experience working with those features. By the end of this guide you will have built and run
+your first Darcy AI application in your favorite IDE. After you have successfully accomplished
+everything in this guide, you should be able to modify the code to customize the application or
+begin building your own Darcy AI application with a similar structure and level of complexity.
 
-Follow the next step recommended at the bottom of this guide to learn how to package and then deploy your Darcy AI applications. After those steps, you will be ready to learn more advanced Darcy AI app development.
+Follow the next step recommended at the bottom of this guide to learn how to package and then deploy
+your Darcy AI applications. After those steps, you will be ready to learn more advanced Darcy AI app
+development.
 
 ## Requirements
 
 You’ll need to have a few things in place before you build. Here’s the list:
+
 - A laptop or desktop computer running Mac OS X or Windows
 - A webcam or USB camera (the built-in webcam on your computer should work nicely)
 - Python version 3.6.9 or greater
@@ -22,26 +32,39 @@ You’ll need to have a few things in place before you build. Here’s the list:
 - Docker for Mac, Windows, or Linux depending on your computer
 
 When you are ready to package and deploy your Darcy AI application, try any of the following:
-- A Raspberry Pi with an attached video camera (and an optional Google Coral edge TPU for dramatically increased performance)
-- An Nvidia Jetson Nano with an attached video camera (and an optional Google Coral edge TPU will increase performance here, too)
+
+- A Raspberry Pi with an attached video camera (and an optional Google Coral edge TPU for
+  dramatically increased performance)
+- An Nvidia Jetson Nano with an attached video camera (and an optional Google Coral edge TPU will
+  increase performance here, too)
 - An Intel NUC edge computer with a USB camera
 - Any other edge compute board that can receive camera input and runs the Linux operating system
 
 ## Environment setup
 
-If you are using a MacOS laptop or desktop, follow the [Mac OS X Environment Setup Guide](./SETUP_MACOS.md).
+If you are using a MacOS laptop or desktop, follow
+the [Mac OS X Environment Setup Guide](./SETUP_MACOS.md).
 
-If you are using a Windows laptop or desktop, follow the [Windows Environment Setup Guide](./SETUP_WINDOWS.md).
+If you are using a Windows laptop or desktop, follow
+the [Windows Environment Setup Guide](./SETUP_WINDOWS.md).
 
-You can also use an edge compute board as your development environment. Choose from the following options to set up your edge board instead of your laptop or desktop computer. You do not need to follow these environment setup steps for a Raspberry Pi or Jetson Nano board if you are just using those boards to run your packaged Darcy AI applications.
+You can also use an edge compute board as your development environment. Choose from the following
+options to set up your edge board instead of your laptop or desktop computer. You do not need to
+follow these environment setup steps for a Raspberry Pi or Jetson Nano board if you are just using
+those boards to run your packaged Darcy AI applications.
 
-If you need to setup a Raspberry Pi as a Darcy AI development environment, follow the [Raspberry Pi Environment Setup Guide](./SETUP_RPI.md).
+If you need to setup a Raspberry Pi as a Darcy AI development environment, follow
+the [Raspberry Pi Environment Setup Guide](./SETUP_RPI.md).
 
-If you need to setup a Jetson Nano as a Darcy AI development environment, follow the [Jetson Nano Environment Setup Guide](./SETUP_JETSON.md).
+If you need to setup a Jetson Nano as a Darcy AI development environment, follow
+the [Jetson Nano Environment Setup Guide](./SETUP_JETSON.md).
 
 ## Create your application Python file and import libraries
 
-You only need a single Python file to build a Darcy AI application. Open a new .py file in your favorite IDE and name it whatever you want. Then add the following statements at the top to include the Darcy AI libraries and some additional helpful libraries:
+You only need a single Python file to build a Darcy AI application. Open a new .py file in your
+favorite IDE and name it whatever you want. Then add the following statements at the top to include
+the Darcy AI libraries and some additional helpful libraries:
+
 ```
 import cv2
 import os
@@ -54,19 +77,25 @@ from darcyai.pipeline import Pipeline
 from darcyai.config import RGB
 ```
 
-If you don’t have the `darcyai` library installed yet, you can install it with PIP package installer for Python using the following commands:
+If you don’t have the `darcyai` library installed yet, you can install it with PIP package installer
+for Python using the following commands:
+
 ```
 pip install darcyai
 ```
 
-If you have multiple versions of Python on your system, you may need to install the `darcyai` library using the Python3 version of PIP as follows:
+If you have multiple versions of Python on your system, you may need to install the `darcyai`
+library using the Python3 version of PIP as follows:
+
 ```
 pip3 install darcyai
 ```
 
 ## Add the [Pipeline, Input Stream, and Output Stream objects](./TERMINOLOGY.md)
 
-This part is quite easy. Just follow the comments to learn more about these 3 important lines of code.
+This part is quite easy. Just follow the comments to learn more about these 3 important lines of
+code.
+
 ```
 # Instantiate an Camera Stream input stream object
 camera = CameraStream(video_device=0, fps=20)
@@ -80,7 +109,13 @@ live_feed = LiveFeedStream(path="/", port=3456, host="0.0.0.0")
 
 ## Set up a [callback](./TERMINOLOGY.md#callback) and add the [Output Stream](./TERMINOLOGY.md#output-stream) to the [Pipeline](./TERMINOLOGY.md#pipeline)
 
-Before we add the LiveFeed Output Stream to the Pipeline, we need to set up a callback function that we are going to use to process the data before displaying the video. Follow the comments to learn about the steps that are taken. This is the most complex portion of the whole application and it is where all of the business logic is taking place. After the callback function definition, there is a line for adding the LiveFeed Output Stream to the Pipeline. That command needs to have the callback function already defined before it can execute successfully.
+Before we add the LiveFeed Output Stream to the Pipeline, we need to set up a callback function that
+we are going to use to process the data before displaying the video. Follow the comments to learn
+about the steps that are taken. This is the most complex portion of the whole application and it is
+where all of the business logic is taking place. After the callback function definition, there is a
+line for adding the LiveFeed Output Stream to the Pipeline. That command needs to have the callback
+function already defined before it can execute successfully.
+
 ```
 # Create a callback function for handling the Live Feed output stream data before it gets presented
 def live_feed_callback(pom, input_data):
@@ -112,7 +147,13 @@ pipeline.add_output_stream("output", live_feed_callback, live_feed)
 
 ## Define an event Output Stream and an input Output Stream and instantiate the People Perceptor
 
-Just like the LiveFeed Output Stream, the People [Perceptor](./TERMINOLOGY.md#perceptor) must have the callback already defined before it can work with those callbacks. The input callback simply takes the [Input Stream](./TERMINOLOGY.md#input-stream) data and sends it onward to the People [Perceptor](./TERMINOLOGY.md#perceptor). The “New Person” event callback simply prints the unique person identifier string to the console output when a new person has been detected by Darcy AI.
+Just like the LiveFeed Output Stream, the People [Perceptor](./TERMINOLOGY.md#perceptor) must have
+the callback already defined before it can work with those callbacks. The input callback simply
+takes the [Input Stream](./TERMINOLOGY.md#input-stream) data and sends it onward to the
+People [Perceptor](./TERMINOLOGY.md#perceptor). The “New Person” event callback simply prints the
+unique person identifier string to the console output when a new person has been detected by Darcy
+AI.
+
 ```
 # Create a callback function for handling the input that is about to pass to the People Perceptor
 def people_input_callback(input_data, pom, config):
@@ -157,7 +198,9 @@ pipeline.run()
 
 ## Check your completed code
 
-Your finished Python file should look similar to this. If it doesn’t, take a minute to figure out what is missing or incorrect. Save your Python file. Next we will run your code!
+Your finished Python file should look similar to this. If it doesn’t, take a minute to figure out
+what is missing or incorrect. Save your Python file. Next we will run your code!
+
 ```
 import cv2
 import os
@@ -236,11 +279,16 @@ pipeline.run()
 
 ## Run your application
 
-Using your IDE, run your Python code. Don't set any breakpoints at first because that will prevent you from seeing the video stream. If you followed the code reference above directly and you have all of the required Python libraries installed, your Darcy AI application should run successfully and stay running until you stop the program execution.
+Using your IDE, run your Python code. Don't set any breakpoints at first because that will prevent
+you from seeing the video stream. If you followed the code reference above directly and you have all
+of the required Python libraries installed, your Darcy AI application should run successfully and
+stay running until you stop the program execution.
 
 ## View your real-time Darcy AI application video output
 
-Once your application is running, you can view the live video feed by visiting the following URL in any browser. The port number 3456 has been specified in the Python code. Feel free to change it and use the alternate port in the URL below.
+Once your application is running, you can view the live video feed by visiting the following URL in
+any browser. The port number 3456 has been specified in the Python code. Feel free to change it and
+use the alternate port in the URL below.
 
 ```
 http://localhost:3456/
@@ -248,8 +296,14 @@ http://localhost:3456/
 
 ## What you should see
 
-You should see a live video feed coming from your camera. When a person is detected in the field of view, some information should be displayed on the video and some dots should be drawn on top of key face locations. The dots should move with the person's face. This is a demonstration of using Darcy AI to detect the presence of people, assign an anonymous stable identifier to persons as they move around the field of view, and annotate the video frames with text and graphics.
+You should see a live video feed coming from your camera. When a person is detected in the field of
+view, some information should be displayed on the video and some dots should be drawn on top of key
+face locations. The dots should move with the person's face. This is a demonstration of using Darcy
+AI to detect the presence of people, assign an anonymous stable identifier to persons as they move
+around the field of view, and annotate the video frames with text and graphics.
 
 ## Now package your Darcy AI application for deployment
 
-Now that your Darcy AI application is working, the next step is to learn how to package it for deployment to a wide range of devices! Follow the [Packaging Guide](./PACKAGE.md) to learn how to package your Darcy AI apps.
+Now that your Darcy AI application is working, the next step is to learn how to package it for
+deployment to a wide range of devices! Follow the [Packaging Guide](./PACKAGE.md) to learn how to
+package your Darcy AI apps.
