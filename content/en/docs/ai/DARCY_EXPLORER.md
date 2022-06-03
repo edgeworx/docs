@@ -1,13 +1,11 @@
 ---
-title: "Building your Darcy AI application"
+title: "Darcy AI Explorer Guide"
 weight: 130
 link_title: "Build"
 ---
 # Darcy AI Explorer Guide
 
-The Darcy AI Explorer application is a great way to experience Darcy for the first time. This sample application is rich in features so you can get a sense for what Darcy provides you as a developer.
-
-Follow the steps in this guide to get your device connected to the [Darcy Cloud](https://cloud.darcy.ai) and deploy the Darcy AI Explorer application.
+The Darcy AI Explorer application is a great example of a power Darcy AI app that detects people, faces and face masks. This application is perfect for counting visitors.
 
 ## About the Darcy Cloud
 
