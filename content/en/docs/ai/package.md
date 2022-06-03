@@ -1,6 +1,7 @@
 ---
 title: "Packaging your Darcy AI application"
 weight: 140
+linkTitle: "Package"
 ---
 Once you have a Darcy AI application built and tested, the next step is to package it for deployment. Packaging pulls together your Python code, the Darcy AI libraries, and anything else needed to run your application and puts it all into a set of Docker containers that will run on a wide variety of hardware devices.
 

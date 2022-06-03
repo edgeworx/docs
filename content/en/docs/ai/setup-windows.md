@@ -1,6 +1,7 @@
 ---
 title: "Setting up your Windows environment for Darcy AI development"
 weight: 210
+linkTitle: Windows Setup
 ---
 
 You can use any Windows computer to build Darcy AI applications. After you finish setting up your computer as a development environment, you will be able to write, test, and debug your Darcy AI apps. Then you can package your code and deploy the applications to any edge device!

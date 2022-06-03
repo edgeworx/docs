@@ -1,6 +1,7 @@
 ---
 title: "Building your Darcy AI application"
 weight: 130
+linkTitle: "Build"
 ---
 It’s easy to build a Darcy AI application but how do you get started? Here’s an example application that introduces all of the main concepts you will need for building your own application. Start by following along!
 

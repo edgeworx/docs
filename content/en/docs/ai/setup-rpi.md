@@ -1,6 +1,7 @@
 ---
 title: "Setting up your Raspberry Pi for Darcy AI development"
 weight: 220
+linkTitle: "Raspberry Pi Setup"
 ---
 
 Raspberry Pi boards are excellent for building and running Darcy AI applications. This guide will show you how to get your RPi ready for Darcy AI development so you can run and debug your applications.

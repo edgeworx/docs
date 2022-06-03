@@ -84,7 +84,7 @@ Obviously, that `staging` branch needs to be merged to `master` for that content
 
 ## Content
 
-### Markdown
+### Front matter
 
 Content is generated from markdown files stored under [`/content`](/content).
 
@@ -92,17 +92,57 @@ Markdown files must have [front matter](https://gohugo.io/content-management/fro
 is basically metadata. For example:
 
 ```markdown
-
 ---
 title : "About Darcy Cloud"
 weight: 100
+linkTitle: "About"
 ---
 
 CONTENT GOES HERE
 ```
 
 Every content directory must have an `_index.md` file (which is basically the equivalent
-of an `index.html`).
+of an `index.html`). Other files should be in `lower-kebab-case.md` format.
+Note that `title` is required. If `linkTitle` is also present, that value is used to generate
+link values in preference to `title`.
+
+
+#### Slugs & Aliases
+Hugo will generate the page slug (URL path) based on the filename and the slug of
+the file's parents.
+
+For example:
+```text
++ doc                               /doc
+    + ai
+        - _index.md                 /doc/ai
+        - getting-started.md        /doc/getting-started
+```
+
+If you want to set a specific slug for a page, use the `slug` field in the front matter.
+You can also add
+```markdown
+---
+title : "About Darcy Cloud"
+weight: 100
+slug: "how-to-get-started"
+---
+```
+This results in path `/doc/how-to-get-started`.
+
+Relatedly you can also set one or more aliases in the front matter. An alias is a full path
+which will be redirected to the current content.
+
+```markdown
+---
+title : "About Darcy Cloud"
+weight: 100
+slug: "how-to-get-started"
+aliases:
+    - /doc/get-started/
+    - /guide/how-to-get-started/
+---
+```
 
 ### Ordering (weight)
 

@@ -1,9 +1,8 @@
 ---
-title: "Building your Darcy AI application"
+title: "Darcy AI Explorer Guide"
 weight: 130
-link_title: "Build"
+linkTitle: "AI Explorer"
 ---
-# Darcy AI Explorer Guide
 
 The Darcy AI Explorer application is a great way to experience Darcy for the first time. This sample application is rich in features so you can get a sense for what Darcy provides you as a developer.
 

@@ -7,4 +7,3 @@ aliases:
   - /darcy/contact-us
   - /darcy
 ---
-Main stage 3

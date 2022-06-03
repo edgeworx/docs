@@ -1,6 +1,7 @@
 ---
 title: "Getting started with Darcy AI"
 weight: 120
+linkTitle: "Getting Started"
 ---
 The Darcy AI SDK offers a rich set of features that Darcy AI application developers can use to easily build complex AI processing chains. This makes developing rich real-time applications possible in a shorter timeframe and with a much more standardized approach.
 
