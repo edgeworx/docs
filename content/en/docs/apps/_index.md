@@ -1,6 +1,7 @@
 ---
-title: "Getting Started Guides"
-weight: 130
-linkTitle: "Guides"
+title: "Building Darcy AI Apps"
+weight: 600
+linkTitle: "BUILDING DARCY AI APPS"
 ---
 This is content
+

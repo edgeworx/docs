@@ -1,6 +1,7 @@
 ---
 title: "Darcy AI"
-weight: 100
+weight: 400
+linkTitle: "DARCY AI"
 ---
 This is the official software development kit (SDK) for building on the Darcy AI platform.
 

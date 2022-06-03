@@ -1,6 +1,7 @@
 ---
-title: "Getting Started Guides"
-weight: 130
-linkTitle: "Guides"
+title: "Introduction"
+weight: 200
+linkTitle: "INTRODUCTION"
 ---
 This is content
+
