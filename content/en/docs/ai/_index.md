@@ -89,23 +89,23 @@ the [Getting Started Guide]({{<ref "getting-started.md">}}).
 ## Building
 
 To prepare your Mac OS computer as a development environment for building Darcy AI applications,
-follow the [Mac OS X Environment Setup Guide](./SETUP_MACOS.md).
+follow the [Mac OS X Environment Setup Guide]({{<ref "setup-macos.md">}}).
 
 To prepare your Windows computer as a development environment for building Darcy AI applications,
-follow the [Windows Environment Setup Guide](./SETUP_WINDOWS.md).
+follow the [Windows Environment Setup Guide]({{<ref "setup-windows.md">}}).
 
 Learn how to build and run a Darcy AI application using your favorite IDE with
-the [Build Guide](./BUILD.md).
+the [Build Guide]({{<ref "build.md">}}).
 
 ## Packaging
 
 Learn how to package your Darcy AI application into a container that includes all of the
-dependencies needed to run on many different devices with the [Packaging Guide](./PACKAGE.md).
+dependencies needed to run on many different devices with the [Packaging Guide]({{<ref "package.md">}}).
 
 ## Deploying
 
 Learn how to deploy your Darcy AI application to your edge devices using the Darcy Cloud in
-the [Deployment Guide](./DEPLOY.md).
+the [Deployment Guide]({{<ref "deploy.md">}}).
 
 ## Documentation
 
@@ -118,9 +118,13 @@ script and then visit [http://localhost:8000](http://localhost:8000).
 If you prefer to access the latest Darcy AI developer documentation with an internet connection,
 use [Hosted Darcy AI Documentation](https://darcyai.github.io/darcyai-sdk/).
 
+>> FIXME: Change links for Pydocs.
+
 ## Resources
 
 ### Examples
+
+>> FIXME: fix references to examples folder
 
 The [examples](./examples) folder contains a diverse set of sample applications that you can use as
 a reference or as a start of your own Darcy AI application. The code is commented to help you
@@ -128,30 +132,29 @@ understand what to do and when to do it. Here are some short descriptions to hel
 what examples are available. Some example applications are stored in their own code repositories to
 make learning and building easier.
 
-- Darcy AI Explorer - this demo application is a rich showcase of what the Darcy AI system can do.
+- [Darcy AI Explorer](https://github.com/darcyai/darcyai-explorer): this demo application is a rich showcase of what the Darcy AI system can do.
   Use the source code as a model for building a full-featured production
-  application. [https://github.com/darcyai/darcyai-explorer](https://github.com/darcyai/darcyai-explorer)
+  application.
 
-- Real-time Audio Analysis - Build and deploy this Darcy AI demo application to learn how to add
+- [Real-time Audio Analysis](./examples/audio_analysis): Build and deploy this Darcy AI demo application to learn how to add
   audio capabilities to Darcy and listen for important
-  sounds. [Audio Analysis](./examples/audio_analysis)
+  sounds.
 
-- Basic Darcy AI [Pipeline](./TERMINOLOGY.md#pipeline) - Use this demo application to learn the
-  basics of creating a Darcy AI Pipeline. [Basic Pipeline](./examples/basic_pipeline)
+- Darcy AI [Basic Pipeline](./examples/basic_pipeline): Use this demo application to learn the
+  basics of creating a Darcy AI [Pipeline]({{<ref "terminology.md#pipeline">}}).
 
-- Sample [Output Stream](./TERMINOLOGY.md#output-stream) - Learn how to create a Darcy AI Output
-  Stream by adding this example to your application. The example sends your Darcy AI output to an
-  Amazon Web Services S3 bucket. [Output Stream](./examples/output_streams)
+- [Output Stream](./examples/output_streams):  Learn how to create a Darcy AI [Output Stream]({{<ref "terminology.md#output-stream">}}) by adding this example to your application. The example sends your Darcy AI output to an
+  Amazon Web Services S3 bucket.
 
-- Sample [Perceptors](./TERMINOLOGY.md#perceptor) - Learn how to build your own Darcy AI Perceptors
+- [Perceptors](./examples/perceptors): Learn how to build your own Darcy AI [Perceptors]({{<ref "terminology.md#perceptor">}})
   with the examples in this directory. There is a basic mock perceptor that you can use as a
-  template. There is a face detector perceptor that uses an [AI model](./TERMINOLOGY.md#ai-model) to
+  template. There is a face detector perceptor that uses an [AI model]({{<ref "terminology.md#ai-model">}}) to
   find faces. There is also a face mask detector perceptor that checks a person's face for a
-  mask. [Perceptors](./examples/perceptors)
+  mask.
 
-- Heart Rate Demo - this demo application is a good example of how to build an edge application that
+- [Darcy Heart Rate Demo](https://github.com/darcyai/heart-rate-demo): this demo application is a good example of how to build an edge application that
   is made of multiple microservices that communicate with each
-  other. [https://github.com/darcyai/heart-rate-demo](https://github.com/darcyai/heart-rate-demo)
+  other.
 
 - Sample Build Files - Get a sample Dockerfile in this folder so you don't have to create one from
   scratch. [Build Files](./examples/build)
@@ -163,22 +166,22 @@ make learning and building easier.
 ### Getting help
 
 - Get help from the other Darcy AI developers, the Darcy team, and the whole Darcy community on the
-  Darcy AI Forum at [https://discuss.darcy.ai/c/darcy-ai/](https://discuss.darcy.ai/c/darcy-ai/)
-- Report and track bugs in the Darcy AI platform and SDK using Github
-  issues [https://github.com/darcyai/darcyai-sdk/issues](https://github.com/darcyai/darcyai-sdk/issues)
+  Darcy AI Forum at [Darcy AI Forum](https://discuss.darcy.ai/c/darcy-ai/).
+- Report and track bugs in the Darcy AI platform and SDK using GitHub
+  issues [https://github.com/darcyai/darcyai/issues](https://github.com/darcyai/darcyai/issues).
 
 ### Python packages for Darcy AI
 
-- Darcy AI package [https://pypi.org/project/darcyai/](https://pypi.org/project/darcyai/)
+- `darcyai` package: [https://pypi.org/project/darcyai/](https://pypi.org/project/darcyai/).
 
 ### Darcy Cloud
 
 Deploy and manage edge applications including Darcy AI applications with the Darcy Cloud. Create an
-account for free at [https://cloud.darcy.ai](https://cloud.darcy.ai)
+account for free at [cloud.darcy.ai](https://cloud.darcy.ai).
 
 ### Other helpful links
 
 - Company website for Edgeworx, the providers of the Darcy AI
-  platform [https://darcy.ai](https://darcy.ai)
+  platform: [www.darcy.ai](https://www.darcy.ai)
 - Official website for the Tensorflow AI
-  project [https://www.tensorflow.org](https://www.tensorflow.org)
+  project: [www.tensorflow.org](https://www.tensorflow.org)
