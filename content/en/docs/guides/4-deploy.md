@@ -1,7 +1,7 @@
 ---
 title: "Deploy Your App to the Edge"
 weight: 400
-linkTitle: "4. Deploy Your App to the Edge"
+linkTitle: "4. Deploy it to the Edge"
 ---
 ## What you will accomplish
 

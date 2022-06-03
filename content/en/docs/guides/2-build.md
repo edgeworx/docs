@@ -1,7 +1,7 @@
 ---
-title: "Build a People Detector Edge AI App"
+title: "Build an Edge AI App to Detect People"
 weight: 200
-linkTitle: "2. Build a People Detector Edge AI App"
+linkTitle: "2. Build an Edge AI App"
 ---
 ## What you will accomplish
 
