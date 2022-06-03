@@ -3,16 +3,26 @@ title: "Set Up Your Build Environment"
 weight: 100
 linkTitle: "1. Set Up Environment"
 ---
+## What you will accomplish
+
 This guide shows how to setup a local environment on macOS to build Darcy AI applications (you can also use [Linux]() and [Windows]()). After you finish setting up your Mac as a development environment, you will be able to write, test, and debug your Darcy AI apps. Then you can package your code and deploy the applications to any edge device!
+
+> Is there a visual representation that is useful?
+>
 
 ## Requirements
 
-- Mac, [Linux]() or [WIndows]() computer
-- A video camera that you want to use (the built-in webcam works very well for this purpose)
-- 5GB or more of free disk space to accommodate code libraries and application container images
-- Any IDE software that will allow you to write and debug Python (use your favorite IDE)
+* Mac, [Linux]() or [WIndows]() computer
 
-## Install Dependencies
+* A video camera that you want to use (the built-in webcam works very well for this purpose)
+
+* 5GB or more of free disk space to accommodate code libraries and application container images
+
+* Any IDE software that will allow you to write and debug Python (use your favorite IDE)
+
+-----
+
+## 1. Install Dependencies
 ### Install Python 3.6.9 or greater
 
 If you do not already have Python version 3.6.9 or greater, you will need to install it now. Darcy AI requires this version of Python or higher. Note that Python 2.x versions are also not compatible with Darcy AI. You need Python 3 and the `darcyai` library will not install with versions below 3.6.9.
@@ -53,7 +63,7 @@ After you have installed Docker, you can use `docker` commands in terminal. You 
 
 Install TensorFlow for Python with the command `pip install tensorflow`
 
-## Test your environment
+## 2. Test your environment
 ### Run the People Detector Edge AI app
 
 ```
