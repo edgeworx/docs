@@ -1,7 +1,7 @@
 ---
 title: "Darcy AI Application Deployment Guide"
-weight: 150
-linkTitle: "Deploy"
+weight: 500
+linkTitle: "dupe-guides"
 ---
 Once you have built and packaged a Darcy AI application, you can deploy it to as many devices as you want. Use this guide to get devices set up on the [Darcy Cloud](https://cloud.darcy.ai) and create your own deployment YAML files and deploy your applications.
 

@@ -1,6 +1,7 @@
 ---
 title: "Key Concepts"
 weight: 11
+linkTitle: "Dupe-terminology"
 aliases:
   - /darcy/darcy-cloud/key-concepts
 ---

@@ -3,12 +3,11 @@ title: "Set Up Your Build Environment"
 weight: 100
 linkTitle: "1. Set Up Environment"
 ---
+![Environment setup](/Users/brianchristensen/Documents/Edgeworx/Docs/github-docs/docs/images/guides/:Users:brianchristensen:Documents:Edgeworx:Docs:Docs assets:Environment setup.png)
+
 ## What you will accomplish
 
 This guide shows how to setup a local environment on macOS to build Darcy AI applications (you can also use [Linux]() and [Windows]()). After you finish setting up your Mac as a development environment, you will be able to write, test, and debug your Darcy AI apps. Then you can package your code and deploy the applications to any edge device!
-
-> Is there a visual representation that is useful?
->
 
 ## Requirements
 
@@ -39,11 +38,11 @@ Install the OpenCV package for Python with the command `pip install opencv-pytho
 
 Install the Pillow package for Python with the command `pip install Pillow`.
 
-#### Install the Numpy library
+### Install the Numpy library
 
 Install the numpy package for Python with the command `pip install numpy`.
 
-#### Install the Imutils library
+### Install the Imutils library
 
 Install the imutils package for Python with the command `pip install imutils`.
 

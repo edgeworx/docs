@@ -1,5 +1,5 @@
 ---
 title: "Local build setup"
-weight: 400
+weight: 200
 linkTitle: "Local build setup"
 ---
