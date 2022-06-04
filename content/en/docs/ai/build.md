@@ -4,8 +4,8 @@ weight: 130
 linkTitle: "Build"
 ---
 It’s easy to build a Darcy AI application but how do you get started? Here’s an example application
-that introduces all of the main concepts you will need for building your own application. Start by
-following along!
+that introduces each of the main concepts you will need for building your own application. Start by
+following along.
 
 ## What you will accomplish
 
@@ -43,10 +43,10 @@ When you are ready to package and deploy your Darcy AI application, try any of t
 ## Environment setup
 
 If you are using a MacOS laptop or desktop, follow
-the [Mac OS X Environment Setup Guide](./SETUP_MACOS.md).
+the [Mac OS X Environment Setup Guide]({{<ref "setup-macos.md">}}).
 
 If you are using a Windows laptop or desktop, follow
-the [Windows Environment Setup Guide](./SETUP_WINDOWS.md).
+the [Windows Environment Setup Guide]({{<ref "setup-windows.md)">}}.
 
 You can also use an edge compute board as your development environment. Choose from the following
 options to set up your edge board instead of your laptop or desktop computer. You do not need to
@@ -54,10 +54,10 @@ follow these environment setup steps for a Raspberry Pi or Jetson Nano board if 
 those boards to run your packaged Darcy AI applications.
 
 If you need to setup a Raspberry Pi as a Darcy AI development environment, follow
-the [Raspberry Pi Environment Setup Guide](./SETUP_RPI.md).
+the [Raspberry Pi Environment Setup Guide]({{<ref "setup-rpi.md">}}).
 
 If you need to setup a Jetson Nano as a Darcy AI development environment, follow
-the [Jetson Nano Environment Setup Guide](./SETUP_JETSON.md).
+the [Jetson Nano Environment Setup Guide]({{<ref "setup-jetson.md">}}).
 
 ## Create your application Python file and import libraries
 
@@ -65,7 +65,7 @@ You only need a single Python file to build a Darcy AI application. Open a new .
 favorite IDE and name it whatever you want. Then add the following statements at the top to include
 the Darcy AI libraries and some additional helpful libraries:
 
-```
+```python
 import cv2
 import os
 import pathlib
@@ -80,14 +80,14 @@ from darcyai.config import RGB
 If you don’t have the `darcyai` library installed yet, you can install it with PIP package installer
 for Python using the following commands:
 
-```
+```shell
 pip install darcyai
 ```
 
 If you have multiple versions of Python on your system, you may need to install the `darcyai`
 library using the Python3 version of PIP as follows:
 
-```
+```shell
 pip3 install darcyai
 ```
 
