@@ -63,6 +63,9 @@ After you have installed Docker, you can use `docker` commands in terminal. You 
 Install TensorFlow for Python with the command `pip install tensorflow`
 
 ## 2. Test your environment
+
+> this probably won't work. ask @Kilton about pip installs
+
 ### Run the People Detector Edge AI app
 
 ```
