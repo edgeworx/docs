@@ -1,14 +1,18 @@
 ---
-title: "Packaging your Darcy AI application"
-weight: 500
-linkTitle: "dupe-guides"
+title: "Package Your App for Deployment"
+weight: 300
+linkTitle: "3. Package Your App"
 ---
-Once you have a Darcy AI application built and tested, the next step is to package it for deployment. Packaging pulls together your Python code, the Darcy AI libraries, and anything else needed to run your application and puts it all into a set of Docker containers that will run on a wide variety of hardware devices.
-
-
 ## What you will accomplish
 
 By the end of this guide, you will be able to make deployable Darcy AI application packages that will run on any hardware that meets the requirements for Darcy AI. The list of compatible hardware is extensive, allowing you to deploy your Darcy AI applications to the devices that fit your solution needs.
+
+To perform the packaging process, you will simply need to follow a few steps.
+
+1. Create a Dockerfile so Docker knows how to build your container images
+2. Open a builder namespace
+3. Build the container images for multiple platforms (different CPU architectures)
+4. Upload your container images to your Docker Hub account or similar container registry
 
 ## Requirements
 
@@ -16,15 +20,9 @@ In order to package your Darcy AI applications, you only need to meet a couple o
 - Docker Desktop for Mac, Windows, or Linux
 - A Docker Hub account for hosting your container images (or another registry compatible with Docker)
 
-## Overview of the process
+-----
 
-To perform the packaging process, you will simply need to follow a few steps.
-- Create a Dockerfile so Docker knows how to build your container images
-- Open a builder namespace
-- Build the container images for multiple platforms (different CPU architectures)
-- Upload your container images to your Docker Hub account or similar container registry
-
-## Add a Dockerfile to the same directory as your Python file
+## 1. Add a Dockerfile to the same directory as your Python file
 
 To build your Darcy AI application container, you only need your Python file and a Dockerfile. A Dockerfile is just a text file with the specific name `Dockerfile` that tells the Docker command tools how to make your containers. You can include as many files as you want in your container. The commands for adding those files are discussed below. Make sure you create the Dockerfile in the same directory as your Python file and change the name below from YOURFILE.py to the actual name of your file.
 ```
@@ -45,7 +43,7 @@ Similarly, every `COPY` command tells Docker to take something from your local e
 
 The `CMD` command tells Docker to execute this command when the container is started. This is different than the `RUN` command which tells Docker to execute the command while building the container. The `CMD` statement is found at the end because the container must be fully built before this statement. When the container starts, the instructions found after the `CMD` will be executed. In the example above, the instructions are to run the `/src/app.py` Python file using `python3` and we have added the `-u` parameter which tells the Python3 engine to use unbuffered output because we want to see the output in the container logs unhindered.
 
-## Create a builder namespace for your build process
+## 2. Create a builder namespace for your build process
 
 The `docker buildx` command line tool that was installed with your Docker Desktop will allow you to build and package container images for several target device platforms (CPU architectures) at the same time. If you do not have the `docker buildx` tool installed, you can learn about it and install it from the [Docker BuildX Guide](https://docs.docker.com/buildx/working-with-buildx/).
 
@@ -63,7 +61,7 @@ And now that you have created a builder namespace, let's set BuildX to use that 
 docker buildx use YOURNAME
 ```
 
-## Build your Docker container
+## 3. Build your Docker container
 
 Now that you have a working BuildX builder namespace and a Dockerfile in your current working directory where your Python file is located, you can do the actual build.
 
@@ -86,3 +84,4 @@ Your build process may take 10 or 15 minutes if you are building for the first t
 ## Next step is to deploy your Darcy AI application
 
 Now you have a fully packaged Darcy AI application! The next step is to learn how to deploy. Follow the [Deployment Guide](./DEPLOY.md) to learn how to deploy your packaged Darcy AI apps.
+
