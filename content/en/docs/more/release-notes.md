@@ -1,7 +1,6 @@
 ---
 title: "Release Notes"
 weight: 70
-linkTitle: "dupe-moved to more"
 aliases:
   - /darcy-cloud/release-notes
 ---

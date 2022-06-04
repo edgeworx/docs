@@ -1,6 +1,7 @@
 ---
-title : "Apps"
-weight: 40
+title : "Building Darcy Apps"
+weight: 500
+linkTitle: "Dupe-mpved to apps"
 ---
 
 Darcy connects to your applications to interact and share data. Applications can be configured in
