@@ -3,7 +3,11 @@ title: "Set Up Your Build Environment"
 weight: 100
 linkTitle: "1. Set Up Environment"
 ---
-![guide1-environment-setup](/Users/brianchristensen/Documents/Edgeworx/Docs/github-docs/docs/static/images/guide1-environment-setup.jpg)
+![guide1-environment-setup](../../../../images/guide1-environment-setup.jpg)
+
+![environment-setup.jpg](guide1-environment-setup.jpg)
+
+
 
 ## What you will accomplish
 
@@ -19,9 +23,14 @@ This guide shows how to setup a local environment on macOS to build Darcy AI app
 
 * Any IDE software that will allow you to write and debug Python (use your favorite IDE)
 
+  
+
 -----
 
+
+
 ## 1. Install Dependencies
+
 ### Install Python 3.6.9 or greater
 
 If you do not already have Python version 3.6.9 or greater, you will need to install it now. Darcy AI requires this version of Python or higher. Note that Python 2.x versions are also not compatible with Darcy AI. You need Python 3 and the `darcyai` library will not install with versions below 3.6.9.

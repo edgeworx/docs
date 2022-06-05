@@ -16,7 +16,11 @@ In this step by step guide you'll learn how to build your first Darcy AI app to 
 - Needs
 - Content
 
+
+
 -----
+
+
 
 ## 1. Create your application Python file and import libraries
 

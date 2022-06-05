@@ -18,9 +18,14 @@ To perform the packaging process, you will simply need to follow a few steps.
 
 In order to package your Darcy AI applications, you only need to meet a couple of requirements:
 - Docker Desktop for Mac, Windows, or Linux
+
 - A Docker Hub account for hosting your container images (or another registry compatible with Docker)
 
+  
+
 -----
+
+
 
 ## 1. Add a Dockerfile to the same directory as your Python file
 
