@@ -39,7 +39,7 @@ If you don't already have an account, you can create one now for free. Create an
 
 Once you are in your Darcy Cloud account, add your device as a node in your current project. Use the "plus button" in the bottom left to add a node. Follow the instructions in the pop-up window to add your device as a node.
 
-<img src="./examples/screenshots/darcy-cloud-plus-item-button.png" height="100" />
+![Cloud Portal Plus Button](/images/darcy-cloud-plus-item-button.png)
 
 ## 3. Create your application YAML
 
@@ -78,7 +78,7 @@ For the agent name, which is shown above as `your-darcy-cloud-node-name` you sho
 
 Now that you have all of the pieces, it's easy to deploy your application to your device or any other device. In the Darcy Cloud, click on the "plus button" in the bottom left and choose "app".
 
-<img src="./examples/screenshots/darcy-cloud-plus-item-button.png" height="100" />
+![Cloud Portal Plus Button](/images/darcy-cloud-plus-item-button.png)
 
 In the pop-up window, choose the "upload your app" option and you will see a drag-and-drop window on the right-hand side. You can drag and drop your YAML file into that window or you can click the "browse and upload" option and then select your YAML file.
 
