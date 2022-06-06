@@ -3,18 +3,18 @@ title: "Build an Edge AI App to Detect People"
 weight: 200
 linkTitle: "2. Build an Edge AI App"
 ---
+![](https://tva1.sinaimg.cn/large/e6c9d24egy1h2z03xr0uuj20hq0db0tx.jpg)
+
 ## What you will accomplish
 
-In this step by step guide you'll learn how to build your first Darcy AI app to detect and count people.
-
-> Insert pipeline and or process diagram here
->
-> Insert app screenshot here
+In this step by step guide you'll learn how to build your first Darcy AI app. This app utilizes the Darcy AI pipelines, input stream, perceptors and output stream to detect and count people and then change some of the basic configurations. The concepts in this guide are application to ant app you can think to build with Darcy AI.
 
 ## Requirements
 
-- Needs
-- Content
+- [Local development environment](../1-setup)
+- Video source (like a web cam)
+- Basic command line knowledge
+- Basic Pythin knowledge
 
 
 

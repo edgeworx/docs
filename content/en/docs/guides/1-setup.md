@@ -3,7 +3,7 @@ title: "Set Up Your Build Environment"
 weight: 100
 linkTitle: "1. Set Up Environment"
 ---
-
+![](https://tva1.sinaimg.cn/large/e6c9d24egy1h2z15j3czsj212e0k2my8.jpg)
 
 ## What you will accomplish
 
@@ -24,8 +24,6 @@ This guide shows how to setup a local environment on macOS to build Darcy AI app
 -----
 
 
-
-![](https://tva1.sinaimg.cn/large/e6c9d24egy1h2yz13nznwj21ui08omy4.jpg)
 
 ## 1. Install Dependencies
 
