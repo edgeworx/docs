@@ -3,11 +3,7 @@ title: "Set Up Your Build Environment"
 weight: 100
 linkTitle: "1. Set Up Environment"
 ---
-![guide1-environment-setup](../../../../images/guide1-environment-setup.jpg)
-
-![environment-setup.jpg](guide1-environment-setup.jpg)
-
-
+![environment setup](../../../../static/images/guide1-environment-setup.jpg)
 
 ## What you will accomplish
 
