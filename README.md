@@ -84,7 +84,7 @@ Obviously, that `staging` branch needs to be merged to `master` for that content
 
 ## Content
 
-### Markdown
+### Front matter
 
 Content is generated from markdown files stored under [`/content`](/content).
 
@@ -92,17 +92,58 @@ Markdown files must have [front matter](https://gohugo.io/content-management/fro
 is basically metadata. For example:
 
 ```markdown
-
 ---
 title : "About Darcy Cloud"
 weight: 100
+linkTitle: "About"
 ---
 
 CONTENT GOES HERE
 ```
 
 Every content directory must have an `_index.md` file (which is basically the equivalent
-of an `index.html`).
+of an `index.html`). Other files should be in `lower-kebab-case.md` format.
+Note that `title` is required. If `linkTitle` is also present, that value is used to generate
+link values in preference to `title`.
+
+
+#### Slugs & Aliases
+Hugo will generate the page slug (URL path) based on the filename and the slug of
+the file's parents.
+
+For example:
+
+```text
++ doc                               /doc
+    + ai
+        - _index.md                 /doc/ai
+        - getting-started.md        /doc/getting-started
+```
+
+If you want to set a specific slug for a page, use the `slug` field in the front matter.
+
+```text
+---
+title : "About Darcy Cloud"
+weight: 100
+slug: "how-to-get-started"
+---
+```
+This results in path `/doc/how-to-get-started`.
+
+Relatedly you can also set one or more aliases in the front matter. An alias is a full path
+which will be redirected to the current content.
+
+```markdown
+---
+title : "About Darcy Cloud"
+weight: 100
+slug: "how-to-get-started"
+aliases:
+    - /doc/get-started/
+    - /guide/how-to-get-started/
+---
+```
 
 ### Ordering (weight)
 
@@ -162,3 +203,81 @@ This is a significant benefit.
 If you are linking outside the current dir:
 - If you're linking to a file below the current dir, typically use a relative path, e.g. `[the below thing]({{<ref "./c/d.md">}})`.
 - If you're linking to a file above the current dir, typically use absolute an absolute path, e.g. `[the above thing]({{<ref "/docs/cloud/e/f.md">}})`
+
+## Linting
+
+We have several lint targets, although some of them are still WIP and not fully integrated
+into the pipeline for various reasons.
+
+### Script & Markdown Linting
+This runs the linter against scripts and the markdown files. It does not check links. Example
+below. All lint errors must be fixed.
+
+```text
+$ npm run lint
+
+> @hyas/doks@0.4.2 lint
+> npm run -s lint:scripts && npm run -s lint:styles && npm run -s lint:markdown
+
+markdownlint-cli2 v0.4.0 (markdownlint v0.25.1)
+Finding: *.md content/**/*.md !node_modules !CHANGELOG.md !README.md
+Linting: 54 file(s)
+Summary: 87 error(s)
+content/en/docs/ai/build.md:99 MD040/fenced-code-language Fenced code blocks should have a language specified [Context: "```"]
+content/en/docs/ai/build.md:119 MD040/fenced-code-language Fenced code blocks should have a language specified [Context: "```"]
+```
+
+### Link Checking
+
+There's a separate linter for checking links. At the moment it's a two-step process:
+
+- Start the local server (`npm run start`). You should verify that the server is
+  not reporting any errors to the terminal.
+- In a separate terminal, run `npm run lint:links`.
+
+> You may see the following error: this means that the local server is not running.
+>
+> ```
+>    [0] http://localhost:1313/
+>    ERROR: Detected 1 broken links. Scanned 1 links in 0.007 seconds.
+> ```
+
+
+The output can be a bit confusing. First, each of the broken links are listed. Then, more
+usefully, a section is displayed for each page URL, listing the problems beneath that
+page URL. Here's a snippet of the output:
+
+```text
+http://localhost:1313/docs/ai/
+  [404] http://localhost:1313/docs/ai/docs
+  [404] http://localhost:1313/docs/ai/docs.sh
+  [0] http://localhost:8000/
+  [404] http://localhost:1313/docs/ai/examples
+  [404] http://localhost:1313/docs/ai/examples/audio_analysis
+```
+
+> Note that `http://localhost:1313/docs/ai/` is built from `/content/en/docs/ai/_index.md`
+
+In the output above, we can see that there are several broken links, which need to be fixed. You
+would go to `/content/en/docs/ai/_index.md` to find and fix those links. Remember to use
+the [link shortcode](#Links), which looks like `[my link]({{<ref "doc.md">}}`.
+
+If you have created new content (a new `.md` file) or have moved content around, the `npm run lint:links`
+target may return an error pointing to GitHub:
+
+```text
+http://localhost:1313/docs/ai/terminology/
+  [404] https://github.com/darcyai/docs/blob/master/content/en/docs/ai/terminology.md
+```
+
+This is due to the _Edit this page on GitHub_ auto-generated link. Currently that link always
+points at the `master` branch, thus if your `.md` file has not been added to `master` (or has
+been moved), the link checker will return an error until it has been merged. We can probably
+improve the behavior of the linter or the link generator at some point, but you can generally
+ignore those errors.
+
+> Note that we provide two special npm targets for checking the deployed `staging` and `prod`
+> environments:
+>
+> - `npm run staging:lint:links`
+> - `npm run prod:lint:links`
