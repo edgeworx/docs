@@ -3,7 +3,7 @@ title: "Build an Edge AI App to Detect People"
 linkTitle: "2. Build an Edge AI App"
 weight: 200
 ---
-![](/images/build-ai-app-hero.jpg)
+![Darcy AI](/images/build-ai-app-hero.jpg)
 
 ## What you will accomplish
 
@@ -144,7 +144,7 @@ pipeline.add_perceptor("peeps", people_ai, input_callback=people_input_callback)
 
 ## 6. Change some configuration items in the People Perceptor
 
-```
+```python
 # Update the configuration of the People Perceptor to show the pose landmark dots on the annotated video frame
 pipeline.set_perceptor_config("peeps", "show_pose_landmark_dots", True)
 pipeline.set_perceptor_config("peeps", "pose_landmark_dot_size", 2)

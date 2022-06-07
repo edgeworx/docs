@@ -3,8 +3,7 @@ title: "Deploy Your App to the Edge"
 linkTitle: "4. Deploy it to the Edge"
 weight: 400
 ---
-![](/images/guide4-deploy-cloud.jpeg)
-
+![FIXME](/images/guide4-deploy-cloud.jpeg)
 
 ## What you will accomplish
 
@@ -16,7 +15,7 @@ your own deployment YAML files and deploy your applications.
 
 * Darcy Cloud Account
 * Edge Development Board
-  * Raspberyy Pi 4 + Google Coral Accelerator
+  * Raspberry Pi 4 + Google Coral Accelerator
 
 -----
 
@@ -59,7 +58,7 @@ add your device as a node.
 
 Here is a sample YAML file to work with.
 
-```
+```yaml
 kind: Application
 apiVersion: iofog.org/v3
 metadata:
@@ -104,7 +103,7 @@ In the pop-up window, choose the "upload your app" option and you will see a dra
 the right-hand side. You can drag and drop your YAML file into that window or you can click the "
 browse and upload" option and then select your YAML file.
 
-![](/images/darcy-cloud-custom-app-deployment.png)
+![FIXME](/images/darcy-cloud-custom-app-deployment.png)
 
 The Darcy Cloud will tell you if you have any issues with your YAML file or your app deployment. It
 will also tell you if your Darcy AI application was deployed successfully. You can then check the
@@ -116,12 +115,7 @@ When your Darcy AI application has successfully been deployed to your devices, y
 status `running` in your Darcy Cloud UI. At this time, your Darcy AI application is fully running on
 those devices. If your application has a live video feed, such as the demo application you built in
 the [Build Guide]({{<ref "2-build.md">}}) at port 3456 then you should be able to view the live feed using the
-IP address of the device followed by `:3456`. Replace the IP address in the example below with your
-device's IP address to view the live feed.
-
-```
-http://192.168.1.20:3456
-```
+IP address of the device followed by `:3456`, e.g. `http://192.168.1.20:3456`.
 
 You have accomplished a great amount at this point. Congratulations! You have developed a Darcy AI
 application and tested it with your IDE and local development environment. You have packaged your
@@ -133,4 +127,3 @@ Darcy Cloud to deploy and manage your Darcy AI application.
 Now that you have all of these foundation Darcy AI developer skills, you are ready to build full
 solutions. Use the [Technical Documentation](https://darcyai.github.io/darcyai) to learn more
 about what Darcy AI can do and take your skills to the next level.
-

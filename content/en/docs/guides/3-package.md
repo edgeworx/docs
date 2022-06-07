@@ -3,7 +3,7 @@ title: "Package Your App for Deployment"
 linkTitle: "3. Package Your App"
 weight: 300
 ---
-![](/images/guide3-package-docker-hero.png)
+![FIXME](/images/guide3-package-docker-hero.png)
 
 ## What you will accomplish
 
@@ -133,4 +133,3 @@ build, this process should only take a few minutes. You can watch the output of 
 the build progress. A separate container image will be built for each of the platforms specified in
 the command. Additionally a container manifest file will be created and added to the container
 registry (Docker Hub) so different platforms will know which image to download and start.
-
