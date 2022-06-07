@@ -10,7 +10,6 @@ possible in a shorter timeframe and with a much more standardized approach.
 If you have not yet read the overview of Darcy AI terminology, it is recommended that you do that
 first. You can find it here [Darcy AI Terminology Guide](/docs/more/terminology.md).
 
-
 ## Thinking in terms of Darcy AI pipelines
 
 The concept of an AI [Pipeline](/docs/more/terminology.md#pipeline) is similar to complex event processing (

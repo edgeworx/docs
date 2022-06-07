@@ -5,6 +5,7 @@ weight: 400
 ---
 
 ## Page requires updates
+
 ## FIXME
 
 * Update AI SDK references (Darcy Engine)
@@ -46,33 +47,33 @@ requirements below.
 
 ### System requirements for developer environments
 
-- Any modern CPU (both x86 and ARM processors will work)
-- 4GB of RAM
-- Camera (the integrated webcam on most laptops will work)
-- 5GB of available disk space for Docker, Python, required libraries, and your application
+* Any modern CPU (both x86 and ARM processors will work)
+* 4GB of RAM
+* Camera (the integrated webcam on most laptops will work)
+* 5GB of available disk space for Docker, Python, required libraries, and your application
   containers
-- Optional: Google Coral AI accelerator for testing accelerated processing
+* Optional: Google Coral AI accelerator for testing accelerated processing
 
 ### System requirements for running deployed Darcy AI applications
 
-- ARM or x86 CPU (two or more cores recommended)
-- Google Coral AI accelerator (more than one Coral increases performance for many applications)
-- 512MB of RAM (4GB or more recommended)
-- Camera (required for using Darcy with live video)
-- Internet connectivity (wired Ethernet or WiFi)
-- 200MB available disk space (1GB or more recommended and your application size will vary)
+* ARM or x86 CPU (two or more cores recommended)
+* Google Coral AI accelerator (more than one Coral increases performance for many applications)
+* 512MB of RAM (4GB or more recommended)
+* Camera (required for using Darcy with live video)
+* Internet connectivity (wired Ethernet or WiFi)
+* 200MB available disk space (1GB or more recommended and your application size will vary)
 
 ### Darcy AI ready edge boards
 
-- Raspberry Pi with Coral USB
-  - [Raspberry Pi 4 single board computer](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/)
-  - [Google Coral AI accelerator USB module](https://coral.ai/products/accelerator/)
-- Nvidia Jetson Nano with Coral USB
-  - [Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/jetson-nano-developer-kit)
-  - [Google Coral AI accelerator USB module](https://coral.ai/products/accelerator/)
-- [Google Coral Dev Board](https://coral.ai/products/dev-board/)
-- [Google Coral Dev Board Mini](https://coral.ai/products/dev-board-mini/)
-- [ASUS Tinker T](https://www.asus.com/us/Networking-IoT-Servers/AIoT-Industrial-Solutions/Tinker-Board-Series/Tinker-Edge-T/)
+* Raspberry Pi with Coral USB
+  * [Raspberry Pi 4 single board computer](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/)
+  * [Google Coral AI accelerator USB module](https://coral.ai/products/accelerator/)
+* Nvidia Jetson Nano with Coral USB
+  * [Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/jetson-nano-developer-kit)
+  * [Google Coral AI accelerator USB module](https://coral.ai/products/accelerator/)
+* [Google Coral Dev Board](https://coral.ai/products/dev-board/)
+* [Google Coral Dev Board Mini](https://coral.ai/products/dev-board-mini/)
+* [ASUS Tinker T](https://www.asus.com/us/Networking-IoT-Servers/AIoT-Industrial-Solutions/Tinker-Board-Series/Tinker-Edge-T/)
 
 ## Getting started
 
@@ -119,43 +120,43 @@ application. The code is commented to help you understand what to do and when to
 some short descriptions to help you understand what examples are available. Some example
 applications are stored in their own code repositories to make learning and building easier.
 
-- [Darcy AI Explorer](https://github.com/darcyai/darcyai-explorer): this demo application is a rich
+* [Darcy AI Explorer](https://github.com/darcyai/darcyai-explorer): this demo application is a rich
   showcase of what the Darcy AI system can do. Use the source code as a model for building a
   full-featured production application.
-- [Real-time Audio Analysis](https://github.com/darcyai/darcyai/tree/main/src/examples/audio_analysis):
+* [Real-time Audio Analysis](https://github.com/darcyai/darcyai/tree/main/src/examples/audio_analysis):
   Build and deploy this Darcy AI demo application to learn how to add audio capabilities to Darcy
   and listen for important sounds.
-- Darcy
+* Darcy
   AI [Basic Pipeline](https://github.com/darcyai/darcyai/tree/main/src/examples/basic_pipeline): Use
   this demo application to learn the basics of creating a Darcy AI [Pipeline](/docs/more/terminology.md#pipeline).
-- [Output Stream](https://github.com/darcyai/darcyai/tree/main/src/examples/output_streams):  Learn
+* [Output Stream](https://github.com/darcyai/darcyai/tree/main/src/examples/output_streams):  Learn
   how to create a Darcy AI [Output Stream]({{<ref "/docs/more/terminology.md#output-stream">}}) by adding this
   example to your application. The example sends your Darcy AI output to an Amazon Web Services S3
   bucket.
-- [Perceptors](https://github.com/darcyai/darcyai/tree/main/src/examples/perceptors): Learn how to
+* [Perceptors](https://github.com/darcyai/darcyai/tree/main/src/examples/perceptors): Learn how to
   build your own Darcy AI [Perceptors]({{<ref "/docs/more/terminology.md#perceptor">}})
   with the examples in this directory. There is a basic mock perceptor that you can use as a
   template. There is a face detector perceptor that uses an [AI model]({{<ref "/docs/more/terminology.md#ai-model">}}) to find faces. There is also a face mask detector perceptor that
   checks a person's face for a mask.
-- [Darcy Heart Rate Demo](https://github.com/darcyai/heart-rate-demo): this demo application is a
+* [Darcy Heart Rate Demo](https://github.com/darcyai/heart-rate-demo): this demo application is a
   good example of how to build an edge application that is made of multiple microservices that
   communicate with each other.
-- Sample Build Files - Get a sample Dockerfile in this folder so you don't have to create one from
+* Sample Build Files * Get a sample Dockerfile in this folder so you don't have to create one from
   scratch. [Build Files](https://github.com/darcyai/darcyai/tree/main/src/examples/build)
-- Sample Deployment Files - Get a sample application YAML file in this folder so you can just
+* Sample Deployment Files * Get a sample application YAML file in this folder so you can just
   replace the default values and deploy your edge AI application
   easily. [Deployment Files](https://github.com/darcyai/darcyai/tree/main/src/examples/deploy)
 
 ### Getting help
 
-- Get help from the other Darcy AI developers, the Darcy team, and the whole Darcy community on the
+* Get help from the other Darcy AI developers, the Darcy team, and the whole Darcy community on the
   Darcy AI Forum at [Darcy AI Forum](https://discuss.darcy.ai/c/darcy-ai/).
-- Report and track bugs in the Darcy AI platform and SDK using GitHub
+* Report and track bugs in the Darcy AI platform and SDK using GitHub
   issues [https://github.com/darcyai/darcyai/issues](https://github.com/darcyai/darcyai/issues).
 
 ### Python packages for Darcy AI
 
-- `darcyai` package: [https://pypi.org/project/darcyai/](https://pypi.org/project/darcyai/).
+* `darcyai` package: [https://pypi.org/project/darcyai/](https://pypi.org/project/darcyai/).
 
 ### Darcy Cloud
 
@@ -164,6 +165,6 @@ account for free at [cloud.darcy.ai](https://cloud.darcy.ai).
 
 ### Other helpful links
 
-- Company website for Edgeworx, the providers of the Darcy AI
+* Company website for Edgeworx, the providers of the Darcy AI
   platform: [www.darcy.ai](https://www.darcy.ai)
-- Official website for the Tensorflow AI project: [www.tensorflow.org](https://www.tensorflow.org)
+* Official website for the Tensorflow AI project: [www.tensorflow.org](https://www.tensorflow.org)

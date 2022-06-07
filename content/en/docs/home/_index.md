@@ -4,5 +4,4 @@ weight: 100
 linkTitle: "HOME"
 ---
 
-![](/images/home-hero-comp.jpg)
-
+![FIXME](/images/home-hero-comp.jpg)

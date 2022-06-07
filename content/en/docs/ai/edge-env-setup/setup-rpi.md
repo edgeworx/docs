@@ -144,7 +144,6 @@ sudo usermod -aG docker pi
 You need the PyCoral and Edge TPU runtime software libraries installed on your Raspberry Pi. Follow
 the [guide provided by Google](https://coral.ai/docs/accelerator/get-started/#requirements) and use the sections marked as "on Linux".
 
-
 ## Build OpenCV on your Raspberry Pi
 
 This step is the most time-consuming. Fortunately, if you use the convenient script provided by
