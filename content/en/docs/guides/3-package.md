@@ -3,6 +3,8 @@ title: "Package Your App for Deployment"
 weight: 300
 linkTitle: "3. Package Your App"
 ---
+![](/images/guide3-package-docker-hero.png)
+
 ## What you will accomplish
 
 By the end of this guide, you will be able to make deployable Darcy AI application packages that will run on any hardware that meets the requirements for Darcy AI. The list of compatible hardware is extensive, allowing you to deploy your Darcy AI applications to the devices that fit your solution needs.
@@ -85,8 +87,4 @@ The `--push` part of the command tells Docker to upload your container images to
 Don't forget the `.` on the end of the command. That tells the BuildX tool to look for your `Dockerfile` in the current directory.
 
 Your build process may take 10 or 15 minutes if you are building for the first time and you do not have a very fast internet connection. This is because the underlying container [base images](./TERMINOLOGY.md#docker-base-image) will need to be downloaded. After the first build, this process should only take a few minutes. You can watch the output of the command to see the build progress. A separate container image will be built for each of the platforms specified in the command. Additionally a container manifest file will be created and added to the container registry (Docker Hub) so different platforms will know which image to download and start.
-
-## Next step is to deploy your Darcy AI application
-
-Now you have a fully packaged Darcy AI application! The next step is to learn how to deploy. Follow the [Deployment Guide](./DEPLOY.md) to learn how to deploy your packaged Darcy AI apps.
 

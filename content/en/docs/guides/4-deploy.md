@@ -10,7 +10,7 @@ Once you have built and packaged a Darcy AI application, you can deploy it to as
 ## Requirements
 
 * Darcy Cloud Account
-* Edge Board
+* Edge Development Board
   * Raspberyy Pi 4 + Google Coral Accelerator
   * or 
 
