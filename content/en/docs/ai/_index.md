@@ -1,14 +1,17 @@
 ---
 title: "Darcy AI Overview"
-weight: 400
 linkTitle: "DARCY AI"
+weight: 400
 ---
+
 ## Page requires updates
+## FIXME
 
 * Update AI SDK references (Darcy Engine)
-* Discuss moving AI SDK and edgeboard requirements to a new nav section (global Darcy suite requirements?)
+* Discuss moving AI SDK and edgeboard requirements to a new nav section (global Darcy suite
+  requirements?)
 * Discuss moving "darcy AI ready edgeboards" to a new nav section
-* Discuss  pointing Setup, build, package, deploy to guides
+* Discuss pointing Setup, build, package, deploy to guides
 * Darcy example apps can be removed (now a dedicated "apps" nav section)
 * Discuss moving "help" to a new nav section (bottom of tree) to point to support/discuss
 * Discuss adding new nav section "developing AI models" with tensor flow and other AI model info
@@ -16,7 +19,6 @@ linkTitle: "DARCY AI"
 -----
 
 This is the official software development kit (SDK) for building on the Darcy AI platform.
-
 
 ## Introducing the Darcy AI platform
 
@@ -35,7 +37,6 @@ With the Darcy AI SDK, you get everything you need to build real-time AI applica
 write web applications with Node.js or you have moderate Python experience, then you can develop a
 fully functioning AI app with Darcy. The SDK comes with documentation, build instructions, example
 applications, and more.
-
 
 ## What you need
 
@@ -76,7 +77,7 @@ requirements below.
 ## Getting started
 
 If you haven't already become familiar with the Darcy AI platform terminology, check out
-the [Terminology Guide]({{<ref "terminology.md">}}) to get up to speed quickly.
+the [Terminology Guide](/docs/more/terminology.md) to get up to speed quickly.
 
 The best way to get started with Darcy is to see it in action. Start by trying out the Darcy AI
 Explorer application in the [Darcy Explorer Guide]({{<ref "darcy-explorer.md">}}).
@@ -92,13 +93,12 @@ follow the [Mac OS X Environment Setup Guide]({{<ref "setup-macos.md">}}).
 To prepare your Windows computer as a development environment for building Darcy AI applications,
 follow the [Windows Environment Setup Guide]({{<ref "setup-windows.md">}}).
 
-Learn how to build and run a Darcy AI application using your favorite IDE with
-the [Build Guide]({{<ref "/docs/guides/2-build.md">}}).
+Learn how to build and run a Darcy AI application using your favorite IDE with the [Build Guide](/docs/guides/2-build.md).
 
 ## Packaging
 
 Learn how to package your Darcy AI application into a container that includes all of the
-dependencies needed to run on many different devices with the [Packaging Guide]({{<ref "/docs/guides/3-package.md">}}).
+dependencies needed to run on many different devices with the [Packaging Guide](/docs/guides/3-package.md).
 
 ## Deploying
 
@@ -113,44 +113,38 @@ View the [Darcy AI Engine Python Docs](https://darcyai.github.io/darcyai).
 
 ### Examples
 
->> FIXME: fix references to examples folder
+The [examples](https://github.com/darcyai/darcyai/tree/main/src/examples) folder contains a diverse
+set of sample applications that you can use as a reference or as a start of your own Darcy AI
+application. The code is commented to help you understand what to do and when to do it. Here are
+some short descriptions to help you understand what examples are available. Some example
+applications are stored in their own code repositories to make learning and building easier.
 
-The [examples](./examples) folder contains a diverse set of sample applications that you can use as
-a reference or as a start of your own Darcy AI application. The code is commented to help you
-understand what to do and when to do it. Here are some short descriptions to help you understand
-what examples are available. Some example applications are stored in their own code repositories to
-make learning and building easier.
-
-- [Darcy AI Explorer](https://github.com/darcyai/darcyai-explorer): this demo application is a rich showcase of what the Darcy AI system can do.
-  Use the source code as a model for building a full-featured production
-  application.
-
-- [Real-time Audio Analysis](./examples/audio_analysis): Build and deploy this Darcy AI demo application to learn how to add
-  audio capabilities to Darcy and listen for important
-  sounds.
-
-- Darcy AI [Basic Pipeline](./examples/basic_pipeline): Use this demo application to learn the
-  basics of creating a Darcy AI [Pipeline]({{<ref "terminology.md#pipeline">}}).
-
-- [Output Stream](./examples/output_streams):  Learn how to create a Darcy AI [Output Stream]({{<ref "terminology.md#output-stream">}}) by adding this example to your application. The example sends your Darcy AI output to an
-  Amazon Web Services S3 bucket.
-
-- [Perceptors](./examples/perceptors): Learn how to build your own Darcy AI [Perceptors]({{<ref "terminology.md#perceptor">}})
+- [Darcy AI Explorer](https://github.com/darcyai/darcyai-explorer): this demo application is a rich
+  showcase of what the Darcy AI system can do. Use the source code as a model for building a
+  full-featured production application.
+- [Real-time Audio Analysis](https://github.com/darcyai/darcyai/tree/main/src/examples/audio_analysis):
+  Build and deploy this Darcy AI demo application to learn how to add audio capabilities to Darcy
+  and listen for important sounds.
+- Darcy
+  AI [Basic Pipeline](https://github.com/darcyai/darcyai/tree/main/src/examples/basic_pipeline): Use
+  this demo application to learn the basics of creating a Darcy AI [Pipeline](/docs/more/terminology.md#pipeline).
+- [Output Stream](https://github.com/darcyai/darcyai/tree/main/src/examples/output_streams):  Learn
+  how to create a Darcy AI [Output Stream]({{<ref "/docs/more/terminology.md#output-stream">}}) by adding this
+  example to your application. The example sends your Darcy AI output to an Amazon Web Services S3
+  bucket.
+- [Perceptors](https://github.com/darcyai/darcyai/tree/main/src/examples/perceptors): Learn how to
+  build your own Darcy AI [Perceptors]({{<ref "/docs/more/terminology.md#perceptor">}})
   with the examples in this directory. There is a basic mock perceptor that you can use as a
-  template. There is a face detector perceptor that uses an [AI model]({{<ref "terminology.md#ai-model">}}) to
-  find faces. There is also a face mask detector perceptor that checks a person's face for a
-  mask.
-
-- [Darcy Heart Rate Demo](https://github.com/darcyai/heart-rate-demo): this demo application is a good example of how to build an edge application that
-  is made of multiple microservices that communicate with each
-  other.
-
+  template. There is a face detector perceptor that uses an [AI model]({{<ref "/docs/more/terminology.md#ai-model">}}) to find faces. There is also a face mask detector perceptor that
+  checks a person's face for a mask.
+- [Darcy Heart Rate Demo](https://github.com/darcyai/heart-rate-demo): this demo application is a
+  good example of how to build an edge application that is made of multiple microservices that
+  communicate with each other.
 - Sample Build Files - Get a sample Dockerfile in this folder so you don't have to create one from
-  scratch. [Build Files](./examples/build)
-
+  scratch. [Build Files](https://github.com/darcyai/darcyai/tree/main/src/examples/build)
 - Sample Deployment Files - Get a sample application YAML file in this folder so you can just
   replace the default values and deploy your edge AI application
-  easily. [Deployment Files](./examples/deploy)
+  easily. [Deployment Files](https://github.com/darcyai/darcyai/tree/main/src/examples/deploy)
 
 ### Getting help
 
@@ -172,5 +166,4 @@ account for free at [cloud.darcy.ai](https://cloud.darcy.ai).
 
 - Company website for Edgeworx, the providers of the Darcy AI
   platform: [www.darcy.ai](https://www.darcy.ai)
-- Official website for the Tensorflow AI
-  project: [www.tensorflow.org](https://www.tensorflow.org)
+- Official website for the Tensorflow AI project: [www.tensorflow.org](https://www.tensorflow.org)

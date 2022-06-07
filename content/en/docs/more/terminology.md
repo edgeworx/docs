@@ -1,7 +1,7 @@
 ---
 title: "Terminology"
-weight: 200
 linkTitle: "Terminology"
+weight: 200
 ---
 ## Darcy AI terminology
 
