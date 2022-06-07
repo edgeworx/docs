@@ -192,4 +192,4 @@ fixed.
 
 ## Start building your AI applications with Darcy
 
-Go to the [Build Guide]({{<ref "build.md">}}) and get started building with Darcy AI!
+Go to the [Build Guide]({{<ref "/docs/guides/2-build.md">}}) and get started building with Darcy AI!

@@ -57,7 +57,7 @@ the [Application Templating]({{<ref "templating.md">}}) section.
 
 Applications can be created within the Darcy platform by creating a YAML configuration file linking
 to your existing containerized application. The steps for creating and deploying a custom
-application in Darcy can be found [here]({{<ref "../portal/deploy-a-custom-app.md">}}).
+application in Darcy can be found [here]({{<ref "/docs/cloud/portal/deploy-a-custom-app.md">}}).
 
 ### Deploying a Demo Application
 
@@ -68,5 +68,5 @@ app can be found [here]({{<ref "/docs/cloud/portal/heart-rate-demo-app/deploy.md
 ### Managing your Application
 
 Applications can be managed through
-the [portal]({{<ref "../portal/deploy-a-custom-app.md">}})
-or using [edgectl]({{<ref "../edgectl/deploy-an-app.md">}}).
+the [portal]({{<ref "/docs/cloud/portal/deploy-a-custom-app.md">}})
+or using [edgectl]({{<ref "/docs/cloud/edgectl/deploy-an-app.md">}}).

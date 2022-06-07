@@ -7,7 +7,7 @@ linkTitle: "DARCY AI"
 
 * Update AI SDK references (Darcy Engine)
 * Discuss moving AI SDK and edgeboard requirements to a new nav section (global Darcy suite requirements?)
-* Discuss moving "darcy AI ready edgeboards" to a new nav section 
+* Discuss moving "darcy AI ready edgeboards" to a new nav section
 * Discuss  pointing Setup, build, package, deploy to guides
 * Darcy example apps can be removed (now a dedicated "apps" nav section)
 * Discuss moving "help" to a new nav section (bottom of tree) to point to support/discuss
@@ -108,17 +108,17 @@ To prepare your Windows computer as a development environment for building Darcy
 follow the [Windows Environment Setup Guide]({{<ref "setup-windows.md">}}).
 
 Learn how to build and run a Darcy AI application using your favorite IDE with
-the [Build Guide]({{<ref "build.md">}}).
+the [Build Guide]({{<ref "/docs/guides/2-build.md">}}).
 
 ## Packaging
 
 Learn how to package your Darcy AI application into a container that includes all of the
-dependencies needed to run on many different devices with the [Packaging Guide]({{<ref "package.md">}}).
+dependencies needed to run on many different devices with the [Packaging Guide]({{<ref "/docs/guides/3-package.md">}}).
 
 ## Deploying
 
 Learn how to deploy your Darcy AI application to your edge devices using the Darcy Cloud in
-the [Deployment Guide]({{<ref "deploy.md">}}).
+the [Deployment Guide]({{<ref "/docs/guides/4-deploy.md">}}).
 
 ## Documentation
 
