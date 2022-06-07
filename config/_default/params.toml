@@ -72,7 +72,7 @@ repoHost = "GitHub"
 docsRepo = "https://github.com/darcyai/docs"
 docsRepoBranch = "master"
 docsRepoSubPath = ""
-editPage = true
+editPage = false # Is enabled for production
 lastMod = true
 
 [options]
