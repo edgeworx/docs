@@ -3,3 +3,7 @@ title: "Getting Started Guides"
 weight: 300
 linkTitle: "GET STARTED GUIDES"
 ---
+
+## Build, Deploy and Run an AI App at the Edge in less than an hour
+
+![](../../../../static/images/Get-started-overview-fpo.jpg)
