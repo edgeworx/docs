@@ -36,7 +36,7 @@ one another, you can use parallel ordering.
 
 A Darcy AI pipeline is a data graph and can be modeled visually like a sequence tree.
 
-```
+```text
          p1 (0)        p2 (1)     p3 (1)
          /  \            |          |
     p11 (0) p12 (1)    p21 (0)    p31 (1)
@@ -68,7 +68,7 @@ video camera feed and bring it into Darcy at the frame rate and resolution you s
 
 Instantiate the CameraStream object and set some of its parameters like this:
 
-```
+```python
 from darcyai.input.camera_stream import CameraStream
 
 camera = CameraStream(video_device="/dev/video0", fps=20)
@@ -88,7 +88,7 @@ simply work with semantic data results.
 
 Here is an example of creating a People Perceptor instance and adding it to the Pipeline:
 
-```
+```python
 from darcyai.perceptor.people_perceptor import PeoplePerceptor
 
 people_ai = PeoplePerceptor()
@@ -111,9 +111,9 @@ for each Perceptor can be found in the documentation for that Perceptor.
 
 Here is an example of a [callback](/docs/more/terminology.md#callback) that is taking advantage of several
 powerful convenience functions in the POM under the results of the People Perceptor named as
-“mypeople”:
+`mypeople`:
 
-```
+```python
 def my_callback(pom, input_data):
   current_display_frame = pom.mypeople.annotatedFrame().copy()
   all_people = pom.mypeople.people()
@@ -136,7 +136,7 @@ video feed that you can view with any web browser.
 
 Instantiate the LiveFeed output stream object and set some of its parameters like this:
 
-```
+```python
 from darcyai.output.live_feed_stream import LiveFeedStream
 
 def live_feed_callback(pom, input_data):
@@ -163,7 +163,7 @@ to the perceptor. The input callback signature is any function that accepts thre
 parameters are an input data object, POM object, and configuration object. Pass your input callback
 function as a parameter when you add the Perceptor to the Pipeline.
 
-```
+```python
 def people_perceptor_input_callback(input_data, pom, config):
     #Just take the frame from the incoming Input Stream and send it onward - no need to modify the frame
     frame = input_data.data.copy()
@@ -180,7 +180,7 @@ its original form. One example of a good use of the output callback, though, is 
 the POM that does not fit certain business criteria, such as deleting people from the POM who are
 facing the wrong direction. Usage of the output callback is similar to the input callback.
 
-```
+```python
 def people_perceptor_output_callback(perceptor_input, pom, config):
     #Just take the last person from the results
     all_people = pom.mypeople.people()
@@ -203,7 +203,7 @@ the ability for you to fetch the current configuration of both Perceptors and Ou
 To retrieve the current configuration of a Perceptor or Output Stream in code, call the correct
 method on the Pipeline object.
 
-```
+```python
 perceptor_config_dictionary = pipeline.get_perceptor_config("mypeople")
 outstream_config_dictionary = pipeline.get_output_stream_config("videoout")
 ```
@@ -212,7 +212,7 @@ To set a configuration item in code, call the pipeline method and pass the name 
 item as a string and also pass the new value. The list of configuration items will be provided in
 the Perceptor or Output Stream documentation, along with accepted types of values.
 
-```
+```python
 pipeline.set_perceptor_config("mypeople", "show_pose_landmark_dots", True)
 ```
 
@@ -220,7 +220,7 @@ To retrieve the current configuration using the REST API, use the following URIs
 device hostname or IP address and replace the Perceptor or Output Stream name with the name you have
 chosen when adding it to the pipeline.
 
-```
+```text
 GET http://HOSTNAME_OR_IP:8080/pipeline/perceptors/PERCEPTOR_NAME/config
 GET http://HOSTNAME_OR_IP:8080/pipeline/outputs/OUTPUT_STREAM/config
 ```
@@ -228,7 +228,7 @@ GET http://HOSTNAME_OR_IP:8080/pipeline/outputs/OUTPUT_STREAM/config
 And to use the REST API to make changes, pass your updated configuration JSON to the following URIs
 as a PATCH request.
 
-```
+```text
 PATCH http://HOSTNAME_OR_IP:8080/pipeline/perceptors/PERCEPTOR_NAME/config
 PATCH http://HOSTNAME_OR_IP:8080/pipeline/outputs/OUTPUT_STREAM/config
 ```
@@ -241,7 +241,7 @@ subscribe to an event you pass a callback function with the proper number of par
 the documentation for that event. Use the `.on()` method of a Perceptor to subscribe and pass the
 event name as a string.
 
-```
+```python
 def new_person_callback(person_id):
     print(person_id)
 
@@ -259,7 +259,7 @@ The Pipeline object provides a method for executing a Perceptor against arbitrar
 any Perceptor. The data you pass must be in the form of a StreamData object, which means that you
 can put any data in the object but you must also add an integer timestamp.
 
-```
+```python
 people_ai = PeoplePerceptor()
 current_time = int(time.time())
 my_data = StreamData(saved_video_frame, current_time)

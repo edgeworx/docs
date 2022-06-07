@@ -17,10 +17,6 @@ linkTitle: "DARCY AI"
 
 This is the official software development kit (SDK) for building on the Darcy AI platform.
 
-To browse this document and all of the other documentation on a local web server, run
-the [docs.sh](./docs.sh) script and then visit [http://localhost:8000](http://localhost:8000).
-
->> FIXME: Point to the Python repo
 
 ## Introducing the Darcy AI platform
 
@@ -40,17 +36,6 @@ write web applications with Node.js or you have moderate Python experience, then
 fully functioning AI app with Darcy. The SDK comes with documentation, build instructions, example
 applications, and more.
 
-## How to use this SDK
-
-Use this document and the other markdown files in this directory to learn about the Darcy AI
-platform and to get started. The guide documents will take you from an absolute beginner to building
-and deploying your own Darcy AI applications. The [docs](./docs) folder contains the full technical
-Darcy AI programming documentation.
-
-To browse this document and all of the other documentation on a local web server, run
-the [docs.sh](./docs.sh) script and then visit [http://localhost:8000](http://localhost:8000).
-
->> FIXME: fix links in para above
 
 ## What you need
 
@@ -120,18 +105,9 @@ dependencies needed to run on many different devices with the [Packaging Guide](
 Learn how to deploy your Darcy AI application to your edge devices using the Darcy Cloud in
 the [Deployment Guide]({{<ref "/docs/guides/4-deploy.md">}}).
 
-## Documentation
+## Python Docs
 
-Open the Darcy AI technical documentation to search and browse the API with code examples. This is a
-local documentation site that will run directly in your browser. The documentation is specific to
-each version of the Darcy AI SDK so it's the best place to reference when building. To browse this
-document and all of the other documentation on a local web server, run the [docs.sh](./docs.sh)
-script and then visit [http://localhost:8000](http://localhost:8000).
-
-If you prefer to access the latest Darcy AI developer documentation with an internet connection,
-use [Hosted Darcy AI Documentation](https://darcyai.github.io/darcyai-sdk/).
-
->> FIXME: Change links for Pydocs.
+View the [Darcy AI Engine Python Docs](https://darcyai.github.io/darcyai).
 
 ## Resources
 

@@ -83,7 +83,7 @@ spec:
 ```
 
 You can find this sample YAMl file in the `examples/deploy/` directory
-called [app_deployment.yml](./examples/deploy/app_deployment.yml).
+called [app_deployment.yml](https://github.com/darcyai/darcyai/tree/main/src/examples/deploy/app_deployment.yml).
 
 Your application deployment YAML file contains the information that the Darcy Cloud uses to load and
 run your Darcy AI application on any device. Replace the placeholder fields with your own
@@ -126,11 +126,11 @@ http://192.168.1.20:3456
 You have accomplished a great amount at this point. Congratulations! You have developed a Darcy AI
 application and tested it with your IDE and local development environment. You have packaged your
 application for a variety of target devices. And you have made a deployment YAML file and used the
-Darcy Cloud to deploy and manage your Darcy AI appliation. Wow!
+Darcy Cloud to deploy and manage your Darcy AI application.
 
 ## Next steps
 
 Now that you have all of these foundation Darcy AI developer skills, you are ready to build full
-solutions. Use the [Technical Documentation](https://darcyai.github.io/darcyai-sdk/) to learn more
+solutions. Use the [Technical Documentation](https://darcyai.github.io/darcyai) to learn more
 about what Darcy AI can do and take your skills to the next level.
 
