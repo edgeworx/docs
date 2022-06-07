@@ -3,15 +3,25 @@ title: "Deploy Your App to the Edge"
 weight: 400
 linkTitle: "4. Deploy it to the Edge"
 ---
+![](/images/guide4-deploy-cloud.jpeg)
+
 ## What you will accomplish
 
 Once you have built and packaged a Darcy AI application, you can deploy it to as many devices as you want. Use this guide to get devices set up on the [Darcy Cloud](https://cloud.darcy.ai) and create your own deployment YAML files and deploy your applications.
 
 ## Requirements
 
-* Are there requirements?
+* Darcy Cloud Account
+* Edge Development Board
+  * Raspberyy Pi 4 + Google Coral Accelerator
+  * or 
+
+
+
 
 -----
+
+
 
 ## 1. Make sure your Darcy AI application container is available
 
