@@ -204,12 +204,30 @@ If you are linking outside the current dir:
 - If you're linking to a file below the current dir, typically use a relative path, e.g. `[the below thing]({{<ref "./c/d.md">}})`.
 - If you're linking to a file above the current dir, typically use absolute an absolute path, e.g. `[the above thing]({{<ref "/docs/cloud/e/f.md">}})`
 
+### Raw HTML
+
+From time to time it may be pragmatic to include raw HTML in the markdown. For example, if
+there's a one-off HTML structure on a landing page. To do so, use the `rawhtml` shortcode:
+
+```text
+# Normal markdown here...
+
+{{< rawhtml >}}
+<div class="hello">
+  <p>hello</p>
+</div>
+{{< /rawhtml >}}
+
+## Normal markdown continues here...
+```
+
 ## Linting
 
 We have several lint targets, although some of them are still WIP and not fully integrated
 into the pipeline for various reasons.
 
 ### Script & Markdown Linting
+
 This runs the linter against scripts and the markdown files. It does not check links. Example
 below. All lint errors must be fixed.
 
