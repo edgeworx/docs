@@ -5,6 +5,7 @@ weight: 400
 ---
 ![](/images/guide4-deploy-cloud.jpeg)
 
+
 ## What you will accomplish
 
 Once you have built and packaged a Darcy AI application, you can deploy it to as many devices as you
@@ -103,7 +104,7 @@ In the pop-up window, choose the "upload your app" option and you will see a dra
 the right-hand side. You can drag and drop your YAML file into that window or you can click the "
 browse and upload" option and then select your YAML file.
 
-<img src="./examples/screenshots/darcy-cloud-custom-app-deployment.png" />
+![](/images/darcy-cloud-custom-app-deployment.png)
 
 The Darcy Cloud will tell you if you have any issues with your YAML file or your app deployment. It
 will also tell you if your Darcy AI application was deployed successfully. You can then check the
