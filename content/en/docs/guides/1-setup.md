@@ -3,7 +3,7 @@ title: "Set Up Your Build Environment"
 linkTitle: "1. Set Up Environment"
 weight: 100
 ---
-![Environment setup](/Users/brianchristensen/Documents/Edgeworx/Docs/github-docs/docs/images/guides/:Users:brianchristensen:Documents:Edgeworx:Docs:Docs assets:Environment setup.png)
+![Environment setup](/images/guide1-environment-setup-alt.jpg)
 
 ## What you will accomplish
 

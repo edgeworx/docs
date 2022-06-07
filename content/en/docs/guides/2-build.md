@@ -3,7 +3,7 @@ title: "Build an Edge AI App to Detect People"
 weight: 200
 linkTitle: "2. Build an Edge AI App"
 ---
-![](https://tva1.sinaimg.cn/large/e6c9d24egy1h2z03xr0uuj20hq0db0tx.jpg)
+![](/static/images/build-ai-app-hero.jpg)
 
 ## What you will accomplish
 
