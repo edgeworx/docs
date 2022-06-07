@@ -42,14 +42,13 @@ device.
 
 ![Cloud Portal Deploy AI Explorer App](/images/darcy-cloud-explorer-app-deploy.png)
 
-
 ## Open the Darcy AI Explorer
 
 Once your Darcy AI Explorer app is running, you can view the UI and use the app by visiting the
 following URL in any browser. Replace `YOUR.DEVICE.IP.ADDRESS` with the actual IP address of your
 device. See Darcy AI in action and explore what it can do!
 
-```
+```text
 http://YOUR.DEVICE.IP.ADDRESS:5555/
 ```
 

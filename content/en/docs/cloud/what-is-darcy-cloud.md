@@ -39,10 +39,10 @@ Terraform or kubernetes then you'll be immediately at home with Darcy Cloud.
 
 * **Edge Native Abstractions**: Edge Native implementations for agents, agent runtime, volumes,
   message routes and applications `Kinds`. All driven by Kubernetes
-  inspired `kind` [specifications](/docs/cloud/apps/yaml-definition)
+  inspired `kind` [specifications]({{<ref "/docs/apps/yaml-definition">}})
 * **Edge Control Plane**: manage all aspects of your edge deployment from the Cloud (provisioning,
   deployment, orchestration, resources, monitoring, updates, etc.)
-* **Edge Projects**: logically group, secure and manage edge nodes and applications&#x20;
+* **Edge Projects**: logically group, secure and manage edge nodes and applications
 * **Simplified provisioning**: a single, sharable, per project 1-line install command that handles
   all the downloading, provisioning, validation and registering for each of your edge projects
 * **Virtual Application Networks**: create multi-cloud, hybrid cloud, multi-tier, edge-to-edge
@@ -55,28 +55,27 @@ Terraform or kubernetes then you'll be immediately at home with Darcy Cloud.
   or scripted into your other tools. Supports autocompletion in most shells, text or JSON output
 * **Keyless ssh access**: securely access your remote servers and devices without the headache of
   VPNs and SSH keys via the web UI or via `edgectl`
-* **Access Tokens**: create account wide or project based access tokens to allow fine grained access
+* **Access Tokens**: create account wide or project based access tokens to allow fine-grained access
   via edgectl or other tooling to your projects and applications
-* **Templating language**: use liquid.js syntax in your [Application](/docs/cloud/apps/) definitions
-  to support powerful [application templating](/docs/cloud/apps/templating) at
-  deployment time
+* **Templating language**: use liquid.js syntax in your [Application]({{<ref "/docs/apps/">}})
+  definitions to support powerful [application templating]({{<ref "/docs/apps/templating.md">}}) at deployment time
 * **Application orchestration**: deploy applications to one or many nodes via the UI, cli or API
   using directed deployment or deployment time scripting
 * **Public Services**: expose any container that offers a tcp or http service to the rest of your
-  VAN, without requiring any ports or firewalls to be open&#x20;
+  VAN, without requiring any ports or firewalls to be open
 * **Resource monitoring**: get visibility into the resource usage and performance of your edge
   nodes (e.g. CPU, Mem usage, etc)
-* **Container lifecycle management**: fine grained visibility into the progress and state of
+* **Container lifecycle management**: fine-grained visibility into the progress and state of
   microservice images that are deployed to edge nodes. Automatic clean up and pruning of redundant
-  or old containers&#x20;
+  or old containers
 * **Application lifecycle management**: manage the entire app lifecycle from development to
-  deployment, updating, deleting, scaling&#x20;
+  deployment, updating, deleting, scaling
 * **Drag and drop deployment**: drag application YAML specifications into the rich user interface
   for easy application deployment
 * **Tool integration**: create specific project access tokens (PATs) for your existing tools to
   enable secure automation and access from your CI/CD system, or your Ops Dashboard, for example
 * **Public and private image registries**: use public registries such as DockerHub or configure your
-  own private repos on a per project basis&#x20;
+  own private repos on a per project basis
 * **Messaging Routing**: define message data flow routes between your microservices in your YAML
   application spec
 * **Life deployment updates**: edit and update application deployment specs in the web UI to

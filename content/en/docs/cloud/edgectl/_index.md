@@ -45,11 +45,12 @@ curl https://cloud.darcy.ai/get-edgectl.bash | bash
 ```
 
 ### Windows
+
 On Windows, use [scoop](https://scoop.sh) to install _edgectl_:
 
-```shell
-$ scoop bucket add edgectl https://github.com/edgeworx/edgectl
-$ scoop install edgectl
+```text
+scoop bucket add edgectl https://github.com/edgeworx/edgectl
+scoop install edgectl
 ```
 
 ## Enable edgectl tab completion

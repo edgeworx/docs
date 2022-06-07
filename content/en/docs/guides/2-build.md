@@ -1,20 +1,23 @@
 ---
 title: "Build an Edge AI App to Detect People"
-weight: 200
 linkTitle: "2. Build an Edge AI App"
+weight: 200
 ---
+![Darcy AI](/images/build-ai-app-hero.jpg)
+
 ## What you will accomplish
 
-In this step-by-step guide you'll learn how to build your first Darcy AI app to detect and count people.
-
-> Insert pipeline and or process diagram here
->
-> Insert app screenshot here
+In this step-by-step guide you'll learn how to build your first Darcy AI app. This app utilizes the
+Darcy AI pipelines, input stream, perceptors and output stream to detect and count people and then
+change some basic configurations. The concepts in this guide are application to ant app you
+can think to build with Darcy AI.
 
 ## Requirements
 
-- Needs
-- Content
+- [Local development environment]({{<ref "1-setup.md">}})
+- Video source (like a web cam)
+- Basic command line knowledge
+- Basic Python knowledge
 
 -----
 
@@ -24,7 +27,7 @@ You only need a single Python file to build a Darcy AI application. Open a new .
 favorite IDE and name it whatever you want. Then add the following statements at the top to include
 the Darcy AI libraries and some additional helpful libraries:
 
-```
+```python
 import cv2
 import os
 import pathlib
@@ -39,23 +42,23 @@ from darcyai.config import RGB
 If you don’t have the `darcyai` library installed yet, you can install it with PIP package installer
 for Python using the following commands:
 
-```
+```shell
 pip install darcyai
 ```
 
 If you have multiple versions of Python on your system, you may need to install the `darcyai`
 library using the Python3 version of PIP as follows:
 
-```
+```shell
 pip3 install darcyai
 ```
 
-## 2. Add the [Pipeline, Input Stream, and Output Stream objects](./TERMINOLOGY.md)
+## 2. Add the Pipeline, Input Stream, and Output Stream objects
 
 This part is quite easy. Just follow the comments to learn more about these 3 important lines of
 code.
 
-```
+```python
 # Instantiate an Camera Stream input stream object
 camera = CameraStream(video_device=0, fps=20)
 
@@ -66,7 +69,7 @@ pipeline = Pipeline(input_stream=camera)
 live_feed = LiveFeedStream(path="/", port=3456, host="0.0.0.0")
 ```
 
-## 3. Set up a [callback](./TERMINOLOGY.md#callback) and add the [Output Stream](./TERMINOLOGY.md#output-stream) to the [Pipeline](./TERMINOLOGY.md#pipeline)
+## 3. Set up a callback and add the Output Stream to the Pipeline
 
 Before we add the LiveFeed Output Stream to the Pipeline, we need to set up a callback function that
 we are going to use to process the data before displaying the video. Follow the comments to learn
@@ -75,7 +78,7 @@ where all of the business logic is taking place. After the callback function def
 line for adding the LiveFeed Output Stream to the Pipeline. That command needs to have the callback
 function already defined before it can execute successfully.
 
-```
+```python
 # Create a callback function for handling the Live Feed output stream data before it gets presented
 def live_feed_callback(pom, input_data):
     # Start wth the annotated video frame available from the People Perceptor
@@ -106,14 +109,14 @@ pipeline.add_output_stream("output", live_feed_callback, live_feed)
 
 ## 4. Define an event Output Stream and an input Output Stream and instantiate the People Perceptor
 
-Just like the LiveFeed Output Stream, the People [Perceptor](./TERMINOLOGY.md#perceptor) must have
-the callback already defined before it can work with those callbacks. The input callback simply
-takes the [Input Stream](./TERMINOLOGY.md#input-stream) data and sends it onward to the
-People [Perceptor](./TERMINOLOGY.md#perceptor). The “New Person” event callback simply prints the
-unique person identifier string to the console output when a new person has been detected by Darcy
-AI.
+Just like the LiveFeed Output Stream, the People [Perceptor](/docs/more/terminology#perceptor)
+must have the callback already defined before it can work with those callbacks. The input callback
+simply takes the [Input Stream](/docs/more/terminology#input-stream) data and sends it onward to
+the People [Perceptor](/docs/more/terminology#perceptor). The “New Person” event callback simply
+prints the unique person identifier string to the console output when a new person has been detected
+by Darcy AI.
 
-```
+```python
 # Create a callback function for handling the input that is about to pass to the People Perceptor
 def people_input_callback(input_data, pom, config):
     # Just take the frame from the incoming Input Stream and send it onward - no need to modify the frame
@@ -134,14 +137,14 @@ people_ai.on("new_person_entered_scene", new_person_callback)
 
 ## 5. Add the People Perceptor to the Pipeline
 
-```
+```python
 # Add the People Perceptor instance to the Pipeline and use the input callback from above as the input preparation handler
 pipeline.add_perceptor("peeps", people_ai, input_callback=people_input_callback)
 ```
 
 ## 6. Change some configuration items in the People Perceptor
 
-```
+```python
 # Update the configuration of the People Perceptor to show the pose landmark dots on the annotated video frame
 pipeline.set_perceptor_config("peeps", "show_pose_landmark_dots", True)
 pipeline.set_perceptor_config("peeps", "pose_landmark_dot_size", 2)
@@ -150,7 +153,7 @@ pipeline.set_perceptor_config("peeps", "pose_landmark_dot_color", RGB(0, 255, 0)
 
 ## 7. Start the Pipeline
 
-```
+```python
 # Start the Pipeline
 pipeline.run()
 ```
@@ -160,7 +163,7 @@ pipeline.run()
 Your finished Python file should look similar to this. If it doesn’t, take a minute to figure out
 what is missing or incorrect. Save your Python file. Next we will run your code!
 
-```
+```python
 import cv2
 import os
 import pathlib
@@ -246,13 +249,9 @@ run successfully and stay running until you stop the program execution.
 
 ## 10. View your real-time Darcy AI application video output
 
-Once your application is running, you can view the live video feed by visiting the following URL in
-any browser. The port number 3456 has been specified in the Python code. Feel free to change it and
-use the alternate port in the URL below.
-
-```
-http://localhost:3456/
-```
+Once your application is running, you can view the live video feed by visiting `http://localhost:3456/` in
+any browser. The port number 3456 has been specified in the Python code. Feel free to change that port
+if desired.
 
 ### What you should see
 
@@ -261,9 +260,3 @@ view, some information should be displayed on the video and some dots should be 
 face locations. The dots should move with the person's face. This is a demonstration of using Darcy
 AI to detect the presence of people, assign an anonymous stable identifier to persons as they move
 around the field of view, and annotate the video frames with text and graphics.
-
-# Now package your Darcy AI application for deployment
-
-Now that your Darcy AI application is working, the next step is to learn how to package it for
-deployment to a wide range of devices! Follow the [Packaging Guide](./PACKAGE.md) to learn how to
-package your Darcy AI apps

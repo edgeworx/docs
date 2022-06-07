@@ -3,18 +3,21 @@ title: "Set Up Your Build Environment"
 linkTitle: "1. Set Up Environment"
 weight: 100
 ---
-![Environment setup](/Users/brianchristensen/Documents/Edgeworx/Docs/github-docs/docs/images/guides/:Users:brianchristensen:Documents:Edgeworx:Docs:Docs assets:Environment setup.png)
+![Environment setup](/images/guide1-environment-setup-alt.jpg)
 
 ## What you will accomplish
 
 This guide shows how to setup a local environment on macOS to build Darcy AI applications (you can
-also use [Linux]() and [Windows]()). After you finish setting up your Mac as a development
+also use [Linux](/docs/ai/edge-env-setup/setup-rpi.md) or [Windows](/docs/ai/loc-env-setup/setup-windows.md)).
+After you finish setting up your Mac as a development
 environment, you will be able to write, test, and debug your Darcy AI apps. Then you can package
 your code and deploy the applications to any edge device!
 
 ## Requirements
 
-* Mac, [Linux]() or [WIndows]() computer
+## FIXME: broken links for linux/windows
+
+* Mac, [Linux](/docs/ai/edge-env-setup/setup-rpi.md) or [Windows](/docs/ai/loc-env-setup/setup-windows.md) host
 
 * A video camera that you want to use (the built-in webcam works very well for this purpose)
 
