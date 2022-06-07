@@ -5,7 +5,7 @@ linkTitle: "2. Build an Edge AI App"
 ---
 ## What you will accomplish
 
-In this step by step guide you'll learn how to build your first Darcy AI app to detect and count people.
+In this step-by-step guide you'll learn how to build your first Darcy AI app to detect and count people.
 
 > Insert pipeline and or process diagram here
 >
@@ -239,9 +239,10 @@ pipeline.run()
 ## 9. Run your application
 
 Using your IDE, run your Python code. Don't set any breakpoints at first because that will prevent
-you from seeing the video stream. If you followed the code reference above directly and you have all
-of the required Python libraries installed, your Darcy AI application should run successfully and
-stay running until you stop the program execution.
+you from seeing the video stream. If you get an error initializing the camera, ensure that your IDE
+has permissions to access the camera on your device. If you followed the code reference above
+directly and you have all  the required Python libraries installed, your Darcy AI application should
+run successfully and stay running until you stop the program execution.
 
 ## 10. View your real-time Darcy AI application video output
 
