@@ -227,6 +227,8 @@ content/en/docs/ai/build.md:99 MD040/fenced-code-language Fenced code blocks sho
 content/en/docs/ai/build.md:119 MD040/fenced-code-language Fenced code blocks should have a language specified [Context: "```"]
 ```
 
+> See GitHub [RULES.md](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md) for markdown linting rules.
+
 ### Link Checking
 
 There's a separate linter for checking links. At the moment it's a two-step process:
