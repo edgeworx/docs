@@ -1,8 +1,20 @@
 ---
-title: "Darcy AI"
+title: "Darcy AI Overview"
 weight: 400
 linkTitle: "DARCY AI"
 ---
+## Page requires updates
+
+* Update AI SDK references (Darcy Engine)
+* Discuss moving AI SDK and edgeboard requirements to a new nav section (global Darcy suite requirements?)
+* Discuss moving "darcy AI ready edgeboards" to a new nav section 
+* Discuss  pointing Setup, build, package, deploy to guides
+* Darcy example apps can be removed (now a dedicated "apps" nav section)
+* Discuss moving "help" to a new nav section (bottom of tree) to point to support/discuss
+* Discuss adding new nav section "developing AI models" with tensor flow and other AI model info
+
+-----
+
 This is the official software development kit (SDK) for building on the Darcy AI platform.
 
 To browse this document and all of the other documentation on a local web server, run

@@ -14,7 +14,7 @@ In this step by step guide you'll learn how to build your first Darcy AI app. Th
 - [Local development environment](../1-setup)
 - Video source (like a web cam)
 - Basic command line knowledge
-- Basic Pythin knowledge
+- Basic Python knowledge
 
 
 
@@ -264,9 +264,3 @@ view, some information should be displayed on the video and some dots should be 
 face locations. The dots should move with the person's face. This is a demonstration of using Darcy
 AI to detect the presence of people, assign an anonymous stable identifier to persons as they move
 around the field of view, and annotate the video frames with text and graphics.
-
-# Now package your Darcy AI application for deployment
-
-Now that your Darcy AI application is working, the next step is to learn how to package it for
-deployment to a wide range of devices! Follow the [Packaging Guide](./PACKAGE.md) to learn how to
-package your Darcy AI apps

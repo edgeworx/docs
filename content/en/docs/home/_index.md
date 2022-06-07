@@ -1,12 +1,8 @@
 ---
-title: "Home"
+title: "Darcy- integrated real-time AI suite built for all developers"
 weight: 100
 linkTitle: "HOME"
 ---
 
-Overview Darcy suite (infographic)
-
-Featured: Surface  Start here guides
-
-Surfaced content from all nav areas
+![](/images/home-hero-comp.jpg)
 

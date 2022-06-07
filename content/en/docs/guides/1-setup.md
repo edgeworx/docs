@@ -24,7 +24,7 @@ your code and deploy the applications to any edge device!
 
 -----
 
-## 1. Install Dependencies
+## Install Dependencies
 
 ### Install Python 3.6.9 or greater
 
