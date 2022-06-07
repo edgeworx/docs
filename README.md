@@ -72,6 +72,9 @@ The [`/layouts`](/layouts) dir contains the templates for rendering. The most in
 Styling is controlled via the SCSS files in `/assets/scss`. Note that the theme
 supports both normal and "dark" mode, so be sure to also update `/assets/scss/common/_dark.scss`.
 
+> For one-off HTML components (e.g. for [raw html](#Raw HTML)), put that CSS into `/assets/scss/custom.scss`.
+
+
 ## Branches
 
 If you merge a change to `master`, this will trigger the build pipeline, and ultimately result in
