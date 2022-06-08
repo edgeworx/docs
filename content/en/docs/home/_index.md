@@ -2,6 +2,7 @@
 title: "Darcy- integrated real-time AI suite built for all developers"
 weight: 100
 linkTitle: "HOME"
+Toc: False
 ---
 
 ![Darcy AI Suite Diagram](/images/Home-fpo-1.jpg)
