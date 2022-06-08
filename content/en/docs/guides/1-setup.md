@@ -78,7 +78,7 @@ build commands like `buildx` you can add an environment variable to your Mac wit
 command `export DOCKER_CLI_EXPERIMENTAL=enabled`. This will tell Docker to allow use of the latest
 tools which will save you a lot of time when packaging your apps!
 
-> Note that you may need to use `sudo docker` instead of just `docker` depending on how you install and set up Docker for Mac. If that is the case on your development machine, you can just add `sudo` to the beginning of any `docker` commands shown in these guides.
+> Note that![img.png](img.png) you may need to use `sudo docker` instead of just `docker` depending on how you install and set up Docker for Mac. If that is the case on your development machine, you can just add `sudo` to the beginning of any `docker` commands shown in these guides.
 
 ### Install TensorFlow
 
