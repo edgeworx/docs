@@ -1,6 +1,6 @@
 ---
 title : "Microservices"
-weight: 60
+weight: 400
 aliases:
   - /darcy/darcy-cloud/applications-doc/microservice
 ---

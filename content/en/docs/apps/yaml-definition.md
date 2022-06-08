@@ -1,6 +1,6 @@
 ---
 title : "App YAML Definition"
-weight: 70
+weight: 450
 aliases:
   - /darcy/darcy-cloud/applications-doc/app-doc-yaml
 ---
@@ -121,5 +121,7 @@ spec:
       to: heart-rate-viewer
 ```
 
-{{<alert>}} For more YAML examples see [Heart Rate Demo]({{<ref "/docs/cloud/portal/heart-rate-demo-app/app-yaml.md">}})
-or [Darcy AI Explorer]({{<ref "/docs/cloud/portal/ai-explorer-app/app-yaml.md">}}). {{</alert>}}
+{{<alert>}}
+  For more YAML examples see [Heart Rate Demo]({{<ref "/docs/apps/demo-apps/heart-rate-demo-app/app-yaml.md">}})
+  or [Darcy AI Explorer]({{<ref "/docs/apps/demo-apps/ai-explorer-app/app-yaml.md">}}).
+{{</alert>}}

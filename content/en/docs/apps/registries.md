@@ -1,6 +1,6 @@
 ---
 title : "Registries"
-weight: 90
+weight: 550
 aliases:
   - /darcy/darcy-cloud/applications-doc/registries
 ---

@@ -1,6 +1,6 @@
 ---
 title : "Docker to Darcy"
-weight: 100
+weight: 300
 aliases:
   - /darcy/darcy-cloud/applications-doc/docker-to-darcy
 ---

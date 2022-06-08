@@ -1,6 +1,6 @@
 ---
 title : "Heart Rate Demo App"
-weight: 60
+weight: 160
 aliases:
   - /darcy/darcy-cloud/get-started-ec/heart-rate-application
 ---

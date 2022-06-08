@@ -1,7 +1,7 @@
 ---
-title: "Darcy AI Explorer Guide"
-linkTitle: "AI Explorer"
-weight: 130
+title: "Darcy AI Explorer Guide-dupe from AI docs"
+linkTitle: "AI Explorer-dupe"
+weight: 300
 ---
 
 The Darcy AI Explorer application is a great way to experience Darcy for the first time. This sample
