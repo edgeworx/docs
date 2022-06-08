@@ -103,8 +103,8 @@ directory where your Python file is located, you can do the actual build.
 
 NOTE: If you don't already have an account, create one now at
 [https://hub.docker.com](https://hub.docker.com). You will be given an organization which is
-your username. Ensure that you are logged into your Dockerhub account using the following
-command by replacing the organization with your Dockerhub organization name.
+your username. Ensure that you are logged into your Docker Hub account using the following
+command by replacing the organization with your Docker Hub organization name.
 
 ```shell
 docker login --username=organization
