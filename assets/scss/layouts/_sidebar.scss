@@ -22,8 +22,21 @@
   }
 
   & .btn-toggle {
-    position: absolute;
-    left: -28px;
+    // position: absolute;
+    // left: -28px;
+    padding: 0;
+    margin-right: 1rem;
+
+    &::before {
+      width: 0.5rem;
+      content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%2829, 45, 53, 0.75%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+      margin: 0;
+      transform-origin: unset;
+    }
+  }
+
+  & .toggle-container {
+    display: flex;
   }
 }
 
@@ -128,6 +141,7 @@ a.docs-link {
   color: $body-color;
   display: block;
   padding: 0.125rem 0;
+  padding-left: 1.5rem;
   font-size: $font-size-base;
 }
 
