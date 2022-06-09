@@ -1,23 +1,25 @@
 ---
-title: "Darcy- integrated real-time AI suite built for all developers"
+title: "Build AI for the Edge, Just Like the Cloud."
 weight: 100
 linkTitle: "HOME"
 toc: False
 ---
 
-![Darcy AI Suite Diagram](/images/Home-fpo-1.jpg)
-
------
-
-## Get Started Building Your First Edge AI App
+## Start Here
 
 ![](/images/Home-fpo-2.jpg)
 
-## Explore the Developer Docs
+## What is Darcy?
+
+![](/images/Home-fpo-1.jpg)
+
+## Explore the docs
 
 ![](/images/Home-fpo-3.jpg)
 
 ![](/images/Home-fpo-4.jpg)
 
 ![](/images/Home-fpo-5.jpg)
+
+![](/images/Home-fpo-6.jpg)
 
