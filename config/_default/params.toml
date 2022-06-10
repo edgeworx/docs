@@ -4,13 +4,13 @@
 title = "Darcy Docs"
 titleSeparator = "-"
 titleAddition = "Docs for the Darcy Suite"
-description = "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+description = "Learn how to build, deploy and run your AI in the real world."
 
 ## Documentation
 # docsVersion = "0.3"
 
 ## Open Graph
-images = ["doks.png"]
+images = ["opengraph-image.png"]
 ogLocale = "en_US"
 domainTLD = "docs.darcy.ai"
 titleHome = "Darcy Docs"
