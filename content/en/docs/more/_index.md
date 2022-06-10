@@ -1,6 +1,6 @@
 ---
 title: "More"
 weight: 800
-linkTitle: "MORE"
+linkTitle: "More"
 ---
 FIXME: Add content here

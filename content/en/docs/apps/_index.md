@@ -1,7 +1,7 @@
 ---
 title : "Building Darcy Apps"
 weight: 600
-linkTitle: "BUILDING DARCY APPS"
+linkTitle: "Building Darcy Apps"
 ---
 
 Darcy connects to your applications to interact and share data. Applications can be configured in
