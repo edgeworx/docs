@@ -9,20 +9,20 @@ aliases:
 cards:
   - title: Setup Your Environment for AI Edge Development
     subtitle: Leverage the Darcy AI Engine and other open source libraries.
-    action: SETUP ENVIRONMENT
+    action: Setup
     time: 15 min
-    link: ''
+    link: '/docs/guides/1-setup/'
     image: /images/home/setup.png
   - title: Build an Edge-Ready People Detector App
     subtitle: A step by step guide to building a simple AI app to detect people.
-    action: BUILD YOUR AI APP
+    action: BUILD
     time: 30 min
-    link: ''
+    link: '/docs/guides/2-build/'
     image: /images/home/build.png
   - title: Package Your App for Deployment
     subtitle: Use Docker to package your app to be deployed to almost any edge.
-    action: PACKAGE FOR DEPLOYMENT
+    action: Package
     time: 30 min
-    link: ''
+    link: '/docs/guides/3-package/'
     image: /images/home/package.png
 ---

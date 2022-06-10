@@ -5,7 +5,7 @@
       {{ partial "sidebar/docs-menu.html" . }}
     </nav>
   </div>
-  <div class="col-12 darcy-home">
+  <div class="col darcy-home">
     <h1>Build AI for the Edge, Just Like the Cloud.</h1>
     
     <section>
@@ -17,8 +17,10 @@
             <img src="{{ $card.image }}" alt="{{ $card.title }}" class="img-fluid" />
             <div class="card-content">
               <div class="time">{{ $card.time }}</div>
-              <div class="card-title">{{ $card.title }}</div>
-              <div class="card-subtitle">{{ $card.subtitle }}</div>
+              <div class="card-details">
+                <div class="card-title">{{ $card.title }}</div>
+                <div class="card-subtitle">{{ $card.subtitle }}</div>
+              </div>
               <div class="card-action">
                 <a href="{{ $card.link }}">
                   <button>{{ $card.action }}</button>
