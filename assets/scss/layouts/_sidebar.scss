@@ -17,6 +17,15 @@
   position: relative;
   margin-top: 0.625rem;
 
+  &.main-section {
+    margin-top: 1.75rem;
+  }
+
+  & .main-section-title {
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
   & a {
     padding: 0;
   }
@@ -164,7 +173,7 @@ a.docs-link {
 .docs-link:hover,
 .docs-link.active,
 .page-links a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   color: $link-color;
 }
 

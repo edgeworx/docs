@@ -1,10 +1,10 @@
 ---
 title: "Getting Started Guides"
 weight: 300
-linkTitle: "GET STARTED GUIDES"
+linkTitle: "Get Started Guides"
 Toc: False
 ---
 
 ## Build, Deploy and Run an AI App at the Edge in less than an hour
 
-![](/images/Get-started-overview-fpo.jpg)
+![get-started-overview](/images/Get-started-overview-fpo.jpg)

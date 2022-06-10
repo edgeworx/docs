@@ -30,6 +30,11 @@
         <div>
           <a data-bs-toggle="collapse" href="#devCollapse" role="button" aria-expanded="false" aria-controls="devCollapse" class="darcyai dev-link w-100">Developers</a>
           <ul class="nav flex-column flex-md-row ms-md-n3 mt-2 collapse show" id="devCollapse">
+            {{ $currentPage := . -}}
+            {{ $active := eq $currentPage.RelPermalink .RelPermalink }}
+            <li class="nav-item">
+              <a class="nav-link ps-0 py-1{{ if $active }} active{{ end }}" href="/">Home</a>
+            </li>
             {{- $current := . -}}
             {{- $section := $current.Section -}}
             {{ range .Site.Menus.main -}}
@@ -119,7 +124,7 @@
 </div>
 {{ end -}}
 
-{{ if eq .Section "docs" -}}
+{{ if or (eq .Section "docs") (eq .Section "") -}}
 <nav class="doks-subnavbar py-2 sticky-lg-top{{ if eq .Site.Params.options.flexSearch false }} d-lg-none{{ end }}" aria-label="Secondary navigation">
   <div class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} d-flex align-items-md-center">
 
