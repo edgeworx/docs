@@ -16,4 +16,3 @@ weight: 500
 [Docker Build Files](https://github.com/darcyai/darcyai/blob/main/src/examples/build)
 
 [Sample YAML Deployment Files](https://github.com/darcyai/darcyai/blob/main/src/examples/deploy)
-

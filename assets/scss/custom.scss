@@ -6,14 +6,22 @@ Put CSS for custom HTML components here.
 
 // Home
 .darcy-home {
+  $border-color: #a9b2bc88;
+  $background-color: #f1f3f888;
+  $dark-purple: #181f22;
+  $text-color: #002131;
+  $darcy-blue: #5ac8fb;
+  $gray-bg: #f1f3f8;
+  $link-color: #006390;
+
   & .card-container {
     display: grid;
     grid-auto-flow: row;
     gap: 1.5rem;
 
     & .darcy-card {
-      background: #F1F3F888 0% 0% no-repeat padding-box;
-      border: 1px solid #A9B2BC88;
+      background: $background-color 0% 0% no-repeat padding-box;
+      border: 1px solid $border-color;
       position: relative;
       border-radius: 8px;
       overflow: hidden;
@@ -25,7 +33,7 @@ Put CSS for custom HTML components here.
       & .number {
         text-align: center;
         letter-spacing: 0.22px;
-        color: #5AC8FA;
+        color: $darcy-blue;
         text-transform: uppercase;
         opacity: 1;
         border-radius: 42px;
@@ -34,14 +42,14 @@ Put CSS for custom HTML components here.
         position: absolute;
         top: 0.5rem;
         left: 0.5rem;
-        background-color: #181F22;
+        background-color: $dark-purple;
         display: flex;
         justify-content: center;
         align-items: center;
       }
 
       & .card-content {
-        border-top: 1px solid #A9B2BC88;
+        border-top: 1px solid $border-color;
         padding: 1rem;
         flex: 1;
         display: flex;
@@ -53,49 +61,46 @@ Put CSS for custom HTML components here.
           text-transform: uppercase;
           display: flex;
           justify-content: flex-end;
-          font: normal normal normal 12px/18px Gilroy;
-          letter-spacing: 0px;
-          color: #002131;
+          font: normal normal normal 12px/18px Gilroy, sans-serif;
+          letter-spacing: 0;
+          color: $text-color;
           opacity: 1;
         }
-  
-        & .card-details {
-          // flex: 1;
 
+        & .card-details {
           & .card-title {
             width: 100%;
             margin-top: 1.5rem;
             text-align: center;
-            font: normal normal 600 18px/24px Gilroy;
-            letter-spacing: 0px;
-            color: #002131;
+            font: normal normal 600 18px/24px Gilroy, sans-serif;
+            letter-spacing: 0;
+            color: $text-color;
             opacity: 1;
           }
-    
+
           & .card-subtitle {
             text-align: center;
             margin-top: 1.5rem;
-            font: normal normal normal 14px/20px Gilroy;
-            letter-spacing: 0px;
-            color: #002131;
+            font: normal normal normal 14px/20px Gilroy, sans-serif;
+            letter-spacing: 0;
+            color: $text-color;
             opacity: 1;
           }
         }
-  
+
         & .card-action {
           margin-top: 3rem;
-  
+
           & button {
             width: 100%;
-            background: #5AC8FB 0% 0% no-repeat padding-box;
+            background: $darcy-blue 0% 0% no-repeat padding-box;
             border-radius: 4px;
             opacity: 1;
             text-align: center;
             letter-spacing: 0.17px;
-            color: #002131;
+            color: $text-color;
             text-transform: uppercase;
-            font: normal normal 600 14px/20px Gilroy;
-            opacity: 1;
+            font: normal normal 600 14px/20px Gilroy, sans-serif;
             border: unset;
             padding: 0.5rem;
           }
@@ -109,7 +114,7 @@ Put CSS for custom HTML components here.
   }
 
   & .gray-section {
-    background: #F1F3F8 0% 0% no-repeat padding-box;
+    background: $gray-bg 0% 0% no-repeat padding-box;
     border-radius: 8px;
     opacity: 1;
     padding: 2rem;
@@ -123,17 +128,17 @@ Put CSS for custom HTML components here.
   & .img-label {
     padding-top: 2rem;
     max-width: 628px;
-  
+
     & .title {
       text-align: left;
-      font: normal normal 600 18px/29px Gilroy;
-      letter-spacing: 0px;
+      font: normal normal 600 18px/29px Gilroy, sans-serif;
+      letter-spacing: 0;
     }
 
     & .subtitle {
       text-align: left;
-      font: normal normal normal 18px/29px Gilroy;
-      letter-spacing: 0px;
+      font: normal normal normal 18px/29px Gilroy, sans-serif;
+      letter-spacing: 0;
     }
   }
 
@@ -142,12 +147,11 @@ Put CSS for custom HTML components here.
     grid-auto-flow: row;
     gap: 2rem;
     padding-bottom: 2rem;
-  
-    & .doc-section {
 
+    & .doc-section {
       & .title {
         text-align: left;
-        font: normal normal 600 28px/42px Gilroy;
+        font: normal normal 600 28px/42px Gilroy, sans-serif;
         letter-spacing: -0.14px;
       }
 
@@ -156,12 +160,12 @@ Put CSS for custom HTML components here.
         display: grid;
         grid-auto-flow: row;
         gap: 1.5rem;
-        
+
         & .link {
           text-align: left;
-          font: normal normal normal 16px/20px Gilroy;
+          font: normal normal normal 16px/20px Gilroy, sans-serif;
           letter-spacing: 0.19px;
-          color: #006390;
+          color: $link-color;
         }
       }
     }
@@ -173,8 +177,7 @@ Put CSS for custom HTML components here.
     & .card-container {
       grid-auto-flow: column;
     }
-  
-  
+
     & .doc-section-container {
       & .doc-section {
         & .links-container {

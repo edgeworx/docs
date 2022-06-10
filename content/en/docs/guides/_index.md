@@ -7,4 +7,4 @@ Toc: False
 
 ## Build, Deploy and Run an AI App at the Edge in less than an hour
 
-![](/images/Get-started-overview-fpo.jpg)
+![get-started-overview](/images/Get-started-overview-fpo.jpg)
