@@ -1,10 +1,18 @@
 ---
-title: "Getting Started Guides"
+title: "Guides"
 weight: 300
-linkTitle: "Get Started Guides"
+linkTitle: "Guides"
 Toc: False
 ---
 
-## Build, Deploy and Run an AI App at the Edge in less than an hour
+## Build an Edge-ready AI App in about 30 minutes
 
-![get-started-overview](/images/Get-started-overview-fpo.jpg)
+### FIXME: Tile for setup
+
+### FIXME: Tile for build
+
+## Deploy an app to the edge in about 30 minutes
+
+### FIXME: Tile for package
+
+### FIXME: Tile for deploy

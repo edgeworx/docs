@@ -15,15 +15,10 @@ your code and deploy the applications to any edge device!
 
 ## Requirements
 
-## FIXME: broken links for linux/windows
-
-* Mac, [Linux](/docs/ai/edge-env-setup/setup-rpi.md) or [Windows](/docs/ai/loc-env-setup/setup-windows.md) host
-
-* A video camera that you want to use (the built-in webcam works very well for this purpose)
-
-* 5GB or more of free disk space to accommodate code libraries and application container images
-
-* Any IDE software that will allow you to write and debug Python (use your favorite IDE)
+- Mac, Linux or Windows computer
+- 5GB or more of free disk space
+- Video source (like a built-in web cam or attached USB cam)
+- Basic command line knowledge
 
 -----
 
@@ -61,11 +56,11 @@ Install the numpy package for Python with the command `pip install numpy`.
 
 Install the imutils package for Python with the command `pip install imutils`.
 
-### Install the DarcyAI library
+### Install the DarcyAI Engine
 
 Install the Darcy AI library for Python with the command `pip install darcyai`.
 
-### Install Docker for Mac
+### Install Docker
 
 If you don't already have Docker on your Mac, install it now by following the official
 instructions [https://docs.docker.com/desktop/mac/install/](https://docs.docker.com/desktop/mac/install/)

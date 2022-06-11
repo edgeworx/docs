@@ -1,6 +1,6 @@
 ---
 title: "Package Your App for Deployment"
-linkTitle: "3. Package Your App"
+linkTitle: "1. Package Your App"
 weight: 300
 ---
 ![FIXME](/images/guide3-package-docker-hero.png)

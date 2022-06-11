@@ -3,7 +3,7 @@ title: "Build an Edge AI App to Detect People"
 linkTitle: "2. Build an Edge AI App"
 weight: 200
 ---
-![Darcy AI](/images/build-ai-app-hero.jpg)
+![face-detection-app](/images/guide-ai-app-hero.jpg)
 
 ## What you will accomplish
 
@@ -107,7 +107,7 @@ def live_feed_callback(pom, input_data):
 pipeline.add_output_stream("output", live_feed_callback, live_feed)
 ```
 
-## 4. Define an event Output Stream and an input Output Stream and instantiate the People Perceptor
+## 4. Define event Output Stream, input the Output Stream and instantiate the People Perceptor
 
 Just like the LiveFeed Output Stream, the People [Perceptor](/docs/more/terminology#perceptor)
 must have the callback already defined before it can work with those callbacks. The input callback

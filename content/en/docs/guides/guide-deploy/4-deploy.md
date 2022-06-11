@@ -1,6 +1,6 @@
 ---
 title: "Deploy Your App to the Edge"
-linkTitle: "4. Deploy it to the Edge"
+linkTitle: "2. Deploy it to the Edge"
 weight: 400
 ---
 ![FIXME](/images/guide4-deploy-cloud.jpeg)
