@@ -251,7 +251,7 @@ status of your application using the Darcy Cloud.
 When your Darcy AI application has successfully been deployed to your devices, you will see the
 status `running` in your Darcy Cloud UI. At this time, your Darcy AI application is fully running on
 those devices. If your application has a live video feed, such as the demo application you built in
-the [Build Guide]({{<ref "2-build.md">}}) at port 3456 then you should be able to view the live feed using the
+the [Build Guide]({{<ref "build-new.md">}}) at port 3456 then you should be able to view the live feed using the
 IP address of the device followed by `:3456`, e.g. `http://192.168.1.20:3456`.
 
 You have accomplished a great amount at this point. Congratulations! You have developed a Darcy AI
