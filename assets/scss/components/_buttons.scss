@@ -74,20 +74,20 @@ pre {
   font-size: $font-size-sm;
   padding: 0.25rem 0.5rem;
   color: $color-btn-text;
-  background-color: $color-btn-bg;
-  border-color: $color-btn-border;
+  background-color: $darcy-blue-dark;
+  border-color: $darcy-blue-dark;
 }
 
 .btn-copy:hover {
   color: $color-btn-text;
-  background-color: lighten($color-btn-bg, 5%);
-  border-color: lighten($color-btn-border, 15%);
+  background-color: lighten($darcy-blue-dark, 5%);
+  border-color: lighten($darcy-blue-dark, 5%);
 }
 
 .btn-copy:focus {
   color: $color-btn-text;
-  background-color: $color-btn-bg;
-  border-color: lighten($color-btn-border, 15%);
+  background-color: $darcy-blue-dark;
+  border-color: lighten($darcy-blue-dark, 15%);
   box-shadow: none;
 }
 
