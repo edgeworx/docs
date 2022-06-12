@@ -25,23 +25,9 @@ If you have older Python versions on your Computer, you may need to use `python3
 
 - Install the DarcyAI Engine using command `pip install darcyai`.
 
-- Install Docker for [mac](https://docs.docker.com/desktop/mac/install/) or for [windows](https://docs.docker.com/desktop/windows/install/)
-
-{{< alert icon="" >}}
-After you have installed Docker, you can use `docker` commands in terminal. You will be using these
-commands to package your Darcy AI applications for deployment, including deploying to edge devices
-that are a different CPU architecture than your Mac! To make sure you can use the latest Docker
-build commands like `buildx` you can add an environment variable to your Mac with the following
-command `export DOCKER_CLI_EXPERIMENTAL=enabled`. This will tell Docker to allow use of the latest
-tools which will save you a lot of time when packaging your apps!
-{{< /alert >}}
-
-{{< alert icon="" >}}
-Note that![img.png](img.png) you may need to use `sudo docker` instead of just `docker` depending on how you install and set up Docker for Mac. If that is the case on your development machine, you can just add `sudo` to the beginning of any `docker` commands shown in these guides.
-{{< /alert >}}
+- Fix Me: Confirm Docker portion moved to deploy guide
 
 - Install TensorFlow using command `pip install tensorflow`
-
 
 
 ## 2. Create your application Python file and import libraries
@@ -62,8 +48,9 @@ from darcyai.pipeline import Pipeline
 from darcyai.config import RGB
 ```
 
+## 3. Setup your Darcy AI Pipeline
 
-## 3. Add the Pipeline, Input Stream, and Output Stream objects
+### Add the Pipeline, Input Stream, and Output Stream objects
 
 ```python
 # Instantiate an Camera Stream input stream object
@@ -76,7 +63,7 @@ pipeline = Pipeline(input_stream=camera)
 live_feed = LiveFeedStream(path="/", port=3456, host="0.0.0.0")
 ```
 
-## 4. Set up a callback and add the Output Stream to the Pipeline
+### Set up a callback and add the Output Stream to the Pipeline
 
 Before we add the LiveFeed Output Stream to the Pipeline, we need to set up a callback function that
 we are going to use to process the data before displaying the video. This is where all of the business logic is taking place. After the callback function definition, there is a line for adding the LiveFeed Output Stream to the Pipeline. That command needs to have the callback
@@ -111,7 +98,7 @@ def live_feed_callback(pom, input_data):
 pipeline.add_output_stream("output", live_feed_callback, live_feed)
 ```
 
-## 5. Define event Output Stream, input the Output Stream and instantiate the People Perceptor
+### Define event Output Stream, input the Output Stream and instantiate the People Perceptor
 
 Just like the LiveFeed Output Stream, the People [Perceptor](/docs/more/terminology#perceptor)
 must have the callback already defined before it can work with those callbacks. The input callback
@@ -139,14 +126,16 @@ people_ai = PeoplePerceptor()
 people_ai.on("new_person_entered_scene", new_person_callback)
 ```
 
-## 6. Add the People Perceptor to the Pipeline
+### Add the People Perceptor to the Pipeline
 
 ```python
 # Add the People Perceptor instance to the Pipeline and use the input callback from above as the input preparation handler
 pipeline.add_perceptor("peeps", people_ai, input_callback=people_input_callback)
 ```
 
-## 7. Change some configuration items in the People Perceptor
+## 4. Change some configuration items in the People Perceptor
+
+FIX ME: Would it make sense to use the face height example instead and talk about how you might use it to adjust distance and performance?
 
 ```python
 # Update the configuration of the People Perceptor to show the pose landmark dots on the annotated video frame
@@ -155,14 +144,14 @@ pipeline.set_perceptor_config("peeps", "pose_landmark_dot_size", 2)
 pipeline.set_perceptor_config("peeps", "pose_landmark_dot_color", RGB(0, 255, 0))
 ```
 
-## 8. Start the Pipeline
+## 5. Start the Pipeline
 
 ```python
 # Start the Pipeline
 pipeline.run()
 ```
 
-## 9. Check your completed code
+## 6. Check your completed code
 
 Your finished Python file should look similar to this. Save your Python file. Next we will run your code!
 
@@ -242,7 +231,7 @@ pipeline.set_perceptor_config("peeps", "pose_landmark_dot_color", RGB(0, 255, 0)
 pipeline.run()
 ```
 
-## 10. Run your application
+## 7. Run your application
 
 Using your IDE, run your Python code. Don't set any breakpoints at first because that will prevent
 you from seeing the video stream. If you get an error initializing the camera, ensure that your IDE
@@ -250,13 +239,16 @@ has permissions to access the camera on your device. If you followed the code re
 directly and you have all the required Python libraries installed, your Darcy AI application should
 run successfully and stay running until you stop the program execution.
 
-## 11. View your real-time Darcy AI application video output
+## 8. View your real-time Darcy AI application video output
 
 Once your application is running, you can view the live video feed by visiting `http://localhost:3456/` in
 any browser. The port number 3456 has been specified in the Python code. Feel free to change that port
 if desired.
 
 ### What you should see
+
+FIx ME show movie or animated gif here
+![face-detection-app](/images/guide-ai-app-hero.jpg)
 
 You should see a live video feed coming from your camera. When a person is detected in the field of
 view, some information should be displayed on the video and some dots should be drawn on top of key
