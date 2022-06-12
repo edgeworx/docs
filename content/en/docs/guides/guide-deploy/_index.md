@@ -1,7 +1,7 @@
 ---
 title: "Deploy an app to the edge in about 30 minutes"
 weight: 400
-linkTitle: "Deploy an App"
+linkTitle: "Deploy to the Edge"
 Toc: true
 ---
 ## FIXME: replace image with edge board visual
