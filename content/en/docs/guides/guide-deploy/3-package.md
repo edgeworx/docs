@@ -5,31 +5,6 @@ weight: 300
 ---
 ![FIXME](/images/guide3-package-docker-hero.png)
 
-## What you will accomplish
-
-By the end of this guide, you will be able to make deployable Darcy AI application packages that
-will run on any hardware that meets the requirements for Darcy AI. The list of compatible hardware
-is extensive, allowing you to deploy your Darcy AI applications to the devices that fit your
-solution needs.
-
-To perform the packaging process, you will simply need to follow a few steps.
-
-1. Create a Dockerfile so Docker knows how to build your container images
-2. Open a builder namespace
-3. Build the container images for multiple platforms (different CPU architectures)
-4. Upload your container images to your Docker Hub account or similar container registry
-
-## Requirements
-
-In order to package your Darcy AI applications, you only need to meet a couple of requirements:
-
-- Docker Desktop for Mac, Windows, or Linux
-
-- A Docker Hub account for hosting your container images (or another registry compatible with
-  Docker)
-
------
-
 ## 1. Add a Dockerfile to the same directory as your Python file
 
 To build your Darcy AI application container, you only need your Python file and a Dockerfile. A
@@ -139,3 +114,5 @@ build, this process should only take a few minutes. You can watch the output of 
 the build progress. A separate container image will be built for each of the platforms specified in
 the command. Additionally a container manifest file will be created and added to the container
 registry (Docker Hub) so different platforms will know which image to download and start.
+
+## FIX ME [BUTTON NEXT: DEPLOY YOUR AI APP](#)

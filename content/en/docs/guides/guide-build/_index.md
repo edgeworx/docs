@@ -17,6 +17,8 @@ Toc: true
 
 ---
 
-## FIXME: Tile for setup
+## What you will accomplish
+In this step-by-step guide you’ll learn how to build your first Darcy AI app. This app utilizes the Darcy AI pipelines, input stream, perceptors and output stream to detect and count people and then change some basic configurations. The concepts in this guide are application to any app you can think to build with Darcy AI.
 
-## FIXME: Tile for build
+
+## FIX ME BUTTON: SET UP YOUR ENVIRONMENT

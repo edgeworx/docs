@@ -5,26 +5,8 @@ weight: 100
 ---
 ![Environment setup](/images/guide1-environment-setup-alt.jpg)
 
-## What you will accomplish
 
-This guide shows how to setup a local environment on macOS to build Darcy AI applications (you can
-also use [Linux](/docs/ai/edge-env-setup/setup-rpi.md) or [Windows](/docs/ai/loc-env-setup/setup-windows.md)).
-After you finish setting up your Mac as a development
-environment, you will be able to write, test, and debug your Darcy AI apps. Then you can package
-your code and deploy the applications to any edge device!
-
-## Requirements
-
-- Mac, Linux or Windows computer
-- 5GB or more of free disk space
-- Video source (like a built-in web cam or attached USB cam)
-- Basic command line knowledge
-
------
-
-## Install Dependencies
-
-### Install Python 3.6.9 or greater
+## Install Python 3.6.9 or greater
 
 If you do not already have Python version 3.6.9 or greater, you will need to install it now. Darcy
 AI requires this version of Python or higher. Note that Python 2.x versions are also not compatible
@@ -40,31 +22,32 @@ this if you want by following this
 guide [https://osxdaily.com/2022/02/15/make-python-3-default-macos/](https://osxdaily.com/2022/02/15/make-python-3-default-macos/)
 .
 
-### Install OpenCV
+## Install OpenCV
 
 Install the OpenCV package for Python with the command `pip install opencv-python`
 
-### Install the Pillow library
+## Install the Pillow library
 
 Install the Pillow package for Python with the command `pip install Pillow`.
 
-### Install the Numpy library
+## Install the Numpy library
 
 Install the numpy package for Python with the command `pip install numpy`.
 
-### Install the Imutils library
+## Install the Imutils library
 
 Install the imutils package for Python with the command `pip install imutils`.
 
-### Install the DarcyAI Engine
+## Install the DarcyAI Engine
 
 Install the Darcy AI library for Python with the command `pip install darcyai`.
 
-### Install Docker
+## Install Docker
 
-If you don't already have Docker on your Mac, install it now by following the official
-instructions [https://docs.docker.com/desktop/mac/install/](https://docs.docker.com/desktop/mac/install/)
-.
+If you don't already have Docker on your Computer, install it now by following the official
+instructions
+- [ Install Docker on Mac ](#)
+- [ Install Docker on Windows](#)
 
 After you have installed Docker, you can use `docker` commands in terminal. You will be using these
 commands to package your Darcy AI applications for deployment, including deploying to edge devices
@@ -75,6 +58,8 @@ tools which will save you a lot of time when packaging your apps!
 
 > Note that![img.png](img.png) you may need to use `sudo docker` instead of just `docker` depending on how you install and set up Docker for Mac. If that is the case on your development machine, you can just add `sudo` to the beginning of any `docker` commands shown in these guides.
 
-### Install TensorFlow
+## Install TensorFlow
 
 Install TensorFlow for Python with the command `pip install tensorflow`
+
+## FIX ME [BUTTON NEXT: BUILD YOUR AI APP](#)
