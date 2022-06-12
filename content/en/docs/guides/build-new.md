@@ -61,7 +61,7 @@ from darcyai.pipeline import Pipeline
 from darcyai.config import RGB
 ```
 
-## 3. Setup your Darcy AI Pipeline
+## 3. Build your Darcy AI app
 
 ### Add the Pipeline, Input Stream, and Output Stream objects
 
