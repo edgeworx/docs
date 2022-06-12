@@ -270,5 +270,5 @@ face locations. The dots should move with the person's face. This is a demonstra
 AI to detect the presence of people, assign an anonymous stable identifier to persons as they move
 around the field of view, and annotate the video frames with text and graphics.
 
-## FIX ME [BUTTON NEXT: PACKAGE YOUR AI APP](#)
+## FIX ME [BUTTON NEXT: DEPLOY IT TO THE EDGE](#)
 
