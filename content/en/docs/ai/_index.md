@@ -104,7 +104,7 @@ dependencies needed to run on many different devices with the [Packaging Guide](
 ## Deploying
 
 Learn how to deploy your Darcy AI application to your edge devices using the Darcy Cloud in
-the [Deployment Guide]({{<ref "/docs/guides/guide-deploy/4-deploy.md">}}).
+the [Deployment Guide]({{<ref "/docs/guides/deploy-new.md">}}).
 
 ## Python Docs
 
