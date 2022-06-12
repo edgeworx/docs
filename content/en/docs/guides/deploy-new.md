@@ -27,8 +27,9 @@ solution needs.
 - Power supply
 
 ---
+## 1. Package your app
 
-## 1. Install Docker and create an account
+### Install Docker and create an account
 
 Install Docker [Mac](https://docs.docker.com/desktop/mac/install/) or [Windows](https://docs.docker.com/desktop/windows/install/)
 
@@ -47,7 +48,7 @@ tools which will save you a lot of time when packaging your apps!
 You may need to use `sudo docker` instead of just `docker` depending on how you install and set up Docker for Mac. If that is the case on your development machine, you can just add `sudo` to the beginning of any `docker` commands shown in these guides.
 {{< /alert>}}
 
-## 2. Add a Dockerfile
+### Add a Dockerfile
 
 To build your Darcy AI application container, you only need your Python file and a Dockerfile. A
 Dockerfile is just a text file with the specific name `Dockerfile` that tells the Docker command
@@ -93,7 +94,7 @@ In the example above, the instructions are to run the `/src/app.py` Python file 
 we have added the `-u` parameter which tells the Python3 engine to use unbuffered output because we
 want to see the output in the container logs unhindered.
 
-## 3. Create a builder namespace for your build process
+### Create a builder namespace for your build process
 
 The `docker buildx` command line tool that was installed with your Docker Desktop will allow you to
 build and package container images for several target device platforms (CPU architectures) at the
@@ -117,7 +118,7 @@ command.
 docker buildx use YOURNAME
 ```
 
-## 4. Build your Docker container
+### Build your Docker container
 
 Now that you have a working BuildX builder namespace and a Dockerfile in your current working
 directory where your Python file is located, you can do the actual build.
@@ -161,24 +162,22 @@ the build progress. A separate container image will be built for each of the pla
 the command. Additionally a container manifest file will be created and added to the container
 registry (Docker Hub) so different platforms will know which image to download and start.
 
-## 5. Make sure your Darcy AI application container is available
+### Make sure your Darcy AI application container is available
 
-You should have completed the steps in the [Packaging Guide]({{<ref "3-package.md">}}) by now. If have not,
-follow that guide now to package your Darcy AI application.
-
-In the packaging process you specified a full application container identifier for your Darcy AI
+In the packaging process above, you specified a full application container identifier for your Darcy AI
 application. This identifier consists of an organization name followed by a `/` and then a container
-name followed by a `:` and then a tag. As an example, the
-identifier `darcyai/darcy-ai-explorer:1.0.0` represents an application called `darcy-ai-explorer`
+name followed by a `:` and then a tag. As an example, the identifier `darcyai/darcy-ai-explorer:1.0.0` represents an application called `darcy-ai-explorer`
 with a tag `1.0.0` that is hosted under the Docker Hub organization `darcyai`.
 
 You will use your container identifier in your application deployment YAML file below. Make sure
 your container images were successfully pushed to Docker Hub at the conclusion of your packaging
 process.
 
-## 6. Add your devices to the Darcy Cloud
+## 2. Deploy your app
 
-### About Darcy Cloud
+### Add your devices to the Darcy Cloud
+
+#### About Darcy Cloud
 
 The Darcy Cloud gives you management of all your edge devices and edge applications in one place.
 You can open an SSH shell session on demand, deploy applications, and see the health and status for
@@ -196,7 +195,7 @@ add your device as a node.
 
 ![Cloud Portal Plus Button](/images/darcy-cloud-plus-item-button.png)
 
-## 6. Create your application YAML
+### Create your application YAML
 
 Here is a sample YAML file to work with.
 
@@ -234,7 +233,7 @@ For the agent name, which is shown above as `your-darcy-cloud-node-name` you sho
 node name from your Darcy Cloud account. This is the name that shows for your device which you added
 in the steps above.
 
-## 7. Deploy your Darcy AI application
+### Deploy your Darcy AI application
 
 Now that you have all of the pieces, it's easy to deploy your application to your device or any
 other device. In the Darcy Cloud, click on the "plus button" in the bottom left and choose "app".
@@ -251,7 +250,7 @@ The Darcy Cloud will tell you if you have any issues with your YAML file or your
 will also tell you if your Darcy AI application was deployed successfully. You can then check the
 status of your application using the Darcy Cloud.
 
-## 8. Use your Darcy AI application
+## 3. Use your Darcy AI application
 
 When your Darcy AI application has successfully been deployed to your devices, you will see the
 status `running` in your Darcy Cloud UI. At this time, your Darcy AI application is fully running on

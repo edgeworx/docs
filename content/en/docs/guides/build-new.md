@@ -19,7 +19,9 @@ In this step-by-step guide you’ll learn how to build your first Darcy AI app. 
 
 ---
 
-## 1. Install dependencies
+## 1. Set up your build environment
+
+### Install dependencies
 
 - [Install Python 3.6.9 or greater](https://www.python.org/downloads/)
 
@@ -42,8 +44,9 @@ If you have older Python versions on your Computer, you may need to use `python3
 
 - Install TensorFlow using command `pip install tensorflow`
 
+## 2. Build your Darcy AI app
 
-## 2. Create your application Python file and import libraries
+### Create your application Python file and import libraries
 
 You only need a single Python file to build a Darcy AI application. Open a new .py file in your
 favorite IDE and name it whatever you want. Then add the following statements at the top to include
@@ -60,8 +63,6 @@ from darcyai.output.live_feed_stream import LiveFeedStream
 from darcyai.pipeline import Pipeline
 from darcyai.config import RGB
 ```
-
-## 3. Build your Darcy AI app
 
 ### Add the Pipeline, Input Stream, and Output Stream objects
 
@@ -146,7 +147,7 @@ people_ai.on("new_person_entered_scene", new_person_callback)
 pipeline.add_perceptor("peeps", people_ai, input_callback=people_input_callback)
 ```
 
-## 4. Change some configuration items in the People Perceptor
+### Change some configuration items in the People Perceptor
 
 FIX ME: Would it make sense to use the face height example instead and talk about how you might use it to adjust distance and performance?
 
@@ -157,14 +158,14 @@ pipeline.set_perceptor_config("peeps", "pose_landmark_dot_size", 2)
 pipeline.set_perceptor_config("peeps", "pose_landmark_dot_color", RGB(0, 255, 0))
 ```
 
-## 5. Start the Pipeline
+### Start the Pipeline
 
 ```python
 # Start the Pipeline
 pipeline.run()
 ```
 
-## 6. Check your completed code
+### Check your completed code
 
 Your finished Python file should look similar to this. Save your Python file. Next we will run your code!
 
@@ -244,7 +245,7 @@ pipeline.set_perceptor_config("peeps", "pose_landmark_dot_color", RGB(0, 255, 0)
 pipeline.run()
 ```
 
-## 7. Run your application
+## 3. Run your app
 
 Using your IDE, run your Python code. Don't set any breakpoints at first because that will prevent
 you from seeing the video stream. If you get an error initializing the camera, ensure that your IDE
@@ -252,7 +253,7 @@ has permissions to access the camera on your device. If you followed the code re
 directly and you have all the required Python libraries installed, your Darcy AI application should
 run successfully and stay running until you stop the program execution.
 
-## 8. View your real-time Darcy AI application video output
+### View your real-time Darcy AI application video output
 
 Once your application is running, you can view the live video feed by visiting `http://localhost:3456/` in
 any browser. The port number 3456 has been specified in the Python code. Feel free to change that port
