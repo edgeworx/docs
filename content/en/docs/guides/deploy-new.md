@@ -4,9 +4,7 @@ linkTitle: "Deploy to the Edge"
 weight: 250
 ---
 
-![FIXME](/images/guide4-deploy-cloud.jpeg)
-
-Fix Me: replace this screenshot with one showing the AI app you just built
+![Darcy CLoud Project Page](/images/guide4-deploy-cloud.jpg)
 
 ## What you will accomplish
 
@@ -176,8 +174,6 @@ process.
 ## 2. Deploy your app
 
 ### Add your devices to the Darcy Cloud
-
-#### About Darcy Cloud
 
 The Darcy Cloud gives you management of all your edge devices and edge applications in one place.
 You can open an SSH shell session on demand, deploy applications, and see the health and status for
