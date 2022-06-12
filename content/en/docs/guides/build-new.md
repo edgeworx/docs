@@ -1,10 +1,23 @@
 ---
-title: "Build an AI app-single page version"
-linkTitle: "Build New"
+title: "Build an Edge AI App in about 30 minutes"
+linkTitle: "Build an Edge AI app"
 weight: 200
 ---
 
 ![face-detection-app](/images/guide-ai-app-hero.jpg)
+
+## What you will accomplish
+In this step-by-step guide you’ll learn how to build your first Darcy AI app. This app utilizes the Darcy AI pipelines, input stream, perceptors and output stream to detect and count people and then change some basic configurations. The concepts in this guide are application to any app you can think to build with Darcy AI.
+
+#### Requirements
+- Mac, Linux or Windows computer
+- 5GB or more of free disk space
+- Video source (like a built-in web cam or attached USB cam)
+- Basic command line knowledge
+- Basic Python knowledge
+- Docker Desktop and a Docker Hub account
+
+---
 
 ## 1. Install dependencies
 
