@@ -53,7 +53,7 @@
               <div class="title">{{ .LinkTitle }}</div>
               <div class="links-container">
                 {{ range .Pages }}
-                <div class="link">{{ .LinkTitle }}</div>
+                <a class="link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
                 {{ end }}
               </div>
             </div>
