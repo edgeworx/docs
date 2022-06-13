@@ -52,8 +52,9 @@
 .page-links a {
   color: $body-color;
   display: block;
-  padding: 0.125rem 0;
-  font-size: $font-size-base * 0.9375;
+  padding: 0.5rem 0;
+  font-size: $font-size-base * 0.85;
+  line-height: 125%;
   font-weight: inherit;
 }
 
