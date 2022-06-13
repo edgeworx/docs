@@ -1,6 +1,6 @@
 ---
 title: "Access Tokens"
-weight: 50
+weight: 300
 aliases:
   - /darcy/darcy-cloud/access-tokens
 ---
