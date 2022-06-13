@@ -75,6 +75,8 @@ docsRepoSubPath = ""
 editPage = false # Is enabled for production
 lastMod = true
 
+segmentAnalytics = "zKMEacyNthzlsDe1GAzCtjZ44oXHZg0y" # cloud.dev.darcy.ai
+
 [options]
   lazySizes = true
   clipBoard = true
@@ -95,4 +97,4 @@ lastMod = true
     collapsibleSidebar = true
 
 
-segmentAnalytics = "zKMEacyNthzlsDe1GAzCtjZ44oXHZg0y" # cloud.dev.darcy.ai
+
