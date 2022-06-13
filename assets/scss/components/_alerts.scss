@@ -143,7 +143,9 @@
 }
 
 .alert code {
-  background: darken($edgeneutral-05, 5%);
+  background: scale-color($darcy-blue-dark, $lightness: -15%);
   color: $black;
   padding: 0.25rem 0.5rem;
 }
+
+
