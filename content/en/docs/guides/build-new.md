@@ -9,6 +9,9 @@ weight: 200
 ## What you will accomplish
 In this step-by-step guide you’ll learn how to build your first Darcy AI app. This app utilizes the Darcy AI pipelines, input stream, perceptors and output stream to detect and count people and then change some basic configurations. The concepts in this guide are application to any app you can think to build with Darcy AI.
 
+
+FIX ME performance message
+
 #### Requirements
 - Mac, Linux or Windows computer
 - 5GB or more of free disk space
@@ -21,6 +24,10 @@ In this step-by-step guide you’ll learn how to build your first Darcy AI app. 
 ## Set up your build environment
 
 ### Install dependencies
+
+FIX ME tabbed UI for selcting OS: windows (coming soon) vs mac vs Linux for dependencies
+
+
 
 - [Install Python 3.6.9 or greater](https://www.python.org/downloads/)
 
@@ -251,6 +258,8 @@ you from seeing the video stream. If you get an error initializing the camera, e
 has permissions to access the camera on your device. If you followed the code reference above
 directly and you have all the required Python libraries installed, your Darcy AI application should
 run successfully and stay running until you stop the program execution.
+
+FIX ME performance message
 
 ### View your real-time Darcy AI application video output
 

@@ -13,16 +13,26 @@ will run on any hardware that meets the requirements for Darcy AI. The list of c
 is extensive, allowing you to deploy your Darcy AI applications to the devices that fit your
 solution needs.
 
-#### Requirements
+FIX ME performance notes
+
+#### Software Requirements
 - Docker Desktop and a Docker account
 - Darcy Cloud account (Free)
-- Edge development board
+
+
+#### Hardware Requirements
+- AN Edge device (see options below)
     - Raspberry Pi board (Pi 4 with 2GB+ of RAM recommended)
+    - Intel Nook
+    - Darcy Cam
     - FIX ME link to list of compatible hardware and expected performance
 - Video camera attached to the camera port
-- Google Coral edge TPU (USB version attached to USB 3.0 port)
+    - Cam options 1
+- AI Processor
+    - Google Coral edge TPU (USB version attached to USB 3.0 port)
 - Micro SD card with at least 16GB capacity (32GB+ recommended)
 - Power supply
+- Internet connectivity
 
 ---
 ## Package your app
