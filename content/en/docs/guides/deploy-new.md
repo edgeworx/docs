@@ -25,7 +25,7 @@ solution needs.
 - Power supply
 
 ---
-## 1. Package your app
+## Package your app
 
 ### Install Docker and create an account
 
@@ -33,7 +33,7 @@ Install Docker [Mac](https://docs.docker.com/desktop/mac/install/) or [Windows](
 
 [Create a Docker Hub Account](https://hub.docker.com/signup)
 
-{{< alert icon="" >}}
+{{< alert icon="" context="info"  >}}
 After you have installed Docker, you can use `docker` commands in terminal. You will be using these
 commands to package your Darcy AI applications for deployment, including deploying to edge devices
 that are a different CPU architecture than your computer! To make sure you can use the latest Docker
@@ -171,7 +171,7 @@ You will use your container identifier in your application deployment YAML file 
 your container images were successfully pushed to Docker Hub at the conclusion of your packaging
 process.
 
-## 2. Deploy your app
+## Deploy your app
 
 ### Add your devices to the Darcy Cloud
 
@@ -246,7 +246,7 @@ The Darcy Cloud will tell you if you have any issues with your YAML file or your
 will also tell you if your Darcy AI application was deployed successfully. You can then check the
 status of your application using the Darcy Cloud.
 
-## 3. Use your Darcy AI application
+## Use your Darcy AI application
 
 When your Darcy AI application has successfully been deployed to your devices, you will see the
 status `running` in your Darcy Cloud UI. At this time, your Darcy AI application is fully running on

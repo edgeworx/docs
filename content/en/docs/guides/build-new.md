@@ -19,7 +19,7 @@ In this step-by-step guide you’ll learn how to build your first Darcy AI app. 
 
 ---
 
-## 1. Set up your build environment
+## Set up your build environment
 
 ### Install dependencies
 
@@ -44,7 +44,7 @@ If you have older Python versions on your Computer, you may need to use `python3
 
 - Install TensorFlow using command `pip install tensorflow`
 
-## 2. Build your Darcy AI app
+## Build your Darcy AI app
 
 ### Create your application Python file and import libraries
 
@@ -245,7 +245,7 @@ pipeline.set_perceptor_config("peeps", "pose_landmark_dot_color", RGB(0, 255, 0)
 pipeline.run()
 ```
 
-## 3. Run your app
+## Run your app
 
 Using your IDE, run your Python code. Don't set any breakpoints at first because that will prevent
 you from seeing the video stream. If you get an error initializing the camera, ensure that your IDE
