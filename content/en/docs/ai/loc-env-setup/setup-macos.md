@@ -71,4 +71,4 @@ Install TensorFlow for Python with the command `pip install tensorflow`
 
 ## Start building your AI applications with Darcy
 
-Go to the [Build Guide](/docs/guides/2-build) and get started building with Darcy AI!
+Go to the [Build Guide](/docs/guides/build) and get started building with Darcy AI!
