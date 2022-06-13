@@ -1,6 +1,6 @@
 .alert {
   font-family: Gilroy, sans-serif;
-  font-size: $font-size-sm;
+  font-size: $font-size-md;
   border-radius: 4px;
 }
 
@@ -143,7 +143,12 @@
 }
 
 .alert code {
-  background: darken($edgeneutral-4, 5%);
+  background: rgba(0, 0, 0, 0.1);
   color: $black;
-  padding: 0.25rem 0.5rem;
+  padding: 0.125rem 0.25rem;
+  border-color: rgba(255, 255, 255, 0.5);
+  border-style: solid;
+  border-width: 1px;
 }
+
+

@@ -1,27 +1,55 @@
 ---
-title: "Build an Edge AI App to Detect People"
-linkTitle: "2. Build an Edge AI App"
+title: "Build an Edge AI App in about 30 minutes"
+linkTitle: "Build an Edge AI app"
 weight: 200
 ---
-![Darcy AI](/images/build-ai-app-hero.jpg)
+
+![face-detection-app](/images/guide-ai-app-hero.jpg)
 
 ## What you will accomplish
+In this step-by-step guide you’ll learn how to build your first Darcy AI app. This app utilizes the Darcy AI pipelines, input stream, perceptors and output stream to detect and count people and then change some basic configurations. The concepts in this guide are application to any app you can think to build with Darcy AI.
 
-In this step-by-step guide you'll learn how to build your first Darcy AI app. This app utilizes the
-Darcy AI pipelines, input stream, perceptors and output stream to detect and count people and then
-change some basic configurations. The concepts in this guide are application to any app you
-can think to build with Darcy AI.
 
-## Requirements
+FIX ME performance message
 
-- [Local development environment]({{<ref "1-setup.md">}})
-- Video source (like a web cam)
+#### Requirements
+- Mac, Linux or Windows computer
+- 5GB or more of free disk space
+- Video source (like a built-in web cam or attached USB cam)
 - Basic command line knowledge
 - Basic Python knowledge
 
------
+---
 
-## 1. Create your application Python file and import libraries
+## Set up your build environment
+
+### Install dependencies
+
+FIX ME tabbed UI for selcting OS: windows (coming soon) vs mac vs Linux for dependencies
+
+- [Install Python 3.6.9 or greater](https://www.python.org/downloads/)
+
+{{< alert icon="" >}}
+If you have older Python versions on your computer, you may need to use `python3` and `pip3` commands. You can also change this behavior for [mac](https://osxdaily.com/2022/02/15/make-python-3-default-macos/) or [windows](https://stackoverflow.com/questions/5087831/how-should-i-set-default-python-version-in-windows)
+{{< /alert >}}
+
+- Install OpenCV using command `pip install opencv-python`
+
+- Install the Pillow library using command `pip install Pillow`.
+
+- Install the Numpy library using command `pip install numpy`.
+
+- Install the Imutils library using command `pip install imutils`.
+
+- Install the DarcyAI Engine using command `pip install darcyai`.
+
+- Fix Me: Confirm Docker portion moved to deploy guide
+
+- Install TensorFlow using command `pip install tensorflow`
+
+## Build your Darcy AI app
+
+### Create your application Python file and import libraries
 
 You only need a single Python file to build a Darcy AI application. Open a new .py file in your
 favorite IDE and name it whatever you want. Then add the following statements at the top to include
@@ -39,24 +67,7 @@ from darcyai.pipeline import Pipeline
 from darcyai.config import RGB
 ```
 
-If you don’t have the `darcyai` library installed yet, you can install it with PIP package installer
-for Python using the following commands:
-
-```shell
-pip install darcyai
-```
-
-If you have multiple versions of Python on your system, you may need to install the `darcyai`
-library using the Python3 version of PIP as follows:
-
-```shell
-pip3 install darcyai
-```
-
-## 2. Add the Pipeline, Input Stream, and Output Stream objects
-
-This part is quite easy. Just follow the comments to learn more about these 3 important lines of
-code.
+### Add the Pipeline, Input Stream, and Output Stream objects
 
 ```python
 # Instantiate an Camera Stream input stream object
@@ -69,13 +80,10 @@ pipeline = Pipeline(input_stream=camera)
 live_feed = LiveFeedStream(path="/", port=3456, host="0.0.0.0")
 ```
 
-## 3. Set up a callback and add the Output Stream to the Pipeline
+### Set up a callback and add the Output Stream to the Pipeline
 
 Before we add the LiveFeed Output Stream to the Pipeline, we need to set up a callback function that
-we are going to use to process the data before displaying the video. Follow the comments to learn
-about the steps that are taken. This is the most complex portion of the whole application and it is
-where all of the business logic is taking place. After the callback function definition, there is a
-line for adding the LiveFeed Output Stream to the Pipeline. That command needs to have the callback
+we are going to use to process the data before displaying the video. This is where all of the business logic is taking place. After the callback function definition, there is a line for adding the LiveFeed Output Stream to the Pipeline. That command needs to have the callback
 function already defined before it can execute successfully.
 
 ```python
@@ -107,7 +115,7 @@ def live_feed_callback(pom, input_data):
 pipeline.add_output_stream("output", live_feed_callback, live_feed)
 ```
 
-## 4. Define an event Output Stream and an input Output Stream and instantiate the People Perceptor
+### Define event Output Stream, input the Output Stream and instantiate the People Perceptor
 
 Just like the LiveFeed Output Stream, the People [Perceptor](/docs/more/terminology#perceptor)
 must have the callback already defined before it can work with those callbacks. The input callback
@@ -135,14 +143,16 @@ people_ai = PeoplePerceptor()
 people_ai.on("new_person_entered_scene", new_person_callback)
 ```
 
-## 5. Add the People Perceptor to the Pipeline
+### Add the People Perceptor to the Pipeline
 
 ```python
 # Add the People Perceptor instance to the Pipeline and use the input callback from above as the input preparation handler
 pipeline.add_perceptor("peeps", people_ai, input_callback=people_input_callback)
 ```
 
-## 6. Change some configuration items in the People Perceptor
+### Change some configuration items in the People Perceptor
+
+FIX ME: Would it make sense to use the face height example instead and talk about how you might use it to adjust distance and performance?
 
 ```python
 # Update the configuration of the People Perceptor to show the pose landmark dots on the annotated video frame
@@ -151,17 +161,16 @@ pipeline.set_perceptor_config("peeps", "pose_landmark_dot_size", 2)
 pipeline.set_perceptor_config("peeps", "pose_landmark_dot_color", RGB(0, 255, 0))
 ```
 
-## 7. Start the Pipeline
+### Start the Pipeline
 
 ```python
 # Start the Pipeline
 pipeline.run()
 ```
 
-## 8. Check your completed code
+### Check your completed code
 
-Your finished Python file should look similar to this. If it doesn’t, take a minute to figure out
-what is missing or incorrect. Save your Python file. Next we will run your code!
+Your finished Python file should look similar to this. Save your Python file. Next we will run your code!
 
 ```python
 import cv2
@@ -239,15 +248,17 @@ pipeline.set_perceptor_config("peeps", "pose_landmark_dot_color", RGB(0, 255, 0)
 pipeline.run()
 ```
 
-## 9. Run your application
+## Run your app
 
 Using your IDE, run your Python code. Don't set any breakpoints at first because that will prevent
 you from seeing the video stream. If you get an error initializing the camera, ensure that your IDE
 has permissions to access the camera on your device. If you followed the code reference above
-directly and you have all  the required Python libraries installed, your Darcy AI application should
+directly and you have all the required Python libraries installed, your Darcy AI application should
 run successfully and stay running until you stop the program execution.
 
-## 10. View your real-time Darcy AI application video output
+FIX ME performance message
+
+### View your real-time Darcy AI application video output
 
 Once your application is running, you can view the live video feed by visiting `http://localhost:3456/` in
 any browser. The port number 3456 has been specified in the Python code. Feel free to change that port
@@ -255,8 +266,14 @@ if desired.
 
 ### What you should see
 
+FIx ME show movie or animated gif here
+![face-detection-app](/images/guide-ai-app-hero.jpg)
+
 You should see a live video feed coming from your camera. When a person is detected in the field of
 view, some information should be displayed on the video and some dots should be drawn on top of key
 face locations. The dots should move with the person's face. This is a demonstration of using Darcy
 AI to detect the presence of people, assign an anonymous stable identifier to persons as they move
 around the field of view, and annotate the video frames with text and graphics.
+
+### [Next: Deploy it to the Edge]({{<ref "/docs/guides/deploy-new.md">}})
+
