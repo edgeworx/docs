@@ -15,7 +15,6 @@ h3 {
   line-height: 30px;
   font-size: 1.4375em;
   font-weight: 600;
-  text-transform: uppercase;
 }
 
 h4 {
@@ -251,7 +250,7 @@ body {
 }
 
 ::selection {
-  background: rgba(212, 53, 159, 0.2);
+  background: $darcy-blue-dark + '88';
 }
 
 .bg-dots {

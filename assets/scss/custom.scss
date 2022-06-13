@@ -5,6 +5,12 @@ Put CSS for custom HTML components here.
 */
 
 // Home
+.no-hover-link {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .darcy-home {
   $border-color: #a9b2bc88;
   $background-color: #f1f3f888;
@@ -17,6 +23,7 @@ Put CSS for custom HTML components here.
   & .card-container {
     display: grid;
     grid-auto-flow: row;
+    grid-auto-columns: 1fr;
     gap: 1.5rem;
 
     & .darcy-card {
@@ -28,6 +35,8 @@ Put CSS for custom HTML components here.
       display: flex;
       flex-direction: column;
       max-width: 300px;
+      margin: auto;
+      height: 100%;
       justify-self: center;
 
       & .number {
@@ -176,6 +185,10 @@ Put CSS for custom HTML components here.
   .home {
     & .card-container {
       grid-auto-flow: column;
+
+      .darcy-card {
+        max-width: unset;
+      }
     }
 
     & .doc-section-container {
