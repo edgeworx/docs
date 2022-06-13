@@ -27,4 +27,4 @@ clicking the 3 dots to the right of your node and selecting `SSH` from the drop 
 {{</alert>}}
 
 Once your node is deployed, you're ready to deploy
-the [Heart Rate Demo App]({{<ref "/docs/apps/demo-apps/heart-rate-demo-app">}}).
+the [Heart Rate Demo App]({{<ref "/docs/apps/demo-apps/heart-demo.md">}}).
