@@ -19,7 +19,6 @@ FIX ME performance notes
 - Docker Desktop and a Docker account
 - Darcy Cloud account (Free)
 
-
 #### Hardware Requirements
 - AN Edge device (see options below)
     - Raspberry Pi board (Pi 4 with 2GB+ of RAM recommended)

@@ -27,14 +27,11 @@ FIX ME performance message
 
 FIX ME tabbed UI for selcting OS: windows (coming soon) vs mac vs Linux for dependencies
 
-
-
 - [Install Python 3.6.9 or greater](https://www.python.org/downloads/)
 
 {{< alert icon="" >}}
 If you have older Python versions on your computer, you may need to use `python3` and `pip3` commands. You can also change this behavior for [mac](https://osxdaily.com/2022/02/15/make-python-3-default-macos/) or [windows](https://stackoverflow.com/questions/5087831/how-should-i-set-default-python-version-in-windows)
 {{< /alert >}}
-
 
 - Install OpenCV using command `pip install opencv-python`
 
