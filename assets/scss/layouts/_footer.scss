@@ -1,5 +1,5 @@
 .footer {
-  border-top: 1px solid hsla(0,0%,100%,.1);
+  border-top: 1px solid hsla(0, 0%, 100%, 0.1);
   background-color: #e3e8f1;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -20,8 +20,7 @@
 
     .footer-nav {
       justify-items: center;
-      grid-column-gap: 24px;
-      grid-row-gap: 24px;
+      gap: 24px;
       -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
       -ms-grid-rows: auto auto auto auto;
@@ -85,8 +84,7 @@
       -ms-flex-align: center;
       align-items: center;
       grid-auto-columns: 1fr;
-      grid-column-gap: 16px;
-      grid-row-gap: 16px;
+      gap: 16px;
       -ms-grid-rows: auto;
       grid-template-rows: auto;
       border-top: 1px solid #a9b2bc;
@@ -105,7 +103,7 @@
 
       .copyright {
         color: #002131;
-        font-size: .85em;
+        font-size: 0.85em;
         order: last;
       }
 
@@ -152,8 +150,7 @@
       .footer-nav {
         display: grid;
         grid-auto-columns: 1fr;
-        grid-column-gap: 16px;
-        grid-row-gap: 16px;
+        gap: 16px;
         -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         -ms-grid-rows: auto;
@@ -194,7 +191,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .footer{
+  .footer {
     font-size: 19px;
 
     .footer-layout {
@@ -205,7 +202,7 @@
       .footer-nav {
         margin-top: 16px;
 
-        .footer-navstack{
+        .footer-navstack {
           .footer-head {
             font-size: 1em;
           }
