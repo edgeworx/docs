@@ -1,6 +1,6 @@
 ---
 title: "Remotely Access Your Node"
-weight: 70
+weight: 80
 ---
 
 Once your node is installed and connected to Darcy Cloud, you'll be able to remotely access it using

@@ -15,10 +15,14 @@ node.
 
 ![Add Node](/images/add-node.png)
 
-Click the `+ ADD NODE` button. This will bring up a modal dialog which shows the one line command
-that must be run on your host for it to become a node in your edge project.
+Click the `+ ADD NODE` button. This will bring up a modal dialog which shows all the type of node you could add in your project.
 
-![Register Node Script](/images/darcy-install-script.png)
+![Register Node Script](/images/select-node-type.png)
+
+Click on `EDGE DEV BOARD (LINUX)` This will bring up a modal dialog which shows the one line command that must be run on your
+host for it to become a node in your edge project.
+
+![Register Node Script](/images/add-edge-node.png)
 
 Click the `COPY` button to copy the install command to your clipboard.
 
@@ -31,7 +35,7 @@ The entire install
 process can take up to a few minutes (depending on the spec of your node, your internet connection
 speed, and other dependencies).
 
-![Install Node](/images/node1-installed.png)
+![Install Node](/images/edge-node-added.png)
 
 {{<alert>}}
   If you would like to choose a specific name for your node, use the

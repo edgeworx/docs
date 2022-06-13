@@ -60,4 +60,5 @@ different pieces of putting together a Docker container image. {{</alert>}}
 ## Connecting Microservices to Edge Application
 
 Once your microservice is deployed on your node, you're ready to connect it to your Application!
-Check out the [Public Services]({{<ref "public-services.md">}}) section for configuration steps.
+
+[//]: # (Check out the [Public Services]&#40;{{<ref "public-services.md">}}&#41; section for configuration steps.)
