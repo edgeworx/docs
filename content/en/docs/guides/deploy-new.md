@@ -33,7 +33,7 @@ Install Docker [Mac](https://docs.docker.com/desktop/mac/install/) or [Windows](
 
 [Create a Docker Hub Account](https://hub.docker.com/signup)
 
-{{< alert icon="" context="info"  >}}
+{{< alert icon="" style="info"  >}}
 After you have installed Docker, you can use `docker` commands in terminal. You will be using these
 commands to package your Darcy AI applications for deployment, including deploying to edge devices
 that are a different CPU architecture than your computer! To make sure you can use the latest Docker
@@ -42,7 +42,7 @@ command `export DOCKER_CLI_EXPERIMENTAL=enabled`. This will tell Docker to allow
 tools which will save you a lot of time when packaging your apps!
 {{< /alert>}}
 
-{{< alert icon="⚠️ " context="warning" >}}
+{{< alert icon="⚠️ " style="warning" >}}
 You may need to use `sudo docker` instead of just `docker` depending on how you install and set up Docker for Mac. If that is the case on your development machine, you can just add `sudo` to the beginning of any `docker` commands shown in these guides.
 {{< /alert>}}
 

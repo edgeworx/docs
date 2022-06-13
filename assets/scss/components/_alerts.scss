@@ -143,9 +143,12 @@
 }
 
 .alert code {
-  background: scale-color($darcy-blue-dark, $lightness: -15%);
+  background: rgba(0, 0, 0, 0.1);
   color: $black;
-  padding: 0.25rem 0.5rem;
+  padding: 0.125rem 0.25rem;
+  border-color: rgba(255, 255, 255, 0.5);
+  border-style: solid;
+  border-width: 1px;
 }
 
 
