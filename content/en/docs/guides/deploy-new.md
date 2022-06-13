@@ -29,9 +29,9 @@ solution needs.
 
 ### Install Docker and create an account
 
-Install Docker [Mac](https://docs.docker.com/desktop/mac/install/) or [Windows](https://docs.docker.com/desktop/windows/install/)
+- Install Docker [Mac](https://docs.docker.com/desktop/mac/install/) or [Windows](https://docs.docker.com/desktop/windows/install/)
 
-[Create a Docker Hub Account](https://hub.docker.com/signup)
+- [Create a Docker Hub Account](https://hub.docker.com/signup)
 
 {{< alert icon="" style="info"  >}}
 After you have installed Docker, you can use `docker` commands in terminal. You will be using these
@@ -53,7 +53,7 @@ Dockerfile is just a text file with the specific name `Dockerfile` that tells th
 tools how to make your containers. You can include as many files as you want in your container. The
 commands for adding those files are discussed below.
 
-{{< alert icon="⚠️" context="warning" >}}
+{{< alert icon="⚠️" style="warning" >}}
 Make sure you create the Dockerfile in the same
 directory as your Python file and change the name below from YOURFILE.py to the actual name of your
 file.

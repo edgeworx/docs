@@ -15,7 +15,6 @@ In this step-by-step guide you’ll learn how to build your first Darcy AI app. 
 - Video source (like a built-in web cam or attached USB cam)
 - Basic command line knowledge
 - Basic Python knowledge
-- Docker Desktop and a Docker Hub account
 
 {{< details "Requirements" closed >}}
 - Mac, Linux or Windows computer
@@ -23,7 +22,6 @@ In this step-by-step guide you’ll learn how to build your first Darcy AI app. 
 - Video source (like a built-in web cam or attached USB cam)
 - Basic command line knowledge
 - Basic Python knowledge
-- Docker Desktop and a Docker Hub account
 {{< /details >}}
 
 ---
@@ -35,7 +33,7 @@ In this step-by-step guide you’ll learn how to build your first Darcy AI app. 
 - [Install Python 3.6.9 or greater](https://www.python.org/downloads/)
 
 {{< alert icon="" >}}
-If you have older Python versions on your Computer, you may need to use `python3` and `pip3` commands. You can also change this behavior for [mac](https://osxdaily.com/2022/02/15/make-python-3-default-macos/) or [windows](https://stackoverflow.com/questions/5087831/how-should-i-set-default-python-version-in-windows)
+If you have older Python versions on your computer, you may need to use `python3` and `pip3` commands. You can also change this behavior for [mac](https://osxdaily.com/2022/02/15/make-python-3-default-macos/) or [windows](https://stackoverflow.com/questions/5087831/how-should-i-set-default-python-version-in-windows)
 {{< /alert >}}
 
 
