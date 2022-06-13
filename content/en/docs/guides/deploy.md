@@ -13,7 +13,7 @@ will run on any hardware that meets the requirements for Darcy AI. The list of c
 is extensive, allowing you to deploy your Darcy AI applications to the devices that fit your
 solution needs.
 
-FIX ME performance notes
+FIXME performance notes
 
 #### Software Requirements
 - Docker Desktop and a Docker account
@@ -24,7 +24,7 @@ FIX ME performance notes
     - Raspberry Pi board (Pi 4 with 2GB+ of RAM recommended)
     - Intel Nook
     - Darcy Cam
-    - FIX ME link to list of compatible hardware and expected performance
+    - FIXME link to list of compatible hardware and expected performance
 - Video camera attached to the camera port
     - Cam options 1
 - AI Processor
@@ -260,7 +260,7 @@ status of your application using the Darcy Cloud.
 When your Darcy AI application has successfully been deployed to your devices, you will see the
 status `running` in your Darcy Cloud UI. At this time, your Darcy AI application is fully running on
 those devices. If your application has a live video feed, such as the demo application you built in
-the [Build Guide]({{<ref "build-new.md">}}) at port 3456 then you should be able to view the live feed using the
+the [Build Guide]({{<ref "build.md">}}) at port 3456 then you should be able to view the live feed using the
 IP address of the device followed by `:3456`, e.g. `http://192.168.1.20:3456`.
 
 You have accomplished a great amount at this point. Congratulations! You have developed a Darcy AI

@@ -10,7 +10,7 @@ weight: 200
 In this step-by-step guide you’ll learn how to build your first Darcy AI app. This app utilizes the Darcy AI pipelines, input stream, perceptors and output stream to detect and count people and then change some basic configurations. The concepts in this guide are application to any app you can think to build with Darcy AI.
 
 
-FIX ME performance message
+FIXME performance message
 
 #### Requirements
 - Mac, Linux or Windows computer
@@ -25,12 +25,14 @@ FIX ME performance message
 
 ### Install dependencies
 
-FIX ME tabbed UI for selcting OS: windows (coming soon) vs mac vs Linux for dependencies
+FIXME tabbed UI for selecting OS: windows (coming soon) vs mac vs Linux for dependencies
 
 - [Install Python 3.6.9 or greater](https://www.python.org/downloads/)
 
 {{< alert icon="" >}}
-If you have older Python versions on your computer, you may need to use `python3` and `pip3` commands. You can also change this behavior for [mac](https://osxdaily.com/2022/02/15/make-python-3-default-macos/) or [windows](https://stackoverflow.com/questions/5087831/how-should-i-set-default-python-version-in-windows)
+If you have older Python versions on your computer, you may need to use `python3` and `pip3` commands.
+You can also change this behavior for [mac](https://osxdaily.com/2022/02/15/make-python-3-default-macos/)
+or [windows](https://stackoverflow.com/questions/5087831/how-should-i-set-default-python-version-in-windows)
 {{< /alert >}}
 
 - Install OpenCV using command `pip install opencv-python`
@@ -43,7 +45,7 @@ If you have older Python versions on your computer, you may need to use `python3
 
 - Install the DarcyAI Engine using command `pip install darcyai`.
 
-- Fix Me: Confirm Docker portion moved to deploy guide
+- FIXME: Confirm Docker portion moved to deploy guide
 
 - Install TensorFlow using command `pip install tensorflow`
 
@@ -152,7 +154,7 @@ pipeline.add_perceptor("peeps", people_ai, input_callback=people_input_callback)
 
 ### Change some configuration items in the People Perceptor
 
-FIX ME: Would it make sense to use the face height example instead and talk about how you might use it to adjust distance and performance?
+FIXME: Would it make sense to use the face height example instead and talk about how you might use it to adjust distance and performance?
 
 ```python
 # Update the configuration of the People Perceptor to show the pose landmark dots on the annotated video frame
@@ -256,7 +258,7 @@ has permissions to access the camera on your device. If you followed the code re
 directly and you have all the required Python libraries installed, your Darcy AI application should
 run successfully and stay running until you stop the program execution.
 
-FIX ME performance message
+FIXME performance message
 
 ### View your real-time Darcy AI application video output
 
@@ -266,7 +268,7 @@ if desired.
 
 ### What you should see
 
-FIx ME show movie or animated gif here
+FIXME show movie or animated gif here
 ![face-detection-app](/images/guide-ai-app-hero.jpg)
 
 You should see a live video feed coming from your camera. When a person is detected in the field of
@@ -275,5 +277,5 @@ face locations. The dots should move with the person's face. This is a demonstra
 AI to detect the presence of people, assign an anonymous stable identifier to persons as they move
 around the field of view, and annotate the video frames with text and graphics.
 
-### [Next: Deploy it to the Edge]({{<ref "/docs/guides/deploy-new.md">}})
+Next, you'll [deploy the app to the edge](/docs/guides/deploy).
 
