@@ -93,3 +93,6 @@ lastMod = true
   [menu.section]
     auto = true
     collapsibleSidebar = true
+
+
+segmentAnalytics = "zKMEacyNthzlsDe1GAzCtjZ44oXHZg0y" # cloud.dev.darcy.ai
