@@ -17,6 +17,15 @@ In this step-by-step guide you’ll learn how to build your first Darcy AI app. 
 - Basic Python knowledge
 - Docker Desktop and a Docker Hub account
 
+{{< details "Requirements" closed >}}
+- Mac, Linux or Windows computer
+- 5GB or more of free disk space
+- Video source (like a built-in web cam or attached USB cam)
+- Basic command line knowledge
+- Basic Python knowledge
+- Docker Desktop and a Docker Hub account
+{{< /details >}}
+
 ---
 
 ## Set up your build environment
