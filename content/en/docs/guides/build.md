@@ -13,7 +13,7 @@ In this step-by-step guide you’ll learn how to build your first Darcy AI app. 
 FIXME performance message
 
 #### Requirements
-- Mac, Linux or Windows computer
+- Mac (Linux & Windows coming soon)
 - 5GB or more of free disk space
 - Video source (like a built-in web cam or attached USB cam)
 - Basic command line knowledge
@@ -72,33 +72,13 @@ or [windows](https://stackoverflow.com/questions/5087831/how-should-i-set-defaul
     </div>
     <div class="tab-pane" id="linux" role="tabpanel" aria-labelledby="linux-tab">
 {{</ rawhtml>}}
-- [Install Python 3.6.9 or greater](https://www.python.org/downloads/)
-
-
 {{< rawhtml >}}
 <div class="alert-container">
 {{< /rawhtml >}}
-{{< alert icon="" >}}
-If you have older Python versions on your computer, you may need to use `python3` and `pip3` commands.
-You can also change this behavior for [mac](https://osxdaily.com/2022/02/15/make-python-3-default-macos/)
-or [windows](https://stackoverflow.com/questions/5087831/how-should-i-set-default-python-version-in-windows)
-{{< /alert >}}
 {{< rawhtml >}}
 </div>
 {{< /rawhtml >}}
-
-- Install OpenCV using command `pip install opencv-python`
-
-- Install the Pillow library using command `pip install Pillow`.
-
-- Install the Numpy library using command `pip install numpy`.
-
-- Install the Imutils library using command `pip install imutils`.
-
-- Install the DarcyAI Engine using command `pip install darcyai`.
-
-- Install TensorFlow using command `pip install tensorflow`
-
+Coming soon...
 {{< rawhtml >}}
     </div>
     <div class="tab-pane" id="windows" role="tabpanel" aria-labelledby="windows-tab">
@@ -214,8 +194,6 @@ pipeline.add_perceptor("peeps", people_ai, input_callback=people_input_callback)
 ```
 
 ### Change some configuration items in the People Perceptor
-
-FIXME: Would it make sense to use the face height example instead and talk about how you might use it to adjust distance and performance?
 
 ```python
 # Update the configuration of the People Perceptor to show the pose landmark dots on the annotated video frame
