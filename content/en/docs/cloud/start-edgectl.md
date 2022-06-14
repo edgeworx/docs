@@ -1,6 +1,6 @@
 ---
 title : "Get Started: edgectl"
-weight: 30
+weight: 200
 aliases:
   - /darcy/darcy-cloud/get-started-edgectl
   - /darcy-docs/darcy-cloud/get-started-edgectl

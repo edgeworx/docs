@@ -1,6 +1,6 @@
 ---
 title: "Add a Virtual Node"
-weight: 70
+weight: 500
 ---
 
 Don't have a compatible edge device set up not an issue, for `MACOSX` and `WINDOWS` user we can set up a new Ubuntu VM locally, and register that VM as a node
