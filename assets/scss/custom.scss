@@ -15,7 +15,6 @@ $border-color: #a9b2bc88;
 $background-color: $edgeneutral-05;
 $dark-purple: #181f22;
 $text-color: $edgeneutral-5;
-$darcy-blue: $darcy-blue-dark;
 $gray-bg: $edgeneutral-05;
 $link-color: #006390;
 
@@ -38,10 +37,14 @@ $link-color: #006390;
     height: 100%;
     justify-self: center;
 
+    &:hover {
+      border: 1px solid $darcy-blue-dark;
+    }
+
     & .number {
       text-align: center;
       letter-spacing: 0.22px;
-      color: $darcy-blue;
+      color: $darcy-blue-dark;
       text-transform: uppercase;
       opacity: 1;
       border-radius: 42px;
@@ -101,7 +104,7 @@ $link-color: #006390;
 
         & button {
           width: 100%;
-          background: $darcy-blue 0% 0% no-repeat padding-box;
+          background: $darcy-blue-dark 0% 0% no-repeat padding-box;
           border-radius: 4px;
           opacity: 1;
           text-align: center;
