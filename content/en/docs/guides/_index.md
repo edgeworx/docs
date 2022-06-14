@@ -21,7 +21,7 @@ cards:
     subtitle: Incorporate other sensors like audio, thermal and more, run your own AI models and push the data anywhere.
     action: Extend
     time: --
-    link: '/docs/guides/deploy/'
+    link: '/docs/guides/extend/'
     image: /images/guides/guide-thumb-extend.jpg
 ---
 {{< cards >}}
