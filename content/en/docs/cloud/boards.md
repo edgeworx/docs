@@ -1,7 +1,10 @@
 ---
 title: "Choosing an Edge Node"
 weight: 200
-linkTitle: "Choosing an Edge Node"
+linkTitle: "Edge Node Compatibility"
+draft: true
+aliases:
+  - /darcy/darcy-cloud/what-is-darcy-cloud
 ---
 FIX ME: possibly move or delete? update content, currently mot accurate
 
