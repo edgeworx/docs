@@ -15,8 +15,8 @@ edgectl deploy app --help
 ```
 
 The `deploy app` command requires a path to a `YAML` file to be specified. See the YAML
-for our demo apps: [Heart Rate Demo](/docs/apps/demo-apps/heart-rate-demo-app/app-yaml)
-and [Darcy AI Explorer](/docs/apps/demo-apps/ai-explorer-app/app-yaml).
+for our demo apps: [Heart Rate Demo](/docs/apps/demo-apps/heart-rate)
+and [Darcy AI Explorer](/docs/apps/demo-apps/ai-explorer).
 
 The `YAML` file defines everything about our edge application that is required to deploy it. For
 example:
