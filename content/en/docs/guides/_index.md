@@ -2,9 +2,8 @@
 title: "Guides"
 weight: 300
 linkTitle: "Guides"
-Toc: False
+toc: false
 cards:
-
   - title: Build an Edge AI App
     subtitle: A step-by-step guide to building and customizing a simple AI app to detect people in the real world.
     action: BUILD
@@ -18,9 +17,4 @@ cards:
     link: '/docs/guides/deploy/'
     image: /images/guide4-deploy-cloud.jpg
 ---
-
-## Build an Edge AI App to Detect People, then Deploy it Anywhere.
-
-![face-detection-app](/images/Guides-home-hero.jpg)
-
-#### FIXME replace placeholder image below with real html and content
+{{< cards >}}

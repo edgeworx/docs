@@ -40,7 +40,7 @@
 {{ if lt $prevIndex 0}}
   {{ if eq $pageIndex 0}}
     {{ $prevLink = $currentSection.RelPermalink }}
-    {{ $prevTitle = $currentSection.Title }}
+    {{ $prevTitle = $currentSection.LinkTitle }}
   {{ else }}
     {{ $parent := .GetPage ".." }}
 
@@ -48,7 +48,7 @@
       {{ if and (gt $i 0) (eq $item.RelPermalink $currentPage.RelPermalink) }}
         {{ $aunt := index $parent.Pages (sub $i 1) }}
         {{ $prevLink = $aunt.RelPermalink }}
-        {{ $prevTitle = $aunt.Title }}
+        {{ $prevTitle = $aunt.LinkTitle }}
         {{ if not $isIndex }}
           {{ $prevArrow = "&#8598;" }} {{/* The northwest arrow */}}
         {{ end }}
@@ -57,20 +57,20 @@
 
     {{ if and (not $prevLink) (ne $parent.Kind "home") }}
       {{ $prevLink = $parent.RelPermalink }}
-      {{ $prevTitle = $parent.Title }}
+      {{ $prevTitle = $parent.LinkTitle }}
       {{ $prevArrow = "&#8598;" }} {{/* The northwest arrow */}}
     {{ end }}
   {{ end }}
 {{ else }}
   {{ $prev := index $currentSection.Pages $prevIndex}}
   {{ $prevLink = $prev.RelPermalink }}
-  {{ $prevTitle = $prev.Title }}
+  {{ $prevTitle = $prev.LinkTitle }}
 {{ end }}
 
 {{ if ge $nextIndex 0}}
   {{ $next := index $currentSection.Pages $nextIndex}}
   {{ $nextLink = $next.RelPermalink }}
-  {{ $nextTitle = $next.Title }}
+  {{ $nextTitle = $next.LinkTitle }}
 {{ else }}
   {{ $parent := .GetPage ".." }}
   {{ range $i, $item := $parent.Pages }}
@@ -79,7 +79,7 @@
       {{ if lt $auntIndex (len $parent.Pages) }}
         {{ $aunt := index $parent.Pages $auntIndex }}
         {{ $nextLink = $aunt.RelPermalink }}
-        {{ $nextTitle = $aunt.Title }}
+        {{ $nextTitle = $aunt.LinkTitle }}
         {{ $nextArrow = "&#8599;" }} {{/* The northeast arrow */}}
       {{ else }}
         {{ $grandparent := .GetPage "../.." }}
@@ -89,7 +89,7 @@
             {{ if lt $grandauntIndex (len $grandparent.Pages) }}
               {{ $grandaunt := index $grandparent.Pages $grandauntIndex }}
               {{ $nextLink = $grandaunt.RelPermalink }}
-              {{ $nextTitle = $grandaunt.Title }}
+              {{ $nextTitle = $grandaunt.LinkTitle }}
               {{ $nextArrow = "&#8599;" }} {{/* The northeast arrow */}}
             {{ end }}
           {{ end }}

@@ -5,17 +5,19 @@
 {{ with .Get "icon" }}
   {{ $icon = .}}
 {{ else }}
-  {{ if eq $style "success" }} {{ $icon = "✅" }} {{end}}
-  {{ if eq $style "warning" }} {{ $icon = "⚠️" }} {{end}}
-  {{ if eq $style "danger" }} {{ $icon = "⛔" }} {{end}}
-  {{ if eq $style "info" }} {{ $icon = "💡" }} {{end}}
+  {{ if eq $style "success" }} {{ $icon = "/images/alerts/alert-confirm.png" }} {{end}}
+  {{ if eq $style "warning" }} {{ $icon = "/images/alerts/alert-warning.png" }} {{end}}
+  {{ if eq $style "danger" }} {{ $icon = "/images/alerts/alert-warning.png" }} {{end}}
+  {{ if eq $style "info" }} {{ $icon = "/images/alerts/alert-info.png" }} {{end}}
 {{ end }}
 
 
 
 
 <div class="alert alert-{{$style}} d-flex" role="alert">
-  <div class="flex-shrink-1 alert-icon">{{ $icon }} </div>
+  <div class="flex-shrink-1 alert-icon">
+    <img src="{{ $icon }}" alt="{{ $style }}" class="img-fluid" width="24" />
+  </div>
   {{ with .Get "text"}}
     <div class="w-100">{{ . | safeHTML }} </div>
   {{ else }}
