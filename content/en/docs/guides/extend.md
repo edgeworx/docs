@@ -1,10 +1,10 @@
 ---
 title: "Extend Darcy AI for your use case"
-linkTitle: "Extending Darcy AI"
+linkTitle: "Extend Darcy AI"
 weight: 300
 ---
 
-![Darcy CLoud Project Page](/images/guide4-deploy-cloud.jpg)
+![Darcy CLoud Project Page](/images/guides/extend-hero.jpg)
 
 Darcy AI can be extended to leverage different inputs (like audio, thermal, Lidar, Etc), custom AI models (find people, cars, overheating equipment, etc) and output the data anywhere you want.
 
