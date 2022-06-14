@@ -123,6 +123,6 @@ spec:
 ```
 
 {{<alert>}}
-  For more YAML examples see [Heart Rate Demo]({{<ref "/docs/apps/demo-apps/heart-rate-demo-app/app-yaml.md">}})
-  or [Darcy AI Explorer]({{<ref "/docs/apps/demo-apps/ai-explorer-app/app-yaml.md">}}).
+  For more YAML examples see [Heart Rate Demo]({{<ref "/docs/apps/demo-apps/heart-demo.md">}})
+  or [Darcy AI Explorer]({{<ref "/docs/apps/demo-apps/ai-exp-demo.md">}}).
 {{</alert>}}

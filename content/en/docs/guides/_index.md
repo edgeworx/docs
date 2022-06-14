@@ -4,17 +4,24 @@ weight: 300
 linkTitle: "Guides"
 toc: false
 cards:
+
   - title: Build an Edge AI App
     subtitle: A step-by-step guide to building and customizing a simple AI app to detect people in the real world.
     action: BUILD
     time: 30 min
     link: '/docs/guides/build/'
-    image: /images/Build-edge-app-thumb.jpg
-  - title: Deploy an app to the edge
-    subtitle: Deploy your app into the real world on an edge board (without code changes).
+    image: /images/guides/guide-thumb-build.jpg
+  - title: Deploy apps to the edge
+    subtitle: Package and deploy your app in the real world on different edge devices without changing the code.
     action: Deploy
     time: 30 min
     link: '/docs/guides/deploy/'
-    image: /images/guide4-deploy-cloud.jpg
+    image: /images/guides/guide-thumb-deploy.jpg
+  - title: Extend Darcy AI
+    subtitle: Incorporate other sensors like audio, thermal and more, run your own AI models and push the data anywhere.
+    action: Extend
+    time: --
+    link: '/docs/guides/deploy/'
+    image: /images/guides/guide-thumb-extend.jpg
 ---
 {{< cards >}}

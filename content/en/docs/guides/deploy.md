@@ -51,7 +51,7 @@ command `export DOCKER_CLI_EXPERIMENTAL=enabled`. This will tell Docker to allow
 tools which will save you a lot of time when packaging your apps!
 {{< /alert>}}
 
-{{< alert icon="⚠️ " style="warning" >}}
+{{< alert style="warning" >}}
 You may need to use `sudo docker` instead of just `docker` depending on how you install and set up Docker for Mac. If that is the case on your development machine, you can just add `sudo` to the beginning of any `docker` commands shown in these guides.
 {{< /alert>}}
 
@@ -62,7 +62,7 @@ Dockerfile is just a text file with the specific name `Dockerfile` that tells th
 tools how to make your containers. You can include as many files as you want in your container. The
 commands for adding those files are discussed below.
 
-{{< alert icon="⚠️" style="warning" >}}
+{{< alert style="warning" >}}
 Make sure you create the Dockerfile in the same
 directory as your Python file and change the name below from YOURFILE.py to the actual name of your
 file.
