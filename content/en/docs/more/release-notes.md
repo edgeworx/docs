@@ -5,6 +5,34 @@ aliases:
   - /darcy-cloud/release-notes
 ---
 
+{{<alert style="warning">}}
+This is WIP
+{{</alert>}}
+
+### Darcy Cloud: Release 2022.06.17 (BETA)
+
+{{<alert style="danger">}}
+  FIXME: Note that it say "Darcy Cloud" in the heading... should we have one big section "Darcy Platform"?
+{{</alert>}}
+
+The highlights of this release are Virtual Node, and support for running Darcy AI Engine on CPU.
+
+| Component          | Version  |
+| ------------------ |----------|
+| Darcy Cloud API    | `v2.2.0` |
+| Darcy Cloud Portal | `v2.2.0` |
+| Edgectl            | `v2.2.0` |
+
+#### Changes
+
+* If you don't have an edge node (Raspberry Pi, Jetson Nano, etc.) available, you can now create
+  a [Virtual Node](/docs/cloud/portal/nodes/virtual-node/) for development purposes. A Virtual Node is effectively a local VM that appears
+  to Darcy Cloud as an edge node.
+* [Darcy AI Engine](/docs/ai/) works best when an AI accelerator (such as a Google Coral) is available, but now
+  AI Engine can run directly on CPU. This is useful for local development.
+
+---
+
 ### Darcy Cloud: Release 2022.03.30 (BETA)
 
 This release incorporates the first version of Darcy AI Explorer.
@@ -19,6 +47,8 @@ This release incorporates the first version of Darcy AI Explorer.
 
 * Darcy AI explorer app is available which showcases Darcy AI SDK featuring customisable
   people-centric AI.
+
+---
 
 ### Darcy Cloud: Release 2022.02.25 (BETA)
 
@@ -36,10 +66,11 @@ This is the first release of Darcy Cloud, which is the successor to Edgeworx Clo
 * `edgectl` has switched its entire command structure, from `noun-verb` to `verb-noun`. We are doing
   this based on user feedback from customers who are more familiar with the
   Kubernetes `kubectcl get X` style of CLI. For example, instead of `edgectl account get`,
-  use `edgectl get account`. For more detail, see
-  edgectl [docs](/docs/cloud/edgectl/deploy-an-app).
+  use `edgectl get account`. For more detail, see edgectl [docs](/docs/cloud/edgectl/deploy-an-app).
   * Note that if you are using `edgectl` in scripts or such, and you pull the latest version, you
     must update your scripts to use the new syntax.
+
+---
 
 ### Edgeworx Cloud: Release 2022.01.26 (BETA)
 
@@ -53,9 +84,11 @@ incorporates internal security enhancements.
 
 #### Changes
 
-* `edgectl` can retrieve the container logs for application microservices running on edge nodes.
-  For example: `edgectl logs myapp/myservice` . See `edgectl logs --help` for usage.
+* `edgectl` can retrieve the container logs for application microservices running on edge nodes. For
+  example: `edgectl logs myapp/myservice` . See `edgectl logs --help` for usage.
 * Internal security enhancements.
+
+---
 
 ### Edgeworx Cloud: Release 2022.01.20 (BETA)
 
@@ -69,6 +102,8 @@ Security enhancements.
 #### Changes
 
 * Improvements to Edgeworx Cloud internal security mechanisms.
+
+---
 
 ### Edgeworx Cloud: Release 2021.12.16 (BETA)
 
@@ -87,6 +122,8 @@ several Edgeworx Cloud components.
 * Minor UX fixes for Edgeworx Cloud Portal.
 * Several internal backend improvements.
 * CloudPortal: shows correct version of ARM architecture for device.
+
+---
 
 ### Edgeworx Cloud: Release 2021.12.05 (BETA)
 

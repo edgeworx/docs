@@ -69,7 +69,7 @@ application in Darcy can be found [here]({{<ref "/docs/apps/deploy-a-custom-app.
 
 Darcy provides a demo app you can deploy within minutes to see an example
 in action. You need one node live in order to deploy the demo app. More information on deploying the
-app can be found [here]({{<ref "/docs/apps/demo-apps/heart-demo.md">}}).
+app can be found [here]({{<ref "/docs/apps/demo-apps/heart-rate.md">}}).
 
 ### Managing your Application
 
