@@ -1,5 +1,3 @@
-import Clipboard from 'clipboard';
-
 var pre = document.getElementsByTagName('pre');
 
 for (var i = 0; i < pre.length; ++ i)
@@ -12,7 +10,7 @@ for (var i = 0; i < pre.length; ++ i)
   }
 }
 
-var clipboard = new Clipboard('.btn-copy', {
+var clipboard = new ClipboardJS('.btn-copy', {
     target: (trigger) => {
       return trigger.parentElement.getElementsByTagName('code')[0]
     }
