@@ -3,16 +3,5 @@ title: "Example Code"
 linkTitle: "Example Code"
 weight: 500
 ---
-## External links to Python example code
-
-[Audio Analysis](https://github.com/darcyai/darcyai/tree/main/src/examples/audio_analysis)
-
-[Basic Pipeline](https://github.com/darcyai/darcyai/blob/main/src/examples/basic_pipeline)
-
-[Output Stream](https://github.com/darcyai/darcyai/blob/main/src/examples/output_streams)
-
-[Sample Perceptors](https://github.com/darcyai/darcyai/blob/main/src/examples/perceptors)
-
-[Docker Build Files](https://github.com/darcyai/darcyai/blob/main/src/examples/build)
-
-[Sample YAML Deployment Files](https://github.com/darcyai/darcyai/blob/main/src/examples/deploy)
+## FIX ME: This is a placeholder page for Work in progress to create a link in the main nav bar that opens example code in a new windows
+<a href="https://darcyai.github.io/darcyai/" target="__blank">Reference Docs</a>
