@@ -94,8 +94,8 @@ pre {
 .btn-copy:active,
 .btn-copy.active {
   color: $edgeneutral-5;
-  background-color: $color-btn-bg;
-  border-color: lighten($color-btn-border, 15%);
+  background-color: $darcy-blue-dark;
+  border-color: lighten($darcy-blue-dark, 15%);
 }
 
 .btn-copy:active:focus,
