@@ -31,6 +31,8 @@ The highlights of this release are Virtual Node, and support for running Darcy A
 * [Darcy AI Engine](/docs/ai/) works best when an AI accelerator (such as a Google Coral) is available, but now
   AI Engine can run directly on CPU. This is useful for local development.
 
+---
+
 ### Darcy Cloud: Release 2022.03.30 (BETA)
 
 This release incorporates the first version of Darcy AI Explorer.
@@ -45,6 +47,8 @@ This release incorporates the first version of Darcy AI Explorer.
 
 * Darcy AI explorer app is available which showcases Darcy AI SDK featuring customisable
   people-centric AI.
+
+---
 
 ### Darcy Cloud: Release 2022.02.25 (BETA)
 
@@ -66,6 +70,8 @@ This is the first release of Darcy Cloud, which is the successor to Edgeworx Clo
   * Note that if you are using `edgectl` in scripts or such, and you pull the latest version, you
     must update your scripts to use the new syntax.
 
+---
+
 ### Edgeworx Cloud: Release 2022.01.26 (BETA)
 
 This release of Edgeworx Cloud introduces application microservice container logging, and
@@ -82,6 +88,8 @@ incorporates internal security enhancements.
   example: `edgectl logs myapp/myservice` . See `edgectl logs --help` for usage.
 * Internal security enhancements.
 
+---
+
 ### Edgeworx Cloud: Release 2022.01.20 (BETA)
 
 Security enhancements.
@@ -94,6 +102,8 @@ Security enhancements.
 #### Changes
 
 * Improvements to Edgeworx Cloud internal security mechanisms.
+
+---
 
 ### Edgeworx Cloud: Release 2021.12.16 (BETA)
 
@@ -112,6 +122,8 @@ several Edgeworx Cloud components.
 * Minor UX fixes for Edgeworx Cloud Portal.
 * Several internal backend improvements.
 * CloudPortal: shows correct version of ARM architecture for device.
+
+---
 
 ### Edgeworx Cloud: Release 2021.12.05 (BETA)
 
