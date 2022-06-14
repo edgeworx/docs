@@ -5,6 +5,32 @@ aliases:
   - /darcy-cloud/release-notes
 ---
 
+{{<alert style="warning">}}
+This is WIP
+{{</alert>}}
+
+### Darcy Cloud: Release 2022.06.17 (BETA)
+
+{{<alert style="danger">}}
+  FIXME: Note that it say "Darcy Cloud" in the heading... should we have one big section "Darcy Platform"?
+{{</alert>}}
+
+The highlights of this release are Virtual Node, and support for running Darcy AI Engine on CPU.
+
+| Component          | Version  |
+| ------------------ |----------|
+| Darcy Cloud API    | `v2.2.0` |
+| Darcy Cloud Portal | `v2.2.0` |
+| Edgectl            | `v2.2.0` |
+
+#### Changes
+
+* If you don't have an edge node (Raspberry Pi, Jetson Nano, etc.) available, you can now create
+  a [Virtual Node](/docs/cloud/portal/nodes/virtual-node/) for development purposes. A Virtual Node is effectively a local VM that appears
+  to Darcy Cloud as an edge node.
+* [Darcy AI Engine](/docs/ai/) works best when an AI accelerator (such as a Google Coral) is available, but now
+  AI Engine can run directly on CPU. This is useful for local development.
+
 ### Darcy Cloud: Release 2022.03.30 (BETA)
 
 This release incorporates the first version of Darcy AI Explorer.
@@ -36,8 +62,7 @@ This is the first release of Darcy Cloud, which is the successor to Edgeworx Clo
 * `edgectl` has switched its entire command structure, from `noun-verb` to `verb-noun`. We are doing
   this based on user feedback from customers who are more familiar with the
   Kubernetes `kubectcl get X` style of CLI. For example, instead of `edgectl account get`,
-  use `edgectl get account`. For more detail, see
-  edgectl [docs](/docs/cloud/edgectl/deploy-an-app).
+  use `edgectl get account`. For more detail, see edgectl [docs](/docs/cloud/edgectl/deploy-an-app).
   * Note that if you are using `edgectl` in scripts or such, and you pull the latest version, you
     must update your scripts to use the new syntax.
 
@@ -53,8 +78,8 @@ incorporates internal security enhancements.
 
 #### Changes
 
-* `edgectl` can retrieve the container logs for application microservices running on edge nodes.
-  For example: `edgectl logs myapp/myservice` . See `edgectl logs --help` for usage.
+* `edgectl` can retrieve the container logs for application microservices running on edge nodes. For
+  example: `edgectl logs myapp/myservice` . See `edgectl logs --help` for usage.
 * Internal security enhancements.
 
 ### Edgeworx Cloud: Release 2022.01.20 (BETA)
