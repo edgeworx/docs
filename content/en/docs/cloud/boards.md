@@ -5,6 +5,7 @@ linkTitle: "Edge Node Compatibility"
 aliases:
   - /darcy/darcy-cloud/what-is-darcy-cloud
 ---
+FIX ME: possibly move or delete? update content, currently mot accurate
 
 ## Recommended for Darcy AI deployment (high performance)
 
