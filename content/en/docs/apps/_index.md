@@ -6,7 +6,7 @@ linkTitle: "Building Darcy Apps"
 
 Apps are groups of microservices bundled to work together. They are defined using YAML files and can
 be deployed and updated by uploading those YAML files through Darcy Cloud or through
-[edgectl]({{<ref "/docs/cloud/edgectl/add-an-edge-node.md">}}). An app can consist of an arbitrary
+[edgectl]({{<ref "/docs/cloud/add-node.md">}}). An app can consist of an arbitrary
 number of interacting or standalone microservices that are deployed on one or may nodes.
 
 Darcy connects to your applications to interact and share data. Applications can be configured in
@@ -63,7 +63,7 @@ the [Application Templating]({{<ref "templating.md">}}) section.
 
 Applications can be created within the Darcy platform by creating a YAML configuration file linking
 to your existing containerized application. The steps for creating and deploying a custom
-application in Darcy can be found [here]({{<ref "/docs/apps/deploy-a-custom-app.md">}}).
+application in Darcy can be found [here]({{<ref "/docs/cloud/deploy-an-app.md">}}).
 
 ### Deploying a Demo Application
 
@@ -74,5 +74,5 @@ app can be found [here]({{<ref "/docs/apps/demo-apps/heart-rate.md">}}).
 ### Managing your Application
 
 Applications can be managed through
-the [portal]({{<ref "/docs/apps/deploy-a-custom-app.md">}})
-or using [edgectl]({{<ref "/docs/cloud/edgectl/deploy-an-app.md">}}).
+the [portal]({{<ref "/docs/cloud/deploy-an-app.md">}})
+or using [edgectl]({{<ref "/docs/cloud/start-edgectl.md">}}).
