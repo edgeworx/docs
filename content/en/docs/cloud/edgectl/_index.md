@@ -26,7 +26,7 @@ On the "Welcome" page, choose an auth provider or provide your own email and pas
 
 ## Install edgectl
 
-_edgectl_ currently supports Mac & Linux.
+_edgectl_ currently supports Mac, Linux & Windows.
 
 ### MacOS
 
