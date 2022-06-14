@@ -23,6 +23,8 @@ FIXME performance message
 
 ## Set up your build environment
 
+![face-detection-app](/images/guides/environment.jpg)
+
 ### Install dependencies
 
 {{< rawhtml >}}
