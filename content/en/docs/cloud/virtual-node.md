@@ -8,7 +8,7 @@ to a Darcy Cloud project via the edgectl CLI. `LINUX` user can directly use the 
 
 ## Prerequisites
 
-* [Edgectl CLI]({{<ref "/docs/cloud/edgectl/#install-edgectl">}})
+* [Edgectl CLI]({{<ref "/docs/cloud/start-edgectl">}})
 * [Multipass](https://multipass.run)
 
 ## Get the Virtual Node Installation Script

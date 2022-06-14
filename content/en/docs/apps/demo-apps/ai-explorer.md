@@ -30,7 +30,7 @@ need to be sure that we have a free node inside our project to deploy to {{</ale
 #### FIX ME: Move the following to a shared "Deploy" Page
 
 Deploying the AI Explorer Demo app from the Darcy Cloud platform is simple. Make sure
-you have [added at least 1 node]({{<ref "/docs/cloud/portal/nodes/add-node.md">}}) to your Darcy Cloud project, then
+you have [added at least 1 node]({{<ref "/docs/cloud/add-node.md">}}) to your Darcy Cloud project, then
 follow the steps below:
 
 1. Go to your Darcy Cloud project page
