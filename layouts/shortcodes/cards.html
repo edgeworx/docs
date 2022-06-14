@@ -1,0 +1,20 @@
+<div class="darcy-card-container">
+  {{ range $index, $card := $.Page.Params.cards }}
+  <a href="{{ $card.link }}" class="no-hover-link">
+    <div class="darcy-card">
+      <div class="number">{{ add $index 1 }}</div>
+      <img src="{{ $card.image }}" alt="{{ $card.title }}" class="img-fluid" />
+      <div class="card-content">
+        <div class="time">{{ $card.time }}</div>
+        <div class="card-details">
+          <div class="card-title">{{ $card.title }}</div>
+          <div class="card-subtitle">{{ $card.subtitle }}</div>
+        </div>
+        <div class="card-action">
+          <button>{{ $card.action }}</button>
+        </div>
+      </div>
+    </div>
+  </a>
+  {{ end }}
+</div>

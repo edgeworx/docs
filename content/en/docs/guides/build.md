@@ -25,15 +25,34 @@ FIXME performance message
 
 ### Install dependencies
 
-FIXME tabbed UI for selecting OS: windows (coming soon) vs mac vs Linux for dependencies
-
+{{< rawhtml >}}
+<ul class="nav nav-pills darcy-tabs" id="osTabs" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="macosx-tab" data-bs-toggle="tab" data-bs-target="#macosx" type="button" role="tab" aria-controls="macosx" aria-selected="true">MacOSX</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="linux-tab" data-bs-toggle="tab" data-bs-target="#linux" type="button" role="tab" aria-controls="linux" aria-selected="false">Linux</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="windows-tab" data-bs-toggle="tab" data-bs-target="#windows" type="button" role="tab" aria-controls="windows" aria-selected="false">Windows</button>
+  </li>
+</ul>
+<div class="tab-content darcy-tab-content">
+    <div class="tab-pane active" id="macosx" role="tabpanel" aria-labelledby="macosx-tab">
+{{</ rawhtml>}}
 - [Install Python 3.6.9 or greater](https://www.python.org/downloads/)
 
+{{< rawhtml >}}
+<div class="alert-container">
+{{< /rawhtml >}}
 {{< alert icon="" >}}
 If you have older Python versions on your computer, you may need to use `python3` and `pip3` commands.
 You can also change this behavior for [mac](https://osxdaily.com/2022/02/15/make-python-3-default-macos/)
 or [windows](https://stackoverflow.com/questions/5087831/how-should-i-set-default-python-version-in-windows)
 {{< /alert >}}
+{{< rawhtml >}}
+</div>
+{{< /rawhtml >}}
 
 - Install OpenCV using command `pip install opencv-python`
 
@@ -45,9 +64,49 @@ or [windows](https://stackoverflow.com/questions/5087831/how-should-i-set-defaul
 
 - Install the DarcyAI Engine using command `pip install darcyai`.
 
-- FIXME: Confirm Docker portion moved to deploy guide
+- Install TensorFlow using command `pip install tensorflow`
+
+{{< rawhtml >}}
+    </div>
+    <div class="tab-pane" id="linux" role="tabpanel" aria-labelledby="linux-tab">
+{{</ rawhtml>}}
+- [Install Python 3.6.9 or greater](https://www.python.org/downloads/)
+
+
+{{< rawhtml >}}
+<div class="alert-container">
+{{< /rawhtml >}}
+{{< alert icon="" >}}
+If you have older Python versions on your computer, you may need to use `python3` and `pip3` commands.
+You can also change this behavior for [mac](https://osxdaily.com/2022/02/15/make-python-3-default-macos/)
+or [windows](https://stackoverflow.com/questions/5087831/how-should-i-set-default-python-version-in-windows)
+{{< /alert >}}
+{{< rawhtml >}}
+</div>
+{{< /rawhtml >}}
+
+- Install OpenCV using command `pip install opencv-python`
+
+- Install the Pillow library using command `pip install Pillow`.
+
+- Install the Numpy library using command `pip install numpy`.
+
+- Install the Imutils library using command `pip install imutils`.
+
+- Install the DarcyAI Engine using command `pip install darcyai`.
 
 - Install TensorFlow using command `pip install tensorflow`
+
+{{< rawhtml >}}
+    </div>
+    <div class="tab-pane" id="windows" role="tabpanel" aria-labelledby="windows-tab">
+
+{{</ rawhtml>}}
+Coming soon...
+{{< rawhtml >}}
+    </div>
+</div>
+{{< /rawhtml >}}
 
 ## Build your Darcy AI app
 
