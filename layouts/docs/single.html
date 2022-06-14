@@ -60,10 +60,10 @@
     {{ partial "sidebar/docs-toc.html" . }}
   </nav>
   {{ end -}}
-  {{ if .Params.toc -}}
+  {{ if ne .Params.toc false -}}
   <main class="docs-content col-lg-11 col-xl{{ if eq .Site.Params.options.fullWidth false }}-9{{ end }}">
     {{ else -}}
-    <main class="docs-content col-lg-11 col-xl-9 mx-xl-auto">
+    <main class="docs-content col">
       {{ end -}}
       {{ if .Site.Params.options.breadCrumb -}}
       <!-- https://discourse.gohugo.io/t/breadcrumb-navigation-for-highly-nested-content/27359/6 -->
