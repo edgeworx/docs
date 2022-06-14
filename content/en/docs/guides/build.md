@@ -14,7 +14,7 @@ Darcy AI can run in CPU mode (if you don't have a Coral accelerator attached), b
 {{< /alert >}}
 
 #### Requirements
-- Mac (Linux & Windows coming soon)
+- MacOS (Linux & Windows coming soon)
 - 5GB or more of free disk space
 - Video source (like a built-in web cam or attached USB cam)
 - Basic command line knowledge
@@ -43,7 +43,7 @@ Darcy AI can run in CPU mode (if you don't have a Coral accelerator attached), b
 <div class="tab-content darcy-tab-content">
     <div class="tab-pane active" id="macosx" role="tabpanel" aria-labelledby="macosx-tab">
 {{</ rawhtml>}}
-- [Install Python 3.6.9 or greater](https://www.python.org/downloads/)
+- Install Python 3.6.9 or greater by [downloading](https://www.python.org/downloads/) or e.g. `brew install python`
 
 {{< rawhtml >}}
 <div class="alert-container">
