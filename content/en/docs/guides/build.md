@@ -7,13 +7,14 @@ weight: 200
 ![face-detection-app](/images/guide-ai-app-hero.jpg)
 
 ## What you will accomplish
-In this step-by-step guide you’ll learn how to build your first Darcy AI app. This app utilizes the Darcy AI pipelines, input stream, perceptors and output stream to detect and count people and then change some basic configurations. The concepts in this guide are application to any app you can think to build with Darcy AI.
+In this step-by-step guide you’ll learn how to build your first Darcy AI app. This app utilizes all of the core Darcy AI concepts, such as pipelines, input streams, perceptors and output streams to detect and count people and then change some basic configurations. The concepts in this guide are the base foundations for any Darcy AI application you might want to build in the future.
 
-
-FIXME performance message
+{{< alert icon="" >}}
+Darcy AI can run in CPU mode (if you don't have a Coral accelerator attached), but requires a relatively modern system with a good CPU (ideally with multiple cores), and a decent amount of memory. If you run it on a low power platform, then you will get a very low frames per second video output.
+{{< /alert >}}
 
 #### Requirements
-- Mac (Linux & Windows coming soon)
+- MacOS (Linux & Windows coming soon)
 - 5GB or more of free disk space
 - Video source (like a built-in web cam or attached USB cam)
 - Basic command line knowledge
@@ -30,7 +31,7 @@ FIXME performance message
 {{< rawhtml >}}
 <ul class="nav nav-pills darcy-tabs" id="osTabs" role="tablist">
   <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="macosx-tab" data-bs-toggle="tab" data-bs-target="#macosx" type="button" role="tab" aria-controls="macosx" aria-selected="true">MacOSX</button>
+    <button class="nav-link active" id="macosx-tab" data-bs-toggle="tab" data-bs-target="#macosx" type="button" role="tab" aria-controls="macosx" aria-selected="true">MacOS</button>
   </li>
   <li class="nav-item" role="presentation">
     <button class="nav-link" id="linux-tab" data-bs-toggle="tab" data-bs-target="#linux" type="button" role="tab" aria-controls="linux" aria-selected="false">Linux</button>
@@ -42,14 +43,14 @@ FIXME performance message
 <div class="tab-content darcy-tab-content">
     <div class="tab-pane active" id="macosx" role="tabpanel" aria-labelledby="macosx-tab">
 {{</ rawhtml>}}
-- [Install Python 3.6.9 or greater](https://www.python.org/downloads/)
+- Install Python 3.6.9 or greater by [downloading](https://www.python.org/downloads/) or e.g. `brew install python`
 
 {{< rawhtml >}}
 <div class="alert-container">
 {{< /rawhtml >}}
 {{< alert icon="" >}}
 If you have older Python versions on your computer, you may need to use `python3` and `pip3` commands.
-You can also change this behavior for [mac](https://osxdaily.com/2022/02/15/make-python-3-default-macos/)
+You can also change this behavior for [macos](https://osxdaily.com/2022/02/15/make-python-3-default-macos/)
 or [windows](https://stackoverflow.com/questions/5087831/how-should-i-set-default-python-version-in-windows)
 {{< /alert >}}
 {{< rawhtml >}}
