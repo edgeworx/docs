@@ -62,14 +62,18 @@
           font-weight: 400;
           font-size: 1em;
 
-          &:hover {
-            color: #202020;
-            text-decoration: unset;
+          &:any-link {
+            color: $edgeneutral-5;
           }
+          
+          &:hover {
+            color: $darcy-blue;
+            text-decoration: underline;
+          }
+
         }
       }
     }
-
     .social {
       display: grid;
       margin-top: 1rem;
