@@ -7,7 +7,7 @@ aliases:
 
 ![Heart Rate Demo App](/images/ai-exp-hero.jpg)
 
-The Darcy AI Explorer is a showcase app for the Darcy AI SDK. Bootstrap your AI project using
+The Darcy AI Explorer is a showcase app for Darcy AI. Bootstrap your AI project using
 powerful face detection, pose detection, QR code scanning and more.
 
 #### Requirements

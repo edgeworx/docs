@@ -27,7 +27,7 @@
 
   & .main-section-title {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight:600;
   }
 
   & a {
@@ -58,7 +58,7 @@
   display: block;
   padding: 0.5rem 0;
   font-size: $font-size-base * 0.85;
-  line-height: 125%;
+  line-height: 1.5;
   font-weight: inherit;
 }
 
@@ -183,7 +183,7 @@ a.docs-link {
 .nav-link.active,
 .dropdown-menu-main .dropdown-item.active,
 .docs-link.active {
-  font-weight: 500;
+//  font-weight: 600;
 }
 
 .docs-links h3.sidebar-link,

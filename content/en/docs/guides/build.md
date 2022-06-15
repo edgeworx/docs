@@ -1,5 +1,5 @@
 ---
-title: "Build an Edge AI App in about 30 minutes"
+title: "Build an Edge AI app in about 30 minutes"
 linkTitle: "Build an Edge AI app"
 weight: 200
 ---
