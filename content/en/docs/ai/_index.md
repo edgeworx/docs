@@ -3,7 +3,7 @@ title: "Darcy AI Overview"
 linkTitle: "Darcy AI"
 weight: 400
 ---
-The Darcy AI SDK offers a rich set of features that Darcy AI application developers can use to
+Darcy AI offers a rich set of features that Darcy AI application developers can use to
 easily build complex AI processing chains. This makes developing rich real-time applications
 possible in a shorter timeframe and with a much more standardized approach.
 
@@ -62,7 +62,7 @@ an Input Stream that provides the sensor data that you want Darcy to process. Th
 video, LiDAR, thermal video, or just about anything you can imagine.
 
 A good example of an Input Stream is the CameraStream class that comes built-in with the Darcy AI
-SDK. This Input Stream allows you to specify the device path for a video camera. It will read the
+Engine. This Input Stream allows you to specify the device path for a video camera. It will read the
 video camera feed and bring it into Darcy at the frame rate and resolution you specify.
 
 Instantiate the CameraStream object and set some of its parameters like this:
@@ -82,7 +82,7 @@ whatever position you desire. Each Perceptor offers different configuration opti
 different results. Perceptors also offer events to which you can subscribe.
 
 A good example of a powerful Perceptor is the People Perceptor that is built-in with the Darcy AI
-SDK. This Perceptor is focused on detecting and processing people so you, as the developer, can
+Engine. This Perceptor is focused on detecting and processing people so you, as the developer, can
 simply work with semantic data results.
 
 Here is an example of creating a People Perceptor instance and adding it to the Pipeline:
@@ -129,8 +129,7 @@ allows you, as the developer, to prepare the data that will be processed by the 
 is very useful if you want to format data before sending upstream, filter data before storing it on
 disk, or edit a video frame before you display it.
 
-A good example of an Output Stream is the LiveFeedStream class that comes built-in with the Darcy AI
-SDK. This Output Stream allows you to configure network host and port information and it will open a
+A good example of an Output Stream is the LiveFeedStream class that comes built-in with the Darcy AI Engine. This Output Stream allows you to configure network host and port information and it will open a
 video feed that you can view with any web browser.
 
 Instantiate the LiveFeed output stream object and set some of its parameters like this:
