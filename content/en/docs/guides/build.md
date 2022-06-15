@@ -43,7 +43,7 @@ Darcy AI can run in CPU mode (if you don't have a Coral accelerator attached), b
 <div class="tab-content darcy-tab-content">
     <div class="tab-pane active" id="macosx" role="tabpanel" aria-labelledby="macosx-tab">
 {{</ rawhtml>}}
-- Install Python 3.6.9 or greater by [downloading](https://www.python.org/downloads/) or e.g. `brew install python`
+- Install Python 3.6.9 or greater by [downloading](https://www.python.org/downloads/) or `brew install python`
 
 {{< rawhtml >}}
 <div class="alert-container">
@@ -295,7 +295,9 @@ has permissions to access the camera on your device. If you followed the code re
 directly and you have all the required Python libraries installed, your Darcy AI application should
 run successfully and stay running until you stop the program execution.
 
-FIXME performance message
+{{< alert icon="" >}}
+Best performance is achieved with a modern, multi-core CPU and plenty of memory. In the next guide, you'll deploy to an Edge device (like a Raspberry Pi + AI accelerator) which should provide great performance.
+{{< /alert >}}
 
 ### View your real-time Darcy AI application video output
 
@@ -305,7 +307,6 @@ if desired.
 
 ### What you should see
 
-FIXME show movie or animated gif here
 ![face-detection-app](/images/guide-ai-app-hero.jpg)
 
 You should see a live video feed coming from your camera. When a person is detected in the field of
