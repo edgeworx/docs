@@ -57,7 +57,7 @@
   color: $body-color;
   display: block;
   padding: 0.5rem 0;
-  font-size: $font-size-base * 0.85;
+  font-size: 1rem;
   line-height: 1.5;
   font-weight: inherit;
 }
@@ -190,7 +190,7 @@ a.docs-link {
 .page-links h3.sidebar-link {
   text-transform: none;
   font-size: $font-size-md;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .docs-links h3.sidebar-link a,
