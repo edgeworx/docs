@@ -73,19 +73,16 @@ or [windows](https://stackoverflow.com/questions/5087831/how-should-i-set-defaul
     </div>
     <div class="tab-pane" id="linux" role="tabpanel" aria-labelledby="linux-tab">
 {{</ rawhtml>}}
-{{< rawhtml >}}
-<div class="alert-container">
-{{< /rawhtml >}}
-{{< rawhtml >}}
-</div>
-{{< /rawhtml >}}
-Coming soon...
+
+Linux coming soon...
+
 {{< rawhtml >}}
     </div>
     <div class="tab-pane" id="windows" role="tabpanel" aria-labelledby="windows-tab">
-
 {{</ rawhtml>}}
-Coming soon...
+
+Windows coming soon...
+
 {{< rawhtml >}}
     </div>
 </div>
