@@ -1,5 +1,5 @@
 ---
 title: "Edge build setup"
-weight: 400
+weight: 300
 linkTitle: "Edge build setup"
 ---

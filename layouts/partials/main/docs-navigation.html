@@ -14,6 +14,41 @@
 {{ $nextTitle := "" }}
 {{ $nextArrow := "&rarr;" }}
 
+{{define "nextSib"}}
+    {{/* nextsib expects a page arg, and sets .Scratch "nextSiblingPage" if there
+     is a next sibling page (at the same level of hierarchy) */}}
+
+    {{$p:= .}}
+    {{$foundMe := false }}
+    {{if eq $p.RelPermalink .CurrentSection.RelPermalink}}
+        {{/* we need this special check for index pages */}}
+        {{$foundMe = true}}
+    {{end}}
+
+    {{ range $i, $item := .CurrentSection.Pages }}
+        {{ if eq $p.RelPermalink $item.RelPermalink }}
+            {{ $foundMe = true }}
+            {{continue}}
+        {{ end }}
+
+        {{ if ne $foundMe true}}{{continue}}{{end}}
+
+        {{ with $item.Params.externalLink}}
+            {{/* if it's an external link, we don't want it to show up in nav */}}
+            {{continue}}
+        {{end}}
+
+        {{ $p.Scratch.Set "nextSiblingPage" $item}}
+        {{ break }}
+    {{end}}
+{{end}}
+
+{{template "nextSib" $currentPage }}
+
+<h1>Next sib: {{ ($currentPage.Scratch.Get "nextSiblingPage").LinkTitle}}</h1>
+
+
+
 
 {{ if $isIndex }}
   {{ if ge (len $currentSection.Pages) 1 }}
@@ -23,19 +58,52 @@
   {{ range $i, $item := $currentSection.Pages }}
     {{ if eq $currentPage.RelPermalink $item.RelPermalink }}
       {{ $pageIndex = $i }}
-      {{ $prevIndex = sub $i 1 }}
-      {{ if lt $pageIndex (sub (len $currentSection.Pages) 1) }}
-        {{ $nextIndex = add $pageIndex 1}}
-      {{ end }}
     {{ end }}
   {{end -}}
 {{ end }}
 
-<!--<pre>-->
-<!--  $pageIndex: {{$pageIndex}}-->
-<!--  $prevIndex: {{$prevIndex}}-->
-<!--  $nextIndex: {{$nextIndex}}-->
-<!--</pre>-->
+
+{{/*
+
+Now that we know $pageIndex, we need to figure out $prevIndex and $nextIndex,
+noting that both vars could end up being -1, indicating no prev/next.
+
+Also note that we want to exclude "externalLink" pages from prev/next.
+
+*/}}
+
+{{ range $i, $item := $currentSection.Pages }}
+  {{ if le $i $pageIndex }}{{continue}}{{end}}
+
+  {{ $next := index $currentSection.Pages $i}}
+  {{ with $next.Params.externalLink }}{{continue}}{{end}}
+  {{ $nextIndex = $i }}
+  {{ break }}
+{{end}}
+
+
+{{ range $i, $item := $currentSection.Pages }}
+  <pre>
+  $pageIndex: {{$pageIndex}}
+  $i: {{$i}}
+  $item.LinkTitle: {{$item.LinkTitle}}
+  </pre>
+
+  {{ if ge $i $pageIndex }}<p>big</p>{{break}}{{end}}
+
+  <p>not big</p>
+  {{ $prev := index $currentSection.Pages $i}}
+  {{ with $prev.Params.externalLink }}{{continue}}{{end}}
+  {{ $prevIndex = $i }}
+{{end}}
+
+
+<pre>
+  $pageIndex: {{$pageIndex}}
+  $prevIndex: {{$prevIndex}}
+  $nextIndex: {{$nextIndex}}
+</pre>
+
 
 {{ if lt $prevIndex 0}}
   {{ if eq $pageIndex 0}}
@@ -43,7 +111,6 @@
     {{ $prevTitle = $currentSection.LinkTitle }}
   {{ else }}
     {{ $parent := .GetPage ".." }}
-
     {{ range $i, $item := $parent.Pages }}
       {{ if and (gt $i 0) (eq $item.RelPermalink $currentPage.RelPermalink) }}
         {{ $aunt := index $parent.Pages (sub $i 1) }}
@@ -72,6 +139,7 @@
   {{ $nextLink = $next.RelPermalink }}
   {{ $nextTitle = $next.LinkTitle }}
 {{ else }}
+<h1>getting up</h1>
   {{ $parent := .GetPage ".." }}
   {{ range $i, $item := $parent.Pages }}
     {{ if (eq $item.RelPermalink $currentSection.RelPermalink) }}
