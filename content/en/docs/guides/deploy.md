@@ -241,13 +241,13 @@ in the steps above.
 Now that you have all of the pieces, it's easy to deploy your application to your device or any
 other device. In the Darcy Cloud, click on the "plus button" in the bottom left and choose "app".
 
-![Cloud Portal Plus Button](/images/guides/deploy-app-ui.gif)
+![Deploy app animation](/images/guides/deploy-app-ui.gif)
 
 In the pop-up window, choose the "upload your app" option and you will see a drag-and-drop window on
 the right-hand side. You can drag and drop your YAML file into that window or you can click the "
 browse and upload" option and then select your YAML file.
 
-![FIXME](/images/darcy-cloud-custom-app-deployment.png)
+![Deploy App](/images/darcy-cloud-custom-app-deployment.png)
 
 The Darcy Cloud will tell you if you have any issues with your YAML file or your app deployment. It
 will also tell you if your Darcy AI application was deployed successfully. You can then check the
