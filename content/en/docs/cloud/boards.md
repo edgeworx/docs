@@ -6,7 +6,7 @@ draft: true
 aliases:
   - /darcy/darcy-cloud/what-is-darcy-cloud
 ---
-FIX ME: possibly move or delete? update content, currently mot accurate
+FIX ME: this is a draft and will not be visible
 
 
 Recommended Edge Boards for AI

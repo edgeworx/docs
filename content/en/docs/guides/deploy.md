@@ -13,22 +13,20 @@ will run on any hardware that meets the requirements for Darcy AI. The list of c
 is extensive, allowing you to deploy your Darcy AI applications to the devices that fit your
 solution needs.
 
-FIXME performance notes
+{{< alert icon="" style="info"  >}}
+We recommend using a Raspberry Pi 4 with an attached Google Coral accelerator for the best performance.
+{{< /alert>}}
 
 #### Software Requirements
 - Docker Desktop and a Docker account
 - Darcy Cloud account (Free)
 
 #### Hardware Requirements
-- AN Edge device (see options below)
-    - Raspberry Pi board (Pi 4 with 2GB+ of RAM recommended)
-    - Intel Nook
-    - Darcy Cam
-    - FIXME link to list of compatible hardware and expected performance
+- An Edge device
+    - Raspberry Pi 4 with 2GB+ of RAM (recommended)
+    - [More Edge device options](/docs/cloud/portal/nodes/)
 - Video camera attached to the camera port
-    - Cam options 1
-- AI Processor
-    - Google Coral edge TPU (USB version attached to USB 3.0 port)
+- AI Processor: Google Coral edge TPU (USB version attached to USB 3.0 port)
 - Micro SD card with at least 16GB capacity (32GB+ recommended)
 - Power supply
 - Internet connectivity
@@ -198,7 +196,7 @@ Once you are in your Darcy Cloud account, add your device as a node in your curr
 the "plus button" in the bottom left to add a node. Follow the instructions in the pop-up window to
 add your device as a node.
 
-![Cloud Portal Plus Button](/images/darcy-cloud-plus-item-button.png)
+![Cloud Portal Plus Button](/images/guides/deploy-node-ui.gif)
 
 ### Create your application YAML
 
@@ -243,13 +241,13 @@ in the steps above.
 Now that you have all of the pieces, it's easy to deploy your application to your device or any
 other device. In the Darcy Cloud, click on the "plus button" in the bottom left and choose "app".
 
-![Cloud Portal Plus Button](/images/darcy-cloud-plus-item-button.png)
+![Deploy app animation](/images/guides/deploy-app-ui.gif)
 
 In the pop-up window, choose the "upload your app" option and you will see a drag-and-drop window on
 the right-hand side. You can drag and drop your YAML file into that window or you can click the "
 browse and upload" option and then select your YAML file.
 
-![FIXME](/images/darcy-cloud-custom-app-deployment.png)
+![Deploy App](/images/darcy-cloud-custom-app-deployment.png)
 
 The Darcy Cloud will tell you if you have any issues with your YAML file or your app deployment. It
 will also tell you if your Darcy AI application was deployed successfully. You can then check the
@@ -271,5 +269,4 @@ Darcy Cloud to deploy and manage your Darcy AI application.
 ## Next steps
 
 Now that you have all of these foundation Darcy AI developer skills, you are ready to build full
-solutions. Use the [Technical Documentation](https://darcyai.github.io/darcyai) to learn more
-about what Darcy AI can do and take your skills to the next level.
+solutions. Follow the guide to [Extend Darcy](/docs/guides/extend.md) to build an app for your use case.
