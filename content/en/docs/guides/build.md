@@ -43,19 +43,21 @@ Darcy AI can run in CPU mode (if you don't have a Coral accelerator attached), b
 <div class="tab-content darcy-tab-content">
     <div class="tab-pane active" id="macosx" role="tabpanel" aria-labelledby="macosx-tab">
 {{</ rawhtml>}}
-- Install Python 3.6.9 or greater by [downloading](https://www.python.org/downloads/) or `brew install python`
+- Install Python 3.6.9 or greater by [downloading](https://www.python.org/downloads/) or e.g. `brew install python`
 
 {{< rawhtml >}}
 <div class="alert-container">
 {{< /rawhtml >}}
 {{< alert icon="" >}}
 If you have older Python versions on your computer, you may need to use `python3` and `pip3` commands.
-You can also change this behavior for [macos](https://osxdaily.com/2022/02/15/make-python-3-default-macos/)
+You can also change this behavior for [MacOS](https://osxdaily.com/2022/02/15/make-python-3-default-macos/)
 or [windows](https://stackoverflow.com/questions/5087831/how-should-i-set-default-python-version-in-windows)
 {{< /alert >}}
 {{< rawhtml >}}
 </div>
 {{< /rawhtml >}}
+
+X86 Platforms:
 
 - Install OpenCV using command `pip install opencv-python>=4.5.5.64`
 
@@ -68,6 +70,19 @@ or [windows](https://stackoverflow.com/questions/5087831/how-should-i-set-defaul
 - Install the DarcyAI Engine using command `pip install darcyai`
 
 - Install TensorFlow using command `pip install tensorflow`
+
+Apple M1 Platforms:
+
+{{< rawhtml >}}
+<div class="alert-container">
+{{< /rawhtml >}}
+{{< alert icon="warning" >}}
+If you are on Apple M1 silicon, these instructions will not work for you. But, you can use this 
+[handy community script] (https://gist.github.com/drluckyspin/95243834ac9db2f3260b16f8ef545a56) to properly install a Tensorflow invironment that's optimized for M1.
+{{< /alert >}}
+{{< rawhtml >}}
+</div>
+{{< /rawhtml >}}
 
 {{< rawhtml >}}
     </div>
