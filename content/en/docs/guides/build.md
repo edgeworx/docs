@@ -57,15 +57,15 @@ or [windows](https://stackoverflow.com/questions/5087831/how-should-i-set-defaul
 </div>
 {{< /rawhtml >}}
 
-- Install OpenCV using command `pip install opencv-python`
+- Install OpenCV using command `pip install opencv-python>=4.5.5.64`
 
-- Install the Pillow library using command `pip install Pillow`.
+- Install the Pillow library using command `pip install Pillow>=8.3.2`
 
-- Install the Numpy library using command `pip install numpy`.
+- Install the Numpy library using command `pip install numpy>=1.22.4`
 
-- Install the Imutils library using command `pip install imutils`.
+- Install the Imutils library using command `pip install imutils>=0.5.4`
 
-- Install the DarcyAI Engine using command `pip install darcyai`.
+- Install the DarcyAI Engine using command `pip install darcyai`
 
 - Install TensorFlow using command `pip install tensorflow`
 
