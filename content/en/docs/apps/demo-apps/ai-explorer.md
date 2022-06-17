@@ -7,7 +7,7 @@ aliases:
 
 ![Heart Rate Demo App](/images/ai-exp-hero.jpg)
 
-The Darcy AI Explorer is a showcase app for the Darcy AI SDK. Bootstrap your AI project using
+The Darcy AI Explorer is a showcase app for Darcy AI. Bootstrap your AI project using
 powerful face detection, pose detection, QR code scanning and more.
 
 #### Requirements
@@ -27,8 +27,6 @@ need to be sure that we have a free node inside our project to deploy to {{</ale
 
 ## Deploy the app using Darcy Cloud Portal
 
-#### FIX ME: Move the following to a shared "Deploy" Page
-
 Deploying the AI Explorer Demo app from the Darcy Cloud platform is simple. Make sure
 you have [added at least 1 node]({{<ref "/docs/cloud/add-node.md">}}) to your Darcy Cloud project, then
 follow the steps below:
@@ -39,8 +37,6 @@ follow the steps below:
 4. Click on `DARCY AI Explorer DEMO`
 5. Select the node(s) where you want it to run
 6. Click `DEPLOY`
-
-## FIX ME: Update screenshots
 
 ## See App Results
 

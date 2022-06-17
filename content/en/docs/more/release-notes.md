@@ -47,7 +47,7 @@ This release incorporates the first version of Darcy AI Explorer.
 
 #### Changes
 
-* Darcy AI explorer app is available which showcases Darcy AI SDK featuring customisable
+* Darcy AI explorer app is available which showcases Darcy AI featuring customisable
   people-centric AI.
 
 ---

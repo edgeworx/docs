@@ -5,7 +5,7 @@ linkTitle: "Guides"
 toc: false
 cards:
 
-  - title: Build an Edge AI App
+  - title: Build an Edge AI app
     subtitle: A step-by-step guide to building and customizing a simple AI app to detect people in the real world.
     action: BUILD
     time: 30 min
