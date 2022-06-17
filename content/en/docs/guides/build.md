@@ -24,7 +24,7 @@ Darcy AI can run in CPU mode (if you don't have a Coral accelerator attached), b
 
 ## Set up your build environment
 
-![face-detection-app](/images/guides/environment.jpg)
+![face-detection-app](/images/guides/environment@2x.jpg)
 
 ### Install dependencies
 
