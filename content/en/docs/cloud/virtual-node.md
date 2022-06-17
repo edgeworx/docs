@@ -1,15 +1,20 @@
 ---
 title: "Add a Virtual Node"
-weight: 500
+weight: 70
 ---
 
-Don't have a compatible edge device set up not an issue, for `MACOSX` and `WINDOWS` user we can set up a new Ubuntu VM locally, and register that VM as a node
-to a Darcy Cloud project via the edgectl CLI. `LINUX` user can directly use the register node command on their terminal.
+With Virtual Node you can test pushing to an edge device even if you don't have one availabe. Adding a Virtual Node sets up a new Ubuntu VM locally and registers it as a node to a Darcy Cloud project via the edgectl CLI. Mac OSX and Windows users can create Virtual Nodes using Darcy Cloud Portal and edgectl. Linux users can directly use the register node command on their terminal.
 
-## Prerequisites
+### Prerequisites
 
-* [Edgectl CLI]({{<ref "/docs/cloud/start-edgectl">}})
+* [Darcy Cloud Account (Free)](https://cloud.darcy.ai)
+* [egectl CLI]({{<ref "/docs/cloud/edgectl/#install-edgectl">}})
 * [Multipass](https://multipass.run)
+
+{{< alert style="warning" >}}
+Virtual Node is not currently compatible with attached video devices. You can still build locally using attached video and deploy to edge devices with attached video.
+{{</alert>}}
+
 
 ## Get the Virtual Node Installation Script
 
@@ -18,45 +23,45 @@ node.
 
 ![Add Virtual Node](/images/add-node.png)
 
-Click the `+ ADD NODE` button. This will bring up a modal dialog which shows all the type of node you could add in your project.
+Click the `+ ADD NODE` button. This will bring up a modal dialog which shows the different types of nodes you can add to your project.
 
 ![Register Virtual Node Script](/images/select-virtual-node.png)
 
-Click on `VIRTUAL NODE` to get the instructions of adding a virtual node.
+Choose `VIRTUAL NODE` to get the instructions for adding a virtual node.
 
 ![Virtual Node Script](/images/add-virtual-node.png)
 
-Click the `COPY` button to copy the command to your clipboard. This command starts an Ubuntu VM which register itself with Darcy
+Make sure you have the latest versions of [egectl]({{<ref "/docs/cloud/edgectl/#install-edgectl">}}) and [Multipass](https://multipass.run) installed. Click the `COPY` button to copy the command to your clipboard. This command starts an Ubuntu VM which register itself with Darcy
 Cloud as a Virtual Node.
 
 ## Run the Virtual Node Registration Script
 
 Paste the command line that you copied in the previous step into your terminal.
-The entire install process can take up to a few minutes (depending on the spec of your machine, your internet connection
-speed, and other dependencies).
+The entire install process can take up to a few minutes (depending on the spec of your machine, your internet connection speed, and other dependencies).
 
 ![Install Node](/images/virtual-node-added.png)
 
 {{<alert>}}
-If you would like to choose a specific name for your node, update the `--name="your-choice-of-name"` in the _edgectl create virtual-node_
-command as in the above example.
+If you would like to choose a specific name for your node, update the `--name="your-choice-of-name"` in the _edgectl create virtual-node_ command as seen in the above example.
 {{</alert>}}
 
 ## View the Node in Your Darcy Cloud Project
 
-Switch back to your browser and if you have not done so yet, click the `DONE` button in the modal dialog. You
-should see your new node `ONLINE` in your Nodes list. If you do not see your node online, check our
-Troubleshooting page for more information.
+Switch back to Darcy Cloud in your browser and if you have not done so yet, click the `DONE` button in the modal dialog. You should see your new node `ONLINE` in your Nodes list. If you do not see your node online, see troubleshooting (below) for more information.
 
 ![Node Added](/images/virtual-node-portal-view.png)
 
 You now have an edge node, let's start using it!
 
+## Delete a virtual node
+
+We recommend using `edgectl delete virtual-node` command to delete the Virtual Node after use, so that all the resources used are cleaned up properly i.e. Ubuntu VM.
+
 ## Troubleshooting
 
 <details>
-  <summary>Not able to create virtual node with default values on Windows machine</summary>
-    We can modify the default values based on our Windows machine spec. Below are the default value used to
+  <summary>Unable to create virtual node with default values on Windows machine</summary>
+    We can modify the default values based on our Windows machine spec. Below are the default values used to
 spin up a multipass VM.
 `edgectl create virtual-node name=darcy-node -c 1`
 {{< highlight html>}}
@@ -70,23 +75,19 @@ spin up a multipass VM.
                        You can also use a shortcut of "<name>" to mean "name=<name>"{{< /highlight >}}
 </details>
 <details>
-  <summary>How to delete a Virtual-node?</summary>
-We recommend using `edgectl delete virtual-node` command to delete the Virtual Node after use, so that all the resources used are cleaned up properly i.e. Ubuntu VM.
-</details>
-<details>
   <summary>Used edgectl delete node command to delete virtual-node</summary>
 Not an issue, we just have to manually delete the multipass VM using multipass delete command <i>multipass delete node-name --purge</i>.
 </details>
 <details>
-  <summary>Not able to retrieve the correct Virtual Node IP from the portal for viewing the output</summary>
-At the moment Virtual Node IP visible on the portal is not correct. Therefore, we have to manually retrieve it using multipass command <i>multipass ls</i>.
+  <summary>Unable to view the output from a Virtual Node (incorrect IP)</summary>
+At the moment Virtual Node IP displayed on the portal is not correct. Therefore, we have to manually retrieve it using multipass command <i>multipass ls</i>.
 </details>
 <details>
-  <summary>Not able to SSH in the Virtual Node after the machine went to idle state</summary>
+  <summary>Unable to SSH into the Virtual Node after the machine went into idle state</summary>
 There is an ongoing issue with internet sharing of virtual network when using multipass with Virtual Box driver.
 https://www.virtualbox.org/ticket/14374?cversion=2&cnum_hist=66
 </details>
 <details>
-  <summary>Mounting USB drive i.e. camera to Virtual Node is not supported</summary>
+  <summary>Unable to view attached video device in output</summary>
 At the moment Virtual Node doesn't support mounting external cameras.
 </details>
