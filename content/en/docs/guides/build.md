@@ -76,9 +76,9 @@ Apple M1 Platforms:
 {{< rawhtml >}}
 <div class="alert-container">
 {{< /rawhtml >}}
-{{< alert icon="warning" >}}
+{{< alert icon="warn" >}}
 If you are on Apple M1 silicon, these instructions will not work for you. But, you can use this 
-[handy community script] (https://gist.github.com/drluckyspin/95243834ac9db2f3260b16f8ef545a56) to properly install a Tensorflow invironment that's optimized for M1.
+[handy community script](https://gist.github.com/drluckyspin/95243834ac9db2f3260b16f8ef545a56) to properly install a Tensorflow invironment that's optimized for M1.
 {{< /alert >}}
 {{< rawhtml >}}
 </div>
