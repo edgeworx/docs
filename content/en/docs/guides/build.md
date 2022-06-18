@@ -43,7 +43,12 @@ Darcy AI can run in CPU mode (if you don't have a Coral accelerator attached), b
 <div class="tab-content darcy-tab-content">
     <div class="tab-pane active" id="macosx" role="tabpanel" aria-labelledby="macosx-tab">
 {{</ rawhtml>}}
-- Install Python 3.6.9 or greater by [downloading](https://www.python.org/downloads/) or e.g. `brew install python`
+
+- Install Python 3.6.9 or greater by [downloading](https://www.python.org/downloads/) or installing via your favorite package manager, e.g. 
+
+```bash
+brew install python
+```
 
 {{< rawhtml >}}
 <div class="alert-container">
@@ -57,28 +62,36 @@ or [windows](https://stackoverflow.com/questions/5087831/how-should-i-set-defaul
 </div>
 {{< /rawhtml >}}
 
-X86 Platforms:
+**X86 Platforms**:
 
-- Install OpenCV using command `pip install opencv-python>=4.5.5.64`
+```bash
+# Install OpenCV 
+pip install opencv-python>=4.5.5.64
 
-- Install the Pillow library using command `pip install Pillow>=8.3.2`
+# Install the Pillow library 
+pip install Pillow>=8.3.2
 
-- Install the Numpy library using command `pip install numpy>=1.22.4`
+# Install the Numpy library 
+pip install numpy>=1.22.4
 
-- Install the Imutils library using command `pip install imutils>=0.5.4`
+# Install the Imutils library 
+pip install imutils>=0.5.4
 
-- Install the DarcyAI Engine using command `pip install darcyai`
+# Install the DarcyAI Engine
+pip install darcyai
 
-- Install TensorFlow using command `pip install tensorflow`
+# Install TensorFlow 
+pip install tensorflow
+```
 
-Apple M1 Platforms:
+**Apple M1 Platforms**:
 
 {{< rawhtml >}}
 <div class="alert-container">
 {{< /rawhtml >}}
-{{< alert icon="warn" >}}
+{{< alert style="warning" >}}
 If you are on Apple M1 silicon, these instructions will not work for you. But, you can use this 
-[handy community script](https://gist.github.com/drluckyspin/95243834ac9db2f3260b16f8ef545a56) to properly install a Tensorflow invironment that's optimized for M1.
+[community script](https://gist.github.com/drluckyspin/95243834ac9db2f3260b16f8ef545a56) to properly install a Tensorflow environment that's optimized for M1.
 {{< /alert >}}
 {{< rawhtml >}}
 </div>
