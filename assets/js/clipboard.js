@@ -1,3 +1,5 @@
+import ClipboardJS from 'clipboard';
+
 var pre = document.getElementsByTagName('pre');
 
 for (var i = 0; i < pre.length; ++ i)
@@ -6,14 +8,14 @@ for (var i = 0; i < pre.length; ++ i)
   var mermaid = element.getElementsByClassName('language-mermaid')[0];
 
   if (mermaid == null) {
-    element.insertAdjacentHTML('afterbegin', `<button class="btn btn-copy"></button>`);
+    element.insertAdjacentHTML('afterbegin', '<button class="btn btn-copy"></button>');
   }
 }
 
 var clipboard = new ClipboardJS('.btn-copy', {
     target: (trigger) => {
       return trigger.parentElement.getElementsByTagName('code')[0]
-    }
+    },
 })
 
 clipboard.on('success', function(e) {

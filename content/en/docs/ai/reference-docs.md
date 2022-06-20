@@ -1,6 +1,7 @@
 ---
 title: "Reference Docs"
 linkTitle: "Reference Docs"
-weight: 400
+weight: 500
+externalLink: "https://darcyai.github.io/darcyai/"
 ---
-<a href="https://darcyai.github.io/darcyai/" target="__blank">Reference Docs on Github</a>
+Python docs for the Darcy AI Engine.

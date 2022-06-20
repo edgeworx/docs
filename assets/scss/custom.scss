@@ -72,7 +72,7 @@ $link-color: #006390;
         text-transform: uppercase;
         display: flex;
         justify-content: flex-end;
-        font: normal normal normal 12px/18px Gilroy, sans-serif;
+        font: normal normal normal 14px/18px Gilroy, sans-serif;
         letter-spacing: 0;
         color: $text-color;
         opacity: 1;
@@ -81,7 +81,7 @@ $link-color: #006390;
       & .card-details {
         & .card-title {
           width: 100%;
-          margin-top: 1.5rem;
+          margin-top: 0.75rem;
           text-align: center;
           font: normal normal 600 18px/24px Gilroy, sans-serif;
           letter-spacing: 0;
@@ -92,7 +92,7 @@ $link-color: #006390;
         & .card-subtitle {
           text-align: center;
           margin-top: 1.5rem;
-          font: normal normal normal 14px/20px Gilroy, sans-serif;
+          font: normal normal normal 16px/24px Gilroy, sans-serif;
           letter-spacing: 0;
           color: $text-color;
           opacity: 1;
@@ -100,7 +100,7 @@ $link-color: #006390;
       }
 
       & .card-action {
-        margin-top: 3rem;
+        margin-top: 1.5rem;
 
         & button {
           width: 100%;
@@ -111,7 +111,7 @@ $link-color: #006390;
           letter-spacing: 0.17px;
           color: $text-color;
           text-transform: uppercase;
-          font: normal normal 600 14px/20px Gilroy, sans-serif;
+          font: normal normal 600 16px/20px Gilroy, sans-serif;
           border: unset;
           padding: 0.5rem;
         }
