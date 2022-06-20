@@ -1,6 +1,6 @@
 ---
 title: "Add a Virtual Node"
-weight: 70
+weight: 450
 ---
 
 With Virtual Node you can test pushing to an edge device even if you don't have one availabe. Adding a Virtual Node sets up a new Ubuntu VM locally and registers it as a node to a Darcy Cloud project via the edgectl CLI. Mac OSX and Windows users can create Virtual Nodes using Darcy Cloud Portal and edgectl. Linux users can directly use the register node command on their terminal.
@@ -8,7 +8,7 @@ With Virtual Node you can test pushing to an edge device even if you don't have 
 ### Prerequisites
 
 * [Darcy Cloud Account (Free)](https://cloud.darcy.ai)
-* [egectl CLI]({{<ref "/docs/cloud/edgectl/#install-edgectl">}})
+* [egectl CLI]({{<ref "/docs/cloud/start-edgectl.md">}})
 * [Multipass](https://multipass.run)
 
 {{< alert style="warning" >}}
@@ -30,7 +30,7 @@ Choose `VIRTUAL NODE` to get the instructions for adding a virtual node.
 
 ![Virtual Node Script](/images/add-virtual-node.png)
 
-Make sure you have the latest versions of [egectl]({{<ref "/docs/cloud/edgectl/#install-edgectl">}}) and [Multipass](https://multipass.run) installed. Click the `COPY` button to copy the command to your clipboard. This command starts an Ubuntu VM which register itself with Darcy
+Make sure you have the latest versions of [egectl]({{<ref "/docs/cloud/start-edgectl.md">}}) and [Multipass](https://multipass.run) installed. Click the `COPY` button to copy the command to your clipboard. This command starts an Ubuntu VM which register itself with Darcy
 Cloud as a Virtual Node.
 
 ## Run the Virtual Node Registration Script
