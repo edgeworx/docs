@@ -40,7 +40,7 @@ The highlights of this release are Virtual Node, and support for running Darcy A
 This release incorporates the first version of Darcy AI Explorer.
 
 | Component          | Version  |
-| ------------------ | -------- |
+|--------------------|----------|
 | Darcy Cloud API    | `v2.1.0` |
 | Darcy Cloud Portal | `v2.1.0` |
 | Edgectl            | `v2.1.0` |
@@ -57,7 +57,7 @@ This release incorporates the first version of Darcy AI Explorer.
 This is the first release of Darcy Cloud, which is the successor to Edgeworx Cloud.
 
 | Component          | Version  |
-| ------------------ | -------- |
+|--------------------|----------|
 | Darcy Cloud API    | `v2.0.1` |
 | Darcy Cloud Portal | `v2.0.1` |
 | Edgectl            | `v2.0.1` |
@@ -80,7 +80,7 @@ This release of Edgeworx Cloud introduces application microservice container log
 incorporates internal security enhancements.
 
 | Component         | Version  |
-| ----------------- | -------- |
+|-------------------|----------|
 | Edgeworx CloudAPI | `v1.3.1` |
 | Edgectl           | `v1.3.2` |
 
