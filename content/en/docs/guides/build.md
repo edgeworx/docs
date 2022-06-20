@@ -7,13 +7,15 @@ weight: 200
 ![face-detection-app](/images/guide-ai-app-hero.jpg)
 
 ## What you will accomplish
+
 In this step-by-step guide you’ll learn how to build your first Darcy AI app. This app utilizes all of the core Darcy AI concepts, such as pipelines, input streams, perceptors and output streams to detect and count people and then change some basic configurations. The concepts in this guide are the base foundations for any Darcy AI application you might want to build in the future.
 
-{{< alert icon="" >}}
+{{< alert >}}
 Darcy AI can run in CPU mode (if you don't have a Coral accelerator attached), but requires a relatively modern system with a good CPU (ideally with multiple cores), and a decent amount of memory. If you run it on a low power platform, then you will get a very low frames per second video output.
 {{< /alert >}}
 
-#### Requirements
+### Requirements
+
 - MacOS (Linux & Windows coming soon)
 - 5GB or more of free disk space
 - Video source (like a built-in web cam or attached USB cam)
@@ -44,7 +46,7 @@ Darcy AI can run in CPU mode (if you don't have a Coral accelerator attached), b
     <div class="tab-pane active" id="macosx" role="tabpanel" aria-labelledby="macosx-tab">
 {{</ rawhtml>}}
 
-- Install Python 3.6.9 or greater by [downloading](https://www.python.org/downloads/) or installing via your favorite package manager, e.g. 
+- Install Python 3.6.9 or greater by [downloading](https://www.python.org/downloads/) or installing via your favorite package manager, e.g.
 
 ```bash
 brew install python
@@ -65,22 +67,22 @@ or [windows](https://stackoverflow.com/questions/5087831/how-should-i-set-defaul
 **X86 Platforms**:
 
 ```bash
-# Install OpenCV 
+# Install OpenCV
 pip install opencv-python>=4.5.5.64
 
-# Install the Pillow library 
+# Install the Pillow library
 pip install Pillow>=8.3.2
 
-# Install the Numpy library 
+# Install the Numpy library
 pip install numpy>=1.22.4
 
-# Install the Imutils library 
+# Install the Imutils library
 pip install imutils>=0.5.4
 
 # Install the DarcyAI Engine
 pip install darcyai
 
-# Install TensorFlow 
+# Install TensorFlow
 pip install tensorflow
 ```
 
@@ -90,7 +92,7 @@ pip install tensorflow
 <div class="alert-container">
 {{< /rawhtml >}}
 {{< alert style="warning" >}}
-If you are on Apple M1 silicon, these instructions will not work for you. But, you can use this 
+If you are on Apple M1 silicon, these instructions will not work for you. But, you can use this
 [community script](https://gist.github.com/drluckyspin/95243834ac9db2f3260b16f8ef545a56) to properly install a Tensorflow environment that's optimized for M1.
 {{< /alert >}}
 {{< rawhtml >}}
@@ -344,4 +346,3 @@ AI to detect the presence of people, assign an anonymous stable identifier to pe
 around the field of view, and annotate the video frames with text and graphics.
 
 Next, you'll [deploy the app to the edge](/docs/guides/deploy).
-

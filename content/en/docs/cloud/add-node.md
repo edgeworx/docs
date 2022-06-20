@@ -90,7 +90,7 @@ edgectl project node-install-script --show-script --text
 
 This is helpful if you wish to review or debug the installation procedure.
 
-#### Example
+### Example
 
 First, get the node-install-script shell snippet, and copy it to the clipboard:
 

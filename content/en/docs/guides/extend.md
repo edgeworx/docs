@@ -29,5 +29,4 @@ You can use Output Stream code files from any existing source or you can create 
 ## More Information and example code
 
 - [Darcy AI Overview](/docs/ai/)
-
 - [All Darcy AI Example Code](https://github.com/darcyai/darcyai/tree/main/src/examples)

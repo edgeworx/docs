@@ -13,7 +13,7 @@ To deploy your custom app, you will need a Darcy Cloud account with at least one
 and `ONLINE`. You will need a basic understanding
 of [how to structure app YAML]({{<ref "/docs/apps/yaml-definition.md">}}) for Darcy Cloud.
 
-## Deply an App using Darcy Cloud Portal
+## Deploy an App using Darcy Cloud Portal
 
 1. Go to the Darcy Cloud project page
 2. Select `Apps`
@@ -37,8 +37,6 @@ Application YAML files can be found [here]({{<ref "/docs/apps/">}}).
 {{<alert>}} Everything shown above using Darcy Cloud Portal can also be achieved using
 our CLI, [edgectl]({{<ref "/docs/cloud/start-edgectl">}}).
 {{</alert>}}
-
-
 
 ## Deploy an App using edgectl
 
@@ -111,7 +109,7 @@ To view the details of the `monitor` microservice in the `edgeworx-heart-rate` a
 edgectl get microservice --app edgeworx-heart-rate monitor
 ```
 
-#### Container Logs
+### Container Logs
 
 You can use the `edgectl logs` command to view the container logs for a microservice. This is
 effectively equivalent to executing `docker logs CONTAINER_ID`. The `logs` command takes one

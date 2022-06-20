@@ -17,28 +17,30 @@ solution needs.
 We recommend using a Raspberry Pi 4 with an attached Google Coral accelerator for the best performance.
 {{< /alert>}}
 
-#### Software Requirements
-- Docker Desktop and a Docker account
-- Darcy Cloud account (Free)
+### Software Requirements
 
-#### Hardware Requirements
-- An Edge device
-    - Raspberry Pi 4 with 2GB+ of RAM (recommended)
-    - [More Edge device options](/docs/cloud/choose-node/)
-- Video camera attached to the camera port
-- AI Processor: Google Coral edge TPU (USB version attached to USB 3.0 port)
-- Micro SD card with at least 16GB capacity (32GB+ recommended)
-- Power supply
-- Internet connectivity
+* Docker Desktop and a Docker account
+* Darcy Cloud account (Free)
+
+### Hardware Requirements
+
+* An Edge device
+  * Raspberry Pi 4 with 2GB+ of RAM (recommended)
+  * [More Edge device options](/docs/cloud/choose-node/)
+* Video camera attached to the camera port
+* AI Processor: Google Coral edge TPU (USB version attached to USB 3.0 port)
+* Micro SD card with at least 16GB capacity (32GB+ recommended)
+* Power supply
+* Internet connectivity
 
 ---
+
 ## Package your app
 
 ### Install Docker and create an account
 
-- Install Docker [Mac](https://docs.docker.com/desktop/mac/install/) or [Windows](https://docs.docker.com/desktop/windows/install/)
-
-- [Create a Docker Hub Account](https://hub.docker.com/signup)
+* Install Docker [Mac](https://docs.docker.com/desktop/mac/install/) or [Windows](https://docs.docker.com/desktop/windows/install/)
+* [Create a Docker Hub Account](https://hub.docker.com/signup)
 
 {{< alert icon="" style="info"  >}}
 After you have installed Docker, you can use `docker` commands in terminal. You will be using these
