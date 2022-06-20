@@ -52,6 +52,7 @@ output.
 You should be brought to the AI Explorer Demo app.
 
 ## App YAML
+
 ```yaml
 kind: Application
 apiVersion: iofog.org/v3

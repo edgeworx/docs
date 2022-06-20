@@ -110,4 +110,3 @@ spec:
       to: "{{self.microservices[1].name}}"
       name: "monitor-to-viewer"
 ```
-

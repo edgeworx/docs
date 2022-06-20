@@ -15,7 +15,6 @@ With Virtual Node you can test pushing to an edge device even if you don't have 
 Virtual Node is not currently compatible with attached video devices. You can still build locally using attached video and deploy to edge devices with attached video.
 {{</alert>}}
 
-
 ## Get the Virtual Node Installation Script
 
 Log into [Darcy Cloud](https://cloud.darcy.ai) and select the project to which you want to add the
