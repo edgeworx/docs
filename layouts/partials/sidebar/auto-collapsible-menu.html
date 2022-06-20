@@ -35,7 +35,7 @@
                                 {{ range .Pages }}
                                   {{ $active := in $currentPage.RelPermalink .RelPermalink }}
                                   {{ $current := eq $currentPage.RelPermalink .RelPermalink }}
-                                  <li class="darcy-list-item nested"><a class="docs-link rounded{{ if $active }} active{{ end }}{{ if $current }} current{{ end }}" href="{{ .Permalink }}">{{ .LinkTitle }} {{ .Params.externalLink }} w</a></li>
+                                  <li class="darcy-list-item nested"><a class="docs-link rounded{{ if $active }} active{{ end }}{{ if $current }} current{{ end }}" href="{{ .Permalink }}">{{ .LinkTitle }} {{ .Params.externalLink }}</a></li>
                                 {{ end }}
                               </ul>
                             </div>
@@ -43,7 +43,7 @@
                         {{ else }}
                           {{ $active := in $currentPage.RelPermalink .RelPermalink }}
                           {{ $current := eq $currentPage.RelPermalink .RelPermalink }}
-                          <li class="darcy-list-item nested"><a class="docs-link rounded{{ if $active }} active{{ end }}{{ if $current }} current{{ end }}" href="{{ .Permalink }}">{{ .LinkTitle }} x</a></li>
+                          <li class="darcy-list-item nested"><a class="docs-link rounded{{ if $active }} active{{ end }}{{ if $current }} current{{ end }}" href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
                         {{ end }}
                       {{ end }}
                     </ul>
