@@ -1,7 +1,7 @@
 ---
 title : "Get Started: Cloud Portal"
 toc: true
-weight: 20
+weight: 100
 aliases:
   - /darcy/darcy-cloud/get-started-ec
 ---

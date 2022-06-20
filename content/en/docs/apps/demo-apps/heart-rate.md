@@ -26,7 +26,7 @@ one or two nodes. {{</alert>}}
 ## Deploy using Darcy Cloud Portal
 
 Deploying the Heart Rate Application from the Darcy Cloud platform is extremely simple. Make sure
-you have [added at least 1 node]({{<ref "/docs/cloud/portal/nodes/add-node.md">}}) to your Darcy Cloud project, then
+you have [added at least 1 node]({{<ref "/docs/cloud/add-node.md">}}) to your Darcy Cloud project, then
 follow the steps below:
 
 1. Go to your Darcy Cloud project page
