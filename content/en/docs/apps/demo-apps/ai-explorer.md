@@ -1,5 +1,5 @@
 ---
-title : "AI Explorer Demo App"
+title : "AI Explorer demo app"
 weight: 70
 aliases:
   - /darcy/darcy-cloud/get-started-ec/darcy-ai-explorer-application

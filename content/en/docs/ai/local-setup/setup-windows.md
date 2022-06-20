@@ -1,6 +1,6 @@
 ---
 title: "Setting up your Windows environment for Darcy AI development"
-linkTitle: "Windows Setup"
+linkTitle: "Windows setup"
 draft: true
 weight: 210
 ---

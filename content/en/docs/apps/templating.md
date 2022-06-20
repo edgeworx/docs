@@ -1,5 +1,5 @@
 ---
-title : "App Templating"
+title : "App templating"
 weight: 700
 aliases:
   - /darcy/darcy-cloud/applications-doc/app-doc-advanced-templating

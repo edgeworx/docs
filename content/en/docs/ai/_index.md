@@ -1,5 +1,5 @@
 ---
-title: "Darcy AI Overview"
+title: "Darcy AI"
 linkTitle: "Darcy AI"
 weight: 400
 ---
