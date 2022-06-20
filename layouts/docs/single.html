@@ -83,6 +83,11 @@
       {{ end -}}
       {{ if .Content }}
         {{ .Content }}
+        {{ with .Params.externalLink }}
+          <div class="external-link">
+            <p>External Link: <a href="{{- . -}}" target="_blank">{{- . -}}</a></p>
+          </div>
+        {{end}}
       {{ else if .IsSection }}
         <article>
           <div class="text-center">{{ .Content }}</div>

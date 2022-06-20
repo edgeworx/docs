@@ -224,6 +224,24 @@ there's a one-off HTML structure on a landing page. To do so, use the `rawhtml` 
 ## Normal markdown continues here...
 ```
 
+### Sitenav External Links
+
+Sometimes you may want to add an external link to the left sitenav, e.g. a link
+to external reference documentation. To do so, create a content markdown file
+as per normal, but add an `externalLink: "https://my.external.link` line
+to the front matter. You should also add content to the markdown, as this content
+will show up in search results. Example from [Reference Docs](https://raw.githubusercontent.com/darcyai/docs/staging/content/en/docs/ai/reference-docs.md)
+
+```text
+---
+title: "Reference Docs"
+linkTitle: "Reference Docs"
+weight: 500
+externalLink: "https://darcyai.github.io/darcyai/"
+---
+Python docs for the Darcy AI Engine.
+```
+
 ## Linting
 
 We have several lint targets, although some of them are still WIP and not fully integrated
