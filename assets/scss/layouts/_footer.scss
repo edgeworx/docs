@@ -65,15 +65,15 @@
           &:any-link {
             color: $edgeneutral-5;
           }
-          
+
           &:hover {
             color: $darcy-blue;
             text-decoration: underline;
           }
-
         }
       }
     }
+
     .social {
       display: grid;
       margin-top: 1rem;
