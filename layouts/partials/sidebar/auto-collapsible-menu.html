@@ -2,12 +2,12 @@
 <ul class="mt-4 darcy-list btn-toggle-nav list-unstyled collapsible-sidebar darcy-list" style="margin-left: 0; padding-left: 0;">
   {{ $currentPage := . -}}
   {{ $section := (.Site.GetPage "/docs").Section -}}
-  
+
   <!-- Home link -->
   {{ $active := eq $currentPage.RelPermalink "/" }}
   {{ $current := eq $currentPage.RelPermalink "/" }}
   <li class="darcy-list-item"><a class="docs-link main-section-title rounded{{ if $active }} active{{ end }}{{ if $current }} current{{ end }}" href="/">Home</a></li>
-  
+
   {{ range (where .Site.Sections "Section" "in" $section) }}
     {{ range .Sections.ByWeight }}
       {{ $active := in $currentPage.RelPermalink .RelPermalink }}
@@ -35,7 +35,7 @@
                                 {{ range .Pages }}
                                   {{ $active := in $currentPage.RelPermalink .RelPermalink }}
                                   {{ $current := eq $currentPage.RelPermalink .RelPermalink }}
-                                  <li class="darcy-list-item nested"><a class="docs-link rounded{{ if $active }} active{{ end }}{{ if $current }} current{{ end }}" href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+                                  <li class="darcy-list-item nested"><a class="docs-link rounded{{ if $active }} active{{ end }}{{ if $current }} current{{ end }}" href="{{ .Permalink }}">{{ .LinkTitle }} {{ .Params.externalLink }}</a></li>
                                 {{ end }}
                               </ul>
                             </div>
@@ -52,7 +52,8 @@
               {{ else }}
                 {{ $active := in $currentPage.RelPermalink .RelPermalink }}
                 {{ $current := eq $currentPage.RelPermalink .RelPermalink }}
-                <li class="darcy-list-item"><a class="docs-link rounded{{ if $active }} active{{ end }}{{ if $current }} current{{ end }}" href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+
+                <li class="darcy-list-item"><a class="docs-link rounded{{ if $active }} active{{ end }}{{ if $current }} current{{ end }}{{ with .Params.externalLink }} external-link{{end}}" href="{{ with .Params.externalLink }}{{.}}{{ else }}{{ .Permalink }}{{end}}" {{ with .Params.externalLink }} target="_blank"{{end}}>{{ .LinkTitle }}{{ with .Params.externalLink }} &rarr;{{end}}</a></li>
               {{ end }}
             {{ end }}
           </ul>

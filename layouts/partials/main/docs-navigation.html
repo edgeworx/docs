@@ -1,3 +1,21 @@
+{{/*
+
+This template builds the prev/next buttons at the bottom of the page.
+It is a bit of a mess, and needs to be be tidied up (e.g. some of the
+variables can probably be removed).
+
+Note:
+- "prevSib" is the previous sibling of a page at the same level in the hierarcy
+- "prevAunt" is the previous sibling of the page's parent
+- "nextSib" is the next sibling of a page at the same level in the hierarchy
+- "nextAunt" is the next sibling of the page's parents
+- pages that are external links are excluded
+- we choose not to navigate between top-level groups. That is to say, "/docs/ai" has
+  a logical prevSib of "/docs/guides", but we deliberately omit it.
+
+*/}}
+
+
 {{ $currentSection := .CurrentSection }}
 {{ $sectionPages := .CurrentSection.Pages}}
 {{ $currentPage := . -}}
@@ -14,90 +32,222 @@
 {{ $nextTitle := "" }}
 {{ $nextArrow := "&rarr;" }}
 
+{{define "nextSib"}}
+    {{/* nextSib expects a page arg, and sets .Scratch "nextSib" if there
+     is a next sibling page (at the same level of hierarchy) */}}
+    {{$p:= .}}
 
-{{ if $isIndex }}
-  {{ if ge (len $currentSection.Pages) 1 }}
-    {{ $nextIndex = 0 }}
-  {{ end}}
-{{ else }}
-  {{ range $i, $item := $currentSection.Pages }}
-    {{ if eq $currentPage.RelPermalink $item.RelPermalink }}
-      {{ $pageIndex = $i }}
-      {{ $prevIndex = sub $i 1 }}
-      {{ if lt $pageIndex (sub (len $currentSection.Pages) 1) }}
-        {{ $nextIndex = add $pageIndex 1}}
-      {{ end }}
-    {{ end }}
-  {{end -}}
-{{ end }}
+    {{$foundMe := false }}
+    {{if eq $p.RelPermalink .CurrentSection.RelPermalink}}
+        {{/* We need this special check for index pages */}}
+        {{$foundMe = true}}
+    {{end}}
 
-<!--<pre>-->
-<!--  $pageIndex: {{$pageIndex}}-->
-<!--  $prevIndex: {{$prevIndex}}-->
-<!--  $nextIndex: {{$nextIndex}}-->
-<!--</pre>-->
-
-{{ if lt $prevIndex 0}}
-  {{ if eq $pageIndex 0}}
-    {{ $prevLink = $currentSection.RelPermalink }}
-    {{ $prevTitle = $currentSection.LinkTitle }}
-  {{ else }}
-    {{ $parent := .GetPage ".." }}
-
-    {{ range $i, $item := $parent.Pages }}
-      {{ if and (gt $i 0) (eq $item.RelPermalink $currentPage.RelPermalink) }}
-        {{ $aunt := index $parent.Pages (sub $i 1) }}
-        {{ $prevLink = $aunt.RelPermalink }}
-        {{ $prevTitle = $aunt.LinkTitle }}
-        {{ if not $isIndex }}
-          {{ $prevArrow = "&#8598;" }} {{/* The northwest arrow */}}
+    {{ range $i, $item := .CurrentSection.Pages }}
+        {{ if eq $p.RelPermalink $item.RelPermalink }}
+            {{ $foundMe = true }}
+            {{continue}}
         {{ end }}
-      {{ end }}
-    {{ end }}
 
-    {{ if and (not $prevLink) (ne $parent.Kind "home") }}
-      {{ $prevLink = $parent.RelPermalink }}
-      {{ $prevTitle = $parent.LinkTitle }}
-      {{ $prevArrow = "&#8598;" }} {{/* The northwest arrow */}}
-    {{ end }}
-  {{ end }}
-{{ else }}
-  {{ $prev := index $currentSection.Pages $prevIndex}}
-  {{ $prevLink = $prev.RelPermalink }}
-  {{ $prevTitle = $prev.LinkTitle }}
-{{ end }}
+        {{ if ne $foundMe true}}{{continue}}{{end}}
 
-{{ if ge $nextIndex 0}}
-  {{ $next := index $currentSection.Pages $nextIndex}}
-  {{ $nextLink = $next.RelPermalink }}
-  {{ $nextTitle = $next.LinkTitle }}
-{{ else }}
-  {{ $parent := .GetPage ".." }}
-  {{ range $i, $item := $parent.Pages }}
-    {{ if (eq $item.RelPermalink $currentSection.RelPermalink) }}
-      {{ $auntIndex := add $i 1}}
-      {{ if lt $auntIndex (len $parent.Pages) }}
-        {{ $aunt := index $parent.Pages $auntIndex }}
-        {{ $nextLink = $aunt.RelPermalink }}
-        {{ $nextTitle = $aunt.LinkTitle }}
-        {{ $nextArrow = "&#8599;" }} {{/* The northeast arrow */}}
-      {{ else }}
-        {{ $grandparent := .GetPage "../.." }}
-        {{ range $i, $item := $grandparent.Pages }}
-          {{ if (eq $item.RelPermalink $parent.RelPermalink) }}
-            {{ $grandauntIndex := add $i 1}}
-            {{ if lt $grandauntIndex (len $grandparent.Pages) }}
-              {{ $grandaunt := index $grandparent.Pages $grandauntIndex }}
-              {{ $nextLink = $grandaunt.RelPermalink }}
-              {{ $nextTitle = $grandaunt.LinkTitle }}
-              {{ $nextArrow = "&#8599;" }} {{/* The northeast arrow */}}
+        {{ with $item.Params.externalLink}}
+            {{/* If it's an external link, we don't want it to show up in nav */}}
+            {{continue}}
+        {{end}}
+
+        {{ $p.Scratch.Set "nextSib" $item}}
+        {{ break }}
+    {{end}}
+{{end}}
+
+{{define "nextAunt"}}
+  {{$p := .}}
+  {{$parent := .GetPage ".."}}
+  {{$currentSection := $p.CurrentSection}}
+  {{$parentSection := $parent.CurrentSection}}
+
+
+  {{$parentItem := false}}
+  {{$foundMe := false}}
+
+  {{if ne "/docs/" $parentSection.RelPermalink}}
+      {{/* We don't want prev/next nav between top level sections */}}
+
+      {{ range $i, $item := $parentSection.Pages }}
+        {{ if eq $currentSection.RelPermalink $item.RelPermalink }}
+            {{ $parentItem = $item}}
+            {{ $foundMe = true }}
+            {{continue}}
+        {{ end }}
+
+        {{ if ne $foundMe true}}{{continue}}{{end}}
+
+
+        {{ with $item.Params.externalLink}}
+            {{/* If it's an external link, we don't want it to show up in nav */}}
+            {{continue}}
+        {{end}}
+
+        {{ $p.Scratch.Set "nextAunt" $item}}
+        {{ break }}
+      {{end}}
+  {{end}}
+{{end}}
+
+
+{{define "prevSib"}}
+    {{/* prevSib expects a page arg, and sets .Scratch "prevSib" if there
+     is a prev sibling page (at the same level of hierarchy) */}}
+
+    {{$p:= .}}
+
+    {{if eq $p.RelPermalink .CurrentSection.RelPermalink}}
+        {{/* We need this special check for index pages. If this is the index page, there is no previous sib */}}
+    {{else}}
+
+        {{$currentSection := .GetPage .CurrentSection.RelPermalink}}
+        {{$p.Scratch.Set "prevSib" $currentSection}}
+
+        {{ range $i, $item := .CurrentSection.Pages }}
+
+            {{ with $item.Params.externalLink}}
+
+              {{/* If it's an external link, we don't want it to show up in nav */}}
+              {{continue}}
+            {{end}}
+
+            {{ if eq $p.RelPermalink $item.RelPermalink }}
+                {{/* We've gone too far, we've reached the page itself */}}
+                {{ break }}
             {{ end }}
+
+            {{ $p.Scratch.Set "prevSib" $item}}
+        {{end}}
+    {{end}}
+{{end}}
+
+
+
+{{define "prevAunt"}}
+  {{$p := .}}
+  {{$parent := .GetPage ".."}}
+  {{$currentSection := $p.CurrentSection}}
+  {{$parentSection := $parent.CurrentSection}}
+
+  {{$parentItem := false}}
+  {{$foundMe := false}}
+
+  {{if ne "/docs/" $parentSection.RelPermalink}}
+      {{/* We don't want prev/next nav between top level sections */}}
+
+      {{ range $i, $item := $parentSection.Pages }}
+
+          {{ with $item.Params.externalLink}}
+
+              {{/* If it's an external link, we don't want it to show up in nav */}}
+              {{continue}}
+          {{end}}
+
+          {{ if eq $p.RelPermalink $item.RelPermalink }}
+              {{/* We've gone too far, we've reached the page itself */}}
+              {{ break }}
           {{ end }}
-        {{ end }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
-{{ end }}
+
+          {{ $p.Scratch.Set "prevAunt" $item}}
+      {{end}}
+  {{end}}
+
+    {{if eq ($p.Scratch.Get "prevAunt") nil}}
+        {{if ne "/docs/" $parentSection.RelPermalink}}
+            {{ $p.Scratch.Set "prevAunt" $parent}}
+            {{end}}
+      {{end}}
+
+{{end}}
+
+
+{{define "setRelations"}}
+    {{/*
+    setRelations expects a page arg. It invokes nextSib and prevSib, resulting
+    in .Scratch "prevSib" and "nextSib" being set to the prev/next page object
+    (at the same hierarchy level) or nil.
+
+    If also invokes prevAunt and nextAunt, which are the pages adjacent to
+    the page's parent.
+
+    */}}
+
+    {{$p:= .}}
+    {{- template "prevSib" $p -}}
+    {{- template "nextSib" $p -}}
+
+    {{ $isIndex := eq $p.RelPermalink $p.CurrentSection.RelPermalink }}
+    {{ with $isIndex }}
+        {{$p.Scratch.Set "isIndex" true}}
+        {{$p.Scratch.Set "parentPage" $p}}
+    {{else}}
+        {{$p.Scratch.Set "isIndex" false}}
+        {{ $parent := $p.GetPage ".." }}
+        {{ $p.Scratch.Set "parentPage" $parent}}
+    {{end}}
+
+    {{- template "nextAunt" $p -}}
+    {{- template "prevAunt" $p -}}
+
+
+    {{with $p.Scratch.Get "nextSib"}}
+        {{$p.Scratch.Set "nextLink" .}}
+        {{$p.Scratch.Set "nextArrow" "&rarr;"}}
+    {{else}}
+        {{$p.Scratch.Set "nextLink" ($p.Scratch.Get "nextAunt")}}
+        {{$p.Scratch.Set "nextArrow" "&#8599;"}}
+    {{end}}
+
+    {{with $p.Scratch.Get "prevSib"}}
+        {{$p.Scratch.Set "prevLink" .}}
+        {{$p.Scratch.Set "prevArrow" "&larr;"}}
+    {{else}}
+        {{$p.Scratch.Set "prevLink" ($p.Scratch.Get "prevAunt")}}
+        {{$p.Scratch.Set "prevArrow" "&#8598;"}}
+    {{end}}
+
+{{end}}
+
+
+{{- template "setRelations" $currentPage -}}
+
+{{/*
+
+<hr/>
+<h1>Debug Output</h1>
+
+<pre>
+Current page: {{$currentPage.RelPermalink}}
+IsIndex: {{ ($currentPage.Scratch.Get "isIndex")}}
+Parent: {{ ($currentPage.Scratch.Get "parentPage").RelPermalink}}
+
+Prev sib: {{ ($currentPage.Scratch.Get "prevSib").RelPermalink}}
+prevAunt: {{ ($currentPage.Scratch.Get "prevAunt").RelPermalink}}
+prevLink: {{ ($currentPage.Scratch.Get "prevLink").RelPermalink}}
+
+
+Next sib: {{ ($currentPage.Scratch.Get "nextSib").RelPermalink}}
+nextAunt: {{ ($currentPage.Scratch.Get "nextAunt").RelPermalink}}
+nextLink: {{ ($currentPage.Scratch.Get "nextLink").RelPermalink}}
+nextArrow: {{$currentPage.Scratch.Get "nextArrow"}}
+</pre>
+*/}}
+
+{{ $prevLink = ($currentPage.Scratch.Get "prevLink").RelPermalink}}
+{{ $prevTitle = ($currentPage.Scratch.Get "prevLink").LinkTitle}}
+{{ $prevArrow = $currentPage.Scratch.Get "prevArrow"}}
+
+
+{{ $nextLink = ($currentPage.Scratch.Get "nextLink").RelPermalink}}
+{{ $nextTitle = ($currentPage.Scratch.Get "nextLink").LinkTitle}}
+{{ $nextArrow = $currentPage.Scratch.Get "nextArrow"}}
+
 
 
 {{ with (or $prevLink $nextLink)}}
