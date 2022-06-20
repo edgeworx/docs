@@ -20,7 +20,7 @@ This is WIP
 The highlights of this release are Virtual Node, and support for running Darcy AI Engine on CPU.
 
 | Component          | Version  |
-| ------------------ |----------|
+|--------------------|----------|
 | Darcy Cloud API    | `v2.2.0` |
 | Darcy Cloud Portal | `v2.2.0` |
 | Edgectl            | `v2.2.0` |
@@ -28,7 +28,7 @@ The highlights of this release are Virtual Node, and support for running Darcy A
 #### Changes
 
 * If you don't have an edge node (Raspberry Pi, Jetson Nano, etc.) available, you can now create
-  a [Virtual Node](/docs/cloud/portal/nodes/virtual-node/) for development purposes. A Virtual Node is effectively a local VM that appears
+  a [Virtual Node](/docs/cloud/virtual-node/) for development purposes. A Virtual Node is effectively a local VM that appears
   to Darcy Cloud as an edge node.
 * [Darcy AI Engine](/docs/ai/) works best when an AI accelerator (such as a Google Coral) is available, but now
   AI Engine can run directly on CPU. This is useful for local development.
@@ -68,7 +68,7 @@ This is the first release of Darcy Cloud, which is the successor to Edgeworx Clo
 * `edgectl` has switched its entire command structure, from `noun-verb` to `verb-noun`. We are doing
   this based on user feedback from customers who are more familiar with the
   Kubernetes `kubectcl get X` style of CLI. For example, instead of `edgectl account get`,
-  use `edgectl get account`. For more detail, see edgectl [docs](/docs/cloud/edgectl/deploy-an-app).
+  use `edgectl get account`. For more detail, see edgectl [docs](/docs/cloud/start-edgectl).
   * Note that if you are using `edgectl` in scripts or such, and you pull the latest version, you
     must update your scripts to use the new syntax.
 
