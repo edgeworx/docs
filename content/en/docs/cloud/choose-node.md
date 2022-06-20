@@ -34,7 +34,7 @@ If real-time video is not essential
 
 
 {{<alert style="info">}}
-  If you don't have any Edge hardware yet, you can create a [virtual node](/docs/virtual-node.md) using Darcy Cloud or create a VM in the Cloud or a [Vagrant](https://www.vagrantup.com) image running on your laptop and run
+  If you don't have any Edge hardware yet, you can create a [virtual node](/docs/cloud/virtual-node.md) using Darcy Cloud or create a VM in the Cloud or a [Vagrant](https://www.vagrantup.com) image running on your laptop and run
   the node installation script.
 {{</alert>}}
 
@@ -52,7 +52,7 @@ If real-time video is not essential
 | ------------------ | ------ |
 | ![face-detection-app](/images/boards/pi.png)|  ![face-detection-app](/images/boards/pi.png)|
 | Raspberry Pi 4 + Coral Accelerator | Raspberry Pi 4 |
-| [Buy Online](https://www.amazon.com/LANDZO-Raspberry-Pi-Model-8gb/dp/B08R87H4RR/ref=asc_df_B08R87H4RR/?tag=hyprod-20&linkCode=df0&hvadid=475692076734&hvpos=&hvnetw=g&hvrand=13451736714787671950&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9031964&hvtargid=pla-1143235379750&psc=1) | [Buy Online](https://www.amazon.com/LANDZO-Raspberry-Pi-Model-8gb/dp/B08R87H4RR/ref=asc_df_B08R87H4RR/?tag=hyprod-20&linkCode=df0&hvadid=475692076734&hvpos=&hvnetw=g&hvrand=13451736714787671950&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9031964&hvtargid=pla-1143235379750&psc=1) | 
+| [Buy Online](https://www.amazon.com/LANDZO-Raspberry-Pi-Model-8gb/dp/B08R87H4RR/ref=asc_df_B08R87H4RR/?tag=hyprod-20&linkCode=df0&hvadid=475692076734&hvpos=&hvnetw=g&hvrand=13451736714787671950&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9031964&hvtargid=pla-1143235379750&psc=1) | [Buy Online](https://www.amazon.com/LANDZO-Raspberry-Pi-Model-8gb/dp/B08R87H4RR/ref=asc_df_B08R87H4RR/?tag=hyprod-20&linkCode=df0&hvadid=475692076734&hvpos=&hvnetw=g&hvrand=13451736714787671950&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9031964&hvtargid=pla-1143235379750&psc=1) |
 
 
 
