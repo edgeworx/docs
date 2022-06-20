@@ -1,7 +1,7 @@
 ---
-title : "Building Darcy Apps"
+title : "Building Darcy apps"
 weight: 600
-linkTitle: "Building Darcy Apps"
+linkTitle: "Building Darcy apps"
 ---
 
 Apps are groups of microservices bundled to work together. They are defined using YAML files and can

@@ -1,6 +1,6 @@
 ---
 title: "Setting up your Raspberry Pi for Darcy AI development"
-linkTitle: "Raspberry Pi Setup"
+linkTitle: "Raspberry Pi setup"
 weight: 220
 ---
 

@@ -1,5 +1,5 @@
 ---
-title : "Get Started: Cloud Portal"
+title : "Get started: Darcy Cloud Portal"
 toc: true
 weight: 100
 aliases:

@@ -1,5 +1,5 @@
 ---
-title: "Remotely Access Your Node"
+title: "Remotely access your node"
 weight: 700
 ---
 

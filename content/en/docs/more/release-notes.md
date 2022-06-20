@@ -1,5 +1,5 @@
 ---
-title: "Release Notes"
+title: "Release notes"
 weight: 70
 aliases:
   - /darcy-cloud/release-notes

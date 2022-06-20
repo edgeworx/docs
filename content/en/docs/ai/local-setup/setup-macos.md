@@ -1,6 +1,6 @@
 ---
 title: "Setting up your macOS environment for Darcy AI development"
-linkTitle: "macOS Setup"
+linkTitle: "macOS setup"
 weight: 200
 ---
 You can use any macOS environment to build Darcy AI applications. After you finish setting up your

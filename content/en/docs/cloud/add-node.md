@@ -1,5 +1,5 @@
 ---
-title: "Add an Edge Node"
+title: "Add an Edge node"
 weight: 400
 aliases:
   - /darcy/darcy-cloud/get-started-ec/nodes/get-started-add-node

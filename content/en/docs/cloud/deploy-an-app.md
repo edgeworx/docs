@@ -1,5 +1,5 @@
 ---
-title: "Deploy an App"
+title: "Deploy an app"
 weight: 600
 toc: true
 aliases:
