@@ -1,7 +1,7 @@
 ---
-title: "Choose an Edge Node"
+title: "Choose an Edge node"
 weight: 300
-linkTitle: "Choose an Edge Node"
+linkTitle: "Choose an Edge node"
 draft: fals
 aliases:
   - /darcy/darcy-cloud/what-is-darcy-cloud

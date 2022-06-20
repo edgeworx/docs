@@ -11,7 +11,7 @@ cards:
     time: 30 min
     link: '/docs/guides/build/'
     image: /images/guides/guide-thumb-build.jpg
-  - title: Deploy apps to the edge
+  - title: Deploy apps to the Edge
     subtitle: Package and deploy your app in the real world on different edge devices without changing the code.
     action: Deploy
     time: 30 min
