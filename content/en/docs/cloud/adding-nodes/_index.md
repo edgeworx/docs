@@ -22,7 +22,7 @@ apps to these nodes to put them to work.
 | Raspberry Pi4 | Any Pi4 camera | 5.1V * 3.5A power | Coral Accelerator|
 | [Learn More](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/)  | [Learn More](https://www.amazon.com/gp/product/B07SN8GYGD)  | [Learn More](https://www.amazon.com/CanaKit-Raspberry-Power-Supply-USB-C/dp/B07TYQRXTK/ref=sr_1_3?crid=2BGU12U80RGNV&keywords=canakit+power+supply&qid=1655761341&sprefix=cana+kit+power+supply%2Caps%2C125&sr=8-3)  | [Learn More](https://coral.ai/products/accelerator/)  
 
-Google Coral Dev board should also offer great performance but is currently untested.
+note: The Google Coral Dev board should also offer good AI performance hasn't been tested with Darcy AI yet.
 
 
 ## More compatible Edge boards
