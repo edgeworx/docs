@@ -63,7 +63,7 @@ web-based portal at [cloud.darcy.ai](https://cloud.darcy.ai).
 ### Cloud API
 
 _Cloud API_ is the REST API for _Darcy Cloud_. _Cloud Portal_ and _edgectl_ both communicate with
-Cloud API. You may also build your own applications that interact directly with Cloud API. See the
+Cloud API. You may also build your own applications that interact directly with cloud API. See the
 Cloud API [REST documentation](https://api.darcy.ai/v1/docs).
 
 ### edgectl

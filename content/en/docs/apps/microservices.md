@@ -21,17 +21,17 @@ smaller pieces. Key characteristics of microservices:
 * Organized around business capabilities
 * Owned by a small team
 
-This definition encapsulate the logic we encourage you to use when deploying Edge Applications on
+This definition encapsulate the logic we encourage you to use when deploying edge applications on
 your nodes. But we would add a couple of points to really nail the Darcy Cloud Application
 Microservice:
 
 * It is a [docker container](https://www.docker.com/resources/what-container) that runs on your node
 * Its life-cycle is managed by your Edgeworx Agent
-* Microservices are leveraged within your Edge Application
+* Microservices are leveraged within your edge Application
 
-## Writing Microservices
+## Writing microservices
 
-Your microservices can do anything a Docker container can do, from interacting with the physical
+Your microservices can do anything a Docker conaainer can do, from interacting with the physical
 hardware to hosting a web server. That means most off-the-shelf frameworks and libraries in your
 favorite language work too.
 
@@ -40,7 +40,7 @@ nodes running in a distributed fashion, ioFog provides an SDK library you can us
 of communicating between them. The SDK also provides the ability to receive dynamic configuration in
 your microservice so you don't have to bake them into your containers.
 
-## Packaging Microservices
+## Packaging microservices
 
 The high-level process of creating a new microservice is:
 
@@ -57,7 +57,7 @@ The high-level process of creating a new microservice is:
 official [Getting Started guide](https://docs.docker.com/get-started/) which walks you through the
 different pieces of putting together a Docker container image. {{</alert>}}
 
-## Connecting Microservices to Edge Application
+## Connecting microservices to edge application
 
 Once your microservice is deployed on your node, you're ready to connect it to your Application!
 

@@ -145,7 +145,7 @@ sudo usermod -aG docker YOURUSER
 
 ## Install Google Coral software libraries
 
-You need the PyCoral and Edge TPU runtime software libraries installed on your Jetson Nano. Follow
+You need the PyCoral and edge TPU runtime software libraries installed on your Jetson Nano. Follow
 the guide provided by Google and use the sections marked as "on Linux".
 
 [https://coral.ai/docs/accelerator/get-started/#requirements](https://coral.ai/docs/accelerator/get-started/#requirements)

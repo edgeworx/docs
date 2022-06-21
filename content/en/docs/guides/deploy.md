@@ -1,6 +1,6 @@
 ---
-title: "Deploy an app to the Edge in about 30 minutes"
-linkTitle: "Deploy to the Edge"
+title: "Deploy an app to the edge in about 30 minutes"
+linkTitle: "Deploy to the edge"
 weight: 250
 ---
 
@@ -24,7 +24,7 @@ We recommend using a Raspberry Pi 4 with an attached Google Coral accelerator fo
 
 ### Hardware Requirements
 
-* [An Edge device](docs/cloud/adding-nodes)
+* [An edge device](docs/cloud/adding-nodes)
 * [Video camera](docs/cloud/adding-nodes) attached to the camera port
 * [AI Processor](docs/cloud/adding-nodes): Google Coral edge TPU (USB version attached to USB 3.0 port)
 * [Power supply](docs/cloud/adding-nodes): 5.1V * 3.5A
