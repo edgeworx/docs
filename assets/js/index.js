@@ -107,7 +107,7 @@ Source:
         {{ with .Description -}}
           description: {{ . | jsonify }},
         {{ else -}}
-          description: {{ .Summary | plainify | jsonify }},
+          description: {{ .Summary | plainify | htmlUnescape | jsonify }},
         {{ end -}}
         content: {{ .Plain | jsonify }}
       })
@@ -158,6 +158,7 @@ Source:
         a.appendChild(title);
 
         const description = document.createElement('span');
+
         description.textContent = doc.description;
         description.classList.add("suggestion__description");
         a.appendChild(description);
