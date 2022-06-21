@@ -1,6 +1,6 @@
 ---
 title : "Darcy Docs"
-description: "Documentation for the Darcy Suite"
+description: "Documentation for the Darcy Platform"
 lead: "Docs for Darcy Cloud and Darcy AI"
 aliases:
   - /darcy/darcy-cloud/glossary
@@ -21,7 +21,7 @@ cards:
     link: '/docs/guides/deploy/'
     image: /images/guides/guide-thumb-deploy.jpg
   - title: Extend Darcy AI
-    subtitle: Incorporate other sensors like audio, thermal and more, run your own AI models and push the data anywhere.
+    subtitle: Incorporate other sensors, run your own AI models and push the data anywhere.
     action: Extend
     time: --
     link: '/docs/guides/extend/'
