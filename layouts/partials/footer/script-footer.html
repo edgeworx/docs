@@ -77,7 +77,7 @@
   {{ with .Params.mermaid -}}
     <script src="{{ $mermaid.RelPermalink }}" defer></script>
   {{ end -}}
-  {{/* SEARCH: update next line to include more serch types */}}
+  {{/* SEARCH: update next line to include more search types */}}
   {{ if and (.Site.Params.options.flexSearch) (or (eq .Section "docs") (eq .Section "")) -}}
     <script src="{{ $index.RelPermalink }}" defer></script>
   {{ end -}}
@@ -104,7 +104,7 @@
     <script src="{{ $mermaid.RelPermalink }}" integrity="{{ $mermaid.Data.Integrity }}" crossorigin="anonymous" defer></script>
   {{ end -}}
 
-  {{/* SEARCH: update next line to include more serch types */}}
+  {{/* SEARCH: update next line to include more search types */}}
   {{ if and (.Site.Params.options.flexSearch) (or (eq .Section "docs") (eq .Section "")) -}}
     <script src="{{ $index.Permalink }}" integrity="{{ $index.Data.Integrity }}" crossorigin="anonymous" defer></script>
   {{ end -}}
