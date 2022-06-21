@@ -6,8 +6,8 @@ aliases:
   - /darcy-docs/darcy-cloud/get-started-edgectl
 ---
 
-_edgectl_ is Darcy Cloud's command line interface (CLI). It can be used to manage Darcy Cloud
-accounts, organizations, projects, nodes, and applications.
+[_edgectl_](../../more/terminology.md#edgectl) is [Darcy Cloud's](../../more/terminology.md#darcy-cloud) command line interface (CLI). It can be used to manage Darcy Cloud
+accounts, organizations, projects, [nodes](../../more/terminology.md#node), and applications.
 
 In this section we will show you how to use _edgectl_ to get started with your first project and
 deploy some live microservices to the edge!
@@ -66,7 +66,7 @@ Now we are ready to use _edgectl_ to login and start managing our Darcy Cloud re
 
 ### Login
 
-_edgectl_ requires an [Access Token](/docs/cloud/access-tokens/). You can get one
+_edgectl_ requires an [Access Token](../../more/terminology.md#access-token). You can get one
 via: `edgectl login`, which will open a web browser on `cloud.darcy.ai`. After authentication, _
 edgectl_ will receive the account's master _Personal Access Token_, and will be logged in.
 

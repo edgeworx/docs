@@ -40,7 +40,7 @@ our CLI, [edgectl]({{<ref "/docs/cloud/start-edgectl">}}).
 
 ## Deploy an App using edgectl
 
-Once we have an edge node in our project, we can deploy applications to run on those nodes.
+Once we have an Edge [node](../../more/terminology.md#node) in our [project](../../more/terminology.md#project), we can deploy applications to run on those nodes.
 
 To deploy an app, use `edgectl deploy app`. We can run the following to learn how it works:
 

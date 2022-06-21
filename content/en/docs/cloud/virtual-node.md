@@ -3,7 +3,7 @@ title: "Add a Virtual Node"
 weight: 450
 ---
 
-With Virtual Node you can test pushing to an edge device even if you don't have one availabe. Adding a Virtual Node sets up a new Ubuntu VM locally and registers it as a node to a Darcy Cloud project via the edgectl CLI. Mac OSX and Windows users can create Virtual Nodes using Darcy Cloud Portal and edgectl. Linux users can directly use the register node command on their terminal.
+With Virtual Node you can test pushing to an edge device even if you don't have one availabe. Adding a Virtual Node sets up a new Ubuntu VM locally and registers it as a node to a [Darcy Cloud](../../../more/terminology.md#darcy-cloud) [project](../../../more/terminology.md#project) via the [edgectl](../../edgectl/) CLI. Mac OSX and Windows users can create Virtual Nodes using Darcy Cloud Portal and edgectl. Linux users can directly use the register node command on their terminal.
 
 ### Prerequisites
 

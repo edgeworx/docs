@@ -9,23 +9,23 @@ weight: 200
 
 The Darcy AI engine is the part that runs the AI computations and manages the system resources such as memory and CPU threads. It can be considered the core “backend code” of Darcy AI. As a developer, you do not need to interact with the engine directly. You only need to use the provided interfaces in the API as described in the documentation.
 
-### Pipeline
+### pipeline
 
 Every Darcy AI application is allowed one pipeline. A Darcy AI pipeline is the sequenced set of AI processes that does the real work in the application. The Darcy AI pipeline code object is one of the main objects that you will interact with as a developer. It contains many important methods and the AI processing starts when the “run()” method is called.
 
 ### Perceptor
 
-A Darcy AI perceptor is a code module that integrates raw AI processing with CPU code to make an easy-to-use semantic interface for the underlying AI output. Perceptors are built by developers who understand AI programming but are used by AI application developers who want to leverage the perceptor abilities. This frees AI application developers from needing to become AI experts and opens a perceptor library ecosystem.
+A Darcy AI Perceptor is a code module that integrates raw AI processing with CPU code to make an easy-to-use semantic interface for the underlying AI output. Perceptors are built by developers who understand AI programming but are used by AI application developers who want to leverage the Perceptor abilities. This frees AI application developers from needing to become AI experts and opens a Perceptor library ecosystem.
 
 ### Perception Object Model (POM)
 
 Similar to the Document Object Model (DOM) that is found in web browsers, the Perception Object Model (POM) is a data tree structure found in Darcy AI applications. The POM is the place where the outputs of each pipeline step are stored. The POM is available to Darcy AI application developers at each pipeline step, when a whole pipeline cycle has been completed, and at any point when the developer desires to interact with it. The POM also contains a history of all AI raw inputs and processing results.
 
-### Input Stream
+### input stream
 
 A Darcy AI input stream is the source data that is used for AI processing. Because Darcy’s “senses” can be expanded to include any source of data, an input stream code object is used to encapsulate the processing that is done to prepare incoming data for AI workloads. An example of an input stream code library is one that captures the frames of video from a camera and also merges the thermal camera data with each frame, even though the two cameras provide data at different rates. An input stream is attached to a pipeline by you, the Darcy AI application developer.
 
-### Output Stream
+### output stream
 
 A Darcy AI output stream is a code library that receives the data from the pipeline processing and produces a useful output, such as a video display or a CSV file. Many output streams can be attached to a single pipeline by you, the Darcy AI application developer.
 
@@ -51,7 +51,7 @@ Darcy tracks system performance when doing AI processing. Each trip through the 
 
 ### AI Model
 
-The actual AI neural network processing is done using AI models. An AI model is a stored image of a neural net that was built during an AI training or retraining process. Most developers use AI models that already exist and were created by someone else. Darcy AI perceptors contain AI models and make them easier to use. Most Darcy AI application developers do not need to use AI models directly because of the perceptor architecture.
+The actual AI neural network processing is done using AI models. An AI model is a stored image of a neural net that was built during an AI training or retraining process. Most developers use AI models that already exist and were created by someone else. Darcy AI Perceptors contain AI models and make them easier to use. Most Darcy AI application developers do not need to use AI models directly because of the Perceptor architecture.
 
 ## Darcy Cloud terminology
 

@@ -7,3 +7,4 @@ resources
 darcyai-sdk.iml
 .DS_Store
 /scratch/
+.prettierignore

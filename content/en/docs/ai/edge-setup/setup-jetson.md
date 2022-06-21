@@ -3,7 +3,7 @@ title: "Setting up your Jetson Nano for Darcy AI development"
 linkTitle: "Jetson Nano setup"
 weight: 220
 ---
-Nvidia Jetson Nano boards are excellent for building and running Darcy AI applications. This guide
+Nvidia Jetson Nano boards are excellent for building and running Darcy AI [applications](../../more/terminology.md#application). This guide
 will show you how to get your Nano ready for Darcy AI development so you can run and debug your
 applications.
 

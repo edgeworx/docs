@@ -5,9 +5,9 @@ aliases:
   - /darcy/darcy-cloud/applications-doc/registries
 ---
 
-When configuring an Darcy Cloud application YAML file, it is necessary to specify the registry of
+When configuring an [Darcy Cloud](../more/terminology.md#darcy-cloud) [application](../more/terminology.md#application) YAML file, it is necessary to specify the registry of
 each microservice container image. The field for this specification
-is `spec.microservices.image.registry`, and the registry tells the node the microservice is being
+is `spec.microservices.image.registry`, and the registry tells the [node](../more/terminology.md#node) the microservice is being
 deployed to how to access the image container.
 
 There are 3 options for a registry:
@@ -35,7 +35,7 @@ private Docker images or other containers that are being deployed to the Darcy C
 
 Before adding a microservice with private container images (or with images not on Dockerhub) to a
 node in [Darcy Cloud]({{<ref "/docs/cloud">}}) it is necessary to register a key with permissions
-to access the microservice container images to a projects Darcy Cloud registry so that the
+to access the microservice container images to a [project's](../more//terminology.md#project) Darcy Cloud registry so that the
 microservice will be able to pull the container images upon being deployed.
 
 Each registry is pre-configured with 2 entries. The first entry is for a `remote` registry (

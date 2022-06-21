@@ -5,6 +5,7 @@ aliases:
   - /darcy/darcy-cloud/get-started-ec/nodes/get-started-add-node
 ---
 
+<<<<<<< Updated upstream:content/en/docs/cloud/add-node.md
 To add a node to your project, you will be running a command line script. For this we assume you
 have ssh or console access to your node and are using a common shell, such as zsh or bash.
 Additionally, the installation script by default will need to run as sudo to register the necessary
@@ -62,15 +63,18 @@ You now have an edge node, let's start using it!
 ## Add a node using edgectl
 
 In Darcy Cloud, nodes are edge devices that run Edgeworx Agents. Ultimately, we want to deploy
+=======
+In [Darcy Cloud](../../more/terminology.md#darcy-cloud), [nodes](../../more/terminology.md#node) are edge devices that run Edgeworx Agents. Ultimately, we want to deploy
+>>>>>>> Stashed changes:content/en/docs/cloud/edgectl/add-an-edge-node.md
 applications to these nodes to put them to work.
 
-If we list nodes in our default organization and project, we will notice that we have no nodes:
+If we list nodes in our default [organization and project](../../more/terminology.md#project), we will notice that we have no nodes:
 
 ```shell
 edgectl get nodes
 ```
 
-In order to deploy nodes, we must get the node install script. You can use this command to get a
+In order to deploy nodes, we must get the [node install script](../../more/terminology.md#node-install-script). You can use this command to get a
 shell snippet that you can execute on the node:
 
 ```shell

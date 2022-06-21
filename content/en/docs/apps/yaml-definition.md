@@ -5,8 +5,8 @@ aliases:
   - /darcy/darcy-cloud/applications-doc/app-doc-yaml
 ---
 
-Darcy Cloud uses [Eclipse ioFog](https://iofog.org) under the covers to deploy and manage
-applications, and all Darcy applications are deployed to edge node(s) via a YAML configuration file.
+[Darcy Cloud](../more/terminology.md#darcy-cloud) uses [Eclipse ioFog](https://iofog.org) under the covers to deploy and manage
+applications, and all Darcy [applications](../more/terminology.md#application) are deployed to edge [node(s)](../more/terminology.md#node) via a YAML configuration file.
 
 We directly use the ioFog YAML specifications for defining different resource `Kinds`. For
 application deployments, the `Kind` in the YAML file will always be `Application`. In this section,

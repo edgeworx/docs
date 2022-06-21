@@ -27,8 +27,13 @@ The highlights of this release are Virtual Node, and support for running Darcy A
 
 #### Changes
 
+<<<<<<< Updated upstream
 * If you don't have an edge node (Raspberry Pi, Jetson Nano, etc.) available, you can now create
   a [Virtual Node](/docs/cloud/virtual-node/) for development purposes. A Virtual Node is effectively a local VM that appears
+=======
+* If you don't have an Edge [node](../more/terminology.md#node) (Raspberry Pi, Jetson Nano, etc.) available, you can now create
+  a [Virtual Node](/docs/cloud/portal/nodes/virtual-node/) for development purposes. A Virtual Node is effectively a local VM that appears
+>>>>>>> Stashed changes
   to Darcy Cloud as an edge node.
 * [Darcy AI Engine](/docs/ai/) works best when an AI accelerator (such as a Google Coral) is available, but now
   AI Engine can run directly on CPU. This is useful for local development.

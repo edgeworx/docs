@@ -6,9 +6,9 @@ aliases:
 ---
 ![Heart Rate Demo App](/images/15done.png)
 
-The Heart Rate app provided on the Darcy Cloud platform simulates a wearable device
+The Heart Rate app provided on the [Darcy Cloud](../../more/terminology.md#darcy-cloud) platform simulates a wearable device
 transmitting a person's heartbeat at the Edge. The Wearable sends heart rate data over bluetooth to
-a data collector microservice located on the primary Node. The Data collector microservice then
+a data collector microservice located on the primary [node](../../more/terminology.md#node). The Data collector microservice then
 communicates with another microservice running a web server on the secondary Node to display the
 heart rate data on a graph.
 
@@ -26,7 +26,11 @@ one or two nodes. {{</alert>}}
 ## Deploy using Darcy Cloud Portal
 
 Deploying the Heart Rate Application from the Darcy Cloud platform is extremely simple. Make sure
+<<<<<<< Updated upstream
 you have [added at least 1 node]({{<ref "/docs/cloud/add-node.md">}}) to your Darcy Cloud project, then
+=======
+you have [added at least 1 node](../../cloud/portal/nodes/add-node.md) to your Darcy Cloud project, then
+>>>>>>> Stashed changes
 follow the steps below:
 
 1. Go to your Darcy Cloud project page

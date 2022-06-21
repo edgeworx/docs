@@ -7,8 +7,12 @@ weight: 200
 ![face-detection-app](/images/guide-ai-app-hero.jpg)
 
 ## What you will accomplish
+<<<<<<< Updated upstream
 
 In this step-by-step guide you’ll learn how to build your first Darcy AI app. This app utilizes all of the core Darcy AI concepts, such as pipelines, input streams, perceptors and output streams to detect and count people and then change some basic configurations. The concepts in this guide are the base foundations for any Darcy AI application you might want to build in the future.
+=======
+In this step-by-step guide you’ll learn how to build your first Darcy AI [app](../more/terminology.md/#app) . This app utilizes all of the core Darcy AI concepts, such as [pipelines](../more/terminology.md/#pipelines) , [input streams](../more/terminology.md/#input-stream), [Perceptors](../more/terminology.md/#Perceptor)  and [output streams](../more/terminology/#output-stream) to detect and count people and then change some basic configurations. The concepts in this guide are the base foundations for any Darcy AI [application](../more/terminology/#application)you might want to build in the future.
+>>>>>>> Stashed changes
 
 {{< alert >}}
 Darcy AI can run in CPU mode (if you don't have a Coral accelerator attached), but requires a relatively modern system with a good CPU (ideally with multiple cores), and a decent amount of memory. If you run it on a low power platform, then you will get a very low frames per second video output.
@@ -131,30 +135,30 @@ import cv2
 import os
 import pathlib
 
-from darcyai.perceptor.people_perceptor import PeoplePerceptor
+from darcyai.Perceptor.people_Perceptor import PeoplePerceptor
 from darcyai.input.camera_stream import CameraStream
 from darcyai.output.live_feed_stream import LiveFeedStream
-from darcyai.pipeline import Pipeline
+from darcyai.pipeline import pipeline
 from darcyai.config import RGB
 ```
 
-### Add the Pipeline, Input Stream, and Output Stream objects
+### Add the pipeline, input stream, and output stream objects
 
 ```python
 # Instantiate an Camera Stream input stream object
 camera = CameraStream(video_device=0, fps=20)
 
-# Instantiate the Pipeline object and pass it the Camera Stream object as its input stream source
-pipeline = Pipeline(input_stream=camera)
+# Instantiate the pipeline object and pass it the Camera Stream object as its input stream source
+pipeline = pipeline(input_stream=camera)
 
 # Create a Live Feed output stream object and specify some URL parameters
 live_feed = LiveFeedStream(path="/", port=3456, host="0.0.0.0")
 ```
 
-### Set up a callback and add the Output Stream to the Pipeline
+### Set up a callback and add the output stream to the pipeline
 
-Before we add the LiveFeed Output Stream to the Pipeline, we need to set up a callback function that
-we are going to use to process the data before displaying the video. This is where all of the business logic is taking place. After the callback function definition, there is a line for adding the LiveFeed Output Stream to the Pipeline. That command needs to have the callback
+Before we add the LiveFeed output stream to the pipeline, we need to set up a [callback](../more/terminology.md/#callback) function that
+we are going to use to process the data before displaying the video. This is where all of the business logic is taking place. After the callback function definition, there is a line for adding the LiveFeed output stream to the pipeline. That command needs to have the callback
 function already defined before it can execute successfully.
 
 ```python
@@ -182,23 +186,23 @@ def live_feed_callback(pom, input_data):
     # Pass the finished frame out of this callback so the Live Feed output stream can display it
     return frame
 
-# Add the Live Feed output stream to the Pipeline and use the callback from above as the handler
+# Add the Live Feed output stream to the pipeline and use the callback from above as the handler
 pipeline.add_output_stream("output", live_feed_callback, live_feed)
 ```
 
-### Define event Output Stream, input the Output Stream and instantiate the People Perceptor
+### Define event output stream, input the output stream and instantiate the People Perceptor
 
-Just like the LiveFeed Output Stream, the People [Perceptor](/docs/more/terminology#perceptor)
+Just like the LiveFeed output stream, the people Perceptor
 must have the callback already defined before it can work with those callbacks. The input callback
-simply takes the [Input Stream](/docs/more/terminology#input-stream) data and sends it onward to
-the People [Perceptor](/docs/more/terminology#perceptor). The “New Person” event callback simply
+simply takes the input stream data and sends it onward to
+the People Perceptor. The “New Person” event callback simply
 prints the unique person identifier string to the console output when a new person has been detected
 by Darcy AI.
 
 ```python
 # Create a callback function for handling the input that is about to pass to the People Perceptor
 def people_input_callback(input_data, pom, config):
-    # Just take the frame from the incoming Input Stream and send it onward - no need to modify the frame
+    # Just take the frame from the incoming input stream and send it onward - no need to modify the frame
     frame = input_data.data.copy()
     return frame
 
@@ -214,26 +218,26 @@ people_ai = PeoplePerceptor()
 people_ai.on("new_person_entered_scene", new_person_callback)
 ```
 
-### Add the People Perceptor to the Pipeline
+### Add the People Perceptor to the pipeline
 
 ```python
-# Add the People Perceptor instance to the Pipeline and use the input callback from above as the input preparation handler
-pipeline.add_perceptor("peeps", people_ai, input_callback=people_input_callback)
+# Add the People Perceptor instance to the pipeline and use the input callback from above as the input preparation handler
+pipeline.add_Perceptor("peeps", people_ai, input_callback=people_input_callback)
 ```
 
 ### Change some configuration items in the People Perceptor
 
 ```python
 # Update the configuration of the People Perceptor to show the pose landmark dots on the annotated video frame
-pipeline.set_perceptor_config("peeps", "show_pose_landmark_dots", True)
-pipeline.set_perceptor_config("peeps", "pose_landmark_dot_size", 2)
-pipeline.set_perceptor_config("peeps", "pose_landmark_dot_color", RGB(0, 255, 0))
+pipeline.set_Perceptor_config("peeps", "show_pose_landmark_dots", True)
+pipeline.set_Perceptor_config("peeps", "pose_landmark_dot_size", 2)
+pipeline.set_Perceptor_config("peeps", "pose_landmark_dot_color", RGB(0, 255, 0))
 ```
 
-### Start the Pipeline
+### Start the pipeline
 
 ```python
-# Start the Pipeline
+# Start the pipeline
 pipeline.run()
 ```
 
@@ -246,17 +250,17 @@ import cv2
 import os
 import pathlib
 
-from darcyai.perceptor.people_perceptor import PeoplePerceptor
+from darcyai.Perceptor.people_Perceptor import PeoplePerceptor
 from darcyai.input.camera_stream import CameraStream
 from darcyai.output.live_feed_stream import LiveFeedStream
-from darcyai.pipeline import Pipeline
+from darcyai.pipeline import pipeline
 from darcyai.config import RGB
 
 # Instantiate an Camera Stream input stream object
 camera = CameraStream(video_device=0, fps=20)
 
-# Instantiate the Pipeline object and pass it the Camera Stream object as its input stream source
-pipeline = Pipeline(input_stream=camera)
+# Instantiate the pipeline object and pass it the Camera Stream object as its input stream source
+pipeline = pipeline(input_stream=camera)
 
 # Create a Live Feed output stream object and specify some URL parameters
 live_feed = LiveFeedStream(path="/", port=3456, host="0.0.0.0")
@@ -285,12 +289,12 @@ def live_feed_callback(pom, input_data):
     # Pass the finished frame out of this callback so the Live Feed output stream can display it
     return frame
 
-# Add the Live Feed output stream to the Pipeline and use the callback from above as the handler
+# Add the Live Feed output stream to the pipeline and use the callback from above as the handler
 pipeline.add_output_stream("output", live_feed_callback, live_feed)
 
 # Create a callback function for handling the input that is about to pass to the People Perceptor
 def people_input_callback(input_data, pom, config):
-    # Just take the frame from the incoming Input Stream and send it onward - no need to modify the frame
+    # Just take the frame from the incoming input stream and send it onward - no need to modify the frame
     frame = input_data.data.copy()
     return frame
 
@@ -305,15 +309,15 @@ people_ai = PeoplePerceptor()
 # Subscribe to the "New Person" event from the People Perceptor and use our callback from above as the handler
 people_ai.on("new_person_entered_scene", new_person_callback)
 
-# Add the People Perceptor instance to the Pipeline and use the input callback from above as the input preparation handler
-pipeline.add_perceptor("peeps", people_ai, input_callback=people_input_callback)
+# Add the People Perceptor instance to the pipeline and use the input callback from above as the input preparation handler
+pipeline.add_Perceptor("peeps", people_ai, input_callback=people_input_callback)
 
 # Update the configuration of the People Perceptor to show the pose landmark dots on the annotated video frame
-pipeline.set_perceptor_config("peeps", "show_pose_landmark_dots", True)
-pipeline.set_perceptor_config("peeps", "pose_landmark_dot_size", 2)
-pipeline.set_perceptor_config("peeps", "pose_landmark_dot_color", RGB(0, 255, 0))
+pipeline.set_Perceptor_config("peeps", "show_pose_landmark_dots", True)
+pipeline.set_Perceptor_config("peeps", "pose_landmark_dot_size", 2)
+pipeline.set_Perceptor_config("peeps", "pose_landmark_dot_color", RGB(0, 255, 0))
 
-# Start the Pipeline
+# Start the pipeline
 pipeline.run()
 ```
 

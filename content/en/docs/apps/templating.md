@@ -7,12 +7,12 @@ aliases:
 
 Variables, filter and template "queries" can be used as values for any field in your deployment
 YAMLs. These variables allow you to reference values in your YAML document or any resource
-preexisting in your Edge Project. This functionality adds flexibility and runtime binding in your
+preexisting in your Edge [project](../more/terminology.md#project). This functionality adds flexibility and runtime binding in your
 deployments files.
 
 ## Variables and Filters
 
-Variables are interpolated (replaced) when the requests are made between applications and nodes. The
+Variables are interpolated (replaced) when the requests are made between [applications](../more/terminology.md#application) and [nodes](../more/terminology.md#node). The
 variable value is a `snapshot` of the referenced value when the request is made. Any subsequent
 modification of the underlying value will NOT be persisted.
 

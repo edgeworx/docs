@@ -12,15 +12,15 @@ powerful face detection, pose detection, QR code scanning and more.
 
 #### Requirements
 
-* A Darcy Cloud account
-* Compatible ARM edge node with a Coral Accelerator
+* A [Darcy Cloud](https://cloud.darcy.ai) account
+* Compatible ARM edge [node](../../more/terminology.md#node) with a Coral Accelerator
   * Raspberry Pi + Coral AI accelerator
   * Coral Dev Board
   * Coral Mini
   * Tinker T
 
-{{<alert>}} If you have previously deployed an application to your node, you can either
-start a new project and add a node there or delete the existing application from the node. We just
+{{<alert>}} If you have previously deployed an [application](../../more/terminology.md#application) to your node, you can either
+start a new [project](../../more/terminology.md#project) and add a node there or delete the existing application from the node. We just
 need to be sure that we have a free node inside our project to deploy to {{</alert>}}
 
 ---

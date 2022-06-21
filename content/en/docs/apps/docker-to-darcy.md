@@ -8,7 +8,7 @@ aliases:
 There are several
 possible [docker run](https://docs.docker.com/engine/reference/commandline/run/) command line
 options that can be used when spinning up a Docker container. The following docker run commands can
-be directly mapped from a `docker run` command to a Darcy Cloud YAML configuration file:
+be directly mapped from a `docker run` command to a [Darcy Cloud](../more/terminology.md#darcy-cloud) YAML configuration file:
 
 1. Volumes
 2. Environment Variables
@@ -18,7 +18,7 @@ be directly mapped from a `docker run` command to a Darcy Cloud YAML configurati
 
 ## Volumes
 
-Volumes are primarily used to share data between containers or nodes, or to persist data upon the
+Volumes are primarily used to share data between containers or [nodes](../more/terminology.md#node), or to persist data upon the
 destruction of containers or nodes
 
 ### Docker Run Command

@@ -5,7 +5,7 @@ weight: 500
 linkTitle: "Darcy Cloud"
 ---
 
-Darcy Cloud is a platform built on the principle of Infrastructure as Code (IaC) that allows you to
+[Darcy Cloud](../more/terminology.md#darcy-cloud) is a platform built on the principle of Infrastructure as Code (IaC) that allows you to
 manage edge infrastructure and applications. Developers can deploy, orchestrate and operate
 containerized microservice applications from the cloud to remote heterogeneous on-premise servers
 and edge devices.
@@ -21,7 +21,7 @@ overlay [virtual application network](https://netprototalk.com/2019/11/12/virtua
 ### Core Goals
 
 1. **Simple to set up**: connect any compute platform, server or device with a 1-line command.
-2. **Secure by design**: provision nodes, deploy applications and route messages via encrypted
+2. **Secure by design**: provision [nodes](../more/terminology.md#node), deploy applications and route messages via encrypted
    communications without exposing any ports to the internet.
 3. **Support any topology**: create multi-cloud, hybrid cloud, multi-tier, edge-to-edge topologies
    without any VPNs or opening any firewall ports.
@@ -42,7 +42,7 @@ Terraform or kubernetes then you'll be immediately at home with Darcy Cloud.
   inspired `kind` [specifications]({{<ref "/docs/apps/yaml-definition">}})
 * **Edge Control Plane**: manage all aspects of your edge deployment from the Cloud (provisioning,
   deployment, orchestration, resources, monitoring, updates, etc.)
-* **Edge Projects**: logically group, secure and manage edge nodes and applications
+* **Edge [Projects](../more/terminology.md#project)**: logically group, secure and manage edge nodes and applications
 * **Simplified provisioning**: a single, sharable, per project 1-line install command that handles
   all the downloading, provisioning, validation and registering for each of your edge projects
 * **Virtual Application Networks**: create multi-cloud, hybrid cloud, multi-tier, edge-to-edge
@@ -51,11 +51,11 @@ Terraform or kubernetes then you'll be immediately at home with Darcy Cloud.
   modern Linux kernel that supports containerization
 * **REST API driven**: manage your account, organization, projects, nodes and applications via a
   REST client. Check out the OpenAPI [specification here](https://api.darcy.ai/v1/docs)
-* **CLI access**: Full API access via`edgectl` for the power of the command line in your terminal,
+* **CLI access**: Full API access via[`edgectl`](../more/terminology.md#edgectl) for the power of the command line in your terminal,
   or scripted into your other tools. Supports autocompletion in most shells, text or JSON output
 * **Keyless ssh access**: securely access your remote servers and devices without the headache of
   VPNs and SSH keys via the web UI or via `edgectl`
-* **Access Tokens**: create account wide or project based access tokens to allow fine-grained access
+* **Access Tokens**: create account wide or project based [access tokens](../more/terminology.md#access-token) to allow fine-grained access
   via edgectl or other tooling to your projects and applications
 * **Templating language**: use liquid.js syntax in your [Application]({{<ref "/docs/apps/">}})
   definitions to support powerful [application templating]({{<ref "/docs/apps/templating.md">}}) at deployment time
