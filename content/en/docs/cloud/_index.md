@@ -75,7 +75,7 @@ Terraform or kubernetes then you'll be immediately at home with Darcy Cloud.
 * **Tool integration**: create specific project access tokens (PATs) for your existing tools to
   enable secure automation and access from your CI/CD system, or your Ops Dashboard, for example
 * **Public and private image registries**: use public registries such as DockerHub or configure your
-  own private repos on a per project basis
+  own private repos on a per-project basis
 * **Messaging Routing**: define message data flow routes between your microservices in your YAML
   application spec
 * **Life deployment updates**: edit and update application deployment specs in the web UI to
