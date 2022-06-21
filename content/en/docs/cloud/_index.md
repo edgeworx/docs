@@ -80,3 +80,5 @@ Terraform or kubernetes then you'll be immediately at home with Darcy Cloud.
   application spec
 * **Life deployment updates**: edit and update application deployment specs in the web UI to
   reconfigure, scale or change your applications without having to redeploy
+
+  FIXME
