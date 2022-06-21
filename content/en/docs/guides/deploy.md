@@ -24,9 +24,7 @@ We recommend using a Raspberry Pi 4 with an attached Google Coral accelerator fo
 
 ### Hardware Requirements
 
-* An Edge device
-  * Raspberry Pi 4 with 2GB+ of RAM (recommended)
-  * [More Edge device options](/docs/cloud/choose-node/)
+* [An Edge device](docs/cloud/adding-nodes)
 * Video camera attached to the camera port
 * AI Processor: Google Coral edge TPU (USB version attached to USB 3.0 port)
 * Micro SD card with at least 16GB capacity (32GB+ recommended)
