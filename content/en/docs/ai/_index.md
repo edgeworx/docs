@@ -1,9 +1,12 @@
 ---
-title: "Darcy AI Overview"
+title: "Darcy AI"
 linkTitle: "Darcy AI"
 weight: 400
 ---
-Darcy AI offers a rich set of features that Darcy AI application developers can use to
+
+![Darcy AI Pipeline](/images/pipeline-example-visual@2x-100.jpg)
+
+Darcy AI offers a rich set of features that Darcy AI app developers can use to
 easily build complex AI processing chains. This makes developing rich real-time applications
 possible in a shorter timeframe and with a much more standardized approach.
 

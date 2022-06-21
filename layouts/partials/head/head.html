@@ -1,5 +1,10 @@
 <head>
   <meta charset="utf-8">
+  {{ with .Params.externalLink}}
+  {{/* If externalLink is present, we want to redirect immediately. Typically the user
+  should not be able to get to such a page, but it can happen, e.g. if the type the URL directly. */}}
+  <meta http-equiv="Refresh" content="0; url='{{- . -}}'" />
+  {{end}}
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   {{ block "head/resource-hints" . }}{{ partial "head/resource-hints.html" . }}{{ end }}

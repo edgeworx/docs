@@ -1,6 +1,6 @@
 ---
-title: "Docker TBD"
-linkTitle: "Docker TBD"
+title: "Docker base image"
+linkTitle: "Docker base image"
 weight: 410
 ---
 

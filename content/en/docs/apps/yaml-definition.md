@@ -1,5 +1,5 @@
 ---
-title : "App YAML Definition"
+title : "App YAML definition"
 weight: 450
 aliases:
   - /darcy/darcy-cloud/applications-doc/app-doc-yaml

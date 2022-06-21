@@ -1,5 +1,4 @@
-import ClipboardJS from 'clipboard';
-
+/*global ClipboardJS*/
 var pre = document.getElementsByTagName('pre');
 
 for (var i = 0; i < pre.length; ++ i)
