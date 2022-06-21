@@ -43,5 +43,3 @@ note: The Google Coral Dev board should also offer good AI performance but hasn'
   If you don't have any Edge hardware yet, you can create a [virtual node](/docs/cloud/virtual-node.md) using Darcy Cloud or create a VM in the Cloud or a [Vagrant](https://www.vagrantup.com) image running on your laptop and run
   the node installation script.
 {{</alert>}}
-
-## Coming soon: Darcy Cam
