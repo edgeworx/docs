@@ -87,28 +87,37 @@ Obviously, that `staging` branch needs to be merged to `master` for that content
 
 ## Content
 
-### Front matter
+## Markdown files
 
 Content is generated from markdown files stored under [`/content`](/content).
+
+Every content directory must have an `_index.md` file (which is basically the equivalent
+of an `index.html`). Other files should be in `lower-kebab-case.md` format.
+
+### Front matter
 
 Markdown files must have [front matter](https://gohugo.io/content-management/front-matter/), which
 is basically metadata. For example:
 
 ```markdown
 ---
-title : "About Darcy Cloud"
+title : "Add Virtual Node to Darcy Cloud"
+linkTitle: "Add Virtual Node"
+description: "Add a Virtual Node to Darcy Cloud via edgectl or Cloud Portal."
 weight: 100
-linkTitle: "About"
 ---
 
 CONTENT GOES HERE
 ```
 
-Every content directory must have an `_index.md` file (which is basically the equivalent
-of an `index.html`). Other files should be in `lower-kebab-case.md` format.
-Note that `title` is required. If `linkTitle` is also present, that value is used to generate
-link values in preference to `title`.
+Note that `title` is required in the front matter. If `linkTitle` is also present, that value is
+used to generate link values in preference to `title` (useful if `title` is long). Neither `title`
+nor 'linkTitle' should have a period (`.`) at the end.
 
+You should also add a `description`. This field is displayed in the search results. It should be a
+single sentence, ending with a period (`.`).
+
+Note that the values of `title`, `linkTitle` and `description` should be enclosed in double quotes.
 
 #### Slugs & Aliases
 Hugo will generate the page slug (URL path) based on the filename and the slug of

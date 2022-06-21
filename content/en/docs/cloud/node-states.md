@@ -1,7 +1,7 @@
 ---
 title: "Node states"
 linkTitle: "Node states"
-summary: "Explanation of node states."
+description: "Explanation of node states."
 weight: 550
 aliases:
   - /darcy/darcy-cloud/what-is-darcy-cloud
