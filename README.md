@@ -106,7 +106,6 @@ linkTitle: "Add Virtual Node"
 description: "Add a Virtual Node to Darcy Cloud via edgectl or Cloud Portal."
 weight: 100
 ---
-
 CONTENT GOES HERE
 ```
 
