@@ -94,6 +94,7 @@ Source:
 
   // https://discourse.gohugo.io/t/range-length-or-last-element/3803/2
 
+  {{/* SEARCH: update the following line to include new section types */}}
   {{ $list := (where .Site.Pages "Section" "docs") -}}
   {{ $len := (len $list) -}}
 
