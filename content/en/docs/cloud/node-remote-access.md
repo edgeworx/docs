@@ -3,13 +3,8 @@ title: "Remotely access your node"
 weight: 700
 ---
 
-<<<<<<< Updated upstream:content/en/docs/cloud/node-remote-access.md
-Once your node is installed and connected to Darcy Cloud, you'll be able to remotely access it using
-the Darcy Cloud portal and/or [edgectl]({{<ref "/docs/cloud/start-edgectl">}}).
-=======
 Once your [node](../../../more/terminology.md#node) is installed and connected to [Darcy Cloud](../../../more/terminology.md#darcy-cloud), you'll be able to remotely access it using
 the Darcy Cloud portal and/or [edgectl](../../edgectl/).
->>>>>>> Stashed changes:content/en/docs/cloud/portal/nodes/node-remote-access.md
 
 ## Prerequisites
 

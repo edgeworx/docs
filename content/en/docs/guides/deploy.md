@@ -17,7 +17,6 @@ solution needs.
 We recommend using a Raspberry Pi 4 with an attached Google Coral accelerator for the best performance.
 {{< /alert>}}
 
-<<<<<<< Updated upstream
 ### Software Requirements
 
 * Docker Desktop and a Docker account
@@ -33,21 +32,6 @@ We recommend using a Raspberry Pi 4 with an attached Google Coral accelerator fo
 * Micro SD card with at least 16GB capacity (32GB+ recommended)
 * Power supply
 * Internet connectivity
-=======
-#### Software Requirements
-- Docker Desktop and a Docker account
-- Darcy Cloud [account](../more/terminology.md/#account--org) (Free)
-
-#### Hardware Requirements
-- An Edge device
-    - Raspberry Pi 4 with 2GB+ of RAM (recommended)
-    - [More Edge device options](/docs/cloud/portal/nodes/)
-- Video camera attached to the camera port
-- AI Processor: Google Coral edge TPU (USB version attached to USB 3.0 port)
-- Micro SD card with at least 16GB capacity (32GB+ recommended)
-- Power supply
-- Internet connectivity
->>>>>>> Stashed changes
 
 ---
 

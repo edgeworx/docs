@@ -3,14 +3,7 @@ title: "Darcy AI"
 linkTitle: "Darcy AI"
 weight: 400
 ---
-<<<<<<< Updated upstream
-
-![Darcy AI Pipeline](/images/pipeline-example-visual@2x-100.jpg)
-
-Darcy AI offers a rich set of features that Darcy AI app developers can use to
-=======
 Darcy AI offers a rich set of features that Darcy AI [application](docs/more/terminology.md/#app)  developers can use to
->>>>>>> Stashed changes
 easily build complex AI processing chains. This makes developing rich real-time applications
 possible in a shorter timeframe and with a much more standardized approach.
 

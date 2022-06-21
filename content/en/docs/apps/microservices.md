@@ -51,11 +51,7 @@ The high-level process of creating a new microservice is:
   with [`docker build`](https://docs.docker.com/engine/reference/commandline/build/)
 * Deploy your image to a Docker registry (e.g. Docker Hub)
 * (Optional) Add the registered image to your Controller's catalog
-<<<<<<< Updated upstream
-* Deploy the microservice using [edgectl]({{<ref "/docs/cloud/start-edgectl">}})
-=======
 * Deploy the microservice using [edgectl](../../docs/cloud/edgectl/))
->>>>>>> Stashed changes
 
 {{<alert>}} If you're new to containers and Docker, you'll want to check out their
 official [Getting Started guide](https://docs.docker.com/get-started/) which walks you through the

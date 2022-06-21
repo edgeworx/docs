@@ -7,12 +7,7 @@ weight: 200
 ![face-detection-app](/images/guide-ai-app-hero.jpg)
 
 ## What you will accomplish
-<<<<<<< Updated upstream
-
-In this step-by-step guide you’ll learn how to build your first Darcy AI app. This app utilizes all of the core Darcy AI concepts, such as pipelines, input streams, perceptors and output streams to detect and count people and then change some basic configurations. The concepts in this guide are the base foundations for any Darcy AI application you might want to build in the future.
-=======
 In this step-by-step guide you’ll learn how to build your first Darcy AI [app](../more/terminology.md/#app) . This app utilizes all of the core Darcy AI concepts, such as [pipelines](../more/terminology.md/#pipelines) , [input streams](../more/terminology.md/#input-stream), [Perceptors](../more/terminology.md/#Perceptor)  and [output streams](../more/terminology/#output-stream) to detect and count people and then change some basic configurations. The concepts in this guide are the base foundations for any Darcy AI [application](../more/terminology/#application)you might want to build in the future.
->>>>>>> Stashed changes
 
 {{< alert >}}
 Darcy AI can run in CPU mode (if you don't have a Coral accelerator attached), but requires a relatively modern system with a good CPU (ideally with multiple cores), and a decent amount of memory. If you run it on a low power platform, then you will get a very low frames per second video output.
