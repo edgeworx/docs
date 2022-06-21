@@ -9,3 +9,4 @@ darcyai-sdk.iml
 /scratch/
 .prettierignore
 assets/js/clipboard.js
+.prettierrc.json
