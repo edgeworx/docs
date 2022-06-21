@@ -32,14 +32,14 @@ You may need to check your spam folders. The email sender will be `no-reply@auth
 
 ![Email Verified](</images/image (24).png>)
 
-## View Your Darcy Cloud Edge Project
+## View Your Darcy Cloud edge project
 
 Once your account has been created, Darcy Cloud automatically creates your first project. This may
 take a few minutes. The screen will refresh automatically when complete.
 
 ![Your Project is Being Created](</images/image (15).png>)
 
-Once your Edge project is created, you will see your project overview page and be able
+Once your edge project is created, you will see your project overview page and be able
 to [add your first node!](/docs/cloud/choose-node).
 
 ![Project Overview](/images/1done.png).

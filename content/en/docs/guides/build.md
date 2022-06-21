@@ -1,6 +1,6 @@
 ---
-title: "Build an Edge AI app in about 30 minutes"
-linkTitle: "Build an Edge AI app"
+title: "Build an edge AI app in about 30 minutes"
+linkTitle: "Build an edge AI app"
 weight: 200
 ---
 
@@ -326,7 +326,7 @@ directly and you have all the required Python libraries installed, your Darcy AI
 run successfully and stay running until you stop the program execution.
 
 {{< alert icon="" >}}
-Best performance is achieved with a modern, multi-core CPU and plenty of memory. In the next guide, you'll deploy to an Edge device (like a Raspberry Pi + AI accelerator) which should provide great performance.
+Best performance is achieved with a modern, multi-core CPU and plenty of memory. In the next guide, you'll deploy to an edge device (like a Raspberry Pi + AI accelerator) which should provide great performance.
 {{< /alert >}}
 
 ### View your real-time Darcy AI application video output

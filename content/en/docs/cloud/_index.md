@@ -37,7 +37,7 @@ Terraform or kubernetes then you'll be immediately at home with Darcy Cloud.
 
 ### Features
 
-* **Edge Native Abstractions**: Edge Native implementations for agents, agent runtime, volumes,
+* **Edge Native Abstractions**: edge native implementations for agents, agent runtime, volumes,
   message routes and applications `Kinds`. All driven by Kubernetes
   inspired `kind` [specifications]({{<ref "/docs/apps/yaml-definition">}})
 * **Edge Control Plane**: manage all aspects of your edge deployment from the Cloud (provisioning,

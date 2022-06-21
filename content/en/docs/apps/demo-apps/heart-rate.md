@@ -7,7 +7,7 @@ aliases:
 ![Heart Rate Demo App](/images/15done.png)
 
 The Heart Rate app provided on the Darcy Cloud platform simulates a wearable device
-transmitting a person's heartbeat at the Edge. The Wearable sends heart rate data over bluetooth to
+transmitting a person's heartbeat at the edge. The Wearable sends heart rate data over bluetooth to
 a data collector microservice located on the primary Node. The Data collector microservice then
 communicates with another microservice running a web server on the secondary Node to display the
 heart rate data on a graph.

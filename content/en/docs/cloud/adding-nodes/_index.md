@@ -25,8 +25,8 @@ apps to these nodes to put them to work.
 note: The Google Coral Dev board should also offer good AI performance but hasn't been tested with Darcy AI yet.
 
 
-## More compatible Edge boards
-#### Darcy Cloud is compatible with many Linux Edge boards 
+## More compatible edge boards
+#### Darcy Cloud is compatible with many Linux edge boards 
 
 * Raspberry Pi 3 or 4
 * Asus Tinker
@@ -40,6 +40,6 @@ note: The Google Coral Dev board should also offer good AI performance but hasn'
 * Debian 10+
 
 {{<alert style="info">}}
-  If you don't have any Edge hardware yet, you can create a [virtual node](/docs/cloud/virtual-node.md) using Darcy Cloud or create a VM in the Cloud or a [Vagrant](https://www.vagrantup.com) image running on your laptop and run
+  If you don't have any edge hardware yet, you can create a [virtual node](/docs/cloud/virtual-node.md) using Darcy Cloud or create a VM in the Cloud or a [Vagrant](https://www.vagrantup.com) image running on your laptop and run
   the node installation script.
 {{</alert>}}

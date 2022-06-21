@@ -8,13 +8,13 @@ aliases:
   - /darcy
 cards:
 
-  - title: Build an Edge AI app
+  - title: Build an edge AI app
     subtitle: A step-by-step guide to building and customizing a simple AI app to detect people in the real world.
     action: BUILD
     time: 30 min
     link: '/docs/guides/build/'
     image: /images/guides/guide-thumb-build.jpg
-  - title: Deploy apps to the Edge
+  - title: Deploy apps to the edge
     subtitle: Package and deploy your app in the real world on different edge devices without changing the code.
     action: Deploy
     time: 30 min
