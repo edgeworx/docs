@@ -24,13 +24,11 @@ We recommend using a Raspberry Pi 4 with an attached Google Coral accelerator fo
 
 ### Hardware Requirements
 
-* An Edge device
-  * Raspberry Pi 4 with 2GB+ of RAM (recommended)
-  * [More Edge device options](/docs/cloud/choose-node/)
-* Video camera attached to the camera port
-* AI Processor: Google Coral edge TPU (USB version attached to USB 3.0 port)
+* [An Edge device](docs/cloud/adding-nodes)
+* [Video camera](docs/cloud/adding-nodes) attached to the camera port
+* [AI Processor](docs/cloud/adding-nodes): Google Coral edge TPU (USB version attached to USB 3.0 port)
+* [Power supply](docs/cloud/adding-nodes): 5.1V * 3.5A
 * Micro SD card with at least 16GB capacity (32GB+ recommended)
-* Power supply
 * Internet connectivity
 
 ---
@@ -184,7 +182,7 @@ process.
 
 ### Add your devices to the Darcy Cloud
 
-The Darcy Cloud gives you management of all your edge devices and edge applications in one place.
+The Darcy Cloud gives you management of all your [edge devices]({{<ref "/docs/cloud/adding-nodes">}}) and edge applications in one place.
 You can open an SSH shell session on demand, deploy applications, and see the health and status for
 every device. All of this functionality works no matter where your edge devices are physically
 located, even when they are behind NAT layers and firewalls. Use the Darcy Cloud to make building,
@@ -194,7 +192,7 @@ systems.
 If you don't already have an account, you can create one now for free. Create an account or log in
 at [https://cloud.darcy.ai](https://cloud.darcy.ai).
 
-Once you are in your Darcy Cloud account, add your device as a node in your current project. Use
+Once you are in your Darcy Cloud account, [add your device as a node]({{<ref "/docs/cloud/adding-nodes/add-node.md">}}) in your current project. Use
 the "plus button" in the bottom left to add a node. Follow the instructions in the pop-up window to
 add your device as a node.
 
