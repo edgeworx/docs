@@ -37,7 +37,7 @@ We recommend using a Raspberry Pi 4 with an attached Google Coral accelerator fo
 
 ### Install Docker and create an account
 
-* Install Docker [Mac](https://docs.docker.com/desktop/mac/install/) or [Windows](https://docs.docker.com/desktop/windows/install/)
+* Install Docker [Mac](https://docs.docker.com/desktop/mac/install/) or [Windows (coming soon)](https://docs.docker.com/desktop/windows/install/)
 * [Create a Docker Hub Account](https://hub.docker.com/signup)
 
 {{< alert icon="" style="info"  >}}

@@ -58,7 +58,7 @@ brew install python
 {{< alert icon="" >}}
 If you have older Python versions on your computer, you may need to use `python3` and `pip3` commands.
 You can also change this behavior for [MacOS](https://osxdaily.com/2022/02/15/make-python-3-default-macos/)
-or [windows](https://stackoverflow.com/questions/5087831/how-should-i-set-default-python-version-in-windows)
+or [windows (coming soon)](https://stackoverflow.com/questions/5087831/how-should-i-set-default-python-version-in-windows)
 {{< /alert >}}
 {{< rawhtml >}}
 </div>
