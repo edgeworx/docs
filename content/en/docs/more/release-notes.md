@@ -7,15 +7,7 @@ aliases:
   - /release-notes
 ---
 
-{{<alert style="warning">}}
-This is WIP
-{{</alert>}}
-
 ### Darcy Cloud: Release 2022.06.17 (BETA)
-
-{{<alert style="danger">}}
-  FIXME: Note that it say "Darcy Cloud" in the heading... should we have one big section "Darcy Platform"?
-{{</alert>}}
 
 The highlights of this release are Virtual Node, and support for running Darcy AI Engine on CPU.
 
