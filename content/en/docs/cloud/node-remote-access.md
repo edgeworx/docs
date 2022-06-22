@@ -3,7 +3,7 @@ title: "Remotely access your node"
 weight: 700
 ---
 
-Once your node is installed and connected to Darcy Cloud, you'll be able to remotely access it using
+Once your [node](../cloud/adding-nodes/_index.md) is installed and connected to [Darcy Cloud](../cloud/start-portal.md), you'll be able to remotely access it using
 the Darcy Cloud portal and/or [edgectl]({{<ref "/docs/cloud/start-edgectl">}}).
 
 ## Prerequisites
@@ -22,7 +22,7 @@ loading time, you'll have access to a terminal on your node.
 
 ![SSH Terminal Page](</images/Screen Shot 2022-04-08 at 1.36.50 PM.png>)
 
-{{<alert>}}You can also access the SSH shortcut from the project overview page by
+{{<alert>}}You can also access the SSH shortcut from the [project](../more/terminology.md#project) overview page by
 clicking the 3 dots to the right of your node and selecting `SSH` from the drop down menu.
 {{</alert>}}
 

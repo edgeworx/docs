@@ -1,5 +1,5 @@
 ---
-title : "AI Explorer demo app"
+title: "AI Explorer demo app"
 weight: 70
 aliases:
   - /darcy/darcy-cloud/get-started-ec/darcy-ai-explorer-application
@@ -7,19 +7,19 @@ aliases:
 
 ![Heart Rate Demo App](/images/ai-exp-hero.jpg)
 
-The Darcy AI Explorer is a showcase app for Darcy AI. Bootstrap your AI project using
+The Darcy AI Explorer is a showcase app for Darcy AI. Bootstrap your AI [project](../../more/terminology.md#project) using
 powerful face detection, pose detection, QR code scanning and more.
 
 #### Requirements
 
-* A Darcy Cloud account
-* Compatible ARM edge node with a Coral Accelerator
-  * Raspberry Pi + Coral AI accelerator
-  * Coral Dev Board
-  * Coral Mini
-  * Tinker T
+- A [Darcy Cloud](../../cloud/start-portal.md) account
+- Compatible ARM edge [node](../../cloud/adding-nodes/_index.md) with a Coral Accelerator
+  - Raspberry Pi + Coral AI accelerator
+  - Coral Dev Board
+  - Coral Mini
+  - Tinker T
 
-{{<alert>}} If you have previously deployed an application to your node, you can either
+{{<alert>}} If you have previously deployed an [application](../../more/terminology.md#application) to your node, you can either
 start a new project and add a node there or delete the existing application from the node. We just
 need to be sure that we have a free node inside our project to deploy to {{</alert>}}
 
@@ -62,18 +62,18 @@ spec:
   microservices:
     - name: darcy-ai-explorer
       agent:
-        name: ''
+        name: ""
       images:
-        arm: 'darcyai/darcy-ai-explorer:1.0.0'
-        x86: 'darcyai/darcy-ai-explorer:1.0.0'
+        arm: "darcyai/darcy-ai-explorer:1.0.0"
+        x86: "darcyai/darcy-ai-explorer:1.0.0"
       container:
         rootHostAccess: true
         env:
           - key: PORT
-            value: '5555'
+            value: "5555"
         ports:
-          - external: '{{self.microservices[0].env[0].value | toNumber}}'
-            internal: '{{self.microservices[0].env[0].value | toNumber}}'
+          - external: "{{self.microservices[0].env[0].value | toNumber}}"
+            internal: "{{self.microservices[0].env[0].value | toNumber}}"
         volumes:
           - containerDestination: /dev
             hostDestination: /dev

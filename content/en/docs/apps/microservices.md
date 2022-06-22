@@ -1,5 +1,5 @@
 ---
-title : "Microservices"
+title: "Microservices"
 weight: 400
 aliases:
   - /darcy/darcy-cloud/applications-doc/microservice
@@ -10,24 +10,24 @@ aliases:
 Microservices are a specialization of a service-oriented architecture (SOA), flexible, independently
 deployable software.
 
-Microservices are an architectural style that structures an application as a collection of loosely
+Microservices are an architectural style that structures an [application](../more/terminology.md#application) as a collection of loosely
 coupled services, which implement business capabilities. The microservice architecture enables the
 continuous delivery and deployment of large, complex applications by naturally dividing it into
 smaller pieces. Key characteristics of microservices:
 
-* Highly maintainable and testable
-* Loosely coupled
-* Independently deployable
-* Organized around business capabilities
-* Owned by a small team
+- Highly maintainable and testable
+- Loosely coupled
+- Independently deployable
+- Organized around business capabilities
+- Owned by a small team
 
 This definition encapsulate the logic we encourage you to use when deploying edge applications on
-your nodes. But we would add a couple of points to really nail the Darcy Cloud Application
+your [nodes](../cloud/adding-nodes/_index.md). But we would add a couple of points to really nail the [Darcy Cloud](../cloud/start-portal.md) Application
 Microservice:
 
-* It is a [docker container](https://www.docker.com/resources/what-container) that runs on your node
-* Its life-cycle is managed by your Edgeworx Agent
-* Microservices are leveraged within your edge Application
+- It is a [docker container](https://www.docker.com/resources/what-container) that runs on your node
+- Its life-cycle is managed by your Edgeworx Agent
+- Microservices are leveraged within your edge Application
 
 ## Writing microservices
 
@@ -44,14 +44,14 @@ your microservice so you don't have to bake them into your containers.
 
 The high-level process of creating a new microservice is:
 
-* Create a project directory
-* Create a `Dockerfile` with your desired configuration
-* Write the microservice app code itself
-* Build the image
+- Create a project directory
+- Create a `Dockerfile` with your desired configuration
+- Write the microservice app code itself
+- Build the image
   with [`docker build`](https://docs.docker.com/engine/reference/commandline/build/)
-* Deploy your image to a Docker registry (e.g. Docker Hub)
-* (Optional) Add the registered image to your Controller's catalog
-* Deploy the microservice using [edgectl]({{<ref "/docs/cloud/start-edgectl">}})
+- Deploy your image to a Docker registry (e.g. Docker Hub)
+- (Optional) Add the registered image to your Controller's catalog
+- Deploy the microservice using [edgectl]({{<ref "/docs/cloud/start-edgectl">}})
 
 {{<alert>}} If you're new to containers and Docker, you'll want to check out their
 official [Getting Started guide](https://docs.docker.com/get-started/) which walks you through the
@@ -61,4 +61,4 @@ different pieces of putting together a Docker container image. {{</alert>}}
 
 Once your microservice is deployed on your node, you're ready to connect it to your Application!
 
-[//]: # (Check out the [Public Services]&#40;{{<ref "public-services.md">}}&#41; section for configuration steps.)
+[//]: # 'Check out the [Public Services]({{<ref "public-services.md">}}) section for configuration steps.'

@@ -8,7 +8,7 @@ weight: 200
 
 ## What you will accomplish
 
-In this step-by-step guide you’ll learn how to build your first Darcy AI app. This app utilizes all of the core Darcy AI concepts, such as pipelines, input streams, perceptors and output streams to detect and count people and then change some basic configurations. The concepts in this guide are the base foundations for any Darcy AI application you might want to build in the future.
+In this step-by-step guide you’ll learn how to build your first Darcy AI app. This [app](../more/terminology.md#application) utilizes all of the core Darcy AI concepts, such as [pipelines](../more/terminology.md#pipeline), [input streams](../more/terminology.md#input-stream), [perceptors](../more/terminology.md#perceptor) and [output streams](../more/terminology.md#output-stream) to detect and count people and then change some basic configurations. The concepts in this guide are the base foundations for any Darcy AI application you might want to build in the future.
 
 {{< alert >}}
 Darcy AI can run in CPU mode (if you don't have a Coral accelerator attached), but requires a relatively modern system with a good CPU (ideally with multiple cores), and a decent amount of memory. If you run it on a low power platform, then you will get a very low frames per second video output.
@@ -31,6 +31,7 @@ Darcy AI can run in CPU mode (if you don't have a Coral accelerator attached), b
 ### Install dependencies
 
 {{< rawhtml >}}
+
 <ul class="nav nav-pills darcy-tabs" id="osTabs" role="tablist">
   <li class="nav-item" role="presentation">
     <button class="nav-link active" id="macosx-tab" data-bs-toggle="tab" data-bs-target="#macosx" type="button" role="tab" aria-controls="macosx" aria-selected="true">MacOS</button>
@@ -53,6 +54,7 @@ brew install python
 ```
 
 {{< rawhtml >}}
+
 <div class="alert-container">
 {{< /rawhtml >}}
 {{< alert icon="" >}}
@@ -89,6 +91,7 @@ pip install tensorflow
 **Apple M1 Platforms**:
 
 {{< rawhtml >}}
+
 <div class="alert-container">
 {{< /rawhtml >}}
 {{< alert style="warning" >}}
@@ -100,21 +103,25 @@ If you are on Apple M1 silicon, these instructions will not work for you. But, y
 {{< /rawhtml >}}
 
 {{< rawhtml >}}
-    </div>
-    <div class="tab-pane" id="linux" role="tabpanel" aria-labelledby="linux-tab">
+
+</div>
+<div class="tab-pane" id="linux" role="tabpanel" aria-labelledby="linux-tab">
 {{</ rawhtml>}}
 
 Linux coming soon...
 
 {{< rawhtml >}}
-    </div>
-    <div class="tab-pane" id="windows" role="tabpanel" aria-labelledby="windows-tab">
+
+</div>
+<div class="tab-pane" id="windows" role="tabpanel" aria-labelledby="windows-tab">
 {{</ rawhtml>}}
 
 Windows coming soon...
 
 {{< rawhtml >}}
-    </div>
+
+</div>
+
 </div>
 {{< /rawhtml >}}
 
@@ -153,7 +160,7 @@ live_feed = LiveFeedStream(path="/", port=3456, host="0.0.0.0")
 
 ### Set up a callback and add the Output Stream to the Pipeline
 
-Before we add the LiveFeed Output Stream to the Pipeline, we need to set up a callback function that
+Before we add the LiveFeed Output Stream to the Pipeline, we need to set up a [callback](../more/terminology.md#callback) function that
 we are going to use to process the data before displaying the video. This is where all of the business logic is taking place. After the callback function definition, there is a line for adding the LiveFeed Output Stream to the Pipeline. That command needs to have the callback
 function already defined before it can execute successfully.
 
@@ -190,7 +197,7 @@ pipeline.add_output_stream("output", live_feed_callback, live_feed)
 
 Just like the LiveFeed Output Stream, the People [Perceptor](/docs/more/terminology#perceptor)
 must have the callback already defined before it can work with those callbacks. The input callback
-simply takes the [Input Stream](/docs/more/terminology#input-stream) data and sends it onward to
+simply takes the [input stream](/docs/more/terminology#input-stream) data and sends it onward to
 the People [Perceptor](/docs/more/terminology#perceptor). The “New Person” event callback simply
 prints the unique person identifier string to the console output when a new person has been detected
 by Darcy AI.
@@ -198,7 +205,7 @@ by Darcy AI.
 ```python
 # Create a callback function for handling the input that is about to pass to the People Perceptor
 def people_input_callback(input_data, pom, config):
-    # Just take the frame from the incoming Input Stream and send it onward - no need to modify the frame
+    # Just take the frame from the incoming input stream and send it onward - no need to modify the frame
     frame = input_data.data.copy()
     return frame
 
@@ -290,7 +297,7 @@ pipeline.add_output_stream("output", live_feed_callback, live_feed)
 
 # Create a callback function for handling the input that is about to pass to the People Perceptor
 def people_input_callback(input_data, pom, config):
-    # Just take the frame from the incoming Input Stream and send it onward - no need to modify the frame
+    # Just take the frame from the incoming input stream and send it onward - no need to modify the frame
     frame = input_data.data.copy()
     return frame
 

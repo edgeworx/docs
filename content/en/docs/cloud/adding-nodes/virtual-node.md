@@ -3,13 +3,13 @@ title: "Add a Virtual Node"
 weight: 450
 ---
 
-With Virtual Node you can test pushing to an edge device even if you don't have one availabe. Adding a Virtual Node sets up a new Ubuntu VM locally and registers it as a node to a Darcy Cloud project via the edgectl CLI. Mac OSX and Windows users can create Virtual Nodes using Darcy Cloud Portal and edgectl. Linux users can directly use the register node command on their terminal.
+With Virtual Node you can test pushing to an edge device even if you don't have one available. Adding a Virtual Node sets up a new Ubuntu VM locally and registers it as a [node](../adding-nodes/_index.md) to a [Darcy Cloud](../start-portal.md) [project](../../more/terminology.md#project) via the [edgectl](../start-edgectl.md) CLI. Mac OSX and Windows users can create Virtual Nodes using Darcy Cloud Portal and edgectl. Linux users can directly use the register node command on their terminal.
 
 ### Prerequisites
 
-* [Darcy Cloud Account (Free)](https://cloud.darcy.ai)
-* [egectl CLI]({{<ref "/docs/cloud/start-edgectl.md">}})
-* [Multipass](https://multipass.run)
+- [Darcy Cloud Account (Free)](https://cloud.darcy.ai)
+- [egectl CLI]({{<ref "/docs/cloud/start-edgectl.md">}})
+- [Multipass](https://multipass.run)
 
 {{< alert style="warning" >}}
 Virtual Node is not currently compatible with attached video devices. You can still build locally using attached video and deploy to edge devices with attached video.

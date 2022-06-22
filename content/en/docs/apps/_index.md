@@ -1,11 +1,11 @@
 ---
-title : "Building Darcy apps"
+title: "Building Darcy apps"
 weight: 600
 linkTitle: "Building Darcy apps"
 ---
 
-Apps are groups of microservices bundled to work together. They are defined using YAML files and can
-be deployed and updated by uploading those YAML files through Darcy Cloud or through
+[Apps](../more/terminology.md#application) are groups of [microservices](./microservices.md) bundled to work together. They are defined using YAML files and can
+be deployed and updated by uploading those YAML files through [Darcy Cloud](../cloud/start-portal.md) or through
 [edgectl]({{<ref "/docs/cloud/adding-nodes/add-node.md">}}). An app can consist of an arbitrary
 number of interacting or standalone microservices that are deployed on one or may nodes.
 
@@ -33,7 +33,7 @@ connecting to your microservice can be found in the [microservices]({{<ref "micr
 
 Darcy connects to REST API Endpoints and TCP Ports. You can specify the port within the Application
 
-[//]: # (YAML. For more information, please refer to the [Public Services]&#40;{{<ref "public-services.md">}}&#41; section.)
+[//]: # 'YAML. For more information, please refer to the [Public Services]({{<ref "public-services.md">}}) section.'
 
 #### Routing
 
