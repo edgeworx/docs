@@ -27,12 +27,13 @@ $pink-500: #d32e9d;
 // Darcy colors
 
 $edgeneutral-0: #fff;
+$edgeneutral-05: #f1f3f8;
 $edgeneutral-1: #e3e8f1;
 $edgeneutral-2: #a9b2bc;
 $edgeneutral-3: #0a415e;
 $edgeneutral-4: #012d44;
 $edgeneutral-5: #002131;
-$darcy-blue: #006390;
+$darcy-blue: #0195d9;
 $darcy-blue-dark: #5ac8fa;
 $darcy-red: #fd575d;
 $darcy-green: #1bc0a9;
@@ -132,10 +133,10 @@ $font-size-lg:                $font-size-base * 1.25;
 $font-size-md:                $font-size-base * 1.125;
 $font-size-sm:                $font-size-base * 0.875;
 
-// $line-height-base:            1.5;
+$line-height-base:            1.7;
 
 $headings-font-family:        null;
-$headings-font-weight:        700;
+$headings-font-weight:        600;
 
 $lead-font-weight:            400;
 

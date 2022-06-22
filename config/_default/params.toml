@@ -4,13 +4,13 @@
 title = "Darcy Docs"
 titleSeparator = "-"
 titleAddition = "Docs for the Darcy Suite"
-description = "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+description = "Learn how to build, deploy and run your AI in the real world."
 
 ## Documentation
 # docsVersion = "0.3"
 
 ## Open Graph
-images = ["doks.png"]
+#images = ["opengraph-image.png"]
 ogLocale = "en_US"
 domainTLD = "docs.darcy.ai"
 titleHome = "Darcy Docs"
@@ -25,7 +25,7 @@ schemaType = "Organization"
 schemaName = "Darcy AI"
 schemaAuthor = "Edgeworx, Inc."
 schemaAuthorTwitter = "https://twitter.com/edgeworxio"
-schemaAuthorLinkedIn = "https://www.linkedin.com/company/edgeworx-inc"
+schemaAuthorLinkedIn = "https://www.linkedin.com/company/edgeworx-inc/"
 schemaAuthorGitHub = "https://github.com/darcyai"
 schemaLocale = "en-US"
 schemaLogo = "logo-doks.png"
@@ -72,8 +72,10 @@ repoHost = "GitHub"
 docsRepo = "https://github.com/darcyai/docs"
 docsRepoBranch = "master"
 docsRepoSubPath = ""
-editPage = true
+editPage = false # Is enabled for production
 lastMod = true
+
+segmentAnalytics = "zKMEacyNthzlsDe1GAzCtjZ44oXHZg0y" # cloud.dev.darcy.ai
 
 [options]
   lazySizes = true
@@ -93,3 +95,6 @@ lastMod = true
   [menu.section]
     auto = true
     collapsibleSidebar = true
+
+
+

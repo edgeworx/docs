@@ -94,6 +94,7 @@ Source:
 
   // https://discourse.gohugo.io/t/range-length-or-last-element/3803/2
 
+  {{/* SEARCH: update the following line to include new section types */}}
   {{ $list := (where .Site.Pages "Section" "docs") -}}
   {{ $len := (len $list) -}}
 
@@ -106,7 +107,7 @@ Source:
         {{ with .Description -}}
           description: {{ . | jsonify }},
         {{ else -}}
-          description: {{ .Summary | plainify | jsonify }},
+          description: {{ .Summary | plainify | htmlUnescape | jsonify }},
         {{ end -}}
         content: {{ .Plain | jsonify }}
       })
@@ -157,6 +158,7 @@ Source:
         a.appendChild(title);
 
         const description = document.createElement('span');
+
         description.textContent = doc.description;
         description.classList.add("suggestion__description");
         a.appendChild(description);
