@@ -1,6 +1,7 @@
 .alert {
-  font-family: $font-family-monospace;
-  font-size: $font-size-sm;
+  font-family: Gilroy, sans-serif;
+  font-size: $font-size-md;
+  border-radius: 4px;
 }
 
 .alert-icon {
@@ -8,7 +9,7 @@
 }
 
 .docs main .alert {
-  margin: 2rem -1.5rem;
+  margin: 2rem 0;
 }
 
 .alert .alert-link {
@@ -71,43 +72,27 @@
 }
 
 .alert-success {
-  color: #0f5132;
-  background-color: #d1e7dd;
-  border-color: #badbcc;
-}
-
-.alert-success .alert-link {
-  color: #0c4128;
+  color: $edgeneutral-5;
+  background-color: $darcy-blue-dark;
+  border-color: $darcy-blue-dark;
 }
 
 .alert-info {
-  color: #055160;
-  background-color: #cff4fc;
-  border-color: #b6effb;
-}
-
-.alert-info .alert-link {
-  color: #04414d;
+  color: $edgeneutral-5;
+  background-color: $darcy-blue-dark;
+  border-color: $darcy-blue-dark;
 }
 
 .alert-warning {
-  color: #664d03;
-  background-color: #fff3cd;
-  border-color: #ffecb5;
-}
-
-.alert-warning .alert-link {
-  color: #523e02;
+  color: $edgeneutral-5;
+  background-color: $darcy-gold;
+  border-color: $darcy-gold;
 }
 
 .alert-danger {
-  color: #842029;
-  background-color: #f8d7da;
-  border-color: #f5c2c7;
-}
-
-.alert-danger .alert-link {
-  color: #6a1a21;
+  color: $edgeneutral-5;
+  background-color: $darcy-red;
+  border-color: $darcy-red;
 }
 
 .alert-light {
@@ -158,7 +143,10 @@
 }
 
 .alert code {
-  background: darken($beige, 5%);
+  background: rgba(0, 0, 0, 0.1);
   color: $black;
-  padding: 0.25rem 0.5rem;
+  padding: 0.125rem 0.25rem;
+  border-color: rgba(255, 255, 255, 0.5);
+  border-style: solid;
+  border-width: 1px;
 }

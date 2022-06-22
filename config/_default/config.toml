@@ -8,6 +8,8 @@ enableRobotsTXT = true
 languageCode = "en-US"
 paginate = 7
 rssLimit = 10
+summaryLength = 2
+
 
 # FIXME: get rid of ignoreErrors when site is deployed
 ignoreErrors = ["image-not-found"]

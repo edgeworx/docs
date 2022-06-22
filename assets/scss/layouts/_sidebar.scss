@@ -4,6 +4,10 @@
   scrollbar-color: $white $white;
 }
 
+.offcanvas-end {
+  width: 100%;
+}
+
 .btn-toggle-nav a {
   margin: 0;
   padding: 0;
@@ -16,6 +20,15 @@
 .darcy-list-item {
   position: relative;
   margin-top: 0.625rem;
+
+  &.main-section {
+    margin-top: 1.75rem;
+  }
+
+  & .main-section-title {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
 
   & a {
     padding: 0;
@@ -43,14 +56,14 @@
 .page-links a {
   color: $body-color;
   display: block;
-  padding: 0.125rem 0;
-  font-size: $font-size-base * 0.9375;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
   font-weight: inherit;
 }
 
 nav.docs-links {
   margin-right: 0;
-  overflow: visible;
 
   & a {
     font-weight: inherit;
@@ -140,7 +153,6 @@ nav.docs-links {
 a.docs-link {
   color: $body-color;
   display: block;
-  padding: 0.125rem 0;
   padding-left: 1.5rem;
   font-size: $font-size-base;
 }
@@ -158,27 +170,27 @@ a.docs-link {
 }
 
 .page-links li:not(:first-child) {
-  border-top: 1px dashed $gray-200;
+  border-top: 1px solid $gray-200;
 }
 
 .docs-link:hover,
 .docs-link.active,
 .page-links a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   color: $link-color;
 }
 
 .nav-link.active,
 .dropdown-menu-main .dropdown-item.active,
 .docs-link.active {
-  font-weight: 500;
+  //  font-weight: 600;
 }
 
 .docs-links h3.sidebar-link,
 .page-links h3.sidebar-link {
   text-transform: none;
   font-size: $font-size-md;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .docs-links h3.sidebar-link a,

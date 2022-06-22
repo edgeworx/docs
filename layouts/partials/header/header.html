@@ -8,16 +8,20 @@
 <header class="navbar navbar-expand-md navbar-light doks-navbar">
   <nav class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} flex-wrap flex-md-nowrap" aria-label="Main navigation">
     <a class="navbar-brand p-0 me-auto" href="https://darcy.ai" aria-label="{{ .Site.Params.Title }}">
-      <img src='/darcyai-logo.svg' alt='darcyai logo' />
+      <img src='/darcy-logo.png' alt='darcyai logo' />
     </a>
 
+   <!--
     <button class="btn btn-menu d-block d-md-none order-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDoks" aria-controls="offcanvasDoks" aria-label="Open main menu">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
     </button>
+    -->
 
     <div class="offcanvas offcanvas-end border-0 py-md-1 d-md-none" tabindex="-1" id="offcanvasDoks" data-bs-backdrop="true" aria-labelledby="offcanvasDoksLabel">
       <div class="offcanvas-header d-md-none">
-        <img src='/darcyai-logo.svg' alt='darcyai logo' />
+        <a class="navbar-brand p-0 me-auto" href="https://darcy.ai" aria-label="{{ .Site.Params.Title }}">
+          <img src='/darcy-logo.png' alt='darcyai logo' />
+        </a>
         <div type="button" class="me-2" data-bs-dismiss="offcanvas" aria-label="Close main menu">
           <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='none' stroke='#ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-x'><line x1='18' y1='6' x2='6' y2='18'></line><line x1='6' y1='6' x2='18' y2='18'></line></svg>
         </div>
@@ -30,6 +34,11 @@
         <div>
           <a data-bs-toggle="collapse" href="#devCollapse" role="button" aria-expanded="false" aria-controls="devCollapse" class="darcyai dev-link w-100">Developers</a>
           <ul class="nav flex-column flex-md-row ms-md-n3 mt-2 collapse show" id="devCollapse">
+            {{ $currentPage := . -}}
+            {{ $active := eq $currentPage.RelPermalink .RelPermalink }}
+            <li class="nav-item">
+              <a class="nav-link ps-0 py-1{{ if $active }} active{{ end }}" href="/">Home</a>
+            </li>
             {{- $current := . -}}
             {{- $section := $current.Section -}}
             {{ range .Site.Menus.main -}}
@@ -71,8 +80,8 @@
       <a class="darcyai dev-link" href="/">Developers</a>
     </div> -->
     <div class="darcyai menu-container d-none d-md-grid">
-      <a class="darcyai home-link" href="https://darcy.ai" alt="Darcy.ai">Products</a>
-      <a class="darcyai dev-link" href="/">Developers</a>
+      <!--<a class="darcyai home-link" href="https://darcy.ai" alt="Darcy.ai">Products</a>-->
+      <!--<a class="darcyai dev-link" href="/">Developers</a>-->
       <a class="darcyai login-link" href="https://cloud.darcy.ai" alt="Portal login">Log in</a>
     </div>
     <!-- {{ if .Site.Params.options.darkMode -}}
@@ -119,7 +128,7 @@
 </div>
 {{ end -}}
 
-{{ if eq .Section "docs" -}}
+{{ if or (eq .Section "docs") (eq .Section "") -}}
 <nav class="doks-subnavbar py-2 sticky-lg-top{{ if eq .Site.Params.options.flexSearch false }} d-lg-none{{ end }}" aria-label="Secondary navigation">
   <div class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} d-flex align-items-md-center">
 

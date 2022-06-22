@@ -8,9 +8,10 @@ samp {
 }
 
 code {
-  background: $beige;
-  color: $black;
-  padding: 0.25rem 0.5rem;
+  background: $edgeneutral-05;
+  color: $edgeneutral-3 !important;
+  padding: 0.125rem 0.25rem;
+  font-family: "JetBrains Mono", monospace;
 }
 
 pre {

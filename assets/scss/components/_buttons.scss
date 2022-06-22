@@ -73,29 +73,29 @@ pre {
   font-family: $font-family-sans-serif;
   font-size: $font-size-sm;
   padding: 0.25rem 0.5rem;
-  color: $color-btn-text;
-  background-color: $color-btn-bg;
-  border-color: $color-btn-border;
+  color: $edgeneutral-5;
+  background-color: $darcy-blue-dark;
+  border-color: $darcy-blue-dark;
 }
 
 .btn-copy:hover {
-  color: $color-btn-text;
-  background-color: lighten($color-btn-bg, 5%);
-  border-color: lighten($color-btn-border, 15%);
+  color: $edgeneutral-5;
+  background-color: lighten($darcy-blue-dark, 5%);
+  border-color: lighten($darcy-blue-dark, 5%);
 }
 
 .btn-copy:focus {
-  color: $color-btn-text;
-  background-color: $color-btn-bg;
-  border-color: lighten($color-btn-border, 15%);
+  color: $edgeneutral-5;
+  background-color: $darcy-blue-dark;
+  border-color: lighten($darcy-blue-dark, 15%);
   box-shadow: none;
 }
 
 .btn-copy:active,
 .btn-copy.active {
-  color: $color-btn-text;
-  background-color: $color-btn-bg;
-  border-color: lighten($color-btn-border, 15%);
+  color: $edgeneutral-5;
+  background-color: $darcy-blue-dark;
+  border-color: lighten($darcy-blue-dark, 15%);
 }
 
 .btn-copy:active:focus,
@@ -112,20 +112,20 @@ pre {
 .btn-copy::after {
   content: "Copy";
   display: block;
-  color: $color-btn-text;
+  color: $edgeneutral-5;
 }
 
 .btn-copy:hover::after {
   content: "Copy";
   display: block;
-  color: $color-btn-text;
+  color: $edgeneutral-5;
 }
 
 .btn-copy:focus::after,
 .btn-copy:active::after {
   content: "Copied";
   display: block;
-  color: $color-btn-text;
+  color: $edgeneutral-5;
 }
 
 .collapsible-sidebar {

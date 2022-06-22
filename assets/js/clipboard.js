@@ -1,5 +1,4 @@
-import Clipboard from 'clipboard';
-
+/*global ClipboardJS*/
 var pre = document.getElementsByTagName('pre');
 
 for (var i = 0; i < pre.length; ++ i)
@@ -12,26 +11,22 @@ for (var i = 0; i < pre.length; ++ i)
   }
 }
 
-var clipboard = new Clipboard('.btn-copy', {
-
-  target: function(trigger) {
-    return trigger.nextElementSibling;
-  },
-
-});
+var clipboard = new ClipboardJS('.btn-copy', {
+    target: (trigger) => {
+      return trigger.parentElement.getElementsByTagName('code')[0]
+    },
+})
 
 clipboard.on('success', function(e) {
-
-    /*
     console.info('Action:', e.action);
     console.info('Text:', e.text);
     console.info('Trigger:', e.trigger);
-    */
 
     e.clearSelection();
 });
 
 clipboard.on('error', function(e) {
+    console.error({ e })
     console.error('Action:', e.action);
     console.error('Trigger:', e.trigger);
 });

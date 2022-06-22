@@ -1,13 +1,13 @@
 ---
-title: "Access Tokens"
-weight: 50
+title: "Access tokens"
+weight: 800
 aliases:
   - /darcy/darcy-cloud/access-tokens
 ---
 Darcy Cloud supports basic HTTP authentication through access tokens.
 
 Simply pass the token as username in
-the [HTTP Basic authentication](https://en.wikipedia.org/wiki/Basic\_access\_authentication) header.
+the [HTTP Basic authentication](https://en.wikipedia.org/wiki/Basic_access_authentication) header.
 If you are doing the base64 encoding yourself, don't forget to append a single `:` at the end of
 your token before encoding.
 

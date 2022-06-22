@@ -1,5 +1,10 @@
 <head>
   <meta charset="utf-8">
+  {{ with .Params.externalLink}}
+  {{/* If externalLink is present, we want to redirect immediately. Typically the user
+  should not be able to get to such a page, but it can happen, e.g. if the type the URL directly. */}}
+  <meta http-equiv="Refresh" content="0; url='{{- . -}}'" />
+  {{end}}
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   {{ block "head/resource-hints" . }}{{ partial "head/resource-hints.html" . }}{{ end }}
@@ -8,4 +13,8 @@
   {{ block "head/seo" . }}{{ partial "head/seo.html" . }}{{ end }}
   {{ block "head/favicons" . }}{{ partial "head/favicons.html" . }}{{ end }}
   {{ block "head/analytics" . }}{{ partial "head/analytics.html" . }}{{ end }}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <script src="/js/vendor/clipboard.min.js"></script>
 </head>
