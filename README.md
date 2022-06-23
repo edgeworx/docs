@@ -58,7 +58,6 @@ Content is stored in [`/content`](/content).
 
 If you merge changes to branch `staging`, those changes will show up at [https://staging--darcydocs.netlify.app](https://staging--darcydocs.netlify.app).
 
-
 ### Templates
 
 The [`/layouts`](/layouts) dir contains the templates for rendering. The most interesting parts are:
@@ -74,6 +73,11 @@ supports both normal and "dark" mode, so be sure to also update `/assets/scss/co
 
 > For one-off HTML components (e.g. for [raw html](#raw-html)), put that CSS into `/assets/scss/custom.scss`.
 
+### Content Security Policy
+
+If the site pulls in scripts etc. from other external domains (e.g. analytics), then we need
+to update the Content-Security-Policy in [layouts/index.headers](./layouts/index.headers).
+
 
 ## Branches
 
@@ -87,7 +91,7 @@ Obviously, that `staging` branch needs to be merged to `master` for that content
 
 ## Content
 
-## Markdown files
+### Markdown files
 
 Content is generated from markdown files stored under [`/content`](/content).
 
