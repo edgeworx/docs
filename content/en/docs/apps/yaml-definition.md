@@ -3,6 +3,7 @@ title : "App YAML definition"
 weight: 450
 aliases:
   - /darcy/darcy-cloud/applications-doc/app-doc-yaml
+  - /docs/cloud/portal/ai-explorer-app/app-yaml/
 ---
 
 Darcy Cloud uses [Eclipse ioFog](https://iofog.org) under the covers to deploy and manage
