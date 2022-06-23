@@ -2,7 +2,7 @@
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-Content-Type-Options: nosniff
   X-XSS-Protection: 1; mode=block
-  Content-Security-Policy: default-src 'self' 'unsafe-eval' 'unsafe-inline' snap.licdn.com *.linkedin.com t.co static.ads-twitter.com analytics.twitter.com *.netlify.app cdn.segment.com api.segment.io www.google-analytics.com www.googletagmanager.com fonts.googleapis.com maxcdn.bootstrapcdn.com fonts.gstatic.com;
+  Content-Security-Policy: default-src 'self' data: 'unsafe-eval' 'unsafe-inline' snap.licdn.com *.linkedin.com t.co static.ads-twitter.com analytics.twitter.com *.netlify.app cdn.segment.com api.segment.io www.google-analytics.com www.googletagmanager.com fonts.googleapis.com maxcdn.bootstrapcdn.com fonts.gstatic.com; img-src * 'self' data:
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin
   Feature-Policy: geolocation 'self'
