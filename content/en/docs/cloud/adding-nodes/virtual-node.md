@@ -30,7 +30,7 @@ Choose `VIRTUAL NODE` to get the instructions for adding a virtual node.
 
 ![Virtual Node Script](/images/add-virtual-node.png)
 
-Make sure you have the latest versions of [egectl]({{<ref "/docs/cloud/start-edgectl.md">}}) and [Multipass](https://multipass.run) installed. Click the `COPY` button to copy the command to your clipboard. This command starts an Ubuntu VM which register itself with Darcy
+Make sure you have the latest versions of [edgectl]({{<ref "/docs/cloud/start-edgectl.md">}}) and [Multipass](https://multipass.run) installed. Click the `COPY` button to copy the command to your clipboard. This command starts an Ubuntu VM which register itself with Darcy
 Cloud as a Virtual Node.
 
 ## Run the Virtual Node Registration Script
@@ -58,12 +58,18 @@ We recommend using `edgectl delete virtual-node` command to delete the Virtual N
 
 ## Troubleshooting
 
+
 <details>
-  <summary>Unable to create virtual node with default values on Windows machine</summary>
-    We can modify the default values based on our Windows machine spec. Below are the default values used to
-spin up a multipass VM.
-`edgectl create virtual-node name=darcy-node -c 1`
-{{< highlight html>}}
+  <summary>Unable to create Virtual Node with default values on Windows machine</summary>
+    We can modify the default values based on our Windows machine spec. For example:
+
+```shell
+edgectl create virtual-node --name=darcy-node --cpus 2
+```
+
+Below are the default values used to spin up a multipass VM.
+
+```text
 -d, --disk    string   Disk space to allocate. Positive integers, in bytes, or with K, M, G suffix. Minimum: 512M, default: 15G.
 -c, --cpus    string   Number of CPUs to allocate. Minimum: 1, default: 2.
 -m, --mem     string   Amount of memory to allocate. Positive integers, in  bytes, or with K, M, G suffix. Minimum: 128M, default: 1G.
@@ -71,22 +77,26 @@ spin up a multipass VM.
                        name: the network to connect to (required), use the networks command for a list of possible values,
                        or use 'bridged' to use the interface configured via "multipass set local.bridged-network".
                        mode: auto|manual (default: auto) mac: hardware address (default: random).
-                       You can also use a shortcut of "<name>" to mean "name=<name>"{{< /highlight >}}
+                     You can also use a shortcut of "<name>" to mean "name=<name>"
+```
 </details>
 <details>
-  <summary>Used edgectl delete node command to delete virtual-node</summary>
-Not an issue, we just have to manually delete the multipass VM using multipass delete command <i>multipass delete node-name --purge</i>.
+  <summary>Unable to view the output from a Virtual Node (incorrect IP).</summary>
+<strong>Known Issue:</strong> Depending on the particular network setup, the Virtual Node IP address displayed in the portal may not be correct.
+Use `multipass ls` to retrieve the correct IP.
 </details>
 <details>
-  <summary>Unable to view the output from a Virtual Node (incorrect IP)</summary>
-At the moment Virtual Node IP displayed on the portal is not correct. Therefore, we have to manually retrieve it using multipass command <i>multipass ls</i>.
+  <summary>Use <code>edgectl delete virtual-node</code> in favor of <code>edgectl delete node</code>.</summary>
+The <code>edgectl delete node</code> command deletes the node from Darcy Cloud, but does not delete the local VM.
+Use <code>edgectl delete virtual-node</code>
+to delete both the node and the local VM.
 </details>
 <details>
-  <summary>Unable to SSH into the Virtual Node after the machine went into idle state</summary>
-There is an ongoing issue with internet sharing of virtual network when using multipass with Virtual Box driver.
-https://www.virtualbox.org/ticket/14374?cversion=2&cnum_hist=66
+  <summary>Unable to SSH into the Virtual Node after the machine went into idle state.</summary>
+<strong>Known Issue:</strong> There is an <a href="https://www.virtualbox.org/ticket/14374?cversion=2&cnum_hist=66">long-standing issue</a> with internet
+sharing of virtual network when using multipass with Virtual Box driver.
 </details>
 <details>
   <summary>Unable to view attached video device in output</summary>
-At the moment Virtual Node doesn't support mounting external cameras.
+<strong>Known Issue:</strong> At the moment Virtual Node doesn't support mounting external cameras on every platform.
 </details>
