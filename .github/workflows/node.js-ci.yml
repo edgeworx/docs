@@ -1,4 +1,4 @@
-name: Hyas CI
+name: Hugo
 
 on:
   push:
@@ -10,11 +10,11 @@ jobs:
 
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ubuntu-latest]
         node: [16.x]
 
     steps:
-    - name: Check out Hyas project
+    - name: Checkout project
       uses: actions/checkout@v2
 
     - name: Set up Node.js ${{ matrix.node }}
@@ -25,8 +25,11 @@ jobs:
     - name: Install dependencies
       run: npm ci
 
-    - name: Run Hyas test script
+    - name: Run test script
       run: npm test
 
-    - name: Build production website
-      run: npm run build
+    - name: Run linter
+      run: npm run lint
+
+    - name: Build website
+      run: npm run build:preview
