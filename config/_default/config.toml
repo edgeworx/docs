@@ -92,8 +92,3 @@ rel  = "sitemap"
   [[module.mounts]]
     source = "node_modules/mermaid"
     target = "assets/js/vendor/mermaid"
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Content-Security-Policy = "default-src 'self' 'unsafe-eval' 'unsafe-inline' netlify.app cdn.segment.com www.google-analytics.com www.googletagmanager.com fonts.googleapis.com maxcdn.bootstrapcdn.com fonts.gstatic.com;"
