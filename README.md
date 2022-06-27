@@ -10,7 +10,6 @@ site generator. The Hugo theme is a fork of [Doks](https://getdoks.org).
 When changes are merged to the `master` branch, a CI [pipeline](https://github.com/darcyai/docs/actions) kicks off, which publishes the
 content to [Netlify](https://www.netlify.com).
 
-
 ## Pre-requisites
 
 - [Git](https://git-scm.com/)
@@ -19,7 +18,6 @@ content to [Netlify](https://www.netlify.com).
 > The Doks theme uses npm (included with Node.js) to centralize dependency management,
 > making it [easy to update](https://getdoks.org/docs/help/how-to-update/) resources, build tooling,
 > plugins, and build scripts.
-
 
 ## Get started
 
@@ -58,7 +56,6 @@ Content is stored in [`/content`](/content).
 
 If you merge changes to branch `staging`, those changes will show up at [https://staging--darcydocs.netlify.app](https://staging--darcydocs.netlify.app).
 
-
 ### Templates
 
 The [`/layouts`](/layouts) dir contains the templates for rendering. The most interesting parts are:
@@ -74,6 +71,10 @@ supports both normal and "dark" mode, so be sure to also update `/assets/scss/co
 
 > For one-off HTML components (e.g. for [raw html](#raw-html)), put that CSS into `/assets/scss/custom.scss`.
 
+### Content Security Policy
+
+If the site pulls in scripts etc. from other external domains (e.g. analytics), then we need
+to update the Content-Security-Policy in [layouts/index.headers](./layouts/index.headers).
 
 ## Branches
 
@@ -87,7 +88,7 @@ Obviously, that `staging` branch needs to be merged to `master` for that content
 
 ## Content
 
-## Markdown files
+### Markdown files
 
 Content is generated from markdown files stored under [`/content`](/content).
 
@@ -101,12 +102,12 @@ is basically metadata. For example:
 
 ```markdown
 ---
-title : "Add Virtual Node to Darcy Cloud"
+title: "Add Virtual Node to Darcy Cloud"
 linkTitle: "Add Virtual Node"
 description: "Add a Virtual Node to Darcy Cloud via edgectl or Cloud Portal."
 weight: 100
-linkTitle: "About"
 ---
+
 CONTENT GOES HERE
 ```
 
@@ -120,6 +121,7 @@ single sentence, ending with a period (`.`).
 Note that the values of `title`, `linkTitle` and `description` should be enclosed in double quotes.
 
 #### Slugs & Aliases
+
 Hugo will generate the page slug (URL path) based on the filename and the slug of
 the file's parents.
 
@@ -141,6 +143,7 @@ weight: 100
 slug: "how-to-get-started"
 ---
 ```
+
 This results in path `/doc/how-to-get-started`.
 
 Relatedly you can also set one or more aliases in the front matter. An alias is a full path
@@ -148,12 +151,12 @@ which will be redirected to the current content.
 
 ```markdown
 ---
-title : "About Darcy Cloud"
+title: "About Darcy Cloud"
 weight: 100
 slug: "how-to-get-started"
 aliases:
-    - /doc/get-started/
-    - /guide/how-to-get-started/
+  - /doc/get-started/
+  - /guide/how-to-get-started/
 ---
 ```
 
@@ -166,7 +169,6 @@ the front matter of the `_index.md` in the sub-directory.
 Within a directory, the `_index.md` file should have the smallest weight. The other markdown
 files should have a weight greater than the weight of `_index.md`.
 
-
 ### Images & other assets
 
 To reference an image from markdown, add the image to the [`/static/images`](/static/images) dir. For example,
@@ -175,7 +177,7 @@ add `/static/images/my-image.png`, then reference the image in markdown using `!
 You can do the same for other files, e.g. add `/static/pdfs/my.pdf` and reference in markdown
 with `![My PDF](/pdfs/my.pdf)`.
 
-> NOTE: Use descriptive file names for uploaded images. *DO NOT* upload a file
+> NOTE: Use descriptive file names for uploaded images. _DO NOT_ upload a file
 > named `screen-shot-2021-10-08-at-5.59.22-pm.png`; instead upload `portal-projects-overview.png`.
 
 ### Alerts
@@ -185,7 +187,7 @@ You can use the `alert` [shortcode](https://gohugo.io/content-management/shortco
 
 ```markdown
 {{<alert>}}
-  Here's the info you're looking for!
+Here's the info you're looking for!
 {{</alert>}}
 ```
 
@@ -193,8 +195,8 @@ The default alert style is `info`, but you can explicitly set a style (`success`
 
 ```markdown
 {{<alert style="warning">}}
-  If you do not have any of the above hardware, you can create a VM and run
-  the node installation script.
+If you do not have any of the above hardware, you can create a VM and run
+the node installation script.
 {{</alert>}}
 ```
 
@@ -213,6 +215,7 @@ mechanism causes Hugo to verify the link, and Hugo will fail if it cannot resolv
 This is a significant benefit.
 
 If you are linking outside the current dir:
+
 - If you're linking to a file below the current dir, typically use a relative path, e.g. `[the below thing]({{<ref "./c/d.md">}})`.
 - If you're linking to a file above the current dir, typically use absolute an absolute path, e.g. `[the above thing]({{<ref "/docs/cloud/e/f.md">}})`
 
@@ -257,10 +260,14 @@ We have several lint targets, although some of them are still WIP and not fully 
 into the pipeline for various reasons.
 
 ### Script & Markdown Linting
-This runs the linter against scripts and the markdown files. It does not check links. Example
-below. All lint errors must be fixed.
 
-```text
+# <<<<<<< HEAD
+
+> > > > > > > origin/staging
+> > > > > > > This runs the linter against scripts and the markdown files. It does not check links. Example
+> > > > > > > below. All lint errors must be fixed.
+
+````text
 $ npm run lint
 
 > @hyas/doks@0.4.2 lint
@@ -272,7 +279,7 @@ Linting: 54 file(s)
 Summary: 87 error(s)
 content/en/docs/ai/build.md:99 MD040/fenced-code-language Fenced code blocks should have a language specified [Context: "```"]
 content/en/docs/ai/build.md:119 MD040/fenced-code-language Fenced code blocks should have a language specified [Context: "```"]
-```
+````
 
 > See GitHub [RULES.md](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md) for markdown linting rules.
 
@@ -290,7 +297,6 @@ There's a separate linter for checking links. At the moment it's a two-step proc
 >    [0] http://localhost:1313/
 >    ERROR: Detected 1 broken links. Scanned 1 links in 0.007 seconds.
 > ```
-
 
 The output can be a bit confusing. First, each of the broken links are listed. Then, more
 usefully, a section is displayed for each page URL, listing the problems beneath that

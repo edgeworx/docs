@@ -95,8 +95,7 @@ pip install tensorflow
 <div class="alert-container">
 {{< /rawhtml >}}
 {{< alert style="warning" >}}
-If you are on Apple M1 silicon, these instructions will not work for you. But, you can use this
-[community script](https://gist.github.com/drluckyspin/95243834ac9db2f3260b16f8ef545a56) to properly install a Tensorflow environment that's optimized for M1.
+If you are on Apple M1 silicon, these instructions will not work for you. M1 Mac solution coming soon.
 {{< /alert >}}
 {{< rawhtml >}}
 </div>
