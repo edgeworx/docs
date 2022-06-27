@@ -16,7 +16,7 @@ Darcy AI can run in CPU mode (if you don't have a Coral accelerator attached), b
 
 ### Requirements
 
-- MacOS (Linux & Windows coming soon)
+- macOS (Linux & Windows coming soon)
 - 5GB or more of free disk space
 - Video source (like a built-in web cam or attached USB cam)
 - Basic command line knowledge
@@ -34,7 +34,7 @@ Darcy AI can run in CPU mode (if you don't have a Coral accelerator attached), b
 
 <ul class="nav nav-pills darcy-tabs" id="osTabs" role="tablist">
   <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="macosx-tab" data-bs-toggle="tab" data-bs-target="#macosx" type="button" role="tab" aria-controls="macosx" aria-selected="true">MacOS</button>
+    <button class="nav-link active" id="macosx-tab" data-bs-toggle="tab" data-bs-target="#macosx" type="button" role="tab" aria-controls="macosx" aria-selected="true">macOS</button>
   </li>
   <li class="nav-item" role="presentation">
     <button class="nav-link" id="linux-tab" data-bs-toggle="tab" data-bs-target="#linux" type="button" role="tab" aria-controls="linux" aria-selected="false">Linux</button>
@@ -59,8 +59,8 @@ brew install python
 {{< /rawhtml >}}
 {{< alert icon="" >}}
 If you have older Python versions on your computer, you may need to use `python3` and `pip3` commands.
-You can also change this behavior for [MacOS](https://osxdaily.com/2022/02/15/make-python-3-default-macos/)
-or [windows (coming soon)](https://stackoverflow.com/questions/5087831/how-should-i-set-default-python-version-in-windows)
+You can also change this behavior for [macOS](https://osxdaily.com/2022/02/15/make-python-3-default-macos/)
+or [Windows (coming soon)](https://stackoverflow.com/questions/5087831/how-should-i-set-default-python-version-in-windows)
 {{< /alert >}}
 {{< rawhtml >}}
 </div>

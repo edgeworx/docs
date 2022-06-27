@@ -28,7 +28,7 @@ On the "Welcome" page, choose an auth provider or provide your own email and pas
 
 _edgectl_ currently supports Mac, Linux & Windows.
 
-### MacOS
+### macOS
 
 On Mac, we can use [brew](https://brew.sh) to install _edgectl_:
 
