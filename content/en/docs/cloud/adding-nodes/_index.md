@@ -26,6 +26,7 @@ We recommend the following components for processing real-time video at the edge
 {{<alert style="info">}}
 The Google Coral Dev board should also offer good AI performance but hasn't been tested with Darcy AI yet.
 {{</alert>}}
+
 ## More compatible edge boards
 
 Darcy Cloud is compatible with many Linux edge boards:
