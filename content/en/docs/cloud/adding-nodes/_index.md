@@ -23,10 +23,9 @@ We recommend the following components for processing real-time video at the edge
 | Raspberry Pi4 | Any Pi4 camera | 5.1V * 3.5A power | Coral Accelerator|
 | [Learn More](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/)  | [Learn More](https://www.amazon.com/gp/product/B07SN8GYGD)  | [Learn More](https://www.amazon.com/CanaKit-Raspberry-Power-Supply-USB-C/dp/B07TYQRXTK/ref=sr_1_3?crid=2BGU12U80RGNV&keywords=canakit+power+supply&qid=1655761341&sprefix=cana+kit+power+supply%2Caps%2C125&sr=8-3)  | [Learn More](https://coral.ai/products/accelerator/)
 
-Note: The Google Coral Dev board should also offer good AI performance but hasn't been tested with Darcy AI yet.
-
-FIXME: ^^ is this correct?
-
+{{<alert style="info">}}
+The Google Coral Dev board should also offer good AI performance but hasn't been tested with Darcy AI yet.
+{{</alert>}}
 ## More compatible edge boards
 
 Darcy Cloud is compatible with many Linux edge boards:
