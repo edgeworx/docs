@@ -5,6 +5,7 @@
 
   a {
     color: inherit;
+    text-decoration: underline;
   }
 }
 
@@ -43,10 +44,6 @@
 .alert-primary {
   color: $white;
   background-color: $primary;
-}
-
-.alert a {
-  text-decoration: underline;
 }
 
 .alert-primary .alert-link {
