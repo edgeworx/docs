@@ -4,6 +4,7 @@ weight: 800
 aliases:
   - /darcy/darcy-cloud/access-tokens
 ---
+
 Darcy Cloud supports basic HTTP authentication through access tokens.
 
 Simply pass the token as username in
@@ -13,13 +14,13 @@ your token before encoding.
 
 ## Usage
 
-* Inside a URL:
+- Inside a URL:
 
 ```text
 https://<access_token>@api.darcy.io/v1/...
 ```
 
-* As an HTTP header (base64 encoded)
+- As an HTTP header (base64 encoded)
 
 ```text
 window.fetch(
@@ -30,7 +31,7 @@ window.fetch(
 )
 ```
 
-* As a login option in edgectl or for a specific command
+- As a login option in edgectl or for a specific command
 
 ```shell
 edgectl login --token <access_token>
@@ -46,8 +47,8 @@ connected to the user account.
 
 ### Project Access Token
 
-Project Access Tokens have full access to the project they represent and have a lifecycle connected
-to their project. Those are the token used in the node install script.
+[Project](../more/terminology.md#project) Access Tokens have full access to the project they represent and have a lifecycle connected
+to their project. Those are the token used in the [node install script](../more/terminology.md#node-install-script).
 
 ![Project Access Token](</images/image (29).png>)
 

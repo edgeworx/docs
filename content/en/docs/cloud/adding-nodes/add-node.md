@@ -5,19 +5,18 @@ aliases:
   - /darcy/darcy-cloud/get-started-ec/nodes/get-started-add-node
 ---
 
-To add a node to your project, you will be running a command line script. For this we assume you
+To add a [node](../adding-nodes/_index.md) to your [project](../../more/terminology.md#project), you will be running a command line script. For this we assume you
 have ssh or console access to your node and are using a common shell, such as zsh or bash.
 Additionally, the installation script by default will need to run as sudo to register the necessary
 services to be automatically started after the node is rebooted.
 
-Add nodes using the Darcy Portal UI or terminal commands via edgectl
+Add nodes using the Darcy Portal UI or terminal commands via [edgectl](../start-edgectl.md)
 
 ## Add a node using Darcy Cloud Portal
 
 ### Get the node Install script
 
-Log into [Darcy Cloud](https://cloud.darcy.ai) and select the project to which you want to add the
-node.
+Log into [Darcy Cloud](https://cloud.darcy.ai) and select the project to which you want to [add thenode](../../more/terminology.md#node-install-script).
 
 ![Add Node](/images/add-node.png)
 
@@ -44,9 +43,9 @@ speed, and other dependencies).
 ![Install Node](/images/edge-node-added.png)
 
 {{<alert>}}
-  If you would like to choose a specific name for your node, use the
-  variable `DARCY_NODE_NAME="your-choice-of-name"` in the _node install script_
-  as in the example below.
+If you would like to choose a specific name for your node, use the
+variable `DARCY_NODE_NAME="your-choice-of-name"` in the _node install script_
+as in the example below.
 {{</alert>}}
 
 ### View the node in Your Darcy Cloud Project
@@ -61,10 +60,10 @@ You now have an edge node, let's start using it!
 
 ## Add a node using edgectl
 
-In Darcy Cloud, nodes are edge devices that run Edgeworx Agents. Ultimately, we want to deploy
-applications to these nodes to put them to work.
+In [Darcy Cloud](../cloud/start-portal.md), nodes are edge devices that run Edgeworx Agents. Ultimately, we want to deploy
+[applications](../../more/terminology.md#application) to these nodes to put them to work.
 
-If we list nodes in our default organization and project, we will notice that we have no nodes:
+If we list nodes in our default [organization](../../more/terminology.md#account--org) and project, we will notice that we have no nodes:
 
 ```shell
 edgectl get nodes

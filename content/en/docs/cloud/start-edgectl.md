@@ -1,16 +1,16 @@
 ---
-title : "Get started: edgectl"
+title: "Get started: edgectl"
 weight: 200
 aliases:
   - /darcy/darcy-cloud/get-started-edgectl
   - /darcy-docs/darcy-cloud/get-started-edgectl
 ---
 
-_edgectl_ is Darcy Cloud's command line interface (CLI). It can be used to manage Darcy Cloud
-accounts, organizations, projects, nodes, and applications.
+_edgectl_ is [Darcy Cloud's](../cloud/start-portal.md) command line interface (CLI). It can be used to manage Darcy Cloud
+[accounts, organizations,](../more/terminology.md#account--org) [projects](../more/terminology.md#project), [nodes](../cloud/adding-nodes/_index.md), and [applications](../more/terminology.md#application).
 
 In this section we will show you how to use _edgectl_ to get started with your first project and
-deploy some live microservices to the edge!
+deploy some live [microservices](../apps/microservices.md) to the edge!
 
 ## Create a Darcy Cloud Account
 
@@ -28,7 +28,7 @@ On the "Welcome" page, choose an auth provider or provide your own email and pas
 
 _edgectl_ currently supports Mac, Linux & Windows.
 
-### MacOS
+### macOS
 
 On Mac, we can use [brew](https://brew.sh) to install _edgectl_:
 

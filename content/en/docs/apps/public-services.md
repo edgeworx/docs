@@ -1,17 +1,17 @@
 ---
-title : "Public services"
+title: "Public services"
 weight: 600
 draft: false
 aliases:
   - /darcy/darcy-cloud/applications-doc/public-services
 ---
 
-Public services allow your microservices to securely expose public endpoints without opening ports
+Public services allow your [microservices](../apps/microservices.md) to securely expose public endpoints without opening ports
 on your agents.
 
 ## Specifying Public Containers
 
-When deploying Applications and microservices, you can specify a `public` configuration when
+When deploying [applications](../more/terminology.md#application) and microservices, you can specify a `public` configuration when
 configuring the port mappings of your container.
 
 If `public` is specified, this will open a tunnel that will forward all traffic incoming onto the

@@ -4,9 +4,9 @@ linkTitle: "Docker base image"
 weight: 410
 ---
 
-When you package your Darcy AI applications into Docker containers, you need to include each of the
+When you package your Darcy AI [applications](../more/terminology.md#application) into Docker containers, you need to include each of the
 software libraries that your application relies upon. Fortunately, we provide a Docker container
-base image that you can use when packaging your applications which contains each of the foundation
+[base image](../more/terminology.md#docker-base-image) that you can use when packaging your applications which contains each of the foundation
 components you need.
 
 To add items to your Darcy AI application, you should include them in your own Dockerfile that
