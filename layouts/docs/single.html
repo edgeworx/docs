@@ -1,4 +1,7 @@
 {{ define "main" }}
+<script>
+  window.analytics.page("Docs", "{{ .Title }}", { path: window.location.pathname })
+</script>
 {{ $currentSection := .CurrentSection }}
 {{ $currentPage := .}}
 

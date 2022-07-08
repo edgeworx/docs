@@ -16,6 +16,14 @@
       analytics.load("{{- . -}}");
       analytics.page();
     }}();
+
+    function trackExternalLink(dest) {
+      window.analytics.track("Docs clicked external link", { dest });
+    }
+
+    function trackLogin() {
+      window.analytics.track("Docs clicked Login", { src: window.location.pathname });
+    }
   </script>
 {{ end -}}
 
