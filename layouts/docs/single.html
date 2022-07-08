@@ -1,5 +1,6 @@
 {{ define "main" }}
 <script>
+  console.log("tracking from single.html")
   window.analytics.page("Docs", "{{ .Title }}", { path: window.location.pathname })
 </script>
 {{ $currentSection := .CurrentSection }}
