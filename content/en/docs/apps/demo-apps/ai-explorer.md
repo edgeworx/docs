@@ -45,7 +45,8 @@ If you are not already seeing the app listed, click the `APPS` tab to see all of
 current project. Click the app to access the app detail view.
 
 Once your Darcy AI Explorer app is running, you can view the UI and use the app by visiting the following URL in any browser. Replace `YOUR.DEVICE.IP.ADDRESS` with the actual IP address of your device. See Darcy AI in action and explore what it can do!
-```
+
+```bash
 http://YOUR.DEVICE.IP.ADDRESS:5555/
 ```
 
