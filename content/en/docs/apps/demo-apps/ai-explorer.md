@@ -13,11 +13,9 @@ powerful face detection, pose detection, QR code scanning and more.
 #### Requirements
 
 * A Darcy Cloud account
-* Compatible ARM edge node with a Coral Accelerator
-  * Raspberry Pi + Coral AI accelerator
-  * Coral Dev Board
-  * Coral Mini
-  * Tinker T
+* Compatible edge node with 1GB or more of disk space available for application download
+  * ARM-based edge device or virtual node
+  * x86-based edge device or virtual node
 
 {{<alert>}} If you have previously deployed an application to your node, you can either
 start a new project and add a node there or delete the existing application from the node. We just
@@ -34,7 +32,7 @@ follow the steps below:
 1. Go to your Darcy Cloud project page
 2. Select `Apps`
 3. Click on `+ DEPLOY APP`
-4. Click on `DARCY AI Explorer DEMO`
+4. Click on `DARCY AI EXPLORER APP`
 5. Select the node(s) where you want it to run
 6. Click `DEPLOY`
 
@@ -46,10 +44,10 @@ right of your screen.
 If you are not already seeing the app listed, click the `APPS` tab to see all of the apps in your
 current project. Click the app to access the app detail view.
 
-From the app detail view, click the linked text under the `ports` column to navigate to the app
-output.
-
-You should be brought to the AI Explorer Demo app.
+Once your Darcy AI Explorer app is running, you can view the UI and use the app by visiting the following URL in any browser. Replace `YOUR.DEVICE.IP.ADDRESS` with the actual IP address of your device. See Darcy AI in action and explore what it can do!
+```
+http://YOUR.DEVICE.IP.ADDRESS:5555/
+```
 
 ## App YAML
 
