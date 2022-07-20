@@ -2,6 +2,11 @@
   font-family: Gilroy, sans-serif;
   font-size: $font-size-md;
   border-radius: 4px;
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
 }
 
 .alert-icon {
@@ -39,10 +44,6 @@
 .alert-primary {
   color: $white;
   background-color: $primary;
-}
-
-.alert a {
-  text-decoration: underline;
 }
 
 .alert-primary .alert-link {
