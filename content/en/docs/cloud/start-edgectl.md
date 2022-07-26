@@ -4,6 +4,7 @@ weight: 200
 aliases:
   - /darcy/darcy-cloud/get-started-edgectl
   - /darcy-docs/darcy-cloud/get-started-edgectl
+  - /docs/cloud/edgectl
 ---
 
 _edgectl_ is [Darcy Cloud's](../cloud/start-portal.md) command line interface (CLI). It can be used to manage Darcy Cloud
