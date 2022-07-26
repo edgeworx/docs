@@ -8,7 +8,7 @@ weight: 250
 
 ## What you will accomplish
 
-By the end of this guide, you will be able to make deployable Darcy AI application packages that
+By the end of this guide, you will be able to make deployable Darcy AI [application](../more/terminology.md#application) packages that
 will run on any hardware that meets the requirements for Darcy AI. The list of compatible hardware
 is extensive, allowing you to deploy your Darcy AI applications to the devices that fit your
 solution needs.
@@ -19,17 +19,17 @@ We recommend using a Raspberry Pi 4 with an attached Google Coral accelerator fo
 
 ### Software Requirements
 
-* Docker Desktop and a Docker account
-* Darcy Cloud account (Free)
+- Docker Desktop and a Docker account
+- Darcy Cloud account (Free)
 
 ### Hardware Requirements
 
-* [An edge device](docs/cloud/adding-nodes)
-* [Video camera](docs/cloud/adding-nodes) attached to the camera port
-* [AI Processor](docs/cloud/adding-nodes): Google Coral edge TPU (USB version attached to USB 3.0 port)
-* [Power supply](docs/cloud/adding-nodes): 5.1V * 3.5A
-* Micro SD card with at least 16GB capacity (32GB+ recommended)
-* Internet connectivity
+- [An edge device](docs/cloud/adding-nodes)
+- [Video camera](docs/cloud/adding-nodes) attached to the camera port
+- [AI Processor](docs/cloud/adding-nodes): Google Coral edge TPU (USB version attached to USB 3.0 port)
+- [Power supply](docs/cloud/adding-nodes): 5.1V \* 3.5A
+- Micro SD card with at least 16GB capacity (32GB+ recommended)
+- Internet connectivity
 
 ---
 
@@ -37,8 +37,8 @@ We recommend using a Raspberry Pi 4 with an attached Google Coral accelerator fo
 
 ### Install Docker and create an account
 
-* Install Docker [Mac](https://docs.docker.com/desktop/mac/install/) or [Windows (coming soon)](https://docs.docker.com/desktop/windows/install/)
-* [Create a Docker Hub Account](https://hub.docker.com/signup)
+- Install Docker [Mac](https://docs.docker.com/desktop/mac/install/) or [Windows (coming soon)](https://docs.docker.com/desktop/windows/install/)
+- [Create a Docker Hub Account](https://hub.docker.com/signup)
 
 {{< alert icon="" style="info"  >}}
 After you have installed Docker, you can use `docker` commands in terminal. You will be using these
@@ -76,7 +76,7 @@ COPY ./YOURFILE.py /src/app.py
 CMD python3 -u /src/app.py
 ```
 
-The `FROM` command tells Docker which base image to use. It will build your application container
+The `FROM` command tells Docker which [base image](../more/terminology.md#docker-base-image) to use. It will build your application container
 starting from the base image.
 
 Every `RUN` command tells Docker to execute a step. In the example above, the step is to install
@@ -86,7 +86,7 @@ Dockerfile, you will always get the latest Darcy AI library when building your c
 
 Similarly, every `COPY` command tells Docker to take something from your local environment and make
 a copy of it in your container. Use this command to copy in files that are part of your application,
-such as .mp4 videos, .tflite AI models, and additional Python code files. The first part of the
+such as .mp4 videos, .tflite [AI models](../more/terminology.md#ai-model), and additional Python code files. The first part of the
 command is the source and the second part is the destination. In the example above,
 the `YOURFILE.py` file is copied into the `/src/` directory in the container and renamed to `app.py`
 .
@@ -182,7 +182,7 @@ process.
 
 ### Add your devices to the Darcy Cloud
 
-The Darcy Cloud gives you management of all your [edge devices]({{<ref "/docs/cloud/adding-nodes">}}) and edge applications in one place.
+The [Darcy Cloud](../cloud/start-portal.md) gives you management of all your [edge devices]({{<ref "/docs/cloud/adding-nodes">}}) and edge applications in one place.
 You can open an SSH shell session on demand, deploy applications, and see the health and status for
 every device. All of this functionality works no matter where your edge devices are physically
 located, even when they are behind NAT layers and firewalls. Use the Darcy Cloud to make building,
@@ -192,7 +192,7 @@ systems.
 If you don't already have an account, you can create one now for free. Create an account or log in
 at [https://cloud.darcy.ai](https://cloud.darcy.ai).
 
-Once you are in your Darcy Cloud account, [add your device as a node]({{<ref "/docs/cloud/adding-nodes/add-node.md">}}) in your current project. Use
+Once you are in your Darcy Cloud account, [add your device as a node]({{<ref "/docs/cloud/adding-nodes/add-node.md">}}) in your current [project](../more/terminology.md#project). Use
 the "plus button" in the bottom left to add a node. Follow the instructions in the pop-up window to
 add your device as a node.
 
@@ -213,8 +213,8 @@ spec:
       agent:
         name: your-darcy-cloud-node-name
       images:
-        arm: 'YOUR_ORGANIZATION/YOUR_APP:tag.goes.here'
-        x86: 'YOUR_ORGANIZATION/YOUR_APP:tag.goes.here'
+        arm: "YOUR_ORGANIZATION/YOUR_APP:tag.goes.here"
+        x86: "YOUR_ORGANIZATION/YOUR_APP:tag.goes.here"
       container:
         rootHostAccess: true
         ports: []

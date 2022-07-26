@@ -3,7 +3,8 @@ title: "Setting up your macOS environment for Darcy AI development"
 linkTitle: "macOS setup"
 weight: 200
 ---
-You can use any macOS environment to build Darcy AI applications. After you finish setting up your
+
+You can use any macOS environment to build Darcy AI [applications](../../more/terminology.md#application). After you finish setting up your
 Mac as a development environment, you will be able to write, test, and debug your Darcy AI apps.
 Then you can package your code and deploy the applications to any edge device!
 

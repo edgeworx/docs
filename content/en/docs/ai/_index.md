@@ -7,7 +7,7 @@ weight: 400
 ![Darcy AI Pipeline](/images/pipeline-example-visual@2x-100.jpg)
 
 Darcy AI offers a rich set of features that Darcy AI app developers can use to
-easily build complex AI processing chains. This makes developing rich real-time applications
+easily build complex AI processing chains. This makes developing rich real-time [applications](../more/terminology.md#application)
 possible in a shorter timeframe and with a much more standardized approach.
 
 If you have not yet read the overview of Darcy AI terminology, it is recommended that you do that
@@ -33,7 +33,7 @@ application run smoothly.
 
 The way you structure the pipeline will have an effect on AI processing speed and timing
 reliability. For processes that must occur in a straight line, attach processing steps called
-Perceptors one after the other. For processes that can take place in any order and do not depend on
+[Perceptors](../more/terminology.md#perceptor) one after the other. For processes that can take place in any order and do not depend on
 one another, you can use parallel ordering.
 
 A Darcy AI pipeline is a data graph and can be modeled visually like a sequence tree.
@@ -60,12 +60,11 @@ for processing that you don’t want.
 
 The first stage of every pipeline cycle (also called
 a [frame or pulse](/docs/more/terminology.md#frame-cycle-or-pulse)) is the unprocessed data coming from
-the [Input Stream](/docs/more/terminology.md#input-stream) that you have chosen for your application. Choose
-an Input Stream that provides the sensor data that you want Darcy to process. This may be audio,
+the [input stream](/docs/more/terminology.md#input-stream) that you have chosen for your application. Choose
+an input stream that provides the sensor data that you want Darcy to process. This may be audio,
 video, LiDAR, thermal video, or just about anything you can imagine.
 
-A good example of an Input Stream is the CameraStream class that comes built-in with the Darcy AI
-Engine. This Input Stream allows you to specify the device path for a video camera. It will read the
+A good example of an input stream is the CameraStream class that comes built-in with the [Darcy AI Engine](../more/terminology.md#engine). This input stream allows you to specify the device path for a video camera. It will read the
 video camera feed and bring it into Darcy at the frame rate and resolution you specify.
 
 Instantiate the CameraStream object and set some of its parameters like this:
@@ -166,7 +165,7 @@ function as a parameter when you add the Perceptor to the Pipeline.
 
 ```python
 def people_perceptor_input_callback(input_data, pom, config):
-    #Just take the frame from the incoming Input Stream and send it onward - no need to modify the frame
+    #Just take the frame from the incoming input stream and send it onward - no need to modify the frame
     frame = input_data.data.copy()
     return frame
 

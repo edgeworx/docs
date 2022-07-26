@@ -12,17 +12,17 @@ aliases:
 The highlights of this release are Virtual Node, and support for running Darcy AI Engine on CPU.
 
 | Component          | Version  |
-|--------------------|----------|
+| ------------------ | -------- |
 | Darcy Cloud API    | `v2.2.0` |
 | Darcy Cloud Portal | `v2.2.0` |
 | Edgectl            | `v2.2.0` |
 
 #### Changes
 
-* If you don't have an edge node (Raspberry Pi, Jetson Nano, etc.) available, you can now create
+- If you don't have an edge node (Raspberry Pi, Jetson Nano, etc.) available, you can now create
   a [Virtual Node](/docs/cloud/adding-nodes/virtual-node/) for development purposes. A Virtual Node is effectively a local VM that appears
   to Darcy Cloud as an edge node.
-* [Darcy AI Engine](/docs/ai/) works best when an AI accelerator (such as a Google Coral) is available, but now
+- [Darcy AI Engine](/docs/ai/) works best when an AI accelerator (such as a Google Coral) is available, but now
   AI Engine can run directly on CPU. This is useful for local development.
 
 ---
@@ -32,14 +32,14 @@ The highlights of this release are Virtual Node, and support for running Darcy A
 This release incorporates the first version of Darcy AI Explorer.
 
 | Component          | Version  |
-|--------------------|----------|
+| ------------------ | -------- |
 | Darcy Cloud API    | `v2.1.0` |
 | Darcy Cloud Portal | `v2.1.0` |
 | Edgectl            | `v2.1.0` |
 
 #### Changes
 
-* Darcy AI explorer app is available which showcases Darcy AI featuring customisable
+- Darcy AI explorer app is available which showcases Darcy AI featuring customisable
   people-centric AI.
 
 ---
@@ -49,19 +49,19 @@ This release incorporates the first version of Darcy AI Explorer.
 This is the first release of Darcy Cloud, which is the successor to Edgeworx Cloud.
 
 | Component          | Version  |
-|--------------------|----------|
+| ------------------ | -------- |
 | Darcy Cloud API    | `v2.0.1` |
 | Darcy Cloud Portal | `v2.0.1` |
 | Edgectl            | `v2.0.1` |
 
 #### Changes
 
-* Edgeworx Cloud is now Darcy Cloud.
-* `edgectl` has switched its entire command structure, from `noun-verb` to `verb-noun`. We are doing
+- Edgeworx Cloud is now Darcy Cloud.
+- `edgectl` has switched its entire command structure, from `noun-verb` to `verb-noun`. We are doing
   this based on user feedback from customers who are more familiar with the
   Kubernetes `kubectcl get X` style of CLI. For example, instead of `edgectl account get`,
   use `edgectl get account`. For more detail, see edgectl [docs](/docs/cloud/start-edgectl).
-  * Note that if you are using `edgectl` in scripts or such, and you pull the latest version, you
+  - Note that if you are using `edgectl` in scripts or such, and you pull the latest version, you
     must update your scripts to use the new syntax.
 
 ---
@@ -72,15 +72,15 @@ This release of Edgeworx Cloud introduces application microservice container log
 incorporates internal security enhancements.
 
 | Component         | Version  |
-|-------------------|----------|
+| ----------------- | -------- |
 | Edgeworx CloudAPI | `v1.3.1` |
 | Edgectl           | `v1.3.2` |
 
 #### Changes
 
-* `edgectl` can retrieve the container logs for application microservices running on edge nodes. For
+- `edgectl` can retrieve the container logs for application microservices running on edge nodes. For
   example: `edgectl logs myapp/myservice` . See `edgectl logs --help` for usage.
-* Internal security enhancements.
+- Internal security enhancements.
 
 ---
 
@@ -95,7 +95,7 @@ Security enhancements.
 
 #### Changes
 
-* Improvements to Edgeworx Cloud internal security mechanisms.
+- Improvements to Edgeworx Cloud internal security mechanisms.
 
 ---
 
@@ -112,10 +112,10 @@ several Edgeworx Cloud components.
 
 #### Changes
 
-* Better support for 32-bit Raspbian (Raspberry Pi) systems.
-* Minor UX fixes for Edgeworx Cloud Portal.
-* Several internal backend improvements.
-* CloudPortal: shows correct version of ARM architecture for device.
+- Better support for 32-bit Raspbian (Raspberry Pi) systems.
+- Minor UX fixes for Edgeworx Cloud Portal.
+- Several internal backend improvements.
+- CloudPortal: shows correct version of ARM architecture for device.
 
 ---
 

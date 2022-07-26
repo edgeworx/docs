@@ -1,5 +1,5 @@
 ---
-title : "Docker to Darcy"
+title: "Docker to Darcy"
 weight: 300
 aliases:
   - /darcy/darcy-cloud/applications-doc/docker-to-darcy
@@ -8,7 +8,7 @@ aliases:
 There are several
 possible [docker run](https://docs.docker.com/engine/reference/commandline/run/) command line
 options that can be used when spinning up a Docker container. The following docker run commands can
-be directly mapped from a `docker run` command to a Darcy Cloud YAML configuration file:
+be directly mapped from a `docker run` command to a [Darcy Cloud](../cloud/start-portal.md) YAML configuration file:
 
 1. Volumes
 2. Environment Variables
@@ -18,7 +18,7 @@ be directly mapped from a `docker run` command to a Darcy Cloud YAML configurati
 
 ## Volumes
 
-Volumes are primarily used to share data between containers or nodes, or to persist data upon the
+Volumes are primarily used to share data between containers or [nodes](../cloud/adding-nodes/_index.md), or to persist data upon the
 destruction of containers or nodes
 
 ### Docker Run Command
@@ -38,9 +38,9 @@ container:
     - hostDestination: /tmp/msvc
       containerDestination: /data
       # ReadWrite access to the mounted volume
-      accessMode: 'rw'
+      accessMode: "rw"
       # Accepts 'bind' or 'volume'. Default is 'bind'
-      type: 'bind'
+      type: "bind"
 ```
 
 ## Environment Variables
@@ -107,8 +107,8 @@ docker run <image> dbhost localhost:27017
 ```yaml
 container:
   commands:
-    - 'dbhost'
-    - 'localhost:27017'
+    - "dbhost"
+    - "localhost:27017"
 ```
 
 ## Privileged

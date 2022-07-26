@@ -1,5 +1,5 @@
 ---
-title : "App templating"
+title: "App templating"
 weight: 700
 aliases:
   - /darcy/darcy-cloud/applications-doc/app-doc-advanced-templating
@@ -7,12 +7,12 @@ aliases:
 
 Variables, filter and template "queries" can be used as values for any field in your deployment
 YAMLs. These variables allow you to reference values in your YAML document or any resource
-preexisting in your edge project. This functionality adds flexibility and runtime binding in your
+preexisting in your edge [project](../more/terminology.md#project). This functionality adds flexibility and runtime binding in your
 deployments files.
 
 ## Variables and Filters
 
-Variables are interpolated (replaced) when the requests are made between applications and nodes. The
+Variables are interpolated (replaced) when the requests are made between [applications](../more/terminology.md#application) and [nodes](../cloud/adding-nodes/_index.md). The
 variable value is a `snapshot` of the referenced value when the request is made. Any subsequent
 modification of the underlying value will NOT be persisted.
 
@@ -25,19 +25,19 @@ found [here](https://liquidjs.com/index.html).
 
 Variables are defined in YAML by wrapping the variable with double brackets.
 
-* Defining a variable: `{{variable-name}}`
+- Defining a variable: `{{variable-name}}`
 
 ```yaml
 env:
   - key: selfname
-    value: '{{ self.name }}'
+    value: "{{ self.name }}"
 ```
 
 #### Assigning Values
 
 Values can be assigned to a new text string.
 
-* Assigning a value: `{% assign agent = "agent-name" | findAgent %}`
+- Assigning a value: `{% assign agent = "agent-name" | findAgent %}`
 
 ```yaml
 env:
@@ -52,8 +52,8 @@ env:
 Filtering is used to display conditionals or alter the display of the text. Filters can be set as
 conditionals (where a filter may have an "If" statement).
 
-* Using a filter: `{{"agent-name" | findAgent}}`
-* Example: Getting the host value of the agent
+- Using a filter: `{{"agent-name" | findAgent}}`
+- Example: Getting the host value of the agent
   named `zebra-1`: `{% assign agent = "zebra-1" | findAgent %}{{ agent.host }}`
 
 A list of filters accepted can be found in the LiquidJS
@@ -65,8 +65,8 @@ This section details filters and values that are pre-defined.
 
 #### Filters
 
-| Name            | Description                                                                                   | Usage                           | Returns                                                 |
-| --------------- |-----------------------------------------------------------------------------------------------| ------------------------------- | ------------------------------------------------------- |
+| Name              | Description                                                                                   | Usage                           | Returns                                                 |
+| ----------------- | --------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------------------------------------- |
 | `findAgent`       | Lookup an existing ioFog Agent, by name. If name is an empty string, all agents are returned. | "`agent-name`" \| findAgent     | An ioFog Agent, as defined by Controller API            |
 | `findApplication` | Lookup an existing ioFog Application, by name                                                 | "`app-name`" \| findApplication | An ioFog Applicaiton, as defined by Controller REST API |
 
@@ -77,7 +77,7 @@ This section details filters and values that are pre-defined.
 ```yaml
 env:
   - key: selfname
-    value: '{{ self.name | upcase }}'
+    value: "{{ self.name | upcase }}"
 ```
 
 ## Application YAML Example
@@ -304,7 +304,7 @@ With controller API the same configuration looks like:
 
 ### Troubleshooting and Caveats
 
-* The algorithmic operator of `liquidjs` or variable assignment have the scope on the processing
+- The algorithmic operator of `liquidjs` or variable assignment have the scope on the processing
   string.
 
 ```json
@@ -318,7 +318,7 @@ ms.env | where: \"key\" , \"http_proxy\" | first }}"
 ....
 ```
 
-* Make sure to define the template parametric expressions as `string`, otherwise the YAML parser
+- Make sure to define the template parametric expressions as `string`, otherwise the YAML parser
   will interpret them as Object, and you will encounter multiple type of errors
 
 Incorrect:

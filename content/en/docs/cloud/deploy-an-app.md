@@ -5,17 +5,18 @@ toc: true
 aliases:
   - /darcy/darcy-cloud/get-started-edgectl/deploy-an-app
 ---
-Deploy apps using the Darcy Portal UI or terminal commands via edgectl
+
+Deploy apps using the Darcy Portal UI or terminal commands via [edgectl](../cloud/start-edgectl.md)
 
 #### Prerequisites
 
-To deploy your custom app, you will need a Darcy Cloud account with at least one node accessible
+To deploy your custom app, you will need a [Darcy Cloud](../cloud/start-portal.md) account with at least one [node](../cloud/adding-nodes/_index.md) accessible
 and `ONLINE`. You will need a basic understanding
 of [how to structure app YAML]({{<ref "/docs/apps/yaml-definition.md">}}) for Darcy Cloud.
 
 ## Deploy an App using Darcy Cloud Portal
 
-1. Go to the Darcy Cloud project page
+1. Go to the Darcy Cloud [project](../more/terminology.md#project) page
 2. Select `Apps`
 3. Click on `+ DEPLOY APP`
 4. Drag n' drop a [YAML file]({{<ref "/docs/apps/yaml-definition.md">}}) into the box
@@ -24,11 +25,11 @@ of [how to structure app YAML]({{<ref "/docs/apps/yaml-definition.md">}}) for Da
 
 ### View your Application Details
 
-Click on your app in the list of application to see its details.
+Click on your app in the list of [application](../more/terminology.md#application) to see its details.
 
 ![Application Detail View](/images/18done.png)
 
-The appl details page contains information about its microservices, routes, the nodes
+The appl details page contains information about its [microservices](../apps/microservices.md), routes, the nodes
 involved in running the microservices and its YAML Definition.
 
 Darcy Cloud Portal allows you to edit your app YAML right in the browser. More information about the
@@ -90,7 +91,6 @@ e.g. `edgectl get app edgeworx-heart-rate --json`: (output abbreviated for clari
   ],
   "status": "running"
 }
-
 ```
 
 Note that an app consists of one or more microservices (containers).

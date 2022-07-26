@@ -13,9 +13,9 @@ edgectl. Linux users can directly use the Register Node command on their termina
 
 ### Prerequisites
 
-* [Darcy Cloud Account (Free)](https://cloud.darcy.ai)
-* Install [edgectl CLI]({{<ref "/docs/cloud/start-edgectl.md">}})
-* Install [Multipass](https://multipass.run): it is used by edgectl to manage VMs.
+- [Darcy Cloud Account (Free)](https://cloud.darcy.ai)
+- Install [edgectl CLI]({{<ref "/docs/cloud/start-edgectl.md">}})
+- Install [Multipass](https://multipass.run): it is used by edgectl to manage VMs.
 
 {{< alert style="warning" >}} Virtual Node is not currently compatible with attached video devices.
 You can still build locally using attached video and deploy to edge devices with attached video.

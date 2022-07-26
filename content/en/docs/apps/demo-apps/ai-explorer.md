@@ -1,5 +1,5 @@
 ---
-title : "AI Explorer demo app"
+title: "AI Explorer demo app"
 weight: 70
 aliases:
   - /darcy/darcy-cloud/get-started-ec/darcy-ai-explorer-application
@@ -7,7 +7,7 @@ aliases:
 
 ![Heart Rate Demo App](/images/ai-exp-hero.jpg)
 
-The Darcy AI Explorer is a showcase app for Darcy AI. Bootstrap your AI project using
+Darcy AI Explorer is a showcase app for Darcy AI. Bootstrap your AI project using
 powerful face detection, pose detection, QR code scanning and more.
 
 #### Requirements
@@ -44,7 +44,8 @@ right of your screen.
 If you are not already seeing the app listed, click the `APPS` tab to see all of the apps in your
 current project. Click the app to access the app detail view.
 
-Once your Darcy AI Explorer app is running, you can view the UI and use the app by visiting the following URL in any browser. Replace `YOUR.DEVICE.IP.ADDRESS` with the actual IP address of your device. See Darcy AI in action and explore what it can do!
+Once your Darcy AI Explorer app is running, you can view the UI and use the app by visiting
+the following URL in any browser. Replace `YOUR.DEVICE.IP.ADDRESS` with the actual IP address of your device.
 
 ```bash
 http://YOUR.DEVICE.IP.ADDRESS:5555/
@@ -63,8 +64,8 @@ spec:
       agent:
         name: ''
       images:
-        arm: 'darcyai/darcy-ai-explorer:1.0.0'
-        x86: 'darcyai/darcy-ai-explorer:1.0.0'
+        arm: 'darcyai/darcy-ai-explorer:1.0.2'
+        x86: 'darcyai/darcy-ai-explorer:1.0.2'
       container:
         rootHostAccess: true
         env:
@@ -78,4 +79,5 @@ spec:
             hostDestination: /dev
             type: bind
             accessMode: rw
+
 ```
