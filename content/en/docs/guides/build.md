@@ -241,6 +241,9 @@ pipeline.set_perceptor_config("peeps", "face_rectangle_color", RGB(255, 255, 255
 pipeline.set_perceptor_config("peeps", "face_rectangle_thickness", 1)
 ```
 
+[See all People Perceptor configuration options](https://darcyai.github.io/darcyai/perceptors/peopleperceptor/)
+
+
 ### Start the Pipeline
 
 ```python
