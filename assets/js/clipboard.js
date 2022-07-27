@@ -22,7 +22,7 @@ clipboard.on('success', function(e) {
     console.info('Text:', e.text);
     console.info('Trigger:', e.trigger);
 
-    e.clearSelection();
+    window.setTimeout(() => e.clearSelection(), 3000);
 });
 
 clipboard.on('error', function(e) {
