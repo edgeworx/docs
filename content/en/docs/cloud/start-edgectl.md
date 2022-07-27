@@ -33,7 +33,7 @@ _edgectl_ currently supports Mac, Linux & Windows.
 
 On Mac, we can use [brew](https://brew.sh) to install _edgectl_:
 
-```shell
+```bash
 brew install edgeworx/edgectl/edgectl
 ```
 
@@ -41,7 +41,7 @@ brew install edgeworx/edgectl/edgectl
 
 On Linux distros, use `get-edgectl.bash`:
 
-```shell
+```bash
 curl https://cloud.darcy.ai/get-edgectl.bash | bash
 ```
 
@@ -76,7 +76,7 @@ a _Personal Access Token_ or _Project Access Token_ from `cloud.darcy.ai`. For _
 Token_, click `Access Tokens` in the upper-right account menu. For _Project Access Token_, click the
 settings (gear) icon on the project page. Once you have the _Access Token_, you can execute:
 
-```shell
+```bash
 edgectl login --token xyz
 ```
 
@@ -85,7 +85,7 @@ edgectl login --token xyz
 Let's get familiar with _edgectl_. We can observe the main use cases by running the top-level help
 command:
 
-```shell
+```bash
 edgectl --help
 ```
 
