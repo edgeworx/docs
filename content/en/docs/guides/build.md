@@ -170,9 +170,9 @@ def live_feed_callback(pom, input_data):
     frame = pom.peeps.annotatedFrame().copy()
 
     # Add some text telling how many people are in the scene
-    label = "{} peeps".format(pom.peeps.peopleCount())
-    color = (0, 255, 0)
-    cv2.putText(frame, str(label), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, color, 1, cv2.LINE_AA)
+    label = "PEOPLE COUNT={}".format(pom.peeps.peopleCount())
+    color = (255, 255, 255)
+    cv2.putText(frame, str(label), (10, 450), cv2.FONT_HERSHEY_DUPLEX, .65, color, 1, cv2.LINE_AA)
 
     # If we have anyone, demonstrate looking up that person in the POM by getting their face size
     # And then put it on the frame as some text
@@ -181,9 +181,9 @@ def live_feed_callback(pom, input_data):
         for person_id in pom.peeps.people():
             face_size = pom.peeps.faceSize(person_id)
             face_height = face_size[1]
-            label2 = "{} face height".format(face_height)
-            color = (0, 255, 255)
-            cv2.putText(frame, str(label2), (10, 80), cv2.FONT_HERSHEY_SIMPLEX, 1, color, 1, cv2.LINE_AA)
+            label2 = "FACE HEIGHT={}".format(face_height)
+            color = (255, 255, 255)
+            cv2.putText(frame, str(label2), (250, 450), cv2.FONT_HERSHEY_DUPLEX, .65, color, 1, cv2.LINE_AA)
 
     # Pass the finished frame out of this callback so the Live Feed output stream can display it
     return frame
@@ -233,8 +233,15 @@ pipeline.add_perceptor("peeps", people_ai, input_callback=people_input_callback)
 # Update the configuration of the People Perceptor to show the pose landmark dots on the annotated video frame
 pipeline.set_perceptor_config("peeps", "show_pose_landmark_dots", True)
 pipeline.set_perceptor_config("peeps", "pose_landmark_dot_size", 2)
-pipeline.set_perceptor_config("peeps", "pose_landmark_dot_color", RGB(0, 255, 0))
+pipeline.set_perceptor_config("peeps", "pose_landmark_dot_color", RGB(255, 255, 255))
+
+# Update the configuration of the People Perceptor to show the face rectangle on the annotated video frame
+pipeline.set_perceptor_config("peeps", "show_face_rectangle", True)
+pipeline.set_perceptor_config("peeps", "face_rectangle_color", RGB(255, 255, 255))
+pipeline.set_perceptor_config("peeps", "face_rectangle_thickness", 1)
 ```
+
+[See all People Perceptor configuration items](https://darcyai.github.io/darcyai/perceptors/peopleperceptor/)
 
 ### Start the Pipeline
 
