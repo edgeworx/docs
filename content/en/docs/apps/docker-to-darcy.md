@@ -23,7 +23,7 @@ destruction of containers or nodes
 
 ### Docker Run Command
 
-```shell
+```bash
 docker run <image> -v /path/to/mount/directory:/path/to/destination/in/container
 ```
 
@@ -50,7 +50,7 @@ same key-value pairs in the YAML configuration as shown below
 
 ### Docker Run Command
 
-```shell
+```bash
 docker run <image> ---env BASE_URL=http://localhost:8080/data
 ```
 
@@ -74,7 +74,7 @@ file
 
 ### Docker Run Command
 
-```shell
+```bash
 docker run <image> -p 5000:80
 ```
 
@@ -98,7 +98,7 @@ with the exception of `entrypoint` arguments
 
 ### Docker Run Command
 
-```shell
+```bash
 docker run <image> dbhost localhost:27017
 ```
 
@@ -118,7 +118,7 @@ of the node or machine it is being run on
 
 ### Docker Run Command
 
-```shell
+```bash
 docker run <image> --privileged
 ```
 

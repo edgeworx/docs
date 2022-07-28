@@ -33,7 +33,7 @@ window.fetch(
 
 - As a login option in edgectl or for a specific command
 
-```shell
+```bash
 edgectl login --token <access_token>
 edgectl --token <access_token> account get <your_email>
 ```

@@ -5,7 +5,7 @@ aliases:
   - /darcy/darcy-cloud/get-started-ec/nodes/get-started-add-node
 ---
 
-To add a [node](../adding-nodes/_index.md) to your [project](../../more/terminology.md#project), you will be running a command line script. For this we assume you
+To add a [node](../adding-nodes/_index.md) to your [project](/docs/more/terminology.md#project), you will be running a command line script. For this we assume you
 have ssh or console access to your node and are using a common shell, such as zsh or bash.
 Additionally, the installation script by default will need to run as sudo to register the necessary
 services to be automatically started after the node is rebooted.
@@ -60,19 +60,19 @@ You now have an edge node, let's start using it!
 
 ## Add a node using edgectl
 
-In [Darcy Cloud](../cloud/start-portal.md), nodes are edge devices that run Edgeworx Agents. Ultimately, we want to deploy
-[applications](../../more/terminology.md#application) to these nodes to put them to work.
+In [Darcy Cloud](/docs/cloud/start-portal.md), nodes are edge devices that run Edgeworx Agents. Ultimately, we want to deploy
+[applications](/docs/more/terminology.md#application) to these nodes to put them to work.
 
-If we list nodes in our default [organization](../../more/terminology.md#account--org) and project, we will notice that we have no nodes:
+If we list nodes in our default [organization](/docs/more/terminology.md#account--org) and project, we will notice that we have no nodes:
 
-```shell
+```bash
 edgectl get nodes
 ```
 
 In order to deploy nodes, we must get the node install script. You can use this command to get a
 shell snippet that you can execute on the node:
 
-```shell
+```bash
 $ edgectl get node-register-script -t
 curl -s https://ecj_vfsw9wess5kheafxaeaeh2kskkv301e9f0ip@api.darcy.ai/v1/project/b75676cb-ae3f-4808-a992-0811e077d783/node-install-script | sudo bash
 ```
@@ -83,7 +83,7 @@ respective project's node pool.
 
 If you wish view the raw contents of the node install script:
 
-```shell
+```bash
 edgectl project node-install-script --show-script --text
 ```
 
@@ -93,14 +93,14 @@ This is helpful if you wish to review or debug the installation procedure.
 
 First, get the node-install-script shell snippet, and copy it to the clipboard:
 
-```shell
+```bash
 $ edgectl get node-install-script -t
 curl -s https://ecj_vfsw9wess5kheafxaeaeh2kskkv301e9f0ip@api.darcy.ai/v1/project/b75676cb-ae3f-4808-a992-0811e077d783/node-install-script | sudo bash
 ```
 
 Then `SSH` into your node (in this case, a Raspberry Pi):
 
-```shell
+```bash
 $ ssh pi@raspberrypi.local
 pi@raspberrypi.local's password: ********
 Linux raspberrypi 5.10.94-v8+ #1518 SMP PREEMPT Thu Jan 27 14:55:19 GMT 2022 aarch64
@@ -112,7 +112,7 @@ pi@raspberrypi:~ $
 Then paste the node install script shell snippet at the Pi terminal. This installs the necessary
 Darcy Cloud components, and connects your node to Darcy Cloud.
 
-```shell
+```bash
 pi@raspberrypi:~ $ curl -s https://ecj_vfsw9wess5kheafxaeaeh2kskkv301e9f0ip@api.darcy.ai/v1/project/b75676cb-ae3f-4808-a992-0811e077d783/node-install-script | sudo bash
 Installing Edgeworx Agent
 １ Initializing

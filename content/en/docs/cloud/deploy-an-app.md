@@ -45,7 +45,7 @@ Once we have an edge node in our project, we can deploy applications to run on t
 
 To deploy an app, use `edgectl deploy app`. We can run the following to learn how it works:
 
-```shell
+```bash
 edgectl deploy app --help
 ```
 
@@ -56,13 +56,13 @@ and [Darcy AI Explorer](/docs/apps/demo-apps/ai-explorer).
 The `YAML` file defines everything about our edge application that is required to deploy it. For
 example:
 
-```shell
+```bash
 edgectl deploy app ./edgeworx-heart-rate.yaml
 ```
 
 You can use `edgectl` commands to view details of the app.
 
-```shell
+```bash
 $ edgectl get apps
 NAME                 DESCRIPTION  STATUS
 edgeworx-heart-rate               running
@@ -96,7 +96,7 @@ e.g. `edgectl get app edgeworx-heart-rate --json`: (output abbreviated for clari
 Note that an app consists of one or more microservices (containers).
 Use `edgectl get microservices`:
 
-```shell
+```bash
 $ edgectl get microservices --app edgeworx-heart-rate
 NAME     STATUS   IMAGE                                        NODE
 monitor  RUNNING  edgeworx/healthcare-heart-rate:arm-v1        raspberrypie1c0fe7939883f228946
@@ -105,7 +105,7 @@ viewer   RUNNING  edgeworx/healthcare-heart-rate-ui-arm:1.0.0  raspberrypie1c0fe
 
 To view the details of the `monitor` microservice in the `edgeworx-heart-rate` app:
 
-```shell
+```bash
 edgectl get microservice --app edgeworx-heart-rate monitor
 ```
 
@@ -115,7 +115,7 @@ You can use the `edgectl logs` command to view the container logs for a microser
 effectively equivalent to executing `docker logs CONTAINER_ID`. The `logs` command takes one
 argument, `APP_NAME/MICROSERVICE_NAME`. For example:
 
-```shell
+```bash
 $ edgectl logs edgeworx-heart-rate/monitor --tail 5
 [Thu Feb 24 2022 20:52:49] [LOG]   test-mode = true, generating mock sensor data..
 [Thu Feb 24 2022 20:52:54] [LOG]   Retrieving heart rate sensor reading
