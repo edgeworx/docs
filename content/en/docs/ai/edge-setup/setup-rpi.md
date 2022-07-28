@@ -122,20 +122,20 @@ Install the DarcyAI pacakge for Python with the command `pip install darcyai`.
 You will need the Docker container runtime and command line tools installed on your Raspberry Pi.
 Install Docker with the following commands.
 
-```shell
+```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
 ```
 
 This first command will download a convenient install script from Docker. Now run that script.
 
-```shell
+```bash
 sudo sh get-docker.sh
 ```
 
 Once Docker is installed, you need to add your standard user `pi` to the `docker` group so you can
 execute Docker commands without using `sudo`.
 
-```shell
+```bash
 sudo usermod -aG docker pi
 ```
 
@@ -169,7 +169,7 @@ longer but should prevent the crash.
 You will need to reboot your Raspberry Pi after finishing all of these installation steps. Make sure
 your camera and your Google Coral USB device are attached to your RPi when you reboot.
 
-```shell
+```bash
 sudo reboot
 ```
 

@@ -9,7 +9,7 @@ aliases:
 
 The Heart Rate app provided on the [Darcy Cloud](../../cloud/start-portal.md) platform simulates a wearable device
 transmitting a person's heartbeat at the edge. The Wearable sends heart rate data over bluetooth to
-a data collector [microservice](../microservices.md) located on the primary [node](../../cloud/adding-nodes/_index.md). The Data collector microservice then
+a data collector [microservice](/docs/apps/microservices.md) located on the primary [node](../../cloud/adding-nodes/_index.md). The Data collector microservice then
 communicates with another microservice running a web server on the secondary node to display the
 heart rate data on a graph.
 
@@ -18,8 +18,8 @@ heart rate data on a graph.
 - A Darcy Cloud Account
 - Any edge node (or a virtual node)
 
-{{<alert>}} Although this [application](../../more/terminology.md#application) works best with two nodes, you can deploy it with only one
-node and run all [microservices](../microservices.md) on the same device. The YAML will automatically detect if you have
+{{<alert>}} Although this [application](/docs/more/terminology.md#application) works best with two nodes, you can deploy it with only one
+node and run all [microservices](/docs/apps/microservices.md) on the same device. The YAML will automatically detect if you have
 one or two nodes. {{</alert>}}
 
 ---
