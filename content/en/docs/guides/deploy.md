@@ -1,5 +1,5 @@
 ---
-title: "Deploy an app to the edge in about 30 minutes"
+title: "Deploy an app to the edge in under 10 minutes"
 linkTitle: "Deploy to the edge"
 weight: 250
 ---
