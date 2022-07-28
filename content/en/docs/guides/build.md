@@ -70,16 +70,16 @@ or [Windows (coming soon)](https://stackoverflow.com/questions/5087831/how-shoul
 
 ```bash
 # Install OpenCV
-pip install opencv-python>=4.5.5.64
+pip install "opencv-python>=4.5.5.64"
 
 # Install the Pillow library
-pip install Pillow>=8.3.2
+pip install "Pillow>=8.3.2"
 
 # Install the Numpy library
-pip install numpy>=1.22.4
+pip install "numpy>=1.22.4"
 
 # Install the Imutils library
-pip install imutils>=0.5.4
+pip install "imutils>=0.5.4"
 
 # Install the DarcyAI Engine
 pip install darcyai
