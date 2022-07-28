@@ -243,7 +243,6 @@ pipeline.set_perceptor_config("peeps", "face_rectangle_thickness", 1)
 
 [See all People Perceptor configuration items](https://darcyai.github.io/darcyai/perceptors/peopleperceptor/)
 
-
 ### Start the Pipeline
 
 ```python
