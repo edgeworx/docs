@@ -90,6 +90,31 @@ pip install tensorflow
 
 **Apple M1 Platforms**:
 
+On Apple Silicon (M1), the Darcy AI Engine requires a number of components to be installed. While you can manually install these components, we have bundled these up into a script for convenience. This script makes use of conda to create an isolated dev environment for AI Engine. See the macOS (Apple Silicon) setup guide for details of the installed components and dependencies.
+  
+#Install Miniconda
+Download Miniconda from the Conda website.
+
+Install Miniconda by running the command below:
+```
+bash Miniconda3-latest-MacOSX-x86_64.sh
+```
+  
+# Install Darcy setup script
+
+Install the Darcy setup script with the following commands:
+
+```
+curl -s https://raw.githubusercontent.com/darcyai/darcyai/develop/setup_darcyai_m1.bash > install.bash
+chmod +x install.bash
+./install.sh
+```
+
+Restart your terminal. Then execute `conda activate darcyai` to activate the dev environment.
+
+For processing video, Darcy AI Engine needs access to the system camera: macOS may prompt you to grant access to the camera.
+
+
 {{< rawhtml >}}
 
 <div class="alert-container">
@@ -107,7 +132,18 @@ If you are on Apple M1 silicon, these instructions will not work for you. M1 Mac
 <div class="tab-pane" id="linux" role="tabpanel" aria-labelledby="linux-tab">
 {{</ rawhtml>}}
 
-Linux coming soon...
+**Pre-reqs**
+- Python 3.6.9 or greater
+
+**Steps**
+
+Execute the following commands to install the Darcy packages
+
+```
+pip install "opencv-python>=4.5.5.64"
+pip install "tensorflow"
+pip install "darcyai==2.1.0.dev20220727"
+```
 
 {{< rawhtml >}}
 
@@ -115,7 +151,23 @@ Linux coming soon...
 <div class="tab-pane" id="windows" role="tabpanel" aria-labelledby="windows-tab">
 {{</ rawhtml>}}
 
-Windows coming soon...
+These instructions assume Windows 10 or greater.
+
+**Pre-requisities**
+
+Python 3.6.9 or greater.
+
+If not already installed, download and install the latest version.
+
+**Steps**
+
+From your terminal, install each of the Python packages:
+
+```
+py -m pip install "opencv-python>=4.5.5.64"
+py -m pip install "tensorflow"
+py -m pip install "darcyai==2.1.0.dev20220727"
+```
 
 {{< rawhtml >}}
 
