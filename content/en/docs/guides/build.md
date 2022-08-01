@@ -112,7 +112,14 @@ chmod +x install.bash
 
 Restart your terminal. Then execute `conda activate darcyai` to activate the dev environment.
 
-For processing video, Darcy AI Engine needs access to the system camera: macOS may prompt you to grant access to the camera.
+[block:callout]
+{
+  "type": "info",
+  "title": "Processing Video",
+  "body": "For processing video, Darcy AI Engine needs access to the system camera: macOS may prompt you to grant access to the camera.
+"
+}
+[/block]
 
 
 {{< rawhtml >}}
