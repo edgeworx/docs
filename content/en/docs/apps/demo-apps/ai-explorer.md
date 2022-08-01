@@ -14,12 +14,14 @@ powerful face detection, pose detection, QR code scanning and more.
 
 * A Darcy Cloud account
 * Compatible edge node with 1GB or more of disk space available for application download
-  * ARM-based edge device or virtual node
-  * x86-based edge device or virtual node
+  * ARM-based edge device or [virtual node](/docs/cloud/adding-nodes/virtual-node)
+  * x86-based edge device or [virtual node](/docs/cloud/adding-nodes/virtual-node)
 
-{{<alert>}} If you have previously deployed an application to your node, you can either
+{{<alert>}}
+If you have previously deployed an application to your node, you can either
 start a new project and add a node there or delete the existing application from the node. We just
-need to be sure that we have a free node inside our project to deploy to {{</alert>}}
+need to be sure that we have a free node inside our project to deploy to.
+{{</alert>}}
 
 ---
 
@@ -82,6 +84,4 @@ spec:
 
 ```
 
-{{<alert style="info">}}
-Note that AI Explorer collects [anonymous usage statistics](/docs/ai/anonymous-statistics.md).
-{{</alert>}}
+Note that AI Explorer is built on [Darcy AI Engine](/docs/ai/), which collects [anonymous usage statistics](/docs/ai/anonymous-statistics).

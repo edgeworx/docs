@@ -25,20 +25,14 @@ platform (via an embedded Segment [client](https://segment.com/docs/connections/
 Additionally, events are sent when a pipeline completes, an error condition is encountered, or
 if a certain amount of time has elapsed since the last event (a _heartbeat_).
 
-The information collected is:
+The information collected comprises:
 
-- Generated anonymous machine ID
 - AI Engine version
-- Python runtime version
-- System environment (OS, CPUs)
-- Containerization technology
-- AI acceleration technology
+- Python env info
+- System environment (OS, CPU, etc)
 - Timezone
-- Basic details of the pipeline config
-  - Generated anonymous pipeline ID
-  - Quantity and names of input and output streams
+- Anonymous pipeline info (# of input/output streams, etc)
 - Details of error messages
-- FIXME: complete this list
 
 This mechanism imposes minimal runtime overhead. Data collection events are batched and
 sent asynchronously. Any failure in statistics collection will not affect the state of the
@@ -49,4 +43,5 @@ The anonymous statistics are stored in a US region. No Personally Identifiable I
 ## Opt-Out
 
 You can opt out from sending anonymous statistics via the `DARCYAI_DISABLE_TELEMETRY` environment
-variable. You can set this variable with the following command: `export DARCYAI_DISABLE_TELEMETRY=1`.
+variable. You can set this variable with the following command: `export DARCYAI_DISABLE_TELEMETRY=1`. You
+can also pass
