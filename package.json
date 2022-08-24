@@ -69,6 +69,6 @@
   },
   "dependencies": {
     "broken-link-checker": "^0.7.8",
-    "linkinator": "^3.1.0"
+    "linkinator": "^4.0.2"
   }
 }
