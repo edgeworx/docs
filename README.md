@@ -1,8 +1,10 @@
-# Welcome to Darcy's Docs Repository
+# docs.darcy.ai
+
+[![Better Uptime Badge](https://betteruptime.com/status-badges/v1/monitor/e975.svg)](https://betteruptime.com/?utm_source=status_badge)
 
 Here you can contribute to the Darcy Docs Site, which lives at [docs.darcy.ai](https://docs.darcy.ai).
 
-# Overview
+## Overview
 
 The docs site is generated from markdown files stored in `/content` by the [Hugo](https://gohugo.io)
 site generator. The Hugo theme is a fork of [Doks](https://getdoks.org).
