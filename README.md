@@ -263,11 +263,8 @@ into the pipeline for various reasons.
 
 ### Script & Markdown Linting
 
-# <<<<<<< HEAD
-
-> > > > > > > origin/staging
-> > > > > > > This runs the linter against scripts and the markdown files. It does not check links. Example
-> > > > > > > below. All lint errors must be fixed.
+This runs the linter against scripts and the markdown files. It does not check links. Example
+below. All lint errors must be fixed.
 
 ````text
 $ npm run lint
