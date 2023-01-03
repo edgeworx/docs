@@ -54,10 +54,10 @@ lqipWidth = "20x"
 smallLimit = "300"
 
 # Footer
-footer = "Copyright (c) 2022 Edgeworx Inc."
+footer = "Copyright (c) 2023 Edgeworx"
 
 # Feed
-copyRight = "Copyright (c) 2022 Edgeworx Inc."
+copyRight = "Copyright (c) 2023 Edgeworx"
 
 # Alert
 alert = false
