@@ -7,9 +7,6 @@
 /** Import Bootstrap */
 @import "bootstrap/scss/bootstrap";
 
-/** Import highlight.js */
-// @import "highlight.js/scss/github-dark-dimmed";
-
 /** Import KaTeX */
 @import "katex/dist/katex";
 
@@ -22,6 +19,7 @@
 @import "components/code";
 @import "components/details";
 @import "components/syntax";
+@import "components/syntax-dark";
 @import "components/comments";
 @import "components/forms";
 @import "components/images";
@@ -33,4 +31,4 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/sidebar";
-@import "custom";
+@import "common/custom";

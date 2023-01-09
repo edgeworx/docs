@@ -2,7 +2,13 @@ name: Hugo
 
 on:
   push:
+    paths-ignore:
+      - 'CHANGELOG.md'
+      - 'README.md'
   pull_request:
+    paths-ignore:
+      - 'CHANGELOG.md'
+      - 'README.md'
 
 jobs:
   build:
