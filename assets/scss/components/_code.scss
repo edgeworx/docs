@@ -7,12 +7,13 @@ samp {
   border-radius: $border-radius;
 }
 
-
-code {
-  //background: $edgeneutral-05;
+table code,
+p code,
+li code,
+tab-pane code{
+  background: $edgeneutral-05;
   color: $edgeneutral-3;
   padding: 0.125rem 0.25rem;
-  font-family: "JetBrains Mono", monospace;
 }
 
 pre.chroma {
