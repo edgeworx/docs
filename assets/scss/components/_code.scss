@@ -24,17 +24,13 @@ pre code {
   display: block;
   overflow-x: auto;
 
-  //line-height: $line-height-base;
+  // line-height: $line-height-base;
   padding: 1.25rem 1.5rem;
 
-  //tab-size: 4;
+  // tab-size: 4;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
 }
-
-//.hljs {
-//  padding: 1.5rem !important;
-//}
 
 @include media-breakpoint-down(sm) {
   pre,
