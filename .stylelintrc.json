@@ -44,9 +44,5 @@
         ]
       }
     ]
-  },
-  "ignoreFiles": [
-    "./assets/scss/components/_syntax.scss",
-    "./assets/scss/components/_syntax-dark.scss"
-  ]
+  }
 }
