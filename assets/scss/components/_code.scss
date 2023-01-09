@@ -10,7 +10,7 @@ samp {
 table code,
 p code,
 li code,
-tab-pane code{
+tab-pane code {
   background: $edgeneutral-05;
   color: $edgeneutral-3;
   padding: 0.125rem 0.25rem;
@@ -23,8 +23,10 @@ pre.chroma {
 pre code {
   display: block;
   overflow-x: auto;
+
   //line-height: $line-height-base;
   padding: 1.25rem 1.5rem;
+
   //tab-size: 4;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
