@@ -4,6 +4,9 @@ Put CSS for custom HTML components here.
 
 */
 
+
+
+
 // Home
 .no-hover-link {
   &:hover {
@@ -242,4 +245,9 @@ $link-color: #006390;
       }
     }
   }
+}
+
+
+.chroma {
+  background-color: #032332;
 }

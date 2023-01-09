@@ -7,9 +7,30 @@ aliases:
   - /docs/cloud/edgectl
 ---
 
+
 ```go
-fmt.Println("huzzah")
+// newResourcePool builds a new resource.Pool for the server.
+func newResourcePool() (*resource.Pool, error) {
+	log := resource.StdoutLogging()
+
+	log.Debugf("Edgeworx CloudAPI %s", buildinfo.Info())
+	log.Debug("Server bootstrap...")
+
+	var (
+		err error
+		rp  *resource.Pool
+		cfg *config.Config
+	)
+
+	cfg, err = config.New()
+	if err != nil {
+		log.Errorf("bootstrap: config: %v", err)
+		return nil, errz.Err(err)
+	}
+
+
 ```
+
 
 _edgectl_ is [Darcy Cloud's](../cloud/start-portal.md) command line interface (CLI). It can be used to manage Darcy Cloud
 [accounts, organizations,](../more/terminology.md#account--org) [projects](../more/terminology.md#project), [nodes](../cloud/adding-nodes/_index.md), and [applications](../more/terminology.md#application).
