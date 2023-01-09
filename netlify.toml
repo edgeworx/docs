@@ -3,8 +3,8 @@
   functions = "functions"
 
 [build.environment]
-  NODE_VERSION = "16.0.0"
-  NPM_VERSION = "7.10.0"
+  NODE_VERSION = "16.16.0"
+  NPM_VERSION = "8.11.0"
 
 [context.production]
   command = "npm run build"
@@ -25,8 +25,7 @@
   package = "netlify-plugin-submit-sitemap"
 
 	[plugins.inputs]
-#    baseUrl = "https://darcydocs.netlify.app/"
-    baseUrl = "http://localhost:1313/"
+    baseUrl = "https://darcydocs.netlify.app/"
     sitemapPath = "/sitemap.xml"
     ignorePeriod = 0
     providers = [

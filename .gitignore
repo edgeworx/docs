@@ -7,3 +7,5 @@ resources
 darcyai-sdk.iml
 .DS_Store
 /scratch/
+.idea
+/.vscode

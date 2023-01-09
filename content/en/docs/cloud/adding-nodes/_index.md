@@ -4,6 +4,8 @@ weight: 300
 linkTitle: "Edge nodes"
 aliases:
   - /darcy/darcy-cloud/what-is-darcy-cloud
+  - /cloud/portal/nodes
+  - /docs/cloud/portal/nodes/
 ---
 
 Edge devices are the final point of contact for data from the

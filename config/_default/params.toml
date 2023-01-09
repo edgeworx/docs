@@ -54,10 +54,10 @@ lqipWidth = "20x"
 smallLimit = "300"
 
 # Footer
-footer = "Copyright (c) 2022 Edgeworx Inc."
+footer = "Copyright (c) 2023 Edgeworx"
 
 # Feed
-copyRight = "Copyright (c) 2022 Edgeworx Inc."
+copyRight = "Copyright (c) 2023 Edgeworx"
 
 # Alert
 alert = false
@@ -77,7 +77,6 @@ lastMod = true
 
 segmentAnalytics = "zKMEacyNthzlsDe1GAzCtjZ44oXHZg0y" # cloud.dev.darcy.ai
 googleAnalytics = "G-GSQDEJETT3"
-#segmentAnalytics = "1Ov0ZtkFrwvUYaLM5AqlpEJahF2rwuHB"
 
 [options]
   lazySizes = true
@@ -87,7 +86,7 @@ googleAnalytics = "G-GSQDEJETT3"
   darkMode = false
   bootStrapJs = true
   breadCrumb = false
-  highLight = true
+#  highLight = true
   kaTex = false
   multilingualMode = false
   docsVersioning = false
