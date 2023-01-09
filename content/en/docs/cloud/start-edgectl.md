@@ -7,6 +7,10 @@ aliases:
   - /docs/cloud/edgectl
 ---
 
+```go
+fmt.Println("huzzah")
+```
+
 _edgectl_ is [Darcy Cloud's](../cloud/start-portal.md) command line interface (CLI). It can be used to manage Darcy Cloud
 [accounts, organizations,](../more/terminology.md#account--org) [projects](../more/terminology.md#project), [nodes](../cloud/adding-nodes/_index.md), and [applications](../more/terminology.md#application).
 

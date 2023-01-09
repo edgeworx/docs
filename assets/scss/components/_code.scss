@@ -8,29 +8,29 @@ samp {
 }
 
 code {
-  background: $edgeneutral-05;
-  color: $edgeneutral-3 !important;
+  //background: $edgeneutral-05;
+  //color: $edgeneutral-3 !important;
   padding: 0.125rem 0.25rem;
   font-family: "JetBrains Mono", monospace;
 }
 
-pre {
-  margin: 2rem 0;
+pre.chroma {
+  margin: 1.5rem 0;
 }
 
 pre code {
   display: block;
   overflow-x: auto;
-  line-height: $line-height-base;
+  //line-height: $line-height-base;
   padding: 1.25rem 1.5rem;
-  tab-size: 4;
+  //tab-size: 4;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
 }
 
-.hljs {
-  padding: 1.5rem !important;
-}
+//.hljs {
+//  padding: 1.5rem !important;
+//}
 
 @include media-breakpoint-down(sm) {
   pre,
