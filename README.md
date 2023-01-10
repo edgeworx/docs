@@ -182,25 +182,20 @@ with `![My PDF](/pdfs/my.pdf)`.
 > NOTE: Use descriptive file names for uploaded images. _DO NOT_ upload a file
 > named `screen-shot-2021-10-08-at-5.59.22-pm.png`; instead upload `portal-projects-overview.png`.
 
-### Alerts
+### Alerts / Callouts
 
-You can use the `alert` [shortcode](https://gohugo.io/content-management/shortcodes/) to generate
+You can use the `info` [shortcode](https://gohugo.io/content-management/shortcodes/) to generate
 [Bootstrap-style alerts](https://getbootstrap.com/docs/4.0/components/alerts/).
 
 ```markdown
-{{<alert>}}
+{{<info>}}
 Here's the info you're looking for!
-{{</alert>}}
+
+For more info, go [here](https://example.com).
+{{</info>}}
 ```
 
-The default alert style is `info`, but you can explicitly set a style (`success`, `info`, `warning`, `danger`).
-
-```markdown
-{{<alert style="warning">}}
-If you do not have any of the above hardware, you can create a VM and run
-the node installation script.
-{{</alert>}}
-```
+You can also use `{{<success>}}`, `{{<warning>}}`, and `{{<danger>}}`.
 
 ### Links
 
@@ -220,6 +215,14 @@ If you are linking outside the current dir:
 
 - If you're linking to a file below the current dir, typically use a relative path, e.g. `[the below thing]({{<ref "./c/d.md">}})`.
 - If you're linking to a file above the current dir, typically use absolute an absolute path, e.g. `[the above thing]({{<ref "/docs/cloud/e/f.md">}})`
+
+
+### Tabs
+
+Tabs can be used when there are several options, e.g. `macOS | Linux | Windows`. The tabs
+mechanism has significant flexibility, such as including content from separate
+files. See [these docs](https://kubernetes.io/docs/contribute/style/hugo-shortcodes/#tabs).
+
 
 ### Raw HTML
 

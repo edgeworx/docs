@@ -14,17 +14,11 @@
 
 
 
-<div class="alert alert-{{$style}} d-flex" role="alert">
+<div class="alert alert-info d-flex callout" role="alert">
   <div class="flex-shrink-1 alert-icon">
-    <img src="{{ $icon }}" alt="{{ $style }}" class="img-fluid" width="24" />
+    <img src="/images/alerts/alert-info.png" alt="Info" class="img-fluid" width="24" />
   </div>
-  {{ with .Get "text"}}
-    <div class="w-100">{{ . | safeHTML }} </div>
-  {{ else }}
-    {{ with .Inner}}
-      <div class="w-100"> {{ . | markdownify}}</div>
-    {{ else }}
-      {{ errorf "No valid text variable or Inner content given"}}
-    {{ end }}
-  {{ end}}
+  <div class="w-100">
+        {{ trim .Inner " \n" | markdownify }}
+  </div>
 </div>

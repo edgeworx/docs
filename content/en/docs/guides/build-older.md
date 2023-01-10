@@ -1,6 +1,6 @@
 ---
-title: "Build an edge AI app in about 30 minutes"
-linkTitle: "Build an edge AI app"
+title: "Build an edge AI app in about 30 minutes older"
+linkTitle: "Build an edge AI app older"
 weight: 200
 ---
 
@@ -18,7 +18,7 @@ Darcy AI can run in CPU mode (if you don't have a Coral accelerator attached), b
 
 - macOS (Linux & Windows coming soon)
 - 5GB or more of free disk space
-- Video source (like a built-in web cam or attached USB cam)
+- Video source (like a built-in webcam or attached USB cam)
 - Basic command line knowledge
 - Basic Python knowledge
 
@@ -32,7 +32,7 @@ Darcy AI can run in CPU mode (if you don't have a Coral accelerator attached), b
 
 {{< tabs name="install-deps" >}}
 
-{{{% tab name="macOS (amd64)" %}}
+{{{% tab name="macOS" %}}
 
 Install Python 3.6.9 or greater by [downloading](https://www.python.org/downloads/) or installing via your favorite package manager, e.g.
 
@@ -41,36 +41,117 @@ Install Python 3.6.9 or greater by [downloading](https://www.python.org/download
   ```
 {{% /tab %}}
 
-{{% tab name="macOS (arm64)" %}}
 
-Install Python 3.6.9 or greater by [downloading](https://www.python.org/downloads/) or installing via your favorite package manager, e.g.
-
-{{< alert >}}
-If you have older Python versions on your computer, you may need to use `python3` and `pip3` commands.
-You can also [change the default behavior](https://osxdaily.com/2022/02/15/make-python-3-default-macos/).
-{{< /alert >}}
-
-  ```bash
-  brew install python
-  ```
-{{% /tab %}}
-
-
-
-
-
-{{% tab name="Linux" %}}
+{{% tab name="linux" %}}
 /bin/sh -c "$(curl -fsSL https://sq.io/install.sh)"
 {{% /tab %}}}
 
-{{% tab name="Windows" %}}
+{{% tab name="win" %}}
 scoop bucket add sq https://github.com/neilotoole/sq
 scoop install sq
 {{% /tab %}}}
 
+{{% tab name="more" %}}
+Install options for `apt`, `yum`, `apk`, `pacman`, `yay` over [here](/docs/install).
+{{% /tab %}}}
 
 {{< /tabs >}}
 
+
+
+{{< rawhtml >}}
+
+<ul class="nav nav-pills darcy-tabs" id="osTabs" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="macosx-tab" data-bs-toggle="tab" data-bs-target="#macosx" type="button" role="tab" aria-controls="macosx" aria-selected="true">macOS</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="linux-tab" data-bs-toggle="tab" data-bs-target="#linux" type="button" role="tab" aria-controls="linux" aria-selected="false">Linux</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="windows-tab" data-bs-toggle="tab" data-bs-target="#windows" type="button" role="tab" aria-controls="windows" aria-selected="false">Windows</button>
+  </li>
+</ul>
+<div class="tab-content darcy-tab-content">
+    <div class="tab-pane active" id="macosx" role="tabpanel" aria-labelledby="macosx-tab">
+{{</ rawhtml>}}
+
+- Install Python 3.6.9 or greater by [downloading](https://www.python.org/downloads/) or installing via your favorite package manager, e.g.
+
+```bash
+brew install python
+```
+
+{{< rawhtml >}}
+
+<div class="alert-container">
+{{< /rawhtml >}}
+{{< alert icon="" >}}
+If you have older Python versions on your computer, you may need to use `python3` and `pip3` commands.
+You can also change this behavior for [macOS](https://osxdaily.com/2022/02/15/make-python-3-default-macos/)
+or [Windows (coming soon)](https://stackoverflow.com/questions/5087831/how-should-i-set-default-python-version-in-windows)
+{{< /alert >}}
+{{< rawhtml >}}
+</div>
+{{< /rawhtml >}}
+
+**X86 Platforms**:
+
+```bash
+# Install OpenCV
+pip install opencv-python>=4.5.5.64
+
+# Install the Pillow library
+pip install Pillow>=8.3.2
+
+# Install the Numpy library
+pip install numpy>=1.22.4
+
+# Install the Imutils library
+pip install imutils>=0.5.4
+
+# Install the DarcyAI Engine
+pip install darcyai
+
+# Install TensorFlow
+pip install tensorflow
+```
+
+**Apple M1 Platforms**:
+
+{{< rawhtml >}}
+
+<div class="alert-container">
+{{< /rawhtml >}}
+{{< alert style="warning" >}}
+If you are on Apple M1 silicon, these instructions will not work for you. M1 Mac solution coming soon.
+{{< /alert >}}
+{{< rawhtml >}}
+</div>
+{{< /rawhtml >}}
+
+{{< rawhtml >}}
+
+</div>
+<div class="tab-pane" id="linux" role="tabpanel" aria-labelledby="linux-tab">
+{{</ rawhtml>}}
+
+Linux coming soon...
+
+{{< rawhtml >}}
+
+</div>
+<div class="tab-pane" id="windows" role="tabpanel" aria-labelledby="windows-tab">
+{{</ rawhtml>}}
+
+Windows coming soon...
+
+{{< rawhtml >}}
+
+</div>
+
+</div>
+{{< /rawhtml >}}
 
 ## Build your Darcy AI app
 
