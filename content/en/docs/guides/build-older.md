@@ -10,9 +10,9 @@ weight: 200
 
 In this step-by-step guide you’ll learn how to build your first Darcy AI app. This [app](../more/terminology.md#application) utilizes all of the core Darcy AI concepts, such as [pipelines](../more/terminology.md#pipeline), [input streams](../more/terminology.md#input-stream), [perceptors](../more/terminology.md#perceptor) and [output streams](../more/terminology.md#output-stream) to detect and count people and then change some basic configurations. The concepts in this guide are the base foundations for any Darcy AI application you might want to build in the future.
 
-{{< alert >}}
+{{<info>}}
 Darcy AI can run in CPU mode (if you don't have a Coral accelerator attached), but requires a relatively modern system with a good CPU (ideally with multiple cores), and a decent amount of memory. If you run it on a low power platform, then you will get a very low frames per second video output.
-{{< /alert >}}
+{{</info>}}
 
 ### Requirements
 
@@ -90,7 +90,7 @@ brew install python
 If you have older Python versions on your computer, you may need to use `python3` and `pip3` commands.
 You can also change this behavior for [macOS](https://osxdaily.com/2022/02/15/make-python-3-default-macos/)
 or [Windows (coming soon)](https://stackoverflow.com/questions/5087831/how-should-i-set-default-python-version-in-windows)
-{{< /alert >}}
+{{</info>}}
 {{< rawhtml >}}
 </div>
 {{< /rawhtml >}}
@@ -125,7 +125,7 @@ pip install tensorflow
 {{< /rawhtml >}}
 {{< alert style="warning" >}}
 If you are on Apple M1 silicon, these instructions will not work for you. M1 Mac solution coming soon.
-{{< /alert >}}
+{{</info>}}
 {{< rawhtml >}}
 </div>
 {{< /rawhtml >}}
@@ -362,7 +362,7 @@ run successfully and stay running until you stop the program execution.
 
 {{< alert icon="" >}}
 Best performance is achieved with a modern, multi-core CPU and plenty of memory. In the next guide, you'll deploy to an edge device (like a Raspberry Pi + AI accelerator) which should provide great performance.
-{{< /alert >}}
+{{</info>}}
 
 ### View your real-time Darcy AI application video output
 

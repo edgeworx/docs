@@ -23,7 +23,7 @@ This is **some markdown.**s
 
 
 
-{{<alert>}}I am `alert` with [link](https://example.com){{</alert>}}
+{{<info>}}I am `alert` with [link](https://example.com){{</info>}}
 {{<warning>}}I am `warning` with [link](https://example.com){{</warning>}}
 {{<success>}}I am `success` with [link](https://example.com){{</success>}}
 {{<danger>}}I am `danger` with [link](https://example.com){{</success>}}
