@@ -223,6 +223,67 @@ Tabs can be used when there are several options, e.g. `macOS | Linux | Windows`.
 mechanism has significant flexibility, such as including content from separate
 files. See [these docs](https://kubernetes.io/docs/contribute/style/hugo-shortcodes/#tabs).
 
+The snippet below creates a "platform switcher" set of tabs.
+
+```markdown
+# Let's say this file is "example.md"
+
+{{<tabs name="platform" >}}
+
+{{<tab name="macOS" subtitle="(amd64)">}}
+Intel Mac
+{{</tab>}}
+
+{{<tab name="macOS" subtitle="(arm64)">}}
+Apple Silicon
+{{</tab>}}
+
+{{%tab name="Linux"%}}
+This tab has [markdown content](https://https://www.markdownguide.org). That
+is why it uses `%tab` instead of `<tab`.
+{{%/tab%}}
+
+{{<tab name="Windows" subtitle="10" include="example__platform__windows__10" />}}
+{{<tab name="Windows" subtitle="11" include="example__platform__windows__11" />}}
+
+{{</tabs>}}
+```
+
+#### Tab subtitle
+
+Note the optional `subtitle` attribute. This is useful for distinguishing between related tabs,
+  e.g. `macOS (arm64)` and `macOS (amd64)`.
+
+#### Tabs with markdown content
+
+If the tab content itself markdown, use the `{%tab` syntax instead of `{<tab`, as in the `Linux` tab above.
+The `%` notation tells Hugo that the inner content needs to be parsed and rendered.
+
+#### Include tab content from file
+
+Note the `include` attribute on the first `Windows` tab. The tab content will be loaded from
+a file in the same directory. Tab content files follow this naming
+convention `PARENTFILENAME__TABSNAME__TABNAME__SUBTITLE.md`. Thus, if the content file is named
+`example.md`, the tabs are named `platform`, the tab is named `windows`, and the subtitle is `10`,
+then the tab content file should be `example__platform__windows__10.md`.
+
+#### Tab code blocks
+
+Set the `codelang` attribute (e.g. `codelang="py"`) to syntax highlight the contents of a tab.
+
+```markdown
+{{<tabs name="languages-tabs" >}}
+
+{{<tab name="Python" codelang="py">}}
+print('Hello World!');
+{{</tab>}}
+
+{{<tab name="Go" codelang="go">}}
+fmt.Println("Hello World!")
+{{</tab>}}
+
+{{</tabs>}}
+```
 
 ### Raw HTML
 

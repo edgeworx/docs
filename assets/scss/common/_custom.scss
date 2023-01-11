@@ -184,21 +184,28 @@ $link-color: #006390;
   }
 }
 
-.darcy-tabs {
+ul.nav-tabs {
   .nav-item {
     margin-left: 0;
 
     .nav-link {
       color: $text-color;
 
+      span.subtitle {
+        color: slategray;
+        font-size: 1.0rem;
+        opacity: 60%;
+        padding-left: 8px;
+      }
+
       &:hover {
         color: $link-color;
-        text-decoration: underline;
+        //text-decoration: underline;
       }
 
       &.active {
         color: $link-color;
-        text-decoration: underline;
+        //text-decoration: underline;
         background-color: transparent;
         font-weight: 400;
       }
