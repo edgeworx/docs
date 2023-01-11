@@ -58,7 +58,7 @@ Content-Security-Policy = '''
       default-src 'self' 'unsafe-inline' docs.darcy.ai  darcydocs.netlify.app;
       script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' docs.darcy.ai  darcydocs.netlify.app asciinema.org www.googletagmanager.com www.google-analytics.com cdn.segment.com netlify-cdp-loader.netlify.app static.ads-twitter.com snap.licdn.com;
       frame-src 'self' 'unsafe-inline' docs.darcy.ai  darcydocs.netlify.app app.netlify.com;
-      connect-src 'self' docs.darcy.ai  darcydocs.netlify.app asciinema.org www.google-analytics.com cdn.linkedin.oribi.io;
+      connect-src 'self' docs.darcy.ai  darcydocs.netlify.app asciinema.org www.google-analytics.com cdn.linkedin.oribi.io  api.segment.io cdn.segment.com;
       img-src 'self' 'unsafe-inline' data: https: docs.darcy.ai  darcydocs.netlify.app www.netlify.com;
       style-src 'self' 'unsafe-inline'  docs.darcy.ai  darcydocs.netlify.app www.netlify.com fonts.googleapis.com;
       font-src 'self' 'unsafe-inline' docs.darcy.ai  darcydocs.netlify.app fonts.googleapis.com cdnjs.cloudflare.com fonts.gstatic.com  fonts.googleapis.com github.com maxcdn.bootstrapcdn.com themes.googleusercontent.com use.fontawesome.com
