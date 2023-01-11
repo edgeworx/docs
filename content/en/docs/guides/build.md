@@ -10,9 +10,9 @@ weight: 200
 
 In this step-by-step guide you’ll learn how to build your first Darcy AI app. This [app](../more/terminology.md#application) utilizes all of the core Darcy AI concepts, such as [pipelines](../more/terminology.md#pipeline), [input streams](../more/terminology.md#input-stream), [perceptors](../more/terminology.md#perceptor) and [output streams](../more/terminology.md#output-stream) to detect and count people and then change some basic configurations. The concepts in this guide are the base foundations for any Darcy AI application you might want to build in the future.
 
-{{< alert >}}
+{{< info >}}
 Darcy AI can run in CPU mode (if you don't have a Coral accelerator attached), but requires a relatively modern system with a good CPU (ideally with multiple cores), and a decent amount of memory. If you run it on a low power platform, then you will get a very low frames per second video output.
-{{< /alert >}}
+{{< /info >}}
 
 ### Requirements
 
@@ -246,9 +246,9 @@ has permissions to access the camera on your device. If you followed the code re
 directly and you have all the required Python libraries installed, your Darcy AI application should
 run successfully and stay running until you stop the program execution.
 
-{{< alert icon="" >}}
-Best performance is achieved with a modern, multi-core CPU and plenty of memory. In the next guide, you'll deploy to an edge device (like a Raspberry Pi + AI accelerator) which should provide great performance.
-{{< /alert >}}
+{{< info >}}
+Best performance is achieved with a modern, multicore CPU and plenty of memory. In the next guide, you'll deploy to an edge device (like a Raspberry Pi + AI accelerator) which should provide great performance.
+{{< /info >}}
 
 ### View your real-time Darcy AI application video output
 
