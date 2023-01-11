@@ -56,8 +56,8 @@ Access-Control-Allow-Origin = "*"
 
 Content-Security-Policy = '''
       default-src 'self' 'unsafe-inline' docs.darcy.ai  darcydocs.netlify.app;
-      script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' docs.darcy.ai  darcydocs.netlify.app asciinema.org www.googletagmanager.com www.google-analytics.com cdn.segment.com netlify-cdp-loader.netlify.app;
-      frame-src 'self' 'unsafe-inline' docs.darcy.ai  darcydocs.netlify.app asciinema.org;
+      script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' docs.darcy.ai  darcydocs.netlify.app asciinema.org www.googletagmanager.com www.google-analytics.com cdn.segment.com netlify-cdp-loader.netlify.app static.ads-twitter.com snap.licdn.com;
+      frame-src 'self' 'unsafe-inline' docs.darcy.ai  darcydocs.netlify.app app.netlify.app;
       connect-src 'self' docs.darcy.ai  darcydocs.netlify.app asciinema.org www.google-analytics.com cdn.linkedin.oribi.io;
       img-src 'self' 'unsafe-inline' data: https: docs.darcy.ai  darcydocs.netlify.app www.netlify.com;
       style-src 'self' 'unsafe-inline'  docs.darcy.ai  darcydocs.netlify.app www.netlify.com fonts.googleapis.com;
