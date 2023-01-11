@@ -30,14 +30,14 @@ Darcy AI can run in CPU mode (if you don't have a Coral accelerator attached), b
 
 ### Install dependencies
 
-{{<tabs2 name="platform" >}}
+{{<tabs name="platform" >}}
 
 {{<tab name="macOS" subtitle="(amd64)" include="build__platform__macos__amd64" />}}
 {{<tab name="macOS" subtitle="(arm64)" include="build__platform__macos__arm64" />}}
 {{<tab name="Linux"  include="build__platform__linux" />}}
 {{<tab name="Windows"  include="build__platform__windows" />}}
 
-{{</tabs2>}}
+{{</tabs>}}
 
 ## Build your Darcy AI app
 
