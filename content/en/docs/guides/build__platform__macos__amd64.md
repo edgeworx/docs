@@ -2,6 +2,7 @@
 
 1. Install Python 3.6.9 or greater by [downloading](https://www.python.org/downloads/) or
 installing via your favorite package manager, e.g.
+
       ```shell
       brew install python
       ```
@@ -32,4 +33,3 @@ installing via your favorite package manager, e.g.
     # Install TensorFlow
     pip install tensorflow
     ```
-
