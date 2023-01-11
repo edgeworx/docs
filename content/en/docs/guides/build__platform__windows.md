@@ -1,5 +1,5 @@
-This is an **example** content file inside the **includes** leaf bundle.
+[//]: # (Tab content for build.md)
 
-{{< info >}}
-Windows
-{{< /info >}}
+{{<warning>}}
+Windows support coming soon.
+{{</warning>}}

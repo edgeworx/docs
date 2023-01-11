@@ -1,5 +1,5 @@
-Here is some linux stuff.
+[//]: # (Tab content for build.md)
 
-{{< info >}}
-Linux me!
-{{< /info >}}
+{{<warning>}}
+Linux support coming soon.
+{{</warning>}}

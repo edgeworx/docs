@@ -11,6 +11,7 @@ Put CSS for custom HTML components here.
   }
 }
 
+$code-block-bg: #032332;
 
 
 $border-color: #a9b2bc88;
@@ -214,8 +215,10 @@ $tab-content-bg: #f5f6f7;
 
 
 // div.chroma is the container for syntax-highlighted code blocks.
-.chroma {
-  background-color: #032332;
+div.tab-content pre.chroma > code,
+pre.chroma, {
+  background-color: $code-block-bg;
+  color: rgb(216, 222, 233);
 }
 
 

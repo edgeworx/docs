@@ -1,3 +1,5 @@
-## mac arm64
+[//]: # (Tab content for build.md)
 
-Some stuff.
+{{<warning>}}
+  Apple Silicon (M1/M2) support coming soon.
+{{</warning>}}
