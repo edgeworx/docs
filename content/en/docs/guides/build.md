@@ -30,46 +30,7 @@ Darcy AI can run in CPU mode (if you don't have a Coral accelerator attached), b
 
 ### Install dependencies
 
-{{< tabs name="install-deps" >}}
-
-{{{% tab name="macOS (amd64)" %}}
-
-Install Python 3.6.9 or greater by [downloading](https://www.python.org/downloads/) or installing via your favorite package manager, e.g.
-
-  ```bash
-  brew install python
-  ```
-{{% /tab %}}
-
-{{% tab name="macOS (arm64)" %}}
-
-Install Python 3.6.9 or greater by [downloading](https://www.python.org/downloads/) or installing via your favorite package manager, e.g.
-
-{{<info>}}
-If you have older Python versions on your computer, you may need to use `python3` and `pip3` commands.
-You can also [change the default behavior](https://osxdaily.com/2022/02/15/make-python-3-default-macos/).
-{{</info>}}
-
-  ```bash
-  brew install python
-  ```
-{{% /tab %}}
-
-
-
-
-
-{{% tab name="Linux" %}}
-/bin/sh -c "$(curl -fsSL https://sq.io/install.sh)"
-{{% /tab %}}}
-
-{{% tab name="Windows" %}}
-scoop bucket add sq https://github.com/neilotoole/sq
-scoop install sq
-{{% /tab %}}}
-
-
-{{< /tabs >}}
+Sure here ya go
 
 
 ## Build your Darcy AI app
