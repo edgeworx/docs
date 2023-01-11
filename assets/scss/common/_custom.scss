@@ -221,11 +221,11 @@ pre.chroma, {
 // E.g. "mac | windows | linux".
 
 div.tabs-wrapper {
-  ul.nav-tabs {
-    .nav-item {
-      margin-left: 0;
+  nav.nav-tabs {
+
 
       .nav-link {
+        border-bottom-color: $nav-tabs-link-active-border-color;
         color: $text-color;
 
         span.subtitle {
@@ -241,33 +241,19 @@ div.tabs-wrapper {
 
         &.active {
           color: $link-color;
-          background-color: transparent;
+          background-color: $tab-content-bg;
+          border-bottom-color: rgb(222, 226, 230);
           font-weight: 400;
         }
-      }
     }
   }
 
   div.tab-content {
-    padding: 10px 20px;
+    //border: 1px solid green;
+    padding: 20px 20px 20px 20px;
     background-color: $tab-content-bg;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
   }
 }
 
-.darcy-tab-content {
-  border: 1px solid $border-color;
-  border-radius: 4px;
-  padding: 1.5rem 0.5rem;
-
-  .alert-container {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-top: -1.5rem;
-  }
-
-  ul {
-    margin-bottom: 0;
-  }
-}
