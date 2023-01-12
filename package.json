@@ -1,11 +1,10 @@
 {
-  "name": "@hyas/doks",
-  "description": "Doks theme",
-  "version": "0.4.2",
+  "name": "Darcy Docs",
+  "description": "Docs for darcy.ai",
   "browserslist": [
     "defaults"
   ],
-  "repository": "https://github.com/h-enk/doks",
+  "repository": "https://github.com/darcyai/docs",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -21,7 +20,7 @@
     "clean": "shx rm -rf public resources",
     "clean:install": "shx rm -rf package-lock.json node_modules ",
     "lint": "npm run -s lint:scripts && npm run -s lint:styles && npm run -s lint:markdown",
-    "lint:scripts": "eslint assets/js config functions",
+    "lint:scripts": "npx eslint assets/js config functions",
     "lint:styles": "npx stylelint \"assets/scss/**/*.{css,sass,scss,sss,less}\"",
     "lint:fix": "npx stylelint --fix \"assets/scss/**/*.{css,sass,scss,sss,less}\"",
     "lint:markdown": "markdownlint-cli2 \"*.md\" \"content/**/*.md\"",
@@ -64,14 +63,11 @@
     "purgecss-whitelister": "^2.4",
     "shx": "^0.3.4",
     "stylelint": "^14.16",
-    "stylelint-config-standard-scss": "^6.1"
+    "stylelint-config-standard-scss": "^6.1",
+    "linkinator": "^4.1.2",
+    "postcss-scss": "^4.0.6"
   },
   "otherDependencies": {
     "hugo": "0.109.0"
-  },
-  "dependencies": {
-    "broken-link-checker": "^0.7.8",
-    "linkinator": "^4.1.2",
-    "postcss-scss": "^4.0.6"
   }
 }
