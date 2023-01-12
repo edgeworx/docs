@@ -10,13 +10,14 @@
     "access": "public"
   },
   "scripts": {
-    "init": "shx rm -rf .git && git init -b main",
     "create": "exec-bin node_modules/.bin/hugo/hugo new",
     "prestart": "npm run clean",
     "start": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender --verbose --verboseLog --ignoreCache --navigateToChanged --renderToDisk",
     "prebuild": "npm run clean",
     "build": "exec-bin node_modules/.bin/hugo/hugo --gc --minify",
     "build:preview": "npm run build -D -F",
+    "prepreview": "npm run clean",
+    "preview": "exec-bin node_modules/.bin/hugo/hugo --gc --minify -D -F -b 'http://localhost:1313' && npx serve -l 1313 public",
     "clean": "shx rm -rf public resources",
     "clean:install": "shx rm -rf package-lock.json node_modules ",
     "lint": "npm run -s lint:scripts && npm run -s lint:styles && npm run -s lint:markdown",
