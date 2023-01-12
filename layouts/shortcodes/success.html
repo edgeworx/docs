@@ -1,0 +1,8 @@
+<div class="alert d-flex alert-success success" role="alert">
+  <div class="flex-shrink-1 alert-icon">
+    <img src="/images/alerts/alert-success.png" alt="Warning" class="img-fluid" width="24" />
+  </div>
+  <div class="w-100">
+    {{ trim .Inner " \n" | markdownify }}
+  </div>
+</div>

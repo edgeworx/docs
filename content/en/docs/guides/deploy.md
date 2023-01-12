@@ -13,9 +13,9 @@ will run on any hardware that meets the requirements for Darcy AI. The list of c
 is extensive, allowing you to deploy your Darcy AI applications to the devices that fit your
 solution needs.
 
-{{< alert icon="" style="info"  >}}
+{{<info>}}
 We recommend using a Raspberry Pi 4 with an attached Google Coral accelerator for the best performance.
-{{< /alert>}}
+{{</info>}}
 
 ### Software Requirements
 
@@ -40,18 +40,18 @@ We recommend using a Raspberry Pi 4 with an attached Google Coral accelerator fo
 - Install Docker [Mac](https://docs.docker.com/desktop/mac/install/) or [Windows (coming soon)](https://docs.docker.com/desktop/windows/install/)
 - [Create a Docker Hub Account](https://hub.docker.com/signup)
 
-{{< alert icon="" style="info"  >}}
+{{<info>}}
 After you have installed Docker, you can use `docker` commands in terminal. You will be using these
 commands to package your Darcy AI applications for deployment, including deploying to edge devices
 that are a different CPU architecture than your computer! To make sure you can use the latest Docker
 build commands like `buildx` you can add an environment variable to your computer with the following
 command `export DOCKER_CLI_EXPERIMENTAL=enabled`. This will tell Docker to allow use of the latest
 tools which will save you a lot of time when packaging your apps!
-{{< /alert>}}
+{{</info>}}
 
-{{< alert style="warning" >}}
+{{<warning>}}
 You may need to use `sudo docker` instead of just `docker` depending on how you install and set up Docker for Mac. If that is the case on your development machine, you can just add `sudo` to the beginning of any `docker` commands shown in these guides.
-{{< /alert>}}
+{{<warning>}}
 
 ### Add a Dockerfile
 
@@ -60,11 +60,11 @@ Dockerfile is just a text file with the specific name `Dockerfile` that tells th
 tools how to make your containers. You can include as many files as you want in your container. The
 commands for adding those files are discussed below.
 
-{{< alert style="warning" >}}
+{{<warning >}}
 Make sure you create the Dockerfile in the same
 directory as your Python file and change the name below from YOURFILE.py to the actual name of your
 file.
-{{< /alert >}}
+{{</warning>}}
 
 ```text
 FROM darcyai/darcy-ai-coral:dev

@@ -152,8 +152,8 @@ After your first `edgectl login`, an initial org and project likely exist. We ca
 the `edgectl set default` command to set a default org and project. This allows us to use many
 commands without having to provide the the `--org` and `--project` flags.
 
-{{<alert>}}Note that _edgectl_ defaults are local to your environment (typically saved
-in `$HOME/.config/edgectl/edgectl.yml`).{{</alert>}}
+{{<info>}}Note that _edgectl_ defaults are local to your environment (typically saved
+in `$HOME/.config/edgectl/edgectl.yml`).{{</info>}}
 
 Let's start by viewing the current defaults:
 

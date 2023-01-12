@@ -1,5 +1,5 @@
 ---
-title: "Build an edge AI app in under 10 minutes"
+title: "Build an edge AI app in 30 mins"
 linkTitle: "Build an edge AI app"
 weight: 200
 ---
@@ -10,9 +10,9 @@ weight: 200
 
 In this step-by-step guide you’ll learn how to build your first Darcy AI app. This [app](../more/terminology.md#application) utilizes all of the core Darcy AI concepts, such as [pipelines](../more/terminology.md#pipeline), [input streams](../more/terminology.md#input-stream), [perceptors](../more/terminology.md#perceptor) and [output streams](../more/terminology.md#output-stream) to detect and count people and then change some basic configurations. The concepts in this guide are the base foundations for any Darcy AI application you might want to build in the future.
 
-{{< alert >}}
+{{< info >}}
 Darcy AI can run in CPU mode (if you don't have a Coral accelerator attached), but requires a relatively modern system with a good CPU (ideally with multiple cores), and a decent amount of memory. If you run it on a low power platform, then you will get a very low frames per second video output.
-{{< /alert >}}
+{{< /info >}}
 
 ### Requirements
 
@@ -30,99 +30,14 @@ Darcy AI can run in CPU mode (if you don't have a Coral accelerator attached), b
 
 ### Install dependencies
 
-{{< rawhtml >}}
+{{<tabs name="platform" >}}
 
-<ul class="nav nav-pills darcy-tabs" id="osTabs" role="tablist">
-  <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="macosx-tab" data-bs-toggle="tab" data-bs-target="#macosx" type="button" role="tab" aria-controls="macosx" aria-selected="true">macOS</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="linux-tab" data-bs-toggle="tab" data-bs-target="#linux" type="button" role="tab" aria-controls="linux" aria-selected="false">Linux</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="windows-tab" data-bs-toggle="tab" data-bs-target="#windows" type="button" role="tab" aria-controls="windows" aria-selected="false">Windows</button>
-  </li>
-</ul>
-<div class="tab-content darcy-tab-content">
-    <div class="tab-pane active" id="macosx" role="tabpanel" aria-labelledby="macosx-tab">
-{{</ rawhtml>}}
+{{<tab name="macOS" subtitle="(amd64)" include="build__platform__macos__amd64" />}}
+{{<tab name="macOS" subtitle="(arm64)" include="build__platform__macos__arm64" />}}
+{{<tab name="Linux"  include="build__platform__linux" />}}
+{{<tab name="Windows"  include="build__platform__windows" />}}
 
-- Install Python 3.6.9 or greater by [downloading](https://www.python.org/downloads/) or installing via your favorite package manager, e.g.
-
-```bash
-brew install python
-```
-
-{{< rawhtml >}}
-
-<div class="alert-container">
-{{< /rawhtml >}}
-{{< alert icon="" >}}
-If you have older Python versions on your computer, you may need to use `python3` and `pip3` commands.
-You can also change this behavior for [macOS](https://osxdaily.com/2022/02/15/make-python-3-default-macos/)
-or [Windows (coming soon)](https://stackoverflow.com/questions/5087831/how-should-i-set-default-python-version-in-windows)
-{{< /alert >}}
-{{< rawhtml >}}
-</div>
-{{< /rawhtml >}}
-
-**X86 Platforms**:
-
-```bash
-# Install OpenCV
-pip install "opencv-python>=4.5.5.64"
-
-# Install the Pillow library
-pip install "Pillow>=8.3.2"
-
-# Install the Numpy library
-pip install "numpy>=1.22.4"
-
-# Install the Imutils library
-pip install "imutils>=0.5.4"
-
-# Install the DarcyAI Engine
-pip install darcyai
-
-# Install TensorFlow
-pip install tensorflow
-```
-
-**Apple M1 Platforms**:
-
-{{< rawhtml >}}
-
-<div class="alert-container">
-{{< /rawhtml >}}
-{{< alert style="warning" >}}
-If you are on Apple M1 silicon, these instructions will not work for you. M1 Mac solution coming soon.
-{{< /alert >}}
-{{< rawhtml >}}
-</div>
-{{< /rawhtml >}}
-
-{{< rawhtml >}}
-
-</div>
-<div class="tab-pane" id="linux" role="tabpanel" aria-labelledby="linux-tab">
-{{</ rawhtml>}}
-
-Linux coming soon...
-
-{{< rawhtml >}}
-
-</div>
-<div class="tab-pane" id="windows" role="tabpanel" aria-labelledby="windows-tab">
-{{</ rawhtml>}}
-
-Windows coming soon...
-
-{{< rawhtml >}}
-
-</div>
-
-</div>
-{{< /rawhtml >}}
+{{</tabs>}}
 
 ## Build your Darcy AI app
 
@@ -170,9 +85,9 @@ def live_feed_callback(pom, input_data):
     frame = pom.peeps.annotatedFrame().copy()
 
     # Add some text telling how many people are in the scene
-    label = "PEOPLE COUNT={}".format(pom.peeps.peopleCount())
-    color = (255, 255, 255)
-    cv2.putText(frame, str(label), (10, 450), cv2.FONT_HERSHEY_DUPLEX, .65, color, 1, cv2.LINE_AA)
+    label = "{} peeps".format(pom.peeps.peopleCount())
+    color = (0, 255, 0)
+    cv2.putText(frame, str(label), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, color, 1, cv2.LINE_AA)
 
     # If we have anyone, demonstrate looking up that person in the POM by getting their face size
     # And then put it on the frame as some text
@@ -181,9 +96,9 @@ def live_feed_callback(pom, input_data):
         for person_id in pom.peeps.people():
             face_size = pom.peeps.faceSize(person_id)
             face_height = face_size[1]
-            label2 = "FACE HEIGHT={}".format(face_height)
-            color = (255, 255, 255)
-            cv2.putText(frame, str(label2), (250, 450), cv2.FONT_HERSHEY_DUPLEX, .65, color, 1, cv2.LINE_AA)
+            label2 = "{} face height".format(face_height)
+            color = (0, 255, 255)
+            cv2.putText(frame, str(label2), (10, 80), cv2.FONT_HERSHEY_SIMPLEX, 1, color, 1, cv2.LINE_AA)
 
     # Pass the finished frame out of this callback so the Live Feed output stream can display it
     return frame
@@ -233,15 +148,8 @@ pipeline.add_perceptor("peeps", people_ai, input_callback=people_input_callback)
 # Update the configuration of the People Perceptor to show the pose landmark dots on the annotated video frame
 pipeline.set_perceptor_config("peeps", "show_pose_landmark_dots", True)
 pipeline.set_perceptor_config("peeps", "pose_landmark_dot_size", 2)
-pipeline.set_perceptor_config("peeps", "pose_landmark_dot_color", RGB(255, 255, 255))
-
-# Update the configuration of the People Perceptor to show the face rectangle on the annotated video frame
-pipeline.set_perceptor_config("peeps", "show_face_rectangle", True)
-pipeline.set_perceptor_config("peeps", "face_rectangle_color", RGB(255, 255, 255))
-pipeline.set_perceptor_config("peeps", "face_rectangle_thickness", 1)
+pipeline.set_perceptor_config("peeps", "pose_landmark_dot_color", RGB(0, 255, 0))
 ```
-
-[See all People Perceptor configuration items](https://darcyai.github.io/darcyai/perceptors/peopleperceptor/)
 
 ### Start the Pipeline
 
@@ -287,13 +195,13 @@ def live_feed_callback(pom, input_data):
     # If we have anyone, demonstrate looking up that person in the POM by getting their face size
     # And then put it on the frame as some text
     # NOTE: this will just take the face size from the last person in the array
-     if pom.peeps.peopleCount() > 0:
+    if pom.peeps.peopleCount() > 0:
         for person_id in pom.peeps.people():
             face_size = pom.peeps.faceSize(person_id)
             face_height = face_size[1]
-            label2 = "FACE HEIGHT={}".format(face_height)
-            color = (255, 255, 255)
-            cv2.putText(frame, str(label2), (250, 450), cv2.FONT_HERSHEY_DUPLEX, .65, color, 1, cv2.LINE_AA)
+            label2 = "{} face height".format(face_height)
+            color = (0, 255, 255)
+            cv2.putText(frame, str(label2), (10, 80), cv2.FONT_HERSHEY_SIMPLEX, 1, color, 1, cv2.LINE_AA)
 
     # Pass the finished frame out of this callback so the Live Feed output stream can display it
     return frame
@@ -324,12 +232,7 @@ pipeline.add_perceptor("peeps", people_ai, input_callback=people_input_callback)
 # Update the configuration of the People Perceptor to show the pose landmark dots on the annotated video frame
 pipeline.set_perceptor_config("peeps", "show_pose_landmark_dots", True)
 pipeline.set_perceptor_config("peeps", "pose_landmark_dot_size", 2)
-pipeline.set_perceptor_config("peeps", "pose_landmark_dot_color", RGB(255, 255, 255))
-
-# Update the configuration of the People Perceptor to show the face rectangle on the annotated video frame
-pipeline.set_perceptor_config("peeps", "show_face_rectangle", True)
-pipeline.set_perceptor_config("peeps", "face_rectangle_color", RGB(255, 255, 255))
-pipeline.set_perceptor_config("peeps", "face_rectangle_thickness", 1)
+pipeline.set_perceptor_config("peeps", "pose_landmark_dot_color", RGB(0, 255, 0))
 
 # Start the Pipeline
 pipeline.run()
@@ -343,9 +246,9 @@ has permissions to access the camera on your device. If you followed the code re
 directly and you have all the required Python libraries installed, your Darcy AI application should
 run successfully and stay running until you stop the program execution.
 
-{{< alert icon="" >}}
-Best performance is achieved with a modern, multi-core CPU and plenty of memory. In the next guide, you'll deploy to an edge device (like a Raspberry Pi + AI accelerator) which should provide great performance.
-{{< /alert >}}
+{{< info >}}
+Best performance is achieved with a modern, multicore CPU and plenty of memory. In the next guide, you'll deploy to an edge device (like a Raspberry Pi + AI accelerator) which should provide great performance.
+{{< /info >}}
 
 ### View your real-time Darcy AI application video output
 

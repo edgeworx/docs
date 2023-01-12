@@ -124,7 +124,7 @@ spec:
       to: heart-rate-viewer
 ```
 
-{{<alert>}}
+{{<info>}}
 For more YAML examples see [Heart Rate Demo]({{<ref "/docs/apps/demo-apps/heart-rate.md">}})
 or [Darcy AI Explorer]({{<ref "/docs/apps/demo-apps/ai-explorer.md">}}).
-{{</alert>}}
+{{</info>}}

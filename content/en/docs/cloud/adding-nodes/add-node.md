@@ -42,11 +42,11 @@ speed, and other dependencies).
 
 ![Install Node](/images/edge-node-added.png)
 
-{{<alert>}}
+{{<info>}}
 If you would like to choose a specific name for your node, use the
 variable `DARCY_NODE_NAME="your-choice-of-name"` in the _node install script_
 as in the example below.
-{{</alert>}}
+{{</info>}}
 
 ### View the node in Your Darcy Cloud Project
 

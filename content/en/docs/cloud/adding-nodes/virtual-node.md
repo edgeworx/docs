@@ -17,9 +17,9 @@ edgectl. Linux users can directly use the Register Node command on their termina
 - Install [edgectl CLI]({{<ref "/docs/cloud/start-edgectl.md">}})
 - Install [Multipass](https://multipass.run): it is used by edgectl to manage VMs.
 
-{{< alert style="warning" >}} Virtual Node is not currently compatible with attached video devices.
+{{<warning>}} Virtual Node is not currently compatible with attached video devices.
 You can still build locally using attached video and deploy to edge devices with attached video.
-{{</alert>}}
+{{</warning>}}
 
 ## Get the Virtual Node Installation Script
 
@@ -50,9 +50,9 @@ connection speed, and other dependencies).
 
 ![Install Node](/images/virtual-node-added.png)
 
-{{<alert>}} If you would like to choose a specific name for your node, update
+{{<info>}} If you would like to choose a specific name for your node, update
 the `--name="your-choice-of-name"` in the _edgectl create virtual-node_ command as seen in the above
-example. {{</alert>}}
+example. {{</info>}}
 
 ## View the Node in Your Darcy Cloud Project
 

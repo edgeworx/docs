@@ -182,25 +182,20 @@ with `![My PDF](/pdfs/my.pdf)`.
 > NOTE: Use descriptive file names for uploaded images. _DO NOT_ upload a file
 > named `screen-shot-2021-10-08-at-5.59.22-pm.png`; instead upload `portal-projects-overview.png`.
 
-### Alerts
+### Alerts / Callouts
 
-You can use the `alert` [shortcode](https://gohugo.io/content-management/shortcodes/) to generate
+You can use the `info` [shortcode](https://gohugo.io/content-management/shortcodes/) to generate
 [Bootstrap-style alerts](https://getbootstrap.com/docs/4.0/components/alerts/).
 
 ```markdown
-{{<alert>}}
+{{<info>}}
 Here's the info you're looking for!
-{{</alert>}}
+
+For more info, go [here](https://example.com).
+{{</info>}}
 ```
 
-The default alert style is `info`, but you can explicitly set a style (`success`, `info`, `warning`, `danger`).
-
-```markdown
-{{<alert style="warning">}}
-If you do not have any of the above hardware, you can create a VM and run
-the node installation script.
-{{</alert>}}
-```
+You can also use `{{<success>}}`, `{{<warning>}}`, and `{{<danger>}}`.
 
 ### Links
 
@@ -220,6 +215,75 @@ If you are linking outside the current dir:
 
 - If you're linking to a file below the current dir, typically use a relative path, e.g. `[the below thing]({{<ref "./c/d.md">}})`.
 - If you're linking to a file above the current dir, typically use absolute an absolute path, e.g. `[the above thing]({{<ref "/docs/cloud/e/f.md">}})`
+
+
+### Tabs
+
+Tabs can be used when there are several options, e.g. `macOS | Linux | Windows`. The tabs
+mechanism has significant flexibility, such as including content from separate
+files. See [these docs](https://kubernetes.io/docs/contribute/style/hugo-shortcodes/#tabs).
+
+The snippet below creates a "platform switcher" set of tabs.
+
+```markdown
+# Let's say this file is "example.md"
+
+{{<tabs name="platform" >}}
+
+{{<tab name="macOS" subtitle="(amd64)">}}
+Intel Mac
+{{</tab>}}
+
+{{<tab name="macOS" subtitle="(arm64)">}}
+Apple Silicon
+{{</tab>}}
+
+{{%tab name="Linux"%}}
+This tab has [markdown content](https://https://www.markdownguide.org). That
+is why it uses `%tab` instead of `<tab`.
+{{%/tab%}}
+
+{{<tab name="Windows" subtitle="10" include="example__platform__windows__10" />}}
+{{<tab name="Windows" subtitle="11" include="example__platform__windows__11" />}}
+
+{{</tabs>}}
+```
+
+#### Tab subtitle
+
+Note the optional `subtitle` attribute. This is useful for distinguishing between related tabs,
+  e.g. `macOS (arm64)` and `macOS (amd64)`.
+
+#### Tabs with markdown content
+
+If the tab content itself markdown, use the `{%tab` syntax instead of `{<tab`, as in the `Linux` tab above.
+The `%` notation tells Hugo that the inner content needs to be parsed and rendered.
+
+#### Include tab content from file
+
+Note the `include` attribute on the first `Windows` tab. The tab content will be loaded from
+a file in the same directory. Tab content files follow this naming
+convention `PARENTFILENAME__TABSNAME__TABNAME__SUBTITLE.md`. Thus, if the content file is named
+`example.md`, the tabs are named `platform`, the tab is named `windows`, and the subtitle is `10`,
+then the tab content file should be `example__platform__windows__10.md`.
+
+#### Tab code blocks
+
+Set the `codelang` attribute (e.g. `codelang="py"`) to syntax highlight the contents of a tab.
+
+```markdown
+{{<tabs name="languages-tabs" >}}
+
+{{<tab name="Python" codelang="py">}}
+print('Hello World!');
+{{</tab>}}
+
+{{<tab name="Go" codelang="go">}}
+fmt.Println("Hello World!")
+{{</tab>}}
+
+{{</tabs>}}
+```
 
 ### Raw HTML
 
