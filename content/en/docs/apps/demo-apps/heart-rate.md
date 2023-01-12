@@ -18,9 +18,9 @@ heart rate data on a graph.
 - A Darcy Cloud Account
 - Any edge node (or a virtual node)
 
-{{<alert>}} Although this [application](/docs/more/terminology.md#application) works best with two nodes, you can deploy it with only one
+{{<info>}} Although this [application](/docs/more/terminology.md#application) works best with two nodes, you can deploy it with only one
 node and run all [microservices](/docs/apps/microservices.md) on the same device. The YAML will automatically detect if you have
-one or two nodes. {{</alert>}}
+one or two nodes. {{</info>}}
 
 ---
 

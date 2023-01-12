@@ -1,0 +1,8 @@
+<div class="alert d-flex alert-danger danger callout" role="alert">
+  <div class="flex-shrink-1 alert-icon">
+    <img src="/images/alerts/alert-warning.png" alt="Danger" class="img-fluid" width="24" />
+  </div>
+  <div class="w-100">
+    {{ trim .Inner " \n" | markdownify }}
+  </div>
+</div>

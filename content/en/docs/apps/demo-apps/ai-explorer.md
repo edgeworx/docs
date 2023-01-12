@@ -17,9 +17,9 @@ powerful face detection, pose detection, QR code scanning and more.
   * ARM-based edge device or virtual node
   * x86-based edge device or virtual node
 
-{{<alert>}} If you have previously deployed an application to your node, you can either
+{{<info>}} If you have previously deployed an application to your node, you can either
 start a new project and add a node there or delete the existing application from the node. We just
-need to be sure that we have a free node inside our project to deploy to {{</alert>}}
+need to be sure that we have a free node inside our project to deploy to {{</info>}}
 
 ---
 
