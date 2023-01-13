@@ -1,0 +1,26 @@
+Get org details. If no arg provided, the default org is returned.
+
+Usage:
+  edgectl get org [UUID|NAME] [flags]
+
+Examples:
+  # Get the default org
+  $ edgectl get org
+
+  # Get the "acme" org  
+  $ edgectl get org acme
+
+  # Get org having UUID
+  $ edgectl get org cfcd7a86-23ab-4b1b-a2e1-b6c102c147f9
+
+
+Flags:
+  -h, --help   help for org
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

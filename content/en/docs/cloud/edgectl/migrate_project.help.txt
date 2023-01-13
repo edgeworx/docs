@@ -1,0 +1,24 @@
+Migrate a project to a different org. The caller must be an admin
+of both the project's source and destination orgs.
+
+Usage:
+  edgectl migrate project --id PROJECT_ID --org ORG_ID [flags]
+
+Examples:
+  # Migrate project "acme/project1" to org "ajax"
+  # On completion, the fully-qualified project name is "ajax/project1"
+  $ edgectl migrate project --id acme/project1 --org ajax 
+
+
+Flags:
+      --id string    id
+      --org string   org
+  -h, --help         help for project
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

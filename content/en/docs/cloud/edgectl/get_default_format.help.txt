@@ -1,0 +1,19 @@
+Get edgectl default format.
+
+Usage:
+  edgectl get default format [flags]
+
+Examples:
+  $ edgectl get default format
+
+
+Flags:
+  -h, --help   help for format
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

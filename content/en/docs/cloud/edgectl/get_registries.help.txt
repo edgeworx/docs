@@ -1,0 +1,21 @@
+List container registries for project.
+
+Usage:
+  edgectl get registries [--project PROJECT_ID] [flags]
+
+Examples:
+  # List all registries in project "acme/proj1"  
+  $ edgectl get registries --project acme/proj1
+
+
+Flags:
+      --project string   Project UUID or name, such as acme/proj1
+  -h, --help             help for registries
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

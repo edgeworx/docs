@@ -1,0 +1,25 @@
+Update fields of an app, using the provided YAML file.
+
+Usage:
+  edgectl patch app [--project PROJECT_ID] --app APP_NAME path-to-file.yaml [flags]
+
+Examples:
+  # Update app acme/proj1
+  $ edgectl patch app --project acme/proj1 --app my-app ./my-app.yaml
+
+  # Updates app in project having uuid
+  $ edgectl patch app --project 6d154556-9e58-4330-a7f3-41c869f01142 --app my-app ./my-app.yaml
+
+
+Flags:
+      --project string   Project UUID or name, such as acme/proj1
+      --app string       App name
+  -h, --help             help for app
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

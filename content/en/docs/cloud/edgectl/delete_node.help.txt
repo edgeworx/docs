@@ -1,0 +1,23 @@
+Remove node from project.
+
+Usage:
+  edgectl delete node NODE_ID [flags]
+
+Examples:
+  # Remove node having uuid
+  $ edgectl delete node 6d154556-9e58-4330-a7f3-41c869f01142
+
+  # Remove node via fully-qualified node name
+  $ edgectl delete node acme/proj1/node1
+
+
+Flags:
+  -h, --help   help for node
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

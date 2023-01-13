@@ -1,0 +1,26 @@
+Delete app from project. The argument can be the app name,
+or a path to the yaml file. If --project not specified, the default project
+is used.
+
+Usage:
+  edgectl delete app [--project PROJECT_ID] APP_ID|YAML [flags]
+
+Examples:
+  # Deletes my-app in acme/proj1
+  $ edgectl delete app --project acme/proj1 my-app
+
+  # Delete using the app YAML file
+  $ edgectl delete --project acme/proj1 ./my-app.yaml
+
+
+Flags:
+      --project string   Project UUID or name, such as acme/proj1
+  -h, --help             help for app
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

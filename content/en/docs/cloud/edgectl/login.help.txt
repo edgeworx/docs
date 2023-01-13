@@ -1,0 +1,17 @@
+Login to Darcy Cloud API. If you provide an access token
+via the --token flag, it will be validated and saved in config for future
+use. Otherwise, you will be prompted to login via your browser.
+
+Usage:
+  edgectl login [--token ACCESS_TOKEN] [flags]
+
+Flags:
+      --token string   token
+  -h, --help           help for login
+
+Global Flags:
+  -H, --header       Print header row
+  -j, --json         JSON output
+  -M, --monochrome   Don't colorize output
+  -t, --text         Text table output
+  -v, --verbose      Verbose output

@@ -37,6 +37,7 @@
     "copy:katex-fonts": "shx cp ./node_modules/katex/dist/fonts/* ./static/fonts/",
     "postinstall": "hugo-installer --version otherDependencies.hugo --extended --destination node_modules/.bin/hugo",
     "version": "auto-changelog -p && git add CHANGELOG.md",
+    "gen:cmd-help": "./content/en/docs/cloud/edgectl/generate-cmd-help.sh",
     "gen:syntax-css": "./generate-syntax-css.sh"
   },
   "devDependencies": {
@@ -66,9 +67,7 @@
     "stylelint": "^14.16",
     "stylelint-config-standard-scss": "^6.1",
     "linkinator": "^4.1.2",
-    "postcss-scss": "^4.0.6",
-    "gen:cmd-help": "./content/en/docs/cloud/edgectl/generate-cmd-help.sh",
-    "gen:syntax-css": "./generate-syntax-css.sh"
+    "postcss-scss": "^4.0.6"
   },
   "otherDependencies": {
     "hugo": "0.109.0"

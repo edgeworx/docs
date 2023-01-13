@@ -1,0 +1,26 @@
+Get account by UUID, email, or username. If no identifier
+specified, get the logged-in account.
+
+Returns a non-zero status code if the account is not found.
+
+Usage:
+  edgectl get account [UUID|EMAIL|USERNAME] [flags]
+
+Examples:
+  # Get account by email
+  $ edgectl get account alice@acme.com
+
+  # Get account by UUID
+  $ edgectl get account 68ea5fc0-fc19-4898-9014-2633a26840cc
+
+
+Flags:
+  -h, --help   help for account
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

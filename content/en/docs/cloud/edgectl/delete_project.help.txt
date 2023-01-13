@@ -1,0 +1,26 @@
+Delete project.
+
+Usage:
+  edgectl delete project PROJECT_ID [flags]
+
+Examples:
+  # Delete "proj1" in the default org  
+  $ edgectl delete project proj1
+
+  # Delete "proj1" in the "acme" org  
+  $ edgectl delete project acme/proj1
+
+  # Delete the project having UUID
+  $ edgectl delete project 6d154556-9e58-4330-a7f3-41c869f01142
+
+
+Flags:
+  -h, --help   help for project
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

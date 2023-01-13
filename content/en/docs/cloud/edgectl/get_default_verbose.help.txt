@@ -1,0 +1,18 @@
+Get edgectl default verbosity. When set, some commands output more info.
+
+Usage:
+  edgectl get default verbose [flags]
+
+Examples:
+  $ edgectl get default verbose
+
+Flags:
+  -h, --help   help for verbose
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

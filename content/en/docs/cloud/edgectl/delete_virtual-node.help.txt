@@ -1,0 +1,27 @@
+Delete virtual node. This command finds the specified node,
+executes the uninstall script on that node, and then deletes the vm.
+
+Usage:
+  edgectl delete virtual-node NODE_ID [flags]
+
+Examples:
+  # Delete named virtual node in default project
+  $ edgectl delete virtual-node node1
+
+  # Delete virtual node via fully-qualified node name
+  $ edgectl delete virtual-node acme/proj1/node1
+
+  # Delete virtual node having uuid
+  $ edgectl delete virtual-node 6d154556-9e58-4330-a7f3-41c869f01142
+
+
+Flags:
+  -h, --help   help for virtual-node
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

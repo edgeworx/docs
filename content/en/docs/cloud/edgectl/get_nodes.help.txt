@@ -1,0 +1,27 @@
+List nodes for project.
+
+Usage:
+  edgectl get nodes [--project PROJECT_ID] [flags]
+
+Aliases:
+  nodes, ls
+
+Examples:
+  # List nodes in project 
+  $ edgectl get nodes --project acme/proj1
+
+  # List nodes in project having UUID
+  $ edgectl get nodes --project 6d154556-9e58-4330-a7f3-41c869f01142
+
+
+Flags:
+      --project string   Project UUID or name, such as acme/proj1
+  -h, --help             help for nodes
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

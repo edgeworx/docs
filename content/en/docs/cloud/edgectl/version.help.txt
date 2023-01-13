@@ -1,0 +1,15 @@
+Print version info
+
+Usage:
+  edgectl version [flags]
+
+Flags:
+  -h, --help   help for version
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

@@ -1,0 +1,26 @@
+List access tokens.
+If PROJECT_ID is set, Project Access Tokens are returned.
+Otherwise, Personal Access Tokens for the authenticated account are listed.
+
+Usage:
+  edgectl get tokens [--project PROJECT_ID] [flags]
+
+Examples:
+  # List tokens for authenticated account
+  $ edgectl get tokens
+
+  # List tokens for project
+  $ edgectl get tokens --project acme/proj1
+
+
+Flags:
+      --project string   project
+  -h, --help             help for tokens
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

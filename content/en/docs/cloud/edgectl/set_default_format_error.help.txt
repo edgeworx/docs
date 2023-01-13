@@ -1,0 +1,22 @@
+Set edgectl default format_error. Controls whether errors are output in the
+default output format (otherwise, errors are output in text).
+
+Usage:
+  edgectl set default format_error true|false [flags]
+
+Examples:
+  # To output JSON errors
+  $ edgectl set default format json 
+  $ edgectl set default format_error true
+
+
+Flags:
+  -h, --help   help for format_error
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

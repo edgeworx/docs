@@ -1,0 +1,26 @@
+Create a new access token. If PROJECT_ID is set, create a 
+Project Access Token. Otherwise, create a Personal Access Token.
+
+Usage:
+  edgectl create token [--project PROJECT_ID] --label LABEL [flags]
+
+Examples:
+  # Create a new Personal Access Token for the authenticated user 
+  $ edgectl create token --label "Personal Access Token 2"
+
+  # Create a Project Access Token for acme/proj1
+  $ edgectl create token --project acme/proj1 --label "Project Access Token 2"
+
+
+Flags:
+      --label string     Human-friendly name
+      --project string   project
+  -h, --help             help for token
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

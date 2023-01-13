@@ -1,0 +1,16 @@
+Help provides help for any command in the application.
+Simply type edgectl help [path to command] for full details.
+
+Usage:
+  edgectl help [command] [flags]
+
+Flags:
+  -h, --help   help for help
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

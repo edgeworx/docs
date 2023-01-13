@@ -1,0 +1,14 @@
+---
+title: "get default format"
+description: "FIXME"
+draft: false
+menu:
+  docs:
+    identifier: "get_default_format"
+    parent: edgectl
+    toc: true
+---
+
+## Help
+
+{{< readfile file="get_default_format.help.txt" code="true" lang="text" >}}
