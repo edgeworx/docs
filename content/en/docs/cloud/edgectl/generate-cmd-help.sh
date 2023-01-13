@@ -20,14 +20,15 @@ rm -f ./*.help.txt
 for cmd in "${cmds[@]}"; do
   # space -> underscore, e.g. "edgectl get account" -> "edgectl_get_account"
 
-  cmd_path="${cmd:8}"
+  echo $cmd
+  cmd_path=${cmd:8}
   cmd_underscore="${cmd_path// /_}"
 
   hlp="${cmd_underscore}.help.txt"
   md="${cmd_underscore}.md"
 
   # shellcheck disable=SC2086
-  sq $cmd --help > $hlp
+  bash -c "$cmd --help" > $hlp
 
   # If the markdown file doesn't exist, create it
   if [ ! -f "$md" ]; then
@@ -43,6 +44,8 @@ menu:
     toc: true
 ---
 
+## Help
+
 {{< readfile file="${hlp}" code="true" lang="text" >}}
 EOF
   fi
@@ -50,6 +53,4 @@ EOF
 
 done
 
-#
----
 

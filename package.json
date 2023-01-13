@@ -66,7 +66,9 @@
     "stylelint": "^14.16",
     "stylelint-config-standard-scss": "^6.1",
     "linkinator": "^4.1.2",
-    "postcss-scss": "^4.0.6"
+    "postcss-scss": "^4.0.6",
+    "gen:cmd-help": "./content/en/docs/cloud/edgectl/generate-cmd-help.sh",
+    "gen:syntax-css": "./generate-syntax-css.sh"
   },
   "otherDependencies": {
     "hugo": "0.109.0"
