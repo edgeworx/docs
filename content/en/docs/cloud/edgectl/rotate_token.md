@@ -6,7 +6,8 @@ menu:
   docs:
     identifier: "rotate_token"
     parent: edgectl
-    toc: true
+toc: true
+command_reference: true
 ---
 
 ## Help

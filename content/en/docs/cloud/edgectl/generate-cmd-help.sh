@@ -41,7 +41,8 @@ menu:
   docs:
     identifier: "${cmd_underscore}"
     parent: edgectl
-    toc: true
+toc: true
+command_reference: true
 ---
 
 ## Help

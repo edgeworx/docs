@@ -6,7 +6,8 @@ menu:
   docs:
     identifier: "stop_app"
     parent: edgectl
-    toc: true
+toc: true
+command_reference: true
 ---
 
 ## Help

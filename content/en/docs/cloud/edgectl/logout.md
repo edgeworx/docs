@@ -6,7 +6,8 @@ menu:
   docs:
     identifier: "logout"
     parent: edgectl
-    toc: true
+toc: true
+command_reference: true
 ---
 
 ## Help

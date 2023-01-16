@@ -6,7 +6,8 @@ menu:
   docs:
     identifier: "set_default_monochrome"
     parent: edgectl
-    toc: true
+toc: true
+command_reference: true
 ---
 
 ## Help

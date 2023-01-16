@@ -6,7 +6,8 @@ menu:
   docs:
     identifier: "get_default_verbose"
     parent: edgectl
-    toc: true
+toc: true
+command_reference: true
 ---
 
 ## Help
