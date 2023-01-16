@@ -14,7 +14,7 @@ edgectl. Linux users can directly use the Register Node command on their termina
 ### Prerequisites
 
 - [Darcy Cloud Account (Free)](https://cloud.darcy.ai)
-- Install [edgectl CLI]({{<ref "/docs/cloud/start-edgectl.md">}})
+- Install [edgectl CLI]({{<ref "/docs/cloud/edgectl/">}})
 - Install [Multipass](https://multipass.run): it is used by edgectl to manage VMs.
 
 {{<warning>}} Virtual Node is not currently compatible with attached video devices.
@@ -37,7 +37,7 @@ Choose `VIRTUAL NODE` to get the instructions for adding a virtual node.
 
 ![Virtual Node Script](/images/add-virtual-node.png)
 
-Make sure you have the latest versions of [edgectl]({{<ref "/docs/cloud/start-edgectl.md">}})
+Make sure you have the latest versions of [edgectl]({{<ref "/docs/cloud/edgectl/">}})
 and [Multipass](https://multipass.run) installed. Click the `COPY` button to copy the command to
 your clipboard. This command starts an Ubuntu VM which registers
 itself with Darcy Cloud as a Virtual Node.
