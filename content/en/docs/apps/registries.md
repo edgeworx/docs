@@ -43,7 +43,7 @@ the `remote` registry selection is just an alias for the value `1`), and the sec
 a `local` registry (the `local` registry selection is just an alias for the value `2`). Additional
 entries to the registry can be created directly in ioFog as
 shown [here](http://iofog.staging.edgeworx.io/docs/3/applications/microservice-registry-catalog.html)
-, or they can be managed and created more simply using [edgectl]({{<ref "/docs/cloud/start-edgectl">}}) directly.
+, or they can be managed and created more simply using [edgectl]({{<ref "/docs/cloud/edgectl">}}) directly.
 
 ## View Current Registry Content
 

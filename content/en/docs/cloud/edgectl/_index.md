@@ -53,6 +53,7 @@ On Windows, use [scoop](https://scoop.sh) to install _edgectl_:
 scoop bucket add edgectl https://github.com/edgeworx/edgectl
 scoop install edgectl
 ```
+
 {{% /tab %}}
 
 {{%tab name="Linux" %}}
@@ -61,6 +62,7 @@ On Linux distros, use `get-edgectl.bash`:
 ```shell
 curl https://cloud.darcy.ai/get-edgectl.bash | bash
 ```
+
 {{% /tab %}}
 {{</tabs>}}
 

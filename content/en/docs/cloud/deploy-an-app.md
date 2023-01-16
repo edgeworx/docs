@@ -36,7 +36,7 @@ Darcy Cloud Portal allows you to edit your app YAML right in the browser. More i
 Application YAML files can be found [here]({{<ref "/docs/apps/">}}).
 
 {{<info>}} Everything shown above using Darcy Cloud Portal can also be achieved using
-our CLI, [edgectl]({{<ref "/docs/cloud/start-edgectl">}}).
+our CLI, [edgectl]({{<ref "/docs/cloud/edgectl">}}).
 {{</info>}}
 
 ## Deploy an App using edgectl

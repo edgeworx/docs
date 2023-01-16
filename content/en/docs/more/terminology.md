@@ -69,7 +69,7 @@ Cloud API [REST documentation](https://api.darcy.ai/v1/docs).
 
 ### edgectl
 
-edgectl is the CLI for _Darcy Cloud_. See [Get Started: edgectl](/docs/cloud/start-edgectl) for more.
+edgectl is the CLI for _Darcy Cloud_. See [Get Started: edgectl](/docs/cloud/edgectl) for more.
 
 ### Account & Org
 
