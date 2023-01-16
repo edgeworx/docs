@@ -1,0 +1,26 @@
+Print detailed description of a project, including nodes, apps and microservices.
+
+Usage:
+  edgectl describe project [PROJECT_ID] [flags]
+
+Examples:
+  # Describe default project
+  $ edgectl describe project
+
+  # Describe project having name
+  $ edgectl describe project acme/proj1
+
+  # Describe project having UUID
+  $ edgectl describe project 6d154556-9e58-4330-a7f3-41c869f01142
+
+
+Flags:
+  -h, --help   help for project
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

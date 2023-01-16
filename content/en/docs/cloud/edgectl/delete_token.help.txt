@@ -1,0 +1,24 @@
+Revoke access token. Note that master access tokens cannot be revoked.
+Use 'edgectl rotate token' instead.
+
+Usage:
+  edgectl delete token TOKEN_UUID|TOKEN_VALUE [flags]
+
+Examples:
+  # Revoke access token having uuid
+  $ edgectl delete token 6c16ad14-9052-4da5-95ad-5fb6a491979d
+
+  # Revoke access token having value
+  $ edgectl delete ecp_xsctw8k2a2zazsk6b8hrzg6sxbhh003135cd
+
+
+Flags:
+  -h, --help   help for token
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

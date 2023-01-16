@@ -1,0 +1,26 @@
+Update fields of a node.
+
+Usage:
+  edgectl patch node --id NODE_ID [--name NEW_NAME] [--description DESC] [flags]
+
+Examples:
+  # Update name of node having UUID
+  $ edgectl patch node --node 6d154556-9e58-4330-a7f3-41c869f01142 --name "my-updated-node"
+
+  # Update description of node via fully-qualified node name 
+  $ edgectl patch node --id acme/proj1/node1 --description "my-updated-node"
+
+
+Flags:
+      --id string            Node UUID or fully-qualified name, e.g. 'acme/proj1/node1
+      --name string          Unique alphanumeric name
+      --description string   Human-friendly description
+  -h, --help                 help for node
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

@@ -1,0 +1,27 @@
+List invites. If --org is set, the invites for that org are shown.
+If --account is set, the invites for that account are shown. If neither arg is set,
+the invites for the default account are shown.
+
+Usage:
+  edgectl get invites [--org ORG_ID|--account ACCOUNT_ID] [flags]
+
+Examples:
+  # List invites for default account.
+  $ edgectl get invites
+
+  # List invites to org "acme"
+  $ edgectl get invites --org acme
+
+
+Flags:
+      --org string       Org name or UUID
+      --account string   Account UUID, username, or email
+  -h, --help             help for invites
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

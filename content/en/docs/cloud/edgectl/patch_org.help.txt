@@ -1,0 +1,28 @@
+Update fields of an org. If ORG_ID is empty, the default org is used.
+
+Usage:
+  edgectl patch org [--id ORG_ID] [--name NAME] [--description LABEL] [--web-url WEB_URL] [--logo-url LOGO_URL] [flags]
+
+Examples:
+  # Change name of org "acme" to "acme2"
+  $ edgectl patch org --id acme --name "acme2"
+
+  # Update logo url for org having UUID
+  $ edgectl patch org --id 6d154556-9e58-4330-a7f3-41c869f01142 --web-url https://acme.org/logo.png
+
+
+Flags:
+      --id string            Org name or UUID
+      --name string          Unique name for this Org
+      --description string   Human-friendly description
+      --web-url string       Link to webpage
+      --logo-url string      URL for logo
+  -h, --help                 help for org
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

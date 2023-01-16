@@ -1,0 +1,23 @@
+Rotate a (master) access token.
+
+Usage:
+  edgectl rotate token TOKEN_UUID|TOKEN_VALUE [flags]
+
+Examples:
+  # Rotate master access token having uuid.
+  $ edgectl rotate token e4ebfa3c-c76a-40cf-bd56-be015d0b3bca
+
+  # Rotate master access token having value.
+  $ edgectl rotate token ecp_xsctw8k2a2zazsk6b8hrzg6sxbhh003135cd
+
+
+Flags:
+  -h, --help   help for token
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

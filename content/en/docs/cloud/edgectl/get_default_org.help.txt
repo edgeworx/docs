@@ -1,0 +1,19 @@
+Get edgectl default org.
+
+Usage:
+  edgectl get default org [flags]
+
+Examples:
+  $ edgectl get default org
+
+
+Flags:
+  -h, --help   help for org
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

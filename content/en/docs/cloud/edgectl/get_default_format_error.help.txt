@@ -1,0 +1,18 @@
+Get edgectl default format_error. Controls whether errors are output in the default output format.
+
+Usage:
+  edgectl get default format_error [flags]
+
+Examples:
+  $ edgectl get default format_error
+
+Flags:
+  -h, --help   help for format_error
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

@@ -1,0 +1,27 @@
+Set edgectl default org. ORG_ID can be org name or UUID.
+Use empty string to clear default.
+
+Usage:
+  edgectl set default org ORG_ID [flags]
+
+Examples:
+  # Set default org using org UUID
+  $ edgectl set default org c56ba41c-5ac0-4ba0-a03a-4ea5b1035b53
+
+  # Set default org using org name
+  $ edgectl set default org acme
+
+  # Clear default org
+  $ edgectl set default org ""
+
+
+Flags:
+  -h, --help   help for org
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

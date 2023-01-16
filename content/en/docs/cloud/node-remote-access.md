@@ -4,7 +4,7 @@ weight: 700
 ---
 
 Once your [node](../cloud/adding-nodes/_index.md) is installed and connected to [Darcy Cloud](../cloud/start-portal.md), you'll be able to remotely access it using
-the Darcy Cloud portal and/or [edgectl]({{<ref "/docs/cloud/start-edgectl">}}).
+the Darcy Cloud portal and/or [edgectl]({{<ref "/docs/cloud/edgectl">}}).
 
 ## Prerequisites
 

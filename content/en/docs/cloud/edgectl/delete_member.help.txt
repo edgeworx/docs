@@ -1,0 +1,26 @@
+Remove member from org. ORG_ID can be org UUID or name. ACCOUNT_ID can
+be account UUID, username, or email.
+
+Usage:
+  edgectl delete member --org ORG_ID --account ACCOUNT_ID [flags]
+
+Examples:
+  # Remove user having username "alice"" from org acme
+  $ edgectl delete member --org acme --account alice
+
+  # Remove user having email alice@acme.com from org acme
+  $ edgectl delete member --org acme --account alice@acme.com
+
+
+Flags:
+      --org string       Org name or UUID
+      --account string   Account UUID, username, or email
+  -h, --help             help for member
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

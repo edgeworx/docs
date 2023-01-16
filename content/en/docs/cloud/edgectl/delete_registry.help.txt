@@ -1,0 +1,21 @@
+Remove a container registry from a project.
+
+Usage:
+  edgectl delete registry REG_ID [--project PROJECT_ID] [flags]
+
+Examples:
+  # Delete the registry with id '1' from project acme/proj1  
+  $ edgectl delete registry 1 --project acme/proj1
+
+
+Flags:
+      --project string   Project UUID or name, such as acme/proj1
+  -h, --help             help for registry
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

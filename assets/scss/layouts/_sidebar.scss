@@ -157,6 +157,10 @@ a.docs-link {
   font-size: $font-size-base;
 }
 
+a.docs-link.cmd-ref {
+  font-family: monospace;
+}
+
 .page-links li {
   margin-top: 0.375rem;
   padding-top: 0.375rem;

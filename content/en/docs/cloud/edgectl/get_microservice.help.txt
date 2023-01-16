@@ -1,0 +1,28 @@
+Get details of an app microservice by name or UUID.
+
+Usage:
+  edgectl get microservice [--project PROJECT_ID] --app APP_NAME MSVC_ID [flags]
+
+Aliases:
+  microservice, msvc
+
+Examples:
+  # Get an app microservice by name
+  $ edgectl get microservice --project acme/proj1 --app my-app my-msvc-name
+
+  # Get an app microservice by uuid
+  $ edgectl get microservice --app my-app 6d154556-9e58-4330-a7f3-41c869f01142
+
+
+Flags:
+      --project string   Project UUID or name, such as acme/proj1
+      --app string       App name
+  -h, --help             help for microservice
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

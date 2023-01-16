@@ -1,0 +1,33 @@
+Change the permissions of an org member. ORG_ID can be org UUID
+or name. ACCOUNT_ID can be account UUID, username, or email.
+
+At least one --scope must be provided. If the intent is to remove a member from the
+org entirely, use "edgectl delete member".
+
+Usage:
+  edgectl patch member --org ORG_ID --account ACCOUNT_ID --scope SCOPE [--scope SCOPE2] [flags]
+
+Examples:
+  # Grant alice the scope 'org:owner' on org 'acme'
+  $ edgectl patch member --org acme --account alice --scope org:owner
+
+  # Grant alice only the scope 'org:write' on org 'acme'.
+  $ edgectl patch member --org acme --account alice@acme.com --scope org:write
+
+  # Grant alice scopes 'org:write' and 'org:admin' on org 'acme'.
+  $ edgectl patch member --org acme --account alice@acme.com --scope org:write --scope org:admin
+
+
+Flags:
+      --org string          Org name or UUID
+      --account string      Account UUID, username, or email
+      --scope stringArray   An authorization scope
+  -h, --help                help for member
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

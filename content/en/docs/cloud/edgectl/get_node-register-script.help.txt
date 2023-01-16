@@ -1,0 +1,26 @@
+Get the registration script command for a project. By default, a curl command
+that is returned. Use --show-script to get the raw script contents.
+
+Usage:
+  edgectl get node-register-script [--project PROJECT_ID] [--show-script] [flags]
+
+Examples:
+  # Get the registration curl command for default project
+  $ edgectl get node-register-script
+
+  # Get the register script, and pipe it to a file for later use
+  $ edgectl get node-register-script --project acme/proj1 --show-script > register.sh
+
+
+Flags:
+      --project string   Project UUID or name, such as acme/proj1
+      --show-script      Output the script content
+  -h, --help             help for node-register-script
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

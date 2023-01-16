@@ -1,0 +1,29 @@
+Get node details.
+
+Usage:
+  edgectl get node ID [flags]
+
+Examples:
+  # Get node having UUID
+  $ edgectl node get 6d154556-9e58-4330-a7f3-41c869f01142 
+	
+  # Get node via fully-qualified node name (org/project/node)
+  $ edgectl get node acme/proj1/node1
+	
+  # Get named node in default org
+  $ edgectl get node proj1/node1
+	
+  # Get named node in default org and default project
+  $ edgectl get node node1
+
+
+Flags:
+  -h, --help   help for node
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

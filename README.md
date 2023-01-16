@@ -15,7 +15,8 @@ content to [Netlify](https://www.netlify.com).
 ## Pre-requisites
 
 - [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/) — latest LTS version or newer
+- [Node.js](https://nodejs.org/) — `node v18.12.1 (npm v9.2.0)` or higher. It is recommended to
+  install [nvm](https://github.com/nvm-sh/nvm). Then simply `nvm use 18`.
 
 > The Doks theme uses npm (included with Node.js) to centralize dependency management,
 > making it [easy to update](https://getdoks.org/docs/help/how-to-update/) resources, build tooling,
@@ -26,8 +27,9 @@ content to [Netlify](https://www.netlify.com).
 - Clone the repo: `git clone https://github.com/darcyai/docs.git`
 - Change to the repo dir: `cd docs`
 - Install dependencies: `npm install`
-- Start a local server: `npm run start`
+- Start a local server: `npm start`
 - View the website locally: [http://localhost:1313](http://localhost:1313)
+- Test your changes: `npm test`
 
 > NOTE: when the local server is running, you can generally make edits and they will
 > appear in your browser. However, for some types of changes, you may need to restart

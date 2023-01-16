@@ -1,0 +1,20 @@
+Set edgectl default verbosity.
+
+Usage:
+  edgectl set default verbose true|false [flags]
+
+Examples:
+  $ edgectl set default verbose true
+
+  $ edgectl set default verbose false
+
+Flags:
+  -h, --help   help for verbose
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

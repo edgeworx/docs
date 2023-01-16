@@ -75,4 +75,4 @@ app can be found [here]({{<ref "/docs/apps/demo-apps/heart-rate.md">}}).
 
 Applications can be managed through
 the [portal]({{<ref "/docs/cloud/deploy-an-app.md">}})
-or using [edgectl]({{<ref "/docs/cloud/start-edgectl.md">}}).
+or using [edgectl]({{<ref "/docs/cloud/edgectl/">}}).

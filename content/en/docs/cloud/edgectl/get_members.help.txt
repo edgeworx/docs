@@ -1,0 +1,24 @@
+List members of org.
+
+Usage:
+  edgectl get members --org ORG_ID [flags]
+
+Examples:
+  # List projects of the "acme" org
+  $ edgectl get members --org acme
+
+  # List members of the org having uuid
+  $ edgectl get members --org 6d154556-9e58-4330-a7f3-41c869f01142
+
+
+Flags:
+      --org string   Org name or UUID
+  -h, --help         help for members
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

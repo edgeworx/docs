@@ -1,0 +1,18 @@
+Get edgectl default header. Controls whether header row is shown.
+
+Usage:
+  edgectl get default header [flags]
+
+Examples:
+  $ edgectl get default header
+
+Flags:
+  -h, --help   help for header
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output
