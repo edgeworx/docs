@@ -1,6 +1,6 @@
 ---
 title: "get account"
-description: "FIXME"
+description: "edgectl get account"
 draft: false
 menu:
   docs:

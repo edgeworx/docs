@@ -1,6 +1,6 @@
 ---
 title: "delete project"
-description: "FIXME"
+description: "edgectl delete project"
 draft: false
 menu:
   docs:

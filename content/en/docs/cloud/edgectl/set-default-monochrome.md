@@ -1,6 +1,6 @@
 ---
 title: "set default monochrome"
-description: "FIXME"
+description: "edgectl set default monochrome"
 draft: false
 menu:
   docs:

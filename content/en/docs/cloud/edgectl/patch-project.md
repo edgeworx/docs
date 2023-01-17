@@ -1,6 +1,6 @@
 ---
 title: "patch project"
-description: "FIXME"
+description: "edgectl patch project"
 draft: false
 menu:
   docs:

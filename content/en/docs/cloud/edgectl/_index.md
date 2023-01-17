@@ -21,7 +21,7 @@ deploy some live [microservices](/docs/apps/microservices) to the edge!
 ## Create a Darcy Cloud Account
 
 Before installing and using _edgectl_, we must first create an account
-via [Darcy Cloud Portal](https://cloud.darcy.ai) (see [docs](/docs/cloud/start-portal).)
+via [Darcy Cloud Portal](https://cloud.darcy.ai) (see [docs](/docs/cloud/start-portal).
 
 Navigate to [Cloud Portal](https://cloud.darcy.ai) and click the `Create Account` button in the top
 right.

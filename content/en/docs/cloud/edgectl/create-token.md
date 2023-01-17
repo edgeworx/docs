@@ -1,6 +1,6 @@
 ---
 title: "create token"
-description: "FIXME"
+description: "edgectl create token"
 draft: false
 menu:
   docs:

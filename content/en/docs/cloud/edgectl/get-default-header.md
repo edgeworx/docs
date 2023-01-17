@@ -1,6 +1,6 @@
 ---
 title: "get default header"
-description: "FIXME"
+description: "edgectl get default header"
 draft: false
 menu:
   docs:

@@ -1,6 +1,6 @@
 ---
 title: "get default format_error"
-description: "FIXME"
+description: "edgectl get default format_error"
 draft: false
 menu:
   docs:

@@ -1,6 +1,6 @@
 ---
 title: "patch registry"
-description: "FIXME"
+description: "edgectl patch registry"
 draft: false
 menu:
   docs:

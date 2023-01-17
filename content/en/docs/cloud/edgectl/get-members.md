@@ -1,7 +1,7 @@
 ---
 title: "get members"
-description: "FIXME"
-draft: false
+description: "edgectl get members"
+draft: true
 menu:
   docs:
     identifier: "get-members"

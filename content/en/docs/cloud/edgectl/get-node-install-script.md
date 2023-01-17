@@ -1,7 +1,7 @@
 ---
 title: "get node-install-script"
-description: "FIXME"
-draft: false
+description: "edgectl get node-install-script"
+draft: true
 menu:
   docs:
     identifier: "get-node-install-script"

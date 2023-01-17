@@ -1,6 +1,6 @@
 ---
 title: "get default verbose"
-description: "FIXME"
+description: "edgectl get default verbose"
 draft: false
 menu:
   docs:

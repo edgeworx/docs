@@ -1,6 +1,6 @@
 ---
 title: "create virtual-node"
-description: "FIXME"
+description: "edgectl create virtual-node"
 draft: false
 menu:
   docs:

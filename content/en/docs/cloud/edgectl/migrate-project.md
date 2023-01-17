@@ -1,7 +1,7 @@
 ---
 title: "migrate project"
-description: "FIXME"
-draft: false
+description: "edgectl migrate project"
+draft: true
 menu:
   docs:
     identifier: "migrate-project"

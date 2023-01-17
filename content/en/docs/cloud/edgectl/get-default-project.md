@@ -1,6 +1,6 @@
 ---
 title: "get default project"
-description: "FIXME"
+description: "edgectl get default project"
 draft: false
 menu:
   docs:

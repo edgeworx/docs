@@ -1,6 +1,6 @@
 ---
 title: "delete virtual-node"
-description: "FIXME"
+description: "edgectl delete virtual-node"
 draft: false
 menu:
   docs:

@@ -1,6 +1,6 @@
 ---
 title: "restart app"
-description: "FIXME"
+description: "edgectl restart app"
 draft: false
 menu:
   docs:

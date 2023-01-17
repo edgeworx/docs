@@ -1,6 +1,6 @@
 ---
 title: "get node-register-script"
-description: "FIXME"
+description: "edgectl get node-register-script"
 draft: false
 menu:
   docs:

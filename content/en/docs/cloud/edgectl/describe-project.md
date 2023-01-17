@@ -1,6 +1,6 @@
 ---
 title: "describe project"
-description: "FIXME"
+description: "edgectl describe project"
 draft: false
 menu:
   docs:

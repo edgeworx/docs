@@ -1,6 +1,6 @@
 ---
 title: "login"
-description: "FIXME"
+description: "edgectl login"
 draft: false
 menu:
   docs:

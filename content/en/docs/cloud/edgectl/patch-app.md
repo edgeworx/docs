@@ -1,6 +1,6 @@
 ---
 title: "patch app"
-description: "FIXME"
+description: "edgectl patch app"
 draft: false
 menu:
   docs:

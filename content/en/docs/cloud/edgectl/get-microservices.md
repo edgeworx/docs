@@ -1,6 +1,6 @@
 ---
 title: "get microservices"
-description: "FIXME"
+description: "edgectl get microservices"
 draft: false
 menu:
   docs:

@@ -1,7 +1,7 @@
 ---
 title: "get invites"
-description: "FIXME"
-draft: false
+description: "edgectl get invites"
+draft: true
 menu:
   docs:
     identifier: "get-invites"

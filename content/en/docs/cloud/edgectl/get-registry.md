@@ -1,6 +1,6 @@
 ---
 title: "get registry"
-description: "FIXME"
+description: "edgectl get registry"
 draft: false
 menu:
   docs:

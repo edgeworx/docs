@@ -1,6 +1,6 @@
 ---
 title: "rename app"
-description: "FIXME"
+description: "edgectl rename app"
 draft: false
 menu:
   docs:

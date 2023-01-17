@@ -1,6 +1,6 @@
 ---
 title: "stop app"
-description: "FIXME"
+description: "edgectl stop app"
 draft: false
 menu:
   docs:

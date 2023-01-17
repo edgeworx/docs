@@ -1,6 +1,6 @@
 ---
 title: "start app"
-description: "FIXME"
+description: "edgectl start app"
 draft: false
 menu:
   docs:

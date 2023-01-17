@@ -1,6 +1,6 @@
 ---
 title: "deploy app"
-description: "FIXME"
+description: "edgectl deploy app"
 draft: false
 menu:
   docs:

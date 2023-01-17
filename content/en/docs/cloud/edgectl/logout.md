@@ -1,6 +1,6 @@
 ---
 title: "logout"
-description: "FIXME"
+description: "edgectl logout"
 draft: false
 menu:
   docs:

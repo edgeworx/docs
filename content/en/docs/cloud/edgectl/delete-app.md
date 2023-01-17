@@ -1,6 +1,6 @@
 ---
 title: "delete app"
-description: "FIXME"
+description: "edgectl delete app"
 draft: false
 menu:
   docs:

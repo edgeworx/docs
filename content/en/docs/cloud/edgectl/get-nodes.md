@@ -1,6 +1,6 @@
 ---
 title: "get nodes"
-description: "FIXME"
+description: "edgectl get nodes"
 draft: false
 menu:
   docs:

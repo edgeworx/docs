@@ -1,6 +1,6 @@
 ---
 title: "version"
-description: "FIXME"
+description: "edgectl version"
 draft: false
 menu:
   docs:

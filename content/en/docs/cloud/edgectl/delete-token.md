@@ -1,6 +1,6 @@
 ---
 title: "delete token"
-description: "FIXME"
+description: "edgectl delete token"
 draft: false
 menu:
   docs:
