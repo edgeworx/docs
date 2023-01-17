@@ -6,11 +6,11 @@ aliases:
   - /darcy/darcy-cloud/get-started-edgectl/deploy-an-app
 ---
 
-Deploy apps using the Darcy Portal UI or terminal commands via [edgectl](../cloud/start-edgectl.md)
+Deploy apps using the Darcy Portal UI or terminal commands via [edgectl](../cloud/edgectl)
 
 #### Prerequisites
 
-To deploy your custom app, you will need a [Darcy Cloud](../cloud/start-portal.md) account with at least one [node](../cloud/adding-nodes/_index.md) accessible
+To deploy your custom app, you will need a [Darcy Cloud](/docs/cloud/start-portal) account with at least one [node](../cloud/adding-nodes/_index.md) accessible
 and `ONLINE`. You will need a basic understanding
 of [how to structure app YAML]({{<ref "/docs/apps/yaml-definition.md">}}) for Darcy Cloud.
 

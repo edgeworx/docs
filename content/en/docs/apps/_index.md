@@ -5,7 +5,7 @@ linkTitle: "Building Darcy apps"
 ---
 
 [Apps](../more/terminology#application) are groups of [microservices](./microservices.md) bundled to work together. They are defined using YAML files and can
-be deployed and updated by uploading those YAML files through [Darcy Cloud](../cloud/start-portal.md) or through
+be deployed and updated by uploading those YAML files through [Darcy Cloud](/docs/cloud/start-portal) or through
 [edgectl]({{<ref "/docs/cloud/adding-nodes/add-node.md">}}). An app can consist of an arbitrary
 number of interacting or standalone microservices that are deployed on one or may nodes.
 

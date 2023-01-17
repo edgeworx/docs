@@ -10,7 +10,7 @@ have ssh or console access to your node and are using a common shell, such as zs
 Additionally, the installation script by default will need to run as sudo to register the necessary
 services to be automatically started after the node is rebooted.
 
-Add nodes using the Darcy Portal UI or terminal commands via [edgectl](../start-edgectl.md)
+Add nodes using the Darcy Portal UI or terminal commands via [edgectl](../edgectl)
 
 ## Add a node using Darcy Cloud Portal
 
@@ -60,7 +60,7 @@ You now have an edge node, let's start using it!
 
 ## Add a node using edgectl
 
-In [Darcy Cloud](/docs/cloud/start-portal.md), nodes are edge devices that run Edgeworx Agents. Ultimately, we want to deploy
+In [Darcy Cloud](/docs/cloud/start-portal), nodes are edge devices that run Edgeworx Agents. Ultimately, we want to deploy
 [applications](/docs/more/terminology#application) to these nodes to put them to work.
 
 If we list nodes in our default [organization](/docs/more/terminology#account--org) and project, we will notice that we have no nodes:
