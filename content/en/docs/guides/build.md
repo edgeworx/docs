@@ -8,7 +8,7 @@ weight: 200
 
 ## What you will accomplish
 
-In this step-by-step guide you’ll learn how to build your first Darcy AI app. This [app](../more/terminology.md#application) utilizes all of the core Darcy AI concepts, such as [pipelines](../more/terminology.md#pipeline), [input streams](../more/terminology.md#input-stream), [perceptors](../more/terminology.md#perceptor) and [output streams](../more/terminology.md#output-stream) to detect and count people and then change some basic configurations. The concepts in this guide are the base foundations for any Darcy AI application you might want to build in the future.
+In this step-by-step guide you’ll learn how to build your first Darcy AI app. This [app](../more/terminology#application) utilizes all of the core Darcy AI concepts, such as [pipelines](../more/terminology#pipeline), [input streams](../more/terminology#input-stream), [perceptors](../more/terminology#perceptor) and [output streams](../more/terminology#output-stream) to detect and count people and then change some basic configurations. The concepts in this guide are the base foundations for any Darcy AI application you might want to build in the future.
 
 {{< info >}}
 Darcy AI can run in CPU mode (if you don't have a Coral accelerator attached), but requires a relatively modern system with a good CPU (ideally with multiple cores), and a decent amount of memory. If you run it on a low power platform, then you will get a very low frames per second video output.
@@ -74,7 +74,7 @@ live_feed = LiveFeedStream(path="/", port=3456, host="0.0.0.0")
 
 ### Set up a callback and add the Output Stream to the Pipeline
 
-Before we add the LiveFeed Output Stream to the Pipeline, we need to set up a [callback](../more/terminology.md#callback) function that
+Before we add the LiveFeed Output Stream to the Pipeline, we need to set up a [callback](../more/terminology#callback) function that
 we are going to use to process the data before displaying the video. This is where all of the business logic is taking place. After the callback function definition, there is a line for adding the LiveFeed Output Stream to the Pipeline. That command needs to have the callback
 function already defined before it can execute successfully.
 

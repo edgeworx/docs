@@ -10,7 +10,7 @@ aliases:
 Microservices are a specialization of a service-oriented architecture (SOA), flexible, independently
 deployable software.
 
-Microservices are an architectural style that structures an [application](../more/terminology.md#application) as a collection of loosely
+Microservices are an architectural style that structures an [application](../more/terminology#application) as a collection of loosely
 coupled services, which implement business capabilities. The microservice architecture enables the
 continuous delivery and deployment of large, complex applications by naturally dividing it into
 smaller pieces. Key characteristics of microservices:

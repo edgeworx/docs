@@ -13,8 +13,8 @@ identifier: edgectl
 ---
 _edgectl_ is [Darcy Cloud's](../cloud/start-portal.md) command line interface (CLI). It can be used to manage Darcy
 Cloud
-[accounts, organizations,](../more/terminology.md#account--org) [projects](../more/terminology.md#project), [nodes](../cloud/adding-nodes/_index.md),
-and [applications](../more/terminology.md#application).
+[accounts, organizations,](../more/terminology#account--org) [projects](../more/terminology#project), [nodes](../cloud/adding-nodes/_index.md),
+and [applications](../more/terminology#application).
 
 In this section we will show you how to use _edgectl_ to get started with your first project and
 deploy some live [microservices](../apps/microservices.md) to the edge!

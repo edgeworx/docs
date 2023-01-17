@@ -1,8 +1,8 @@
 {
-  "timeout:": 10,
+  "skip": "(github.com\\/darcyai\\/docs|linkedin.com\\/company\\/edgeworxio)",
+  "timeout:": 2000,
   "retryErrors": true,
-  "skip": "https://github.com/darcyai/docs",
   "retryErrorsJitter": true,
-  "retryErrorsCount": 3,
+  "retryErrorsCount": 1,
   "verbosity": "error"
 }

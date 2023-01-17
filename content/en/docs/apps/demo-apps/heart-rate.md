@@ -18,7 +18,7 @@ heart rate data on a graph.
 - A Darcy Cloud Account
 - Any edge node (or a virtual node)
 
-{{<info>}} Although this [application](/docs/more/terminology.md#application) works best with two nodes, you can deploy it with only one
+{{<info>}} Although this [application](/docs/more/terminology#application) works best with two nodes, you can deploy it with only one
 node and run all [microservices](/docs/apps/microservices.md) on the same device. The YAML will automatically detect if you have
 one or two nodes. {{</info>}}
 
@@ -27,7 +27,7 @@ one or two nodes. {{</info>}}
 ## Deploy using Darcy Cloud Portal
 
 Deploying the Heart Rate Application from the Darcy Cloud platform is extremely simple. Make sure
-you have [added at least 1 node]({{<ref "/docs/cloud/adding-nodes/add-node.md">}}) to your Darcy Cloud [project](../../more/terminology.md#project), then
+you have [added at least 1 node]({{<ref "/docs/cloud/adding-nodes/add-node.md">}}) to your Darcy Cloud [project](../../more/terminology#project), then
 follow the steps below:
 
 1. Go to your Darcy Cloud project page

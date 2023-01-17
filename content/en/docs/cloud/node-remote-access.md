@@ -22,7 +22,7 @@ loading time, you'll have access to a terminal on your node.
 
 ![SSH Terminal Page](</images/Screen Shot 2022-04-08 at 1.36.50 PM.png>)
 
-{{<info>}}You can also access the SSH shortcut from the [project](/docs/more/terminology.md#project) overview page by
+{{<info>}}You can also access the SSH shortcut from the [project](/docs/more/terminology#project) overview page by
 clicking the 3 dots to the right of your node and selecting `SSH` from the drop down menu.
 {{</info>}}
 

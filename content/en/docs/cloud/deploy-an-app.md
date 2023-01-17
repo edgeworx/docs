@@ -16,7 +16,7 @@ of [how to structure app YAML]({{<ref "/docs/apps/yaml-definition.md">}}) for Da
 
 ## Deploy an App using Darcy Cloud Portal
 
-1. Go to the Darcy Cloud [project](../more/terminology.md#project) page
+1. Go to the Darcy Cloud [project](../more/terminology#project) page
 2. Select `Apps`
 3. Click on `+ DEPLOY APP`
 4. Drag n' drop a [YAML file]({{<ref "/docs/apps/yaml-definition.md">}}) into the box
@@ -25,7 +25,7 @@ of [how to structure app YAML]({{<ref "/docs/apps/yaml-definition.md">}}) for Da
 
 ### View your Application Details
 
-Click on your app in the list of [application](../more/terminology.md#application) to see its details.
+Click on your app in the list of [application](../more/terminology#application) to see its details.
 
 ![Application Detail View](/images/18done.png)
 

@@ -5,7 +5,7 @@ aliases:
   - /darcy/darcy-cloud/get-started-ec/nodes/get-started-add-node
 ---
 
-To add a [node](../adding-nodes/_index.md) to your [project](/docs/more/terminology.md#project), you will be running a command line script. For this we assume you
+To add a [node](../adding-nodes/_index.md) to your [project](/docs/more/terminology#project), you will be running a command line script. For this we assume you
 have ssh or console access to your node and are using a common shell, such as zsh or bash.
 Additionally, the installation script by default will need to run as sudo to register the necessary
 services to be automatically started after the node is rebooted.
@@ -16,7 +16,7 @@ Add nodes using the Darcy Portal UI or terminal commands via [edgectl](../start-
 
 ### Get the node Install script
 
-Log into [Darcy Cloud](https://cloud.darcy.ai) and select the project to which you want to [add thenode](../../more/terminology.md#node-install-script).
+Log into [Darcy Cloud](https://cloud.darcy.ai) and select the project to which you want to [add thenode](../../more/terminology#node-install-script).
 
 ![Add Node](/images/add-node.png)
 
@@ -61,9 +61,9 @@ You now have an edge node, let's start using it!
 ## Add a node using edgectl
 
 In [Darcy Cloud](/docs/cloud/start-portal.md), nodes are edge devices that run Edgeworx Agents. Ultimately, we want to deploy
-[applications](/docs/more/terminology.md#application) to these nodes to put them to work.
+[applications](/docs/more/terminology#application) to these nodes to put them to work.
 
-If we list nodes in our default [organization](/docs/more/terminology.md#account--org) and project, we will notice that we have no nodes:
+If we list nodes in our default [organization](/docs/more/terminology#account--org) and project, we will notice that we have no nodes:
 
 ```shell
 edgectl get nodes
