@@ -3,21 +3,20 @@ title: "edgectl"
 description: "edgectl is the CLI for Darcy Cloud."
 linkTitle: "edgectl CLI"
 weight: 300
+identifier: edgectl
 aliases:
 - /darcy/darcy-cloud/get-started-edgectl
 - /darcy-docs/darcy-cloud/get-started-edgectl
 - /docs/cloud/edgectl
-- /[Casa](..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2FLibrary%2FMobile%20Documents%2Fcom%7Eapple%7ECloudDocs%2Fndata%2FPersonal%2FCasa)docs/cloud/start-edgectl
-
-identifier: edgectl
+- /docs/cloud/get-started-edgectl
 ---
-_edgectl_ is [Darcy Cloud's](../cloud/start-portal.md) command line interface (CLI). It can be used to manage Darcy
+_edgectl_ is [Darcy Cloud's](/docs/cloud/start-portal) command line interface (CLI). It can be used to manage Darcy
 Cloud
-[accounts, organizations,](../more/terminology.md#account--org) [projects](../more/terminology.md#project), [nodes](../cloud/adding-nodes/_index.md),
-and [applications](../more/terminology.md#application).
+[accounts, organizations,](/docs/more/terminology/#account--org) [projects](/docs/more/terminology#project), [nodes](/docs/cloud/adding-nodes),
+and [applications](/docs/more/terminology#application).
 
 In this section we will show you how to use _edgectl_ to get started with your first project and
-deploy some live [microservices](../apps/microservices.md) to the edge!
+deploy some live [microservices](/docs/apps/microservices) to the edge!
 
 ## Create a Darcy Cloud Account
 

@@ -18,14 +18,14 @@ rm -f ./*.help.txt
 
 
 for cmd in "${cmds[@]}"; do
-  # space -> underscore, e.g. "edgectl get account" -> "edgectl_get_account"
+  # space -> underscore, e.g. "edgectl get account" -> "get-account"
 
   echo $cmd
   cmd_path=${cmd:8}
-  cmd_underscore="${cmd_path// /_}"
+  cmd_escaped="${cmd_path// /-}"
 
-  hlp="${cmd_underscore}.help.txt"
-  md="${cmd_underscore}.md"
+  hlp="${cmd_escaped}.help.txt"
+  md="${cmd_escaped}.md"
 
   # shellcheck disable=SC2086
   bash -c "$cmd --help" > $hlp
@@ -39,7 +39,7 @@ description: "FIXME"
 draft: false
 menu:
   docs:
-    identifier: "${cmd_underscore}"
+    identifier: "${cmd_escaped}"
     parent: edgectl
 toc: true
 command_reference: true

@@ -2,6 +2,8 @@
 title: "Terminology"
 linkTitle: "Terminology"
 weight: 200
+aliases:
+  - /terminology
 ---
 
 ## Darcy AI terminology

@@ -5,7 +5,7 @@ draft: true
 weight: 210
 ---
 
-You can use any Windows computer to build Darcy AI [applications](../../more/terminology.md#application). After you finish setting up your
+You can use any Windows computer to build Darcy AI [applications](../../more/terminology#application). After you finish setting up your
 computer as a development environment, you will be able to write, test, and debug your Darcy AI
 apps. Then you can package your code and deploy the applications to any edge device!
 

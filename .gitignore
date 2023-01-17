@@ -9,3 +9,6 @@ darcyai-sdk.iml
 /scratch/
 .idea
 /.vscode
+/build
+/build-inner.sh
+/build-outer.sh

@@ -7,7 +7,7 @@ weight: 400
 ![Darcy AI Pipeline](/images/pipeline-example-visual@2x-100.jpg)
 
 Darcy AI offers a rich set of features that Darcy AI app developers can use to
-easily build complex AI processing chains. This makes developing rich real-time [applications](../more/terminology.md#application)
+easily build complex AI processing chains. This makes developing rich real-time [applications](../more/terminology#application)
 possible in a shorter timeframe and with a much more standardized approach.
 
 If you have not yet read the overview of Darcy AI terminology, it is recommended that you do that
@@ -15,7 +15,7 @@ first. You can find it here [Darcy AI Terminology Guide](/docs/more/terminology.
 
 ## Thinking in terms of Darcy AI pipelines
 
-The concept of an AI [Pipeline](/docs/more/terminology.md#pipeline) is similar to complex event processing (
+The concept of an AI [Pipeline](/docs/more/terminology#pipeline) is similar to complex event processing (
 CEP) and data stream processing, but there are some unique aspects you will notice when building
 with the Darcy AI.
 
@@ -33,7 +33,7 @@ application run smoothly.
 
 The way you structure the pipeline will have an effect on AI processing speed and timing
 reliability. For processes that must occur in a straight line, attach processing steps called
-[Perceptors](../more/terminology.md#perceptor) one after the other. For processes that can take place in any order and do not depend on
+[Perceptors](../more/terminology#perceptor) one after the other. For processes that can take place in any order and do not depend on
 one another, you can use parallel ordering.
 
 A Darcy AI pipeline is a data graph and can be modeled visually like a sequence tree.
@@ -59,12 +59,12 @@ for processing that you don’t want.
 ## Start with an Input Stream
 
 The first stage of every pipeline cycle (also called
-a [frame or pulse](/docs/more/terminology.md#frame-cycle-or-pulse)) is the unprocessed data coming from
-the [input stream](/docs/more/terminology.md#input-stream) that you have chosen for your application. Choose
+a [frame or pulse](/docs/more/terminology#frame-cycle-or-pulse)) is the unprocessed data coming from
+the [input stream](/docs/more/terminology#input-stream) that you have chosen for your application. Choose
 an input stream that provides the sensor data that you want Darcy to process. This may be audio,
 video, LiDAR, thermal video, or just about anything you can imagine.
 
-A good example of an input stream is the CameraStream class that comes built-in with the [Darcy AI Engine](../more/terminology.md#engine). This input stream allows you to specify the device path for a video camera. It will read the
+A good example of an input stream is the CameraStream class that comes built-in with the [Darcy AI Engine](../more/terminology#engine). This input stream allows you to specify the device path for a video camera. It will read the
 video camera feed and bring it into Darcy at the frame rate and resolution you specify.
 
 Instantiate the CameraStream object and set some of its parameters like this:
@@ -78,7 +78,7 @@ camera = CameraStream(video_device="/dev/video0", fps=20)
 ## Attach a Perceptor
 
 The main processing of the Darcy AI Pipeline is found in
-the [Perceptors](/docs/more/terminology.md#perceptor). Adding a Perceptor is easy. You just instantiate the
+the [Perceptors](/docs/more/terminology#perceptor). Adding a Perceptor is easy. You just instantiate the
 Perceptor class, perform any initial operations to set it up, and then add it to the Pipeline in
 whatever position you desire. Each Perceptor offers different configuration options and produces
 different results. Perceptors also offer events to which you can subscribe.
@@ -99,8 +99,8 @@ pipeline.add_perceptor("mypeople", people_ai, input_callback=people_input_callba
 ## Every pipeline step stores data in the Perception Object Model (POM)
 
 When a Perceptor has executed, its results are added to
-the [Perception Object Model (POM)](/docs/more/terminology.md#perception-object-model-pom) and the Pipeline
-continues to the next Perceptor or [Output Stream](/docs/more/terminology.md#output-stream) if there are not
+the [Perception Object Model (POM)](/docs/more/terminology#perception-object-model-pom) and the Pipeline
+continues to the next Perceptor or [Output Stream](/docs/more/terminology#output-stream) if there are not
 further Perceptors in the Pipeline. The POM is like a shopping cart that gets loaded with data as it
 moves along. Everything is categorized in the POM so you can easily access the data associated with
 any Perceptor. The reference is the name you gave that Perceptor when adding it to the Pipeline.
@@ -110,7 +110,7 @@ for performing operations on the result data, such as retrieving a particular pe
 grabbing the face image of a specific person. The data structure and set of convenience functions
 for each Perceptor can be found in the documentation for that Perceptor.
 
-Here is an example of a [callback](/docs/more/terminology.md#callback) that is taking advantage of several
+Here is an example of a [callback](/docs/more/terminology#callback) that is taking advantage of several
 powerful convenience functions in the POM under the results of the People Perceptor named as
 `mypeople`:
 

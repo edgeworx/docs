@@ -34,7 +34,7 @@ You may need to check your spam folders. The email sender will be `no-reply@auth
 
 ## View Your Darcy Cloud edge project
 
-Once your account has been created, Darcy Cloud automatically creates your first [project](../more/terminology.md#project). This may
+Once your account has been created, Darcy Cloud automatically creates your first [project](../more/terminology#project). This may
 take a few minutes. The screen will refresh automatically when complete.
 
 ![Your Project is Being Created](</images/image (15).png>)

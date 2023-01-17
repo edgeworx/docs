@@ -8,7 +8,7 @@ weight: 250
 
 ## What you will accomplish
 
-By the end of this guide, you will be able to make deployable Darcy AI [application](../more/terminology.md#application) packages that
+By the end of this guide, you will be able to make deployable Darcy AI [application](/docs/more/terminology#application) packages that
 will run on any hardware that meets the requirements for Darcy AI. The list of compatible hardware
 is extensive, allowing you to deploy your Darcy AI applications to the devices that fit your
 solution needs.
@@ -76,7 +76,7 @@ COPY ./YOURFILE.py /src/app.py
 CMD python3 -u /src/app.py
 ```
 
-The `FROM` command tells Docker which [base image](../more/terminology.md#docker-base-image) to use. It will build your application container
+The `FROM` command tells Docker which [base image](/docs/more/terminology#docker-base-image) to use. It will build your application container
 starting from the base image.
 
 Every `RUN` command tells Docker to execute a step. In the example above, the step is to install
@@ -86,7 +86,7 @@ Dockerfile, you will always get the latest Darcy AI library when building your c
 
 Similarly, every `COPY` command tells Docker to take something from your local environment and make
 a copy of it in your container. Use this command to copy in files that are part of your application,
-such as .mp4 videos, .tflite [AI models](../more/terminology.md#ai-model), and additional Python code files. The first part of the
+such as .mp4 videos, .tflite [AI models](/docs/more/terminology#ai-model), and additional Python code files. The first part of the
 command is the source and the second part is the destination. In the example above,
 the `YOURFILE.py` file is copied into the `/src/` directory in the container and renamed to `app.py`
 .
@@ -160,7 +160,7 @@ your `Dockerfile` in the current directory.
 
 Your build process may take 10 or 15 minutes if you are building for the first time and you do not
 have a very fast internet connection. This is because the underlying container
-[base images]({{<ref "/docs/more/terminology.md#docker-base-image">}}) will need to be downloaded.
+[base images]({{<ref "/docs/more/terminology#docker-base-image">}}) will need to be downloaded.
 After the first
 build, this process should only take a few minutes. You can watch the output of the command to see
 the build progress. A separate container image will be built for each of the platforms specified in
@@ -182,7 +182,7 @@ process.
 
 ### Add your devices to the Darcy Cloud
 
-The [Darcy Cloud](../cloud/start-portal.md) gives you management of all your [edge devices]({{<ref "/docs/cloud/adding-nodes">}}) and edge applications in one place.
+The [Darcy Cloud](/docs/cloud/start-portal) gives you management of all your [edge devices]({{<ref "/docs/cloud/adding-nodes">}}) and edge applications in one place.
 You can open an SSH shell session on demand, deploy applications, and see the health and status for
 every device. All of this functionality works no matter where your edge devices are physically
 located, even when they are behind NAT layers and firewalls. Use the Darcy Cloud to make building,
@@ -192,7 +192,8 @@ systems.
 If you don't already have an account, you can create one now for free. Create an account or log in
 at [https://cloud.darcy.ai](https://cloud.darcy.ai).
 
-Once you are in your Darcy Cloud account, [add your device as a node]({{<ref "/docs/cloud/adding-nodes/add-node.md">}}) in your current [project](../more/terminology.md#project). Use
+Once you are in your Darcy Cloud account, [add your device as a node]({{<ref "/docs/cloud/adding-nodes/add-node.md">}}) in
+your current [project](/docs/more/terminology#project). Use
 the "plus button" in the bottom left to add a node. Follow the instructions in the pop-up window to
 add your device as a node.
 
