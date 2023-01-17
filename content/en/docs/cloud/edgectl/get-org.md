@@ -1,6 +1,6 @@
 ---
 title: "get org"
-description: "FIXME"
+description: "edgectl get org"
 draft: false
 menu:
   docs:

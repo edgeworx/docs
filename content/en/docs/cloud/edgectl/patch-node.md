@@ -1,6 +1,6 @@
 ---
 title: "patch node"
-description: "FIXME"
+description: "edgectl patch node"
 draft: false
 menu:
   docs:

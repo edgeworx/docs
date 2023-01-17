@@ -1,6 +1,6 @@
 ---
 title: "set default format"
-description: "FIXME"
+description: "edgectl set default format"
 draft: false
 menu:
   docs:

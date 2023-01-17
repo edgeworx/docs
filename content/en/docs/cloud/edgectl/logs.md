@@ -1,6 +1,6 @@
 ---
 title: "logs"
-description: "FIXME"
+description: "edgectl logs"
 draft: false
 menu:
   docs:

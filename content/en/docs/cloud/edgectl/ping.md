@@ -1,6 +1,6 @@
 ---
 title: "ping"
-description: "FIXME"
+description: "edgectl ping"
 draft: false
 menu:
   docs:

@@ -1,6 +1,6 @@
 ---
 title: "delete registry"
-description: "FIXME"
+description: "edgectl delete registry"
 draft: false
 menu:
   docs:

@@ -1,6 +1,6 @@
 ---
 title: "completion"
-description: "FIXME"
+description: "edgectl completion"
 draft: false
 menu:
   docs:

@@ -35,7 +35,7 @@ for cmd in "${cmds[@]}"; do
 cat <<- EOF > "$md"
 ---
 title: "$cmd_path"
-description: "FIXME"
+description: "$cmd"
 draft: false
 menu:
   docs:

@@ -1,6 +1,6 @@
 ---
 title: "get default org"
-description: "FIXME"
+description: "edgectl get default org"
 draft: false
 menu:
   docs:

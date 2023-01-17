@@ -1,6 +1,6 @@
 ---
 title: "create registry"
-description: "FIXME"
+description: "edgectl create registry"
 draft: false
 menu:
   docs:

@@ -1,6 +1,6 @@
 ---
 title: "ssh"
-description: "FIXME"
+description: "edgectl ssh"
 draft: false
 menu:
   docs:

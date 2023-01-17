@@ -1,6 +1,6 @@
 ---
 title: "restart node"
-description: "FIXME"
+description: "edgectl restart node"
 draft: false
 menu:
   docs:

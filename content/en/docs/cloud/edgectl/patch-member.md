@@ -1,7 +1,7 @@
 ---
 title: "patch member"
-description: "FIXME"
-draft: false
+description: "edgectl patch member"
+draft: true
 menu:
   docs:
     identifier: "patch-member"

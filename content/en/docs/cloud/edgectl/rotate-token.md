@@ -1,6 +1,6 @@
 ---
 title: "rotate token"
-description: "FIXME"
+description: "edgectl rotate token"
 draft: false
 menu:
   docs:

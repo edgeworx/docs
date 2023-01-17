@@ -1,7 +1,7 @@
 ---
 title: "delete member"
-description: "FIXME"
-draft: false
+description: "edgectl delete member"
+draft: true
 menu:
   docs:
     identifier: "delete-member"

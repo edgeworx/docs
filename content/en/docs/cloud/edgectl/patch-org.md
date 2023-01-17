@@ -1,6 +1,6 @@
 ---
 title: "patch org"
-description: "FIXME"
+description: "edgectl patch org"
 draft: false
 menu:
   docs:

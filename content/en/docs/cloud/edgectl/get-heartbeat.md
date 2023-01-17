@@ -1,6 +1,6 @@
 ---
 title: "get heartbeat"
-description: "FIXME"
+description: "edgectl get heartbeat"
 draft: false
 menu:
   docs:

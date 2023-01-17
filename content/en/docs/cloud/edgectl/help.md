@@ -1,6 +1,6 @@
 ---
 title: "help"
-description: "FIXME"
+description: "edgectl help"
 draft: false
 menu:
   docs:

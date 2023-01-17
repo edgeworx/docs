@@ -1,7 +1,7 @@
 ---
 title: "patch invite"
-description: "FIXME"
-draft: false
+description: "edgectl patch invite"
+draft: true
 menu:
   docs:
     identifier: "patch-invite"

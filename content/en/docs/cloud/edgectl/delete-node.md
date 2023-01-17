@@ -1,6 +1,6 @@
 ---
 title: "delete node"
-description: "FIXME"
+description: "edgectl delete node"
 draft: false
 menu:
   docs:

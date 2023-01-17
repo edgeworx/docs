@@ -1,6 +1,6 @@
 ---
 title: "get default timeout"
-description: "FIXME"
+description: "edgectl get default timeout"
 draft: false
 menu:
   docs:

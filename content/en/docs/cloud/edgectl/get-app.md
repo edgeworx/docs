@@ -1,6 +1,6 @@
 ---
 title: "get app"
-description: "FIXME"
+description: "edgectl get app"
 draft: false
 menu:
   docs:
