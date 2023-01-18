@@ -42,12 +42,9 @@ If you find issues with the content, you can:
 - Ask a question or open a discussion in [GitHub Discussions](https://github.com/darcyai/docs/discussions)
 - Open a [GitHub issue](https://github.com/darcyai/docs/issues/new/choose)
 - Submit a [Pull Request](https://github.com/darcyai/docs/pulls). If submitting a PR:
-  - Verify that your changes build locally. Passes:
-    - `npm run test`
-    - `npm run build:preview` followed by `npm run lint`
+  - Verify that your changes build locally. Run `npm test`:
   - Create a [Pull Request](https://github.com/darcyai/docs/pulls) (follow the [GitHub flow](https://guides.github.com/introduction/flow/) and [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/))
   - Supports all screen sizes (if relevant)
-  - Supports both light and dark mode (if relevant)
 
 ## Development
 
@@ -73,17 +70,17 @@ The [`/layouts`](/layouts) dir contains the templates for rendering. The most in
 Styling is controlled via the SCSS files in `/assets/scss`. Note that the theme
 supports both normal and "dark" mode, so be sure to also update `/assets/scss/common/_dark.scss`.
 
-> For one-off HTML components (e.g. for [raw html](#raw-html)), put that CSS into `/assets/scss/custom.scss`.
+> For one-off HTML components, put that CSS into `/assets/scss/_custom.scss`.
 
 ### Content Security Policy
 
 If the site pulls in scripts etc. from other external domains (e.g. analytics), then we need
-to update the Content-Security-Policy in [layouts/index.headers](./layouts/index.headers).
+to update the Content-Security-Policy in [./netlify.toml](./netlify.toml).
 
 ## Branches
 
 If you merge a change to `master`, this will trigger the build pipeline, and ultimately result in
-your changes being published to prod (meaning [https://docs.darcy.ai](https://docs.darcy.ai)).
+your changes being published to `prod` (meaning [https://docs.darcy.ai](https://docs.darcy.ai))
 
 We've also enabled a `staging` branch. If you merge a change to the `staging` branch, this will also
 trigger a pipeline, and your changes will be visible at [https://staging--darcydocs.netlify.app](https://staging--darcydocs.netlify.app).
@@ -150,7 +147,7 @@ slug: "how-to-get-started"
 
 This results in path `/doc/how-to-get-started`.
 
-Relatedly you can also set one or more aliases in the front matter. An alias is a full path
+Relatedly, you can also set one or more aliases in the front matter. An alias is a full path
 which will be redirected to the current content.
 
 ```markdown
@@ -201,23 +198,23 @@ You can also use `{{<success>}}`, `{{<warning>}}`, and `{{<danger>}}`.
 
 ### Links
 
-When referring to other content (markdown files), use the [Hugo ref shortcode](https://gohugo.io/content-management/cross-references/)
-instead of a traditional markdown link. For example, if you're in `/docs/cloud/a.md` and you want to refer
-to `/docs/cloud/b.md`, use this:
+External links look like this:
 
 ```markdown
-I am talking about [the b thing]({{<ref "b.md">}}).
+This is an [external link](https://example.com).
 ```
 
-Yes, it's more long-winded than the traditional markdown (`[the b thing](b.md)`), but the shortcode
-mechanism causes Hugo to verify the link, and Hugo will fail if it cannot resolve the referenced document.
-This is a significant benefit.
+Internal links should use the absolute content path. For example:
 
-If you are linking outside the current dir:
+```markdown
+This is a link to the [Build Guide](/docs/guides/build).
+```
 
-- If you're linking to a file below the current dir, typically use a relative path, e.g. `[the below thing]({{<ref "./c/d.md">}})`.
-- If you're linking to a file above the current dir, typically use absolute an absolute path, e.g. `[the above thing]({{<ref "/docs/cloud/e/f.md">}})`
+An exception is made for content in the same directory, e.g.
 
+```markdown
+This is a link to [sibling content](./sibling).
+```
 
 ### Tabs
 
@@ -304,7 +301,7 @@ there's a one-off HTML structure on a landing page. To do so, use the `rawhtml` 
 ## Normal markdown continues here...
 ```
 
-### Sitenav External Links
+### Sitenav external links
 
 Sometimes you may want to add an external link to the left sitenav, e.g. a link
 to external reference documentation. To do so, create a content markdown file
@@ -324,80 +321,13 @@ Python docs for the Darcy AI Engine.
 
 ## Linting
 
-We have several lint targets, although some of them are still WIP and not fully integrated
-into the pipeline for various reasons.
+The `npm test` target executes several linters:
 
-### Script & Markdown Linting
+- JavaScript
+- Markdown
+- Links
 
-This runs the linter against scripts and the markdown files. It does not check links. Example
-below. All lint errors must be fixed.
-
-````text
-$ npm run lint
-
-> @hyas/doks@0.4.2 lint
-> npm run -s lint:scripts && npm run -s lint:styles && npm run -s lint:markdown
-
-markdownlint-cli2 v0.4.0 (markdownlint v0.25.1)
-Finding: *.md content/**/*.md !node_modules !CHANGELOG.md !README.md
-Linting: 54 file(s)
-Summary: 87 error(s)
-content/en/docs/ai/build.md:99 MD040/fenced-code-language Fenced code blocks should have a language specified [Context: "```"]
-content/en/docs/ai/build.md:119 MD040/fenced-code-language Fenced code blocks should have a language specified [Context: "```"]
-````
+All lint errors must be addressed before a PR can be accepted. The GitHub workflow
+also executes the linters.
 
 > See GitHub [RULES.md](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md) for markdown linting rules.
-
-### Link Checking
-
-There's a separate linter for checking links. At the moment it's a two-step process:
-
-- Start the local server (`npm run start`). You should verify that the server is
-  not reporting any errors to the terminal.
-- In a separate terminal, run `npm run lint:links`.
-
-> You may see the following error: this means that the local server is not running.
->
-> ```
->    [0] http://localhost:1313/
->    ERROR: Detected 1 broken links. Scanned 1 links in 0.007 seconds.
-> ```
-
-The output can be a bit confusing. First, each of the broken links are listed. Then, more
-usefully, a section is displayed for each page URL, listing the problems beneath that
-page URL. Here's a snippet of the output:
-
-```text
-http://localhost:1313/docs/ai/
-  [404] http://localhost:1313/docs/ai/docs
-  [404] http://localhost:1313/docs/ai/docs.sh
-  [0] http://localhost:8000/
-  [404] http://localhost:1313/docs/ai/examples
-  [404] http://localhost:1313/docs/ai/examples/audio_analysis
-```
-
-> Note that `http://localhost:1313/docs/ai/` is built from `/content/en/docs/ai/_index.md`
-
-In the output above, we can see that there are several broken links, which need to be fixed. You
-would go to `/content/en/docs/ai/_index.md` to find and fix those links. Remember to use
-the [link shortcode](#Links), which looks like `[my link]({{<ref "doc.md">}}`.
-
-If you have created new content (a new `.md` file) or have moved content around, the `npm run lint:links`
-target may return an error pointing to GitHub:
-
-```text
-http://localhost:1313/docs/ai/terminology/
-  [404] https://github.com/darcyai/docs/blob/master/content/en/docs/ai/terminology.md
-```
-
-This is due to the _Edit this page on GitHub_ auto-generated link. Currently that link always
-points at the `master` branch, thus if your `.md` file has not been added to `master` (or has
-been moved), the link checker will return an error until it has been merged. We can probably
-improve the behavior of the linter or the link generator at some point, but you can generally
-ignore those errors.
-
-> Note that we provide two special npm targets for checking the deployed `staging` and `prod`
-> environments:
->
-> - `npm run staging:lint:links`
-> - `npm run prod:lint:links`
