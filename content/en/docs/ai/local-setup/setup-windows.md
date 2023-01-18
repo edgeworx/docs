@@ -55,7 +55,7 @@ Install the Darcy AI library for Python with the command `py -m pip install darc
 
 ## Install Docker for Windows
 
-If you don't already have Docker on your Mac, install it now by following the official
+If you don't already have Docker on your machine, install it now by following the official
 instructions [https://docs.docker.com/desktop/windows/install/](https://docs.docker.com/desktop/windows/install/)
 .
 
