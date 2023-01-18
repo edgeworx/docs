@@ -5,7 +5,7 @@ aliases:
   - /darcy/darcy-cloud/applications-doc/registries
 ---
 
-When configuring an [Darcy Cloud](../cloud/start-portal.md) [application](../more/terminology.md#application) YAML file, it is necessary to specify the registry of
+When configuring an [Darcy Cloud](/docs/cloud/start-portal) [application](../more/terminology#application) YAML file, it is necessary to specify the registry of
 each [microservice](./microservices.md) container image. The field for this specification
 is `spec.microservices.image.registry`, and the registry tells the [node](../cloud/adding-nodes/_index.md) the microservice is being
 deployed to how to access the image container.
@@ -35,7 +35,7 @@ private Docker images or other containers that are being deployed to the Darcy C
 
 Before adding a microservice with private container images (or with images not on Dockerhub) to a
 node in [Darcy Cloud]({{<ref "/docs/cloud">}}) it is necessary to register a key with permissions
-to access the microservice container images to a [project's](../more/terminology.md#project) Darcy Cloud registry so that the
+to access the microservice container images to a [project's](../more/terminology#project) Darcy Cloud registry so that the
 microservice will be able to pull the container images upon being deployed.
 
 Each registry is pre-configured with 2 entries. The first entry is for a `remote` registry (
@@ -43,7 +43,7 @@ the `remote` registry selection is just an alias for the value `1`), and the sec
 a `local` registry (the `local` registry selection is just an alias for the value `2`). Additional
 entries to the registry can be created directly in ioFog as
 shown [here](http://iofog.staging.edgeworx.io/docs/3/applications/microservice-registry-catalog.html)
-, or they can be managed and created more simply using [edgectl]({{<ref "/docs/cloud/start-edgectl">}}) directly.
+, or they can be managed and created more simply using [edgectl]({{<ref "/docs/cloud/edgectl">}}) directly.
 
 ## View Current Registry Content
 

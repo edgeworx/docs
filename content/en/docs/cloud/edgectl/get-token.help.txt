@@ -1,0 +1,26 @@
+Get access token. If no arg provided, return the in-use access token.
+
+Usage:
+  edgectl get token [TOKEN_UUID|TOKEN_VALUE] [flags]
+
+Examples:
+  # Get in-use access token.
+  $ edgectl get token
+
+  # Get access token having uuid
+  $ edgectl get token 6c16ad14-9052-4da5-95ad-5fb6a491979d
+
+  # Get access token having value
+  $ edgectl get token ecp_xsctw8k2a2zazsk6b8hrzg6sxbhh003135cd
+
+
+Flags:
+  -h, --help   help for token
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

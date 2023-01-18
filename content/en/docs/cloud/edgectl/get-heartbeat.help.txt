@@ -1,0 +1,20 @@
+Get heartbeat details.
+
+Usage:
+  edgectl get heartbeat UUID [flags]
+
+Examples:
+  # Get heartbeat having heartbeat UUID
+  $ edgectl get heartbeat 6d154556-9e58-4330-a7f3-41c869f01142
+
+
+Flags:
+  -h, --help   help for heartbeat
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

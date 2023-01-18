@@ -1,0 +1,29 @@
+Display microservice logs.
+
+Usage:
+  edgectl logs [--project PROJECT_ID] APP_NAME/MSVC_NAME [flags]
+
+Examples:
+  # Display microservice logs
+  $ edgectl logs my-app/my-msvc-name
+
+  # Display microservice logs and follow new output
+  $ edgectl logs my-app/my-msvc-name --follow
+
+  # Print number of lines to show from the end of the logs
+  $ edgectl logs my-app/my-msvc-name --tail 5
+
+Flags:
+      --project string   Project UUID or name, such as acme/proj1
+  -f, --follow           Follow log output
+  -n, --tail string      Number of lines to show from the end of the logs
+      --since string     Show logs since timestamp (e.g. 2013-01-02T13:23:37Z) or relative (e.g. 42m for 42 minutes)
+  -h, --help             help for logs
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

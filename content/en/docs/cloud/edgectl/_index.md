@@ -1,21 +1,27 @@
 ---
-title: "Get started: edgectl"
-weight: 200
+title: "edgectl"
+description: "edgectl is the CLI for Darcy Cloud."
+linkTitle: "edgectl CLI"
+weight: 300
+identifier: edgectl
 aliases:
-  - /darcy/darcy-cloud/get-started-edgectl
-  - /darcy-docs/darcy-cloud/get-started-edgectl
-  - /docs/cloud/edgectl
+- /darcy/darcy-cloud/get-started-edgectl
+- /darcy-docs/darcy-cloud/get-started-edgectl
+- /docs/cloud/edgectl
+- /docs/cloud/get-started-edgectl
 ---
-_edgectl_ is [Darcy Cloud's](../cloud/start-portal.md) command line interface (CLI). It can be used to manage Darcy Cloud
-[accounts, organizations,](../more/terminology.md#account--org) [projects](../more/terminology.md#project), [nodes](../cloud/adding-nodes/_index.md), and [applications](../more/terminology.md#application).
+_edgectl_ is [Darcy Cloud's](/docs/cloud/start-portal) command line interface (CLI). It can be used to manage Darcy
+Cloud
+[accounts, organizations,](/docs/more/terminology/#account--org) [projects](/docs/more/terminology#project), [nodes](/docs/cloud/adding-nodes),
+and [applications](/docs/more/terminology#application).
 
 In this section we will show you how to use _edgectl_ to get started with your first project and
-deploy some live [microservices](../apps/microservices.md) to the edge!
+deploy some live [microservices](/docs/apps/microservices) to the edge!
 
 ## Create a Darcy Cloud Account
 
 Before installing and using _edgectl_, we must first create an account
-via [Darcy Cloud Portal](https://cloud.darcy.ai) (see [docs](/docs/cloud/start-portal).)
+via [Darcy Cloud Portal](https://cloud.darcy.ai) (see [docs](/docs/cloud/start-portal).
 
 Navigate to [Cloud Portal](https://cloud.darcy.ai) and click the `Create Account` button in the top
 right.
@@ -28,32 +34,38 @@ On the "Welcome" page, choose an auth provider or provide your own email and pas
 
 _edgectl_ currently supports Mac, Linux & Windows.
 
-### macOS
+{{<tabs name="platform" >}}
 
-On Mac, we can use [brew](https://brew.sh) to install _edgectl_:
+{{%tab name="macOS" %}}
+Use [brew](https://brew.sh) to install _edgectl_:
 
 ```bash
 brew install edgeworx/edgectl/edgectl
 ```
 
-### Linux
+{{% /tab %}}
 
+{{%tab name="Windows" %}}
+On Windows, use [scoop](https://scoop.sh) to install _edgectl_:
+
+```shell
+scoop bucket add edgectl https://github.com/edgeworx/edgectl
+scoop install edgectl
+```
+
+{{% /tab %}}
+
+{{%tab name="Linux" %}}
 On Linux distros, use `get-edgectl.bash`:
 
 ```bash
 curl https://cloud.darcy.ai/get-edgectl.bash | bash
 ```
 
-### Windows
+{{% /tab %}}
+{{</tabs>}}
 
-On Windows, use [scoop](https://scoop.sh) to install _edgectl_:
-
-```text
-scoop bucket add edgectl https://github.com/edgeworx/edgectl
-scoop install edgectl
-```
-
-## Enable edgectl tab completion
+### Enable edgectl tab completion
 
 It is highly recommended that you enable tab completion, so that `edgectl` can help you complete
 commands and arguments. The installation process is shell-dependent: `bash`, `zsh`, `fish`,
@@ -67,8 +79,8 @@ Now we are ready to use _edgectl_ to login and start managing our Darcy Cloud re
 ### Login
 
 _edgectl_ requires an [Access Token](/docs/cloud/access-tokens/). You can get one
-via: `edgectl login`, which will open a web browser on `cloud.darcy.ai`. After authentication, _
-edgectl_ will receive the account's master _Personal Access Token_, and will be logged in.
+via: `edgectl login`, which will open a web browser on `cloud.darcy.ai`. After authentication,
+_edgectl_ will receive the account's master _Personal Access Token_, and will be logged in.
 
 If a web browser is not available (e.g. SSH'd into a box), you can also login by providing either
 a _Personal Access Token_ or _Project Access Token_ from `cloud.darcy.ai`. For _Personal Access

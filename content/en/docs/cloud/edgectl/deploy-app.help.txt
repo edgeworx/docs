@@ -1,0 +1,21 @@
+Deploy an application to project, using the provided YAML file.
+
+Usage:
+  edgectl deploy app [--project PROJECT_ID] path-to-app-file.yaml [flags]
+
+Examples:
+  # Deploy app to acme/proj1
+  $ edgectl deploy app --project acme/proj1 ./my-app.yaml
+
+
+Flags:
+      --project string   Project UUID or name, such as acme/proj1
+  -h, --help             help for app
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

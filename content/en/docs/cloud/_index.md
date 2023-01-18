@@ -6,7 +6,7 @@ linkTitle: "Darcy Cloud"
 ---
 
 Darcy Cloud is a platform built on the principle of Infrastructure as Code (IaC) that allows you to
-manage edge infrastructure and [applications](../more/terminology.md#application). Developers can deploy, orchestrate and operate
+manage edge infrastructure and [applications](../more/terminology#application). Developers can deploy, orchestrate and operate
 containerized [microservice](../apps/microservices.md) applications from the cloud to remote heterogeneous on-premise servers
 and edge devices.
 
@@ -42,7 +42,7 @@ Terraform or kubernetes then you'll be immediately at home with Darcy Cloud.
   inspired `kind` [specifications]({{<ref "/docs/apps/yaml-definition">}})
 - **Edge Control Plane**: manage all aspects of your edge deployment from the Cloud (provisioning,
   deployment, orchestration, resources, monitoring, updates, etc.)
-- [**Edge Projects**](../more/terminology.md#project): logically group, secure and manage edge nodes and applications
+- [**Edge Projects**](../more/terminology#project): logically group, secure and manage edge nodes and applications
 - **Simplified provisioning**: a single, sharable, per project 1-line install command that handles
   all the downloading, provisioning, validation and registering for each of your edge projects
 - **Virtual Application Networks**: create multi-cloud, hybrid cloud, multi-tier, edge-to-edge
@@ -51,7 +51,7 @@ Terraform or kubernetes then you'll be immediately at home with Darcy Cloud.
   modern Linux kernel that supports containerization
 - **REST API driven**: manage your account, organization, projects, nodes and applications via a
   REST client. Check out the OpenAPI [specification here](https://api.darcy.ai/v1/docs)
-- **CLI access**: Full API access via[`edgectl`](../more/terminology.md#edgectl) for the power of the command line in your terminal,
+- **CLI access**: Full API access via[`edgectl`](../more/terminology#edgectl) for the power of the command line in your terminal,
   or scripted into your other tools. Supports autocompletion in most shells, text or JSON output
 - **Keyless ssh access**: securely access your remote servers and devices without the headache of
   VPNs and SSH keys via the web UI or via `edgectl`
@@ -63,7 +63,7 @@ Terraform or kubernetes then you'll be immediately at home with Darcy Cloud.
   using directed deployment or deployment time scripting
 - **Public Services**: expose any container that offers a tcp or http service to the rest of your
   VAN, without requiring any ports or firewalls to be open
-- **Resource monitoring**: get visibility into the resource usage and [performance](../more/terminology.md#performance-metrics) of your edge
+- **Resource monitoring**: get visibility into the resource usage and [performance](../more/terminology#performance-metrics) of your edge
   nodes (e.g. CPU, Mem usage, etc)
 - **Container lifecycle management**: fine-grained visibility into the progress and state of
   microservice images that are deployed to edge nodes. Automatic clean up and pruning of redundant

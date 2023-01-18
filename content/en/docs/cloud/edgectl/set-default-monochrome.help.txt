@@ -1,0 +1,20 @@
+Set edgectl default monochrome. Controls whether output is monochrome (or color).
+
+Usage:
+  edgectl set default monochrome true|false [flags]
+
+Examples:
+  $ edgectl set default monochrome true
+
+  $ edgectl set default monochrome false
+
+Flags:
+  -h, --help   help for monochrome
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

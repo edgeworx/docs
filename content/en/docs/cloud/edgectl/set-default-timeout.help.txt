@@ -1,0 +1,22 @@
+Set edgectl default timeout.  When set, some commands output more info.
+
+Usage:
+  edgectl set default timeout DURATION [flags]
+
+Examples:
+  # Set default timeout to 30s
+  $ edgectl set default timeout 30s
+
+  # Set default timeout to 5m30s
+  $ edgectl set default timeout 5m30s
+
+Flags:
+  -h, --help   help for timeout
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

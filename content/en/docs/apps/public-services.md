@@ -11,7 +11,7 @@ on your agents.
 
 ## Specifying Public Containers
 
-When deploying [applications](../more/terminology.md#application) and microservices, you can specify a `public` configuration when
+When deploying [applications](../more/terminology#application) and microservices, you can specify a `public` configuration when
 configuring the port mappings of your container.
 
 If `public` is specified, this will open a tunnel that will forward all traffic incoming onto the
@@ -49,7 +49,7 @@ Deploying such a configuration would result in a port being opened on the Contro
 incoming tcp traffic would be tunneled to `agent-1`, port 5000.
 
 The public address can be retrieved in the Portal (in the Application details, and/or microservice
-details pages), or by using [edgectl]({{<ref "/docs/cloud/start-edgectl">}}).
+details pages), or by using [edgectl]({{<ref "/docs/cloud/edgectl">}}).
 
 Below is the YAML returned when describing the microservice/application.
 

@@ -6,8 +6,8 @@ aliases:
   - /docs/cloud/portal/ai-explorer-app/app-yaml/
 ---
 
-[Darcy Cloud](../cloud/start-portal.md) uses [Eclipse ioFog](https://iofog.org) under the covers to deploy and manage
-[applications](../more/terminology.md#application), and all Darcy applications are deployed to edge [node(s)](../cloud/adding-nodes/_index.md) via a YAML configuration file.
+[Darcy Cloud](/docs/cloud/start-portal) uses [Eclipse ioFog](https://iofog.org) under the covers to deploy and manage
+[applications](../more/terminology#application), and all Darcy applications are deployed to edge [node(s)](../cloud/adding-nodes/_index.md) via a YAML configuration file.
 
 We directly use the ioFog YAML specifications for defining different resource `Kinds`. For
 application deployments, the `Kind` in the YAML file will always be `Application`. In this section,
@@ -20,7 +20,7 @@ you'll find an example application YAML file and description of all fields suppo
 | `apiVersion`         | Specifies the version of ioFog API to be used by the application and [microservices](./microservices.md). The different versions of the ioFog API can be found in the [documentation](https://iofog.org/releases.html), and in general the latest version should be used.                                                                  |
 | `kind`               | Defines what is being deployed to the node(s). For the Darcy Cloud deployments, the kind will always be Application (although ioFog accepts many other kind types).                                                                                                                                                                        |
 | `metadata`           | The metadata object is a place to specify pertinent Application information. The main thing to be specified in the metadata specification for Darcy Cloud applications is the name of the application.                                                                                                                                     |
-| `metadata.name`      | The name of the application. This has to be unique within the namespace of the edge [project](../more/terminology.md#project). The name of the application must start and end with lowercase alphanumeric characters, and it can include the `-` character.                                                                                |
+| `metadata.name`      | The name of the application. This has to be unique within the namespace of the edge [project](../more/terminology#project). The name of the application must start and end with lowercase alphanumeric characters, and it can include the `-` character.                                                                                |
 | `spec`               | Object containing actual specifications of the application being deployed to the Darcy Cloud. For applications, the main specs to define are the microservices that compose the application, and the routes between the microservices.                                                                                                     |
 | `spec.microservices` | Object containing the microservices that make up your application. See the [microservices]({{<ref "#microservices">}}) section below for more information.                                                                                                                                                                                 |
 | `spec.routes`        | A list of Application Routes. Application routes define message passing between microservices. `From` and `To` use microservice names as identifiers, and must match a microservice defined in the [microservices]({{<ref "#microservices">}}) section. When deploying an application, prefer this method to the microservice route field. |

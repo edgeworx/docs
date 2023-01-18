@@ -1,0 +1,52 @@
+To load completions:
+
+Bash:
+
+$ source <(edgectl completion bash)
+
+# To load completions for each session, execute once:
+Linux:
+  $ edgectl completion bash > /etc/bash_completion.d/edgectl
+MacOS:
+  $ edgectl completion bash > /usr/local/etc/bash_completion.d/edgectl
+
+Zsh:
+
+# If shell completion is not already enabled in your environment you will need
+# to enable it.  You can execute the following once:
+
+$ echo "autoload -U compinit; compinit" >> ~/.zshrc
+
+# To load completions for each session, execute once:
+$ edgectl completion zsh > "${fpath[1]}/_edgectl"
+
+# You will need to start a new shell for this setup to take effect.
+
+Fish:
+
+$ edgectl completion fish | source
+
+# To load completions for each session, execute once:
+$ edgectl completion fish > ~/.config/fish/completions/edgectl.fish
+
+Powershell:
+
+PS> edgectl completion powershell | Out-String | Invoke-Expression
+
+# To load completions for every new session, Run:
+PS> edgectl completion powershell > edgectl.ps1
+# and source this file from your powershell profile.
+
+Usage:
+  edgectl completion [bash|zsh|fish|powershell]
+
+Flags:
+  -h, --help   help for completion
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

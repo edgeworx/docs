@@ -1,0 +1,28 @@
+Add a container registry to a project.
+
+Usage:
+  edgectl create registry [--project PROJECT_ID] --url URL --email EMAIL --username USERNAME --password PASSWORD [--public] [--requires-cert] [--cert CERT] [flags]
+
+Examples:
+  # Add a Google Cloud registry to project "acme/proj1"  
+  $ edgectl create registry --project acme/proj1 --url "gcr.io" --email "user@gmail.com" --username "_json_key" --password "my_fake_password"
+
+
+Flags:
+      --url string        Registry url
+      --email string      Registry email
+      --username string   Registry username
+      --password string   Registry password
+      --public            Is registry public
+      --requires-cert     Does registry requires cert?
+      --cert string       Registry certificate
+      --project string    Project UUID or name, such as acme/proj1
+  -h, --help              help for registry
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

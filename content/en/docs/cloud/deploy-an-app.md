@@ -6,17 +6,17 @@ aliases:
   - /darcy/darcy-cloud/get-started-edgectl/deploy-an-app
 ---
 
-Deploy apps using the Darcy Portal UI or terminal commands via [edgectl](../cloud/start-edgectl.md)
+Deploy apps using the Darcy Portal UI or terminal commands via [edgectl](../cloud/edgectl)
 
 #### Prerequisites
 
-To deploy your custom app, you will need a [Darcy Cloud](../cloud/start-portal.md) account with at least one [node](../cloud/adding-nodes/_index.md) accessible
+To deploy your custom app, you will need a [Darcy Cloud](/docs/cloud/start-portal) account with at least one [node](../cloud/adding-nodes/_index.md) accessible
 and `ONLINE`. You will need a basic understanding
 of [how to structure app YAML]({{<ref "/docs/apps/yaml-definition.md">}}) for Darcy Cloud.
 
 ## Deploy an App using Darcy Cloud Portal
 
-1. Go to the Darcy Cloud [project](../more/terminology.md#project) page
+1. Go to the Darcy Cloud [project](../more/terminology#project) page
 2. Select `Apps`
 3. Click on `+ DEPLOY APP`
 4. Drag n' drop a [YAML file]({{<ref "/docs/apps/yaml-definition.md">}}) into the box
@@ -25,7 +25,7 @@ of [how to structure app YAML]({{<ref "/docs/apps/yaml-definition.md">}}) for Da
 
 ### View your Application Details
 
-Click on your app in the list of [application](../more/terminology.md#application) to see its details.
+Click on your app in the list of [application](../more/terminology#application) to see its details.
 
 ![Application Detail View](/images/18done.png)
 
@@ -36,7 +36,7 @@ Darcy Cloud Portal allows you to edit your app YAML right in the browser. More i
 Application YAML files can be found [here]({{<ref "/docs/apps/">}}).
 
 {{<info>}} Everything shown above using Darcy Cloud Portal can also be achieved using
-our CLI, [edgectl]({{<ref "/docs/cloud/start-edgectl">}}).
+our CLI, [edgectl]({{<ref "/docs/cloud/edgectl">}}).
 {{</info>}}
 
 ## Deploy an App using edgectl

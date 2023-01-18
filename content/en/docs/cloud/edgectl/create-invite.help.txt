@@ -1,0 +1,27 @@
+Invite a user to an org. An invite will be sent to the supplied email address.
+If no --scope flag provided, the user is invited with scope 'org:member'.
+
+Usage:
+  edgectl create invite --email EMAIL --org ORG_ID [--scope SCOPE1 --scope SCOPE2] [flags]
+
+Examples:
+  # Invite alice@acme.com to join org 'acme' as 'org:member'
+  $ edgectl create invite --email alice@acme.com --org acme
+
+  # Invite alice@acme.com to join org 'acme' as 'org:admin'
+  $ edgectl create invite --email alice@acme.com --org acme --scope org:admin
+
+
+Flags:
+      --email string        Email address
+      --org string          Org name or UUID
+      --scope stringArray   An authorization scope
+  -h, --help                help for invite
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

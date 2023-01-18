@@ -1,0 +1,33 @@
+Create a new virtual node (local VM). This
+command will create a new Ubuntu VM locally, and register that VM as a node
+in the project.
+
+This command requires that multipass (https://multipass.run) be installed.
+
+Usage:
+  edgectl create virtual-node [--project PROJECT_ID] [--name NODE_NAME] [flags]
+
+Examples:
+  # Create a new virtual node in project using project token
+  $ edgectl create virtual-node --token ecj_xxxxxxxxxxxxxxxxxxx --name virtual-node-1
+
+  # Create a new virtual node in project
+  $ edgectl create virtual-node --project acme/proj1 --name virtual-node-1
+
+
+Flags:
+      --project string   Project UUID or name, such as acme/proj1
+      --name string      Unique alphanumeric name
+  -d, --disk string      Disk space to allocate. Positive integers, in bytes, or with K, M, G suffix. Minimum: 512M, default: 15G.
+  -c, --cpus string      Number of CPUs to allocate. Minimum: 1, default: 2.
+  -m, --mem string       Amount of memory to allocate. Positive integers, in  bytes, or with K, M, G suffix. Minimum: 128M, default: 1G.
+      --network string   Add a network interface to the instance, where <spec> is in the "key=value,key=value" format.
+  -h, --help             help for virtual-node
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

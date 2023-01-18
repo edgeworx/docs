@@ -1,3 +1,8 @@
 {
-  "skip": "www.linkedin.com"
+  "skip": "(github.com\\/darcyai\\/docs|linkedin.com\\/company\\/edgeworxio)",
+  "timeout:": 2000,
+  "retryErrors": true,
+  "retryErrorsJitter": true,
+  "retryErrorsCount": 1,
+  "verbosity": "error"
 }

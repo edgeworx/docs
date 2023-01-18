@@ -1,0 +1,27 @@
+Create a new project. If ORG_ID is empty, the project will
+be created in the default org (if one is set).
+
+Usage:
+  edgectl create project --name PROJ_NAME [--org ORG_ID] [--description DESC] [flags]
+
+Examples:
+  # Create a project in org "acme"  
+  $ edgectl create project --name proj1 --description "My First Project" --org acme
+
+  # Create a project in default org  
+  $ edgectl create project --name proj1 --description "My First Project"
+
+
+Flags:
+      --name string          Unique alphanumeric name
+      --description string   description
+      --org string           Org name or UUID
+  -h, --help                 help for project
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

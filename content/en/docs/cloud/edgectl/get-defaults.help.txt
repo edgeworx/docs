@@ -1,0 +1,20 @@
+List edgectl defaults. The defaults control the operation of the CLI
+and are stored locally.
+
+Usage:
+  edgectl get defaults [flags]
+
+Examples:
+  $ edgectl get defaults
+
+
+Flags:
+  -h, --help   help for defaults
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

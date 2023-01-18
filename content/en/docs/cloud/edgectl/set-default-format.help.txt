@@ -1,0 +1,23 @@
+Set edgectl default format. FORMAT can be "json" or "text".
+
+Usage:
+  edgectl set default format FORMAT [flags]
+
+Examples:
+  # Set JSON format
+  $ edgectl set default format json
+
+  # Set text format
+  $ edgectl set default format text
+
+
+Flags:
+  -h, --help   help for format
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

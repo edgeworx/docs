@@ -60,7 +60,7 @@ This is the first release of Darcy Cloud, which is the successor to Edgeworx Clo
 - `edgectl` has switched its entire command structure, from `noun-verb` to `verb-noun`. We are doing
   this based on user feedback from customers who are more familiar with the
   Kubernetes `kubectcl get X` style of CLI. For example, instead of `edgectl account get`,
-  use `edgectl get account`. For more detail, see edgectl [docs](/docs/cloud/start-edgectl).
+  use `edgectl get account`. For more detail, see edgectl [docs](/docs/cloud/edgectl).
   - Note that if you are using `edgectl` in scripts or such, and you pull the latest version, you
     must update your scripts to use the new syntax.
 

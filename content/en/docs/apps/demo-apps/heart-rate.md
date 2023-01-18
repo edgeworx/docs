@@ -7,9 +7,9 @@ aliases:
 
 ![Heart Rate Demo App](/images/15done.png)
 
-The Heart Rate app provided on the [Darcy Cloud](../../cloud/start-portal.md) platform simulates a wearable device
+The Heart Rate app provided on the [Darcy Cloud](docs/cloud/start-portal) platform simulates a wearable device
 transmitting a person's heartbeat at the edge. The Wearable sends heart rate data over bluetooth to
-a data collector [microservice](/docs/apps/microservices.md) located on the primary [node](../../cloud/adding-nodes/_index.md). The Data collector microservice then
+a data collector [microservice](/docs/apps/microservices) located on the primary [node](../../cloud/adding-nodes/_index.md). The Data collector microservice then
 communicates with another microservice running a web server on the secondary node to display the
 heart rate data on a graph.
 
@@ -18,8 +18,8 @@ heart rate data on a graph.
 - A Darcy Cloud Account
 - Any edge node (or a virtual node)
 
-{{<info>}} Although this [application](/docs/more/terminology.md#application) works best with two nodes, you can deploy it with only one
-node and run all [microservices](/docs/apps/microservices.md) on the same device. The YAML will automatically detect if you have
+{{<info>}} Although this [application](/docs/more/terminology#application) works best with two nodes, you can deploy it with only one
+node and run all [microservices](/docs/apps/microservices) on the same device. The YAML will automatically detect if you have
 one or two nodes. {{</info>}}
 
 ---
@@ -27,7 +27,7 @@ one or two nodes. {{</info>}}
 ## Deploy using Darcy Cloud Portal
 
 Deploying the Heart Rate Application from the Darcy Cloud platform is extremely simple. Make sure
-you have [added at least 1 node]({{<ref "/docs/cloud/adding-nodes/add-node.md">}}) to your Darcy Cloud [project](../../more/terminology.md#project), then
+you have [added at least 1 node]({{<ref "/docs/cloud/adding-nodes/add-node.md">}}) to your Darcy Cloud [project](../../more/terminology#project), then
 follow the steps below:
 
 1. Go to your Darcy Cloud project page

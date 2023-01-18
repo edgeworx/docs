@@ -1,0 +1,43 @@
+Take action on org invite. The caller must provide one of these states:
+- "accepted": The invitee accepts the invite. This can only be invoked
+  by the invitee themselves.
+- "rejected": The invitee rejects/declines the invite. This can only be invoked
+  by the invitee themselves.
+- "cancelled": Cancel the pending invitation. This can only be invoked by
+  an org admin.
+- "pending": Causes the invite to be resent, and the invite expiration date
+  to be reset. This can only be invoked by an org admin.
+
+Note that the invite can only be updated if it is not already expired, and
+its state is currently "pending". An expired or accepted/rejected/cancelled invite
+cannot be updated.
+
+Usage:
+  edgectl patch invite --uuid INVITE_UUID --state STATE [flags]
+
+Examples:
+  # Accept an invite. Caller must be the invitee.
+  $ edgectl patch invite --uuid 91c035aa-9859-47cf-a136-df9158a25b77 --state accepted
+
+  # Reject an invite. Caller must be the invitee.
+  $ edgectl patch invite --uuid 91c035aa-9859-47cf-a136-df9158a25b77 --state rejected
+
+  # Cancel an invite. Caller must have scope "org:admin"" on the invite's org.
+  $ edgectl patch invite --uuid 91c035aa-9859-47cf-a136-df9158a25b77 --state cancelled
+
+  # Reset an invite. The invite email will be resent, and the invite expiry date will be reset.
+  # Caller must have scope "org:admin"" on the invite's org.
+  $ edgectl patch invite --uuid 91c035aa-9859-47cf-a136-df9158a25b77 --state pending
+
+Flags:
+      --uuid string    UUID of an invite
+      --state string   Invite state, one of "pending, "accepted", "rejected", "cancelled"
+  -h, --help           help for invite
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

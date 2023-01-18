@@ -1,34 +1,35 @@
 {
-  "name": "@hyas/doks",
-  "description": "Doks theme",
-  "version": "0.4.2",
+  "name": "Darcy Docs",
+  "description": "Docs for darcy.ai",
   "browserslist": [
     "defaults"
   ],
-  "repository": "https://github.com/h-enk/doks",
+  "repository": "https://github.com/darcyai/docs",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "init": "shx rm -rf .git && git init -b main",
     "create": "exec-bin node_modules/.bin/hugo/hugo new",
     "prestart": "npm run clean",
     "start": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender --verbose --verboseLog --ignoreCache --navigateToChanged --renderToDisk",
     "prebuild": "npm run clean",
     "build": "exec-bin node_modules/.bin/hugo/hugo --gc --minify",
     "build:preview": "npm run build -D -F",
+    "prepreview": "npm run clean",
+    "preview": "exec-bin node_modules/.bin/hugo/hugo --gc --minify -D -F -b 'http://localhost:1313' && npx serve -l 1313 public",
     "clean": "shx rm -rf public resources",
     "clean:install": "shx rm -rf package-lock.json node_modules ",
-    "lint": "npm run -s lint:scripts && npm run -s lint:styles && npm run -s lint:markdown",
-    "lint:scripts": "eslint assets/js config functions",
+    "prelint": "npm run clean",
+    "lint": "npm run -s lint:scripts && npm run -s lint:styles && npm run -s lint:markdown && npm run -s lint:links",
+    "lint:scripts": "npx eslint assets/js config functions",
     "lint:styles": "npx stylelint \"assets/scss/**/*.{css,sass,scss,sss,less}\"",
     "lint:fix": "npx stylelint --fix \"assets/scss/**/*.{css,sass,scss,sss,less}\"",
     "lint:markdown": "markdownlint-cli2 \"*.md\" \"content/**/*.md\"",
     "lint:markdown-fix": "markdownlint-cli2-fix \"*.md\" \"content/**/*.md\"",
-    "lint:links": "./node_modules/.bin/linkinator -r --verbosity error http://localhost:1313/",
-    "prod:lint:links": "./node_modules/.bin/linkinator -r --verbosity error https://docs.darcy.ai",
-    "staging:lint:links": "./node_modules/.bin/linkinator -r --verbosity error https://staging--darcydocs.netlify.app",
+    "lint:links": "./linkinator.sh",
+    "prod:lint:links": "./node_modules/.bin/linkinator --config ./linkinator.config.json -r --verbosity error https://docs.darcy.ai",
+    "staging:lint:links": "./node_modules/.bin/linkinator --config ./linkinator.config.json -r --verbosity error https://staging--darcydocs.netlify.app",
     "server": "exec-bin node_modules/.bin/hugo/hugo server",
     "test": "npm run -s lint",
     "env": "env",
@@ -37,6 +38,7 @@
     "copy:katex-fonts": "shx cp ./node_modules/katex/dist/fonts/* ./static/fonts/",
     "postinstall": "hugo-installer --version otherDependencies.hugo --extended --destination node_modules/.bin/hugo",
     "version": "auto-changelog -p && git add CHANGELOG.md",
+    "gen:cmd-help": "./content/en/docs/cloud/edgectl/generate-cmd-help.sh",
     "gen:syntax-css": "./generate-syntax-css.sh"
   },
   "devDependencies": {
@@ -55,23 +57,21 @@
     "instant.page": "^5.1",
     "katex": "^0.16",
     "lazysizes": "^5.3",
+    "linkinator": "^4.1.2",
     "markdownlint-cli2": "^0.6.0",
     "netlify-plugin-submit-sitemap": "^0.4.0",
     "node-fetch": "^3.3",
     "nord": "^0.2.1",
     "postcss": "^8.4",
     "postcss-cli": "^10.1",
+    "postcss-scss": "^4.0.6",
     "purgecss-whitelister": "^2.4",
+    "serve": "^14.1.2",
     "shx": "^0.3.4",
     "stylelint": "^14.16",
     "stylelint-config-standard-scss": "^6.1"
   },
   "otherDependencies": {
     "hugo": "0.109.0"
-  },
-  "dependencies": {
-    "broken-link-checker": "^0.7.8",
-    "linkinator": "^4.1.2",
-    "postcss-scss": "^4.0.6"
   }
 }

@@ -1,0 +1,21 @@
+Get details of container registry. If PROJECT_ID is empty, the default project is used (if one is set).
+
+Usage:
+  edgectl get registry REG_ID [--project PROJECT_ID] [flags]
+
+Examples:
+  # Get details of Google Cloud registry (having ID '1') in project "acme/proj1"  
+  $ edgectl registry get 1 --project acme/proj1
+
+
+Flags:
+      --project string   Project UUID or name, such as acme/proj1
+  -h, --help             help for registry
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

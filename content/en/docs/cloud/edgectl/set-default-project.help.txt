@@ -1,0 +1,27 @@
+Set edgectl default org. PROJECT_ID can be project name or UUID.
+Use empty string to clear default.
+
+Usage:
+  edgectl set default project PROJECT_ID [flags]
+
+Examples:
+  # Set default project using UUID
+  $ edgectl set default project c56ba41c-5ac0-4ba0-a03a-4ea5b1035b53
+
+  # Set default org using project name
+  $ edgectl set default project acme/proj1
+
+  # Clear default project
+  $ edgectl set default project ""
+
+
+Flags:
+  -h, --help   help for project
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output
