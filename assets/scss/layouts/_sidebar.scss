@@ -73,7 +73,7 @@ nav.docs-links {
 
   & a.active {
     &.current {
-      text-decoration: underline;
+      // text-decoration: underline;
     }
   }
 }
@@ -178,9 +178,12 @@ a.docs-link.cmd-ref {
 }
 
 .docs-link:hover,
-.docs-link.active,
 .page-links a:hover {
   text-decoration: underline;
+  color: $link-color;
+}
+
+.docs-link.active {
   color: $link-color;
 }
 

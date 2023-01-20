@@ -11,6 +11,10 @@ Put CSS for custom HTML components here.
   }
 }
 
+body {
+  // line-height: 1.5em;
+}
+
 $code-block-bg: #032332;
 
 $border-color: #a9b2bc88;
@@ -258,4 +262,51 @@ div.tabs-wrapper {
     border-right: 1px solid #dee2e6ff;
     border-bottom: 1px solid #dee2e6ff;
   }
+}
+
+div.doc-meta {
+  margin-top: 5px;
+  margin-bottom: 25px;
+
+  div.internal-meta {
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    div {
+      // Generic meta item
+      padding: 5px 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+      background-color: $nord0;
+      color: $nord6;
+    }
+
+    div.unpublished {
+      background-color: $nord11;
+    }
+
+    div.draft {
+      background-color: $nord12;
+    }
+  }
+
+  div.beta {
+    background-color: $nord13;
+    padding: 10px;
+    font-weight: bold;
+  }
+}
+
+a > sup {
+  padding-left: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a > sup.unpublished {
+  color: $nord12;
+}
+
+a > sup.beta {
+  color: $nord13;
 }

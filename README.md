@@ -2,14 +2,16 @@
 
 [![Better Uptime Badge](https://betteruptime.com/status-badges/v1/monitor/e975.svg)](https://betteruptime.com/?utm_source=status_badge)
 
-Here you can contribute to the Darcy Docs Site, which lives at [docs.darcy.ai](https://docs.darcy.ai).
+Here you can contribute to the Darcy Docs Site, which lives
+at [docs.darcy.ai](https://docs.darcy.ai).
 
 ## Overview
 
 The docs site is generated from markdown files stored in `/content` by the [Hugo](https://gohugo.io)
 site generator. The Hugo theme is a fork of [Doks](https://getdoks.org).
 
-When changes are merged to the `master` branch, a CI [pipeline](https://github.com/darcyai/docs/actions) kicks off, which publishes the
+When changes are merged to the `master` branch, a
+CI [pipeline](https://github.com/darcyai/docs/actions) kicks off, which publishes the
 content to [Netlify](https://www.netlify.com).
 
 ## Pre-requisites
@@ -39,23 +41,28 @@ content to [Netlify](https://www.netlify.com).
 
 If you find issues with the content, you can:
 
-- Ask a question or open a discussion in [GitHub Discussions](https://github.com/darcyai/docs/discussions)
+- Ask a question or open a discussion
+  in [GitHub Discussions](https://github.com/darcyai/docs/discussions)
 - Open a [GitHub issue](https://github.com/darcyai/docs/issues/new/choose)
 - Submit a [Pull Request](https://github.com/darcyai/docs/pulls). If submitting a PR:
   - Verify that your changes build locally. Run `npm test`:
-  - Create a [Pull Request](https://github.com/darcyai/docs/pulls) (follow the [GitHub flow](https://guides.github.com/introduction/flow/) and [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/))
+  - Create a [Pull Request](https://github.com/darcyai/docs/pulls) (follow
+    the [GitHub flow](https://guides.github.com/introduction/flow/)
+    and [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/))
   - Supports all screen sizes (if relevant)
 
 ## Development
 
 The site is generated using Hugo, based off the Doks theme. Start with
-the [Hugo docs](https://gohugo.io/getting-started/) and then the [Doks theme docs](https://getdoks.org/docs/overview/introduction/).
+the [Hugo docs](https://gohugo.io/getting-started/) and then
+the [Doks theme docs](https://getdoks.org/docs/overview/introduction/).
 
 Content is stored in [`/content`](/content).
 
 ### Staging branch
 
-If you merge changes to branch `staging`, those changes will show up at [https://staging--darcydocs.netlify.app](https://staging--darcydocs.netlify.app).
+If you merge changes to branch `staging`, those changes will show up
+at [https://staging--darcydocs.netlify.app](https://staging--darcydocs.netlify.app).
 
 ### Templates
 
@@ -83,9 +90,11 @@ If you merge a change to `master`, this will trigger the build pipeline, and ult
 your changes being published to `prod` (meaning [https://docs.darcy.ai](https://docs.darcy.ai))
 
 We've also enabled a `staging` branch. If you merge a change to the `staging` branch, this will also
-trigger a pipeline, and your changes will be visible at [https://staging--darcydocs.netlify.app](https://staging--darcydocs.netlify.app).
+trigger a pipeline, and your changes will be visible
+at [https://staging--darcydocs.netlify.app](https://staging--darcydocs.netlify.app).
 
-Obviously, that `staging` branch needs to be merged to `master` for that content to take effect on the live site.
+Obviously, that `staging` branch needs to be merged to `master` for that content to take effect on
+the live site.
 
 ## Content
 
@@ -107,6 +116,8 @@ title: "Add Virtual Node to Darcy Cloud"
 linkTitle: "Add Virtual Node"
 description: "Add a Virtual Node to Darcy Cloud via edgectl or Cloud Portal."
 weight: 100
+draft: false
+beta: false
 ---
 
 CONTENT GOES HERE
@@ -120,6 +131,11 @@ You should also add a `description`. This field is displayed in the search resul
 single sentence, ending with a period (`.`).
 
 Note that the values of `title`, `linkTitle` and `description` should be enclosed in double quotes.
+
+If `draft` is `true`, the content will be visible on `local` and `staging` builds, but not on `prod`.
+
+If `beta` is true, a notice is displayed to the user, indicating that the content refers to
+a beta feature.
 
 #### Slugs & Aliases
 
@@ -156,8 +172,10 @@ title: "About Darcy Cloud"
 weight: 100
 slug: "how-to-get-started"
 aliases:
-  - /doc/get-started/
-  - /guide/how-to-get-started/
+
+- /doc/get-started/
+- /guide/how-to-get-started/
+
 ---
 ```
 
@@ -172,8 +190,10 @@ files should have a weight greater than the weight of `_index.md`.
 
 ### Images & other assets
 
-To reference an image from markdown, add the image to the [`/static/images`](/static/images) dir. For example,
-add `/static/images/my-image.png`, then reference the image in markdown using `![My Image](/images/my-image.png)`.
+To reference an image from markdown, add the image to the [`/static/images`](/static/images) dir.
+For example,
+add `/static/images/my-image.png`, then reference the image in markdown
+using `![My Image](/images/my-image.png)`.
 
 You can do the same for other files, e.g. add `/static/pdfs/my.pdf` and reference in markdown
 with `![My PDF](/pdfs/my.pdf)`.
@@ -251,11 +271,12 @@ is why it uses `%tab` instead of `<tab`.
 #### Tab subtitle
 
 Note the optional `subtitle` attribute. This is useful for distinguishing between related tabs,
-  e.g. `macOS (arm64)` and `macOS (amd64)`.
+e.g. `macOS (arm64)` and `macOS (amd64)`.
 
 #### Tabs with markdown content
 
-If the tab content itself markdown, use the `{%tab` syntax instead of `{<tab`, as in the `Linux` tab above.
+If the tab content itself markdown, use the `{%tab` syntax instead of `{<tab`, as in the `Linux` tab
+above.
 The `%` notation tells Hugo that the inner content needs to be parsed and rendered.
 
 #### Include tab content from file
@@ -307,7 +328,8 @@ Sometimes you may want to add an external link to the left sitenav, e.g. a link
 to external reference documentation. To do so, create a content markdown file
 as per normal, but add an `externalLink: "https://my.external.link` line
 to the front matter. You should also add content to the markdown, as this content
-will show up in search results. Example from [Reference Docs](https://raw.githubusercontent.com/darcyai/docs/staging/content/en/docs/ai/reference-docs.md)
+will show up in search results. Example
+from [Reference Docs](https://raw.githubusercontent.com/darcyai/docs/staging/content/en/docs/ai/reference-docs.md)
 
 ```text
 ---
@@ -330,4 +352,5 @@ The `npm test` target executes several linters:
 All lint errors must be addressed before a PR can be accepted. The GitHub workflow
 also executes the linters.
 
-> See GitHub [RULES.md](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md) for markdown linting rules.
+> See GitHub [RULES.md](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md) for
+> markdown linting rules.

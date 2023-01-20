@@ -3,12 +3,9 @@ title: "Migrate project"
 description: |-
   Migrate a project to a different org.
 weight: 1100
-draft: false
+draft: true
 beta: true
 ---
-
-### BETA
-
 You can migrate a project from one org to another using _edgectl_. This is
 best illustrated with an example.
 
