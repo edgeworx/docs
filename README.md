@@ -132,7 +132,8 @@ single sentence, ending with a period (`.`).
 
 Note that the values of `title`, `linkTitle` and `description` should be enclosed in double quotes.
 
-If `draft` is `true`, the content will be visible on `local` and `staging` builds, but not on `prod`.
+If `draft` is `true`, the content will be visible on `local` and `staging` builds, but not
+on `prod`.
 
 If `beta` is true, a notice is displayed to the user, indicating that the content refers to
 a beta feature.
