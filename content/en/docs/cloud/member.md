@@ -10,11 +10,11 @@ has a _personal org_ also named `alice`. When `alice` creates new projects,
 those projects are created inside
 her personal org, e.g. `alice/hatproject`.
 
-For collaboration, you should create a separate org for your company
+For collaboration, you should create a separate org for your company.
 For example, if Alice's employer is Acme Corp., she would create an org `acme`. New
 projects would be created inside the `acme` org, e.g. `acme/megaproject`. (Projects can also be
 [migrated](docs/cloud/migrate-project/) from Alice's personal org to the corporate org).
-And of course Alice can invite team members to the org.
+Naturally Alice can invite people to join the org.
 
 ## Create an Org
 
@@ -31,7 +31,7 @@ UUID                                  NAME  PERSONAL ORG  CREATED UTC
 If you will mainly be working in the newly created org, set that org
 as your default.
 
-```text
+```shell
 edgectl set default org acme
 ```
 

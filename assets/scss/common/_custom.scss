@@ -214,6 +214,11 @@ $tab-content-bg: #f5f6f7;
   }
 }
 
+a > code {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
 // div.chroma is the container for syntax-highlighted code blocks.
 div.tab-content pre.chroma > code,
 pre.chroma, {
