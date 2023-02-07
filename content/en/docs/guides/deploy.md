@@ -51,7 +51,7 @@ tools which will save you a lot of time when packaging your apps!
 
 {{<warning>}}
 You may need to use `sudo docker` instead of just `docker` depending on how you install and set up Docker for Mac. If that is the case on your development machine, you can just add `sudo` to the beginning of any `docker` commands shown in these guides.
-{{<warning>}}
+{{</warning>}}
 
 ### Add a Dockerfile
 
