@@ -56,43 +56,53 @@ Note:
             {{continue}}
         {{end}}
 
+        {{ if  eq $item.Title "" }}
+            {{/* If the title is empty, we definitely don't want it showing up */}}
+            {{continue}}
+        {{end}}
+
         {{ $p.Scratch.Set "nextSib" $item}}
         {{ break }}
     {{end}}
 {{end}}
 
 {{define "nextAunt"}}
-  {{$p := .}}
-  {{$parent := .GetPage ".."}}
-  {{$currentSection := $p.CurrentSection}}
-  {{$parentSection := $parent.CurrentSection}}
+    {{$p := .}}
+    {{$parent := .GetPage ".."}}
+    {{$currentSection := $p.CurrentSection}}
+    {{$parentSection := $parent.CurrentSection}}
 
 
-  {{$parentItem := false}}
-  {{$foundMe := false}}
+    {{$parentItem := false}}
+    {{$foundMe := false}}
 
-  {{if ne "/docs/" $parentSection.RelPermalink}}
-      {{/* We don't want prev/next nav between top level sections */}}
+    {{if ne "/docs/" $parentSection.RelPermalink}}
+        {{/* We don't want prev/next nav between top level sections */}}
 
-      {{ range $i, $item := $parentSection.Pages }}
-        {{ if eq $currentSection.RelPermalink $item.RelPermalink }}
-            {{ $parentItem = $item}}
-            {{ $foundMe = true }}
-            {{continue}}
-        {{ end }}
+        {{ range $i, $item := $parentSection.Pages }}
+            {{ if eq $currentSection.RelPermalink $item.RelPermalink }}
+                {{ $parentItem = $item}}
+                {{ $foundMe = true }}
+                {{continue}}
+            {{ end }}
 
-        {{ if ne $foundMe true}}{{continue}}{{end}}
+            {{ if ne $foundMe true}}{{continue}}{{end}}
 
 
-        {{ with $item.Params.externalLink}}
-            {{/* If it's an external link, we don't want it to show up in nav */}}
-            {{continue}}
+            {{ with $item.Params.externalLink}}
+                {{/* If it's an external link, we don't want it to show up in nav */}}
+                {{continue}}
+            {{end}}
+
+            {{ if  eq $item.Title "" }}
+                {{/* If the title is empty, we definitely don't want it showing up */}}
+                {{continue}}
+            {{end}}
+
+            {{ $p.Scratch.Set "nextAunt" $item}}
+            {{ break }}
         {{end}}
-
-        {{ $p.Scratch.Set "nextAunt" $item}}
-        {{ break }}
-      {{end}}
-  {{end}}
+    {{end}}
 {{end}}
 
 
@@ -113,8 +123,13 @@ Note:
 
             {{ with $item.Params.externalLink}}
 
-              {{/* If it's an external link, we don't want it to show up in nav */}}
-              {{continue}}
+                {{/* If it's an external link, we don't want it to show up in nav */}}
+                {{continue}}
+            {{end}}
+
+            {{ if  eq $item.Title "" }}
+                {{/* If the title is empty, we definitely don't want it showing up */}}
+                {{continue}}
             {{end}}
 
             {{ if eq $p.RelPermalink $item.RelPermalink }}
@@ -130,39 +145,43 @@ Note:
 
 
 {{define "prevAunt"}}
-  {{$p := .}}
-  {{$parent := .GetPage ".."}}
-  {{$currentSection := $p.CurrentSection}}
-  {{$parentSection := $parent.CurrentSection}}
+    {{$p := .}}
+    {{$parent := .GetPage ".."}}
+    {{$currentSection := $p.CurrentSection}}
+    {{$parentSection := $parent.CurrentSection}}
 
-  {{$parentItem := false}}
-  {{$foundMe := false}}
+    {{$parentItem := false}}
+    {{$foundMe := false}}
 
-  {{if ne "/docs/" $parentSection.RelPermalink}}
-      {{/* We don't want prev/next nav between top level sections */}}
+    {{if ne "/docs/" $parentSection.RelPermalink}}
+        {{/* We don't want prev/next nav between top level sections */}}
 
-      {{ range $i, $item := $parentSection.Pages }}
+        {{ range $i, $item := $parentSection.Pages }}
 
-          {{ with $item.Params.externalLink}}
+            {{ with $item.Params.externalLink}}
+                {{/* If it's an external link, we don't want it to show up in nav */}}
+                {{continue}}
+            {{end}}
 
-              {{/* If it's an external link, we don't want it to show up in nav */}}
-              {{continue}}
-          {{end}}
+            {{ if  eq $item.Title "" }}
+                {{/* If the title is empty, we definitely don't want it showing up */}}
+                {{continue}}
+            {{end}}
 
-          {{ if eq $p.RelPermalink $item.RelPermalink }}
-              {{/* We've gone too far, we've reached the page itself */}}
-              {{ break }}
-          {{ end }}
+            {{ if eq $p.RelPermalink $item.RelPermalink }}
+                {{/* We've gone too far, we've reached the page itself */}}
+                {{ break }}
+            {{ end }}
 
-          {{ $p.Scratch.Set "prevAunt" $item}}
-      {{end}}
-  {{end}}
+            {{ $p.Scratch.Set "prevAunt" $item}}
+        {{end}}
+    {{end}}
 
     {{if eq ($p.Scratch.Get "prevAunt") nil}}
         {{if ne "/docs/" $parentSection.RelPermalink}}
             {{ $p.Scratch.Set "prevAunt" $parent}}
-            {{end}}
-      {{end}}
+        {{end}}
+    {{end}}
 
 {{end}}
 
@@ -253,25 +272,25 @@ nextArrow: {{$currentPage.Scratch.Get "nextArrow"}}
 {{ with (or $prevLink $nextLink)}}
   <div class="docs-navigation d-flex justify-content-between">
 
-    {{ with $prevLink }}
-      <a href="{{ $prevLink }}">
-        <div class="card my-1">
-          <div class="card-body py-2">
-            {{ $prevArrow | safeHTML}} {{ $prevTitle }}
+      {{ with $prevLink }}
+        <a href="{{ $prevLink }}">
+          <div class="card my-1">
+            <div class="card-body py-2">
+                {{ $prevArrow | safeHTML}} {{ $prevTitle }}
+            </div>
           </div>
-        </div>
-      </a>
-    {{ end -}}
+        </a>
+      {{ end -}}
 
-    {{ with $nextLink }}
-    <a class="ms-auto" href="{{ $nextLink }}">
-      <div class="card my-1">
-        <div class="card-body py-2">
-          {{ $nextTitle }} {{ $nextArrow | safeHTML}}
-        </div>
-      </div>
-    </a>
-    {{ end -}}
+      {{ with $nextLink }}
+        <a class="ms-auto" href="{{ $nextLink }}">
+          <div class="card my-1">
+            <div class="card-body py-2">
+                {{ $nextTitle }} {{ $nextArrow | safeHTML}}
+            </div>
+          </div>
+        </a>
+      {{ end -}}
 
   </div>
 {{ end}}
