@@ -56,6 +56,11 @@ Note:
             {{continue}}
         {{end}}
 
+        {{ if  eq $item.Title "" }}
+            {{/* If the title is empty, we definitely don't want it showing up */}}
+            {{continue}}
+        {{end}}
+
         {{ $p.Scratch.Set "nextSib" $item}}
         {{ break }}
     {{end}}
@@ -89,6 +94,11 @@ Note:
             {{continue}}
         {{end}}
 
+        {{ if  eq $item.Title "" }}
+            {{/* If the title is empty, we definitely don't want it showing up */}}
+            {{continue}}
+        {{end}}
+
         {{ $p.Scratch.Set "nextAunt" $item}}
         {{ break }}
       {{end}}
@@ -115,6 +125,11 @@ Note:
 
               {{/* If it's an external link, we don't want it to show up in nav */}}
               {{continue}}
+            {{end}}
+
+            {{ if  eq $item.Title "" }}
+                {{/* If the title is empty, we definitely don't want it showing up */}}
+                {{continue}}
             {{end}}
 
             {{ if eq $p.RelPermalink $item.RelPermalink }}
@@ -144,8 +159,12 @@ Note:
       {{ range $i, $item := $parentSection.Pages }}
 
           {{ with $item.Params.externalLink}}
-
               {{/* If it's an external link, we don't want it to show up in nav */}}
+              {{continue}}
+          {{end}}
+
+          {{ if  eq $item.Title "" }}
+              {{/* If the title is empty, we definitely don't want it showing up */}}
               {{continue}}
           {{end}}
 
