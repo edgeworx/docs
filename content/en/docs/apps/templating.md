@@ -307,15 +307,12 @@ With controller API the same configuration looks like:
 - The algorithmic operator of `liquidjs` or variable assignment have the scope on the processing
   string.
 
-```json
----
-....
+```text
 - key: testaffect
 value: "{% raw %}
 {% assign ms =self.microservices | where: \"name\", \"rulesengine\" | first %}
 {% endraw %}{{
 ms.env | where: \"key\" , \"http_proxy\" | first }}"
-....
 ```
 
 - Make sure to define the template parametric expressions as `string`, otherwise the YAML parser
@@ -323,14 +320,14 @@ ms.env | where: \"key\" , \"http_proxy\" | first }}"
 
 Incorrect:
 
-```json5
+```yaml
 ---
 name: {{my-variable}} # This will error, as name are expected to be strings, and the yaml parser will interpret this as an object
 ```
 
 Correct:
 
-```json5
+```yaml
 ---
 name: '{{my-variable}}' # This will behave as expected
 ```
