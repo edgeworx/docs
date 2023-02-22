@@ -323,14 +323,14 @@ ms.env | where: \"key\" , \"http_proxy\" | first }}"
 
 Incorrect:
 
-```json5
+```json
 ---
 name: {{my-variable}} # This will error, as name are expected to be strings, and the yaml parser will interpret this as an object
 ```
 
 Correct:
 
-```json5
+```json
 ---
 name: '{{my-variable}}' # This will behave as expected
 ```

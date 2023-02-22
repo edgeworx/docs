@@ -86,9 +86,9 @@ container:
   ports:
     # This will create a mapping between the port 80 of the microservice
     # container and the port 5000 of the agent that runs over TCP
-    - internal: 80
-      external: 5000
-      protocal: tcp
+    - external: 5000
+      internal: 80
+      proxy: true
 ```
 
 ## Arguments / Commands

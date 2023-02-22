@@ -33,7 +33,7 @@ connecting to your microservice can be found in the [microservices]({{<ref "micr
 
 Darcy connects to REST API Endpoints and TCP Ports. You can specify the port within the Application
 
-[//]: # 'YAML. For more information, please refer to the [Public Services]({{<ref "public-services.md">}}) section.'
+[//]: # 'YAML. For more information, please refer to the [Port Broker]({{<ref "public-services.md">}}) section.'
 
 #### Routing
 

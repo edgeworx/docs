@@ -1,12 +1,12 @@
 ---
-title: "Public services"
+title: "Port Broker"
 weight: 600
 draft: false
 aliases:
   - /darcy/darcy-cloud/applications-doc/public-services
 ---
 
-Public services allow your [microservices](../apps/microservices.md) to securely expose public endpoints without opening ports
+Port Broker allows your [microservices](../apps/microservices.md) to securely expose public endpoints without opening ports
 on your agents.
 
 ## Specifying Public Containers
@@ -41,3 +41,6 @@ container:
         proxy: true
 ...
 ```
+{{<info>}}
+We recommend securing any port you decide to open using Port Broker in your application. 
+{{</info>}}
