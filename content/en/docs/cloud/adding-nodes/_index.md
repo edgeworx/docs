@@ -45,6 +45,6 @@ Darcy Cloud is compatible with many Linux edge boards:
 - Debian 10+
 
 {{<info>}}
-If you don't have any edge hardware yet, you can create a [virtual node](/docs/cloud/adding-nodes/virtual-node.md) using Darcy Cloud or create a VM in the Cloud or a [Vagrant](https://www.vagrantup.com) image running on your laptop and run
+If you don't have any edge hardware yet, you can create a [virtual node](/docs/cloud/adding-nodes/virtual-node.md) using Darcy Cloud, create a VM in the Cloud, or a [Vagrant](https://www.vagrantup.com) image running on your laptop and run
 the node installation script.
 {{</info>}}

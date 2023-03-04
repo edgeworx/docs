@@ -16,6 +16,8 @@ configuring the port mappings of your container.
 
 If `proxy` is specified and set to `true`, this will open a tunnel that will forward all traffic incoming onto the port exposed by the container.
 
+If your outbound data using Port Broker requires a specific  protocol, add `scheme` followed by the desired protocol. 
+
 Deploying such a configuration would result in a port being opened on the Controller host, and all
 incoming tcp traffic would be tunneled to `agent-1`, port 5000.
 
@@ -39,6 +41,7 @@ container:
       - internal: 80
         external: 5000
         proxy: true
+        scheme: http
 ...
 ```
 {{<info>}}

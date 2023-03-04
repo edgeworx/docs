@@ -54,34 +54,31 @@ http://YOUR.DEVICE.IP.ADDRESS:5555/
 ## App YAML
 
 ```yaml
-apiVersion: iofog.org/v3
 kind: Application
+apiVersion: iofog.org/v3
 metadata:
   name: darcy-ai-explorer
 spec:
   microservices:
     - name: darcy-ai-explorer
       agent:
-        name: ''
+        name: alex
       images:
-        arm: 'darcyai/darcy-ai-explorer:1.0.2'
-        registry: remote
-        x86: 'darcyai/darcy-ai-explorer:1.0.2'
+        arm: 'darcyai/darcy-ai-explorer:latest'
+        x86: 'darcyai/darcy-ai-explorer:latest'
       container:
-        commands: []
+        rootHostAccess: true
         env:
           - key: PORT
             value: '5555'
-        extraHosts: []
-        logSize: 1
-        ports: []
-        rootHostAccess: true
+        ports:
+          - external: '{{self.microservices[0].env[0].value | toNumber}}'
+            internal: '{{self.microservices[0].env[0].value | toNumber}}'
+            proxy: true
+            scheme: http
         volumes:
-          - hostDestination: /dev
-            containerDestination: /dev
-            accessMode: rw
+          - containerDestination: /dev
+            hostDestination: /dev
             type: bind
-      config: {}
-  routes: []
-  
+            accessMode: rw
 ```
