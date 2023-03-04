@@ -3,20 +3,20 @@
   functions = "functions"
 
 [build.environment]
-  NODE_VERSION = "19.4.0"
+  NODE_VERSION = "18"
   NPM_VERSION = "9.2.0"
 
 [context.production]
   command = "npm run build"
 
 [context.deploy-preview]
-  command = "npm run build -- -b $DEPLOY_PRIME_URL"
+  command = "npm run build -- -b $DEPLOY_PRIME_URL -D -F"
 
 [context.branch-deploy]
-  command = "npm run build -- -b $DEPLOY_PRIME_URL"
+  command = "npm run build -- -b $DEPLOY_PRIME_URL -D -F"
 
 [context.next]
-  command = "npm run build"
+  command = "npm run build -D -F"
 
 [context.next.environment]
   HUGO_ENV = "staging"

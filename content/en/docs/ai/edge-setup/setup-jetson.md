@@ -52,7 +52,7 @@ Next you will be installing a set of software packages. Some of them are Python 
 are Linux packages. Start by updating the Ubuntu package manager with the following command. It may
 take a minute or two.
 
-```shell
+```bash
 sudo apt-get update
 ```
 
@@ -61,7 +61,7 @@ sudo apt-get update
 Curl is a very useful package for downloading files from the command line. You will use it later
 when installing the Google Coral software. Install it now with the following command.
 
-```shell
+```bash
 sudo apt-get install curl
 ```
 
@@ -71,7 +71,7 @@ In order for some Python packages to work, your Jetson Nano needs to have a JPEG
 available. A JPEG library is not installed by default with the JetPack software. Install one with
 this command.
 
-```shell
+```bash
 sudo apt-get install libjpeg-dev
 ```
 
@@ -81,7 +81,7 @@ By default, the JetPack software installs Python 3.6.9 and also a version of Pyt
 manager for Python, called Pip, is only installed for the Python 2.7 version. You need to install
 Pip3 which is a Python3 package manager. Use the following command to install Pip3.
 
-```shell
+```bash
 sudo apt-get install python3-pip
 ```
 
@@ -94,14 +94,14 @@ use `pip` for installing Pip3 packages after you make this edit.
 You can use the `vi` editor as in the example here or you can use any other text editor you prefer.
 Use this command to begin editing your `.bashrc` file.
 
-```shell
+```bash
 vi ~/.bashrc
 ```
 
 Navigate to the bottom of the file. You will add two lines to the very end of the file. Add the
 following lines.
 
-```shell
+```bash
 alias python=python3
 alias pip=pip3
 ```
@@ -116,7 +116,7 @@ Pip3.
 Activate the edited `.bashrc` file now so you don't have to wait until the next login. Use the
 following command.
 
-```shell
+```bash
 source ~/.bashrc
 ```
 
@@ -140,7 +140,7 @@ commands without using `sudo`. Your username is the login name you chose during 
 setup process at the start of this guide. Replace the word YOURUSER shown below with your actual
 user such as `darcydev`
 
-```shell
+```bash
 sudo usermod -aG docker YOURUSER
 ```
 
@@ -156,7 +156,7 @@ the guide provided by Google and use the sections marked as "on Linux".
 You will need to reboot your Jetson Nano after finishing all of these installation steps. Make sure
 your camera and your Google Coral USB device are attached to your Nano board when you reboot.
 
-```shell
+```bash
 sudo reboot
 ```
 
