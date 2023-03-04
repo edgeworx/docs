@@ -59,7 +59,6 @@ any of the available nodes in the project.
 | `container.env.value`                    | The value of the environment variable.                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | `container.commands`                     | A list of command line style arguments passed to the container at runtime.                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
-
 ## Routes
 
 Application routes define message passing between microservices. Routing in Darcy Cloud applications

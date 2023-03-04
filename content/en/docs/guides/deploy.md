@@ -27,7 +27,7 @@ We recommend using a Raspberry Pi 4 with an attached Google Coral accelerator fo
 - [An edge device](docs/cloud/adding-nodes)
 - [Video camera](docs/cloud/adding-nodes) attached to the camera port
 - [AI Processor](docs/cloud/adding-nodes): Google Coral edge TPU (USB version attached to USB 3.0 port)
-  - CPU Processing can be used with varying performance. 
+  - CPU Processing can be used with varying performance.
 - [Power supply](docs/cloud/adding-nodes): 5.1V \* 3.5A
 - Micro SD card with at least 16GB capacity (32GB+ recommended)
 - Internet connectivity
