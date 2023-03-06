@@ -1,5 +1,5 @@
 ---
-title: "Deploy an app to the edge in about 30 minutes"
+title: "Deploy an app to the edge in under 10 minutes"
 linkTitle: "Deploy to the edge"
 weight: 250
 ---
@@ -113,14 +113,14 @@ command. Replace YOURNAME with the name you would like to use.
 NOTE: If your installation of Docker Desktop requires you to use `sudo` when using `docker`
 commands, simply add the `sudo` to the beginning of everything shown in this guide.
 
-```shell
+```bash
 docker buildx create --name YOURNAME
 ```
 
 And now that you have created a builder namespace, let's set BuildX to use that namespace with this
 command.
 
-```shell
+```bash
 docker buildx use YOURNAME
 ```
 
@@ -134,7 +134,7 @@ NOTE: If you don't already have an account, create one now at
 your username. Ensure that you are logged into your Docker Hub account using the following
 command by replacing the organization with your Docker Hub organization name.
 
-```shell
+```bash
 docker login --username=organization
 ```
 
@@ -144,7 +144,7 @@ need to replace `organization` with your actual Docker Hub organization name. Al
 is the tag. You can put anything you want here. It is a common practice to put a version number,
 such as `1.0.0` in the example below.
 
-```shell
+```bash
 docker buildx build -t organization/application-name:1.0.0 --platform linux/amd64,linux/arm64,linux/arm/v7 --push .
 ```
 

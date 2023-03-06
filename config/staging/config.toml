@@ -1,4 +1,6 @@
 baseurl = "https://staging--darcydocs.netlify.app/
 docsRepoBranch = "staging"
 
-
+buildDrafts = true
+buildExpired = true
+buildFuture = true

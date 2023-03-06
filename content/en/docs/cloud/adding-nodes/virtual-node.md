@@ -75,7 +75,7 @@ that all the resources used are cleaned up properly i.e. Ubuntu VM.
   <summary>Unable to create Virtual Node with default values on Windows machine</summary>
     We can modify the default values based on our Windows machine spec. For example:
 
-```shell
+```bash
 edgectl create virtual-node --name=darcy-node --cpus 2
 ```
 
