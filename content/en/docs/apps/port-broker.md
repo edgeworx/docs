@@ -50,3 +50,9 @@ container:
 We recommend securing any port you decide to open using Port Broker in your application.
 
 {{</info>}}
+
+{{<info>}}
+
+Troubleshooting note: if you are unable to access your microservice port as expected, check that port 7001 is not actively being blocked by your network firewall rules.
+
+{{</info>}}
