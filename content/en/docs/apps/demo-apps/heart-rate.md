@@ -69,7 +69,7 @@ spec:
   microservices:
     - name: data-generator
       agent:
-        name: alex
+        name: ''
       images:
         arm: 'darcyai/heart-rate-demo-generator:1.0.0'
         x86: 'darcyai/heart-rate-demo-generator:1.0.0'
