@@ -14,7 +14,7 @@ There are two broad categories of maintenance:
   configuration installed on your edge devices.
 
 Typical Darcy Cloud maintenance is invisible to the end user. That is to say,
-there is no interruption to service, and you will not have noticed that the update
+there is no interruption to service, and you may not have noticed that the update
 has occurred. We refer to this as a [Zero-Impact Maintenance](#zero-impact-maintenance) event.
 However, on occasion
 we may need to temporarily interrupt service to perform significant infrastructure
@@ -38,7 +38,7 @@ During _Service-Impact Maintenance_, there is interruption to service.
 
 - Darcy Cloud Portal will be unavailable. Visiting [cloud.darcy.ai](https://cloud.darcy.ai) in
   your browser will return an "Undergoing Maintenance" page.
-- Darcy Cloud API routes that will return a `503/Service Unavailable` HTTP status code.
+- Darcy Cloud API routes will return a `503/Service Unavailable` HTTP status code.
 - `edgectl` commands will return an error.
 
 {{<info>}}
@@ -53,11 +53,11 @@ Any user-facing changes from the update will be noted in the [changelog](/docs/m
 ## Node Maintenance
 
 When you [add an edge node](/docs/cloud/adding-nodes/add-node/) to your Darcy Cloud
-project, three software components are installed:
+project, three software components are installed on the node:
 
 - _Edgeworx Agent_ interacts with Darcy Cloud to monitor the node's status.
 - _ioFog Agent_ communicates with the Darcy Cloud ioFog backend to
-  deploy, update and remove microservices on your node.
+  manage microservices on your node.
 - _Deviceplane Agent_ implements the [keyless SSH](/docs/cloud/node-remote-access/)
   access mechanism. It is also used by Darcy Cloud to perform updates to the agents themselves.
 
@@ -119,8 +119,6 @@ We understand the importance of keeping our customers in the loop about maintena
   {{<info>}}
   Again, please note that during any type of maintenance, applications and microservices
   running on your nodes **will not be affected**. They will continue to operate as normal.
-  But you will not be able to push any changes to those applications via Darcy Cloud
-  during the maintenance period.
   {{</info>}}
 - For an _expedited maintenance event_, we aim to email you at least two days in advance. We realize
   that this is not a lot of time to prepare, so we make every effort to avoid expedited maintenance.
@@ -128,7 +126,7 @@ We understand the importance of keeping our customers in the loop about maintena
 - You will be emailed again when the maintenance window opens.
 - And, finally, you will be emailed one more time when the maintenance event concludes.
 - Note that at any time, you can learn more about service availability at [status.darcy.ai](https://status.darcy.ai).
-- After a maintenance event concludes, you can check on what changes occurred or any new
+- After a maintenance event concludes, you can find out more about any changes or new
   features in the [changelog](/docs/more/release-notes).
 - At any time, you can check on the availability of new `edgectl` versions by executing `edgectl version`.
 
