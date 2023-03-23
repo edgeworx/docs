@@ -101,7 +101,7 @@ Sometimes a node will be offline during the maintenance period. What happens?
 When the node comes back online, the node's Deviceplane Agent reestablishes its connection
 to Darcy Cloud. When Darcy Cloud observes that the node is back online, it will
 then initiate the deferred update process. The _Deferred Maintenance Window_ is thirty
-(30) days.
+days.
 
 After that window closes - depending on the nature of that particular node update
 process - it may be necessary to re-register the node. From Darcy Cloud's perspective,
