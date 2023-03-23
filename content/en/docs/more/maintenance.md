@@ -1,9 +1,10 @@
 ---
-title: "Maintenance"
+title: Maintenance
 weight: 80
 aliases:
   - /maintenance
 ---
+
 This document explains how maintenance and updates are performed on Darcy Cloud.
 
 There are two broad categories of maintenance:
@@ -107,21 +108,30 @@ this effectively creates a new node. You would also need to re-deploy any micros
 Please contact [Darcy Support](mailto:support@darcy.ai) if you need assistance with a node
 outside the deferred maintenance window.
 
-## Notification
+## Schedule
 
 We understand the importance of keeping our customers in the loop about maintenance.
 
-- For a _standard maintenance event_, you will be emailed at your account's registered email
-  address at least five business days before the maintenance window. If you have concerns
-  about the maintenance event impacting your operations, please contact [Darcy Support](mailto:support@darcy.ai)
-  as early as possible.
+### Regularly Scheduled Maintenance
 
-  {{<info>}}
-  Again, please note that during any type of maintenance, applications and microservices
-  running on your nodes **will not be affected**. They will continue to operate as normal.
-  {{</info>}}
-- For an _expedited maintenance event_, we aim to email you at least two days in advance. We realize
-  that this is not a lot of time to prepare, so we make every effort to avoid expedited maintenance.
+For _Regularly Scheduled Maintenance_, you will receive an initial email notification at your account's registered email
+address at least five business days before the maintenance window. If you have concerns
+about the maintenance event impacting your operations, please contact [Darcy Support](mailto:support@darcy.ai)
+as early as possible.
+
+{{<info>}}
+Again, please note that during any type of maintenance, applications and microservices
+running on your nodes **will not be affected**. They will continue to operate as normal.
+{{</info>}}
+
+### Expedited Schedule Maintenance
+
+For an _Expedited Schedule Maintenance_, we aim to email you at least two days in advance. We realize
+that this is not a lot of time to prepare, so we make every effort to avoid expedited maintenance.
+
+### Steps
+
+- You will receive an initial notification email for either Regularly Scheduled or Expedited Schedule Maintenance.j
 - You will be emailed a reminder the day before the maintenance window.
 - You will be emailed again when the maintenance window opens.
 - And, finally, you will be emailed one more time when the maintenance event concludes.
