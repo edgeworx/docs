@@ -131,7 +131,7 @@ that this is not a lot of time to prepare, so we make every effort to avoid expe
 
 ### Steps
 
-- You will receive an initial notification email for either Regularly Scheduled or Expedited Schedule Maintenance.j
+- You will receive an initial notification email for either Regularly Scheduled or Expedited Schedule Maintenance.
 - You will be emailed a reminder the day before the maintenance window.
 - You will be emailed again when the maintenance window opens.
 - And, finally, you will be emailed one more time when the maintenance event concludes.
