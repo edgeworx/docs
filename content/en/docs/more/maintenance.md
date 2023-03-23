@@ -4,11 +4,9 @@ weight: 80
 aliases:
   - /maintenance
 ---
-From time to time, we need to perform maintenance on Darcy Cloud to
-support the growth of the platform.
-This document provides background information on our process.
+This document explains how maintenance and updates are performed on Darcy Cloud.
 
-There are two categories of maintenance we perform:
+There are two broad categories of maintenance:
 
 - **Darcy Cloud maintenance**: Darcy Cloud [Portal](https://cloud.darcy.ai)
   and [API](https://api.darcy.ai).
