@@ -15,7 +15,7 @@ There are two categories of maintenance we perform:
 - **Node maintenance**: updates to the agent software and/or
   configuration installed on your edge devices.
 
-Typically Darcy Cloud maintenance is invisible to the end user. That is to say,
+Typical Darcy Cloud maintenance is invisible to the end user. That is to say,
 there is no interruption to service, and you will not have noticed that the update
 has occurred. We refer to this as a [Zero-Impact Maintenance](#zero-impact-maintenance) event.
 However, on occasion
@@ -126,7 +126,7 @@ Our notification policy is as follows:
   But you will not be able to push any changes to those applications via Darcy Cloud
   during the maintenance period.
   {{</info>}}
-- For an _expedited maintenance event_, you will be emailed at least two days in advance. We realize
+- For an _expedited maintenance event_, we aim to email you at least two days in advance. We realize
   that this is not a lot of time to prepare, so we make every effort to avoid expedited maintenance.
 - You will be emailed a reminder the day before the maintenance window.
 - You will be emailed again when the maintenance window opens.
