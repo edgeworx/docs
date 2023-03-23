@@ -36,7 +36,7 @@ on those changes in the [changelog](/docs/more/release-notes).
 
 During _Service-Impact Maintenance_, there is interruption to service.
 
-- Darcy Cloud Portal will be unavailable. Visiting [cloud.darcy.ai](https://cloud.darcy.ai) in
+- Darcy Cloud Portal will be unavailable. A visit to [cloud.darcy.ai](https://cloud.darcy.ai) in
   your browser will return an "Undergoing Maintenance" page.
 - Darcy Cloud API routes will return a `503/Service Unavailable` HTTP status code.
 - `edgectl` commands will return an error.
