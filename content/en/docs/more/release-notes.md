@@ -5,6 +5,7 @@ aliases:
   - /darcy-cloud/release-notes
   - /docs/release-notes
   - /release-notes
+  - /changelog
 ---
 
 ### Darcy Cloud: Release 2022.06.17 (BETA)
@@ -12,7 +13,7 @@ aliases:
 The highlights of this release are Virtual Node, and support for running Darcy AI Engine on CPU.
 
 | Component          | Version  |
-| ------------------ | -------- |
+|--------------------|----------|
 | Darcy Cloud API    | `v2.2.0` |
 | Darcy Cloud Portal | `v2.2.0` |
 | Edgectl            | `v2.2.0` |
