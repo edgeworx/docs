@@ -126,7 +126,7 @@ We understand the importance of keeping our customers in the loop about maintena
 - You will be emailed again when the maintenance window opens.
 - And, finally, you will be emailed one more time when the maintenance event concludes.
 - Note that at any time, you can learn more about service availability at [status.darcy.ai](https://status.darcy.ai).
-- After a maintenance event concludes, you can find out more about any changes or new
+- After a maintenance event concludes, you can find out about any changes or new
   features in the [changelog](/docs/more/release-notes).
 - At any time, you can check on the availability of new `edgectl` versions by executing `edgectl version`.
 
@@ -134,5 +134,5 @@ We understand the importance of keeping our customers in the loop about maintena
 
 If you have any feedback about our process, feel free to start a discussion over
 at [discuss.darcy.ai](https://discuss.darcy.ai). If you have a concern about an upcoming
-maintenance event impacting your operations, please reach out as soon as possible
+maintenance event impacting your operations, please reach out as early as possible
 to [Darcy Support](mailto:support@darcy.ai).
