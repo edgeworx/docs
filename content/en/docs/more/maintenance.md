@@ -112,8 +112,6 @@ outside the deferred maintenance window.
 ## Notification
 
 We understand the importance of keeping our customers in the loop about maintenance.
-For zero-impact
-Our notification policy is as follows:
 
 - For a _standard maintenance event_, you will be emailed at your account's registered email
   address at least five business days before the maintenance window. If you have concerns
