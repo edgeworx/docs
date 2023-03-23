@@ -69,7 +69,7 @@ This is a broad outline of the steps that can occur during node maintenance. Not
 that only some of these steps may occur for any particular maintenance event.
 
 - Darcy Cloud initiates the update process by opening a connection with Deviceplane Agent,
-  and then executing an update script on the node.
+  and then executing an update script on the node via Deviceplane.
   - Note that a login session may appear in your node's log files. This is the update
     process at work.
 - Edgeworx Agent:
@@ -88,10 +88,10 @@ that only some of these steps may occur for any particular maintenance event.
   - Deviceplane Agent's software components may be updated.
   - Deviceplane Agent's configuration files may be modified.
   - The Deviceplane Agent service may be restarted.
-- What does not happen:
-  - Your applications and microservices running on your nodes will not be stopped or restarted.
-  - Your node (edge device) will not be restarted.
-  - Other than the items listed above, no other changes are made to your node.
+- What does **not** happen:
+  - Your applications and microservices running on your nodes will **not** be stopped or restarted.
+  - Your node (edge device) will **not** be restarted.
+  - Other than the changes to the agents listed above, no other changes are made to your node.
 
 ### Offline nodes
 
