@@ -4,15 +4,23 @@ weight: 80
 aliases:
   - /maintenance
 ---
-
 This document explains how maintenance and updates are performed on Darcy Cloud.
 
-There are two broad categories of maintenance:
+During a maintenance window, you can learn about service availability
+at [status.darcy.ai](https://status.darcy.ai). You can find out about
+upcoming maintenance events in the [changelog](/docs/more/changelog).
+And at any time, you can reach out to [Darcy Support](mailto:support@darcy.ai).
+
+## Affected Systems
+
+A maintenance event can effect one or both of Darcy Cloud or the attached edge nodes.
 
 - **Darcy Cloud maintenance**: Darcy Cloud [Portal](https://cloud.darcy.ai)
   and [API](https://api.darcy.ai/v1/docs).
-- **Node maintenance**: updates to the agent software and/or
+- **Edge Node maintenance**: updates to the agent software and/or
   configuration installed on your edge devices.
+
+### Darcy Cloud
 
 Typical Darcy Cloud maintenance is invisible to the end user. That is to say,
 there is no interruption to service, and you may not have noticed that the update
@@ -21,37 +29,7 @@ However, on occasion
 we may need to temporarily interrupt service to perform significant infrastructure
 or backend upgrades. We call this a [Service-Impact Maintenance](#service-impact-maintenance) event.
 
-During a maintenance window, you can learn about service availability
-at [status.darcy.ai](https://status.darcy.ai).
-
-## Impact
-
-### Zero-Impact Maintenance
-
-Zero-Impact Maintenance, as you might expect, has zero impact on service availability.
-Most often, this type of maintenance is to improve backend services or infrastructure.
-If there are user-facing changes, you will be able to find information
-on those changes in the [changelog](/docs/more/release-notes).
-
-### Service-Impact Maintenance
-
-During _Service-Impact Maintenance_, there is interruption to service.
-
-- Darcy Cloud Portal will be unavailable. A visit to [cloud.darcy.ai](https://cloud.darcy.ai) in
-  your browser will return an "Undergoing Maintenance" page.
-- Darcy Cloud API routes will return a `503/Service Unavailable` HTTP status code.
-- `edgectl` commands will return an error.
-
-{{<info>}}
-During Service-Impact Maintenance, applications and microservices
-running on your nodes **will not be affected**. They will continue to operate as normal.
-But you will not be able to push any changes to those applications via Darcy Cloud
-during the maintenance period.
-{{</info>}}
-
-Any user-facing changes from the update will be noted in the [changelog](/docs/more/release-notes).
-
-## Node Maintenance
+### Edge Nodes
 
 When you [add an edge node](/docs/cloud/adding-nodes/add-node/) to your Darcy Cloud
 project, three software components are installed on the node:
@@ -64,7 +42,7 @@ project, three software components are installed on the node:
 
 Node maintenance can affect one or more of these agents.
 
-### Node update process
+#### Node update process
 
 This is a broad outline of the steps that can occur during node maintenance. Note
 that only some of these steps may occur for any particular maintenance event.
@@ -94,7 +72,7 @@ that only some of these steps may occur for any particular maintenance event.
   - Your node (edge device) will **not** be restarted.
   - Other than the changes to the agents listed above, no other changes are made to your node.
 
-### Offline nodes
+#### Offline nodes
 
 Sometimes a node will be offline during the maintenance period. What happens?
 When the node comes back online, the node's Deviceplane Agent reestablishes its connection
@@ -107,6 +85,33 @@ process - it may be necessary to re-register the node. From Darcy Cloud's perspe
 this effectively creates a new node. You would also need to re-deploy any microservices.
 Please contact [Darcy Support](mailto:support@darcy.ai) if you need assistance with a node
 outside the deferred maintenance window.
+
+## Impact
+
+### Zero-Impact Maintenance
+
+Zero-Impact Maintenance, as you might expect, has zero impact on service availability.
+Most often, this type of maintenance is to improve backend services or infrastructure.
+If there are user-facing changes, you will be able to find information
+on those changes in the [changelog](/docs/more/changelog).
+
+### Service-Impact Maintenance
+
+During _Service-Impact Maintenance_, there is interruption to service.
+
+- Darcy Cloud Portal will be unavailable. A visit to [cloud.darcy.ai](https://cloud.darcy.ai) in
+  your browser will return an "Undergoing Maintenance" page.
+- Darcy Cloud API routes will return a `503/Service Unavailable` HTTP status code.
+- `edgectl` commands will return an error.
+
+{{<info>}}
+During Service-Impact Maintenance, applications and microservices
+running on your nodes **will not be affected**. They will continue to operate as normal.
+But you will not be able to push any changes to those applications via Darcy Cloud
+during the maintenance period.
+{{</info>}}
+
+Any user-facing changes from the update will be noted in the [changelog](/docs/more/changelog).
 
 ## Schedule
 
@@ -137,7 +142,7 @@ that this is not a lot of time to prepare, so we make every effort to avoid expe
 - And, finally, you will be emailed one more time when the maintenance event concludes.
 - Note that at any time, you can learn more about service availability at [status.darcy.ai](https://status.darcy.ai).
 - After the maintenance event concludes, you can find out about any changes or new
-  features in the [changelog](/docs/more/release-notes).
+  features in the [changelog](/docs/more/changelog).
 - At any time, you can check on the availability of new `edgectl` versions by executing `edgectl version`.
 
 ## Feedback
