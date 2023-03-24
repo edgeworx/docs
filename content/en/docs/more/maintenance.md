@@ -10,7 +10,7 @@ This document explains how maintenance and updates are performed on Darcy Cloud.
 There are two broad categories of maintenance:
 
 - **Darcy Cloud maintenance**: Darcy Cloud [Portal](https://cloud.darcy.ai)
-  and [API](https://api.darcy.ai).
+  and [API](https://api.darcy.ai/v1/docs).
 - **Node maintenance**: updates to the agent software and/or
   configuration installed on your edge devices.
 
