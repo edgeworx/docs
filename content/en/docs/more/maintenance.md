@@ -13,7 +13,7 @@ And at any time, you can reach out to [Darcy Support](mailto:support@darcy.ai).
 
 ## Affected Systems
 
-A maintenance event can effect one or both of Darcy Cloud or the attached edge nodes.
+A maintenance event can affect one or both of Darcy Cloud or the attached edge nodes.
 
 - **Darcy Cloud maintenance**: Darcy Cloud [Portal](https://cloud.darcy.ai)
   and [API](https://api.darcy.ai/v1/docs).
