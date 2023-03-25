@@ -115,7 +115,8 @@ Any user-facing changes from the update will be noted in the [changelog](/docs/m
 
 ## Schedule
 
-We understand the importance of keeping our customers in the loop about maintenance.
+We understand the importance of keeping our customers in the loop about upcoming
+maintenance. We have two classes of scheduled maintenance.
 
 ### Regularly Scheduled Maintenance
 
@@ -131,7 +132,7 @@ running on your nodes **will not be affected**. They will continue to operate as
 
 ### Expedited Schedule Maintenance
 
-For an _Expedited Schedule Maintenance_, we aim to email you at least two days in advance. We realize
+For an _Expedited Schedule Maintenance_ event, we aim to email you at least two days in advance. We realize
 that this is not a lot of time to prepare, so we make every effort to avoid expedited maintenance.
 
 ### Steps
