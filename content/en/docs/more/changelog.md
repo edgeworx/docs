@@ -20,7 +20,7 @@ as early as possible.
 
 | Affected Systems                                                                                            | Impact                                                                  | Schedule                           |
 | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ---------------------------------- |
-| ✅ [Darcy Cloud](/docs/more/maintenance/#darcy-cloud)<br/>✅ | ⚠️ [Zero Impact](/docs/more/maintenance/#zero-impact-maintenance) | Mon 03 Apr 2023 <br/> 7AM - 9AM PT |
+| ✅ [Darcy Cloud](/docs/more/maintenance/#darcy-cloud)<br/> | ⚠️ [Zero Impact](/docs/more/maintenance/#zero-impact-maintenance) | Mon 03 Apr 2023 <br/> 7AM - 9AM PT |
 
 Learn more about our [maintenance process](/docs/more/maintenance/).
 
