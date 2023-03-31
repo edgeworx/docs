@@ -10,9 +10,25 @@ aliases:
 
 ## Upcoming
 
+### 2023.04.03: Zero-Impact Maintenance
+
+On Mon Apr 3rd 2023, we will be performing minor maintenance
+on Darcy Cloud. This maintenance event **will not affect
+service availability**. If you have concerns
+about the maintenance event impacting your operations, please contact [Darcy Support](mailto:support@darcy.ai)
+as early as possible.
+
+| Affected Systems                                          | Impact                                                         | Schedule                           |
+|-----------------------------------------------------------|----------------------------------------------------------------|------------------------------------|
+| ✅ [Darcy Cloud](/docs/more/maintenance/#darcy-cloud)<br/> | [Zero Impact](/docs/more/maintenance/#zero-impact-maintenance) | Mon 03 Apr 2023 <br/> 7AM - 8AM PT |
+
+Learn more about our [maintenance process](/docs/more/maintenance/).
+
+## Previously
+
 ### 2023.03.28: Service-Impact Maintenance
 
-On Mar 28th 2023, we will be performing maintenance
+On Tue Mar 28th 2023, we will be performing maintenance
 on Darcy Cloud, and all attached edge nodes. This maintenance event **will affect
 service availability**. If you have concerns
 about the maintenance event impacting your operations, please contact [Darcy Support](mailto:support@darcy.ai)
@@ -23,8 +39,6 @@ as early as possible.
 | ✅ [Darcy Cloud](/docs/more/maintenance/#darcy-cloud)<br/>✅ [Edge Nodes](/docs/more/maintenance/#edge-nodes) | ⚠️ [Service Impact](/docs/more/maintenance/#service-impact-maintenance) | Tue 28 Mar 2023 <br/> 7AM - 9AM PT |
 
 Learn more about our [maintenance process](/docs/more/maintenance/).
-
-## Previously
 
 ### 2022.06.17: Darcy Cloud v2.2.0
 
