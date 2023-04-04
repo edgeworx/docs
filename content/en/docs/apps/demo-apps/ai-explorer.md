@@ -62,7 +62,7 @@ spec:
   microservices:
     - name: darcy-ai-explorer
       agent:
-        name: alex
+        name: '{% assign agent = "" | findAgent | first %}{{ agent.name }}'
       images:
         arm: 'darcyai/darcy-ai-explorer:latest'
         x86: 'darcyai/darcy-ai-explorer:latest'

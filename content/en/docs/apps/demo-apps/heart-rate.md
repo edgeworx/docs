@@ -69,7 +69,7 @@ spec:
   microservices:
     - name: data-generator
       agent:
-        name: ''
+        name: '{% raw %}{% assign agent = "" | findAgent | first %}{{ agent.name }}'
       images:
         arm: 'darcyai/heart-rate-demo-generator:1.0.0'
         x86: 'darcyai/heart-rate-demo-generator:1.0.0'
@@ -91,7 +91,6 @@ spec:
           - external: 5005
             internal: 80
             proxy: true
-            scheme: http
         volumes: []
         env:
           - key: BASE_URL

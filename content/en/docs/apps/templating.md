@@ -307,7 +307,7 @@ With controller API the same configuration looks like:
 - The algorithmic operator of `liquidjs` or variable assignment have the scope on the processing
   string.
 
-```json
+```yaml
 ---
 ....
 - key: testaffect
