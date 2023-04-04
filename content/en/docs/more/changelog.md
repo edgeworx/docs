@@ -10,6 +10,10 @@ aliases:
 
 ## Upcoming
 
+No upcoming events currently scheduled.
+
+## Previously
+
 ### 2023.04.03: Zero-Impact Maintenance
 
 On Mon Apr 3rd 2023, we will be performing minor maintenance
@@ -23,8 +27,6 @@ as early as possible.
 | ✅ [Darcy Cloud](/docs/more/maintenance/#darcy-cloud)<br/> | [Zero Impact](/docs/more/maintenance/#zero-impact-maintenance) | Mon 03 Apr 2023 <br/> 7AM - 8AM PT |
 
 Learn more about our [maintenance process](/docs/more/maintenance/).
-
-## Previously
 
 ### 2023.03.28: Service-Impact Maintenance
 
