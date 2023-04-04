@@ -61,7 +61,7 @@ Terraform or kubernetes then you'll be immediately at home with Darcy Cloud.
   definitions to support powerful [application templating]({{<ref "/docs/apps/templating.md">}}) at deployment time
 - **Application orchestration**: deploy applications to one or many nodes via the UI, cli or API
   using directed deployment or deployment time scripting
-- **Public Services**: expose any container that offers a tcp or http service to the rest of your
+- **Port Broker**: expose any container that offers a tcp or http service to the rest of your
   VAN, without requiring any ports or firewalls to be open
 - **Resource monitoring**: get visibility into the resource usage and [performance](../more/terminology#performance-metrics) of your edge
   nodes (e.g. CPU, Mem usage, etc)

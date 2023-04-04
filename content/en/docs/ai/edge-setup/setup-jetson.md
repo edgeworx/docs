@@ -20,7 +20,7 @@ be available soon.
   camera will work)
 - Google Coral edge TPU (USB version attached to USB 3.0 port)
 - Micro SD card with 32GB+ capacity and UHS-1 speed rating or faster
-- Power supply with 5.5mm barrel plug at 5 Volts DC with at least 3 Amps output
+- Power supply should be what is provided with device
 - Jumper for power pins on Nano board (alternative hardware suggested below)
 
 ## Follow the Nvidia Jetson Nano guide to set up your board

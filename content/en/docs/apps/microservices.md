@@ -62,4 +62,4 @@ different pieces of putting together a Docker container image. {{</info>}}
 
 Once your microservice is deployed on your node, you're ready to connect it to your Application!
 
-[//]: # 'Check out the [Public Services]({{<ref "public-services.md">}}) section for configuration steps.'
+[//]: # 'Check out the [Port Broker]({{<ref "port-broker.md">}}) section for configuration steps.'

@@ -147,7 +147,7 @@ Available Commands:
   microservice        Get details of an app microservice
   microservices       List app microservices
   node                Get node details
-  node-install-script Get the node installation script for a project
+  node-register-script Get the node registration script for a project
   nodes               List nodes for project
   org                 Get org details
   project             Get project details
