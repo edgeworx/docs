@@ -10,7 +10,7 @@ aliases:
 
 ## Upcoming
 
-No upcoming events currently scheduled. 
+No upcoming events currently scheduled.
 
 ## Previously
 
