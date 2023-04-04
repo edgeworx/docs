@@ -49,7 +49,7 @@ shown [here](http://iofog.staging.edgeworx.io/docs/3/applications/microservice-r
 
 To see your current registry contents on your node(s), use the following command:
 
-```shell
+```bash
 edgectl registry list
 ```
 
@@ -96,7 +96,7 @@ second entry is the local selection:
 
 To create a new entry in the registry, use the following command:
 
-```shell
+```bash
 edgectl registry create
 ```
 
@@ -113,7 +113,7 @@ tutorial [here](https://cloud.google.com/container-registry/docs/advanced-authen
 Once a JSON key that has access to the desired containers is created, it can be added to the Darcy
 Cloud registry as shown below:
 
-```shell
+```bash
 edgectl registry create --url "gcr.io" --username "_json_key" --password "$(cat /path/to/json_key_file.json)"
 ```
 

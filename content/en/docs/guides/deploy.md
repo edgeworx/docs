@@ -1,5 +1,5 @@
 ---
-title: "Deploy an app to the edge in about 30 minutes"
+title: "Deploy an app to the edge in under 10 minutes"
 linkTitle: "Deploy to the edge"
 weight: 250
 ---
@@ -27,6 +27,7 @@ We recommend using a Raspberry Pi 4 with an attached Google Coral accelerator fo
 - [An edge device](docs/cloud/adding-nodes)
 - [Video camera](docs/cloud/adding-nodes) attached to the camera port
 - [AI Processor](docs/cloud/adding-nodes): Google Coral edge TPU (USB version attached to USB 3.0 port)
+  - CPU Processing can be used with varying performance.
 - [Power supply](docs/cloud/adding-nodes): 5.1V \* 3.5A
 - Micro SD card with at least 16GB capacity (32GB+ recommended)
 - Internet connectivity
@@ -112,14 +113,14 @@ command. Replace YOURNAME with the name you would like to use.
 NOTE: If your installation of Docker Desktop requires you to use `sudo` when using `docker`
 commands, simply add the `sudo` to the beginning of everything shown in this guide.
 
-```shell
+```bash
 docker buildx create --name YOURNAME
 ```
 
 And now that you have created a builder namespace, let's set BuildX to use that namespace with this
 command.
 
-```shell
+```bash
 docker buildx use YOURNAME
 ```
 
@@ -133,7 +134,7 @@ NOTE: If you don't already have an account, create one now at
 your username. Ensure that you are logged into your Docker Hub account using the following
 command by replacing the organization with your Docker Hub organization name.
 
-```shell
+```bash
 docker login --username=organization
 ```
 
@@ -143,7 +144,7 @@ need to replace `organization` with your actual Docker Hub organization name. Al
 is the tag. You can put anything you want here. It is a common practice to put a version number,
 such as `1.0.0` in the example below.
 
-```shell
+```bash
 docker buildx build -t organization/application-name:1.0.0 --platform linux/amd64,linux/arm64,linux/arm/v7 --push .
 ```
 
@@ -218,7 +219,11 @@ spec:
         x86: "YOUR_ORGANIZATION/YOUR_APP:tag.goes.here"
       container:
         rootHostAccess: true
-        ports: []
+        ports:
+          - external: 5005
+            internal: 80
+            proxy: true
+            scheme: http
         volumes:
           - containerDestination: /dev
             hostDestination: /dev

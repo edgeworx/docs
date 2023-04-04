@@ -39,7 +39,7 @@ _edgectl_ currently supports Mac, Linux & Windows.
 {{%tab name="macOS" %}}
 Use [brew](https://brew.sh) to install _edgectl_:
 
-```shell
+```bash
 brew install edgeworx/edgectl/edgectl
 ```
 
@@ -58,7 +58,7 @@ scoop install edgectl
 {{%tab name="Linux" %}}
 On Linux distros, use `get-edgectl.bash`:
 
-```shell
+```bash
 curl https://cloud.darcy.ai/get-edgectl.bash | bash
 ```
 
@@ -87,7 +87,7 @@ a _Personal Access Token_ or _Project Access Token_ from `cloud.darcy.ai`. For _
 Token_, click `Access Tokens` in the upper-right account menu. For _Project Access Token_, click the
 settings (gear) icon on the project page. Once you have the _Access Token_, you can execute:
 
-```shell
+```bash
 edgectl login --token xyz
 ```
 
@@ -96,7 +96,7 @@ edgectl login --token xyz
 Let's get familiar with _edgectl_. We can observe the main use cases by running the top-level help
 command:
 
-```shell
+```bash
 edgectl --help
 ```
 
@@ -147,7 +147,7 @@ Available Commands:
   microservice        Get details of an app microservice
   microservices       List app microservices
   node                Get node details
-  node-install-script Get the node installation script for a project
+  node-register-script Get the node registration script for a project
   nodes               List nodes for project
   org                 Get org details
   project             Get project details

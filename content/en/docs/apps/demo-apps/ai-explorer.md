@@ -62,10 +62,10 @@ spec:
   microservices:
     - name: darcy-ai-explorer
       agent:
-        name: ''
+        name: '{% assign agent = "" | findAgent | first %}{{ agent.name }}'
       images:
-        arm: 'darcyai/darcy-ai-explorer:1.0.2'
-        x86: 'darcyai/darcy-ai-explorer:1.0.2'
+        arm: 'darcyai/darcy-ai-explorer:latest'
+        x86: 'darcyai/darcy-ai-explorer:latest'
       container:
         rootHostAccess: true
         env:
@@ -74,10 +74,11 @@ spec:
         ports:
           - external: '{{self.microservices[0].env[0].value | toNumber}}'
             internal: '{{self.microservices[0].env[0].value | toNumber}}'
+            proxy: true
+            scheme: http
         volumes:
           - containerDestination: /dev
             hostDestination: /dev
             type: bind
             accessMode: rw
-
 ```
