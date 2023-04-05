@@ -18,7 +18,7 @@ If `proxy` is specified and set to `true`, this will open a tunnel that will for
 
 If your outbound data using Port Broker requires a specific protocol, add `scheme` followed by the desired protocol.
 
-Deploying such a configuration would result in a port being opened on the Controller host, and all
+Deploying such a configuration would result in a port being opened on the a public host, and all
 incoming tcp traffic would be tunneled to `agent-1`, port 5000.
 
 The public address can be retrieved in the Portal (in the Application details, and/or microservice
