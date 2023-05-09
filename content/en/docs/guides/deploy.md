@@ -68,7 +68,7 @@ file.
 {{</warning>}}
 
 ```text
-FROM darcyai/darcy-ai-coral:dev
+FROM darcyai/darcyai-coral:dev
 
 RUN python3 -m pip install darcyai
 
