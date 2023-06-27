@@ -59,7 +59,7 @@ scoop install edgectl
 On Linux distros, use `get-edgectl.bash`:
 
 ```bash
-curl https://cloud.darcy.ai/get-edgectl.bash | bash
+curl -s https://cloud.darcy.ai/get-edgectl.bash | sudo bash
 ```
 
 {{% /tab %}}
