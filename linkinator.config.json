@@ -1,5 +1,5 @@
 {
-  "skip": "(github.com\\/darcyai\\/docs|linkedin.com\\/company\\/edgeworxio|api.darcy.ai)",
+  "skip": "(github.com\\/darcyai\\/docs|linkedin.com\\/company\\/edgeworxio|api.darcy.ai|twitter.com\\/EdgeworxIO)",
   "timeout:": 2000,
   "retryErrors": true,
   "retryErrorsJitter": true,
