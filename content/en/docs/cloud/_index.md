@@ -1,17 +1,17 @@
 ---
-title: "Darcy Cloud"
-description: "Docs for Darcy Cloud"
+title: "Edgeworx Cloud"
+description: "Docs for Edgeworx Cloud"
 weight: 500
-linkTitle: "Darcy Cloud"
+linkTitle: "Edgeworx Cloud"
 ---
 
-Darcy Cloud is a platform built on the principle of Infrastructure as Code (IaC) that allows you to
+Edgeworx Cloud is a platform built on the principle of Infrastructure as Code (IaC) that allows you to
 manage edge infrastructure and [applications](../more/terminology#application). Developers can deploy, orchestrate and operate
 containerized [microservice](../apps/microservices.md) applications from the cloud to remote heterogeneous on-premise servers
 and edge devices.
 
 Your edge can be comprised of anything from a cloud VM, to a mini datacenter to a Raspberry Pi Zero
-and everything in between. Darcy Cloud makes it easy to deploy and manage across multiple tiers, in
+and everything in between. Edgeworx Cloud makes it easy to deploy and manage across multiple tiers, in
 different geographies, across diverse networks and behind multiple firewalls.
 
 Your application can be just a single microservice or can be a sophisticated multi-tier application,
@@ -31,7 +31,7 @@ overlay [virtual application network](https://netprototalk.com/2019/11/12/virtua
 Built by developers for developers, we focus on beautifully crafted interfaces (web and cli),
 thoughtful REST APIs and opinionated (and extensible) YAML specs for software deployment and
 integration with today’s most popular developer tools and workflows. If you know how to use
-Terraform or kubernetes then you'll be immediately at home with Darcy Cloud.
+Terraform or kubernetes then you'll be immediately at home with Edgeworx Cloud.
 
 ![Projects Overview](/images/portal-projects-overivew-luckyspin.jpg)
 

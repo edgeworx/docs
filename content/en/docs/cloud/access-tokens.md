@@ -5,7 +5,7 @@ aliases:
   - /darcy/darcy-cloud/access-tokens
 ---
 
-Darcy Cloud supports basic HTTP authentication through access tokens.
+Edgeworx Cloud supports basic HTTP authentication through access tokens.
 
 Simply pass the token as username in
 the [HTTP Basic authentication](https://en.wikipedia.org/wiki/Basic_access_authentication) header.

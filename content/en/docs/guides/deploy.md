@@ -7,27 +7,26 @@ weight: 250
 ![Darcy CLoud Project Page](/images/guide4-deploy-cloud.jpg)
 
 ## What you will accomplish
-
-By the end of this guide, you will be able to make deployable Darcy AI [application](/docs/more/terminology#application) packages that
-will run on any hardware that meets the requirements for Darcy AI. The list of compatible hardware
-is extensive, allowing you to deploy your Darcy AI applications to the devices that fit your
+<!-- TODO: This content needs an extensive rewrite -->
+By the end of this guide, you will be able to make deployable edge application packages that
+will run on any hardware. The list of compatible hardware
+is extensive, allowing you to deploy your applications to the devices that fit your
 solution needs.
 
 {{<info>}}
-We recommend using a Raspberry Pi 4 with an attached Google Coral accelerator for the best performance.
+This guide was created using an Raspberry Pi 4, however you can use any device with Linux and the required packages installed.
 {{</info>}}
 
 ### Software Requirements
 
 - Docker Desktop and a Docker account
-- Darcy Cloud account (Free)
+- Edgeworx Cloud account (Free)
 
 ### Hardware Requirements
 
-- [An edge device](docs/cloud/adding-nodes)
+- [An edge device](docs/cloud/adding-nodes) with Linux (Debian is preffered)
 - [Video camera](docs/cloud/adding-nodes) attached to the camera port
-- [AI Processor](docs/cloud/adding-nodes): Google Coral edge TPU (USB version attached to USB 3.0 port)
-  - CPU Processing can be used with varying performance.
+- CPU Processing can be used with varying performance.
 - [Power supply](docs/cloud/adding-nodes): 5.1V \* 3.5A
 - Micro SD card with at least 16GB capacity (32GB+ recommended)
 - Internet connectivity
@@ -43,7 +42,7 @@ We recommend using a Raspberry Pi 4 with an attached Google Coral accelerator fo
 
 {{<info>}}
 After you have installed Docker, you can use `docker` commands in terminal. You will be using these
-commands to package your Darcy AI applications for deployment, including deploying to edge devices
+commands to package your application for deployment, including deploying to edge devices
 that are a different CPU architecture than your computer! To make sure you can use the latest Docker
 build commands like `buildx` you can add an environment variable to your computer with the following
 command `export DOCKER_CLI_EXPERIMENTAL=enabled`. This will tell Docker to allow use of the latest
@@ -56,7 +55,7 @@ You may need to use `sudo docker` instead of just `docker` depending on how you 
 
 ### Add a Dockerfile
 
-To build your Darcy AI application container, you only need your Python file and a Dockerfile. A
+To build your application container, you only need your Python file and a Dockerfile. A
 Dockerfile is just a text file with the specific name `Dockerfile` that tells the Docker command
 tools how to make your containers. You can include as many files as you want in your container. The
 commands for adding those files are discussed below.
@@ -66,7 +65,7 @@ Make sure you create the Dockerfile in the same
 directory as your Python file and change the name below from YOURFILE.py to the actual name of your
 file.
 {{</warning>}}
-
+<!-- TODO This needs to be completely redone -->
 ```text
 FROM darcyai/darcy-ai-coral:dev
 

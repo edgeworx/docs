@@ -4,7 +4,7 @@ weight: 800
 draft: true
 beta: true
 ---
-When you create an account on Darcy Cloud, a _Personal Org_ (organization) is created automatically,
+When you create an account on Edgeworx Cloud, a _Personal Org_ (organization) is created automatically,
 with the same name as your username. Thus, the user _Alice_ with username `alice`
 has a _personal org_ also named `alice`. When `alice` creates new projects,
 those projects are created inside
@@ -55,7 +55,7 @@ Bob will receive an invite email. If Bob doesn't have an account, he needs
 to [sign up](https://cloud.darcy.ai).
 
 {{<warning>}}
-**BETA**: Darcy Cloud Portal does not yet expose functionality to manage invites. Bob
+**BETA**: Edgeworx Cloud Portal does not yet expose functionality to manage invites. Bob
 must use `edgectl`.
 {{</warning>}}
 

@@ -16,7 +16,7 @@ Variables are interpolated (replaced) when the requests are made between [applic
 variable value is a `snapshot` of the referenced value when the request is made. Any subsequent
 modification of the underlying value will NOT be persisted.
 
-Darcy's filtering logic sits on top of the LiquidJS engine. Full documentation for LiquidJS can be
+Edgeworx's filtering logic sits on top of the LiquidJS engine. Full documentation for LiquidJS can be
 found [here](https://liquidjs.com/index.html).
 
 ### Variables
