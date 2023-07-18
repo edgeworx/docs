@@ -11,7 +11,9 @@ aliases:
 Navigate to [Edgeworx Cloud](https://cloud.darcy.ai/welcome) using your browser (Chrome, Firefox,
 and Safari preferred- other browsers are not thoroughly maintained) and click the `Create Account`
 button.
-
+<!-- TODO: Re-do screenshots -->
+<!-- TODO: Include instructional for GCM paid users.  -->
+<!-- TODO: Redo content to reflect new dashboard -->
 ![Edgeworx Cloud Welcome Page](/images/cloud-home.png)
 
 Enter your unique username and click `NEXT`.

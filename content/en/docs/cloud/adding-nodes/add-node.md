@@ -4,19 +4,19 @@ weight: 400
 aliases:
   - /darcy/darcy-cloud/get-started-ec/nodes/get-started-add-node
 ---
-
+<!-- TODO: Replace screenshots -->
 To add a [node](../adding-nodes/_index.md) to your [project](/docs/more/terminology#project), you will be running a command line script. For this we assume you
 have ssh or console access to your node and are using a common shell, such as zsh or bash.
 Additionally, the installation script by default will need to run as sudo to register the necessary
 services to be automatically started after the node is rebooted.
 
-Add nodes using the Darcy Portal UI or terminal commands via [edgectl](../edgectl)
+Add nodes using the Edgeworx Portal UI or terminal commands via [edgectl](../edgectl)
 
-## Add a node using Darcy Cloud Portal
+## Add a node using Edgeworx Cloud Portal
 
 ### Get the node Install script
 
-Log into [Darcy Cloud](https://cloud.darcy.ai) and select the project to which you want to [add thenode](../../more/terminology#node-install-script).
+Log into [Edgeworx Cloud](https://cloud.edgeworx.io) and select the project to which you want to [add thenode](../../more/terminology#node-install-script).
 
 ![Add Node](/images/add-node.png)
 
@@ -44,11 +44,11 @@ speed, and other dependencies).
 
 {{<info>}}
 If you would like to choose a specific name for your node, use the
-variable `DARCY_NODE_NAME="your-choice-of-name"` in the _node install script_
+variable `Edgeworx_NODE_NAME="your-choice-of-name"` in the _node install script_
 as in the example below.
 {{</info>}}
 
-### View the node in Your Darcy Cloud Project
+### View the node in Your Edgeworx Cloud Project
 
 Switch back to your browser and if you have not done so yet, click the `DONE` button in the modal dialog. You
 should see your new node `ONLINE` in your Nodes list. If you do not see your node online, check our
@@ -60,7 +60,7 @@ You now have an edge node, let's start using it!
 
 ## Add a node using edgectl
 
-In [Darcy Cloud](/docs/cloud/start-portal), nodes are edge devices that run Edgeworx Agents. Ultimately, we want to deploy
+In [Edgeworx Cloud](/docs/cloud/start-portal), nodes are edge devices that run Edgeworx Agents. Ultimately, we want to deploy
 [applications](/docs/more/terminology#application) to these nodes to put them to work.
 
 If we list nodes in our default [organization](/docs/more/terminology#account--org) and project, we will notice that we have no nodes:
@@ -74,10 +74,10 @@ shell snippet that you can execute on the node:
 
 ```bash
 $ edgectl get node-register-script -t
-curl -s https://ecj_vfsw9wess5kheafxaeaeh2kskkv301e9f0ip@api.darcy.ai/v1/project/b75676cb-ae3f-4808-a992-0811e077d783/node-install-script | sudo bash
+curl -s https://ecj_vfsw9wess5kheafxaeaeh2kskkv301e9f0ip@api.edgeworx.io/v1/project/b75676cb-ae3f-4808-a992-0811e077d783/node-install-script | sudo bash
 ```
 
-We can use this shell snippet on our edge devices to install Edgeworx Agent and connect to our Darcy
+We can use this shell snippet on our edge devices to install Edgeworx Agent and connect to our Edgeworx
 Cloud Project. This command can be used any number of times on different devices to grow the
 respective project's node pool.
 
@@ -95,7 +95,7 @@ First, get the node-install-script shell snippet, and copy it to the clipboard:
 
 ```bash
 $ edgectl get node-install-script -t
-curl -s https://ecj_vfsw9wess5kheafxaeaeh2kskkv301e9f0ip@api.darcy.ai/v1/project/b75676cb-ae3f-4808-a992-0811e077d783/node-install-script | sudo bash
+curl -s https://ecj_vfsw9wess5kheafxaeaeh2kskkv301e9f0ip@api.edgeworx.io/v1/project/b75676cb-ae3f-4808-a992-0811e077d783/node-install-script | sudo bash
 ```
 
 Then `SSH` into your node (in this case, a Raspberry Pi):
@@ -110,10 +110,10 @@ pi@raspberrypi:~ $
 ```
 
 Then paste the node install script shell snippet at the Pi terminal. This installs the necessary
-Darcy Cloud components, and connects your node to Darcy Cloud.
+Edgeworx Cloud components, and connects your node to Edgeworx Cloud.
 
 ```bash
-pi@raspberrypi:~ $ curl -s https://ecj_vfsw9wess5kheafxaeaeh2kskkv301e9f0ip@api.darcy.ai/v1/project/b75676cb-ae3f-4808-a992-0811e077d783/node-install-script | sudo bash
+pi@raspberrypi:~ $ curl -s https://ecj_vfsw9wess5kheafxaeaeh2kskkv301e9f0ip@api.edgeworx.io/v1/project/b75676cb-ae3f-4808-a992-0811e077d783/node-install-script | sudo bash
 Installing Edgeworx Agent
 １ Initializing
       ✔ Package manager updated
@@ -144,7 +144,7 @@ Installing Edgeworx Agent
       ∙ Storage:    9.5G/118G (9%)
 ５ Installing services
     ▶ Edgeworx agent
-      ✔ Darcy Cloud Node created
+      ✔ Edgeworx Cloud Node created
       ✔ GPG found
       ✔ Edgeworx Agent installed
     ▶ Deviceplane
@@ -159,12 +159,12 @@ Installing Edgeworx Agent
       ✔ ioFog Agent registered
       ✔ ioFog Agent provisioned
 ６ SUCCESS
-      ✔ You can view this Agent in your Darcy Cloud project here: https://cloud.darcy.ai/alice/edge-project-1/node/raspberrypie1c0fe7939883f228946
+      ✔ You can view this Agent in your Edgeworx Cloud project here: https://cloud.edgeworx.io/alice/edge-project-1/node/raspberrypie1c0fe7939883f228946
       ✔ To uninstall, execute `sudo /opt/edgeworx/uninstall.sh`
 ```
 
-Note the final two lines: The first line provides a link to view your node in the Darcy Cloud web
-portal. The final line provides a command to uninstall the software and detach the node from Darcy
+Note the final two lines: The first line provides a link to view your node in the Edgeworx Cloud web
+portal. The final line provides a command to uninstall the software and detach the node from Edgeworx
 Cloud.
 
-Now that we have our node connected to Darcy Cloud, we can install an application to that node.
+Now that we have our node connected to Edgeworx Cloud, we can install an application to that node.

@@ -10,6 +10,8 @@ aliases:
 - /docs/cloud/edgectl
 - /docs/cloud/get-started-edgectl
 ---
+
+<!-- TODO: Need to include orgs and name change on all commands -->
 _edgectl_ is [Edgeworx Cloud's](/docs/cloud/start-portal) command line interface (CLI). It can be used to manage Edgeworx
 Cloud
 [accounts, organizations,](/docs/more/terminology/#account--org) [projects](/docs/more/terminology#project), [nodes](/docs/cloud/adding-nodes),

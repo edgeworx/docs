@@ -1,19 +1,19 @@
 ---
 title: "Add a Virtual Node"
-description: "Add a Virtual Node (lightweight local VM) to Darcy Cloud"
+description: "Add a Virtual Node (lightweight local VM) to Edgeworx Cloud"
 weight: 450
 ---
-
-Typically you want to push your apps to a "real edge board" (such as a Raspberry Pi with AI accelerator attached).
+<!-- TODO: Redo screenshots -->
+Typically you want to push your apps to a "real edge board".
 However, if you do not have an edge board to test on, you can simulate one using the Virtual Node feature.
 
-Adding a Virtual Node sets up a new Ubuntu VM locally and registers it as a node to a Darcy Cloud project
-via the edgectl CLI. macOS and Windows users can create Virtual Nodes using Darcy Cloud Portal and
+Adding a Virtual Node sets up a new Ubuntu VM locally and registers it as a node to a Edgeworx Cloud project
+via the edgectl CLI. macOS and Windows users can create Virtual Nodes using Edgeworx Cloud Portal and
 edgectl. Linux users can directly use the Register Node command on their terminal.
 
 ### Prerequisites
 
-- [Darcy Cloud Account (Free)](https://cloud.darcy.ai)
+- [Edgeworx Cloud Account (Free)](https://cloud.edgeworx.io)
 - Install [edgectl CLI]({{<ref "/docs/cloud/edgectl/">}})
 - Install [Multipass](https://multipass.run): it is used by edgectl to manage VMs.
 
@@ -23,7 +23,7 @@ You can still build locally using attached video and deploy to edge devices with
 
 ## Get the Virtual Node Installation Script
 
-Log into [Darcy Cloud](https://cloud.darcy.ai) and select the project to which you want to add the
+Log into [Edgeworx Cloud](https://cloud.edgeworx.io) and select the project to which you want to add the
 node.
 
 ![Add Virtual Node](/images/add-node.png)
@@ -40,7 +40,7 @@ Choose `VIRTUAL NODE` to get the instructions for adding a virtual node.
 Make sure you have the latest versions of [edgectl]({{<ref "/docs/cloud/edgectl/">}})
 and [Multipass](https://multipass.run) installed. Click the `COPY` button to copy the command to
 your clipboard. This command starts an Ubuntu VM which registers
-itself with Darcy Cloud as a Virtual Node.
+itself with Edgeworx Cloud as a Virtual Node.
 
 ## Run the Virtual Node Registration Script
 
@@ -54,9 +54,9 @@ connection speed, and other dependencies).
 the `--name="your-choice-of-name"` in the _edgectl create virtual-node_ command as seen in the above
 example. {{</info>}}
 
-## View the Node in Your Darcy Cloud Project
+## View the Node in Your Edgeworx Cloud Project
 
-Switch back to Darcy Cloud in your browser and if you have not done so yet, click the `DONE` button
+Switch back to Edgeworx Cloud in your browser and if you have not done so yet, click the `DONE` button
 in the modal dialog. You should see your new node `ONLINE` in your Nodes list. If you do not see
 your node online, see troubleshooting (below) for more information.
 
@@ -76,7 +76,7 @@ that all the resources used are cleaned up properly i.e. Ubuntu VM.
     We can modify the default values based on our Windows machine spec. For example:
 
 ```bash
-edgectl create virtual-node --name=darcy-node --cpus 2
+edgectl create virtual-node --name=Edgeworx-node --cpus 2
 ```
 
 Below are the default values used to spin up a multipass VM.
@@ -100,7 +100,7 @@ Use `multipass ls` to retrieve the correct IP.
 </details>
 <details>
   <summary>Use <code>edgectl delete virtual-node</code> in favor of <code>edgectl delete node</code>.</summary>
-The <code>edgectl delete node</code> command deletes the node from Darcy Cloud, but does not delete the local VM.
+The <code>edgectl delete node</code> command deletes the node from Edgeworx Cloud, but does not delete the local VM.
 Use <code>edgectl delete virtual-node</code>
 to delete both the node and the local VM.
 </details>

@@ -11,6 +11,5 @@ cards:
     time: Easy
     link: '/docs/guides/deploy/'
     image: /images/guides/guide-thumb-deploy.jpg
-  - 
 ---
 {{< cards >}}

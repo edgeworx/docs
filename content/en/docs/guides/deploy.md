@@ -20,7 +20,7 @@ This guide was created using an Raspberry Pi 4, however you can use any device w
 ### Software Requirements
 
 - Docker Desktop and a Docker account
-- Edgeworx Cloud account (Free)
+- Edgeworx Cloud account (Free or paid)
 
 ### Hardware Requirements
 
@@ -65,7 +65,7 @@ Make sure you create the Dockerfile in the same
 directory as your Python file and change the name below from YOURFILE.py to the actual name of your
 file.
 {{</warning>}}
-<!-- TODO This needs to be completely redone -->
+<!-- TODO This needs to be completely redone. Maybe with Docker's Hello World? -->
 ```text
 FROM darcyai/darcy-ai-coral:dev
 
