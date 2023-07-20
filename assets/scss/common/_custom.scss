@@ -197,7 +197,8 @@ $tab-content-bg: #f5f6f7;
     grid-auto-flow: column;
 
     .darcy-card {
-      max-width: unset;
+      // TODO: The below is what makes the card on the front page massive. Commenting out to resize card. 
+      // max-width: unset;
     }
   }
 
