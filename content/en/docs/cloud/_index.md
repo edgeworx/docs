@@ -4,7 +4,7 @@ description: "Docs for Edgeworx Cloud"
 weight: 500
 linkTitle: "Edgeworx Cloud"
 ---
-<!-- TODO: Add something about deleting account and trying to use same username. Requires them to contact us.  -->
+<!-- TODO: Add something about deleting account and trying to use same username. Requires them to contact us. No critical for GCM Launch-->
 Edgeworx Cloud is a platform built on the principle of Infrastructure as Code (IaC) that allows you to
 manage edge infrastructure and [applications](../more/terminology#application). Developers can deploy, orchestrate and operate
 containerized [microservice](../apps/microservices.md) applications from the cloud to remote heterogeneous on-premise servers
