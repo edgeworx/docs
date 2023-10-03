@@ -85,7 +85,7 @@ pre {
 }
 
 .btn-copy:focus {
-  color: $edgeneutral-5;
+  color: $edgeneutral-1;
   background-color: $darcy-blue-dark;
   border-color: lighten($darcy-blue-dark, 15%);
   box-shadow: none;
@@ -93,7 +93,7 @@ pre {
 
 .btn-copy:active,
 .btn-copy.active {
-  color: $edgeneutral-5;
+  color: $edgeneutral-1;
   background-color: $darcy-blue-dark;
   border-color: lighten($darcy-blue-dark, 15%);
 }
@@ -113,19 +113,22 @@ pre {
   content: "Copy";
   display: block;
   color: $edgeneutral-5;
+  width: 64px;
 }
 
 .btn-copy:hover::after {
   content: "Copy";
   display: block;
   color: $edgeneutral-5;
+  width: 64px;
 }
 
 .btn-copy:focus::after,
 .btn-copy:active::after {
   content: "Copied";
   display: block;
-  color: $edgeneutral-5;
+  color: $edgeneutral-1;
+  width: 64px;
 }
 
 .collapsible-sidebar {

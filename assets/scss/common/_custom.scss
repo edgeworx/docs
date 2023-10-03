@@ -197,7 +197,7 @@ $tab-content-bg: #f5f6f7;
     grid-auto-flow: column;
 
     .darcy-card {
-      // TODO: The below is what makes the card on the front page massive. Commenting out to resize card. 
+      // TODO: The below is what makes the card on the front page massive. Commenting out to resize card.
       // max-width: unset;
     }
   }
@@ -206,9 +206,8 @@ $tab-content-bg: #f5f6f7;
     & .doc-section-container {
       & .doc-section {
         & .links-container {
-          grid-auto-flow: column;
+          grid-auto-flow: row;
           grid-template-columns: repeat(3, 1fr);
-          grid-template-rows: repeat(3, 1fr);
         }
       }
     }
@@ -222,9 +221,9 @@ a > code {
 
 // div.chroma is the container for syntax-highlighted code blocks.
 div.tab-content pre.chroma > code,
-pre.chroma, {
+pre.chroma {
   background-color: $code-block-bg;
-  color: rgb(216, 222, 233);
+  color: #d8dee9;
 }
 
 // Tab Panes

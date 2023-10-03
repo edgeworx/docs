@@ -32,7 +32,7 @@ Edgeworx Cloud is compatible with many Linux edge boards, such as:
 - Raspberry Pi 3 or 4
 - Asus Tinker
 - Nvidia Jetson Nano
-- And more! 
+- And more!
 
 ## Supported Operating Systems
 

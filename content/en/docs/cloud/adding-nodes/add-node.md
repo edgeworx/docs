@@ -16,7 +16,7 @@ Add nodes using the Edgeworx Portal UI or terminal commands via [edgectl](../edg
 
 ### Get the node Install script
 
-Log into [Edgeworx Cloud](https://cloud.edgeworx.io) and select the project to which you want to [add thenode](../../more/terminology#node-install-script).
+Log into [Edgeworx Cloud](https://cloud.edgeworx.io) and select the project to which you want to [add the node](../../more/terminology#node-install-script).
 
 ![Add Node](/images/add-node.png)
 
