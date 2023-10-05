@@ -23,9 +23,9 @@ deploy some live [microservices](/docs/apps/microservices) to the edge!
 ## Create a Edgeworx Cloud Account
 
 Before installing and using _edgectl_, we must first create an account
-via [Edgeworx Cloud Portal](https://cloud.Edgeworx.ai) (see [docs](/docs/cloud/start-portal).
+via [Edgeworx Cloud Portal](https://cloud.Edgeworx.io) (see [docs](/docs/cloud/start-portal).
 
-Navigate to [Cloud Portal](https://cloud.Edgeworx.ai) and click the `Create Account` button in the top
+Navigate to [Cloud Portal](https://cloud.Edgeworx.io) and click the `Create Account` button in the top
 right.
 
 Enter your unique username and hit `NEXT`.
@@ -61,7 +61,7 @@ scoop install edgectl
 On Linux distros, use `get-edgectl.bash`:
 
 ```bash
-curl -s https://cloud.Edgeworx.ai/get-edgectl.bash | sudo bash
+curl -s https://cloud.Edgeworx.io/get-edgectl.bash | sudo bash
 ```
 
 {{% /tab %}}
@@ -81,11 +81,11 @@ Now we are ready to use _edgectl_ to login and start managing our Edgeworx Cloud
 ### Login
 
 _edgectl_ requires an [Access Token](/docs/cloud/access-tokens/). You can get one
-via: `edgectl login`, which will open a web browser on `cloud.Edgeworx.ai`. After authentication,
+via: `edgectl login`, which will open a web browser on `cloud.Edgeworx.io`. After authentication,
 _edgectl_ will receive the account's master _Personal Access Token_, and will be logged in.
 
 If a web browser is not available (e.g. SSH'd into a box), you can also login by providing either
-a _Personal Access Token_ or _Project Access Token_ from `cloud.Edgeworx.ai`. For _Personal Access
+a _Personal Access Token_ or _Project Access Token_ from `cloud.Edgeworx.io`. For _Personal Access
 Token_, click `Access Tokens` in the upper-right account menu. For _Project Access Token_, click the
 settings (gear) icon on the project page. Once you have the _Access Token_, you can execute:
 

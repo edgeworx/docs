@@ -269,6 +269,6 @@ application for a variety of target devices. And you have made a deployment YAML
 Darcy Cloud to deploy and manage your Darcy AI application.
 
 ## Next steps
-
+<!-- TODO reword this below and add valid link-->
 Now that you have all of these foundation Darcy AI developer skills, you are ready to build full
-solutions. Follow the guide to [Extend Darcy](/docs/guides/extend.md) to build an app for your use case.
+solutions. Follow the guide to [Extend Darcy](https://edgeworx.io) to build an app for your use case.
