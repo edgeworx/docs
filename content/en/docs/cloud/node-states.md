@@ -4,7 +4,7 @@ linkTitle: "Node states"
 description: "Explanation of node states."
 weight: 550
 aliases:
-  - /darcy/darcy-cloud/what-is-darcy-cloud
+  - /edgeworx/edgeworx-cloud/what-is-edgeworx-cloud
 ---
 
 A node can be in one of these states after setup:

@@ -1,7 +1,7 @@
 ---
 title: "get invites"
 description: "edgectl get invites"
-draft: true
+draft: false
 menu:
   docs:
     identifier: "get-invites"

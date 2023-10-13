@@ -3,7 +3,7 @@ title: "Deploy an app"
 weight: 600
 toc: true
 aliases:
-  - /darcy/darcy-cloud/get-started-edgectl/deploy-an-app
+  - /edgeworx/edgeworx-cloud/get-started-edgectl/deploy-an-app
 ---
 <!-- TODO: Replace screenshots -->
 Deploy apps using the Edgeworx Portal UI or terminal commands via [edgectl](../cloud/edgectl)

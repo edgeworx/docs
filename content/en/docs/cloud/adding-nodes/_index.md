@@ -3,7 +3,7 @@ title: "Edge nodes"
 weight: 300
 linkTitle: "Edge nodes"
 aliases:
-  - /darcy/darcy-cloud/what-is-darcy-cloud
+  - /edgeworx/edgeworx-cloud/what-is-edgeworx-cloud
   - /cloud/portal/nodes
   - /docs/cloud/portal/nodes/
 ---
@@ -32,7 +32,7 @@ Edgeworx Cloud is compatible with many Linux edge boards, such as:
 - Raspberry Pi 3 or 4
 - Asus Tinker
 - Nvidia Jetson Nano
-- And more! 
+- And more!
 
 ## Supported Operating Systems
 

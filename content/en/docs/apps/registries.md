@@ -2,7 +2,7 @@
 title: "Registries"
 weight: 550
 aliases:
-  - /darcy/darcy-cloud/applications-doc/registries
+  - /edgeworx/edgeworx-cloud/applications-doc/registries
 ---
 
 When configuring an [Edgeworx Cloud](/docs/cloud/start-portal) [application](../more/terminology#application) YAML file, it is necessary to specify the registry of
@@ -38,6 +38,7 @@ node in [Edgeworx Cloud]({{<ref "/docs/cloud">}}) it is necessary to register a 
 to access the microservice container images to a [project's](../more/terminology#project) Edgeworx Cloud registry so that the
 microservice will be able to pull the container images upon being deployed.
 
+<!-- TODO: fix broken iofog link under -->
 Each registry is pre-configured with 2 entries. The first entry is for a `remote` registry (
 the `remote` registry selection is just an alias for the value `1`), and the second entry is for
 a `local` registry (the `local` registry selection is just an alias for the value `2`). Additional

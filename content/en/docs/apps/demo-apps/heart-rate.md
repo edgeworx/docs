@@ -2,7 +2,7 @@
 title: "Heart Rate demo app"
 weight: 160
 aliases:
-  - /darcy/darcy-cloud/get-started-ec/heart-rate-application
+  - /edgeworx/edgeworx-cloud/get-started-ec/heart-rate-application
 ---
 
 ![Heart Rate Demo App](/images/15done.png)

@@ -12,6 +12,7 @@ set -e
 trap "exit" INT TERM
 trap "kill -- -$$ &> /dev/null && exit 0" EXIT
 
+# TODO: fix links or remove linter rule
 port=31313
 base_url="http://localhost:$port"
 

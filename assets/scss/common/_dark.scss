@@ -435,12 +435,14 @@ $navbar-dark-active-color:          $link-color-dark;
   content: "Copy";
   display: block;
   color: $body-color-dark;
+  width: 64px;
 }
 
 [data-dark-mode] body .copy-status:hover::after {
   content: "Copy";
   display: block;
   color: $link-color-dark;
+  width: 64px;
 }
 
 [data-dark-mode] body .copy-status:focus::after,
@@ -448,6 +450,7 @@ $navbar-dark-active-color:          $link-color-dark;
   content: "Copied";
   display: block;
   color: $link-color-dark;
+  width: 64px;
 }
 
 /*

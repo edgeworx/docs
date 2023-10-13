@@ -2,7 +2,7 @@
 title: "Add an edge node"
 weight: 400
 aliases:
-  - /darcy/darcy-cloud/get-started-ec/nodes/get-started-add-node
+  - /edgeworx/edgeworx-cloud/get-started-ec/nodes/get-started-add-node
 ---
 <!-- TODO: Replace screenshots -->
 To add a [node](../adding-nodes/_index.md) to your [project](/docs/more/terminology#project), you will be running a command line script. For this we assume you
@@ -16,7 +16,7 @@ Add nodes using the Edgeworx Portal UI or terminal commands via [edgectl](../edg
 
 ### Get the node Install script
 
-Log into [Edgeworx Cloud](https://cloud.edgeworx.io) and select the project to which you want to [add thenode](../../more/terminology#node-install-script).
+Log into [Edgeworx Cloud](https://cloud.edgeworx.io) and select the project to which you want to [add the node](../../more/terminology#node-install-script).
 
 ![Add Node](/images/add-node.png)
 

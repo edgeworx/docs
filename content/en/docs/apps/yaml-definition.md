@@ -2,7 +2,7 @@
 title: "App YAML definition"
 weight: 450
 aliases:
-  - /darcy/darcy-cloud/applications-doc/app-doc-yaml
+  - /edgeworx/edgeworx-cloud/applications-doc/app-doc-yaml
   - /docs/cloud/portal/ai-explorer-app/app-yaml/
 ---
 

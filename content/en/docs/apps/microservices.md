@@ -2,7 +2,7 @@
 title: "Microservices"
 weight: 400
 aliases:
-  - /darcy/darcy-cloud/applications-doc/microservice
+  - /edgeworx/edgeworx-cloud/applications-doc/microservice
 ---
 
 ## What are microservices?

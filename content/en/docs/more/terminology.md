@@ -14,10 +14,10 @@ _Edgeworx Cloud_ is the platform for managing and monitoring edge devices. Edgew
 web-based portal at [cloud.edgeworx.io](https://cloud.edgeworx.io).
 
 ### Cloud API
-
+<!-- TODO add correct link below, might be https://api.edgeworx.io/v1/docs -->
 _Cloud API_ is the REST API for _Edgeworx Cloud_. _Cloud Portal_ and _edgectl_ both communicate with
 Cloud API. You may also build your own applications that interact directly with cloud API. See the
-Cloud API [REST documentation](https://api.edgeworx.io/v1/docs).
+Cloud API [REST documentation](https://edgeworx.io).
 
 ### edgectl
 
@@ -28,10 +28,10 @@ edgectl is the CLI for _Edgeworx Cloud_. See [Get Started: edgectl](/docs/cloud/
 To sign-up for a Edgeworx _Cloud_ _account_, visit [cloud.edgeworx.io](https://cloud.edgeworx.io). The user
 must provide an email and select a unique _username_.
 
+### Orgs (organizations)
+
 An _Org_ (i.e. _Organization)_ is typically created for a corporate entity. For
 example, `Acme, Inc.` may create an org `acme`. An _org_ is the container for projects.
-
-> BETA: The Edgeworx Cloud BETA release does not currently support managing corporate orgs.
 
 On creating a new account, a new _Personal Org_ is automatically created for that account. Thus if
 the account username is `alice`, a new org `alice` is also created, and so Alice's projects will

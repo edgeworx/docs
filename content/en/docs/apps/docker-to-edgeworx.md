@@ -2,7 +2,7 @@
 title: "Docker to Edgeworx"
 weight: 300
 aliases:
-  - /darcy/darcy-cloud/applications-doc/docker-to-darcy
+  - /edgeworx/edgeworx-cloud/applications-doc/docker-to-edgeworx
 ---
 
 There are several

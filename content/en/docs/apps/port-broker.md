@@ -3,7 +3,7 @@ title: "Port Broker"
 weight: 600
 draft: false
 aliases:
-  - /darcy/darcy-cloud/applications-doc/public-services
+  - /edgeworx/edgeworx-cloud/applications-doc/public-services
 ---
 
 Port Broker allows your [microservices](../apps/microservices.md) to securely expose public endpoints without opening ports

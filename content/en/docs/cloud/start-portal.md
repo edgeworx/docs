@@ -3,12 +3,12 @@ title: "Get started: Edgeworx Cloud Portal"
 toc: true
 weight: 100
 aliases:
-  - /darcy/darcy-cloud/get-started-ec
+  - /edgeworx/edgeworx-cloud/get-started-ec
 ---
 
 ## Create your Darcy Cloud account
 
-Navigate to [Edgeworx Cloud](https://cloud.darcy.ai/welcome) using your browser (Chrome, Firefox,
+Navigate to [Edgeworx Cloud](https://cloud.edgeworx.io/welcome) using your browser (Chrome, Firefox,
 and Safari preferred- other browsers are not thoroughly maintained) and click the `Create Account`
 button.
 <!-- TODO: Re-do screenshots -->
