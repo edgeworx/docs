@@ -2,7 +2,7 @@
 title: "Registries"
 weight: 550
 aliases:
-  - /darcy/darcy-cloud/applications-doc/registries
+  - /edgeworx/edgeworx-cloud/applications-doc/registries
 ---
 
 When configuring an [Edgeworx Cloud](/docs/cloud/start-portal) [application](../more/terminology#application) YAML file, it is necessary to specify the registry of

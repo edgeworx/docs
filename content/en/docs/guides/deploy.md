@@ -190,7 +190,7 @@ deploying, and debugging easier, and then use it to operate your edge AI applica
 systems.
 
 If you don't already have an account, you can create one now for free. Create an account or log in
-at [https://cloud.darcy.ai](https://cloud.darcy.ai).
+at [https://cloud.edgeworx.io](https://cloud.edgeworx.io).
 
 Once you are in your Darcy Cloud account, [add your device as a node]({{<ref "/docs/cloud/adding-nodes/add-node.md">}}) in
 your current [project](/docs/more/terminology#project). Use
@@ -212,7 +212,7 @@ spec:
   microservices:
     - name: your-microservice-name
       agent:
-        name: your-darcy-cloud-node-name
+        name: your-edgeworx-cloud-node-name
       images:
         arm: "YOUR_ORGANIZATION/YOUR_APP:tag.goes.here"
         x86: "YOUR_ORGANIZATION/YOUR_APP:tag.goes.here"
@@ -237,7 +237,7 @@ Your application deployment YAML file contains the information that the Darcy Cl
 run your Darcy AI application on any device. Replace the placeholder fields with your own
 information and save the file with whatever file name you like, such as `my-app-deploy.yml`.
 
-For the agent name, which is shown above as `your-darcy-cloud-node-name` you should use the actual
+For the agent name, which is shown above as `your-edgeworx-cloud-node-name` you should use the actual
 node name from your Darcy Cloud account. This is the name that shows for your device which you added
 in the steps above.
 
@@ -252,7 +252,7 @@ In the pop-up window, choose the "upload your app" option and you will see a dra
 the right-hand side. You can drag and drop your YAML file into that window or you can click the "
 browse and upload" option and then select your YAML file.
 
-![Deploy App](/images/darcy-cloud-custom-app-deployment.png)
+![Deploy App](/images/edgeworx-cloud-custom-app-deployment.png)
 
 The Darcy Cloud will tell you if you have any issues with your YAML file or your app deployment. It
 will also tell you if your Darcy AI application was deployed successfully. You can then check the

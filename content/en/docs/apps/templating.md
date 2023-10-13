@@ -2,7 +2,7 @@
 title: "App templating"
 weight: 700
 aliases:
-  - /darcy/darcy-cloud/applications-doc/app-doc-advanced-templating
+  - /edgeworx/edgeworx-cloud/applications-doc/app-doc-advanced-templating
 ---
 
 Variables, filter and template "queries" can be used as values for any field in your deployment

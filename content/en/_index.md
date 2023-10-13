@@ -3,8 +3,8 @@ title : "Edgeworx docs"
 description: "Documentation for the Edgeworx Platform"
 lead: "Docs for Edgeworx Cloud"
 aliases:
-  - /darcy/darcy-cloud/glossary
-  - /darcy/contact-us
+  - /edgeworx/edgeworx-cloud/glossary
+  - /edgeworx/contact-us
   - /darcy
 cards:
 

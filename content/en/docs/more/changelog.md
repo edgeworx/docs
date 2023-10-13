@@ -2,7 +2,7 @@
 title: Changelog
 weight: 70
 aliases:
-  - /darcy-cloud/release-notes
+  - /edgeworx-cloud/release-notes
   - /docs/release-notes
   - /release-notes
   - /changelog

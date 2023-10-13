@@ -2,7 +2,7 @@
 title: "Access tokens"
 weight: 800
 aliases:
-  - /darcy/darcy-cloud/access-tokens
+  - /edgeworx/edgeworx-cloud/access-tokens
 ---
 <!-- TODO: Replace screenshots and code snippets -->
 Edgeworx Cloud supports basic HTTP authentication through access tokens.

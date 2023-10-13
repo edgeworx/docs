@@ -3,7 +3,7 @@ title: "Edge nodes"
 weight: 300
 linkTitle: "Edge nodes"
 aliases:
-  - /darcy/darcy-cloud/what-is-darcy-cloud
+  - /edgeworx/edgeworx-cloud/what-is-edgeworx-cloud
   - /cloud/portal/nodes
   - /docs/cloud/portal/nodes/
 ---

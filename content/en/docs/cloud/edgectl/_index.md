@@ -5,8 +5,8 @@ linkTitle: "edgectl CLI"
 weight: 300
 identifier: edgectl
 aliases:
-- /darcy/darcy-cloud/get-started-edgectl
-- /darcy-docs/darcy-cloud/get-started-edgectl
+- /edgeworx/edgeworx-cloud/get-started-edgectl
+- /darcy-docs/edgeworx-cloud/get-started-edgectl
 - /docs/cloud/edgectl
 - /docs/cloud/get-started-edgectl
 ---

@@ -2,7 +2,7 @@
 title: "Add an edge node"
 weight: 400
 aliases:
-  - /darcy/darcy-cloud/get-started-ec/nodes/get-started-add-node
+  - /edgeworx/edgeworx-cloud/get-started-ec/nodes/get-started-add-node
 ---
 <!-- TODO: Replace screenshots -->
 To add a [node](../adding-nodes/_index.md) to your [project](/docs/more/terminology#project), you will be running a command line script. For this we assume you

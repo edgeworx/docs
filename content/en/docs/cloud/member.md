@@ -53,7 +53,7 @@ The `scope` argument determines Bob's role (permissions) in the org. If `scope` 
 not specified, the default (`org:write`) is used.
 
 Bob will receive an invite email. If Bob doesn't have an account, he needs
-to [sign up](https://cloud.darcy.ai).
+to [sign up](https://cloud.edgeworx.io).
 
 ## Accept invite
 
