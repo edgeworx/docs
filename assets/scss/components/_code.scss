@@ -16,6 +16,11 @@ tab-pane code {
   padding: 0.125rem 0.25rem;
 }
 
+p code,
+div code {
+  white-space: nowrap;
+}
+
 pre.chroma {
   margin: 1.5rem 0;
 }
