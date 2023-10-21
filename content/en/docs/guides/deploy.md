@@ -4,7 +4,7 @@ linkTitle: "Deploy to the edge"
 weight: 250
 ---
 
-![Darcy CLoud Project Page](/images/guide4-deploy-cloud.jpg)
+![Edgeworx CLoud Project Page](/images/guide4-deploy-cloud.jpg)
 
 ## What you will accomplish
 <!-- TODO: This content needs an extensive rewrite -->

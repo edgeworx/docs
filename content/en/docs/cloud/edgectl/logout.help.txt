@@ -1,4 +1,4 @@
-Logout from Darcy Cloud API
+Logout from Edgeworx Cloud API
 
 Usage:
   edgectl logout [flags]

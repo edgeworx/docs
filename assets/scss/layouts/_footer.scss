@@ -46,7 +46,7 @@
           margin-top: 0;
           margin-bottom: 8px;
           color: $edgeneutral-3;
-          font-size: .85em;
+          font-size: 0.85em;
           line-height: 1.5;
           font-weight: 600;
         }
@@ -61,7 +61,7 @@
           color: $edgeneutral-3;
 
           &:hover {
-            color: $darcy-blue;
+            color: $edgeworx-blue;
             text-decoration: underline;
           }
         }
@@ -110,10 +110,12 @@
         color: $edgeneutral-2;
         text-align: right;
       }
+
       .legal-links {
         display: flex;
         flex-direction: row;
         margin-left: 8px;
+
         div {
           padding-left: 4px;
           color: $edgeneutral-3;
@@ -192,14 +194,10 @@
         -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
         margin-top: 2em;
-        .legal{
+
+        .legal {
           justify-self: end;
         }
-  
-
-
-        .copyright {}
-        .legal-links {}
 
         .logo {
           order: unset;
