@@ -1,4 +1,4 @@
-Login to Darcy Cloud API. If you provide an access token
+Login to Edgeworx Cloud API. If you provide an access token
 via the --token flag, it will be validated and saved in config for future
 use. Otherwise, you will be prompted to login via your browser.
 

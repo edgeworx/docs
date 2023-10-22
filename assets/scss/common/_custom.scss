@@ -26,13 +26,13 @@ $link-color: #006390;
 
 $tab-content-bg: #f5f6f7;
 
-.darcy-card-container {
+.edgeworx-card-container {
   display: grid;
   grid-auto-flow: row;
   grid-auto-columns: 1fr;
   gap: 1.5rem;
 
-  & .darcy-card {
+  & .edgeworx-card {
     background: $background-color 0% 0% no-repeat padding-box;
     border: 1px solid $border-color;
     position: relative;
@@ -46,13 +46,13 @@ $tab-content-bg: #f5f6f7;
     justify-self: center;
 
     &:hover {
-      border: 1px solid $darcy-blue-dark;
+      border: 1px solid $edgeworx-blue-dark;
     }
 
     & .number {
       text-align: center;
       letter-spacing: 0.22px;
-      color: $darcy-blue-dark;
+      color: $edgeworx-blue-dark;
       text-transform: uppercase;
       opacity: 1;
       border-radius: 42px;
@@ -112,7 +112,7 @@ $tab-content-bg: #f5f6f7;
 
         & button {
           width: 100%;
-          background: $darcy-blue-dark 0% 0% no-repeat padding-box;
+          background: $edgeworx-blue-dark 0% 0% no-repeat padding-box;
           border-radius: 4px;
           opacity: 1;
           text-align: center;
@@ -132,7 +132,7 @@ $tab-content-bg: #f5f6f7;
   }
 }
 
-.darcy-home {
+.edgeworx-home {
   & .gray-section {
     background: $gray-bg 0% 0% no-repeat padding-box;
     border-radius: 8px;
@@ -193,10 +193,10 @@ $tab-content-bg: #f5f6f7;
 }
 
 @media screen and (min-width: 768px) {
-  .darcy-card-container {
+  .edgeworx-card-container {
     grid-auto-flow: column;
 
-    .darcy-card {
+    .edgeworx-card {
       // TODO: The below is what makes the card on the front page massive. Commenting out to resize card.
       // max-width: unset;
     }
