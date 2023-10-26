@@ -8,10 +8,7 @@ weight: 250
 
 ## What you will accomplish
 <!-- TODO: This content needs an extensive rewrite -->
-By the end of this guide, you will be able to make deployable edge application packages that
-will run on any hardware. The list of compatible hardware
-is extensive, allowing you to deploy your applications to the devices that fit your
-solution needs.
+By the end of this guide, you will be able to deploy an edge application to any edge nodes running Edgeworx. The list of compatible hardware is extensive, allowing you to deploy your applications to the devices that fit your solution needs.
 
 {{<info>}}
 This guide was created using an Raspberry Pi 4, however you can use any device with Linux and the required packages installed.
