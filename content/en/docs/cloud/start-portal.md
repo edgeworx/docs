@@ -36,8 +36,7 @@ You may need to check your spam folders. The email sender will be `no-reply@auth
 
 ## View Your Edgeworx Cloud edge project
 
-Once your account has been created, Edgeworx Cloud automatically creates your first [project](../more/terminology#project). This may
-take a few minutes. The screen will refresh automatically when complete.
+Once your account has been created, you can spin up a personal Sandbox or a fully featured 30-day free trial Org. 
 
 ![Your Project is Being Created](</images/image (15).png>)
 
