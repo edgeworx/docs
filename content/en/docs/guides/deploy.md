@@ -8,16 +8,16 @@ weight: 250
 
 ## What you will accomplish
 <!-- TODO: This content needs an extensive rewrite -->
-By the end of this guide, you will be able to deploy an edge application to any edge nodes running Edgeworx. The list of compatible hardware is extensive, allowing you to deploy your applications to the devices that fit your solution needs.
+By the end of this guide, you will be able to deploy an edge application to any edge node on Edgeworx Cloud and use this knowledge to expedite software development and deployment for and at the edge at scale. 
 
 {{<info>}}
-This guide was created using an Raspberry Pi 4, however you can use any device with Linux and the required packages installed.
+This guide was created using an Raspberry Pi 4, however you can use any Linux based device, virtual machine, or [virtual node](/docs/cloud/adding-nodes/virtual-node/).
 {{</info>}}
 
 ### Software Requirements
-
-- Docker Desktop and a Docker account
+<!-- TODO Please confirm if we actually need either Docker things to deploy Hello-World -->
 - Edgeworx Cloud account (Free or paid)
+- Docker Desktop and a Docker account (only if you package your own Docker images)
 
 ### Hardware Requirements
 
@@ -28,38 +28,34 @@ This guide was created using an Raspberry Pi 4, however you can use any device w
 
 ---
 
-## Package your app
+## Packaging your app
 
-If you plan to package your own application, you can refer to the official guide on [packaging applications](https://docs.docker.com/get-started/02_our_app/). That guide will give you step by step instructions on how to build, package, and release an application to docker. You'll be able to pull your custom image
-from docker after following those steps.
+If you plan to package your own application, you can refer to Docker's official guide on [packaging applications](https://docs.Docker.com/get-started/02_our_app/). That guide will give you step by step instructions on how to build, package, and release an application to Docker. You'll be able to pull your custom image
+from Docker after following those steps.
 
-## Deploy your app
+## Deploying your app
 
 ### Add your devices to the Edgeworx Cloud
-
-The [Edgeworx Cloud](/docs/cloud/start-portal) gives you management of all your [edge devices]({{<ref "/docs/cloud/adding-nodes">}}) and edge applications in one place.
-You can open an SSH shell session on demand, deploy applications, and see the health and status for
+<!-- TODO review the below. Seems too market-y for a guide? -->
+[Edgeworx Cloud](/docs/cloud/start-portal) gives you management of all your [edge devices](/docs/cloud/adding-nodes) and [edge applications](/docs/more/terminology/#application) in one place.
+You can open a SSH shell session on demand, deploy applications, and see the health and status for
 every device. All of this functionality works no matter where your edge devices are physically
-located, even when they are behind NAT layers and firewalls. Use the Edgeworx Cloud to make building,
-deploying, and debugging easier, and then use it to operate your edge applications in production
-systems.
+located, even when they are behind NAT layers and firewalls. 
 
-If you don't already have an account, you can create one now for free. Create an account or log in
+If you don't already have an account, you can create one now for free or log in
 at [https://cloud.edgeworx.io](https://cloud.edgeworx.io).
 
-Once you are in your Edgeworx Cloud account, [add your device as a node]({{<ref "/docs/cloud/adding-nodes/add-node.md">}}) in
-your current [project](/docs/more/terminology#project). Use
-the "plus button" in the bottom left to add a node. Follow the instructions in the pop-up window to
-add your device as a node.
-
+Once you are in your Edgeworx Cloud account, choose your Sandbox or a [project](/docs/more/terminology#project) nested in an Org, and [add your device as a node](/docs/cloud/adding-nodes/add-node.md) using the `+ ADD NODE` button. Follow the instructions in the pop-up window to
+continue with either a virtual node or physical device. 
+<!-- TODO Screenshot needs to be updated -->
 ![Cloud Portal Plus Button](/images/guides/deploy-node-ui.gif)
 
 ### Create your application YAML
 
-Here is a sample YAML file to work with. Since we will be deploying the "hello-world" docker container,
-we just need to create the yaml file, and upload that as the configuration.
+Here is a sample YAML file to work with. Since we will be deploying the ["hello-world" Docker container](https://hub.docker.com/_/hello-world),
+we just need to create the YAML file, and upload that as the configuration.
 
-```yaml
+```YAML
 kind: Application
 apiVersion: iofog.org/v3
 metadata:
@@ -86,12 +82,9 @@ spec:
             accessMode: rw
 ```
 
-You can find this sample YAMl file in the `examples/deploy/` directory
-called [app_deployment.yml](https://github.com/Edgeworxai/Edgeworxai/tree/main/src/examples/deploy/app_deployment.yml).
-
 Your application deployment YAML file contains the information that the Edgeworx Cloud uses to load and
 run your Edgeworx application on any device. Replace the placeholder fields with your own
-information and save the file with whatever file name you like, such as `my-app-deploy.yml`.
+information and save the file with whatever file name you like, such as `my-app-deploy.yaml`.
 
 For the agent name, which is shown above as `your-edgeworx-cloud-node-name` you should use the actual
 node name from your Edgeworx Cloud account. This is the name that shows for your device which you added
@@ -99,32 +92,23 @@ in the steps above.
 
 ### Deploy your Edgeworx application
 
-Now that you have all of the pieces, it's easy to deploy your application to your device or any
-other device. In the Edgeworx Cloud, click on the "plus button" in the bottom left and choose "app".
+Now that you have all of the pieces, it's easy to deploy your application to your device. In the project where the target device is located, open the `APPS` tab and click `+ DEPLOY APP` and follow the instructions in the pop up. 
 
 ![Deploy app animation](/images/guides/deploy-app-ui.gif)
 
-In the pop-up window, choose the "upload your app" option and you will see a drag-and-drop window on
-the right-hand side. You can drag and drop your YAML file into that window or you can click the "
-browse and upload" option and then select your YAML file.
-
+In the pop-up window, choose the `UPLOAD YOUR APP` option and you can drag and drop your YAML file into that window or upload it. 
+<!-- TODO image below is dead -->
 ![Deploy App](/images/edgeworx-cloud-custom-app-deployment.png)
 
-The Edgeworx Cloud will tell you if you have any issues with your YAML file or your app deployment. It
-will also tell you if your Edgeworx application was deployed successfully. You can then check the
-status of your application using the Edgeworx Cloud.
+Edgeworx Cloud will notify you if there are issues with the YAML file or your app deployment. Once deployed, you can monitor the image or images being pulled and their status once it is running. 
 
-## Use your Edgeworx application
+## Use your application
 
-When your Edgeworx application has successfully been deployed to your devices, you will see the
-status `running` in your Edgeworx Cloud UI.
+When your application has successfully been deployed to your devices, you will see the
+status `RUNNING` in your Edgeworx Cloud UI.
 
-You have accomplished a great amount at this point. Congratulations! You have developed a Edgeworx AI
-application and tested it with your IDE and local development environment. You have packaged your
-application for a variety of target devices. And you have made a deployment YAML file and used the
-Edgeworx Cloud to deploy and manage your Edgeworx application.
-
+You have accomplished a great amount at this point. Congratulations! You have developed an edge
+application to an edge node using Edgeworx Cloud. This image can now be deployed to any other device you have made into a node on your account.
 ## Next steps
-<!-- TODO reword this below and add valid link-->
-Now that you have all of these foundation Edgeworx developer skills, you are ready to build full
-solutions. Follow the guide to [Extend Edgeworx](https://edgeworx.io) to build an app for your use case.
+<!-- TODO reword this-->
+With this foundational knowledge you can now deploy applications with confidence.  
