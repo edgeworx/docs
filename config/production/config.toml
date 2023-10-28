@@ -1,4 +1,4 @@
-baseurl = "https://docs.darcy.ai/"
+baseurl = "https://docs.edgeworx.io/"
 
 [params]
   googleAnalytics = "G-GSQDEJETT3"
