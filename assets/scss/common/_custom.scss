@@ -28,13 +28,11 @@ $tab-content-bg: #f5f6f7;
   min-width: 400px;
 }
 
-
 .edgeworx-card-container {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   gap: 1.5rem;
   justify-content: space-around;
-  flex-wrap: wrap;
   align-items: stretch;
 
   .no-hover-link {
