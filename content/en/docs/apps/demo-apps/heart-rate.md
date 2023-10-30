@@ -64,15 +64,15 @@ You should be brought to the Heart Rate Demo App.
 kind: Application
 apiVersion: iofog.org/v3
 metadata:
-  name: edgeworx-heart-rate-demo
+  name: darcy-heart-rate-demo
 spec:
   microservices:
     - name: data-generator
       agent:
         name: '{% raw %}{% assign agent = "" | findAgent | first %}{{ agent.name }}'
       images:
-        arm: 'edgeworx/heart-rate-demo-generator:1.0.0'
-        x86: 'edgeworx/heart-rate-demo-generator:1.0.0'
+        arm: 'darcyai/heart-rate-demo-generator:1.0.0'
+        x86: 'darcyai/heart-rate-demo-generator:1.0.0'
       container:
         rootHostAccess: false
         ports: []
@@ -83,8 +83,8 @@ spec:
       agent:
         name: virtual-node-alexpc
       images:
-        arm: 'edgeworx/heart-rate-demo-viewer:1.0.0'
-        x86: 'edgeworx/heart-rate-demo-viewer:1.0.0'
+        arm: 'darcyai/heart-rate-demo-viewer:1.0.0'
+        x86: 'darcyai/heart-rate-demo-viewer:1.0.0'
       container:
         rootHostAccess: false
         ports:

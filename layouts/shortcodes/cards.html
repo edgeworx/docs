@@ -1,7 +1,7 @@
-<div class="edgeworx-card-container">
+<div class="darcy-card-container">
   {{ range $index, $card := $.Page.Params.cards }}
   <a href="{{ $card.link }}" class="no-hover-link">
-    <div class="edgeworx-card">
+    <div class="darcy-card">
       <div class="number">{{ add $index 1 }}</div>
       <img src="{{ $card.image }}" alt="{{ $card.title }}" class="img-fluid" />
       <div class="card-content">

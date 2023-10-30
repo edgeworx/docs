@@ -1,9 +1,9 @@
-# docs.edgeworx.io
+# docs.darcy.ai
 
 [![Better Uptime Badge](https://betteruptime.com/status-badges/v1/monitor/e975.svg)](https://betteruptime.com/?utm_source=status_badge)
 
-Here you can contribute to the Edgeworx Docs Site, which lives
-at [docs.edgeworx.io](https://docs.edgeworx.io).
+Here you can contribute to the Darcy Docs Site, which lives
+at [docs.darcy.ai](https://docs.darcy.ai).
 
 ## Overview
 
@@ -87,7 +87,7 @@ to update the Content-Security-Policy in [./netlify.toml](./netlify.toml).
 ## Branches
 
 If you merge a change to `master`, this will trigger the build pipeline, and ultimately result in
-your changes being published to `prod` (meaning [https://docs.edgeworx.io](https://docs.edgeworx.io))
+your changes being published to `prod` (meaning [https://docs.darcy.ai](https://docs.darcy.ai))
 
 We've also enabled a `staging` branch. If you merge a change to the `staging` branch, this will also
 trigger a pipeline, and your changes will be visible
@@ -122,9 +122,9 @@ is basically metadata. For example:
 
 ```markdown
 ---
-title: "Add Virtual Node to Edgeworx Cloud"
+title: "Add Virtual Node to Darcy Cloud"
 linkTitle: "Add Virtual Node"
-description: "Add a Virtual Node to Edgeworx Cloud via edgectl or Cloud Portal."
+description: "Add a Virtual Node to Darcy Cloud via edgectl or Cloud Portal."
 weight: 100
 draft: false
 beta: false
@@ -166,7 +166,7 @@ If you want to set a specific slug for a page, use the `slug` field in the front
 
 ```text
 ---
-title : "About Edgeworx Cloud"
+title : "About Darcy Cloud"
 weight: 100
 slug: "how-to-get-started"
 ---
@@ -179,7 +179,7 @@ which will be redirected to the current content.
 
 ```markdown
 ---
-title: "About Edgeworx Cloud"
+title: "About Darcy Cloud"
 weight: 100
 slug: "how-to-get-started"
 aliases:
@@ -349,7 +349,7 @@ linkTitle: "Reference Docs"
 weight: 500
 externalLink: "https://darcyai.github.io/darcyai/"
 ---
-Python docs for the Edgeworx IO Engine.
+Python docs for the Darcy AI Engine.
 ```
 
 ## Linting

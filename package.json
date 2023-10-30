@@ -1,6 +1,6 @@
 {
-  "name": "Edgeworx Docs",
-  "description": "Docs for edgeworx.io",
+  "name": "Darcy Docs",
+  "description": "Docs for darcy.ai",
   "browserslist": [
     "defaults"
   ],
@@ -28,7 +28,7 @@
     "lint:markdown": "markdownlint-cli2 \"*.md\" \"content/**/*.md\"",
     "lint:markdown-fix": "markdownlint-cli2-fix \"*.md\" \"content/**/*.md\"",
     "lint:links": "./linkinator.sh",
-    "prod:lint:links": "./node_modules/.bin/linkinator --config ./linkinator.config.json -r --verbosity error https://docs.edgeworx.io",
+    "prod:lint:links": "./node_modules/.bin/linkinator --config ./linkinator.config.json -r --verbosity error https://docs.darcy.ai",
     "staging:lint:links": "./node_modules/.bin/linkinator --config ./linkinator.config.json -r --verbosity error https://staging--darcydocs.netlify.app",
     "server": "exec-bin node_modules/.bin/hugo/hugo server",
     "test": "npm run -s lint",

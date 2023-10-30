@@ -1,9 +1,9 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Edgeworx Docs"
+title = "Darcy Docs"
 titleSeparator = "-"
-titleAddition = "Docs for the Edgeworx Suite"
+titleAddition = "Docs for the Darcy Suite"
 description = "Learn how to build, deploy and run your AI in the real world."
 
 ## Documentation
@@ -12,8 +12,8 @@ description = "Learn how to build, deploy and run your AI in the real world."
 ## Open Graph
 #images = ["opengraph-image.png"]
 ogLocale = "en_US"
-domainTLD = "docs.edgeworx.io"
-titleHome = "Edgeworx Docs"
+domainTLD = "docs.darcy.ai"
+titleHome = "Darcy Docs"
 
 ## Twitter Cards
 twitterSite = "@edgeworxio"
@@ -22,7 +22,7 @@ twitterCreator = "@edgeworxio"
 ## JSON-LD
 # schemaType = "Person"
 schemaType = "Organization"
-schemaName = "Edgeworx IO"
+schemaName = "Darcy AI"
 schemaAuthor = "Edgeworx, Inc."
 schemaAuthorTwitter = "https://twitter.com/edgeworxio"
 schemaAuthorLinkedIn = "https://www.linkedin.com/company/edgeworxio/"
@@ -36,7 +36,7 @@ schemaImageWidth = 1280
 schemaImageHeight = 640
 schemaTwitter = "https://twitter.com/edgeworxio"
 schemaLinkedIn = ""
-schemaGitHub = "https://github.com/edgeworx/docs"
+schemaGitHub = "https://github.com/darcyai/docs"
 #schemaSection = "blog"
 
 ## Sitelinks Search Box
@@ -54,10 +54,10 @@ lqipWidth = "20x"
 smallLimit = "300"
 
 # Footer
-footer = "©2023 Edgeworx Inc"
+footer = "Copyright (c) 2023 Edgeworx"
 
 # Feed
-copyRight = "©2023 Edgeworx Inc"
+copyRight = "Copyright (c) 2023 Edgeworx"
 
 # Alert
 alert = false
@@ -69,13 +69,13 @@ alertDismissable = true
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
 repoHost = "GitHub"
 #repoHost = "Gitea"
-docsRepo = "https://github.com/edgeworx/docs"
+docsRepo = "https://github.com/darcyai/docs"
 docsRepoBranch = "master"
 docsRepoSubPath = ""
 editPage = false # Is enabled for production
 lastMod = true
 
-segmentAnalytics = "zKMEacyNthzlsDe1GAzCtjZ44oXHZg0y" # cloud.dev.edgeworx.io
+segmentAnalytics = "zKMEacyNthzlsDe1GAzCtjZ44oXHZg0y" # cloud.dev.darcy.ai
 googleAnalytics = "G-GSQDEJETT3"
 
 [options]

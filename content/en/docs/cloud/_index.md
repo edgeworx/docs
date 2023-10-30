@@ -50,7 +50,7 @@ Terraform or kubernetes then you'll be immediately at home with Edgeworx Cloud.
 - **Heterogenous hardware**: provision to any x86 or ARM based edge node that has a relatively
   modern Linux kernel that supports containerization
 - **REST API driven**: manage your account, organization, projects, nodes and applications via a
-  REST client. Check out the OpenAPI [specification here](https://api.edgeworx.io/v1/docs)
+  REST client. Check out the OpenAPI [specification here](https://api.darcy.ai/v1/docs)
 - **CLI access**: Full API access via[`edgectl`](../more/terminology#edgectl) for the power of the command line in your terminal,
   or scripted into your other tools. Supports autocompletion in most shells, text or JSON output
 - **Keyless ssh access**: securely access your remote servers and devices without the headache of
