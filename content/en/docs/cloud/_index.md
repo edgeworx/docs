@@ -4,13 +4,13 @@ description: "Docs for Edgeworx Cloud"
 weight: 500
 linkTitle: "Edgeworx Cloud"
 ---
-<!-- TODO: Add something about deleting account and trying to use same username. Requires them to contact us. No critical for GCM Launch-->
+<!-- TODO: Add something about deleting account and trying to use same username. Requires them to contact us. Not critical for GCM Launch-->
 Edgeworx Cloud is a platform built on the principle of Infrastructure as Code (IaC) that allows you to
 manage edge infrastructure and [applications](../more/terminology#application). Developers can deploy, orchestrate and operate
 containerized [microservice](../apps/microservices.md) applications from the cloud to remote heterogeneous on-premise servers
 and edge devices.
 
-Your edge can be comprised of anything from a cloud VM, to a mini datacenter to a Raspberry Pi Zero
+Your edge can be comprised of anything from a cloud VM, to a mini data center to a Raspberry Pi Zero
 and everything in between. Edgeworx Cloud makes it easy to deploy and manage across multiple tiers, in
 different geographies, across diverse networks and behind multiple firewalls.
 

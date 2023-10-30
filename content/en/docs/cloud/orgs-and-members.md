@@ -1,15 +1,13 @@
 ---
 title: "Orgs & Members"
-weight: 800
-draft: true
-beta: true
+weight: 900
+draft: false
+beta: false
 ---
-<!-- TODO: Redo this content per Neil. Create headers/subheaders for portal and CLI -->
 When you create an account on Edgeworx Cloud, a _Personal Org_ (organization) is created automatically,
 with the same name as your username. Thus, the user _Alice_ with username `alice`
 has a _personal org_ also named `alice`. When `alice` creates new projects,
-those projects are created inside
-her personal org, e.g. `alice/hatproject`.
+those projects are created inside her personal org, e.g. `alice/someproject`.
 
 For collaboration, you should create a separate org for your company.
 For example, if Alice's employer is Acme Corp., she would create an org `acme`. New
@@ -17,10 +15,21 @@ projects would be created inside the `acme` org, e.g. `acme/megaproject`. (Proje
 [migrated](docs/cloud/migrate-project/) from Alice's personal org to the corporate org).
 Naturally Alice can invite people to join the org.
 
+When inviting a member to the org, you must specify the permissions that member has. These permissions
+can be reviewed at the [scopes and permissions page](/docs/cloud/scopes-and-permissions).
+
+A member's permissions are set when the [org invite is created](/docs/cloud/edgectl/create-invite).
+The permissions can also be [modified](/docs/cloud/edgectl/patch-member/) by an org admin. A member
+can have more than one permission for an org, and some permissions imply others. For example,
+an _Org Owner_ has permission `org:owner`, but also `org:admin` and `org:write` (through inheritance).
+
 ## Create an Org
 
+### Using the CLI
+
 Use [`edgectl create org`](/docs/cloud/edgectl/create-org) to create the new org.
-The supplied org `name` must be unique.
+The supplied org `name` must be unique. Check the [`create org`](/docs/cloud/edgectl/create-org)
+documents for other flags to be supplied, such as description, phone number, country, etc.
 
 ```shell
 $ edgectl create org --name acme
@@ -35,13 +44,27 @@ as your default.
 ```shell
 edgectl set default org acme
 ```
-
 {{</info>}}
+
+### Using the Cloud Portal
+
+On the Cloud Portal homepage, select "create an org" where orgs are listed (there will be none when
+you first sign up). You will then be guided through creation. The only required information is the org website
+
+![Org Create Screen](/images/orgs/org-create.png)
+
+![Org Create Details Screen](/images/orgs/org-create-details.png)
+
+![Org Details Screen](/images/orgs/org-details.png)
 
 ## Invite members
 
+### Using the CLI
+
 Use [`edgectl create invite`](/docs/cloud/edgectl/create-invite) to invite people
-to join the org. Below, Alice invites her colleague Bob to join the `acme` org.
+to join the org. Below, Alice invites her colleague Bob to join the `acme` org
+as an admin. Other scopes (permissions) include "owner" and "write". You can learn
+more about [scopes and permissions here](/docs/cloud/scopes-and-permissions)
 
 ```shell
 $ edgectl create invite --email bob@acme.com --org acme --scope org:admin
@@ -53,9 +76,25 @@ The `scope` argument determines Bob's role (permissions) in the org. If `scope` 
 not specified, the default (`org:write`) is used.
 
 Bob will receive an invite email. If Bob doesn't have an account, he needs
-to [sign up](https://cloud.edgeworx.io).
+to [sign up.](https://cloud.edgeworx.io)
+
+### Using the Cloud Portal
+
+After creating an org, you will be presented with a screen to invite other
+members into the org by email. 
+
+![Org Member Invite Screen](/images/orgs/org-member-invite.png)
+
+If you need to invite more members, you can do so through the member details screen.
+Navigate to the org page, and click invite to invite a new member by their email.
+
+![Org Details Screen](/images/orgs/org-details.png)
+
+![Org Member Invite Screen](/images/orgs/org-member-invite.png)
 
 ## Accept invite
+
+### Using the CLI
 
 Bob can use `edgectl` to respond to the invite.
 
@@ -84,34 +123,16 @@ UUID                                  NAME     PERSONAL ORG  CREATED UTC  SCOPES
 7bc10fbb-ef0a-47f8-bf71-608eece7c317  bob      true          2023-01-03   org:admin,org:owner,org:write
 ```
 
-## Scopes
+### Using the Cloud Portal
 
-A `scope` (which is similar to a `role`) determines what
-actions a user can perform.
+You should receive an email with directions on how to accept an org invite. Follow
+the instructions to create an account and accept the invite to the new org.
 
-- `org:write` (default):
-  - Create new projects.
-  - Modify existing projects (e.g. add nodes, deploy applications).
-  - Delete existing projects.
-  - Referred to as an _Org Member_.
-- `org:admin`:
-  - All the abilities of `org:write`.
-  - Create invites to org.
-  - Change member scopes (except for owners).
-  - Remove members.
-  - Referred to as an _Org Admin_.
-- `org:owner`:
-  - All the abilities of `org:admin`.
-  - Change member scopes of all members.
-  - Can delete org.
-  - Referred to as an _Org Owner_.
-
-A member's scopes are set when the [org invite is created](/docs/cloud/edgectl/create-invite).
-The scopes can also be [modified](/docs/cloud/edgectl/patch-member/) by an org admin. A member
-can have more than one scope for an org, and some scopes imply others. For example,
-an _Org Owner_ has scope `org:owner`, but also scopes `org:admin` and `org:write`.
+![Org Member Invite Email](/images/orgs/org-member-invite-email.png)
 
 ## Modify member scopes
+
+### Using the CLI
 
 Use [`edgectl patch member`](/docs/cloud/edgectl/patch-member) to change a member's scopes. For example, Alice can
 reduce Bob's set of scopes to only `org:write` as follows:
@@ -121,7 +142,18 @@ $ edgectl patch member --org acme --account bob --scope org:write
 Updated scopes on account {bob} in org {15e23cf5-c4f7-4ac9-aedb-689231124f10|acme}
 ```
 
+### Using the Cloud Portal
+
+In the Cloud Portal, navigate to the org page, click the settings wheel next to the "members" header,
+and select the permission you want to change for a user.
+
+![Org Member Details](/images/orgs/org-member-details.png)
+
+![Change Member Permissions](/images/orgs/org-member-change-permissions.png)
+
 ## Remove member
+
+### Using the CLI
 
 Use [`edgectl delete member`](/docs/cloud/edgectl/delete-member) to remove a member from an org. Note that this only deletes
 the account's membership of the org: it does not delete the account itself.
@@ -129,3 +161,12 @@ the account's membership of the org: it does not delete the account itself.
 ```shell
 edgectl delete member --org acme --account bob
 ```
+
+### Using the Cloud Portal
+
+In the Cloud Portal, navigate to the org page, click the settings wheel next to the "members" header,
+and remove the user with the "delete" icon next to the user's email.
+
+![Org Member Details](/images/orgs/org-member-details.png)
+
+![Remove Member](/images/orgs/org-member-remove.png)
