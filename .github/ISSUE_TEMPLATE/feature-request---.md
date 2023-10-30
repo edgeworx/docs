@@ -1,6 +1,6 @@
 ---
 name: "Feature request \U0001F680"
-about: Suggest an idea for Edgeworx Docs
+about: Suggest an idea for Darcy Docs
 
 ---
 

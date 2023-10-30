@@ -74,28 +74,28 @@ pre {
   font-size: $font-size-sm;
   padding: 0.25rem 0.5rem;
   color: $edgeneutral-5;
-  background-color: $edgeworx-blue-dark;
-  border-color: $edgeworx-blue-dark;
+  background-color: $darcy-blue-dark;
+  border-color: $darcy-blue-dark;
 }
 
 .btn-copy:hover {
   color: $edgeneutral-5;
-  background-color: lighten($edgeworx-blue-dark, 5%);
-  border-color: lighten($edgeworx-blue-dark, 5%);
+  background-color: lighten($darcy-blue-dark, 5%);
+  border-color: lighten($darcy-blue-dark, 5%);
 }
 
 .btn-copy:focus {
   color: $edgeneutral-1;
-  background-color: $edgeworx-blue-dark;
-  border-color: lighten($edgeworx-blue-dark, 15%);
+  background-color: $darcy-blue-dark;
+  border-color: lighten($darcy-blue-dark, 15%);
   box-shadow: none;
 }
 
 .btn-copy:active,
 .btn-copy.active {
   color: $edgeneutral-1;
-  background-color: $edgeworx-blue-dark;
-  border-color: lighten($edgeworx-blue-dark, 15%);
+  background-color: $darcy-blue-dark;
+  border-color: lighten($darcy-blue-dark, 15%);
 }
 
 .btn-copy:active:focus,

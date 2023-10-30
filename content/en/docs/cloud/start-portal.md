@@ -6,7 +6,7 @@ aliases:
   - /edgeworx/edgeworx-cloud/get-started-ec
 ---
 
-## Create your Edgeworx Cloud account
+## Create your Darcy Cloud account
 
 Navigate to [Edgeworx Cloud](https://cloud.edgeworx.io/welcome) using your browser (Chrome, Firefox,
 and Safari preferred- other browsers are not thoroughly maintained) and click the `Create Account`
