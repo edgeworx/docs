@@ -44,6 +44,7 @@ as your default.
 ```shell
 edgectl set default org acme
 ```
+
 {{</info>}}
 
 ### Using the Cloud Portal
@@ -81,7 +82,7 @@ to [sign up.](https://cloud.edgeworx.io)
 ### Using the Cloud Portal
 
 After creating an org, you will be presented with a screen to invite other
-members into the org by email. 
+members into the org by email.
 
 ![Org Member Invite Screen](/images/orgs/org-member-invite.png)
 
