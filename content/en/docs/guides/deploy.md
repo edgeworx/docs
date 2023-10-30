@@ -8,7 +8,7 @@ weight: 250
 
 ## What you will accomplish
 <!-- TODO: This content needs an extensive rewrite -->
-By the end of this guide, you will be able to deploy an edge application to any edge node on Edgeworx Cloud and use this knowledge to expedite software development and deployment for and at the edge at scale.
+By the end of this guide, you will be able to deploy an edge application to any edge node on Edgeworx Cloud and use this knowledge to expedite software development and deployment for and at the edge at scale. 
 
 {{<info>}}
 This guide was created using an Raspberry Pi 4, however you can use any Linux based device, virtual machine, or [virtual node](/docs/cloud/adding-nodes/virtual-node/).
@@ -40,13 +40,13 @@ from Docker after following those steps.
 [Edgeworx Cloud](/docs/cloud/start-portal) gives you management of all your [edge devices](/docs/cloud/adding-nodes) and [edge applications](/docs/more/terminology/#application) in one place.
 You can open a SSH shell session on demand, deploy applications, and see the health and status for
 every device. All of this functionality works no matter where your edge devices are physically
-located, even when they are behind NAT layers and firewalls.
+located, even when they are behind NAT layers and firewalls. 
 
 If you don't already have an account, you can create one now for free or log in
 at [https://cloud.edgeworx.io](https://cloud.edgeworx.io).
 
 Once you are in your Edgeworx Cloud account, choose your Sandbox or a [project](/docs/more/terminology#project) nested in an Org, and [add your device as a node](/docs/cloud/adding-nodes/add-node.md) using the `+ ADD NODE` button. Follow the instructions in the pop-up window to
-continue with either a virtual node or physical device.
+continue with either a virtual node or physical device. 
 <!-- TODO Screenshot needs to be updated -->
 ![Cloud Portal Plus Button](/images/guides/deploy-node-ui.gif)
 
@@ -92,15 +92,15 @@ in the steps above.
 
 ### Deploy your Edgeworx application
 
-Now that you have all of the pieces, it's easy to deploy your application to your device. In the project where the target device is located, open the `APPS` tab and click `+ DEPLOY APP` and follow the instructions in the pop up.
+Now that you have all of the pieces, it's easy to deploy your application to your device. In the project where the target device is located, open the `APPS` tab and click `+ DEPLOY APP` and follow the instructions in the pop up. 
 
 ![Deploy app animation](/images/guides/deploy-app-ui.gif)
 
-In the pop-up window, choose the `UPLOAD YOUR APP` option and you can drag and drop your YAML file into that window or upload it.
+In the pop-up window, choose the `UPLOAD YOUR APP` option and you can drag and drop your YAML file into that window or upload it. 
 <!-- TODO image below is dead -->
 ![Deploy App](/images/edgeworx-cloud-custom-app-deployment.png)
 
-Edgeworx Cloud will notify you if there are issues with the YAML file or your app deployment. Once deployed, you can monitor the image or images being pulled and their status once it is running.
+Edgeworx Cloud will notify you if there are issues with the YAML file or your app deployment. Once deployed, you can monitor the image or images being pulled and their status once it is running. 
 
 ## Use your application
 
@@ -109,7 +109,6 @@ status `RUNNING` in your Edgeworx Cloud UI.
 
 You have accomplished a great amount at this point. Congratulations! You have developed an edge
 application to an edge node using Edgeworx Cloud. This image can now be deployed to any other device you have made into a node on your account.
-
 ## Next steps
 <!-- TODO reword this-->
 With this foundational knowledge you can now deploy applications with confidence.  

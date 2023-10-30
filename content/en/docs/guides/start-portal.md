@@ -36,7 +36,7 @@ You may need to check your spam folders. The email sender will be `no-reply@auth
 
 ## View Your Edgeworx Cloud edge project
 
-Once your account has been created, you can spin up a personal Sandbox or a fully featured 30-day free trial Org.
+Once your account has been created, you can spin up a personal Sandbox or a fully featured 30-day free trial Org. 
 
 ![Your Project is Being Created](</images/image (15).png>)
 
