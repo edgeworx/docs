@@ -7,8 +7,13 @@
 {{ end -}}
 <header class="navbar navbar-expand-md navbar-light doks-navbar">
   <nav class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} flex-wrap flex-md-nowrap" aria-label="Main navigation">
+<<<<<<< HEAD
+    <a class="navbar-brand p-0 me-auto" href="https://edgeworx.io" aria-label="{{ .Site.Params.Title }}">
+      <img src='/edgeworx-logo.png' alt='edgeworx logo' />
+=======
     <a class="navbar-brand p-0 me-auto" href="https://www.edgeworx.io" aria-label="{{ .Site.Params.Title }}">
       <img src='/edgeworx-logo.png' alt='Edgeworx logo' />
+>>>>>>> dc-to-ec-fixes
     </a>
 
    <!--
@@ -19,8 +24,13 @@
 
     <div class="offcanvas offcanvas-end border-0 py-md-1 d-md-none" tabindex="-1" id="offcanvasDoks" data-bs-backdrop="true" aria-labelledby="offcanvasDoksLabel">
       <div class="offcanvas-header d-md-none">
+<<<<<<< HEAD
+        <a class="navbar-brand p-0 me-auto" href="https://edgeworx.io" aria-label="{{ .Site.Params.Title }}">
+          <img src='/edgeworx-logo.png' alt='edgeworx logo' />
+=======
         <a class="navbar-brand p-0 me-auto" href="https://www.edgeworx.io" aria-label="{{ .Site.Params.Title }}">
           <img src='/edgeworx-logo.png' alt='Edgeworx logo' />
+>>>>>>> dc-to-ec-fixes
         </a>
         <div type="button" class="me-2" data-bs-dismiss="offcanvas" aria-label="Close main menu">
           <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='none' stroke='#ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-x'><line x1='18' y1='6' x2='6' y2='18'></line><line x1='6' y1='6' x2='18' y2='18'></line></svg>
@@ -28,11 +38,15 @@
       </div>
       <div class="offcanvas-body px-4">
         <div>
+<<<<<<< HEAD
+          <a class="edgeworx home-link" href="https://edgeworx.io" alt="edgeworx.io">Products</a>
+=======
           <a class="darcyai home-link" href="https://www.edgeworx.io" alt="edgeworx.io">Products</a>
+>>>>>>> dc-to-ec-fixes
         </div>
         <hr class="text-black-50 my-4 d-md-none">
         <div>
-          <a data-bs-toggle="collapse" href="#devCollapse" role="button" aria-expanded="false" aria-controls="devCollapse" class="darcyai dev-link w-100">Developers</a>
+          <a data-bs-toggle="collapse" href="#devCollapse" role="button" aria-expanded="false" aria-controls="devCollapse" class="edgeworx dev-link w-100">Developers</a>
           <ul class="nav flex-column flex-md-row ms-md-n3 mt-2 collapse show" id="devCollapse">
             {{ $currentPage := . -}}
             {{ $active := eq $currentPage.RelPermalink .RelPermalink }}
@@ -70,11 +84,25 @@
           </ul>
         </div>
         <hr class="text-black-50 my-4 d-md-none">
+<<<<<<< HEAD
+        <!-- <div class="edgeworx login-link d-md-none">
+=======
         <!-- <div class="darcyai login-link d-md-none">
+>>>>>>> dc-to-ec-fixes
           <a href="https://cloud.edgeworx.io" alt="Portal login">Login/Sign up</a>
         </div> -->
       </div>
     </div>
+<<<<<<< HEAD
+    <!-- <div class="edgeworx link-container d-none d-md-block">
+      <a class="edgeworx home-link" href="https://edgeworx.io" alt="edgeworx.io">Home</a>
+      <a class="edgeworx dev-link" href="/">Developers</a>
+    </div> -->
+    <div class="edgeworx menu-container d-none d-md-grid">
+      <!--<a class="edgeworx home-link" href="https://edgeworx.io" alt="edgeworx.io">Products</a>-->
+      <!--<a class="edgeworx dev-link" href="/">Developers</a>-->
+      <a class="edgeworx login-link" href="https://cloud.edgeworx.io" alt="Portal login" onclick="trackLogin()">Log in</a>
+=======
     <!-- <div class="darcyai link-container d-none d-md-block">
       <a class="darcyai home-link" href="https://www.edgeworx.io" alt="Edgeworx.io">Home</a>
       <a class="darcyai dev-link" href="/">Developers</a>
@@ -83,6 +111,7 @@
       <!--<a class="darcyai home-link" href="https://www.edgeworx.io" alt="Edgeworx.io">Products</a>-->
       <!--<a class="darcyai dev-link" href="/">Developers</a>-->
       <a class="darcyai login-link" href="https://cloud.edgeworx.io" alt="Portal login" onclick="trackLogin()">Log in</a>
+>>>>>>> dc-to-ec-fixes
     </div>
     <!-- {{ if .Site.Params.options.darkMode -}}
     <button id="mode" class="btn btn-link order-md-1" type="button" aria-label="Toggle user interface mode">

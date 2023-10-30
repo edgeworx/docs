@@ -91,8 +91,8 @@ spec:
     agent:
       name: zebra-1
     images:
-      x86: darcyai/healthcare-heart-rate:x86-v1
-      arm: darcyai/healthcare-heart-rate:arm-v1
+      x86: edgeworx/healthcare-heart-rate:x86-v1
+      arm: edgeworx/healthcare-heart-rate:arm-v1
       registry: remote
     config:
       data_label: test_mode=false_cross_agent_microservice_routing_aug_27

@@ -5,7 +5,6 @@ lead: "Docs for Edgeworx Cloud"
 aliases:
   - /edgeworx/edgeworx-cloud/glossary
   - /edgeworx/contact-us
-  - /darcy
 cards:
 
   
