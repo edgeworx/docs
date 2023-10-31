@@ -35,7 +35,7 @@ from Docker after following those steps.
 
 ## Deploying your app
 
-### Add your devices to the Edgeworx Cloud
+### Add your devices to Edgeworx Cloud
 <!-- TODO review the below. Seems too market-y for a guide? -->
 [Edgeworx Cloud](/docs/cloud/start-portal) gives you management of all your [edge devices](/docs/cloud/adding-nodes) and [edge applications](/docs/more/terminology/#application) in one place.
 You can open a SSH shell session on demand, deploy applications, and see the health and status for
@@ -82,7 +82,7 @@ spec:
             accessMode: rw
 ```
 
-Your application deployment YAML file contains the information that the Edgeworx Cloud uses to load and
+Your application deployment YAML file contains the information that Edgeworx Cloud uses to load and
 run your Edgeworx application on any device. Replace the placeholder fields with your own
 information and save the file with whatever file name you like, such as `my-app-deploy.yaml`.
 
