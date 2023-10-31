@@ -1,6 +1,6 @@
 ---
 title : "Docs"
-description: "Darcy Docs"
+description: "Edgeworx Docs"
 menu:
   docs:
     parent: "docs"

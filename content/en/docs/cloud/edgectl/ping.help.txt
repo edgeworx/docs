@@ -1,4 +1,4 @@
-Ping Darcy Cloud API
+Ping Edgeworx Cloud API
 
 Usage:
   edgectl ping [flags]

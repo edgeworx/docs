@@ -1,7 +1,7 @@
 ---
 title: "patch invite"
 description: "edgectl patch invite"
-draft: true
+draft: false
 menu:
   docs:
     identifier: "patch-invite"

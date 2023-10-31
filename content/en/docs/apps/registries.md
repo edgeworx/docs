@@ -2,10 +2,10 @@
 title: "Registries"
 weight: 550
 aliases:
-  - /darcy/darcy-cloud/applications-doc/registries
+  - /edgeworx/edgeworx-cloud/applications-doc/registries
 ---
 
-When configuring an [Darcy Cloud](/docs/cloud/start-portal) [application](../more/terminology#application) YAML file, it is necessary to specify the registry of
+When configuring an [Edgeworx Cloud](/docs/cloud/start-portal) [application](../more/terminology#application) YAML file, it is necessary to specify the registry of
 each [microservice](./microservices.md) container image. The field for this specification
 is `spec.microservices.image.registry`, and the registry tells the [node](../cloud/adding-nodes/_index.md) the microservice is being
 deployed to how to access the image container.
@@ -28,16 +28,17 @@ There are 3 options for a registry:
    the registry key when initially deploying the microservice to the node. The registry key must
    have permission to access the container images.
 
-## What is a Darcy Cloud Registry?
+## What is a Edgeworx Cloud Registry?
 
-Darcy Cloud registries are a clean, convenient way to give Darcy Cloud applications access to
-private Docker images or other containers that are being deployed to the Darcy Cloud.
+Edgeworx Cloud registries are a clean, convenient way to give Edgeworx Cloud applications access to
+private Docker images or other containers that are being deployed to the Edgeworx Cloud.
 
 Before adding a microservice with private container images (or with images not on Dockerhub) to a
-node in [Darcy Cloud]({{<ref "/docs/cloud">}}) it is necessary to register a key with permissions
-to access the microservice container images to a [project's](../more/terminology#project) Darcy Cloud registry so that the
+node in [Edgeworx Cloud]({{<ref "/docs/cloud">}}) it is necessary to register a key with permissions
+to access the microservice container images to a [project's](../more/terminology#project) Edgeworx Cloud registry so that the
 microservice will be able to pull the container images upon being deployed.
 
+<!-- TODO: fix broken iofog link under -->
 Each registry is pre-configured with 2 entries. The first entry is for a `remote` registry (
 the `remote` registry selection is just an alias for the value `1`), and the second entry is for
 a `local` registry (the `local` registry selection is just an alias for the value `2`). Additional
@@ -105,12 +106,12 @@ If the `--project` field is empty, the the default project is used (if one is se
 
 ## Create a Registry Entry Using Google Cloud
 
-A simple way to give permissions to the Darcy Cloud to deploy applications is to create a Google
+A simple way to give permissions to the Edgeworx Cloud to deploy applications is to create a Google
 Service Account key that has permissions to access the applications containers (whether they be on
 Dockerhub or elsewhere). A service account can be created by following the
 tutorial [here](https://cloud.google.com/container-registry/docs/advanced-authentication#json-key).
 
-Once a JSON key that has access to the desired containers is created, it can be added to the Darcy
+Once a JSON key that has access to the desired containers is created, it can be added to the Edgeworx
 Cloud registry as shown below:
 
 ```bash
