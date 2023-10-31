@@ -7,16 +7,23 @@ aliases:
   - /edgeworx/contact-us
 cards:
 
-  - title: Get started - Edgeworx Cloud Portal
-    subtitle: Create your Edgeworx Cloud account.
-    action: Build
+  - title: Get started, set up your first edge project.
+    subtitle: Create your Edgeworx Cloud account and your first project.
+    action: Create project
     time: Easy
     link: '/docs/guides/start-portal/'
     image: /images/guides/guide-thumb-deploy.jpg
 
-  - title: Deploy an app to the edge in under 10 minutes
-    subtitle: Package and deploy your app in the real world on different edge devices without changing the code.
-    action: Deploy
+  - title: Add an edge node in under 10 minutes.
+    subtitle: Add a node (or virtual node) to the edge in just a few minutes.
+    action: Add a node
+    time: Easy
+    link: '/docs/guides/deploy/'
+    image: /images/guides/guide-thumb-deploy.jpg
+
+  - title: Deploy an app to the edge in under 10 minutes.
+    subtitle: Package your app and deploy it to your edge node.
+    action: Deploy an app
     time: Easy
     link: '/docs/guides/deploy/'
     image: /images/guides/guide-thumb-deploy.jpg
