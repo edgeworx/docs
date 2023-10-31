@@ -3,20 +3,20 @@ title: "Deploy an app"
 weight: 600
 toc: true
 aliases:
-  - /darcy/darcy-cloud/get-started-edgectl/deploy-an-app
+  - /edgeworx/edgeworx-cloud/get-started-edgectl/deploy-an-app
 ---
-
-Deploy apps using the Darcy Portal UI or terminal commands via [edgectl](../cloud/edgectl)
+<!-- TODO: Replace screenshots -->
+Deploy apps using the Edgeworx Portal UI or terminal commands via [edgectl](../cloud/edgectl)
 
 #### Prerequisites
 
-To deploy your custom app, you will need a [Darcy Cloud](/docs/cloud/start-portal) account with at least one [node](../cloud/adding-nodes/_index.md) accessible
+To deploy your custom app, you will need a [Edgeworx Cloud](/docs/cloud/start-portal) account with at least one [node](../cloud/adding-nodes/_index.md) accessible
 and `ONLINE`. You will need a basic understanding
-of [how to structure app YAML]({{<ref "/docs/apps/yaml-definition.md">}}) for Darcy Cloud.
+of [how to structure app YAML]({{<ref "/docs/apps/yaml-definition.md">}}) for Edgeworx Cloud.
 
-## Deploy an App using Darcy Cloud Portal
+## Deploy an App using Edgeworx Cloud Portal
 
-1. Go to the Darcy Cloud [project](../more/terminology#project) page
+1. Go to the Edgeworx Cloud [project](../more/terminology#project) page
 2. Select `Apps`
 3. Click on `+ DEPLOY APP`
 4. Drag n' drop a [YAML file]({{<ref "/docs/apps/yaml-definition.md">}}) into the box
@@ -32,10 +32,10 @@ Click on your app in the list of [application](../more/terminology#application) 
 The appl details page contains information about its [microservices](../apps/microservices.md), routes, the nodes
 involved in running the microservices and its YAML Definition.
 
-Darcy Cloud Portal allows you to edit your app YAML right in the browser. More information about the
+Edgeworx Cloud Portal allows you to edit your app YAML right in the browser. More information about the
 Application YAML files can be found [here]({{<ref "/docs/apps/">}}).
 
-{{<info>}} Everything shown above using Darcy Cloud Portal can also be achieved using
+{{<info>}} Everything shown above using Edgeworx Cloud Portal can also be achieved using
 our CLI, [edgectl]({{<ref "/docs/cloud/edgectl">}}).
 {{</info>}}
 
@@ -50,8 +50,7 @@ edgectl deploy app --help
 ```
 
 The `deploy app` command requires a path to a `YAML` file to be specified. See the YAML
-for our demo apps: [Heart Rate Demo](/docs/apps/demo-apps/heart-rate)
-and [Darcy AI Explorer](/docs/apps/demo-apps/ai-explorer).
+for our demo apps: [Heart Rate Demo](/docs/apps/demo-apps/heart-rate).
 
 The `YAML` file defines everything about our edge application that is required to deploy it. For
 example:

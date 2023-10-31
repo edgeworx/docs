@@ -2,7 +2,7 @@
 title: Changelog
 weight: 70
 aliases:
-  - /darcy-cloud/release-notes
+  - /edgeworx-cloud/release-notes
   - /docs/release-notes
   - /release-notes
   - /changelog
@@ -17,81 +17,82 @@ No upcoming events currently scheduled.
 ### 2023.04.03: Zero-Impact Maintenance
 
 On Mon Apr 3rd 2023, we will be performing minor maintenance
-on Darcy Cloud. This maintenance event **will not affect
+on Edgeworx Cloud. This maintenance event **will not affect
 service availability**. If you have concerns
-about the maintenance event impacting your operations, please contact [Darcy Support](mailto:support@darcy.ai)
+about the maintenance event impacting your operations, please contact [Edgeworx Support](mailto:support@edgeworx.io)
 as early as possible.
 
 | Affected Systems                                          | Impact                                                         | Schedule                           |
 |-----------------------------------------------------------|----------------------------------------------------------------|------------------------------------|
-| ✅ [Darcy Cloud](/docs/more/maintenance/#darcy-cloud)<br/> | [Zero Impact](/docs/more/maintenance/#zero-impact-maintenance) | Mon 03 Apr 2023 <br/> 7AM - 8AM PT |
+| ✅ [Edgeworx Cloud](/docs/more/maintenance/#Edgeworx-cloud)<br/> | [Zero Impact](/docs/more/maintenance/#zero-impact-maintenance) | Mon 03 Apr 2023 <br/> 7AM - 8AM PT |
 
 Learn more about our [maintenance process](/docs/more/maintenance/).
 
 ### 2023.03.28: Service-Impact Maintenance
 
 On Tue Mar 28th 2023, we will be performing maintenance
-on Darcy Cloud, and all attached edge nodes. This maintenance event **will affect
+on Edgeworx Cloud, and all attached edge nodes. This maintenance event **will affect
 service availability**. If you have concerns
-about the maintenance event impacting your operations, please contact [Darcy Support](mailto:support@darcy.ai)
+about the maintenance event impacting your operations, please contact [Edgeworx Support](mailto:support@edgeworx.io)
 as early as possible.
 
 | Affected Systems                                                                                            | Impact                                                                  | Schedule                           |
 | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ---------------------------------- |
-| ✅ [Darcy Cloud](/docs/more/maintenance/#darcy-cloud)<br/>✅ [Edge Nodes](/docs/more/maintenance/#edge-nodes) | ⚠️ [Service Impact](/docs/more/maintenance/#service-impact-maintenance) | Tue 28 Mar 2023 <br/> 7AM - 9AM PT |
+| ✅ [Edgeworx Cloud](/docs/more/maintenance/#Edgeworx-cloud)<br/>✅ [Edge Nodes](/docs/more/maintenance/#edge-nodes) | ⚠️ [Service Impact](/docs/more/maintenance/#service-impact-maintenance) | Tue 28 Mar 2023 <br/> 7AM - 9AM PT |
 
 Learn more about our [maintenance process](/docs/more/maintenance/).
 
-### 2022.06.17: Darcy Cloud v2.2.0
+### 2022.06.17: Edgeworx Cloud v2.2.0
 
-The highlights of this release are Virtual Node, and support for running Darcy AI Engine on CPU.
+The highlights of this release are Virtual Node, and support for running Edgeworx AI Engine on CPU.
 
 | Component          | Version  |
 | ------------------ | -------- |
-| Darcy Cloud API    | `v2.2.0` |
-| Darcy Cloud Portal | `v2.2.0` |
+| Edgeworx Cloud API    | `v2.2.0` |
+| Edgeworx Cloud Portal | `v2.2.0` |
 | Edgectl            | `v2.2.0` |
 
 #### Changes
 
 - If you don't have an edge node (Raspberry Pi, Jetson Nano, etc.) available, you can now create
   a [Virtual Node](/docs/cloud/adding-nodes/virtual-node/) for development purposes. A Virtual Node is effectively a local VM that appears
-  to Darcy Cloud as an edge node.
-- [Darcy AI Engine](/docs/ai/) works best when an AI accelerator (such as a Google Coral) is available, but now
+  to Edgeworx Cloud as an edge node.
+  <!-- TODO add link when available -->
+- [Edgeworx AI Engine](https://edgeworx.io) works best when an AI accelerator (such as a Google Coral) is available, but now
   AI Engine can run directly on CPU. This is useful for local development.
 
 ______________________________________________________________________
 
-### 2022.03.30: Darcy Cloud v2.1.0
+### 2022.03.30: Edgeworx Cloud v2.1.0
 
-This release incorporates the first version of Darcy AI Explorer.
+This release incorporates the first version of Edgeworx AI Explorer.
 
 | Component          | Version  |
 |--------------------|----------|
-| Darcy Cloud API    | `v2.1.0` |
-| Darcy Cloud Portal | `v2.1.0` |
+| Edgeworx Cloud API    | `v2.1.0` |
+| Edgeworx Cloud Portal | `v2.1.0` |
 | Edgectl            | `v2.1.0` |
 
 #### Changes
 
-- Darcy AI explorer app is available which showcases Darcy AI featuring customisable
+- Edgeworx AI explorer app is available which showcases Edgeworx AI featuring customisable
   people-centric AI.
 
 ______________________________________________________________________
 
-### 2022.02.25: Darcy Cloud v2.0.1
+### 2022.02.25: Edgeworx Cloud v2.0.1
 
-This is the first release of Darcy Cloud, which is the successor to Edgeworx Cloud.
+This is the first release of Edgeworx Cloud, which is the successor to Edgeworx Cloud.
 
 | Component          | Version  |
 |--------------------|----------|
-| Darcy Cloud API    | `v2.0.1` |
-| Darcy Cloud Portal | `v2.0.1` |
+| Edgeworx Cloud API    | `v2.0.1` |
+| Edgeworx Cloud Portal | `v2.0.1` |
 | Edgectl            | `v2.0.1` |
 
 #### Changes
 
-- Edgeworx Cloud is now Darcy Cloud.
+- Edgeworx Cloud is now Edgeworx Cloud.
 - `edgectl` has switched its entire command structure, from `noun-verb` to `verb-noun`. We are doing
   this based on user feedback from customers who are more familiar with the
   Kubernetes `kubectcl get X` style of CLI. For example, instead of `edgectl account get`,
@@ -101,14 +102,14 @@ This is the first release of Darcy Cloud, which is the successor to Edgeworx Clo
 
 ______________________________________________________________________
 
-### 2022.01.26: Darcy Cloud v1.3.1
+### 2022.01.26: Edgeworx Cloud v1.3.1
 
-This release of Darcy Cloud introduces application microservice container logging, and
+This release of Edgeworx Cloud introduces application microservice container logging, and
 incorporates internal security enhancements.
 
 | Component       | Version  |
 |-----------------|----------|
-| Darcy Cloud API | `v1.3.1` |
+| Edgeworx Cloud API | `v1.3.1` |
 | Edgectl         | `v1.3.2` |
 
 #### Changes
@@ -119,7 +120,7 @@ incorporates internal security enhancements.
 
 ______________________________________________________________________
 
-### 2022.01.20: Darcy Cloud v1.2.0
+### 2022.01.20: Edgeworx Cloud v1.2.0
 
 Security enhancements.
 
@@ -134,15 +135,15 @@ Security enhancements.
 
 ______________________________________________________________________
 
-### 2021.12.16: Darcy Cloud v1.1.7
+### 2021.12.16: Edgeworx Cloud v1.1.7
 
 This release of Edgeworx Cloud consists largely of behind-the-scenes fixes and improvements to
 several Edgeworx Cloud components.
 
 | Component          | Version  |
 |--------------------|----------|
-| Darcy Cloud API    | `v1.1.7` |
-| Darcy Cloud Portal | `v1.1.4` |
+| Edgeworx Cloud API    | `v1.1.7` |
+| Edgeworx Cloud Portal | `v1.1.4` |
 | Edgectl            | `v1.1.7` |
 
 #### Changes
@@ -154,15 +155,15 @@ several Edgeworx Cloud components.
 
 ______________________________________________________________________
 
-### 2021.12.05: Darcy Cloud v1.1.6
+### 2021.12.05: Edgeworx Cloud v1.1.6
 
 This release of Edgeworx Cloud consists largely of behind-the-scenes fixes and improvements to
 several Edgeworx Cloud components.
 
 | Component          | Version  |
 |--------------------|----------|
-| Darcy Cloud API    | `v1.1.6` |
-| Darcy Cloud Portal | `v1.1.3` |
+| Edgeworx Cloud API    | `v1.1.6` |
+| Edgeworx Cloud Portal | `v1.1.3` |
 | Edgeworx Agent     | `v1.1.3` |
 | Edgectl            | `v1.1.6` |
 

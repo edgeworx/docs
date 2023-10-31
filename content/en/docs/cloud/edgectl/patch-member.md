@@ -1,7 +1,7 @@
 ---
 title: "patch member"
 description: "edgectl patch member"
-draft: true
+draft: false
 menu:
   docs:
     identifier: "patch-member"

@@ -2,10 +2,10 @@
 title: "Access tokens"
 weight: 800
 aliases:
-  - /darcy/darcy-cloud/access-tokens
+  - /edgeworx/edgeworx-cloud/access-tokens
 ---
-
-Darcy Cloud supports basic HTTP authentication through access tokens.
+<!-- TODO: Replace screenshots and code snippets -->
+Edgeworx Cloud supports basic HTTP authentication through access tokens.
 
 Simply pass the token as username in
 the [HTTP Basic authentication](https://en.wikipedia.org/wiki/Basic_access_authentication) header.
@@ -17,14 +17,14 @@ your token before encoding.
 - Inside a URL:
 
 ```text
-https://<access_token>@api.darcy.io/v1/...
+https://<access_token>@api.edgeworx.io/v1/...
 ```
 
 - As an HTTP header (base64 encoded)
 
 ```text
 window.fetch(
-    "https://api.darcy.io/v1/account/cypress%40edgeworx.io",
+    "https://api.edgeworx.io/v1/account/cypress%40edgeworx.io",
     { headers:
         { Authorization: "Basic " + window.btoa("<access_token>:")}
     }

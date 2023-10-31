@@ -1,0 +1,24 @@
+Delete org by UUID or org name. Note that it's not possible to
+delete an account's personal org. Instead, delete the account.
+
+Usage:
+  edgectl delete org ORG_ID [flags]
+
+Examples:
+  # Delete org "acme"
+  $ edgectl delete acme
+
+  # Delete the org having uuid
+  $ edgectl delete org 6d154556-9e58-4330-a7f3-41c869f01142
+
+
+Flags:
+  -h, --help   help for org
+
+Global Flags:
+  -H, --header         Print header row
+  -j, --json           JSON output
+  -M, --monochrome     Don't colorize output
+  -t, --text           Text table output
+      --token string   Access Token
+  -v, --verbose        Verbose output

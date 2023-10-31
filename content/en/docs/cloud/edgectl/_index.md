@@ -1,16 +1,18 @@
 ---
 title: "edgectl"
-description: "edgectl is the CLI for Darcy Cloud."
+description: "edgectl is the CLI for Edgeworx Cloud."
 linkTitle: "edgectl CLI"
 weight: 300
 identifier: edgectl
 aliases:
-- /darcy/darcy-cloud/get-started-edgectl
-- /darcy-docs/darcy-cloud/get-started-edgectl
+- /edgeworx/edgeworx-cloud/get-started-edgectl
+- /darcy-docs/edgeworx-cloud/get-started-edgectl
 - /docs/cloud/edgectl
 - /docs/cloud/get-started-edgectl
 ---
-_edgectl_ is [Darcy Cloud's](/docs/cloud/start-portal) command line interface (CLI). It can be used to manage Darcy
+
+<!-- TODO: Need to include orgs and name change on all commands -->
+_edgectl_ is [Edgeworx Cloud's](/docs/cloud/start-portal) command line interface (CLI). It can be used to manage Edgeworx
 Cloud
 [accounts, organizations,](/docs/more/terminology/#account--org) [projects](/docs/more/terminology#project), [nodes](/docs/cloud/adding-nodes),
 and [applications](/docs/more/terminology#application).
@@ -18,12 +20,12 @@ and [applications](/docs/more/terminology#application).
 In this section we will show you how to use _edgectl_ to get started with your first project and
 deploy some live [microservices](/docs/apps/microservices) to the edge!
 
-## Create a Darcy Cloud Account
+## Create a Edgeworx Cloud Account
 
 Before installing and using _edgectl_, we must first create an account
-via [Darcy Cloud Portal](https://cloud.darcy.ai) (see [docs](/docs/cloud/start-portal).
+via [Edgeworx Cloud Portal](https://cloud.Edgeworx.io) (see [docs](/docs/cloud/start-portal).
 
-Navigate to [Cloud Portal](https://cloud.darcy.ai) and click the `Create Account` button in the top
+Navigate to [Cloud Portal](https://cloud.Edgeworx.io) and click the `Create Account` button in the top
 right.
 
 Enter your unique username and hit `NEXT`.
@@ -59,7 +61,7 @@ scoop install edgectl
 On Linux distros, use `get-edgectl.bash`:
 
 ```bash
-curl https://cloud.darcy.ai/get-edgectl.bash | bash
+curl -s https://cloud.Edgeworx.io/get-edgectl.bash | sudo bash
 ```
 
 {{% /tab %}}
@@ -74,16 +76,16 @@ your shell.
 
 ## Use edgectl
 
-Now we are ready to use _edgectl_ to login and start managing our Darcy Cloud resources.
+Now we are ready to use _edgectl_ to login and start managing our Edgeworx Cloud resources.
 
 ### Login
 
 _edgectl_ requires an [Access Token](/docs/cloud/access-tokens/). You can get one
-via: `edgectl login`, which will open a web browser on `cloud.darcy.ai`. After authentication,
+via: `edgectl login`, which will open a web browser on `cloud.Edgeworx.io`. After authentication,
 _edgectl_ will receive the account's master _Personal Access Token_, and will be logged in.
 
 If a web browser is not available (e.g. SSH'd into a box), you can also login by providing either
-a _Personal Access Token_ or _Project Access Token_ from `cloud.darcy.ai`. For _Personal Access
+a _Personal Access Token_ or _Project Access Token_ from `cloud.Edgeworx.io`. For _Personal Access
 Token_, click `Access Tokens` in the upper-right account menu. For _Project Access Token_, click the
 settings (gear) icon on the project page. Once you have the _Access Token_, you can execute:
 
@@ -111,11 +113,11 @@ Available Commands:
   describe    Show details of a resource
   get         Display one or many resources
   help        Help about any command
-  login       Login to Darcy Cloud API
-  logout      Logout from Darcy Cloud API
+  login       Login to Edgeworx Cloud API
+  logout      Logout from Edgeworx Cloud API
   logs        Display microservice logs
   patch       Update fields of a resource
-  ping        Ping Darcy Cloud API
+  ping        Ping Edgeworx Cloud API
   rename      Rename a resource
   restart     Restart a resource
   rotate      Rotate a resource
