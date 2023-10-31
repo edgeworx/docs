@@ -18,7 +18,7 @@ cards:
     subtitle: Add a node (or virtual node) to the edge in just a few minutes.
     action: Add a node
     time: Easy
-    link: '/docs/guides/deploy/'
+    link: '/docs/cloud/adding-nodes/add-node/'
     image: /images/guides/guide-thumb-deploy.jpg
 
   - title: Deploy an app to the edge in under 10 minutes.
