@@ -28,15 +28,17 @@ overlay [virtual application network](https://netprototalk.com/2019/11/12/virtua
 4. **Developer familiarity**: feels like the frameworks and tools you already know and love (Docker,
    Kubernetes, Terraform, GitOps, etc).
 
-Built by developers for developers, we focus on beautifully crafted interfaces (web and cli),
+   <!-- TODO Consider rewording this to also target decision makers?>
+
+Built by developers for developers, we focus on functional interfaces (web and CLI),
 thoughtful REST APIs and opinionated (and extensible) YAML specs for software deployment and
 integration with today’s most popular developer tools and workflows. If you know how to use
-Terraform or kubernetes then you'll be immediately at home with Edgeworx Cloud.
+Terraform or Kubernetes then you'll be immediately at home with Edgeworx Cloud.
 
 ![Projects Overview](/images/portal-projects-overivew-luckyspin.jpg)
 
 ### Features
-
+<!-- TODO check if first letters after colon need capitalization -->
 - **Edge Native Abstractions**: edge native implementations for agents, agent runtime, volumes,
   message routes and applications `Kinds`. All driven by Kubernetes
   inspired `kind` [specifications]({{<ref "/docs/apps/yaml-definition">}})
