@@ -11,7 +11,7 @@ cards:
     subtitle: Create your Edgeworx Cloud account and your first project.
     action: Create project
     time: Easy
-    link: '/docs/guides/start-portal/'
+    link: '/docs/cloud/start-portal/'
     image: /images/guides/guide-thumb-deploy.jpg
 
   - title: Add an edge node in under 10 minutes.
@@ -25,7 +25,7 @@ cards:
     subtitle: Package your app and deploy it to your edge node.
     action: Deploy an app
     time: Easy
-    link: '/docs/guides/deploy/'
+    link: '/docs/apps/deploy/'
     image: /images/guides/guide-thumb-deploy.jpg
   
 ---
