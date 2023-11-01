@@ -26,6 +26,6 @@ cards:
     action: Deploy an app
     time: Easy
     link: '/docs/apps/deploy/'
-    image: /images/guides/Guide—thumb-create-account.jpg
+    image: /images/guides/Guide—thumb-deployapp.jpg
   
 ---
