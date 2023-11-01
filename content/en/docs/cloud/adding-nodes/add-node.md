@@ -6,7 +6,7 @@ aliases:
 ---
 <!-- TODO: Replace screenshots -->
 To add a [node](../adding-nodes/_index.md) to your [project](/docs/more/terminology#project), you will be running a command line script. For this we assume you
-have ssh or console access to your node and are using a common shell, such as zsh or bash.
+have SSH or console access to your node and are using a common shell, such as zsh or bash.
 Additionally, the installation script by default will need to run as sudo to register the necessary
 services to be automatically started after the node is rebooted.
 
@@ -16,7 +16,7 @@ Add nodes using the Edgeworx Portal UI or terminal commands via [edgectl](../edg
 
 ### Get the node Install script
 
-Log into [Edgeworx Cloud](https://cloud.edgeworx.io) and select the project to which you want to [add the node](../../more/terminology#node-install-script).
+Log into [Edgeworx Cloud](https://cloud.edgeworx.io) and select the project you want to [add the node](../../more/terminology#node-install-script).
 
 ![Add Node](/images/add-node.png)
 
