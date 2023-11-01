@@ -15,7 +15,7 @@ that can serve data to an end user from the edge.
 In [Edgeworx Cloud](/docs/cloud/start-portal), nodes are edge devices that run Edgeworx Agents. Ultimately, we want to deploy
 apps to these nodes to put them to work.
 
-## Best AI performance
+## AI performance
 
 We recommend the following components for processing real-time video using AI at the edge:
 
@@ -27,7 +27,7 @@ We recommend the following components for processing real-time video using AI at
 
 ## More compatible edge boards
 
-Edgeworx Cloud is compatible with many Linux edge boards, such as:
+Edgeworx Cloud is compatible with many edge boards, such as:
 
 - Raspberry Pi 3 or 4
 - Asus Tinker
@@ -40,7 +40,11 @@ Edgeworx Cloud is compatible with many Linux edge boards, such as:
 - Ubuntu 16.04+
 - Debian 10+
 
+{{<warning>}}
+Due to various differences across Linux distros and their respective updates, you may need to use older versions or install dependencies before using the node register script. If you experience issues with an OS please contact [support](https://edgeworx.io/support).
+{{</warning>}}
+
 {{<info>}}
 If you don't have any edge hardware yet, you can create a [virtual node](/docs/cloud/adding-nodes/virtual-node.md) using Edgeworx Cloud, create a VM in the Cloud, a [Vagrant](https://www.vagrantup.com) image running on your device, or whatever virtualization software, and run
-the node installation script.
+the node register script.
 {{</info>}}

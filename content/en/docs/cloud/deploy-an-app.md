@@ -5,7 +5,7 @@ toc: true
 aliases:
   - /edgeworx/edgeworx-cloud/get-started-edgectl/deploy-an-app
 ---
-<!-- TODO: Replace screenshots -->
+
 Deploy apps using the Edgeworx Portal UI or terminal commands via [edgectl](../cloud/edgectl)
 
 #### Prerequisites
@@ -25,11 +25,11 @@ of [how to structure app YAML]({{<ref "/docs/apps/yaml-definition.md">}}) for Ed
 
 ### View your Application Details
 
-Click on your app in the list of [application](../more/terminology#application) to see its details.
+Click on your app in the list of [applications](../more/terminology#application) to see its details.
 
 ![Application Detail View](/images/18done.png)
 
-The appl details page contains information about its [microservices](../apps/microservices.md), routes, the nodes
+The app details page contains information about its [microservices](../apps/microservices.md), routes, the nodes
 involved in running the microservices and its YAML Definition.
 
 Edgeworx Cloud Portal allows you to edit your app YAML right in the browser. More information about the

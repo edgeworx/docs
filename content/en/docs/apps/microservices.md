@@ -60,6 +60,4 @@ different pieces of putting together a Docker container image. {{</info>}}
 
 ## Connecting microservices to edge application
 
-Once your microservice is deployed on your node, you're ready to connect it to your Application!
-
-[//]: # 'Check out the [Port Broker]({{<ref "port-broker.md">}}) section for configuration steps.'
+Once you deploy microservice(s), you're ready to connect them to your Application!

@@ -7,7 +7,7 @@ weight: 250
 ![Edgeworx CLoud Project Page](/images/guide4-deploy-cloud.jpg)
 
 ## What you will accomplish
-<!-- TODO: This content needs an extensive rewrite -->
+
 By the end of this guide, you will be able to deploy an edge application to any edge node on Edgeworx Cloud and use this knowledge to expedite software development and deployment for and at the edge at scale.
 
 {{<info>}}
@@ -15,7 +15,7 @@ This guide was created using an Raspberry Pi 4, however you can use any Linux ba
 {{</info>}}
 
 ### Software Requirements
-<!-- TODO Please confirm if we actually need either Docker things to deploy Hello-World -->
+
 - Edgeworx Cloud account (Free or paid)
 - Docker Desktop and a Docker account (only if you package your own Docker images)
 
@@ -35,8 +35,8 @@ from Docker after following those steps.
 
 ## Deploying your app
 
-### Add your devices to the Edgeworx Cloud
-<!-- TODO review the below. Seems too market-y for a guide? -->
+### Add your devices to Edgeworx Cloud
+
 [Edgeworx Cloud](/docs/cloud/start-portal) gives you management of all your [edge devices](/docs/cloud/adding-nodes) and [edge applications](/docs/more/terminology/#application) in one place.
 You can open a SSH shell session on demand, deploy applications, and see the health and status for
 every device. All of this functionality works no matter where your edge devices are physically
@@ -47,7 +47,7 @@ at [https://cloud.edgeworx.io](https://cloud.edgeworx.io).
 
 Once you are in your Edgeworx Cloud account, choose your Sandbox or a [project](/docs/more/terminology#project) nested in an Org, and [add your device as a node](/docs/cloud/adding-nodes/add-node.md) using the `+ ADD NODE` button. Follow the instructions in the pop-up window to
 continue with either a virtual node or physical device.
-<!-- TODO Screenshot needs to be updated -->
+
 ![Cloud Portal Plus Button](/images/guides/deploy-node-ui.gif)
 
 ### Create your application YAML
@@ -82,7 +82,7 @@ spec:
             accessMode: rw
 ```
 
-Your application deployment YAML file contains the information that the Edgeworx Cloud uses to load and
+Your application deployment YAML file contains the information that Edgeworx Cloud uses to load and
 run your Edgeworx application on any device. Replace the placeholder fields with your own
 information and save the file with whatever file name you like, such as `my-app-deploy.yaml`.
 
@@ -97,7 +97,7 @@ Now that you have all of the pieces, it's easy to deploy your application to you
 ![Deploy app animation](/images/guides/deploy-app-ui.gif)
 
 In the pop-up window, choose the `UPLOAD YOUR APP` option and you can drag and drop your YAML file into that window or upload it.
-<!-- TODO image below is dead -->
+
 ![Deploy App](/images/edgeworx-cloud-custom-app-deployment.png)
 
 Edgeworx Cloud will notify you if there are issues with the YAML file or your app deployment. Once deployed, you can monitor the image or images being pulled and their status once it is running.
@@ -112,5 +112,4 @@ application to an edge node using Edgeworx Cloud. This image can now be deployed
 
 ## Next steps
 
-<!-- TODO reword this-->
 With this foundational knowledge you can now deploy applications with confidence.  
