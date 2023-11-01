@@ -38,7 +38,7 @@ Terraform or Kubernetes then you'll be immediately at home with Edgeworx Cloud.
 ### Features
 
 - **Edge Native Abstractions**: edge native implementations for agents, agent runtime, volumes,
-  message routes and applications `Kinds`. All driven by Kubernetes.
+  message routes and applications `Kinds`. All driven by Kubernetes
   inspired `kind` [specifications]({{<ref "/docs/apps/yaml-definition">}})
 - **Edge Control Plane**: manage all aspects of your edge deployment from the Cloud (provisioning,
   deployment, orchestration, resources, monitoring, updates, etc.).
