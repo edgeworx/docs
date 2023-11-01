@@ -60,4 +60,4 @@ different pieces of putting together a Docker container image. {{</info>}}
 
 ## Connecting microservices to edge application
 
-Once you deploy your one or more microservices, you're ready to connect it to your Application!
+Once you deploy your one or more microservices, you're ready to connect them to your Application!
