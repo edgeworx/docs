@@ -29,7 +29,7 @@ Click on your app in the list of [applications](../more/terminology#application)
 
 ![Application Detail View](/images/18done.png)
 
-The details presented shows information about its [microservices](../apps/microservices.md), routes, the nodes
+The app details page contains information about its [microservices](../apps/microservices.md), routes, the nodes
 involved in running the microservices and its YAML Definition.
 
 Edgeworx Cloud Portal allows you to edit your app YAML right in the browser. More information about the

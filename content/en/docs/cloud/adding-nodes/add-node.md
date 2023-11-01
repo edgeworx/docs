@@ -74,7 +74,7 @@ Get the node register script using the below command:
 edgectl get node-register-script
 ```
 
-We can use the output of that command on our edge devices to install Edgeworx Agent and connect to your Edgeworx
+We can use the output of that command on your edge devices to install Edgeworx Agent and connect to your Edgeworx
 Cloud Project. This command can be used any number of times on different devices to grow the
 respective project's node pool.
 

@@ -41,7 +41,7 @@ Edgeworx Cloud is compatible with many edge boards, such as:
 - Debian 10+
 
 {{<warning>}}
-Due to various differences across Linux distros and their respective updates, you may need to use older versions or install dependencies before using the node register script. If you experience issues with an OS please reach contact support.
+Due to various differences across Linux distros and their respective updates, you may need to use older versions or install dependencies before using the node register script. If you experience issues with an OS please contact [support](https://edgeworx.io/support).
 {{</warning>}}
 
 {{<info>}}
