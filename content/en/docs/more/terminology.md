@@ -31,7 +31,7 @@ must provide an email and select a unique _username_.
 ### Orgs (organizations)
 
 An _Org_ (i.e. _Organization)_ is typically created for a corporate entity. For
-example, `Acme, Inc.` may create an org `acme`. An _org_ is the container for projects. The personal org may only contain the Sandbox environment. 
+example, `Acme, Inc.` may create an org `acme`. An _org_ is the container for projects. The personal org may only contain the Sandbox environment.
 
 On creating a new account, a new _Personal Org_ is automatically created for that account. Thus if
 the account username is `alice`, a new org `alice` is also created, and so Alice's projects will
@@ -39,7 +39,7 @@ live under her `alice` _org_.
 
 ### Sandbox
 
-Edgeworx Cloud comes with a free, single node environment we call a Sandbox to test your various edge resources without needing to purchase an Org. Each account can only have one Sandbox environment at a time. 
+Edgeworx Cloud comes with a free, single node environment we call a Sandbox to test your various edge resources without needing to purchase an Org. Each account can only have one Sandbox environment at a time.
 
 ### Access Token
 
@@ -72,7 +72,7 @@ Tokens_ if desired.
 ### Node
 
 A _node_ is a physical (or virtual) edge device, such as a Raspberry Pi, Intel NUC, Google Coral, or
-almost any device running compatible Linux operating systems and supports containerization. 
+almost any device running compatible Linux operating systems and supports containerization.
 
 To add a _node_ to a _project_, execute the project's _node register script_ directly on that node.
 

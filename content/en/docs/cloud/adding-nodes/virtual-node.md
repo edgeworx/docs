@@ -79,7 +79,7 @@ edgectl set default project xxxxxx
 ## Replace x's with your appropriate Org and Project name
 ```
 
-You can then create a Virtual Node using the below command. 
+You can then create a Virtual Node using the below command.
 
 ```bash
 edgectl create virtual-node 
