@@ -33,9 +33,9 @@ Click the `COPY` button to copy the install command to your clipboard.
 
 ### Run the node register script
 
-SSH into the device using a user with sudo privileges or SSH via Cloud Portal.
+SSH into the device with sudo privileges or SSH via Cloud Portal.
 
-Paste the install script that you copied in the previous step into your terminal.
+Paste the register script that you copied in the previous step into your terminal.
 The entire install
 process can take up to a few minutes (depending on the spec of your node, your internet connection
 speed, and other dependencies).
