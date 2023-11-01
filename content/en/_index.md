@@ -12,20 +12,20 @@ cards:
     action: Create project
     time: Easy
     link: '/docs/cloud/start-portal/'
-    image: /images/guides/guide-thumb-deploy.jpg
+    image: /images/guides/Guide—thumb-create-account.jpg
 
   - title: Add an edge node in under 10 minutes.
     subtitle: Add a node (or virtual node) to the edge in just a few minutes.
     action: Add a node
     time: Easy
     link: '/docs/cloud/adding-nodes/add-node/'
-    image: /images/guides/guide-thumb-deploy.jpg
+    image: /images/guides/Guide—thumb-addnode.jpg
 
   - title: Deploy an app to the edge in under 10 minutes.
     subtitle: Package your app and deploy it to your edge node.
     action: Deploy an app
     time: Easy
     link: '/docs/apps/deploy/'
-    image: /images/guides/guide-thumb-deploy.jpg
+    image: /images/guides/Guide—thumb-create-account.jpg
   
 ---
