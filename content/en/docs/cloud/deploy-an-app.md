@@ -5,7 +5,7 @@ toc: true
 aliases:
   - /edgeworx/edgeworx-cloud/get-started-edgectl/deploy-an-app
 ---
-<!-- TODO: Replace screenshots -->
+
 Deploy apps using the Edgeworx Portal UI or terminal commands via [edgectl](../cloud/edgectl)
 
 #### Prerequisites

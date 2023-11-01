@@ -3,7 +3,7 @@ title: "Add a Virtual Node"
 description: "Add a Virtual Node (lightweight local VM) to Edgeworx Cloud"
 weight: 450
 ---
-<!-- TODO: Redo screenshots -->
+
 Typically you want to push your apps to a "real edge node".
 However, if you do not have a device to test on, you can simulate one using the Virtual Node feature.
 

@@ -57,7 +57,6 @@ The highlights of this release are Virtual Node, and support for running Edgewor
 - If you don't have an edge node (Raspberry Pi, Jetson Nano, etc.) available, you can now create
   a [Virtual Node](/docs/cloud/adding-nodes/virtual-node/) for development purposes. A Virtual Node is effectively a local VM that appears
   to Edgeworx Cloud as an edge node.
-  <!-- TODO add link when available -->
 - [Edgeworx AI Engine](https://edgeworx.io) works best when an AI accelerator (such as a Google Coral) is available, but now
   AI Engine can run directly on CPU. This is useful for local development.
 

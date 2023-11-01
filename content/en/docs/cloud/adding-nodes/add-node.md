@@ -4,7 +4,7 @@ weight: 400
 aliases:
   - /edgeworx/edgeworx-cloud/get-started-ec/nodes/get-started-add-node
 ---
-<!-- TODO: Replace screenshots -->
+
 To add a [node](../adding-nodes/_index.md) to your [project](/docs/more/terminology#project), you will be running a command line script. For this we assume you
 have SSH or console access to your node and are using a common shell, such as zsh or bash.
 Additionally, the registration script by default will need to run as sudo to register the necessary

@@ -14,7 +14,6 @@ _Edgeworx Cloud_ is the platform for managing and monitoring edge devices. Edgew
 web-based portal at [cloud.edgeworx.io](https://cloud.edgeworx.io).
 
 ### Cloud API
-<!-- TODO add correct link below, might be https://api.edgeworx.io/v1/docs -->
 _Cloud API_ is the REST API for _Edgeworx Cloud_. _Cloud Portal_ and _edgectl_ both communicate with
 Cloud API. You may also build your own applications that interact directly with cloud API. See the
 Cloud API [REST documentation](https://edgeworx.io).

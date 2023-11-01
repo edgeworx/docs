@@ -99,7 +99,6 @@ the live site.
 ## Content
 
 ### Format
-<!-- TODO: Flesh this part out further. Ask frontend -->
 Content added by Edgeworx or the community must follow the guidelines below:
 - Must use `ALICE` and `BOB` users in all screenshots or code referencing a user. 
 - Screenshots must be PNG if static and GIF/WEBM files for moving pictures at desktop breakpoints. Smaller breakpoints require scaled images. (media queries) <-- to be confirmed

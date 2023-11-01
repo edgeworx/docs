@@ -4,7 +4,7 @@ weight: 800
 aliases:
   - /edgeworx/edgeworx-cloud/access-tokens
 ---
-<!-- TODO: Replace screenshots and code snippets -->
+
 Edgeworx Cloud supports basic HTTP authentication through access tokens.
 
 Simply pass the token as username in
