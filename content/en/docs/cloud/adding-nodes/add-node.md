@@ -7,16 +7,16 @@ aliases:
 <!-- TODO: Replace screenshots -->
 To add a [node](../adding-nodes/_index.md) to your [project](/docs/more/terminology#project), you will be running a command line script. For this we assume you
 have SSH or console access to your node and are using a common shell, such as zsh or bash.
-Additionally, the installation script by default will need to run as sudo to register the necessary
+Additionally, the registration script by default will need to run as sudo to register the necessary
 services to be automatically started after the node is rebooted.
 
 Add nodes using the Edgeworx Portal UI or terminal commands via [edgectl](../edgectl)
 
 ## Add a node using Edgeworx Cloud Portal
 
-### Get the node Install script
+### Get the node register script
 
-Log into [Edgeworx Cloud](https://cloud.edgeworx.io) and select the project you want to [add the node](../../more/terminology#node-install-script).
+Log into [Edgeworx Cloud](https://cloud.edgeworx.io) and select the project you want to [add the node](../../more/terminology#node-register-script).
 
 ![Add Node](/images/add-node.png)
 
@@ -31,7 +31,7 @@ host for it to become a node in your edge project.
 
 Click the `COPY` button to copy the install command to your clipboard.
 
-### Run the node Install script
+### Run the node register script
 
 SSH into the device using a user with sudo privileges or SSH via Cloud Portal.
 
@@ -44,7 +44,7 @@ speed, and other dependencies).
 
 {{<info>}}
 If you would like to choose a specific name for your node, use the
-variable `Edgeworx_NODE_NAME="your-choice-of-name"` in the node install script
+variable `Edgeworx_NODE_NAME="your-choice-of-name"` in the node register script
 as in the example below.
 {{</info>}}
 
@@ -68,7 +68,7 @@ edgectl set default project xxxxxx
 ## Replace x's with your appropriate Org and Project name
 ```
 
-Get the node install script using the below command:
+Get the node register script using the below command:
 
 ```bash
 edgectl get node-register-script
@@ -78,18 +78,18 @@ We can use the output of that command on our edge devices to install Edgeworx Ag
 Cloud Project. This command can be used any number of times on different devices to grow the
 respective project's node pool.
 
-If you wish view the raw contents of the node install script:
+If you wish view the raw contents of the node register script:
 
 ```bash
-edgectl project node-install-script --show-script --text
+edgectl project node-register-script --show-script --text
 ```
 
 This is helpful if you wish to review or debug the installation procedure.
 
-As the install script runs, you will see it's progress as it install dependencies.
+As the register script runs, you will see it's progress as it install dependencies.
 
 ```bash
-pi@raspberrypi:~ $ curl -s https://ecj_vfsdasdasdxaeaeh2kskkv301e9f0ip@api.edgeworx.io/v1/project/b7asdasdas-e3f-4808-a992-0811e077d783/node-install-script | sudo bash
+pi@raspberrypi:~ $ curl -s https://ecj_vfsdasdasdxaeaeh2kskkv301e9f0ip@api.edgeworx.io/v1/project/b7asdasdas-e3f-4808-a992-0811e077d783/node-register-script | sudo bash
 Installing Edgeworx Agent
 １ Initializing
       ✔ Package manager updated

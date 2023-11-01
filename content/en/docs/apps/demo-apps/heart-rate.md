@@ -15,8 +15,8 @@ heart rate data on a graph.
 
 #### Requirements
 
-- A Edgeworx Cloud Account
-- Any edge node (or a virtual node)
+- An Edgeworx Cloud Account
+- One or more nodes
 
 {{<info>}} Although this [application](/docs/more/terminology#application) works best with two nodes, you can deploy it with only one
 node and run all [microservices](/docs/apps/microservices) on the same device. The YAML will automatically detect if you have

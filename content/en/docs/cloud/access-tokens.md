@@ -48,7 +48,7 @@ connected to the user account.
 ### Project Access Token
 
 [Project](../more/terminology#project) Access Tokens have full access to the project they represent and have a lifecycle connected
-to their project. Those are the token used in the [node install script](../more/terminology#node-install-script).
+to their project. Those are the token used in the [node register script](../more/terminology#node-install-script).
 
 ![Project Access Token](</images/image (29).png>)
 

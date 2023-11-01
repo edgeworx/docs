@@ -21,7 +21,7 @@ edgectl. Linux users can directly use the Register Node command on their termina
 You can still build locally using attached video and deploy to edge devices with attached video.
 {{</warning>}}
 
-## Get the Virtual Node Installation Script
+## Creating a Virtual Node
 
 ### Add a Virtual Node using Edgeworx Cloud Portal
 

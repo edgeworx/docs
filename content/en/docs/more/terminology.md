@@ -31,11 +31,15 @@ must provide an email and select a unique _username_.
 ### Orgs (organizations)
 
 An _Org_ (i.e. _Organization)_ is typically created for a corporate entity. For
-example, `Acme, Inc.` may create an org `acme`. An _org_ is the container for projects.
+example, `Acme, Inc.` may create an org `acme`. An _org_ is the container for projects. The personal org may only contain the Sandbox environment. 
 
 On creating a new account, a new _Personal Org_ is automatically created for that account. Thus if
 the account username is `alice`, a new org `alice` is also created, and so Alice's projects will
 live under her `alice` _org_.
+
+### Sandbox
+
+Edgeworx Cloud comes with a free, single node environment we call a Sandbox to test your various edge resources without needing to purchase an Org. Each account can only have one Sandbox environment at a time. 
 
 ### Access Token
 
@@ -68,21 +72,19 @@ Tokens_ if desired.
 ### Node
 
 A _node_ is a physical (or virtual) edge device, such as a Raspberry Pi, Intel NUC, Google Coral, or
-any supported edge device (including Linux VMs).
+almost any device running compatible Linux operating systems and supports containerization. 
 
-To add a _node_ to a _project_, execute the project's _node install script_ directly on that node.
+To add a _node_ to a _project_, execute the project's _node register script_ directly on that node.
 
-### Node Install Script
+### Node Register Script
 
-You add a _node_ to a _project_ by executing the project's _node install script_ directly on the
+You add a _node_ to a _project_ by executing the project's _node register script_ directly on the
 _node_.
 
 ```bash
-$ ssh alice@mypi
-# You are logged into mypi
-
-# Fetch and and execute the node install script
-$ curl -s https://ecj_hv98d4adwdhgk435ebzuwakfg995016kh3ys@api.edgeworx.io/v1/project/6077569f-4351-4245-a3e2-41d2452857d5/node-install-script | sudo bash
+$ edgectl get node-register-script
+# Copy and paste the output
+$ curl -s https://ecj_hv98d4adwdhgk435ebzuwakfg995016kh3ys@api.edgeworx.io/v1/project/6077569f-4351-4245-a3e2-41d2452857d5/node-register-script | sudo bash
 Installing Edgeworx Agent
 １ Initializing
 ２ Finger printing system
@@ -94,8 +96,8 @@ Installing Edgeworx Agent
 [...]
 ```
 
-You can access the _node install script_ via the `Add Node` button in _Cloud Portal_, or by
-executing `edgectl get node-install-script`.
+You can access the _node register script_ via the `Add Node` button in _Cloud Portal_, or by
+executing `edgectl get node-register-script`.
 
 ### Application
 
