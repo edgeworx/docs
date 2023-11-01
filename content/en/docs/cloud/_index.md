@@ -28,7 +28,7 @@ overlay [virtual application network](https://netprototalk.com/2019/11/12/virtua
 4. **Developer familiarity**: feels like the frameworks and tools you already know and love (Docker,
    Kubernetes, Terraform, GitOps, etc).
 
-Built by developers for developers, we focus on functional interfaces (web and CLI),
+Built by developers for developers, we focus on intuitive interfaces (web and CLI),
 thoughtful REST APIs and opinionated (and extensible) YAML specs for software deployment and
 integration with today’s most popular developer tools and workflows. If you know how to use
 Terraform or Kubernetes then you'll be immediately at home with Edgeworx Cloud.
