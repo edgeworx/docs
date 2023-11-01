@@ -89,7 +89,7 @@ This is helpful if you wish to review or debug the installation procedure.
 As the install script runs, you will see it's progress as it install dependencies.
 
 ```bash
-pi@raspberrypi:~ $ curl -s https://ecj_vfsw9wess5kheafxaeaeh2kskkv301e9f0ip@api.edgeworx.io/v1/project/b75676cb-ae3f-4808-a992-0811e077d783/node-install-script | sudo bash
+pi@raspberrypi:~ $ curl -s https://ecj_vfsdasdasdxaeaeh2kskkv301e9f0ip@api.edgeworx.io/v1/project/b7asdasdas-e3f-4808-a992-0811e077d783/node-install-script | sudo bash
 Installing Edgeworx Agent
 １ Initializing
       ✔ Package manager updated
@@ -143,4 +143,4 @@ Note the final two lines: The first line provides a link to view your node in th
 portal. The final line provides a command to uninstall the software and detach the node from Edgeworx
 Cloud.
 
-Now that we have our node connected to Edgeworx Cloud, we can install an application to that node.
+If the script fails during install of dependencies, the script will return that it encountered an error and present the path of a generated log file for debugging.
