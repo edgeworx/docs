@@ -20,11 +20,11 @@ Log into [Edgeworx Cloud](https://cloud.edgeworx.io) and select the project you 
 
 ![Add Node](/images/add-node.png)
 
-Click the `+ ADD NODE` button. This will bring up a modal dialog which shows all the type of node you could add in your project.
+Click the `+ ADD NODE` button. This will bring up a modal dialog which shows all the types of nodes you could add in your project.
 
 ![Register Node Script](/images/select-node-type.png)
 
-Click on `EDGE DEV BOARD (LINUX)` This will bring up a modal dialog which shows the one line command that must be run on your
+Click on `EDGE NODE`. This will bring up a modal dialog which shows the one line command that must be run on your
 host for it to become a node in your edge project.
 
 ![Register Node Script](/images/add-edge-node.png)
@@ -33,9 +33,9 @@ Click the `COPY` button to copy the install command to your clipboard.
 
 ### Run the node Install script
 
-SSH onto your host (or log in via the Cloud Portal) with a user that is in the `sudo` group.
+SSH into the device using a user with sudo privileges or SSH via Cloud Portal.
 
-Paste the command line that you copied in the previous step into your terminal.
+Paste the install script that you copied in the previous step into your terminal.
 The entire install
 process can take up to a few minutes (depending on the spec of your node, your internet connection
 speed, and other dependencies).
@@ -44,40 +44,37 @@ speed, and other dependencies).
 
 {{<info>}}
 If you would like to choose a specific name for your node, use the
-variable `Edgeworx_NODE_NAME="your-choice-of-name"` in the _node install script_
+variable `Edgeworx_NODE_NAME="your-choice-of-name"` in the node install script
 as in the example below.
 {{</info>}}
 
 ### View the node in Your Edgeworx Cloud Project
 
-Switch back to your browser and if you have not done so yet, click the `DONE` button in the modal dialog. You
-should see your new node `ONLINE` in your Nodes list. If you do not see your node online, check our
-Troubleshooting page for more information.
+Switch back to your project and if you have not done so yet, click the `DONE` button in the modal dialog. You
+should see your new node `ONLINE` in your nodes list.
 
 ![Node Added](/images/1st-node-added.png)
 
-You now have an edge node, let's start using it!
-
 ## Add a node using edgectl
 
-In [Edgeworx Cloud](/docs/cloud/start-portal), nodes are edge devices that run Edgeworx Agents. Ultimately, we want to deploy
-[applications](/docs/more/terminology#application) to these nodes to put them to work.
+If you do not have edgectl, open the hamburger menu in the top right of the portal and click the `Get the CLI` link. A modal will appear with a script Linux, MacOS, and Windows.
 
-If we list nodes in our default [organization](/docs/more/terminology#account--org) and project, we will notice that we have no nodes:
-
-```bash
-edgectl get nodes
-```
-
-In order to deploy nodes, we must get the node install script. You can use this command to get a
-shell snippet that you can execute on the node:
+Once you log into your account via the CLI, set your default Org and Project and run the below command to view any nodes in the project.
 
 ```bash
-$ edgectl get node-register-script -t
-curl -s https://ecj_vfsw9wess5kheafxaeaeh2kskkv301e9f0ip@api.edgeworx.io/v1/project/b75676cb-ae3f-4808-a992-0811e077d783/node-install-script | sudo bash
+edgectl login 
+edgectl set default org xxxxxx 
+edgectl set default project xxxxxx
+## Replace x's with your appropriate Org and Project name
 ```
 
-We can use this shell snippet on our edge devices to install Edgeworx Agent and connect to our Edgeworx
+Get the node install script using the below command:
+
+```bash
+edgectl get node-register-script
+```
+
+We can use the output of that command on our edge devices to install Edgeworx Agent and connect to your Edgeworx
 Cloud Project. This command can be used any number of times on different devices to grow the
 respective project's node pool.
 
@@ -89,28 +86,7 @@ edgectl project node-install-script --show-script --text
 
 This is helpful if you wish to review or debug the installation procedure.
 
-### Example
-
-First, get the node-install-script shell snippet, and copy it to the clipboard:
-
-```bash
-$ edgectl get node-install-script -t
-curl -s https://ecj_vfsw9wess5kheafxaeaeh2kskkv301e9f0ip@api.edgeworx.io/v1/project/b75676cb-ae3f-4808-a992-0811e077d783/node-install-script | sudo bash
-```
-
-Then `SSH` into your node (in this case, a Raspberry Pi):
-
-```bash
-$ ssh pi@raspberrypi.local
-pi@raspberrypi.local's password: ********
-Linux raspberrypi 5.10.94-v8+ #1518 SMP PREEMPT Thu Jan 27 14:55:19 GMT 2022 aarch64
-
-Last login: Wed Feb 23 19:26:53 2022
-pi@raspberrypi:~ $
-```
-
-Then paste the node install script shell snippet at the Pi terminal. This installs the necessary
-Edgeworx Cloud components, and connects your node to Edgeworx Cloud.
+As the install script runs, you will see it's progress as it install dependencies.
 
 ```bash
 pi@raspberrypi:~ $ curl -s https://ecj_vfsw9wess5kheafxaeaeh2kskkv301e9f0ip@api.edgeworx.io/v1/project/b75676cb-ae3f-4808-a992-0811e077d783/node-install-script | sudo bash

@@ -41,9 +41,8 @@ Edgeworx Cloud is compatible with many edge boards, such as:
 - Debian 10+
 
 {{<warning>}}
-Due to various differences across Linux distros and their respective updates, you may need to use older versions or install dependencies before using the node install script. If you experience issues with an OS please reach contact support. 
+Due to various differences across Linux distros and their respective updates, you may need to use older versions or install dependencies before using the node install script. If you experience issues with an OS please reach contact support.
 {{</warning>}}
-
 
 {{<info>}}
 If you don't have any edge hardware yet, you can create a [virtual node](/docs/cloud/adding-nodes/virtual-node.md) using Edgeworx Cloud, create a VM in the Cloud, a [Vagrant](https://www.vagrantup.com) image running on your device, or whatever virtualization software, and run
