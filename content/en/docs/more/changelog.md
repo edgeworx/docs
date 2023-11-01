@@ -170,8 +170,8 @@ several Edgeworx Cloud components.
 #### Action Required
 
 For users that already have nodes registered with Edgeworx Cloud, it is necesary to re-run your
-project's _Node register Script_ directly (via SSH) on each of your existing nodes. In effect, the
-_Node register Script_ is performing an upgrade of Edgeworx components on your node. You should have
+project's _Node Register Script_ directly (via SSH) on each of your existing nodes. In effect, the
+_Node Register Script_ is performing an upgrade of Edgeworx components on your node. You should have
 received email communication with detailed steps on how to upgrade the node.
 
 For users of `edgectl`, please upgrade to the latest version, for example: `$ brew upgrade edgectl`
