@@ -6,7 +6,7 @@ aliases:
   - /docs/cloud/portal/ai-explorer-app/app-yaml/
 ---
 
-[Edgeworx Cloud](/docs/cloud/start-portal) uses [Eclipse ioFog](https://iofog.org) under the covers to deploy and manage
+[Edgeworx Cloud](/docs/guides/start-portal) uses [Eclipse ioFog](https://iofog.org) under the covers to deploy and manage
 [applications](../more/terminology#application), and all Edgeworx applications are deployed to edge [node(s)](../cloud/adding-nodes/_index.md) via a YAML configuration file.
 
 We directly use the ioFog YAML specifications for defining different resource `Kinds`. For
