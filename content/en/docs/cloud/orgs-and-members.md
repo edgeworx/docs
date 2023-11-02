@@ -12,11 +12,11 @@ those projects are created inside her personal org, e.g. `alice/someproject`.
 For collaboration, you should create a separate org for your company.
 For example, if Alice's employer is Acme Corp., she would create an org `acme`. New
 projects would be created inside the `acme` org, e.g. `acme/megaproject`. (Projects can also be
-[migrated](docs/cloud/migrate-project/) from Alice's personal org to the corporate org).
+ from Alice's personal org to the corporate org).
 Naturally Alice can invite people to join the org.
 
 When inviting a member to the org, you must specify the permissions that member has. These permissions
-can be reviewed at the [scopes and permissions page](/docs/cloud/scopes-and-permissions).
+can be reviewed at the
 
 A member's permissions are set when the [org invite is created](/docs/cloud/edgectl/create-invite).
 The permissions can also be [modified](/docs/cloud/edgectl/patch-member/) by an org admin. A member
@@ -65,7 +65,7 @@ you first sign up). You will then be guided through creation. The only required 
 Use [`edgectl create invite`](/docs/cloud/edgectl/create-invite) to invite people
 to join the org. Below, Alice invites her colleague Bob to join the `acme` org
 as an admin. Other scopes (permissions) include "owner" and "write". You can learn
-more about [scopes and permissions here](/docs/cloud/scopes-and-permissions)
+more about
 
 ```shell
 $ edgectl create invite --email bob@acme.com --org acme --scope org:admin

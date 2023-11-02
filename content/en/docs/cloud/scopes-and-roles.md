@@ -33,4 +33,4 @@ A `permission` determines what actions a user can perform.
   - Referred to as an _Org Owner_.
 
 You can set the permissions through the Cloud Portal and CLI when inviting members to the org,
-these instructions can be seen on the [orgs and members](/docs/cloud/orgs-and-members) page.
+these instructions can be seen on the org and members page.

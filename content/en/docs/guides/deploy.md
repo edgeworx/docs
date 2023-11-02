@@ -37,7 +37,7 @@ from Docker after following those steps.
 
 ### Add your devices to Edgeworx Cloud
 
-[Edgeworx Cloud](/docs/cloud/start-portal) gives you management of all your [edge devices](/docs/cloud/adding-nodes) and [edge applications](/docs/more/terminology/#application) in one place.
+[Edgeworx Cloud](/docs/guides/start-portal) gives you management of all your [edge devices](/docs/cloud/adding-nodes) and [edge applications](/docs/more/terminology/#application) in one place.
 You can open a SSH shell session on demand, deploy applications, and see the health and status for
 every device. All of this functionality works no matter where your edge devices are physically
 located, even when they are behind NAT layers and firewalls.
@@ -98,7 +98,7 @@ Now that you have all of the pieces, it's easy to deploy your application to you
 
 In the pop-up window, choose the `UPLOAD YOUR APP` option and you can drag and drop your YAML file into that window or upload it.
 
-![Deploy App](/images/edgeworx-cloud-custom-app-deployment.png)
+![Deploy App](/images/guides/deployAnApp.PNG)
 
 Edgeworx Cloud will notify you if there are issues with the YAML file or your app deployment. Once deployed, you can monitor the image or images being pulled and their status once it is running.
 
