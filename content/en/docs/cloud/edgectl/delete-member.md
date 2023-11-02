@@ -1,7 +1,7 @@
 ---
 title: "delete member"
 description: "edgectl delete member"
-draft: true
+draft: false
 menu:
   docs:
     identifier: "delete-member"

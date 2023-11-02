@@ -24,7 +24,7 @@ $blue-300: #8ed6fb;
 $pink-100: #fcfaff;
 $pink-500: #d32e9d;
 
-// Darcy colors
+// Edgeworx colors
 
 $edgeneutral-0: #fff;
 $edgeneutral-05: #f1f3f8;
@@ -33,14 +33,15 @@ $edgeneutral-2: #a9b2bc;
 $edgeneutral-3: #0a415e;
 $edgeneutral-4: #012d44;
 $edgeneutral-5: #002131;
-$darcy-blue: #0195d9;
-$darcy-blue-dark: #5ac8fa;
-$darcy-red: #fd575d;
-$darcy-green: #1bc0a9;
-$darcy-gold: #edac40;
+$edgeneutral-6: #181f22;
+$edgeworx-blue: #0195d9;
+$edgeworx-blue-dark: #5ac8fa;
+$edgeworx-red: #fd575d;
+$edgeworx-green: #1bc0a9;
+$edgeworx-gold: #edac40;
 
-$primary: $darcy-blue;
-$primary-dark: $darcy-blue-dark;
+$primary: $edgeworx-blue;
+$primary-dark: $edgeworx-blue-dark;
 
 $color-btn-bg: $pink-500;
 $color-btn-border: darken($pink-500, 5%);

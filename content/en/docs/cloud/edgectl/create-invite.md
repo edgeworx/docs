@@ -1,7 +1,7 @@
 ---
 title: "create invite"
 description: "edgectl create invite"
-draft: true
+draft: false
 menu:
   docs:
     identifier: "create-invite"

@@ -2,12 +2,12 @@
 title: "Heart Rate demo app"
 weight: 160
 aliases:
-  - /darcy/darcy-cloud/get-started-ec/heart-rate-application
+  - /edgeworx/edgeworx-cloud/get-started-ec/heart-rate-application
 ---
 
 ![Heart Rate Demo App](/images/15done.png)
 
-The Heart Rate app provided on the [Darcy Cloud](docs/cloud/start-portal) platform simulates a wearable device
+The Heart Rate app provided on the [Edgeworx Cloud](docs/guides/start-portal) platform simulates a wearable device
 transmitting a person's heartbeat at the edge. The Wearable sends heart rate data over bluetooth to
 a data collector [microservice](/docs/apps/microservices) located on the primary [node](../../cloud/adding-nodes/_index.md). The Data collector microservice then
 communicates with another microservice running a web server on the secondary node to display the
@@ -15,8 +15,8 @@ heart rate data on a graph.
 
 #### Requirements
 
-- A Darcy Cloud Account
-- Any edge node (or a virtual node)
+- An Edgeworx Cloud Account
+- One or more nodes
 
 {{<info>}} Although this [application](/docs/more/terminology#application) works best with two nodes, you can deploy it with only one
 node and run all [microservices](/docs/apps/microservices) on the same device. The YAML will automatically detect if you have
@@ -24,16 +24,16 @@ one or two nodes. {{</info>}}
 
 ---
 
-## Deploy using Darcy Cloud Portal
+## Deploy using Edgeworx Cloud Portal
 
-Deploying the Heart Rate Application from the Darcy Cloud platform is extremely simple. Make sure
-you have [added at least 1 node]({{<ref "/docs/cloud/adding-nodes/add-node.md">}}) to your Darcy Cloud [project](../../more/terminology#project), then
+Deploying the Heart Rate Application from the Edgeworx Cloud platform is extremely simple. Make sure
+you have [added at least 1 node]({{<ref "/docs/cloud/adding-nodes/add-node.md">}}) to your Edgeworx Cloud [project](../../more/terminology#project), then
 follow the steps below:
 
-1. Go to your Darcy Cloud project page
+1. Go to your Edgeworx Cloud project page
 2. Select `Apps`
 3. Click on `+ DEPLOY APP`
-4. Click on `DARCY HEART RATE DEMO`
+4. Click on `Edgeworx HEART RATE DEMO`
 5. Select the node(s) where you want it to run
 6. Click `DEPLOY`
 
@@ -64,15 +64,15 @@ You should be brought to the Heart Rate Demo App.
 kind: Application
 apiVersion: iofog.org/v3
 metadata:
-  name: darcy-heart-rate-demo
+  name: edgeworx-heart-rate-demo
 spec:
   microservices:
     - name: data-generator
       agent:
         name: '{% raw %}{% assign agent = "" | findAgent | first %}{{ agent.name }}'
       images:
-        arm: 'darcyai/heart-rate-demo-generator:1.0.0'
-        x86: 'darcyai/heart-rate-demo-generator:1.0.0'
+        arm: 'edgeworx/heart-rate-demo-generator:1.0.0'
+        x86: 'edgeworx/heart-rate-demo-generator:1.0.0'
       container:
         rootHostAccess: false
         ports: []
@@ -83,8 +83,8 @@ spec:
       agent:
         name: virtual-node-alexpc
       images:
-        arm: 'darcyai/heart-rate-demo-viewer:1.0.0'
-        x86: 'darcyai/heart-rate-demo-viewer:1.0.0'
+        arm: 'edgeworx/heart-rate-demo-viewer:1.0.0'
+        x86: 'edgeworx/heart-rate-demo-viewer:1.0.0'
       container:
         rootHostAccess: false
         ports:

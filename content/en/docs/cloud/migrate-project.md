@@ -18,7 +18,7 @@ perform the project migration `alice/projecthatter --> acme/projecthatter`.
 The person performing the migration must have role `org:admin` (or higher) on both the
   source org (`alice` in this case) and the destination org (`acme`).
 
-If you don't have sufficient privileges, contact [Darcy Support](mailto:support@darcy.ai) for assistance.
+If you don't have sufficient privileges, contact [Edgeworx Support](mailto:support@edgeworx.io) for assistance.
 
 {{</info>}}
 
