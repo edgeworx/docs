@@ -1,5 +1,5 @@
 ---
-title: "Darcy demo apps"
+title: "Edgeworx demo apps"
 weight: 100
-linkTitle: "Darcy demo apps"
+linkTitle: "Edgeworx demo apps"
 ---

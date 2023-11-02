@@ -2,10 +2,10 @@
 title: "Access tokens"
 weight: 800
 aliases:
-  - /darcy/darcy-cloud/access-tokens
+  - /edgeworx/edgeworx-cloud/access-tokens
 ---
 
-Darcy Cloud supports basic HTTP authentication through access tokens.
+Edgeworx Cloud supports basic HTTP authentication through access tokens.
 
 Simply pass the token as username in
 the [HTTP Basic authentication](https://en.wikipedia.org/wiki/Basic_access_authentication) header.
@@ -17,14 +17,14 @@ your token before encoding.
 - Inside a URL:
 
 ```text
-https://<access_token>@api.darcy.io/v1/...
+https://<access_token>@api.edgeworx.io/v1/...
 ```
 
 - As an HTTP header (base64 encoded)
 
 ```text
 window.fetch(
-    "https://api.darcy.io/v1/account/cypress%40edgeworx.io",
+    "https://api.edgeworx.io/v1/account/cypress%40edgeworx.io",
     { headers:
         { Authorization: "Basic " + window.btoa("<access_token>:")}
     }
@@ -48,7 +48,7 @@ connected to the user account.
 ### Project Access Token
 
 [Project](../more/terminology#project) Access Tokens have full access to the project they represent and have a lifecycle connected
-to their project. Those are the token used in the [node install script](../more/terminology#node-install-script).
+to their project. Those are the token used in the [node register script](../more/terminology#node-install-script).
 
 ![Project Access Token](</images/image (29).png>)
 

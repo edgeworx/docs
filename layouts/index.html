@@ -8,15 +8,15 @@
       {{ partial "sidebar/docs-menu.html" . }}
     </nav>
   </div>
-  <div class="col darcy-home">
-    <h1>Build AI for the edge, just like the cloud.</h1>
+  <div class="col edgeworx-home">
+    <h1>Edgeworx Documentation</h1>
 
     <section>
       <h2>Start Here</h2>
-      <div class="darcy-card-container">
+      <div class="edgeworx-card-container">
         {{ range $index, $card := $.Params.cards }}
         <a href="{{ $card.link }}" class="no-hover-link">
-          <div class="darcy-card">
+          <div class="edgeworx-card">
             <div class="number">{{ add $index 1 }}</div>
             <img src="{{ $card.image }}" alt="{{ $card.title }}" class="img-fluid" />
             <div class="card-content">
@@ -36,16 +36,15 @@
     </section>
 
     <section>
-      <h2>What is Darcy?</h2>
+      <h2>What is Edgeworx Cloud?</h2>
       <div class="gray-section">
-        <div class="img-fluid-container"><img src="/images/home/map.png" alt="Darcy Map" class="img-fluid"/></div>
+        <div class="img-fluid-container"><img src="/images/home/map.png" alt="Edgeworx Map" class="img-fluid"/></div>
         <div class="img-label">
-          <div class="title">Darcy is a platform for building AI at the edge</div>
-          <div class="subtitle">Build apps in your local environment, deploy them to the edge on Darcy Cams (or other Linux edge devices) and run everything from anywhere using Darcy Cloud. </div>
+          <div class="title">Edgeworx Cloud is a platform for deploying and managing edge apps and devices</div>
+          <div class="subtitle">Build apps in your local environment, deploy them to the edge to Linux devices, and run everything from anywhere using Edgeworx Cloud. </div>
         </div>
       </div>
     </section>
-
     <section>
       <h2>Explore the Docs</h2>
       <div class="doc-section-container">

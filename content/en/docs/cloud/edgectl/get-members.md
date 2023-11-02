@@ -1,7 +1,7 @@
 ---
 title: "get members"
 description: "edgectl get members"
-draft: true
+draft: false
 menu:
   docs:
     identifier: "get-members"

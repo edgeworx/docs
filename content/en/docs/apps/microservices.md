@@ -2,7 +2,7 @@
 title: "Microservices"
 weight: 400
 aliases:
-  - /darcy/darcy-cloud/applications-doc/microservice
+  - /edgeworx/edgeworx-cloud/applications-doc/microservice
 ---
 
 ## What are microservices?
@@ -23,7 +23,7 @@ smaller pieces. Key characteristics of microservices:
 
 This definition encapsulate the logic we encourage you to use when deploying edge applications on
 your [nodes](../cloud/adding-nodes/_index.md). But we would add a couple of points to really
-nail the [Darcy Cloud](/docs/cloud/start-portal) Application
+nail the [Edgeworx Cloud](/docs/guides/start-portal) Application
 Microservice:
 
 - It is a [docker container](https://www.docker.com/resources/what-container) that runs on your node
@@ -60,6 +60,4 @@ different pieces of putting together a Docker container image. {{</info>}}
 
 ## Connecting microservices to edge application
 
-Once your microservice is deployed on your node, you're ready to connect it to your Application!
-
-[//]: # 'Check out the [Port Broker]({{<ref "port-broker.md">}}) section for configuration steps.'
+Once you deploy microservice(s), you're ready to connect them to your Application!
