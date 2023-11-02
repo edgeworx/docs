@@ -7,7 +7,7 @@ aliases:
 
 ![Heart Rate Demo App](/images/15done.png)
 
-The Heart Rate app provided on the [Edgeworx Cloud](docs/cloud/start-portal) platform simulates a wearable device
+The Heart Rate app provided on the [Edgeworx Cloud](docs/guides/start-portal) platform simulates a wearable device
 transmitting a person's heartbeat at the edge. The Wearable sends heart rate data over bluetooth to
 a data collector [microservice](/docs/apps/microservices) located on the primary [node](../../cloud/adding-nodes/_index.md). The Data collector microservice then
 communicates with another microservice running a web server on the secondary node to display the

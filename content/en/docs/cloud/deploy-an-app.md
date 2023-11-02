@@ -10,7 +10,7 @@ Deploy apps using the Edgeworx Portal UI or terminal commands via [edgectl](../c
 
 #### Prerequisites
 
-To deploy your custom app, you will need a [Edgeworx Cloud](/docs/cloud/start-portal) account with at least one [node](../cloud/adding-nodes/_index.md) accessible
+To deploy your custom app, you will need a [Edgeworx Cloud](/docs/guides/start-portal) account with at least one [node](../cloud/adding-nodes/_index.md) accessible
 and `ONLINE`. You will need a basic understanding
 of [how to structure app YAML]({{<ref "/docs/apps/yaml-definition.md">}}) for Edgeworx Cloud.
 
