@@ -6,10 +6,10 @@ Usage:
 
 Examples:
   # Create a new Personal Access Token for the authenticated user 
-  $ edgectl create token --label "Personal Access Token 2"
+  $ edgectl create token --label "personal-access-token-2"
 
   # Create a Project Access Token for acme/proj1
-  $ edgectl create token --project acme/proj1 --label "Project Access Token 2"
+  $ edgectl create token --project acme/proj1 --label "personal-access-token-2"
 
 
 Flags:

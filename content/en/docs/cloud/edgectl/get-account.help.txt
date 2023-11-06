@@ -1,21 +1,27 @@
 Get account by UUID, email, or username. If no identifier
 specified, get the logged-in account.
 
+If flag --snapshot is specified, then get a detailed snapshot
+of the account's resources. Use --json for full details.
+
 Returns a non-zero status code if the account is not found.
 
 Usage:
-  edgectl get account [UUID|EMAIL|USERNAME] [flags]
+  edgectl get account [--snapshot] [UUID|EMAIL|USERNAME] [flags]
 
 Examples:
+  # Get authenticated account
+  $ edgectl get account
+
+  # Get detailed account snapshot
+  $ edgectl get account --snapshot
+
   # Get account by email
   $ edgectl get account alice@acme.com
 
-  # Get account by UUID
-  $ edgectl get account 68ea5fc0-fc19-4898-9014-2633a26840cc
-
-
 Flags:
-  -h, --help   help for account
+      --snapshot   Detailed snapshot of account resources
+  -h, --help       help for account
 
 Global Flags:
   -H, --header         Print header row
