@@ -61,7 +61,7 @@ scoop install edgectl
 On Linux distros, use `get-edgectl.bash`:
 
 ```bash
-curl -s https://cloud.Edgeworx.io/get-edgectl.bash | sudo bash
+curl -s https://cloud.edgeworx.io/get-edgectl.bash | sudo bash
 ```
 
 {{% /tab %}}
