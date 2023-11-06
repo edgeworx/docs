@@ -5,7 +5,7 @@ Usage:
 
 Examples:
   # Update name of node having UUID
-  $ edgectl patch node --node 6d154556-9e58-4330-a7f3-41c869f01142 --name "my-updated-node"
+  $ edgectl patch node --id 6d154556-9e58-4330-a7f3-41c869f01142 --name "my-updated-node"
 
   # Update description of node via fully-qualified node name 
   $ edgectl patch node --id acme/proj1/node1 --description "my-updated-node"

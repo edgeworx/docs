@@ -25,30 +25,6 @@ an _Org Owner_ has permission `org:owner`, but also `org:admin` and `org:write` 
 
 ## Create an Org
 
-### Using the CLI
-
-Use [`edgectl create org`](/docs/cloud/edgectl/create-org) to create the new org.
-The supplied org `name` must be unique. Check the [`create org`](/docs/cloud/edgectl/create-org)
-documents for other flags to be supplied, such as description, phone number, country, etc.
-
-```shell
-$ edgectl create org --name acme
-UUID                                  NAME  PERSONAL ORG  CREATED UTC
-15e23cf5-c4f7-4ac9-aedb-689231124f10  acme  false         2023-01-31
-```
-
-{{<info>}}
-If you will mainly be working in the newly created org, set that org
-as your default.
-
-```shell
-edgectl set default org acme
-```
-
-{{</info>}}
-
-### Using the Cloud Portal
-
 On the Cloud Portal homepage, select "create an org" where orgs are listed (there will be none when
 you first sign up). You will then be guided through creation. The only required information is the org website
 
@@ -64,8 +40,7 @@ you first sign up). You will then be guided through creation. The only required 
 
 Use [`edgectl create invite`](/docs/cloud/edgectl/create-invite) to invite people
 to join the org. Below, Alice invites her colleague Bob to join the `acme` org
-as an admin. Other scopes (permissions) include "owner" and "write". You can learn
-more about
+as an admin. Other scopes (permissions) include `org:owner` and `org:write`.
 
 ```shell
 $ edgectl create invite --email bob@acme.com --org acme --scope org:admin

@@ -9,8 +9,11 @@ Examples:
   # Deletes my-app in acme/proj1
   $ edgectl delete app --project acme/proj1 my-app
 
+  # Delete my-app in default project
+  $ edgectl delete app my-app
+
   # Delete using the app YAML file
-  $ edgectl delete --project acme/proj1 ./my-app.yaml
+  $ edgectl delete app --project acme/proj1 ./my-app.yaml
 
 
 Flags:

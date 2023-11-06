@@ -100,11 +100,10 @@ the live site.
 
 ### Format
 Content added by Edgeworx or the community must follow the guidelines below:
-- Must use `ALICE` and `BOB` users in all screenshots or code referencing a user. 
-- Screenshots must be PNG if static and GIF/WEBM files for moving pictures at desktop breakpoints. Smaller breakpoints require scaled images. (media queries) <-- to be confirmed
-- 
 
-All content must be created using the XYZ Cloud account. <---Create new acct
+- Must use `alice` and `bob` users in all screenshots or code referencing a user.
+- Screenshots must be PNG if static and GIF/WEBM files for moving pictures at desktop breakpoints.
+  Smaller breakpoints require scaled images. (media queries)
 
 
 ### Markdown files
@@ -349,6 +348,19 @@ weight: 500
 externalLink: "https://darcyai.github.io/darcyai/"
 ---
 Python docs for the Edgeworx IO Engine.
+```
+
+## Generated docs
+
+### `edgectl`
+
+`edgectl` is the CLI for Edgeworx Cloud. Its has extensive builtin documentation
+for each command, e.g. `edgectl get --help`. These builtin docs are also available
+on this docs site, under [`/docs/cloud/edgectl`](https://docs.edgeworx.io/docs/cloud/edgectl).
+When a new version of `edgectl` is released, these docs must be updated. To do so:
+
+```shell
+$ cd ./content/en/docs/cloud/edgectl
 ```
 
 ## Linting

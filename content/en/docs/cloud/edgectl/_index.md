@@ -18,12 +18,12 @@ Cloud
 and [applications](/docs/more/terminology#application).
 
 In this section we will show you how to use _edgectl_ to get started with your first project and
-deploy some live [microservices](/docs/apps/microservices) to the edge!
+deploy some live [microservices](/docs/apps/microservices) to the edge.
 
 ## Create a Edgeworx Cloud Account
 
 Before installing and using _edgectl_, we must first create an account
-via [Edgeworx Cloud Portal](https://cloud.Edgeworx.io) (see [docs](/docs/guides/start-portal).
+via [Edgeworx Cloud Portal](https://cloud.Edgeworx.io) (see [docs](/docs/guides/start-portal)).
 
 Navigate to [Cloud Portal](https://cloud.Edgeworx.io) and click the `Create Account` button in the top
 right.
@@ -164,10 +164,10 @@ Available Commands:
 
 After your first `edgectl login`, an initial org and project likely exist. We can use
 the `edgectl set default` command to set a default org and project. This allows us to use many
-commands without having to provide the the `--org` and `--project` flags.
+commands without having to provide the `--org` and `--project` flags.
 
 {{<info>}}Note that _edgectl_ defaults are local to your environment (typically saved
-in `$HOME/.config/edgectl/edgectl.yml`).{{</info>}}
+in `$HOME/.config/edgeworx/edgectl/edgectl.yml`).{{</info>}}
 
 Let's start by viewing the current defaults:
 
