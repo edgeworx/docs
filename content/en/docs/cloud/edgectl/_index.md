@@ -116,13 +116,14 @@ Available Commands:
   login       Login to Edgeworx Cloud API
   logout      Logout from Edgeworx Cloud API
   logs        Display microservice logs
+  migrate     Migrate a resource
   patch       Update fields of a resource
   ping        Ping Edgeworx Cloud API
   rename      Rename a resource
   restart     Restart a resource
   rotate      Rotate a resource
   set         Set values or features on a resource
-  ssh         SSH into node from project
+  ssh         SSH into a node.
   start       Start a resource
   stop        Stop a resource
   version     Print version info
@@ -139,25 +140,27 @@ Usage:
   edgectl get [command]
 
 Available Commands:
-  account             Get account
-  app                 Get details of an app
-  apps                List apps in project
-  default             Get an edgectl default value
-  defaults            List edgectl defaults
-  heartbeat           Get heartbeat details
-  heartbeats          List node heartbeats
-  microservice        Get details of an app microservice
-  microservices       List app microservices
-  node                Get node details
+  account              Get account
+  app                  Get details of an app
+  apps                 List apps in project
+  default              Get an edgectl default value
+  defaults             List edgectl defaults
+  heartbeat            Get heartbeat details
+  heartbeats           List node heartbeats
+  invites              List invites
+  members              List members of org
+  microservice         Get details of an app microservice
+  microservices        List app microservices
+  node                 Get node details
   node-register-script Get the node registration script for a project
-  nodes               List nodes for project
-  org                 Get org details
-  project             Get project details
-  projects            List projects in org
-  registries          List container registries for project
-  registry            Get details of container registry
-  token               Get access token
-  tokens              List access tokens
+  nodes                List nodes for project
+  org                  Get org details
+  project              Get project details
+  projects             List projects in org
+  registries           List container registries for project
+  registry             Get details of container registry
+  token                Get access token
+  tokens               List access tokens
 ```
 
 ## Configure Defaults

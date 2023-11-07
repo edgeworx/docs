@@ -101,9 +101,7 @@ the live site.
 ### Format
 Content added by Edgeworx or the community must follow the guidelines below:
 
-- Must use `alice` and `bob` users in all screenshots or code referencing a user.
-- Screenshots must be PNG if static and GIF/WEBM files for moving pictures at desktop breakpoints.
-  Smaller breakpoints require scaled images. (media queries)
+All content must be created using the XYZ Cloud account. <---Create new acct
 
 
 ### Markdown files
@@ -360,7 +358,14 @@ on this docs site, under [`/docs/cloud/edgectl`](https://docs.edgeworx.io/docs/c
 When a new version of `edgectl` is released, these docs must be updated. To do so:
 
 ```shell
+# Install the latest released version of edgectl
+$ brew install edgeworx/edgectl/edgectl
+
+# From the root of the docs repo, cd to the edgectl dir
 $ cd ./content/en/docs/cloud/edgectl
+
+# Run the script to regenerate the docs
+$ ./generate-cmd-help.sh
 ```
 
 ## Linting
