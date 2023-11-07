@@ -1,7 +1,7 @@
 Update fields of an org. If ORG_ID is empty, the default org is used.
 
 Usage:
-  edgectl patch org [--id ORG_ID] [--name NAME] [--description LABEL] [--web-url WEB_URL] [--logo-url LOGO_URL] [flags]
+  edgectl patch org [--id ORG_ID] [--name NAME] [--description LABEL] [--web-url WEB_URL] [--logo-url LOGO_URL] [--country COUNTRY] [--phone OWNER_PHONE] [flags]
 
 Examples:
   # Change name of org "acme" to "acme2"
@@ -17,6 +17,8 @@ Flags:
       --description string   Human-friendly description
       --web-url string       Link to webpage
       --logo-url string      URL for logo
+      --phone string         Phone of the org primary owner's account
+      --country string       Country of the org primary owner's account
   -h, --help                 help for org
 
 Global Flags:
