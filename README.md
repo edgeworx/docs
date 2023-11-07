@@ -100,10 +100,13 @@ the live site.
 
 ### Format
 Content added by Edgeworx or the community must follow the guidelines below:
-
-- Must use `alice` and `bob` users in all screenshots or code referencing a user.
-- Screenshots must be PNG if static and GIF/WEBM files for moving pictures at desktop breakpoints.
-  Smaller breakpoints require scaled images. (media queries)
+- Screenhots provided by edgeworx to use account email `support@edgeworx.io` (no SSO)
+- Use `alice` and `bob` users in all screenshots or code referencing a user.
+- Screenshots must be jpg at 80% quality if static and GIF/WEBM files for moving pictures.
+- screenshot width = 1024px, using retina 2x display whenever possible
+- Standard screenshot height is 600px but may be adjusted as needed to display content
+- Chrome browser preferred, use extension "fireshot"
+- Do not incude browser chrome
 
 
 ### Markdown files
