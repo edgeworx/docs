@@ -101,9 +101,7 @@ the live site.
 ### Format
 Content added by Edgeworx or the community must follow the guidelines below:
 
-- Must use `alice` and `bob` users in all screenshots or code referencing a user.
-- Screenshots must be PNG if static and GIF/WEBM files for moving pictures at desktop breakpoints.
-  Smaller breakpoints require scaled images. (media queries)
+All content must be created using the XYZ Cloud account. <---Create new acct
 
 
 ### Markdown files
