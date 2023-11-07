@@ -360,7 +360,14 @@ on this docs site, under [`/docs/cloud/edgectl`](https://docs.edgeworx.io/docs/c
 When a new version of `edgectl` is released, these docs must be updated. To do so:
 
 ```shell
+# Install the latest released version of edgectl
+$ brew install edgeworx/edgectl/edgectl
+
+# From the root of the docs repo, cd to the edgectl dir
 $ cd ./content/en/docs/cloud/edgectl
+
+# Run the script to regenerate the docs
+$ ./generate-cmd-help.sh
 ```
 
 ## Linting
