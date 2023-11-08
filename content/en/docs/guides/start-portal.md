@@ -24,15 +24,15 @@ Edgeworx Cloud uses Auth0 to provide secure account creation and access.
 
 ![Create Account Auth0](</images/image (13).png>)
 
-![Verify Email](</images/image (18).png>)
-
 ## Verify Your Email
 
-You may need to check your spam folders. The email sender will be `no-reply@auth0user.net`.
+You may need to check your spam folders. The email sender will be `support@edgeworx.io`.
+
+![Verify Email](</images/image (18).png>)
 
 ![Email Verified](</images/image (24).png>)
 
-## View Your Edgeworx Cloud edge project
+## View Your Edgeworx Cloud project
 
 Once your account has been created, you can spin up a personal Sandbox or a fully featured 30-day free trial Org.
 
