@@ -41,4 +41,4 @@ Once your account has been created, you can spin up a personal Sandbox or a full
 Once your edge project is created, you will see your project overview page and be able
 to [add your first node!](/docs/cloud/adding-nodes).
 
-![Project Overview](/images/1done.png).
+![Project Overview](/images/1done.png)
