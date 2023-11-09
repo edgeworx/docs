@@ -4,7 +4,7 @@
   "browserslist": [
     "defaults"
   ],
-  "repository": "https://github.com/darcyai/docs",
+  "repository": "https://github.com/edgeworx/docs",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -29,7 +29,7 @@
     "lint:markdown-fix": "markdownlint-cli2-fix \"*.md\" \"content/**/*.md\"",
     "lint:links": "./linkinator.sh",
     "prod:lint:links": "./node_modules/.bin/linkinator --config ./linkinator.config.json -r --verbosity error https://docs.edgeworx.io",
-    "staging:lint:links": "./node_modules/.bin/linkinator --config ./linkinator.config.json -r --verbosity error https://staging--darcydocs.netlify.app",
+    "staging:lint:links": "./node_modules/.bin/linkinator --config ./linkinator.config.json -r --verbosity error https://staging--edgeworx-docs.netlify.app",
     "server": "exec-bin node_modules/.bin/hugo/hugo server",
     "test": "npm run -s lint",
     "env": "env",
