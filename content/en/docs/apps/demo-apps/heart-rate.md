@@ -81,7 +81,7 @@ spec:
         data_label: Anonymous Person
     - name: viewer
       agent:
-        name: virtual-node-alexpc
+        name: nodename
       images:
         arm: 'edgeworx/heart-rate-demo-viewer:1.0.0'
         x86: 'edgeworx/heart-rate-demo-viewer:1.0.0'
