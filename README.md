@@ -361,7 +361,7 @@ When a new version of `edgectl` is released, these docs must be updated. To do s
 # Install the latest released version of edgectl
 $ brew install edgeworx/edgectl/edgectl
 
-# From the root of the docs repo:
+# From the root of the docs repo, execute:
 $ npm run gen:cmd-help
 ```
 
