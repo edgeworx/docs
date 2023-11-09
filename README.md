@@ -11,8 +11,34 @@ The docs site is generated from markdown files stored in `/content` by the [Hugo
 site generator. The Hugo theme is a fork of [Doks](https://getdoks.org).
 
 When changes are merged to the `master` branch, a
-CI [pipeline](https://github.com/edgeworx/docs/actions) kicks off, which publishes the
-content to [Netlify](https://www.netlify.com).
+CI [pipeline](https://github.com/edgeworx/docs/actions) kicks off, and ultimately
+the contents of `master` are published to [Netlify](https://app.netlify.com/sites/edgeworx-docs).
+
+However, note that `staging` is the default branch, because we want contributors
+to first work against `staging`, and later, when we're ready to deploy, `staging`
+is merged to `master` by the site admins. Thus, when you make changes,
+you should create a PR against `staging`.
+
+```shell
+$ git fetch --all
+$ git checkout staging
+$ git pull
+$ git checkout -b my-branch
+# Make changes to content
+$ git add .
+$ git commit -m "My changes do X, Y, Z"
+# Make sure you any recent changes from origin/staging
+# before you push.
+$ git merge origin/staging
+$ git push origin my-branch
+# Now you can create a PR against staging
+```
+
+When the `staging` branch is updated (e.g. via a PR), those changes
+are published to [`https://staging--edgeworx-docs.netlify.app`](https://staging--edgeworx-docs.netlify.app).
+Thus, you can always visit that URL to see the current "staged" version
+of the site.
+
 
 ## Pre-requisites
 
@@ -62,7 +88,7 @@ Content is stored in [`/content`](/content).
 ### Staging branch
 
 If you merge changes to branch `staging`, those changes will show up
-at [https://staging--edgeworx-docs.netlify.app](https://staging--edgeworx-docs.netlify.app).
+at  [`https://staging--edgeworx-docs.netlify.app`](https://staging--edgeworx-docs.netlify.app).
 
 ### Templates
 
