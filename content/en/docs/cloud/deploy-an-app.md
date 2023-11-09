@@ -80,7 +80,7 @@ e.g. `edgectl get app edgeworx-heart-rate --json`: (output abbreviated for clari
   "id": 1,
   "isActivated": true,
   "name": "edgeworx-heart-rate",
-  "projectUUID": "b75676cb-ae3f-4808-a992-0811e077d783",
+  "projectUUID": "pr0jectuuid",
   "routes": [
     {
       "from": "monitor",
@@ -98,8 +98,8 @@ Use `edgectl get microservices`:
 ```bash
 $ edgectl get microservices --app edgeworx-heart-rate
 NAME     STATUS   IMAGE                                        NODE
-monitor  RUNNING  edgeworx/healthcare-heart-rate:arm-v1        raspberrypie1c0fe7939883f228946
-viewer   RUNNING  edgeworx/healthcare-heart-rate-ui-arm:1.0.0  raspberrypie1c0fe7939883f228946
+monitor  RUNNING  edgeworx/healthcare-heart-rate:arm-v1        west-sf-rnd2346fadc292082f70ed0
+viewer   RUNNING  edgeworx/healthcare-heart-rate-ui-arm:1.0.0  west-sf-rnd2346fadc292082f70ed0
 ```
 
 To view the details of the `monitor` microservice in the `edgeworx-heart-rate` app:

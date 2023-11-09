@@ -24,7 +24,7 @@ https://<access_token>@api.edgeworx.io/v1/...
 
 ```text
 window.fetch(
-    "https://api.edgeworx.io/v1/account/cypress%40edgeworx.io",
+    "https://api.edgeworx.io/v1/account/penny.lim@edge-ample.io",
     { headers:
         { Authorization: "Basic " + window.btoa("<access_token>:")}
     }
