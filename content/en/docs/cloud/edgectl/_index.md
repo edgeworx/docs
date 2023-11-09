@@ -6,7 +6,6 @@ weight: 300
 identifier: edgectl
 aliases:
 - /edgeworx/edgeworx-cloud/get-started-edgectl
-- /darcy-docs/edgeworx-cloud/get-started-edgectl
 - /docs/cloud/edgectl
 - /docs/cloud/get-started-edgectl
 ---

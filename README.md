@@ -11,8 +11,34 @@ The docs site is generated from markdown files stored in `/content` by the [Hugo
 site generator. The Hugo theme is a fork of [Doks](https://getdoks.org).
 
 When changes are merged to the `master` branch, a
-CI [pipeline](https://github.com/darcyai/docs/actions) kicks off, which publishes the
-content to [Netlify](https://www.netlify.com).
+CI [pipeline](https://github.com/edgeworx/docs/actions) kicks off, and ultimately
+the contents of `master` are published to [Netlify](https://app.netlify.com/sites/edgeworx-docs).
+
+However, note that `staging` is the default branch, because we want contributors
+to first work against `staging`, and later, when we're ready to deploy, `staging`
+is merged to `master` by the site admins. Thus, when you make changes,
+you should create a PR against `staging`.
+
+```shell
+$ git fetch --all
+$ git checkout staging
+$ git pull
+$ git checkout -b my-branch
+# Make changes to content
+$ git add .
+$ git commit -m "My changes do X, Y, Z"
+# Make sure you any recent changes from origin/staging
+# before you push.
+$ git merge origin/staging
+$ git push origin my-branch
+# Now you can create a PR against staging
+```
+
+When the `staging` branch is updated (e.g. via a PR), those changes
+are published to [`https://staging--edgeworx-docs.netlify.app`](https://staging--edgeworx-docs.netlify.app).
+Thus, you can always visit that URL to see the current "staged" version
+of the site.
+
 
 ## Pre-requisites
 
@@ -26,7 +52,7 @@ content to [Netlify](https://www.netlify.com).
 
 ## Get started
 
-- Clone the repo: `git clone https://github.com/darcyai/docs.git`
+- Clone the repo: `git clone https://github.com/edgeworx/docs.git`
 - Change to the repo dir: `cd docs`
 - Install dependencies: `npm install`
 - Start a local server: `npm start`
@@ -42,11 +68,11 @@ content to [Netlify](https://www.netlify.com).
 If you find issues with the content, you can:
 
 - Ask a question or open a discussion
-  in [GitHub Discussions](https://github.com/darcyai/docs/discussions)
-- Open a [GitHub issue](https://github.com/darcyai/docs/issues/new/choose)
-- Submit a [Pull Request](https://github.com/darcyai/docs/pulls). If submitting a PR:
+  in [GitHub Discussions](https://github.com/edgeworx/docs/discussions)
+- Open a [GitHub issue](https://github.com/edgeworx/docs/issues/new/choose)
+- Submit a [Pull Request](https://github.com/edgeworx/docs/pulls). If submitting a PR:
   - Verify that your changes build locally. Run `npm test`:
-  - Create a [Pull Request](https://github.com/darcyai/docs/pulls) (follow
+  - Create a [Pull Request](https://github.com/edgeworx/docs/pulls) (follow
     the [GitHub flow](https://guides.github.com/introduction/flow/)
     and [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/))
   - Supports all screen sizes (if relevant)
@@ -62,7 +88,7 @@ Content is stored in [`/content`](/content).
 ### Staging branch
 
 If you merge changes to branch `staging`, those changes will show up
-at [https://staging--darcydocs.netlify.app](https://staging--darcydocs.netlify.app).
+at  [`https://staging--edgeworx-docs.netlify.app`](https://staging--edgeworx-docs.netlify.app).
 
 ### Templates
 
@@ -91,7 +117,7 @@ your changes being published to `prod` (meaning [https://docs.edgeworx.io](https
 
 We've also enabled a `staging` branch. If you merge a change to the `staging` branch, this will also
 trigger a pipeline, and your changes will be visible
-at [https://staging--darcydocs.netlify.app](https://staging--darcydocs.netlify.app).
+at [https://staging--edgeworx-docs.netlify.app](https://staging--edgeworx-docs.netlify.app).
 
 Obviously, that `staging` branch needs to be merged to `master` for that content to take effect on
 the live site.
@@ -336,16 +362,16 @@ to external reference documentation. To do so, create a content markdown file
 as per normal, but add an `externalLink: "https://my.external.link` line
 to the front matter. You should also add content to the markdown, as this content
 will show up in search results. Example
-from [Reference Docs](https://raw.githubusercontent.com/darcyai/docs/staging/content/en/docs/ai/reference-docs.md)
+from [Reference Docs](https://raw.githubusercontent.com/edgeworx/docs/staging/content/en/docs/ai/reference-docs.md)
 
 ```text
 ---
 title: "Reference Docs"
 linkTitle: "Reference Docs"
 weight: 500
-externalLink: "https://darcyai.github.io/darcyai/"
+externalLink: "https://somewhere.com/something/index.html"
 ---
-Python docs for the Edgeworx IO Engine.
+Some external docs.
 ```
 
 ## Generated docs
@@ -361,11 +387,8 @@ When a new version of `edgectl` is released, these docs must be updated. To do s
 # Install the latest released version of edgectl
 $ brew install edgeworx/edgectl/edgectl
 
-# From the root of the docs repo, cd to the edgectl dir
-$ cd ./content/en/docs/cloud/edgectl
-
-# Run the script to regenerate the docs
-$ ./generate-cmd-help.sh
+# From the root of the docs repo, execute:
+$ npm run gen:cmd-help
 ```
 
 ## Linting

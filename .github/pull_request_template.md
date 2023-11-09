@@ -2,7 +2,7 @@
 
 Brief explanation of the proposed changes.
 
-Link to Shortcut story.
+Link to Shortcut (issue tracker) story if available.
 
 ## Motivation
 
