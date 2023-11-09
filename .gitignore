@@ -4,7 +4,6 @@ resources
 .netlify
 .hugo_build.lock
 *.iml
-darcyai-sdk.iml
 .DS_Store
 /scratch/
 .idea

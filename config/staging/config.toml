@@ -1,4 +1,4 @@
-baseurl = "https://staging--darcydocs.netlify.app/
+baseurl = "https://staging--edgeworx-docs.netlify.app/
 docsRepoBranch = "staging"
 
 buildDrafts = true

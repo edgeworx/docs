@@ -23,11 +23,7 @@
 #  identifier = "main-ai"
 #  url = "/docs/ai/"
 
-#[[main]]
-#  name = "Darcy Cam"
-#  weight = 30
-#  identifier = "main-cam"
-#  url = "/docs/ai/what-is-darcy-ai/"
+
 
 
 
