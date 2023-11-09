@@ -3,7 +3,7 @@ title: "Remotely access your node"
 weight: 700
 ---
 
-Once your [node](../cloud/adding-nodes/_index.md) is installed and connected to [Edgeworx Cloud](/docs/guides/start-portal), you'll be able to remotely access it using
+Once your [node](../cloud/adding-nodes/_index.md) is installed and connected to [Edgeworx Cloud](/docs/cloud/start-portal), you'll be able to remotely access it using
 the Edgeworx Cloud portal and/or [edgectl]({{<ref "/docs/cloud/edgectl">}}).
 
 ## Prerequisites
