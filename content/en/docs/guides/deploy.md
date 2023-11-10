@@ -4,7 +4,7 @@ linkTitle: "Deploy to the edge"
 weight: 250
 ---
 
-![Edgeworx CLoud Project Page](/images/guide4-deploy-cloud.jpg)
+![Edgeworx CLoud Project Page](/images/project_view.png)
 
 ## What you will accomplish
 
@@ -48,7 +48,7 @@ at [https://cloud.edgeworx.io](https://cloud.edgeworx.io).
 Once you are in your Edgeworx Cloud account, choose your Sandbox or a [project](/docs/more/terminology#project) nested in an Org, and [add your device as a node](/docs/cloud/adding-nodes/add-node.md) using the `+ ADD NODE` button. Follow the instructions in the pop-up window to
 continue with either a virtual node or physical device.
 
-![Cloud Portal Plus Button](/images/guides/deploy-node-ui.gif)
+![Cloud Portal Plus Button](/images/project_empty.png)
 
 ### Create your application YAML
 
@@ -94,11 +94,11 @@ in the steps above.
 
 Now that you have all of the pieces, it's easy to deploy your application to your device. In the project where the target device is located, open the `APPS` tab and click `+ DEPLOY APP` and follow the instructions in the pop up.
 
-![Deploy app animation](/images/guides/deploy-app-ui.gif)
+![Deploy app animation](/images/app_select.png)
 
 In the pop-up window, choose the `UPLOAD YOUR APP` option and you can drag and drop your YAML file into that window or upload it.
 
-![Deploy App](/images/guides/deployAnApp.PNG)
+![Deploy App](/images/app_details.PNG)
 
 Edgeworx Cloud will notify you if there are issues with the YAML file or your app deployment. Once deployed, you can monitor the image or images being pulled and their status once it is running.
 
