@@ -98,7 +98,7 @@ Now that you have all of the pieces, it's easy to deploy your application to you
 
 In the pop-up window, choose the `UPLOAD YOUR APP` option and you can drag and drop your YAML file into that window or upload it.
 
-![Deploy App](/images/app_details.PNG)
+![Deploy App](/images/app_details.png)
 
 Edgeworx Cloud will notify you if there are issues with the YAML file or your app deployment. Once deployed, you can monitor the image or images being pulled and their status once it is running.
 
