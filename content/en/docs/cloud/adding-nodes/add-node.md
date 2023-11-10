@@ -18,16 +18,16 @@ Add nodes using the Edgeworx Portal UI or terminal commands via [edgectl](../edg
 
 Log into [Edgeworx Cloud](https://cloud.edgeworx.io) and select the project you want to [add the node](../../more/terminology#node-register-script).
 
-![Add Node](/images/add-node.png)
+![Add Node](/images/project_view_empty_sandbox.png)
 
 Click the `+ ADD NODE` button. This will bring up a modal dialog which shows all the types of nodes you could add in your project.
 
-![Register Node Script](/images/select-node-type.png)
+![Register Node Script](/images/node_modal.png)
 
 Click on `EDGE NODE`. This will bring up a modal dialog which shows the one line command that must be run on your
 host for it to become a node in your edge project.
 
-![Register Node Script](/images/add-edge-node.png)
+![Register Node Script](/images/node_modal_script.png)
 
 Click the `COPY` button to copy the install command to your clipboard.
 
@@ -40,7 +40,7 @@ The entire install
 process can take up to a few minutes (depending on the spec of your node, your internet connection
 speed, and other dependencies).
 
-![Install Node](/images/edge-node-added.png)
+![Install Node](/images/node_script_terminal.png)
 
 {{<info>}}
 If you would like to choose a specific name for your node, use the
@@ -53,7 +53,7 @@ as in the example below.
 Switch back to your project and if you have not done so yet, click the `DONE` button in the modal dialog. You
 should see your new node `ONLINE` in your nodes list.
 
-![Node Added](/images/1st-node-added.png)
+![Node Added](/images/project_view_sandbox_firstnode.png)
 
 ## Add a node using edgectl
 

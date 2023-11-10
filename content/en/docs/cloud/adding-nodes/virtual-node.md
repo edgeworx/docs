@@ -28,16 +28,16 @@ You can still build locally using attached video and deploy to edge devices with
 Log into [Edgeworx Cloud](https://cloud.edgeworx.io) and select the project to which you want to add the
 node.
 
-![Add Virtual Node](/images/add-node.png)
+![Add Virtual Node](/images/project_view_empty_sandbox.png)
 
 Click the `+ ADD NODE` button. This will bring up a modal dialog which shows the different types of
 nodes you can add to your project.
 
-![Portal: Select Virtual Node](/images/select-virtual-node.png)
+![Portal: Select Virtual Node](/images/node_modal.png)
 
 Choose `VIRTUAL NODE` to get the instructions for adding a virtual node.
 
-![Virtual Node Script](/images/add-virtual-node.png)
+![Virtual Node Script](/images/node_modal_vn_script.png)
 
 Make sure you have the latest versions of [edgectl]({{<ref "/docs/cloud/edgectl/">}})
 and [Multipass](https://multipass.run) installed. Click the `COPY` button to copy the command to
@@ -50,7 +50,7 @@ Paste the command line that you copied in the previous step into your local term
 process can take up to a few minutes (depending on the spec of your machine, your internet
 connection speed, and other dependencies).
 
-![Install Node](/images/virtual-node-added.png)
+![Install Node](/images/virtual_node_script_terminal.png)
 
 {{<info>}} If you would like to choose a specific name for your node, update
 the `--name="your-choice-of-name"` in the _edgectl create virtual-node_ command as seen in the above
@@ -62,7 +62,7 @@ Switch back to Edgeworx Cloud in your browser and if you have not done so yet, c
 in the modal dialog. You should see your new node `ONLINE` in your Nodes list. If you do not see
 your node online, see troubleshooting (below) for more information.
 
-![Node Added](/images/virtual-node-portal-view.png)
+![Node Added](/images/project_view_sandbox_vn.png)
 
 You now have an edge node, let's start using it!
 
@@ -91,6 +91,9 @@ You can use Multipass' flags in edgectl to control the amount of memory, CPU cor
 
 We recommend using `edgectl delete virtual-node` command to delete the Virtual Node after use, so
 that all the resources used are cleaned up properly i.e. Ubuntu VM.
+
+{{<warning>}} Deleting Virtual Nodes in the Portal will require you delete the virtual machines manually where ever they are hosted. Using `edgectl delete virtual-node <nameofnode>` or `multipass delete <nameofvm>` on the host machine will delete the virtual machine.
+{{</warning>}}
 
 ## Troubleshooting
 
