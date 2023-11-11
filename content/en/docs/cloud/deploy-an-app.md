@@ -21,13 +21,13 @@ of [how to structure app YAML]({{<ref "/docs/apps/yaml-definition.md">}}) for Ed
 3. Click on `+ DEPLOY APP`
 4. Drag n' drop a [YAML file]({{<ref "/docs/apps/yaml-definition.md">}}) into the box
 
-![Application Deployment Page](/images/cloud-deploy-demo.png)
+![Application Deployment Page](/images/app_select.png)
 
 ### View your Application Details
 
 Click on your app in the list of [applications](../more/terminology#application) to see its details.
 
-![Application Detail View](/images/18done.png)
+![Application Detail View](/images/app_details.png)
 
 The app details page contains information about its [microservices](../apps/microservices.md), routes, the nodes
 involved in running the microservices and its YAML Definition.
