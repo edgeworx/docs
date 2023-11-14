@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 32 32">
-  <g id="Linkedin" transform="translate(-0.394 0.036)">
-    <circle id="back" cx="16" cy="16" r="16" transform="translate(0.394 -0.036)" fill="#435467"/>
-    <g id="Linkedin-2" data-name="Linkedin" transform="translate(7.225 6.985)">
-      <path id="Path_103" data-name="Path 103" d="M123.823,759.515h3.709v11.926h-3.709Zm1.856-5.925a2.149,2.149,0,1,1-2.149,2.149,2.149,2.149,0,0,1,2.149-2.149" transform="translate(-123.53 -753.59)" fill="#e3e8f1"/>
-      <path id="Path_104" data-name="Path 104" d="M140.37,768.868h3.551V770.5h.068a3.892,3.892,0,0,1,3.506-1.924c3.757,0,4.445,2.469,4.445,5.677v6.542h-3.7V775c0-1.383-.023-3.164-1.924-3.164s-2.224,1.5-2.224,3.062v5.9h-3.7Z" transform="translate(-134.042 -762.943)" fill="#e3e8f1"/>
-    </g>
-  </g>
-</svg>

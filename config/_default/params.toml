@@ -54,10 +54,10 @@ lqipWidth = "20x"
 smallLimit = "300"
 
 # Footer
-footer = "©2023 Edgeworx"
+footer = "©2023 Edgeworx Inc"
 
 # Feed
-copyRight = "©2023 Edgeworx"
+copyRight = "©2023 Edgeworx Inc"
 
 # Alert
 alert = false
