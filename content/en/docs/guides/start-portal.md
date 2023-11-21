@@ -12,33 +12,35 @@ Navigate to [Edgeworx Cloud](https://cloud.edgeworx.io/welcome) using your brows
 and Safari preferred- other browsers are not thoroughly maintained) and click the `Create Account`
 button.
 
-![Edgeworx Cloud Welcome Page](/images/cloud-home.png)
+![Edgeworx Cloud Welcome Page](/images/splash_page.png)
 
 Enter your unique username and click `NEXT`.
 
-![Create Account](</images/image (9).png>)
+![Create Account](</images/username_modal.png>)
 
 On the "Welcome" page, choose an auth provider or provide your own email and password.
 
 Edgeworx Cloud uses Auth0 to provide secure account creation and access.
 
-![Create Account Auth0](</images/image (13).png>)
-
-![Verify Email](</images/image (18).png>)
+![Create Account Auth0](</images/auth0.png>)
 
 ## Verify Your Email
 
-You may need to check your spam folders. The email sender will be `no-reply@auth0user.net`.
+You may need to check your spam folders. The email sender will be `support@edgeworx.io`.
 
-![Email Verified](</images/image (24).png>)
+![Verify Email](</images/verification_modal.png>)
 
-## View Your Edgeworx Cloud edge project
+![Verify Email](</images/verification_email.png>)
+
+![Email Verified](</images/verified_modal.png>)
+
+## View Your Edgeworx Cloud project
 
 Once your account has been created, you can spin up a personal Sandbox or a fully featured 30-day free trial Org.
 
-![Your Project is Being Created](</images/image (15).png>)
+![Your Project is Being Created](</images/sandbox_loading.png>)
 
 Once your edge project is created, you will see your project overview page and be able
 to [add your first node!](/docs/cloud/adding-nodes).
 
-![Project Overview](/images/1done.png).
+![Project Overview](/images/sandbox.png)

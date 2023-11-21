@@ -37,7 +37,7 @@ follow the steps below:
 5. Select the node(s) where you want it to run
 6. Click `DEPLOY`
 
-![Application Deployment Page](/images/12done.png)
+![Application Deployment Page](/images/heart_rate_app_modal.png)
 
 ## See Application Results
 
@@ -47,12 +47,12 @@ right of your screen.
 If you are not already seeing the app listed, click the `APPS` tab to see all of the apps in your
 current project. Click the app to access the app detail view.
 
-![Project Details View](/images/13done.png)
+![Project Details View](/images/deployed_app.png)
 
 From the app detail view, click the linked text under the `ports` column to navigate to the app
 output.
 
-![Application Detail View](/images/14done.png)
+![Application Detail View](/images/app_details.png)
 
 You should be brought to the Heart Rate Demo App.
 
@@ -81,7 +81,7 @@ spec:
         data_label: Anonymous Person
     - name: viewer
       agent:
-        name: virtual-node-alexpc
+        name: nodename
       images:
         arm: 'edgeworx/heart-rate-demo-viewer:1.0.0'
         x86: 'edgeworx/heart-rate-demo-viewer:1.0.0'

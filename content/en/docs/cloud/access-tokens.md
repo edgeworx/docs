@@ -24,7 +24,7 @@ https://<access_token>@api.edgeworx.io/v1/...
 
 ```text
 window.fetch(
-    "https://api.edgeworx.io/v1/account/cypress%40edgeworx.io",
+    "https://api.edgeworx.io/v1/account/penny.lim@edge-ample.io",
     { headers:
         { Authorization: "Basic " + window.btoa("<access_token>:")}
     }
@@ -43,14 +43,14 @@ edgectl --token <access_token> account get <your_email>
 Personal Access Tokens have the same privilege as the user they represent and have a lifecycle
 connected to the user account.
 
-![Personal Access Tokens](</images/image (23).png>)
+![Personal Access Tokens](</images/access_token_modal.png>)
 
 ### Project Access Token
 
 [Project](../more/terminology#project) Access Tokens have full access to the project they represent and have a lifecycle connected
 to their project. Those are the token used in the [node register script](../more/terminology#node-install-script).
 
-![Project Access Token](</images/image (29).png>)
+![Project Access Token](</images/project_access_token_modal.png>)
 
 ### Third Party Access Tokens
 

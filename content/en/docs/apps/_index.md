@@ -14,7 +14,7 @@ the Edgeworx Cloud platform to connect to one or more edge nodes. Apps are defin
 and can be deployed and updated by uploading those YAML files. Edgeworx nodes can be set up to interact
 with applications, process information, and move data between multiple apps.
 
-![Application view in the Edgeworx Cloud platform](</images/image (12).png>)
+![Application view in the Edgeworx Cloud platform](</images/apps_full.png>)
 
 ## Application Components
 

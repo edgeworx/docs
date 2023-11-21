@@ -30,9 +30,9 @@ you first sign up). You will then be guided through creation. The only required 
 
 ![Org Create Screen](/images/orgs/org-create.png)
 
-![Org Create Details Screen](/images/orgs/org-create-details.png)
+![Org Create Details Screen](/images/create_org_modal.png)
 
-![Org Details Screen](/images/orgs/org-details.png)
+![Org Details Screen](/images/dashboard_org_details.png)
 
 ## Invite members
 
@@ -62,11 +62,7 @@ members into the org by email.
 ![Org Member Invite Screen](/images/orgs/org-member-invite.png)
 
 If you need to invite more members, you can do so through the member details screen.
-Navigate to the org page, and click invite to invite a new member by their email.
-
-![Org Details Screen](/images/orgs/org-details.png)
-
-![Org Member Invite Screen](/images/orgs/org-member-invite.png)
+Navigate to the org page, and click `INVITE MEMBER` to invite a new member by their email.
 
 ## Accept invite
 
@@ -104,7 +100,7 @@ UUID                                  NAME     PERSONAL ORG  CREATED UTC  SCOPES
 You should receive an email with directions on how to accept an org invite. Follow
 the instructions to create an account and accept the invite to the new org.
 
-![Org Member Invite Email](/images/orgs/org-member-invite-email.png)
+![Org Member Invite Email](/images/verification_email.png)
 
 ## Modify member scopes
 
@@ -123,9 +119,9 @@ Updated scopes on account {bob} in org {15e23cf5-c4f7-4ac9-aedb-689231124f10|acm
 In the Cloud Portal, navigate to the org page, click the settings wheel next to the "members" header,
 and select the permission you want to change for a user.
 
-![Org Member Details](/images/orgs/org-member-details.png)
+![Org Member Details](/images/org_details_members.png)
 
-![Change Member Permissions](/images/orgs/org-member-change-permissions.png)
+![Change Member Permissions](/images/org_details_members_perm.png)
 
 ## Remove member
 
@@ -143,6 +139,4 @@ edgectl delete member --org acme --account bob
 In the Cloud Portal, navigate to the org page, click the settings wheel next to the "members" header,
 and remove the user with the "delete" icon next to the user's email.
 
-![Org Member Details](/images/orgs/org-member-details.png)
-
-![Remove Member](/images/orgs/org-member-remove.png)
+![Remove Member](/images/org_member_delete_modal.png)
