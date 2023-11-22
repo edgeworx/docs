@@ -37,7 +37,7 @@ from Docker after following those steps.
 
 ### Add your devices to Edgeworx Cloud
 
-[Edgeworx Cloud](/docs/guides/start-portal) gives you management of all your [edge devices](/docs/cloud/adding-nodes) and [edge applications](/docs/more/terminology/#application) in one place.
+[Edgeworx Cloud](/docs/cloud/start-portal) gives you management of all your [edge devices](/docs/cloud/adding-nodes) and [edge applications](/docs/more/terminology/#application) in one place.
 You can open a SSH shell session on demand, deploy applications, and see the health and status for
 every device. All of this functionality works no matter where your edge devices are physically
 located, even when they are behind NAT layers and firewalls.
