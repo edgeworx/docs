@@ -58,7 +58,7 @@ smallLimit = "300"
 footer = "©{{ time.Now.Year }} Edgeworx"
 
 # Feed
-copyRight = "©{{ time.Now.Year }} Edgeworx"
+copyRight = "© {year} Edgeworx"
 
 # Alert
 alert = false
