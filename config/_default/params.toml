@@ -54,10 +54,11 @@ lqipWidth = "20x"
 smallLimit = "300"
 
 # Footer
-footer = "©2023 Edgeworx"
+# The below is not in use due to the {{ time.Now.Year }} not working. I will add it directly to docs\layouts\partials\footer\footer.html
+footer = "©{{ time.Now.Year }} Edgeworx"
 
 # Feed
-copyRight = "©2023 Edgeworx"
+copyRight = "©{{ time.Now.Year }} Edgeworx"
 
 # Alert
 alert = false
