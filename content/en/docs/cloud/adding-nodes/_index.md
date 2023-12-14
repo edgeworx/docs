@@ -12,7 +12,7 @@ Edge devices are the final point of contact for data from the
 cloud to the end user. An edge node is a physical device with a Linux or equivalent operating system
 that can serve data to an end user from the edge.
 
-In [Edgeworx Cloud](/docs/guides/start-portal), nodes are edge devices that run Edgeworx Agents. Ultimately, we want to deploy
+In [Edgeworx Cloud](/docs/cloud/start-portal), nodes are edge devices that run Edgeworx Agents. Ultimately, we want to deploy
 apps to these nodes to put them to work.
 
 ## AI performance

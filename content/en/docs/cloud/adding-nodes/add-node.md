@@ -18,16 +18,16 @@ Add nodes using the Edgeworx Portal UI or terminal commands via [edgectl](../edg
 
 Log into [Edgeworx Cloud](https://cloud.edgeworx.io) and select the project you want to [add the node](../../more/terminology#node-register-script).
 
-![Add Node](/images/add-node.png)
+![Add Node](/images/project_view_empty_sandbox.png)
 
 Click the `+ ADD NODE` button. This will bring up a modal dialog which shows all the types of nodes you could add in your project.
 
-![Register Node Script](/images/select-node-type.png)
+![Register Node Script](/images/node_modal.png)
 
 Click on `EDGE NODE`. This will bring up a modal dialog which shows the one line command that must be run on your
 host for it to become a node in your edge project.
 
-![Register Node Script](/images/add-edge-node.png)
+![Register Node Script](/images/node_modal_script.png)
 
 Click the `COPY` button to copy the install command to your clipboard.
 
@@ -40,7 +40,7 @@ The entire install
 process can take up to a few minutes (depending on the spec of your node, your internet connection
 speed, and other dependencies).
 
-![Install Node](/images/edge-node-added.png)
+![Install Node](/images/node_script_terminal.png)
 
 {{<info>}}
 If you would like to choose a specific name for your node, use the
@@ -53,7 +53,7 @@ as in the example below.
 Switch back to your project and if you have not done so yet, click the `DONE` button in the modal dialog. You
 should see your new node `ONLINE` in your nodes list.
 
-![Node Added](/images/1st-node-added.png)
+![Node Added](/images/project_view_sandbox_firstnode.png)
 
 ## Add a node using edgectl
 
@@ -89,43 +89,43 @@ This is helpful if you wish to review or debug the installation procedure.
 As the register script runs, you will see it's progress as it install dependencies.
 
 ```bash
-pi@raspberrypi:~ $ curl -s https://ecj_vfsdasdasdxaeaeh2kskkv301e9f0ip@api.edgeworx.io/v1/project/b7asdasdas-e3f-4808-a992-0811e077d783/node-register-script | sudo bash
+pi@raspberrypi:~ $ curl -s https://ecj_usert0ken@api.edgeworx.io/v1/project/pr0jectuuid/node-register-script | sudo bash
 Installing Edgeworx Agent
 １ Initializing
       ✔ Package manager updated
 ２ Performing preflight checks
     ▶ Checking for dependencies
       ✔ curl found
-      ✔ jq found
-      ✔ java found
-      ✔ docker found
+      ✘ jq not found
+      ✘ java not found
+      ✘ docker not found
+    ▶ Installing dependencies: jq
+      ✔ jq installed
 ３ Verifying node state
-      ✔ Detected Linux distribution: debian
-      ! Adding this node to a new project will leave a dangling node in the old project: neil/proj1/raspberrypi14511447b32329f25b77.
-      ! Make sure to migrate any microservices that were running on it, then delete it. E.g. `edgectl node remove neil/proj1/raspberrypi14511447b32329f25b77`
-      ✔ Node name raspberrypie1c0fe7939883f228946 is valid
-      ✔ Node name raspberrypie1c0fe7939883f228946 is available
+      ✔ Detected Linux distribution: ubuntu
+      ✔ Node name myfirstnode265dedacfa9961ab3b2a is valid
+      ✔ Node name myfirstnode265dedacfa9961ab3b2a is available
       ✔ Node is ready for installation
 ４ System finger print
     ▶ Shell
       ∙ Exec:       /bin/bash
       ∙ User:       root
     ▶ Host
-      ∙ Hostname:   raspberrypi
-      ∙ OS Release: Debian GNU/Linux 11 (bullseye)
-      ∙ Kernel:     Linux raspberrypi 5.10.94-v8+ #1518 SMP PREEMPT Thu Jan 27 14:55:19 GMT 2022 aarch64 GNU/Linux
+      ∙ Hostname:   MyFirstNode
+      ∙ OS Release: Ubuntu 22.04.3 LTS
+      ∙ Kernel:     Linux MyFirstNode 5.15.0-87-generic #97-Ubuntu SMP Mon Oct 2 21:09:21 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
     ▶ System
-      ∙ CPUs:       4
-      ∙ Memory:     5.5Gi
-      ∙ Storage:    9.5G/118G (9%)
+      ∙ CPUs:       1
+      ∙ Memory:     130Mi
+      ∙ Storage:    1.7G/4.7G (35%)
 ５ Installing services
-    ▶ Edgeworx agent
-      ✔ Edgeworx Cloud Node created
+    ▶ Edgeworx Agent
+      ✔ Node registered with Edgeworx Cloud
       ✔ GPG found
       ✔ Edgeworx Agent installed
     ▶ Deviceplane
       ✔ Deviceplane Agent registered
-      ✔ Deviceplane Agent configured
+      ✔ Deviceplane Agent installed
     ▶ ioFog Agent
       ✔ Scripts downloaded
       ✔ Ready to install
@@ -135,7 +135,7 @@ Installing Edgeworx Agent
       ✔ ioFog Agent registered
       ✔ ioFog Agent provisioned
 ６ SUCCESS
-      ✔ You can view this Agent in your Edgeworx Cloud project here: https://cloud.edgeworx.io/alice/edge-project-1/node/raspberrypie1c0fe7939883f228946
+      ✔ You can view this Agent in your Edgeworx Cloud project here: https://cloud.darcy.ai/pennylim/sandbox/node/myfirstnode265dedacfa9961ab3b2a
       ✔ To uninstall, execute `sudo /opt/edgeworx/uninstall.sh`
 ```
 

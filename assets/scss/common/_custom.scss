@@ -11,10 +11,6 @@ Put CSS for custom HTML components here.
   }
 }
 
-body {
-  // line-height: 1.5em;
-}
-
 $code-block-bg: #032332;
 $border-color: #a9b2bc88;
 $background-color: $edgeneutral-05;
@@ -30,14 +26,13 @@ $tab-content-bg: #f5f6f7;
 
 .edgeworx-card-container {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   gap: 1.5rem;
-  justify-content: space-around;
+  justify-content: center;
   align-items: stretch;
 
   .no-hover-link {
-    width: 48%;
-    min-width: 300px;
+    max-width: 400px;
   }
 
   & .edgeworx-card {
@@ -185,7 +180,7 @@ $tab-content-bg: #f5f6f7;
         padding-top: 2rem;
         display: grid;
         grid-auto-flow: row;
-        gap: 1.5rem;
+        gap: 2rem;
 
         & .link {
           text-align: left;
@@ -198,14 +193,10 @@ $tab-content-bg: #f5f6f7;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .edgeworx-card-container {
-    grid-auto-flow: column;
-
-    .edgeworx-card {
-      // TODO: The below is what makes the card on the front page massive. Commenting out to resize card.
-      // max-width: unset;
-    }
+    flex-direction: column;
+    align-items: center;
   }
 
   .home {

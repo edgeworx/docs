@@ -33,7 +33,7 @@ thoughtful REST APIs and opinionated (and extensible) YAML specs for software de
 integration with today’s most popular developer tools and workflows. If you know how to use
 Terraform or Kubernetes then you'll be immediately at home with Edgeworx Cloud.
 
-![Projects Overview](/images/portal-projects-overivew-luckyspin.jpg)
+![Projects Overview](/images/project_view_remote.png)
 
 ### Features
 

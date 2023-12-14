@@ -5,7 +5,7 @@ aliases:
   - /edgeworx/edgeworx-cloud/applications-doc/registries
 ---
 
-When configuring an [Edgeworx Cloud](/docs/guides/start-portal) [application](../more/terminology#application) YAML file, it is necessary to specify the registry of
+When configuring an [Edgeworx Cloud](/docs/cloud/start-portal) [application](../more/terminology#application) YAML file, it is necessary to specify the registry of
 each [microservice](./microservices.md) container image. The field for this specification
 is `spec.microservices.image.registry`, and the registry tells the [node](../cloud/adding-nodes/_index.md) the microservice is being
 deployed to how to access the image container.

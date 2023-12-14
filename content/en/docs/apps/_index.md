@@ -5,7 +5,7 @@ linkTitle: "Building edge apps"
 ---
 
 [Apps](../more/terminology#application) are groups of [microservices](./microservices.md) bundled to work together. They are defined using YAML files and can
-be deployed and updated by uploading those YAML files through [Edgeworx Cloud](/docs/guides/start-portal) or through
+be deployed and updated by uploading those YAML files through [Edgeworx Cloud](/docs/cloud/start-portal) or through
 [edgectl]({{<ref "/docs/cloud/adding-nodes/add-node.md">}}). An app can consist of an arbitrary
 number of interacting or standalone microservices that are deployed on one or may nodes.
 
@@ -14,7 +14,7 @@ the Edgeworx Cloud platform to connect to one or more edge nodes. Apps are defin
 and can be deployed and updated by uploading those YAML files. Edgeworx nodes can be set up to interact
 with applications, process information, and move data between multiple apps.
 
-![Application view in the Edgeworx Cloud platform](</images/image (12).png>)
+![Application view in the Edgeworx Cloud platform](</images/apps_full.png>)
 
 ## Application Components
 

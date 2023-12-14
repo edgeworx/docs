@@ -11,7 +11,7 @@ aliases:
 ---
 
 
-_edgectl_ is [Edgeworx Cloud's](/docs/guides/start-portal) command line interface (CLI). It can be used to manage Edgeworx
+_edgectl_ is [Edgeworx Cloud's](/docs/cloud/start-portal) command line interface (CLI). It can be used to manage Edgeworx
 Cloud
 [accounts, organizations,](/docs/more/terminology/#account--org) [projects](/docs/more/terminology#project), [nodes](/docs/cloud/adding-nodes),
 and [applications](/docs/more/terminology#application).
@@ -22,7 +22,7 @@ deploy some live [microservices](/docs/apps/microservices) to the edge.
 ## Create a Edgeworx Cloud Account
 
 Before installing and using _edgectl_, we must first create an account
-via [Edgeworx Cloud Portal](https://cloud.Edgeworx.io) (see [docs](/docs/guides/start-portal)).
+via [Edgeworx Cloud Portal](https://cloud.Edgeworx.io) (see [docs](/docs/cloud/start-portal)).
 
 Navigate to [Cloud Portal](https://cloud.Edgeworx.io) and click the `Create Account` button in the top
 right.

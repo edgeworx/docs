@@ -7,7 +7,7 @@ aliases:
 
 ![Heart Rate Demo App](/images/15done.png)
 
-The Heart Rate app provided on the [Edgeworx Cloud](docs/guides/start-portal) platform simulates a wearable device
+The Heart Rate app provided on the [Edgeworx Cloud](docs/cloud/start-portal) platform simulates a wearable device
 transmitting a person's heartbeat at the edge. The Wearable sends heart rate data over bluetooth to
 a data collector [microservice](/docs/apps/microservices) located on the primary [node](../../cloud/adding-nodes/_index.md). The Data collector microservice then
 communicates with another microservice running a web server on the secondary node to display the
@@ -37,7 +37,7 @@ follow the steps below:
 5. Select the node(s) where you want it to run
 6. Click `DEPLOY`
 
-![Application Deployment Page](/images/12done.png)
+![Application Deployment Page](/images/heart_rate_app_modal.png)
 
 ## See Application Results
 
@@ -47,12 +47,12 @@ right of your screen.
 If you are not already seeing the app listed, click the `APPS` tab to see all of the apps in your
 current project. Click the app to access the app detail view.
 
-![Project Details View](/images/13done.png)
+![Project Details View](/images/deployed_app.png)
 
 From the app detail view, click the linked text under the `ports` column to navigate to the app
 output.
 
-![Application Detail View](/images/14done.png)
+![Application Detail View](/images/app_details.png)
 
 You should be brought to the Heart Rate Demo App.
 
@@ -81,7 +81,7 @@ spec:
         data_label: Anonymous Person
     - name: viewer
       agent:
-        name: virtual-node-alexpc
+        name: nodename
       images:
         arm: 'edgeworx/heart-rate-demo-viewer:1.0.0'
         x86: 'edgeworx/heart-rate-demo-viewer:1.0.0'
